@@ -10,7 +10,7 @@ Eine kleine Einführung bekommt ihr auf YouTube unter https://www.youtube.com/wa
 
 ## Woher bekomme ich mehr Informationen?
 
-Eine ausführliche Dokumentation findest du in unserem eCARus-Wiki unter http://ecarus.wiki.tum.de.
+Eine ausführliche Dokumentation findest du in unserem eCARus-Wiki unter https://ecarus.wiki.tum.de/Ladefahrrad.
 
 ## Wie bekomme ich den Source Code?
 
