@@ -5,6 +5,9 @@ from PyQt5.uic import *
 # import Sender
 from sender import Sender
 
+# import Log
+from log import Log
+
 __author__ = 'Fabian Graf'
 
 
@@ -18,8 +21,11 @@ class Main(QMainWindow):
         # show window
         self.ui.show()
 
+        # make new log object
+        self.log = Log(self.ui)
+
         # make new sender object
-        self.sender = Sender(self.ui)
+        self.sender = Sender(self.ui, self.log)
 
         # set events
         self.set_events()

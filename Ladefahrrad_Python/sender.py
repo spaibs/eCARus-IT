@@ -5,9 +5,10 @@ __author__ = 'Fabian Graf'
 
 
 class Sender(object):
-    def __init__(self, ui):
+    def __init__(self, ui, log):
         print("init")
         self.ui = ui
+        self.log = log
 
         # make socket
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -29,3 +30,6 @@ class Sender(object):
 
         # send
         self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
+        # new log message
+        self.log.new_log_message(message)
