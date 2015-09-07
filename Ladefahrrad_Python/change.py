@@ -2,4 +2,7 @@ __author__ = 'ga38sor'
 
 
 def to_8_chars(text):
-    print("text to")
+    if len(text) < 8:
+        for i in range(0, 8 - len(text)):
+            text = "0" + text
+    return text

@@ -258,7 +258,10 @@ p, li { white-space: pre-wrap; }
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>g0100000000</string>
+                  <string/>
+                 </property>
+                 <property name="maxLength">
+                  <number>8</number>
                  </property>
                 </widget>
                </item>
