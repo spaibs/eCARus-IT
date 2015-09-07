@@ -226,7 +226,7 @@ p, li { white-space: pre-wrap; }
                 </widget>
                </item>
                <item>
-                <widget class="QComboBox" name="comboBox">
+                <widget class="QComboBox" name="idChooser">
                  <item>
                   <property name="text">
                    <string>g01</string>
@@ -250,7 +250,7 @@ p, li { white-space: pre-wrap; }
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="msg">
+                <widget class="QLineEdit" name="messageInput">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -263,7 +263,7 @@ p, li { white-space: pre-wrap; }
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="senden">
+                <widget class="QPushButton" name="sendButton">
                  <property name="text">
                   <string>Senden</string>
                  </property>
