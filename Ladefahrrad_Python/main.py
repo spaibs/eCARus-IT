@@ -8,7 +8,7 @@ __author__ = 'Fabian Graf'
 class Main(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
-        self.ui = loadUi('gui.ui')
+        self.ui = loadUi('gui/gui.ui')
         self.ui.show()
 
 if __name__ == "__main__":
