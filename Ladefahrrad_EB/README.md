@@ -1,5 +1,4 @@
-#Backend C++ Code
+#Ladefahrrad Model 
 
 ## Funktion
-Hauptsächlich für die Komunikation zur Java Ladefahrrad Socket Service App. Beschreibt Globale Variablen in EB mit den Emofangenen.
-
+In EB Importieren. Wird auf das Freescale Board gespielt und mit dem Model Chosser gestarted.
