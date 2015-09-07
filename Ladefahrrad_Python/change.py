@@ -1,4 +1,4 @@
-__author__ = 'ga38sor'
+__author__ = 'Fabian Graf'
 
 
 def to_8_chars(text):
