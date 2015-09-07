@@ -25,7 +25,11 @@ class Main(QMainWindow):
         self.set_events()
 
     def set_events(self):
+        # sendButton clicked
         self.ui.sendButton.clicked.connect(self.sender.send)
+
+        # messageInput return pressed
+        self.ui.messageInput.returnPressed.connect(self.sender.send)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

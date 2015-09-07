@@ -1,7 +1,7 @@
 import change
 import socket
 
-__author__ = 'ga38sor'
+__author__ = 'Fabian Graf'
 
 
 class Sender(object):
@@ -29,4 +29,3 @@ class Sender(object):
 
         # send
         self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
-        print(str(value))
