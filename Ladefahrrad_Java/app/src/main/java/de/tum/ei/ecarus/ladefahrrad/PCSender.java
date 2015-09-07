@@ -28,13 +28,14 @@ public class PCSender {
     DatagramPacket packet;
 
     // make new socket
-    public void run() {
+    public void run(String ip) {
         try {
             // new udp socket
             socket = new DatagramSocket();
 
             // new ip address of PC
-            inetaddr = InetAddress.getByName("10.162.70.106");
+            inetaddr = InetAddress.getByName(ip);
+            Log.d("PCSender", "PC IP-Address: " + ip);
         }
         catch (Exception e) {
             e.printStackTrace();

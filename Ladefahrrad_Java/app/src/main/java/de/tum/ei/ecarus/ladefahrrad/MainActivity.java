@@ -3,8 +3,12 @@ package de.tum.ei.ecarus.ladefahrrad;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,12 +17,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        // start Socket Service
-        Intent intent = new Intent(this, SocketService.class);
-        startService(intent);
-        //Toast.makeText(this, "Socket Server started.", Toast.LENGTH_LONG).show(); // TODO: Check if successful
     }
 
     @Override
@@ -41,5 +39,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void startService(View view) {
+        Button startServiceButton = (Button) findViewById(R.id.startServiceButton);
+        startServiceButton.setEnabled(false);
+        ((EditText) findViewById(R.id.idEditText)).setEnabled(false);
+
+        // start Socket Service
+        Intent intent = new Intent(this, SocketService.class);
+        intent.putExtra("ip", ((EditText) findViewById(R.id.idEditText)).getText().toString());
+        startService(intent);
+        //Toast.makeText(this, "Socket Server started.", Toast.LENGTH_LONG).show(); // TODO: Check if successful
     }
 }
