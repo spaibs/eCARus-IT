@@ -8,7 +8,7 @@ __author__ = 'Fabian Graf'
 class Main(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
-        self.ui = loadUi('X:/projects/2010/python/pyqt_tutorial/pyqt_tutorial.ui')
+        self.ui = loadUi('gui.ui')
         self.ui.show()
 
 if __name__ == "__main__":
