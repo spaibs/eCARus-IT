@@ -8,6 +8,7 @@ import android.util.Log;
 public class SocketService extends Service {
     public EBSender ebsender;
     public PCSender pcsender;
+    String ip;
     public SocketService() {
     }
 
@@ -19,6 +20,7 @@ public class SocketService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        ip = intent.getStringExtra("ip");
         startEBSender();
         startEBReceiver();
         startPCSender();
@@ -32,7 +34,7 @@ public class SocketService extends Service {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                pcsender.run();
+                pcsender.run(ip);
             }
         }).start();
         Log.d("SocketServer", "PCSender started.");
