@@ -11,9 +11,9 @@ Eine kleine Einführung bekommt ihr auf YouTube unter https://www.youtube.com/wa
 Wenn ihr am Ende des Tages euer aktuelles Projekt speichern wollt, dann müsst ihr wie folgt vorgehen:
 
 - navigiert im Terminal zum eCARus-Ladefahrrad Ordner
-- gebt git add - A ein
-- gebt git commit -m “MESSAGE“ ein. Ersetzt MESSAGE mit einem Text, was ihr heute verändert habt
-- gebt git push ein
+- gebt **git add -A** ein
+- gebt **git commit -m “MESSAGE“** ein. Ersetzt MESSAGE mit einem Text, was ihr heute verändert habt
+- gebt **git push** ein
 
 ## Woher bekomme ich mehr Informationen?
 
