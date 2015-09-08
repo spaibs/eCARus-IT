@@ -32,4 +32,4 @@ class Sender(object):
         self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
 
         # new log message
-        self.log.new_log_message(message)
+        self.log.new_log_message("sending " + message)
