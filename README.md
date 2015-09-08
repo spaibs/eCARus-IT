@@ -29,7 +29,7 @@ Eine Nachricht, egal ob sie zur EB-GUI oder zum PC geschickt wird, ist folgender
 
 - zuerst entwerder **g** oder **t**, also entwerder sollen die Daten zur EB-GUI (g) oder zum PC/Tower (t) geschickt werden (1 Byte lang)
 - dann eine ID (2 Bytes)
-- zum Schluss noch 8 Daten Bytes
+- zum Schluss die Daten (8 Bytes)
 
 Folgende IDs sind implementiert:
 
