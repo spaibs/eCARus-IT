@@ -37,3 +37,7 @@ Folgende IDs sind implementiert:
 - 02: Strom z.B. g0200000333 -> setzt Strom auf 333 mA
 - 03: Automode ein/aus z.B. g0300000001 für an, g0300000000 für aus
 - 04: Lampen ein/aus: z.B. g0400001010 -> schalte Lampe 1 an, Lampe 2 aus, Lampe 3 an, Lampe 4 aus
+
+## Wo finde ich noch mehr von den Icons?
+
+hier: http://people.ubuntu.com/~jr/plasma-next-icons/icons.html
