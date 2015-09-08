@@ -23,9 +23,12 @@ class Log(object):
 
             # new logtext with blue time
             if color == "blue":
-                self.logtext += "<b style=color:'#3DAEE9'>" + str(strftime("%H:%M:%S", lt)) + "</style></b>: " + text + "<br>"
+                self.logtext += "<b style=color:'#3DAEE9'>"
             elif color == "yellow":
-                self.logtext += "<b style=color:'#FDBC4B'>" + str(strftime("%H:%M:%S", lt)) + "</style></b>: " + text + "<br>"
+                self.logtext += "<b style=color:'#FDBC4B'>"
+
+            # add actual text + end
+            self.logtext += str(strftime("%H:%M:%S", lt)) + "</style></b>: " + text + "<br>"
 
             # set logtext to logView
             self.ui.logView.setHtml(self.logtext)
