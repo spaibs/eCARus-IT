@@ -61,7 +61,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QSlider" name="spngSlider">
+                <widget class="QSlider" name="voltageSlider">
                  <property name="maximum">
                   <number>10000</number>
                  </property>
@@ -81,7 +81,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QSlider" name="strSlider">
+                <widget class="QSlider" name="currentSlider">
                  <property name="maximum">
                   <number>10000</number>
                  </property>
