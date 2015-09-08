@@ -372,7 +372,7 @@ p, li { white-space: pre-wrap; }
    <addaction name="separator"/>
    <addaction name="actionEinstellungen"/>
    <addaction name="separator"/>
-   <addaction name="actionReset"/>
+   <addaction name="resetActionButton"/>
    <addaction name="separator"/>
    <addaction name="actionHilfe"/>
   </widget>
@@ -459,7 +459,7 @@ p, li { white-space: pre-wrap; }
     <string>Lampe Senden</string>
    </property>
   </action>
-  <action name="actionReset">
+  <action name="resetActionButton">
    <property name="text">
     <string>Reset</string>
    </property>

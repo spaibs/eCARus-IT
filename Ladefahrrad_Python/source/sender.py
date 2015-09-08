@@ -19,19 +19,43 @@ class Sender(object):
         self.ip = "10.162.70.132"
         self.port = 32701
 
-    def send(self): #TODO: add parameter and if(text != ""): -> set param
-        # get values
-        value = self.ui.messageInput.text()
-        id = self.ui.idChooser.currentText()
+    def send(self, type):
+        if type == "debug":
+            # get values
+            value = self.ui.messageInput.text()
+            id = self.ui.idChooser.currentText()
 
-        # change id to length 8
-        value = change.to_8_chars(value)
+            # change id to length 8
+            value = change.to_8_chars(value)
 
-        # create message
-        message = id + value
+            # create message
+            message = id + value
+        elif type == "slider-voltage":
+            voltage = str(self.ui.voltageSlider.value())
 
-        # send
-        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+            # make 8 chars long
+            voltage = change.to_8_chars(voltage)
 
-        # new log message
-        self.log.new_log_message("sending " + message, "blue")
+            # make message
+            message = "g01" + voltage
+
+        elif type == "slider-current":
+            current = str(self.ui.currentSlider.value())
+
+            # make 8 chars long
+            current = change.to_8_chars(current)
+
+            # make message
+            message = "g02" + current
+
+        elif type == "reset":
+            self.ui.voltageSlider.setValue(0)
+            self.ui.currentSlider.setValue(0)
+            message = ""
+
+        if message != "":
+            # send
+            self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
+            # new log message
+            self.log.new_log_message("sending " + message, "blue")

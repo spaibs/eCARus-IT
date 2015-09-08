@@ -32,7 +32,7 @@ class Main(QMainWindow):
 
     def set_events(self):
         # sendButton clicked
-        self.ui.sendButton.clicked.connect(self.sender.send)
+        self.ui.sendButton.clicked.connect(lambda: self.sender.send("debug"))
 
         # holdButton clicked
         self.ui.holdButton.clicked.connect(self.log.toggle_hold)
@@ -41,7 +41,14 @@ class Main(QMainWindow):
         self.ui.clearButton.clicked.connect(self.log.clear_log)
 
         # messageInput return pressed
-        self.ui.messageInput.returnPressed.connect(self.sender.send)
+        self.ui.messageInput.returnPressed.connect(lambda: self.sender.send("debug"))
+
+        # sliders value changed
+        self.ui.voltageSlider.valueChanged.connect(lambda: self.sender.send("slider-voltage"))
+        self.ui.currentSlider.valueChanged.connect(lambda: self.sender.send("slider-current"))
+
+        # reset action
+        self.ui.resetActionButton.triggered.connect(lambda: self.sender.send("reset"))
 
 if __name__ == "__main__":
     # new QApplication
