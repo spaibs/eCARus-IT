@@ -13,12 +13,15 @@ class Log(object):
         # make logtext variable
         self.logtext = ""
 
-    def new_log_message(self, text):
+    def new_log_message(self, text, color):
         # get localtime
         lt = localtime()
 
         # new logtext with blue time
-        self.logtext += "<b style=color:'#3F51B5'>" + str(strftime("%H:%M:%S", lt)) + "</style></b>: " + text + "<br>"
+        if color == "blue":
+            self.logtext += "<b style=color:'#3DAEE9'>" + str(strftime("%H:%M:%S", lt)) + "</style></b>: " + text + "<br>"
+        elif color == "yellow":
+            self.logtext += "<b style=color:'#FDBC4B'>" + str(strftime("%H:%M:%S", lt)) + "</style></b>: " + text + "<br>"
 
         # set logtext to logView
         self.ui.logView.setHtml(self.logtext)
