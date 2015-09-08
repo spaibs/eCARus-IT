@@ -48,14 +48,21 @@ class Sender(object):
             # make message
             message = "g02" + current
 
-        elif type == "reset":
-            self.ui.voltageSlider.setValue(0)
-            self.ui.currentSlider.setValue(0)
-            message = ""
-
         if message != "":
             # send
             self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
 
             # new log message
             self.log.new_log_message("sending " + message, "blue")
+
+    def reset(self):
+        message = "" #TODO: set real reset message
+
+        self.ui.voltageSlider.setValue(0)
+        self.ui.currentSlider.setValue(0)
+        # send
+        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
+        # new log message
+        self.log.new_log_message("sending " + message, "blue")
+

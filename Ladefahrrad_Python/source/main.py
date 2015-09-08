@@ -48,7 +48,7 @@ class Main(QMainWindow):
         self.ui.currentSlider.valueChanged.connect(lambda: self.sender.send("slider-current"))
 
         # reset action
-        self.ui.resetActionButton.triggered.connect(lambda: self.sender.send("reset"))
+        self.ui.resetActionButton.triggered.connect(self.sender.reset)
 
 if __name__ == "__main__":
     # new QApplication
