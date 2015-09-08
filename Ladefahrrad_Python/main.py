@@ -34,10 +34,17 @@ class Main(QMainWindow):
         # sendButton clicked
         self.ui.sendButton.clicked.connect(self.sender.send)
 
+        # holdButton clicked
+        self.ui.holdButton.clicked.connect(self.log.toggle_hold)
+
+        # clearButton clicked
+        self.ui.clearButton.clicked.connect(self.log.clear_log)
+
         # messageInput return pressed
         self.ui.messageInput.returnPressed.connect(self.sender.send)
 
 if __name__ == "__main__":
+    # new QApplication
     app = QApplication(sys.argv)
 
     # make new window
