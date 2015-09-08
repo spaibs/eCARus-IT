@@ -1,12 +1,16 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.uic import *
+from PyQt5 import QtCore
 
 # import Sender
 from sender import Sender
 
 # import Log
 from log import Log
+
+# import Listener
+from listener import Listener
 
 __author__ = 'Fabian Graf'
 
@@ -17,6 +21,9 @@ class Main(QMainWindow):
 
         # load gui.ui
         self.ui = loadUi('../gui/gui.ui')
+
+        self.ui.setAttribute(QtCore.Qt.WA_DeleteOnClose, True)
+        self.ui.destroyed.connect(self.shutdown)
 
         # show window
         self.ui.show()
@@ -32,6 +39,12 @@ class Main(QMainWindow):
 
         # initial reset
         self.sender.reset()
+
+        # new listener
+        self.listener = Listener()
+
+        # start listener
+        self.listener.start()
 
     def set_events(self):
         # sendButton clicked
@@ -61,6 +74,9 @@ class Main(QMainWindow):
         self.ui.lamp2Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
         self.ui.lamp3Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
         self.ui.lamp4Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
+
+    def shutdown(self):
+        self.listener.exit()
 
 if __name__ == "__main__":
     # new QApplication

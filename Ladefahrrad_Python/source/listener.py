@@ -24,6 +24,8 @@ class Listener(QThread):
         # bind Socket
         sock.bind((ip, port))
 
+        print("biiiiind you ")
+
     def run(self):
         while True:
             # receive Data
