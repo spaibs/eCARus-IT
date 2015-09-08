@@ -84,7 +84,7 @@ class Sender(object):
             self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
 
             # new log message
-            self.log.new_log_message("sending " + message, "blue")
+            self.log.new_log_message(message + " sent", "blue")
 
     def reset(self):
         self.ui.voltageSlider.setValue(0)
