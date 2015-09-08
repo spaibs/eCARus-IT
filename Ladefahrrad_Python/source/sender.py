@@ -90,32 +90,6 @@ class Sender(object):
         self.ui.voltageSlider.setValue(0)
         self.ui.currentSlider.setValue(0)
 
-        # maybe not needed anymore
-        """# set voltage message
-        message = "g0100000000"
-
-        # send
-        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
-
-        # set voltage message
-        message = "g0200000000"
-
-        # send
-        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
-
-        # set automode message
-        message = "g0300000001"
-
-        # send
-        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
-
-        # set lamps message
-        message = "g0400001111"
-
-        # send
-        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
-        """
-
         # set checkboxes
         self.ui.automodeCheckbox.setChecked(True)
         self.ui.lamp1Checkbox.setChecked(True)
