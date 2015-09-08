@@ -64,12 +64,12 @@ class Sender(object):
         # lamps
         elif type == "checkbox-lamp":
             # get state
-            state_lamp1 = self.ui.lamp1Checkbox.isChecked()
-            state_lamp2 = self.ui.lamp2Checkbox.isChecked()
-            state_lamp3 = self.ui.lamp3Checkbox.isChecked()
-            state_lamp4 = self.ui.lamp4Checkbox.isChecked()
+            state_l1 = self.ui.lamp1Checkbox.isChecked()
+            state_l2 = self.ui.lamp2Checkbox.isChecked()
+            state_l3 = self.ui.lamp3Checkbox.isChecked()
+            state_l4 = self.ui.lamp4Checkbox.isChecked()
 
-            state_all = "g04" + "0000" + str(int(state_lamp1)) + str(int(state_lamp2)) + str(int(state_lamp3)) + str(int(state_lamp4))
+            state_all = "g040000" + str(int(state_l1)) + str(int(state_l2)) + str(int(state_l3)) + str(int(state_l4))
 
             print(state_all)
 
