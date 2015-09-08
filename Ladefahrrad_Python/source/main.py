@@ -43,6 +43,9 @@ class Main(QMainWindow):
         # new listener
         self.listener = Listener()
 
+        #
+        self.listener.data_received.connect(self.new_data_received)
+
         # start listener
         self.listener.start()
 
@@ -74,6 +77,9 @@ class Main(QMainWindow):
         self.ui.lamp2Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
         self.ui.lamp3Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
         self.ui.lamp4Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
+
+    def new_data_received(self, text):
+        print(text)
 
     def shutdown(self):
         self.listener.exit()

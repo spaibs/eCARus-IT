@@ -1,10 +1,10 @@
-__author__ = 'Fabian Graf'
-
 from PyQt5 import QtCore
 from PyQt5.QtCore import QThread
 import socket
 
-# IP of this PC
+__author__ = 'Fabian Graf'
+
+# ip of this pc
 ip = "0.0.0.0"
 
 # Receive port
@@ -24,12 +24,10 @@ class Listener(QThread):
         # bind Socket
         sock.bind((ip, port))
 
-        print("biiiiind you ")
-
     def run(self):
         while True:
             # receive Data
             data, addr = sock.recvfrom(1024)
 
             # call new_log_message()
-            self.data_received.emit("Nachricht empfangen: " + str(data)[2:-1])
+            self.data_received.emit(str(data)[2:-1])
