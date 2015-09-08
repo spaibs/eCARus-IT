@@ -30,6 +30,9 @@ class Main(QMainWindow):
         # set events
         self.set_events()
 
+        # initial reset
+        self.sender.reset()
+
     def set_events(self):
         # sendButton clicked
         self.ui.sendButton.clicked.connect(lambda: self.sender.send("debug"))
@@ -49,6 +52,15 @@ class Main(QMainWindow):
 
         # reset action
         self.ui.resetActionButton.triggered.connect(self.sender.reset)
+
+        # automode checkbox
+        self.ui.automodeCheckbox.stateChanged.connect(lambda: self.sender.send("checkbox-automode"))
+
+        # lamp checkboxes
+        self.ui.lamp1Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
+        self.ui.lamp2Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
+        self.ui.lamp3Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
+        self.ui.lamp4Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
 
 if __name__ == "__main__":
     # new QApplication

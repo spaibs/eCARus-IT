@@ -20,6 +20,9 @@ class Sender(object):
         self.port = 32701
 
     def send(self, type):
+        # make empty message
+        message = ""
+
         if type == "debug":
             # get values
             value = self.ui.messageInput.text()
@@ -48,6 +51,34 @@ class Sender(object):
             # make message
             message = "g02" + current
 
+        elif type == "checkbox-automode":
+            # get state
+            state = self.ui.automodeCheckbox.isChecked()
+
+            # is checked?
+            if state:
+                message = "g0300000001"
+            else:
+                message = "g0300000000"
+
+        # lamps
+        elif type == "checkbox-lamp":
+            # get state
+            state_lamp1 = self.ui.lamp1Checkbox.isChecked()
+            state_lamp2 = self.ui.lamp2Checkbox.isChecked()
+            state_lamp3 = self.ui.lamp3Checkbox.isChecked()
+            state_lamp4 = self.ui.lamp4Checkbox.isChecked()
+
+            state_all = "g04" + "0000" + str(int(state_lamp1)) + str(int(state_lamp2)) + str(int(state_lamp3)) + str(int(state_lamp4))
+
+            print(state_all)
+
+            # send
+            self.sock.sendto(state_all.encode('utf-8'), (self.ip, self.port))
+
+            # new log message
+            self.log.new_log_message("sending " + state_all, "blue")
+
         if message != "":
             # send
             self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
@@ -56,13 +87,41 @@ class Sender(object):
             self.log.new_log_message("sending " + message, "blue")
 
     def reset(self):
-        message = "" #TODO: set real reset message
-
         self.ui.voltageSlider.setValue(0)
         self.ui.currentSlider.setValue(0)
+
+        # maybe not needed anymore
+        """# set voltage message
+        message = "g0100000000"
+
         # send
         self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
 
-        # new log message
-        self.log.new_log_message("sending " + message, "blue")
+        # set voltage message
+        message = "g0200000000"
 
+        # send
+        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
+        # set automode message
+        message = "g0300000001"
+
+        # send
+        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
+        # set lamps message
+        message = "g0400001111"
+
+        # send
+        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+        """
+
+        # set checkboxes
+        self.ui.automodeCheckbox.setChecked(True)
+        self.ui.lamp1Checkbox.setChecked(True)
+        self.ui.lamp2Checkbox.setChecked(True)
+        self.ui.lamp3Checkbox.setChecked(True)
+        self.ui.lamp4Checkbox.setChecked(True)
+
+        # new log message
+        self.log.new_log_message("reset", "yellow")
