@@ -22,3 +22,18 @@ Eine ausführliche Dokumentation findest du in unserem eCARus-Wiki unter https:/
 ## Wie bekomme ich den Source Code?
 
 Wenn ihr git installiert habt, reicht im Terminal einfach git clone https://github.com/spaibs/eCARus-Ladefahrrad.git einzugeben. Dadurch werden die ganzen Dateien in den Ordner eCARus-Ladefahrrad, der sich im aktuellen Verzeichnis befindet, geladen.
+
+## Was für Daten werden geschickt?
+
+Eine Nachricht, egal ob sie zur EB-GUI oder zum PC geschickt wird, ist folgendermaßen aufgebaut:
+
+- zuerst entwerder **g** oder **t**, also entwerder sollen die Daten zur EB-GUI (g) oder zum PC/Tower (t) geschickt werden (1 Byte lang)
+- dann eine ID (2 Bytes)
+- zum Schluss noch 8 Daten Bytes
+
+Folgende IDs sind implementiert:
+
+- 01: Spannung z.B. g0100000333 -> setzt Spannung auf 333 mV
+- 02: Strom z.B. g0200000333 -> setzt Strom auf 333 mA
+- 03: Automode ein/aus z.B. g0300000001 für an, g0300000000 für aus
+- 04: Lampen ein/aus: z.B. g0400001010 -> schalte Lampe 1 an, Lampe 2 aus, Lampe 3 an, Lampe 4 aus
