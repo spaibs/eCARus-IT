@@ -12,6 +12,9 @@ from log import Log
 # import Listener
 from listener import Listener
 
+# import Interpreter
+from interpreter import Interpreter
+
 __author__ = 'Fabian Graf'
 
 
@@ -49,6 +52,9 @@ class Main(QMainWindow):
         # start listener
         self.listener.start()
 
+        # new interpreter
+        self.interpreter = Interpreter(self.log, self.ui)
+
     def set_events(self):
         # sendButton clicked
         self.ui.sendButton.clicked.connect(lambda: self.sender.send("debug"))
@@ -79,7 +85,7 @@ class Main(QMainWindow):
         self.ui.lamp4Checkbox.stateChanged.connect(lambda: self.sender.send("checkbox-lamp"))
 
     def new_data_received(self, text):
-        print(text)
+        self.interpreter.interpret(text)
 
     def shutdown(self):
         self.listener.exit()

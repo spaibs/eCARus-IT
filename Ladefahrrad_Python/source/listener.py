@@ -7,7 +7,7 @@ __author__ = 'Fabian Graf'
 # ip of this pc
 ip = "0.0.0.0"
 
-# Receive port
+# listener port
 port = 40001
 
 # new socket

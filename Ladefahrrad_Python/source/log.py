@@ -26,6 +26,8 @@ class Log(object):
                 self.logtext += "<b style=color:'#3DAEE9'>"
             elif color == "yellow":
                 self.logtext += "<b style=color:'#FDBC4B'>"
+            elif color == "green":
+                self.logtext += "<b style=color:'#1CDC9A'>"
 
             # add actual text + end
             self.logtext += str(strftime("%H:%M:%S", lt)) + "</style></b>: " + text + "<br>"
