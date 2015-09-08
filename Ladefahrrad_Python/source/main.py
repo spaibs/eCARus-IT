@@ -46,7 +46,7 @@ class Main(QMainWindow):
         # new listener
         self.listener = Listener()
 
-        #
+        # new_data_received signal
         self.listener.data_received.connect(self.new_data_received)
 
         # start listener
