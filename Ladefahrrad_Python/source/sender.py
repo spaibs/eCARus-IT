@@ -97,5 +97,29 @@ class Sender(object):
         self.ui.lamp3Checkbox.setChecked(True)
         self.ui.lamp4Checkbox.setChecked(True)
 
+        # set voltage message
+        message = "g0100000000"
+
+        # send
+        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
+        # set voltage message
+        message = "g0200000000"
+
+        # send
+        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
+        # set automode message
+        message = "g0300000001"
+
+        # send
+        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
+        # set lamps message
+        message = "g0400001111"
+
+        # send
+        self.sock.sendto(message.encode('utf-8'), (self.ip, self.port))
+
         # new log message
         self.log.new_log_message("reset", "yellow")
