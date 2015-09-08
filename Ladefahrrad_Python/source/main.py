@@ -16,7 +16,7 @@ class Main(QMainWindow):
         QMainWindow.__init__(self)
 
         # load gui.ui
-        self.ui = loadUi('gui/gui.ui')
+        self.ui = loadUi('../gui/gui.ui')
 
         # show window
         self.ui.show()
