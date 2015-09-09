@@ -1,0 +1,10 @@
+// Generated from TUM_eCARus_WiSe_14_15_Reworked_2
+// by ASCIIExporter
+// date: 07.09.2015   at: 10:50:38
+// GUIDE model version:  5.5.3.92525
+
+include"settings.atfsm"
+include"events.atfsm"
+include"input.atfsm"
+include"state_machine.atfsm"
+

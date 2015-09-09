@@ -1,0 +1,185 @@
+// GUIDE model version:  5.5.3.92525
+
+// Properties used in GUIDE model
+/*
+ * Datapool declaration file:
+ * 
+ * Edit Help for value files:
+ * Note: for ASCII or unicode characters >127 use escape sequences with up to 32-bit hexadecimal values (e.g "\xD0E1") 
+ * Use "" to avoid misinterpretation of strings by the parser.
+ * 
+ * |...| optional part
+ * <...> mandatory part
+ * 
+ * Note: The datapool declaration file must contain one declaration block and may contain multiple mapping blocks.
+ *
+ * 1) Declaration block
+ *    Syntax:
+ *      declaration { ... };
+ *
+ * 1.1) Users within the declaration block
+ *    Syntax:
+ *      contexts { |<context name 0> <uint8 ID>;| ... |<context name N> <uint8 ID>;| };
+ * 1.2) Groups within the declaration block
+ *    Syntax:
+ *      groups { |<group name 0> <uint8 ID>;| ... |<group name N> <uint8 ID>;| };
+ * 1.3) Variants within the declaration block
+ *    Syntax:
+ *      variants { |<variant name 0> <uint32 ID> <label string>;| ... |<variant name N> <uint32 ID> <label string>;|};
+ * 1.4) Languages within the declaration block
+ *    Syntax:
+ *      languages
+ *      {
+ *          |<language name 0> <uint32 ID> <label string> <ISO/RFC country-language tag>;|
+ *          ...
+ *          |<language name N> <uint32 ID> <label string> <ISO/RFC country-language tag>;|
+ *      }
+ * 1.5) Modules within the declaration block
+ *    Syntax:
+ *      module <module name> reader <context name> writer <context name> |group <group name>| { ... };
+ *
+ *    Note: Multiple module declarations with the same name but different parameters are allowed.
+ *
+ * 1.5.1) Items within a module
+ *    Syntax:
+ *      <item name>::<value type> <implementation type> |persistent| |const| |auto_commit| |commit_and_forget| |comment string|;
+ *
+ *    Available built-in value types:
+ *      int8_t
+ *      int16_t
+ *      int32_t
+ *      int64_t
+ *      bool
+ *      float
+ *      color
+ *      image
+ *      font
+ *      model
+ *      string
+ *      data
+ *      void
+ *      list int8_t
+ *      list int16_t
+ *      list int32_t
+ *      list int64_t
+ *      list bool
+ *      list float
+ *      list color
+ *      list image
+ *      list font
+ *      list model
+ *      list string
+ *      list data
+ *      list void
+ *
+ *    Available implementation types:
+ *      direct
+ *      windowing_list
+ *      reference
+ *      reference_list
+ *      list_element_reference
+ *      list_element_reference_dp
+ *      virtual
+ *
+ * 2) Mapping block
+ *    Syntax:
+ *      mapping <context name 0> |... <context name N>|
+ *      {
+ *          |<item name 0> <uint32 ID>|
+ *          ...
+ *          |<item name N> <uint32 ID>|
+ *      }
+ *
+ */
+declaration
+{
+    contexts
+    {
+        hmi 0;
+        pdal42 42;
+        pdal45 45;
+    }
+    languages
+    {
+        Standard 0 Standard "en-US";
+        English 2 English "en-US";
+        French 3 French "fr-FR";
+        German 1 German "de-DE";
+    }
+    variants
+    {
+        Standard 0 Standard;
+    }
+    module "root"
+        reader hmi writer hmi
+    {
+        @id211571048152128049 Battery_Percentage::int32_t direct "";
+        @id211571965847442415 Color_Highlight_Bronze::color direct const "";
+        @id211575246162381663 Color_Highlight_Gold::color direct const "";
+        @id211579813596403650 Color_Highlight_Silver::color direct const "";
+        @id211577837610160841 Color_Highlight_Touch::color direct const "";
+        @id211577930420799973 Content_BatteryManager_Current::string direct const "";
+        @id211573910344953218 Content_BatteryManager_HighestV::string direct const "";
+        @id211574050268864366 Content_BatteryManager_LowestV::string direct const "";
+        @id211570794474712505 Content_BatteryManager_StackVoltage::string direct const "";
+        @id211577962079040205 Content_BatteryManager_Temperature::string direct const "";
+        @id211574470174396688 Content_Button_Mode_Boost::string direct const "";
+        @id211571824071209145 Content_Button_Mode_Eco::string direct const "";
+        @id211579826811341693 Content_Button_Mode_Recuperation::string direct const "";
+        @id211572351756260461 Content_Button_Mode_Sport::string direct const "";
+        @id211571718942720580 Content_Gestures_InfoText::string direct const "";
+        @id211576545384347043 Content_Info_Battery_Item::list string direct const "";
+        @id211578764017406006 Content_Info_Battery_Value::list string direct const "";
+        @id211579024748047950 Content_Info_General_Name::string direct const "";
+        @id211570697137018478 Content_Info_General_Text::string direct const "";
+        @id211579727498483207 Content_Info_Technical_Item::list string direct const "";
+        @id211576730294493872 Content_Info_Technical_Value::list string direct const "";
+        @id211573999982544409 MenuItem_Button_Gesture::string direct const "";
+        @id211573503916605315 MenuItem_Button_Info_Battery::string direct const "";
+        @id211576362374557004 MenuItem_Button_Info_General::string direct const "";
+        @id211575564896750283 MenuItem_Button_Info_Sponsors::string direct const "";
+        @id211572462349788691 MenuItem_Button_Info_Technical::string direct const "";
+        @id211579005928573154 MenuItem_Button_Information::string direct const "";
+        @id211571736660478421 MenuItem_Button_Media::string direct const "";
+        @id211575673210530698 MenuItem_Button_Navigation::string direct const "";
+        @id211575743952560338 MenuItem_Button_Settings::string direct const "";
+        @id211576872438248146 MenuItem_Button_Settings_Language::string direct const "";
+        @id211570481363082798 MenuItem_Button_Settings_Mode::string direct const "";
+        @id211576084914474172 Menu_Info_CurrentItem_Selected::int32_t direct "";
+        @id211575938727979204 Menu_Info_CurrentSponsor_Selected::int32_t direct "";
+        @id211577295319194292 ViewTitle_Home::string direct const "";
+        @id211573756724694194 ViewTitle_Info_Battery::string direct const "";
+        @id211572505006651340 ViewTitle_Info_General::string direct const "";
+        @id211573787840808702 ViewTitle_Info_Sponsors1::string direct const "";
+        @id211575442626853796 ViewTitle_Info_Sponsors2::string direct const "";
+        @id211578014937743587 ViewTitle_Info_Technical::string direct const "";
+        @id211572010935159906 ViewTitle_Settings::string direct const "";
+        @id211576585682183174 ViewTitle_Settings_Language::string direct const "";
+        @id211576865510175124 ViewTitle_Settings_Mode::string direct const "";
+    }
+    module "root"
+        reader hmi writer pdal42
+    {
+        @id211578865335198197 ExtIn_Battery_ChargeInfo::list string direct "";
+        @id211578336531157287 ExtIn_Battery_ChargeState::list int32_t direct "";
+        @id211576301505995214 ExtIn_Battery_DurchschnittSpannung::string direct "";
+        @id211576214571958698 ExtIn_Battery_HoechsteZelle::string direct "";
+        @id211579764279975364 ExtIn_Battery_NiedrigsteZelle::string direct "";
+        @id211575307411936570 ExtIn_Battery_StackSpannung::string direct "";
+        @id211578067209010957 ExtIn_Battery_Temperatur::string direct "";
+        @id211573406018580840 ExtIn_Indicator_Fern_IsOn::bool direct "";
+        @id211575778942718692 ExtIn_Indicator_Left_IsOn::bool direct "";
+        @id211573260005669803 ExtIn_Indicator_Light_IsOn::bool direct "";
+        @id211573032550765430 ExtIn_Indicator_Right_IsOn::bool direct "";
+        @id211572156853827664 ExtIn_Indicator_Warning_IsOn::bool direct "";
+        @id211577413984254912 ExtIn_VehicleMode_CurrentMode::int32_t direct "";
+    }
+    module "root"
+        reader pdal45 writer hmi
+    {
+        @id211574466541216229 ExtOut_Navigation_Map_Height::int32_t direct "";
+        @id211577793187174993 ExtOut_Navigation_Map_Width::int32_t direct "";
+        @id211578227352112579 ExtOut_Navigation_Map_X::int32_t direct "";
+        @id211573914375153361 ExtOut_Navigation_Map_Y::int32_t direct "";
+    }
+}
