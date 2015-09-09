@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTreeWidgetItem
 from PyQt5.uic import *
 from PyQt5 import QtCore
 
@@ -21,6 +21,10 @@ __author__ = 'Fabian Graf'
 class Main(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
+
+        # make variables
+        self.voltage = 0
+        self.current = 0
 
         # load gui.ui
         self.ui = loadUi('../gui/gui.ui')
@@ -55,6 +59,20 @@ class Main(QMainWindow):
         # new interpreter
         self.interpreter = Interpreter(self.log, self.ui)
 
+        # add tree
+        self.add_tree()
+
+    def add_tree(self):
+        # Items for tree
+        voltage_item = QTreeWidgetItem(["Spannung", str(self.voltage) + " V"])
+        self.ui.treeView.addTopLevelItem(voltage_item)
+
+        current_item = QTreeWidgetItem(["Strom", str(self.current) + " A"])
+        self.ui.treeView.addTopLevelItem(current_item)
+
+        power_item = QTreeWidgetItem(["Watt", "0 W"])
+        self.ui.treeView.addTopLevelItem(power_item)
+
     def set_events(self):
         # sendButton clicked
         self.ui.sendButton.clicked.connect(lambda: self.sender.send("debug"))
@@ -69,7 +87,7 @@ class Main(QMainWindow):
         self.ui.messageInput.returnPressed.connect(lambda: self.sender.send("debug"))
 
         # sliders value changed
-        self.ui.voltageSlider.sliderReleased.connect(lambda: self.sender.send("slider-voltage"))
+        self.ui.voltageSlider.valueChanged.connect(lambda: self.sender.send("slider-voltage"))
         self.ui.currentSlider.sliderReleased.connect(lambda: self.sender.send("slider-current"))
 
         # reset action
