@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1020</width>
-    <height>584</height>
+    <height>585</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -68,8 +68,14 @@
                  <property name="singleStep">
                   <number>100</number>
                  </property>
+                 <property name="pageStep">
+                  <number>100</number>
+                 </property>
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="tickPosition">
+                  <enum>QSlider::TicksBelow</enum>
                  </property>
                 </widget>
                </item>
@@ -88,8 +94,14 @@
                  <property name="singleStep">
                   <number>100</number>
                  </property>
+                 <property name="pageStep">
+                  <number>100</number>
+                 </property>
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="tickPosition">
+                  <enum>QSlider::TicksBelow</enum>
                  </property>
                 </widget>
                </item>
@@ -362,11 +374,6 @@ p, li { white-space: pre-wrap; }
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionWerte_ndern"/>
-   <addaction name="separator"/>
-   <addaction name="actionSenden"/>
-   <addaction name="actionLampe_Senden"/>
-   <addaction name="separator"/>
    <addaction name="actionDemo"/>
    <addaction name="actionDemoBeenden"/>
    <addaction name="separator"/>

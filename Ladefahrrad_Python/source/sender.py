@@ -77,7 +77,7 @@ class Sender(object):
             self.sock.sendto(state_all.encode('utf-8'), (self.ip, self.port))
 
             # new log message
-            self.log.new_log_message("sending " + state_all, "blue")
+            self.log.new_log_message(state_all + "sent", "blue")
 
         if message != "":
             # send

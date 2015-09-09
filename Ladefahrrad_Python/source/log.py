@@ -45,7 +45,13 @@ class Log(object):
 
             # change holdButton's text
             self.ui.holdButton.setText("Anhalten")
+
+            # new log message
+            self.new_log_message("log continued", "yellow")
         else:
+            # new log message
+            self.new_log_message("log stopped", "yellow")
+
             self.hold = True
 
             # change holdButton's text
