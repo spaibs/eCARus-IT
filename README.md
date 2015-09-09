@@ -23,7 +23,7 @@ Eine ausführliche Dokumentation findest du in unserem eCARus-Wiki unter https:/
 
 Wenn ihr git installiert habt, reicht im Terminal einfach **git clone https://github.com/spaibs/eCARus-Ladefahrrad.git** einzugeben. Dadurch werden die ganzen Dateien in den Ordner eCARus-Ladefahrrad, der sich im aktuellen Verzeichnis befindet, geladen.
 
-## Was für Daten werden geschickt?
+## Ladefahrrad: Was für Daten werden geschickt?
 
 Eine Nachricht, egal ob sie zur EB-GUI oder zum PC geschickt wird, ist folgendermaßen aufgebaut:
 
