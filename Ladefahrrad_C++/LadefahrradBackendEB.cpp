@@ -97,6 +97,7 @@ bool SocketTalker::open(uint16_t port)
 	
 	if (talkerSocket < 0)
 	{
+		__android_log_write(ANDROID_LOG_INFO, "ElektroBIT rec", "talker socket creation failed");
 		success = false;
 	}
 	
@@ -139,19 +140,6 @@ void SocketTalker::run()
 				m_pDataPool->Commit(DP_CONTEXT_ID);
 				m_pDataPool->Update(DP_CONTEXT_ID);
 				
-				message[0]= 'n';
-				message[1]= 'u';
-				message[2]= 's';
-				
-				message[3]= 's';
-				message[4]= ' ';
-				message[5]= 'k';
-				message[6]= 'u';
-				message[7]= 'c';
-				message[8]= 'h';
-				message[9]= 'e';
-				message[10]='n';
-			
 			m_pDataPool->Scalar_ReadValue(DP_CONTEXT_ID,DP_ID_lamp_1Soll,GtfTypeId::eTypeId_bool,&localLamp_1Soll,sizeof(localLamp_1Soll));
 			m_pDataPool->Scalar_ReadValue(DP_CONTEXT_ID,DP_ID_lamp_2Soll,GtfTypeId::eTypeId_bool,&localLamp_2Soll,sizeof(localLamp_2Soll));
 			m_pDataPool->Scalar_ReadValue(DP_CONTEXT_ID,DP_ID_lamp_3Soll,GtfTypeId::eTypeId_bool,&localLamp_3Soll,sizeof(localLamp_3Soll));
@@ -176,6 +164,7 @@ void SocketTalker::run()
 				message[10]='0';
 				if(localLampAutomodeSoll){message[10]= '1';}
 				
+				__android_log_write(ANDROID_LOG_INFO, "ElektroBIT send", "send message...");
 				if (sendto(talkerSocket, message, strlen(message), 0, (struct sockaddr *)&AndroidAddr, sizeof(AndroidAddr)) < 0) 
 				{
 					perror("sendto failed");
@@ -301,7 +290,7 @@ bool SocketListener::open(uint16_t port)
 	ListenerSocket = socket(AF_INET, SOCK_DGRAM, 0);
 	if ( ListenerSocket < 0 )
 	{
-	    __android_log_write(ANDROID_LOG_INFO, "ElektroBIT rec", "socket creation failed");
+	    __android_log_write(ANDROID_LOG_INFO, "ElektroBIT rec", "listener socket creation failed");
 		success = false;
 	}
 	else
@@ -353,6 +342,8 @@ void SocketListener::run()
 			{
 				if(ID[0] == '0' && ID[1] == '1')
 				{
+					__android_log_print(ANDROID_LOG_INFO, "ElektroBIT rec", "received voltage");
+					
 					voltage[0] = message[0];
 					voltage[1] = message[1];
 					voltage[2] = message[2];
@@ -362,13 +353,14 @@ void SocketListener::run()
 					voltage[6] = message[6];
 					voltage[7] = message[7];
 					voltage[8] = '\0'; // TERMINATE
-					int i;
-					i = atoi(voltage);
-					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_voltage_raw,GtfTypeId::eTypeId_int32,&i,sizeof(i));
+					int voltageTemp;
+					voltageTemp = atoi(voltage);
+					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_voltage_raw,GtfTypeId::eTypeId_int32,&voltageTemp,sizeof(voltageTemp));
 				}
 				
 				if(ID[0] == '0' && ID[1] == '2')
 				{
+					__android_log_print(ANDROID_LOG_INFO, "ElektroBIT rec", "received current");
 					current[0] = message[0];
 					current[1] = message[1];
 					current[2] = message[2];
@@ -378,35 +370,34 @@ void SocketListener::run()
 					current[6] = message[6];
 					current[7] = message[7];
 					current[8] = '\0'; // TERMINATE
-					int i;
-					i = atoi(current);
-					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_current_raw,GtfTypeId::eTypeId_int32,&i,sizeof(i));
+					int currentTemp;
+					currentTemp = atoi(current);
+					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_current_raw,GtfTypeId::eTypeId_int32,&currentTemp,sizeof(currentTemp));
 				}
 					
 				if(ID[0] == '0' && ID[1] == '3')
 				{
+					__android_log_print(ANDROID_LOG_INFO, "ElektroBIT rec", "received automode status");
 					if(message[7] == '0'){lampAutomodeIst = false;}else{lampAutomodeIst = true;}
 					
 					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_lampAutomodeIst,GtfTypeId::eTypeId_bool,&lampAutomodeIst,sizeof(lampAutomodeIst));
 					
 				}
 
-					if(ID[0] == '0' && ID[1] == '4')
+				if(ID[0] == '0' && ID[1] == '4')
 				{
-					
+					__android_log_print(ANDROID_LOG_INFO, "ElektroBIT rec", "received lamp status");
 					if(message[4] == '0'){lamp_1Ist = false;}else{lamp_1Ist = true;}
 					if(message[5] == '0'){lamp_2Ist = false;}else{lamp_2Ist = true;}
 					if(message[6] == '0'){lamp_3Ist = false;}else{lamp_3Ist = true;}
 					if(message[7] == '0'){lamp_4Ist = false;}else{lamp_4Ist = true;}
-
 					
 					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_lamp_1Ist,GtfTypeId::eTypeId_bool,&lamp_1Ist,sizeof(lamp_1Ist));
 					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_lamp_2Ist,GtfTypeId::eTypeId_bool,&lamp_2Ist,sizeof(lamp_2Ist));
 					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_lamp_3Ist,GtfTypeId::eTypeId_bool,&lamp_3Ist,sizeof(lamp_3Ist));
 					m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID,DP_ID_lamp_4Ist,GtfTypeId::eTypeId_bool,&lamp_4Ist,sizeof(lamp_4Ist));
 				}
-					
-					m_pDataPool->Commit(DP_CONTEXT_ID);
+				m_pDataPool->Commit(DP_CONTEXT_ID);				
 			}
 		}
 			
