@@ -1,4 +1,4 @@
-# eCARus-Ladefahrrad
+# eCARus-IT-GUI
 
 Hallo eCARusler,
 
