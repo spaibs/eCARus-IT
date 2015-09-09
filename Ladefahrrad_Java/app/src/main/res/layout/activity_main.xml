@@ -23,7 +23,8 @@
         android:layout_alignLeft="@+id/startServiceButton"
         android:layout_alignStart="@+id/startServiceButton"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:text="10.162.70.106" />
 
     <Button
         android:layout_width="wrap_content"
