@@ -87,7 +87,7 @@ class Main(QMainWindow):
         self.ui.messageInput.returnPressed.connect(lambda: self.sender.send("debug"))
 
         # sliders value changed
-        self.ui.voltageSlider.valueChanged.connect(lambda: self.sender.send("slider-voltage"))
+        self.ui.voltageSlider.sliderReleased.connect(lambda: self.sender.send("slider-voltage"))
         self.ui.currentSlider.sliderReleased.connect(lambda: self.sender.send("slider-current"))
 
         # reset action
