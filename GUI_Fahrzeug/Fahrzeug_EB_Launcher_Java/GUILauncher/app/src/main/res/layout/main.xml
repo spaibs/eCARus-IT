@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:clickable="false">
 
-    <com.example.gtflauncher.GtfHmiSurface
+    <de.tum.ei.ecarus.guilauncher.GtfHmiSurface
         android:id="@+id/hmiSurface"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

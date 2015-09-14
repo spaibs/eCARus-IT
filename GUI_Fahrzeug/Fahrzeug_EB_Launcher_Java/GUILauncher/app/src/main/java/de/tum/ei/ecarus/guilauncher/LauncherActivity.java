@@ -169,7 +169,7 @@ public class LauncherActivity extends Activity implements OnShutdownFromNativeLi
     {
         // @TUM: Return an array of additional libraries instead of null if required
 
-        return new String[]{"/libmyapp.so"};
-        //return null;
+        //return new String[]{"/libmyapp.so"};
+        return null;
     }
 }
