@@ -1,8 +1,8 @@
-# eCARus-IT-GUI
+# eCARus-IT
 
 Hallo eCARusler,
 
-das ist das offizielle GUI-Ladefahrrad Projekt von eCARus.
+das ist das offizielle IT Projekt von eCARus.
 
 ## Wie funktioniert GitHub?
 
