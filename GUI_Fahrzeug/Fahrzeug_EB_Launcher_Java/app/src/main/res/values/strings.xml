@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Auto GUI</string>
+    <string name="app_name">GUI Auto</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
