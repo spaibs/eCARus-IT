@@ -1,11 +1,15 @@
 package com.example.gtflauncher.tower;
 
+import android.media.MediaPlayer;
 import android.util.Log;
+import com.example.gtflauncher.LauncherActivity;
 
 public class TowerJNIAccess implements TowerMessageProcessor
 {
     private static final String LOG_TAG = "TowerJNIAccess";
     private static TowerJNIAccess instance = null;
+    public static MediaPlayer player;
+    public static LauncherActivity lad;
 
     protected TowerJNIAccess()
     {

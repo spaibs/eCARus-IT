@@ -2,7 +2,6 @@ package com.example.gtflauncher;
 
 import android.app.Activity;
 import android.os.Bundle;
-
 import android.os.Handler;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -11,6 +10,8 @@ import android.view.View;
 
 import com.elektrobit.gtf.GtfBridge;
 import com.elektrobit.gtf.jni.callback.OnShutdownFromNativeListener;
+import com.example.gtflauncher.music.Music;
+import com.example.gtflauncher.music.MusicJNIAccess;
 import com.example.gtflauncher.navigation.NavigationService;
 import com.example.gtflauncher.tower.TowerJNIAccess;
 import com.example.gtflauncher.tower.TowerReceiver;
@@ -28,6 +29,7 @@ public class LauncherActivity extends Activity implements OnShutdownFromNativeLi
     private GtfBridge gtfBridge;
     private NavigationService navigationService;
     private TowerReceiver towerReceiver;
+
 
     /* Android lifecycle management */
     @Override
@@ -57,6 +59,12 @@ public class LauncherActivity extends Activity implements OnShutdownFromNativeLi
 
         // Initialize Tower communication
         towerReceiver = new TowerReceiver(TowerJNIAccess.getInstance());
+
+        // Create Media
+        new Music(MusicJNIAccess.getInstance(), this);
+
+
+
     }
 
     @Override
@@ -195,9 +203,8 @@ public class LauncherActivity extends Activity implements OnShutdownFromNativeLi
         return getStandardModelPath();
     }
 
-    private String[] getAdditionalNativeLibs()
-    {
+    private String[] getAdditionalNativeLibs() {
         //return null;
-        return new String[]{"/libTowerAccess.so", "/libNavigationServiceAccess.so"};
+        return new String[]{"/libTowerAccess.so", "/libNavigationServiceAccess.so", "/libMusicServiceAccess.so"};
     }
 }

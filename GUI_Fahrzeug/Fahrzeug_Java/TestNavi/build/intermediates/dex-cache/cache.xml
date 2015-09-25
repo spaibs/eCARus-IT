@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/fabian/Desktop/TestNavi/app/libs/mapsforge-map-android-release-0.5.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="84cdae592db05cb61f4c9b60609ef72b8237e993">
+        <dex dex="/Users/fabian/Desktop/TestNavi/app/build/intermediates/pre-dexed/debug/mapsforge-map-android-release-0.5.2-ad5eb73af41f5378145f2749fe5ef403bbcacdec.jar" />
+    </item>
+    <item
+        jar="/Users/fabian/Desktop/TestNavi/app/libs/GtfBridge.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ca607d699f4803a98bd76f4136651549b51719e8">
+        <dex dex="/Users/fabian/Desktop/TestNavi/app/build/intermediates/pre-dexed/debug/GtfBridge-27f451160b6f4e5fb09fe7eb42d4a88f5352707d.jar" />
+    </item>
+    <item
+        jar="/Users/fabian/Desktop/TestNavi/app/libs/androidsvg-1.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d0cb3453e18fffeb053e9b7f052af3dcec9f75b4">
+        <dex dex="/Users/fabian/Desktop/TestNavi/app/build/intermediates/pre-dexed/debug/androidsvg-1.2.1-b87e3c909990232e55fcbc08d50fc3a4e4970bfd.jar" />
+    </item>
+    <item
+        jar="/Users/fabian/Desktop/TestNavi/app/libs/SwingMapViewer-release-0.5.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3b43d72807ad5b659b564df9b9352c62f8619482">
+        <dex dex="/Users/fabian/Desktop/TestNavi/app/build/intermediates/pre-dexed/debug/SwingMapViewer-release-0.5.2-16d623896443499ec6e7506a1d298e87157c4072.jar" />
+    </item>
+
+</items>
