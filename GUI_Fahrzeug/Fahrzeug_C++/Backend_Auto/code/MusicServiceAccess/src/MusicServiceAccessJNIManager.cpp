@@ -9,17 +9,17 @@
 // written permission of Elektrobit is prohibited.
 ////////////////////////////////////////////////////////////////////////////////
 
-#include <string.h>
-#include <GtfTypes/GtfMacros.h> // For GTF_UNUSED_PARAM
-#include "NavigationJNIAccess.h"
+#include <GtfTypes/GtfMacros.h>
+#include "LogCatLogger.h"
+#include "MusicServiceAccessJNIManager.h"
+#include <string>
 
 #ifdef ANDROID
-
-#define JAVA_ACCESS_CLASS "com/example/gtflauncher/navigation/NavigationJNIAccess"
+#include "MusicServiceAccessJNISignatures.h"
 
 // The global JNI ressources
 static JavaVM* g_javaVM = NULL;
-static jclass gClsAP = NULL;
+static jclass gClsAP = NULL; 
 
 // JNI entry point, This is executed when the Java virtual machine attaches to the native library.
 jint JNI_OnLoad(JavaVM* vm, void* reserved)
@@ -42,7 +42,7 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved)
     {
         LOGCAT_DEBUG("JNI_OnLoad vm->GetEnv successful.");
 
-        gClsAP = env->FindClass(JAVA_ACCESS_CLASS);
+        gClsAP = env->FindClass("com/example/gtflauncher/music/MusicJNIAccess");
         gClsAP = (jclass) env->NewGlobalRef(gClsAP); // Important: Declare as global reference
         if (NULL == gClsAP)
         {
@@ -64,105 +64,79 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved)
 void JNI_OnUnload(JavaVM* vm, void* reserved)
 {
     // Nothing to do here since android-dl closes the application before OnUnload
-    // We'll do the deinit when the application shutdown is performed by GTF
-    // in order to allow GTF to unload this library
+    // We'll do the deinit when shutdown of AudioPlayerService is called
 }
+
+// JNI Methods: Java --> C++
+
+/*
+ * Class:     com_example_gtflauncher_music_MusicJNIAccess
+ * Method:    addTitle
+ * Signature: (ZZZZ)V
+ */
+JNIEXPORT void JNICALL Java_com_example_gtflauncher_music_MusicJNIAccess_addTitle
+	(JNIEnv *env, jclass cls, jboolean dummy1, jboolean dummy2, jboolean dummy3)
+{
+    LOGCAT_DEBUG("JNI Call: addTitle()");
+
+    MusicServiceUpdateObserver *theObserver = MusicServiceAccessJNIManager::getInstance()->getObserver();
+    if(theObserver)
+    {
+		theObserver->addTitle((bool) dummy1, (bool) dummy2, (bool) dummy3);
+    }
+}
+
 
 #endif // ANDROID
 
-//
-// JNI calls to JAVA
+// JNI Methods: C++ --> Java
 
-void NavigationJNIAccess::onTouchMove(int32_t deltaX, int32_t deltaY)
+/////////////////////////////////////////////////////////////////////
+
+void MusicServiceAccessJNIManager::playTitle(char *title)
 {
 #ifdef ANDROID
-    JNIEnv *env = getEnv();
-    if(env)
-    {
-        jmethodID mid = env->GetStaticMethodID(gClsAP, "onTouchMove", "(II)V");
-        if (mid != NULL) 
-        {
-            // Just call the void method without parameters
-            env->CallStaticVoidMethod(gClsAP, mid, deltaX, deltaY);
-        }
-        else
-        {
-            LOGCAT_ERROR("onTouchMove() - GetMethodID failed!");
-        }
-    }
+	JNIEnv *env = getEnv();
+	if (env)
+	{
+		jmethodID mid = env->GetStaticMethodID(gClsAP, "playTitle", "(Ljava/lang/String;)V");
+		if (mid != NULL)
+		{
+			jstring titleParameter = env->NewStringUTF(title);
+			env->CallStaticVoidMethod(gClsAP, mid, titleParameter);
+		}
+		else
+		{
+			LOGCAT_ERROR("playTitle() - GetMethodID failed!");
+		}
+	}
 #else
-    // If not Android -> Nothing to do here
-    // To avoid compiler warnings e. g. on Windows use GTF_UNUSED_PARAM macro
-    GTF_UNUSED_PARAM(deltaX) 
-    GTF_UNUSED_PARAM(deltaY)
+	GTF_UNUSED_PARAM(newMode);
 #endif // ANDROID
 }
 
-void NavigationJNIAccess::onTouchRotate(float rotationAngle)
+void MusicServiceAccessJNIManager::pauseTitle()
 {
 #ifdef ANDROID
-    JNIEnv *env = getEnv();
-    if(env)
-    {
-        jmethodID mid = env->GetStaticMethodID(gClsAP, "onTouchRotate", "(F)V");
-        if (mid != NULL) 
-        {
-            env->CallStaticVoidMethod(gClsAP, mid, rotationAngle);
-        }
-        else
-        {
-            LOGCAT_ERROR("onTouchRotate() - GetMethodID failed!");
-        }
-    }
-#else
-    GTF_UNUSED_PARAM(rotationAngle)
+	JNIEnv *env = getEnv();
+	if (env)
+	{
+		jmethodID mid = env->GetStaticMethodID(gClsAP, "pauseTitle", "()V");
+		if (mid != NULL)
+		{
+			env->CallStaticVoidMethod(gClsAP, mid);
+		}
+		else
+		{
+			LOGCAT_ERROR("pauseTitle() - GetMethodID failed!");
+		}
+	}
 #endif // ANDROID
 }
 
-void NavigationJNIAccess::onTouchZoom(float zoomFactor)
-{
-#ifdef ANDROID
-    JNIEnv *env = getEnv();
-    if(env)
-    {
-        jmethodID mid = env->GetStaticMethodID(gClsAP, "onTouchZoom", "(F)V");
-        if (mid != NULL) 
-        {
-            env->CallStaticVoidMethod(gClsAP, mid, zoomFactor);
-        }
-        else
-        {
-            LOGCAT_ERROR("onTouchZoom() - GetMethodID failed!");
-        }
-    }
-#else
-    GTF_UNUSED_PARAM(zoomFactor)
-#endif // ANDROID
-}
+//////////////////////////////////////////////////////////////////////////////
 
-void NavigationJNIAccess::onDoubleTap(int32_t tapX, int32_t tapY)
-{
-#ifdef ANDROID
-    JNIEnv *env = getEnv();
-    if(env)
-    {
-        jmethodID mid = env->GetStaticMethodID(gClsAP, "onDoubleTap", "(II)V");
-        if (mid != NULL) 
-        {
-            env->CallStaticVoidMethod(gClsAP, mid, tapX, tapY);
-        }
-        else
-        {
-            LOGCAT_ERROR("onDoubleTap() - GetMethodID failed!");
-        }
-    }
-#else
-    GTF_UNUSED_PARAM(tapX) 
-    GTF_UNUSED_PARAM(tapY)
-#endif // ANDROID
-}
-
-void NavigationJNIAccess::deinitialize()
+void MusicServiceAccessJNIManager::deinitialize()
 {
 #ifdef ANDROID
     LOGCAT_DEBUG("deinitialize()");
@@ -191,13 +165,15 @@ void NavigationJNIAccess::deinitialize()
 }
 
 #ifdef ANDROID
-JNIEnv* NavigationJNIAccess::getEnv()
+
+JNIEnv* MusicServiceAccessJNIManager::getEnv()
 {
     JNIEnv* retVal = NULL;
 
     if(g_javaVM)
     {
         int ret = g_javaVM->GetEnv((void**)&retVal, JNI_VERSION_1_6);
+        //LOGCAT_DEBUG("MusicServiceJNIManager - getEnv() - retVal=%d", ret);
         if(JNI_EDETACHED == ret)
         {
             if(JNI_OK != g_javaVM->AttachCurrentThread(&retVal, NULL))
@@ -214,4 +190,28 @@ JNIEnv* NavigationJNIAccess::getEnv()
 
     return retVal;
 }
+
 #endif // ANDROID
+
+//
+// The observer methods
+void MusicServiceAccessJNIManager::registerObserver(MusicServiceUpdateObserver* observer)
+{
+    if(observer)
+    {
+        updateObserver = observer;
+    }
+}
+
+void MusicServiceAccessJNIManager::unregisterObserver(MusicServiceUpdateObserver* observer)
+{
+	if (observer && observer == updateObserver)
+    {
+		updateObserver = NULL;
+    }
+}
+
+MusicServiceUpdateObserver* MusicServiceAccessJNIManager::getObserver()
+{
+	return updateObserver;
+}

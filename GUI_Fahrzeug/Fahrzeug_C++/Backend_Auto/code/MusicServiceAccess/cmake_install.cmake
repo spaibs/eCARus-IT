@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/jonas/Desktop/Backend_Auto
+# Install script for directory: C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,21 +32,13 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/cmake_install.cmake")
-  include("C:/Users/jonas/Desktop/Backend_Auto/code/NavigationServiceAccess/cmake_install.cmake")
-  include("C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/cmake_install.cmake")
-
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./target" TYPE SHARED_LIBRARY FILES "C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/libMusicServiceAccess.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./target/libMusicServiceAccess.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./target/libMusicServiceAccess.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "C:/Users/jonas/Desktop/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/windows-x86_64/bin/arm-linux-androideabi-strip.exe" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./target/libMusicServiceAccess.so")
+    endif()
+  endif()
 endif()
 
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/jonas/Desktop/Backend_Auto/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

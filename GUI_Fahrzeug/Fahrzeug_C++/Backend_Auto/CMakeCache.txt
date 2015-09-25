@@ -167,8 +167,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=C:/Users/jonas/Desktop/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/windows-x86_64/bin/arm-linux-androideabi-strip.exe
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/jonas/Desktop/Backend_Auto/toolchain_android.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:STRING=../Backend_Auto/toolchain_android.cmake
 
 //If true, cmake will use relative paths in makefiles and projects.
 CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
@@ -205,6 +205,15 @@ GTF_SDK_Examples_SOURCE_DIR:STATIC=C:/Users/jonas/Desktop/Backend_Auto
 
 //No help, variable specified on the command line.
 GTF_TARGET_SDK_ROOT:PATH=C:/Elektrobit/EB GUIDE 5.5.3/platform/android_9_armv7
+
+//Value Computed by CMake
+MusicServiceAccess_BINARY_DIR:STATIC=C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess
+
+//Dependencies for the target
+MusicServiceAccess_LIB_DEPENDS:STATIC=general;GtfCommon;
+
+//Value Computed by CMake
+MusicServiceAccess_SOURCE_DIR:STATIC=C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess
 
 //Value Computed by CMake
 NavigationServiceAccess_BINARY_DIR:STATIC=C:/Users/jonas/Desktop/Backend_Auto/code/NavigationServiceAccess
@@ -313,7 +322,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -9,18 +9,18 @@
 // written permission of Elektrobit is prohibited.
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef NAVIGATION_SERVICE_ACCESS_SO_H_INCLUDED
-#define NAVIGATION_SERVICE_ACCESS_SO_H_INCLUDED
+#ifndef MUSICSERVICE_ACCESS_SO_H_INCLUDED
+#define MUSICSERVICE_ACCESS_SO_H_INCLUDED
 
 #include <GtfPluginLoader/GtfMainWorkLoop.h>
 #include <GtfMessenger/GtfMsgExtReceiver.h>
 #include <GtfCoreRuntime/GtfCoreModel.h>
-#include "NavigationServiceAccess.h"
+#include "MusicServiceAccess.h"
 
-class NavigationServiceAccessMsgReceiver : public GtfMsgExtReceiver
+class MusicServiceAccessMsgReceiver : public GtfMsgExtReceiver
 {
 public:
-    NavigationServiceAccessMsgReceiver();
+    MusicServiceAccessMsgReceiver();
 
     void startup(GtfPluginLoader& rLoader);
 
@@ -41,11 +41,11 @@ private:
     uint16_t m_validRunlevel;
     GtfCoreModel* m_pCoreModel;
     GtfMainWorkLoop* m_pWorkLoop;
-    NavigationServiceAccess m_service;
+    MusicServiceAccess m_service;
 
     void LockRunlevel();
     void UnlockRunlevel();
     void RequestShutdownOnFailure();
 };
 
-#endif // NAVIGATION_SERVICE_ACCESS_SO_H_INCLUDED
+#endif // MUSICSERVICE_ACCESS_SO_H_INCLUDED

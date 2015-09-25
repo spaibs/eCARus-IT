@@ -1,6 +1,6 @@
 export ANDROID_NDK_ROOT=C:/Users/jonas/Desktop/android-ndk-r8e
 SDK_PATH="C:/Elektrobit/EB GUIDE 5.5.3/platform/android_9_armv7"
- 
+
 INSTALL_PATH="./target"
 
 CMAKE_PATH="C:/CMake/bin"

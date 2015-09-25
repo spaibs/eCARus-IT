@@ -9,9 +9,9 @@
 // written permission of Elektrobit is prohibited.
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef TOWER_ACCESS_JNI_MANAGER_H
-#define TOWER_ACCESS_JNI_MANAGER_H
-#include "TowerUpdateObserver.h"
+#ifndef MUSICSERVICE_ACCESS_JNI_MANAGER_H
+#define MUSICSERVICE_ACCESS_JNI_MANAGER_H
+#include "MusicServiceUpdateObserver.h"
 #include <GtfTypes/GtfTypesC99.h> // for NULL
 #ifdef ANDROID
     #include <jni.h> // JNI only required on Android
@@ -19,35 +19,35 @@
 
 // Just a manager singleton which will do our JNI calls
 //
-class TowerAccessJNIManager
+class MusicServiceAccessJNIManager
 {
 public:
-	TowerAccessJNIManager() : updateObserver(NULL) {};
-    ~TowerAccessJNIManager(){};
+	MusicServiceAccessJNIManager() : updateObserver(NULL) {};
+    ~MusicServiceAccessJNIManager(){};
 
-    static TowerAccessJNIManager *getInstance()
+    static MusicServiceAccessJNIManager *getInstance()
     {
-        static TowerAccessJNIManager managerInstance;
+        static MusicServiceAccessJNIManager managerInstance;
         return &managerInstance;
     }
 
     void deinitialize();
 
 	// Method calls from TowerAccess application (model)
-	void updateVehicleMode(int32_t newMode);
-	void requestBatteryValuesUpdate();
+	void playTitle(char *title);
+	void pauseTitle();
 
 	// Observer methods
-	void registerObserver(TowerUpdateObserver* observer);
-	void unregisterObserver(TowerUpdateObserver* observer);
-	TowerUpdateObserver* getObserver();
+	void registerObserver(MusicServiceUpdateObserver* observer);
+	void unregisterObserver(MusicServiceUpdateObserver* observer);
+	MusicServiceUpdateObserver* getObserver();
 
 private:
-	TowerUpdateObserver *updateObserver;
+	MusicServiceUpdateObserver *updateObserver;
 
 #ifdef ANDROID
     JNIEnv* getEnv();
 #endif // ANDROID
 };
 
-#endif // TOWER_ACCESS_JNI_MANAGER_H
+#endif // MUSICSERVICE_ACCESS_JNI_MANAGER_H

@@ -19,13 +19,16 @@
 #include <GtfDataPool/GtfVariant.h>
 #include <android/log.h>
 #include "LogCatLogger.h"
-#include "events_0x10004.h"
+
 #include "datapool_pdal42.h"
-#include "TowerAccessJNIManager.h"
-#include "TowerAccess.h"
+
+#include "events_0x10005.h"
+
+#include "MusicServiceAccessJNIManager.h"
+#include "MusicServiceAccess.h"
 #include <string.h>
 
-TowerAccess::TowerAccess()
+MusicServiceAccess::MusicServiceAccess()
  : m_pWorkLoop(NULL)
  , m_pEvSystem(NULL)
  , m_pDataPool(NULL)
@@ -34,11 +37,11 @@ TowerAccess::TowerAccess()
 {
 }
 
-TowerAccess::~TowerAccess()
+MusicServiceAccess::~MusicServiceAccess()
 {
 }
 
-bool TowerAccess::Startup(GtfCoreModel& rCoreModel,
+bool MusicServiceAccess::Startup(GtfCoreModel& rCoreModel,
                            GtfMainWorkLoop& rWorkLoop,
                            const GtfFunctor0<void>& c_rCallback)
 {
@@ -59,10 +62,10 @@ bool TowerAccess::Startup(GtfCoreModel& rCoreModel,
         rCoreModel.getVariant()->Restore(DP_CONTEXT_ID);
 
         // setup the event processing task
-        m_evTask.SetExecuteCallback(gtf_bind(&TowerAccess::ProcessEvUpdate, this));
+        m_evTask.SetExecuteCallback(gtf_bind(&MusicServiceAccess::ProcessEvUpdate, this));
 
         // setup the datapool processing task
-        m_dpTask.SetExecuteCallback(gtf_bind(&TowerAccess::ProcessDpUpdate, this));
+        m_dpTask.SetExecuteCallback(gtf_bind(&MusicServiceAccess::ProcessDpUpdate, this));
 
         // register the event processing task
         fSuccess = m_pEvSystem->SetInvoker(DP_CONTEXT_ID,
@@ -74,15 +77,17 @@ bool TowerAccess::Startup(GtfCoreModel& rCoreModel,
         //
 		// TUM - SUBSCRIBE TO EVENTS HERE
 		//
-        fSuccess = fSuccess && m_pEvSystem->Subscribe(DP_CONTEXT_ID,
-            EVENT_GRP_ID_ExtOut_VehicleMode_SetMode,
-            EVENT_MSG_ID_ExtOut_VehicleMode_SetMode,
+			//////////////////////////////////////////////////////////////////////////////
+			fSuccess = fSuccess && m_pEvSystem->Subscribe(DP_CONTEXT_ID,
+            EVENT_GRP_ID_ExtOut_Media_PauseTitle,
+            EVENT_MSG_ID_ExtOut_Media_PauseTitle,
             SubscribeToEvent);
-
-        fSuccess = fSuccess && m_pEvSystem->Subscribe(DP_CONTEXT_ID,
-            EVENT_GRP_ID_ExtOut_Battery_UpdateValues,
-            EVENT_MSG_ID_ExtOut_Battery_UpdateValues,
+			
+			fSuccess = fSuccess && m_pEvSystem->Subscribe(DP_CONTEXT_ID,
+            EVENT_GRP_ID_ExtOut_Media_PlayTitle,
+            EVENT_MSG_ID_ExtOut_Media_PlayTitle,
             SubscribeToEvent);
+			//////////////////////////////////////////////////////////////////////////////
         // register the datapool processing task
         fSuccess = fSuccess && m_pDataPool->SetInvoker(DP_CONTEXT_ID,
                                                        gtf_bind(&GtfMainWorkLoop::PerformTask,
@@ -111,7 +116,7 @@ bool TowerAccess::Startup(GtfCoreModel& rCoreModel,
 			//
 			// TUM - DO ADDITIONAL INITIALIZATIONS HERE (IF REQUIRED)
 			//
-			TowerAccessJNIManager::getInstance()->registerObserver(this);
+			MusicServiceAccessJNIManager::getInstance()->registerObserver(this);
 			
             c_rCallback();
         }
@@ -124,16 +129,16 @@ bool TowerAccess::Startup(GtfCoreModel& rCoreModel,
     return fSuccess;
 }
 
-void TowerAccess::Shutdown(const GtfFunctor0<void>& c_rCallback)
+void MusicServiceAccess::Shutdown(const GtfFunctor0<void>& c_rCallback)
 {
-    LOGCAT_DEBUG("TowerAccess shutdown");
+    LOGCAT_DEBUG("MusicServiceAccess shutdown");
 
     if (m_fRunning != false)
     {
         m_fRunning = false;
 
         // invoke the final shutdown tasks
-        m_shutdownTask.SetExecuteCallback(gtf_bind(&TowerAccess::ProcessShutdown, this));
+        m_shutdownTask.SetExecuteCallback(gtf_bind(&MusicServiceAccess::ProcessShutdown, this));
         m_shutdownTask.SetDisposeCallback(c_rCallback);
         m_pWorkLoop->PerformTask(m_shutdownTask,
                                  gtf::Task::ePriorityValueDefault);
@@ -144,14 +149,14 @@ void TowerAccess::Shutdown(const GtfFunctor0<void>& c_rCallback)
     }
 }
 
-void TowerAccess::ProcessEvUpdate()
+void MusicServiceAccess::ProcessEvUpdate()
 {
     // fetch all events
     m_pEvSystem->Fetch(DP_CONTEXT_ID,
-                       gtf_bind(&TowerAccess::ProcessEvent, this));
+                       gtf_bind(&MusicServiceAccess::ProcessEvent, this));
 }
 
-void TowerAccess::ProcessEvent(GtfEventHandle handle)
+void MusicServiceAccess::ProcessEvent(GtfEventHandle handle)
 {
     GtfEvent ev(handle);
     uint32_t grpId;
@@ -164,42 +169,44 @@ void TowerAccess::ProcessEvent(GtfEventHandle handle)
         //
 		// TUM - EVALUATE EVENTS HERE
 		//
-		__android_log_print(ANDROID_LOG_DEBUG, "TowerAccess", "grpId : %i evId %i",grpId , evId);
-			
-			
-        if ((grpId == EVENT_GRP_ID_ExtOut_VehicleMode_SetMode) && (evId == EVENT_MSG_ID_ExtOut_VehicleMode_SetMode))
+		__android_log_print(ANDROID_LOG_DEBUG, "MusicServiceAccess", "grpId : %i evId %i",grpId , evId);
+		
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		if ((grpId == EVENT_GRP_ID_ExtOut_Media_PlayTitle) && (evId == EVENT_MSG_ID_ExtOut_Media_PlayTitle))
         {
-            int32_t requestedMode = 0;
-            bool success = ev.ReadValue(0, GtfTypeId::eTypeId_int32, &requestedMode, sizeof(int32_t));
-			
-			__android_log_print(ANDROID_LOG_DEBUG, "TowerAccess", "EVENT_GRP_ID_ExtOut_VehicleMode_SetMode grpId : %i evId %i",grpId , evId);
+            char title[99] = "";
+            bool success = ev.ReadValue(0, GtfTypeId::eTypeId_string, title, 100);
+
+			LOGCAT_DEBUG("play title");
 			
             if(success)
             {
-				TowerAccessJNIManager::getInstance()->updateVehicleMode(requestedMode);
+				MusicServiceAccessJNIManager::getInstance()->playTitle(title);
             }
         }
-        if ((grpId == EVENT_GRP_ID_ExtOut_Battery_UpdateValues) && (evId == EVENT_MSG_ID_ExtOut_Battery_UpdateValues))
+        if ((grpId == EVENT_GRP_ID_ExtOut_Media_PauseTitle) && (evId == EVENT_MSG_ID_ExtOut_Media_PauseTitle))
         {
-			TowerAccessJNIManager::getInstance()->requestBatteryValuesUpdate();
+			LOGCAT_DEBUG("pause title");
+			MusicServiceAccessJNIManager::getInstance()->pauseTitle();
         }
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
 }
 
-void TowerAccess::ProcessDpUpdate()
+void MusicServiceAccess::ProcessDpUpdate()
 {
     // update the datapool properties
     m_pDataPool->Update(DP_CONTEXT_ID);
 
     // fetch all datapool notifications
     m_pDataPool->Fetch(DP_CONTEXT_ID,
-                       gtf_bind(&TowerAccess::ProcessDatapool, this));
+                       gtf_bind(&MusicServiceAccess::ProcessDatapool, this));
 
     // commit all changed properties
     m_pDataPool->Commit(DP_CONTEXT_ID);
 }
 
-void TowerAccess::ProcessDatapool(const GtfTypesDP::itemId_t* const c_pItemId,
+void MusicServiceAccess::ProcessDatapool(const GtfTypesDP::itemId_t* const c_pItemId,
                                  const uint32_t c_itemCount)
 {
     GTF_UNUSED_PARAM(c_pItemId)
@@ -210,12 +217,12 @@ void TowerAccess::ProcessDatapool(const GtfTypesDP::itemId_t* const c_pItemId,
     //
 }
 
-void TowerAccess::ProcessShutdown()
+void MusicServiceAccess::ProcessShutdown()
 {
     //
     // TUM - DO ADDITIONAL DEINITIALIZATIONS HERE (IF REQUIRED)
     //
-	TowerAccessJNIManager::getInstance()->unregisterObserver(this);
+	MusicServiceAccessJNIManager::getInstance()->unregisterObserver(this);
 
     if (m_pEvSystem != NULL)
     {
@@ -223,13 +230,13 @@ void TowerAccess::ProcessShutdown()
 		// TUM - UNSUBSCRIBE ALL SUBSCRIBED EVENTS HERE
 		//
         m_pEvSystem->Unsubscribe(DP_CONTEXT_ID,
-            EVENT_GRP_ID_ExtOut_VehicleMode_SetMode,
-            EVENT_MSG_ID_ExtOut_VehicleMode_SetMode,
+            EVENT_GRP_ID_ExtOut_Media_PauseTitle,
+            EVENT_MSG_ID_ExtOut_Media_PauseTitle,
             SubscribeToEvent);
 
         m_pEvSystem->Unsubscribe(DP_CONTEXT_ID,
-            EVENT_GRP_ID_ExtOut_Battery_UpdateValues,
-            EVENT_MSG_ID_ExtOut_Battery_UpdateValues,
+            EVENT_GRP_ID_ExtOut_Media_PlayTitle,
+            EVENT_MSG_ID_ExtOut_Media_PlayTitle,
             SubscribeToEvent);
 
         // unregister the event processing task
@@ -259,44 +266,14 @@ void TowerAccess::ProcessShutdown()
     m_pDataPool = NULL;
 }
 
-void TowerAccess::onLightStateUpdated(bool lowBeamIsOn, bool highBeamIsOn, bool indicatorRightIsOn, bool indicatorLeftIsOn, bool indicatorWarningLightIsOn)
+void MusicServiceAccess::addTitle(bool dummy1, bool dummy2, bool dummy3)
 {
-	LOGCAT_WARN("LIGHT STATE RECEIVED: LowBeam: %d, HightBeam: %d, Right: %d, Left: %d, Warn: %d", lowBeamIsOn,highBeamIsOn,indicatorRightIsOn,indicatorLeftIsOn,indicatorWarningLightIsOn);
 	
-	m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID, DP_ID_ExtIn_Indicator_Light_IsOn, GtfTypeId::eTypeId_bool, &lowBeamIsOn, sizeof(bool));
-	m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID, DP_ID_ExtIn_Indicator_Fern_IsOn, GtfTypeId::eTypeId_bool, &highBeamIsOn, sizeof(bool));
-	m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID, DP_ID_ExtIn_Indicator_Right_IsOn, GtfTypeId::eTypeId_bool, &indicatorRightIsOn, sizeof(bool));
-	m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID, DP_ID_ExtIn_Indicator_Left_IsOn, GtfTypeId::eTypeId_bool, &indicatorLeftIsOn, sizeof(bool));
-	m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID, DP_ID_ExtIn_Indicator_Warning_IsOn, GtfTypeId::eTypeId_bool, &indicatorWarningLightIsOn, sizeof(bool));
-
+	//m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID, DP_ID_Extdummy1, GtfTypeId::eTypeId_bool, &dummy1, sizeof(bool));
+	//m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID, DP_ID_Extdummy2, GtfTypeId::eTypeId_bool, &dummy2, sizeof(bool));
+	//m_pDataPool->Scalar_WriteValue(DP_CONTEXT_ID, DP_ID_Extdummy3, GtfTypeId::eTypeId_bool, &idummy3, sizeof(bool));
+	
 	m_pDataPool->Commit(DP_CONTEXT_ID);
 }
 
-void TowerAccess::onGestureDetected(int32_t gestureType)
-{
-	if (gestureType == 1) // W-O
-	{
-		GtfEvent gestureEvent(*m_pEvSystem, EVENT_GRP_ID_ExtIn_Tower_Gesture_WO, EVENT_MSG_ID_ExtIn_Tower_Gesture_WO);
-		gestureEvent.Publish();
-	}
-	else if (gestureType == 2) // O-W
-	{
-		GtfEvent gestureEvent(*m_pEvSystem, EVENT_GRP_ID_ExtIn_Tower_Gesture_OW, EVENT_MSG_ID_ExtIn_Tower_Gesture_OW);
-		gestureEvent.Publish();
-	}
-	else if (gestureType == 3) // S-N
-	{
-		GtfEvent gestureEvent(*m_pEvSystem, EVENT_GRP_ID_ExtIn_Tower_Gesture_SN, EVENT_MSG_ID_ExtIn_Tower_Gesture_SN);
-		gestureEvent.Publish();
-	}
-	else if (gestureType == 4) // N-S
-	{
-		GtfEvent gestureEvent(*m_pEvSystem, EVENT_GRP_ID_ExtIn_Tower_Gesture_NS, EVENT_MSG_ID_ExtIn_Tower_Gesture_NS);
-		gestureEvent.Publish();
-	}
-	else
-	{
-		LOGCAT_WARN("TowerAccess::onGestureDetected - Unsupported gesture type: %d", gestureType);
-	}
-}
 	

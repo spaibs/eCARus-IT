@@ -9,8 +9,8 @@
 // written permission of Elektrobit is prohibited.
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef EMPTY_APP_H_INCLUDED
-#define EMPTY_APP_H_INCLUDED
+#ifndef MUSICSERVICE_ACCESS_H_INCLUDED
+#define MUSICSERVICE_ACCESS_H_INCLUDED
 
 #include <GtfTypes/GtfTypesC99.h>
 #include <GtfPluginLoader/GtfMainWorkLoop.h>
@@ -20,16 +20,21 @@
 #include <GtfResourcer/GtfResourcer.h>
 #include <GtfOSAL/GtfFunctorTask.h>
 
-class NavigationServiceAccess
+#include "MusicServiceUpdateObserver.h"
+
+class MusicServiceAccess : public MusicServiceUpdateObserver
 {
 public:
-    NavigationServiceAccess();
-    ~NavigationServiceAccess();
+    MusicServiceAccess();
+    ~MusicServiceAccess();
 
     bool Startup(GtfCoreModel& rCoreModel,
                    GtfMainWorkLoop& rWorkLoop,
                    const GtfFunctor0<void>& c_rCallback);
     void Shutdown(const GtfFunctor0<void>& c_rCallback);
+	
+	// Interface: MusicServiceUpdateObserver
+	void addTitle(bool dummy1, bool dummy2, bool dummy3);
 
 private:
     GtfMainWorkLoop* m_pWorkLoop;
@@ -53,4 +58,4 @@ private:
                          const uint32_t c_itemCount);
 };
 
-#endif // EMPTY_APP_H_INCLUDED
+#endif // MUSICSERVICE_ACCESS_H_INCLUDED

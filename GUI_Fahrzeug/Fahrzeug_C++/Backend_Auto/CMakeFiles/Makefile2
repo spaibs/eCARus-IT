@@ -84,7 +84,7 @@ code/TowerAccess/preinstall:
 code/TowerAccess/CMakeFiles/TowerAccess.dir/all:
 	$(MAKE) -f code/TowerAccess/CMakeFiles/TowerAccess.dir/build.make code/TowerAccess/CMakeFiles/TowerAccess.dir/depend
 	$(MAKE) -f code/TowerAccess/CMakeFiles/TowerAccess.dir/build.make code/TowerAccess/CMakeFiles/TowerAccess.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/jonas/Desktop/Backend_Auto/CMakeFiles --progress-num=5,6,7,8 "Built target TowerAccess"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/jonas/Desktop/Backend_Auto/CMakeFiles --progress-num=9,10,11,12 "Built target TowerAccess"
 .PHONY : code/TowerAccess/CMakeFiles/TowerAccess.dir/all
 
 # Include target in all.
@@ -139,7 +139,7 @@ code/NavigationServiceAccess/preinstall:
 code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/all:
 	$(MAKE) -f code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/build.make code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/depend
 	$(MAKE) -f code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/build.make code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/jonas/Desktop/Backend_Auto/CMakeFiles --progress-num=1,2,3,4 "Built target NavigationServiceAccess"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/jonas/Desktop/Backend_Auto/CMakeFiles --progress-num=5,6,7,8 "Built target NavigationServiceAccess"
 .PHONY : code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/all
 
 # Include target in all.
@@ -166,6 +166,61 @@ code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/clean:
 
 # clean rule for target.
 clean: code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory code/MusicServiceAccess
+
+# Convenience name for "all" pass in the directory.
+code/MusicServiceAccess/all: code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/all
+
+.PHONY : code/MusicServiceAccess/all
+
+# Convenience name for "clean" pass in the directory.
+code/MusicServiceAccess/clean: code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/clean
+
+.PHONY : code/MusicServiceAccess/clean
+
+# Convenience name for "preinstall" pass in the directory.
+code/MusicServiceAccess/preinstall:
+
+.PHONY : code/MusicServiceAccess/preinstall
+
+#=============================================================================
+# Target rules for target code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir
+
+# All Build rule for target.
+code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/all:
+	$(MAKE) -f code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/build.make code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/depend
+	$(MAKE) -f code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/build.make code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/jonas/Desktop/Backend_Auto/CMakeFiles --progress-num=1,2,3,4 "Built target MusicServiceAccess"
+.PHONY : code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/all
+
+# Include target in all.
+all: code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/jonas/Desktop/Backend_Auto/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/jonas/Desktop/Backend_Auto/CMakeFiles 0
+.PHONY : code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/rule
+
+# Convenience name for target.
+MusicServiceAccess: code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/rule
+
+.PHONY : MusicServiceAccess
+
+# clean rule for target.
+code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/clean:
+	$(MAKE) -f code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/build.make code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/clean
+.PHONY : code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/clean
+
+# clean rule for target.
+clean: code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/clean
 
 .PHONY : clean
 

@@ -36,6 +36,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "cmake/default_flags.cmake"
   "cmake/platform.cmake"
   "cmake/utility_macros.cmake"
+  "code/MusicServiceAccess/CMakeLists.txt"
   "code/NavigationServiceAccess/CMakeLists.txt"
   "code/TowerAccess/CMakeLists.txt"
   "toolchain_android.cmake"
@@ -52,10 +53,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "code/TowerAccess/CMakeFiles/CMakeDirectoryInformation.cmake"
   "code/NavigationServiceAccess/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "code/MusicServiceAccess/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "code/TowerAccess/CMakeFiles/TowerAccess.dir/DependInfo.cmake"
   "code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/DependInfo.cmake"
+  "code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/DependInfo.cmake"
   )

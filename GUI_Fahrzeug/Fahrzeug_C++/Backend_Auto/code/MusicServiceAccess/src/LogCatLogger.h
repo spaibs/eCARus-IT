@@ -21,7 +21,7 @@
     #include <android/log.h>
     #include <time.h>
 
-    #define LOGCAT_TAG "NavigationServiceAccess"
+    #define LOGCAT_TAG "TowerAccess"
 
     #define LOGCAT_VERBOSE(...) ((void)__android_log_print(ANDROID_LOG_VERBOSE, LOGCAT_TAG, __VA_ARGS__))
     #define LOGCAT_DEBUG(...)   ((void)__android_log_print(ANDROID_LOG_DEBUG,   LOGCAT_TAG, __VA_ARGS__))

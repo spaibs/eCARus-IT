@@ -19,11 +19,11 @@
 #include <GtfPluginLoader/GtfPluginFactory.h>
 #include <GtfRunlevel/GtfRunlevel.h>
 #include <GtfMessageId/GtfMessageId.h>
-#include "NavigationServiceAccessSO.h"
+#include "MusicServiceAccessSO.h"
 
 #define EMPTY_APP_SERVICE_STARTUP_RUNLEVEL (GTF_RUNLEVEL_CORE_LOAD_MODEL + 2)
 
-NavigationServiceAccessMsgReceiver::NavigationServiceAccessMsgReceiver()
+MusicServiceAccessMsgReceiver::MusicServiceAccessMsgReceiver()
 : m_currentDirection(0)
 , m_currentRunlevel(GTF_RUNLEVEL_MIN)
 , m_validRunlevel(GTF_RUNLEVEL_MAX)
@@ -32,7 +32,7 @@ NavigationServiceAccessMsgReceiver::NavigationServiceAccessMsgReceiver()
 {
 }
 
-void NavigationServiceAccessMsgReceiver::startup(GtfPluginLoader& rLoader)
+void MusicServiceAccessMsgReceiver::startup(GtfPluginLoader& rLoader)
 {
     GtfMsgExtReceiver::Init(rLoader);
 
@@ -51,7 +51,7 @@ void NavigationServiceAccessMsgReceiver::startup(GtfPluginLoader& rLoader)
     }
 }
 
-void NavigationServiceAccessMsgReceiver::shutdown()
+void MusicServiceAccessMsgReceiver::shutdown()
 {
     // unsubscribe to system messages
     if (GetMessenger() != NULL)
@@ -60,7 +60,7 @@ void NavigationServiceAccessMsgReceiver::shutdown()
     }
 }
 
-void NavigationServiceAccessMsgReceiver::HandleInterface(const uint32_t c_interfaceId,
+void MusicServiceAccessMsgReceiver::HandleInterface(const uint32_t c_interfaceId,
                                             const uint32_t c_version,
                                             const uint16_t c_validRunlevel,
                                             void * const c_pObj)
@@ -75,7 +75,7 @@ void NavigationServiceAccessMsgReceiver::HandleInterface(const uint32_t c_interf
     }
 }
 
-uint16_t NavigationServiceAccessMsgReceiver::HandleRunlevel(const uint16_t c_runlevel,
+uint16_t MusicServiceAccessMsgReceiver::HandleRunlevel(const uint16_t c_runlevel,
                                                const int8_t c_direction)
 {
     uint16_t requestRunlevel = c_runlevel;
@@ -101,7 +101,7 @@ uint16_t NavigationServiceAccessMsgReceiver::HandleRunlevel(const uint16_t c_run
                 LockRunlevel();
                 fSuccess = m_service.Startup(*m_pCoreModel,
                                          *m_pWorkLoop,
-                                         gtf_bind(&NavigationServiceAccessMsgReceiver::UnlockRunlevel, this));
+                                         gtf_bind(&MusicServiceAccessMsgReceiver::UnlockRunlevel, this));
             }
             if (fSuccess == false)
             {
@@ -120,7 +120,7 @@ uint16_t NavigationServiceAccessMsgReceiver::HandleRunlevel(const uint16_t c_run
         if (c_runlevel == m_validRunlevel)
         {
             LockRunlevel();
-            m_service.Shutdown(gtf_bind(&NavigationServiceAccessMsgReceiver::UnlockRunlevel, this));
+            m_service.Shutdown(gtf_bind(&MusicServiceAccessMsgReceiver::UnlockRunlevel, this));
             m_pCoreModel = NULL;
         }
     }
@@ -128,26 +128,26 @@ uint16_t NavigationServiceAccessMsgReceiver::HandleRunlevel(const uint16_t c_run
     return requestRunlevel;
 }
 
-void NavigationServiceAccessMsgReceiver::HandleMessage(const GtfMsgHandle c_msg)
+void MusicServiceAccessMsgReceiver::HandleMessage(const GtfMsgHandle c_msg)
 {
     GTF_UNUSED_PARAM(c_msg);
 }
 
-void NavigationServiceAccessMsgReceiver::LockRunlevel()
+void MusicServiceAccessMsgReceiver::LockRunlevel()
 {
     GtfMsgHandle msg = GetMessenger()->CreateMsg(GTF_MID_RUN_RUNLEVEL_LOCK);
     GetMessenger()->PublishMsg(msg);
     GetMessenger()->DestroyMsg(msg);
 }
 
-void NavigationServiceAccessMsgReceiver::UnlockRunlevel()
+void MusicServiceAccessMsgReceiver::UnlockRunlevel()
 {
     GtfMsgHandle msg = GetMessenger()->CreateMsg(GTF_MID_RUN_RUNLEVEL_UNLOCK);
     GetMessenger()->PublishMsg(msg);
     GetMessenger()->DestroyMsg(msg);
 }
 
-void NavigationServiceAccessMsgReceiver::RequestShutdownOnFailure()
+void MusicServiceAccessMsgReceiver::RequestShutdownOnFailure()
 {
     // send the system failure message
     GtfMsgHandle handle = GetMessenger()->CreateMsg(GTF_MID_SYSTEM_FAILURE);
@@ -166,10 +166,10 @@ GTF_PLUGIN_SO_SYMBOL GtfPlugin * GTF_CREATE_PLUGIN_SYMBOL(uint32_t argc, char** 
 {
     GTF_UNUSED_PARAM(argc);
     GTF_UNUSED_PARAM(argv);
-    return GtfPluginFactory<NavigationServiceAccessMsgReceiver>::create();
+    return GtfPluginFactory<MusicServiceAccessMsgReceiver>::create();
 }
 
 GTF_PLUGIN_SO_SYMBOL void GTF_DESTROY_PLUGIN_SYMBOL(GtfPlugin * const c_pPlugin)
 {
-    GtfPluginFactory<NavigationServiceAccessMsgReceiver>::destroy(c_pPlugin);
+    GtfPluginFactory<MusicServiceAccessMsgReceiver>::destroy(c_pPlugin);
 }

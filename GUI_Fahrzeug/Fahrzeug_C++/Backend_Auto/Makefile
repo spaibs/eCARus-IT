@@ -180,6 +180,19 @@ NavigationServiceAccess/fast:
 	$(MAKE) -f code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/build.make code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir/build
 .PHONY : NavigationServiceAccess/fast
 
+#=============================================================================
+# Target rules for targets named MusicServiceAccess
+
+# Build rule for target.
+MusicServiceAccess: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MusicServiceAccess
+.PHONY : MusicServiceAccess
+
+# fast build rule for target.
+MusicServiceAccess/fast:
+	$(MAKE) -f code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/build.make code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir/build
+.PHONY : MusicServiceAccess/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -194,6 +207,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... TowerAccess"
 	@echo "... NavigationServiceAccess"
+	@echo "... MusicServiceAccess"
 .PHONY : help
 
 

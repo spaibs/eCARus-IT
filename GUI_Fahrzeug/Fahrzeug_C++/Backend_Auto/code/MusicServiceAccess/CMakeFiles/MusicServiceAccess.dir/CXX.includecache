@@ -466,13 +466,13 @@ GtfUtils/smart_ptr/GtfRefCountedPtr.h
 GtfMemory/GtfMemory.h
 -
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/LogCatLogger.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/LogCatLogger.h
 android/log.h
 -
 time.h
 -
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccess.cpp
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccess.cpp
 stdio.h
 -
 GtfTypes/GtfStdDef.h
@@ -492,19 +492,19 @@ GtfDataPool/GtfVariant.h
 android/log.h
 -
 LogCatLogger.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/LogCatLogger.h
-events_0x10004.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/events_0x10004.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/LogCatLogger.h
 datapool_pdal42.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/datapool_pdal42.h
-TowerAccessJNIManager.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessJNIManager.h
-TowerAccess.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccess.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/datapool_pdal42.h
+events_0x10005.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/events_0x10005.h
+MusicServiceAccessJNIManager.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessJNIManager.h
+MusicServiceAccess.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccess.h
 string.h
 -
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccess.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccess.h
 GtfTypes/GtfTypesC99.h
 -
 GtfPluginLoader/GtfMainWorkLoop.h
@@ -519,34 +519,34 @@ GtfResourcer/GtfResourcer.h
 -
 GtfOSAL/GtfFunctorTask.h
 -
-TowerUpdateObserver.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerUpdateObserver.h
+MusicServiceUpdateObserver.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceUpdateObserver.h
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessJNIManager.cpp
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessJNIManager.cpp
 GtfTypes/GtfMacros.h
 -
 LogCatLogger.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/LogCatLogger.h
-TowerAccessJNIManager.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessJNIManager.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/LogCatLogger.h
+MusicServiceAccessJNIManager.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessJNIManager.h
 string
 -
-TowerAccessJNISignatures.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessJNISignatures.h
+MusicServiceAccessJNISignatures.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessJNISignatures.h
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessJNIManager.h
-TowerUpdateObserver.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerUpdateObserver.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessJNIManager.h
+MusicServiceUpdateObserver.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceUpdateObserver.h
 GtfTypes/GtfTypesC99.h
 -
 jni.h
 -
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessJNISignatures.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessJNISignatures.h
 jni.h
 -
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessSO.cpp
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessSO.cpp
 GtfPluginLoader/GtfPluginSymbols.h
 -
 GtfPluginLoader/GtfPluginLoader.h
@@ -557,28 +557,28 @@ GtfRunlevel/GtfRunlevel.h
 -
 GtfMessageId/GtfMessageId.h
 -
-TowerAccessSO.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessSO.h
+MusicServiceAccessSO.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessSO.h
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccessSO.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccessSO.h
 GtfPluginLoader/GtfMainWorkLoop.h
 -
 GtfMessenger/GtfMsgExtReceiver.h
 -
 GtfCoreRuntime/GtfCoreModel.h
 -
-TowerAccess.h
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerAccess.h
+MusicServiceAccess.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceAccess.h
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/TowerUpdateObserver.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/MusicServiceUpdateObserver.h
 GtfTypes/GtfTypesC99.h
 -
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/datapool_pdal42.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/datapool_pdal42.h
 GtfTypes/GtfStdDef.h
 -
 
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/src/events_0x10004.h
+C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/src/events_0x10005.h
 GtfTypes/GtfStdDef.h
 -
 
