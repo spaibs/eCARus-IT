@@ -20,15 +20,17 @@ public class TowerMessageFactory
             // messageId
 
             case LightStateMessage.VALID_MESSAGE_ID:
+                //Log.w(LOG_TAG, "Light message. Id: " + TowerMessage.parseId(messageBuffer));
                 parsedMessage = new LightStateMessage(messageBuffer);
                 break;
 
             case GestureMessage.VALID_MESSAGE_ID:
+                Log.e(LOG_TAG, "Gesture message. Id: " + TowerMessage.parseId(messageBuffer));
                 parsedMessage = new GestureMessage(messageBuffer);
                 break;
 
             default:
-                Log.w(LOG_TAG, "Unhandled message. Id: " + TowerMessage.parseId(messageBuffer));
+                //Log.w(LOG_TAG, "Unhandled message. Id: " + TowerMessage.parseId(messageBuffer));
                 break;
         }
 

@@ -1,7 +1,5 @@
 package com.example.gtflauncher.music;
 
-import android.util.Log;
-
 public class MusicJNIAccess {
     private static MusicJNIAccess instance = null;
     private static Music music;
@@ -21,6 +19,10 @@ public class MusicJNIAccess {
     // pauses current title
     public static void pauseTitle() {
         music.pauseTitle();
+    }
+
+    public static void setVolume(int volume) {
+        //TODO
     }
 
     // JNI Methods: Java --> C++

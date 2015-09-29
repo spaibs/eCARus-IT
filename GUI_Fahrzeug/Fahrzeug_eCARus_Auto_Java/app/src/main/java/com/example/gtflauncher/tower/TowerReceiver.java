@@ -49,10 +49,7 @@ public class TowerReceiver implements Runnable
             listenerSocket = new DatagramSocket(TOWER_PORT);
             while(!listenerThread.isInterrupted())
             {
-
-
-                Log.d(LOG_TAG, "Receive loop...");
-                listenerSocket.receive(messagePacket); // This is blocking?
+                listenerSocket.receive(messagePacket);
 
                 TowerMessage receivedMessage = TowerMessageFactory.parse(messagePacket.getData());
 

@@ -1,6 +1,9 @@
 package com.example.gtflauncher;
 
 import android.app.Activity;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -35,7 +38,21 @@ public class LauncherActivity extends Activity implements OnShutdownFromNativeLi
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
+
+
+
         super.onCreate(savedInstanceState);
+
+
+
+        // start Ethernet App
+        //Intent intent = new Intent(Intent.ACTION_MAIN);
+        //intent.setComponent(new ComponentName("com.fsl.ethernet","com.package.address.MainActivity"));
+        //startActivity(intent);
+
+
+
 
         String startupConfigFile = getStartupConfigFile();
         setContentView(R.layout.main);
@@ -65,21 +82,38 @@ public class LauncherActivity extends Activity implements OnShutdownFromNativeLi
 
 
 
+        //Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.fsl.ethernet");
+        //launchIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        //launchIntent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
+        //startActivity(launchIntent);
+
+
+
+        /*Intent i = getBaseContext().getPackageManager()
+        .getLaunchIntentForPackage("com.fsl.ethernet");
+
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+*/
+
+
     }
 
     @Override
     protected void onStart()
     {
+
         super.onStart();
         final Handler handler = new Handler();
-        handler.postDelayed(new Runnable()
-        {
+        handler.postDelayed(new Runnable() {
             @Override
-            public void run()
-            {
+            public void run() {
                 navigationService.prepareNavigation();
             }
         }, 1000);
+
+
     }
 
     @Override
@@ -90,6 +124,7 @@ public class LauncherActivity extends Activity implements OnShutdownFromNativeLi
         towerReceiver.shutdown();
         android.os.Process.killProcess(android.os.Process.myPid());
     }
+
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus)
@@ -205,6 +240,8 @@ public class LauncherActivity extends Activity implements OnShutdownFromNativeLi
 
     private String[] getAdditionalNativeLibs() {
         //return null;
-        return new String[]{"/libTowerAccess.so", "/libNavigationServiceAccess.so", "/libMusicServiceAccess.so"};
+        return new String[]{"/libTowerAccess.so",
+                "/libNavigationServiceAccess.so",
+                "/libMusicServiceAccess.so"};
     }
 }

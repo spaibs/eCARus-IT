@@ -1,5 +1,7 @@
 package com.example.gtflauncher.tower;
 
+import android.util.Log;
+
 public class GestureMessage extends TowerMessage
 {
     public static final short VALID_MESSAGE_ID = 0x401;
@@ -19,6 +21,9 @@ public class GestureMessage extends TowerMessage
         // Read the data
         final byte[] messageData = getDataSection(messageBuffer);
         final byte transmittedType = messageData[1];
+
+        //Log.d("GestureMessage","new Gesture detected!");
+
         switch(transmittedType)
         {
             case 1: // W-O
