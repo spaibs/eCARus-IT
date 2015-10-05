@@ -1,0 +1,73 @@
+EBGUIDE 6.0.0.97672;
+@0e5432d3-41a6-4950-8a2e-f3c94ccf60eb
+{
+	#3851748955 module :: module : @47558003-f2a2-4c1e-9c70-a49daecf4858
+	{
+		#62725243 name :: string : "";
+		#3975619753 events :: events : @dfb2a126-1d13-4569-9982-3812febb6ee0;
+		#1448587401 statemachines :: statemachines : @4dad1ba8-c4b2-4358-9fc8-e6c309d6d79e
+		{
+			#2393819079 child_1 :: haptic_statemachine : @2bb8b450-fc30-4201-a86c-ed4b903ac61a;
+		}
+		#1730536925 dp_items :: dp_items : @fbefe4c6-26e0-450a-95fd-47be54571b46;
+		#2652905646 contexts :: contexts : @d5f78037-1d9c-4426-8da8-013019346cef
+		{
+			#2393819079 child_1 :: context : @80411872-ffb2-409e-b94d-16c5d4baae1d
+			{
+				#62725243 name :: string : "HMI";
+				#2504122911 contextId :: int : 0;
+				#782651487 ownsThread :: bool : false;
+			}
+		}
+		#1974458292 languages :: languages : @36c7ab13-bf4c-44ac-8601-d939cfd04440
+		{
+			#2393819079 child_1 :: language : @de96d0e8-473e-4910-905e-1ff46f7ad38b
+			{
+				#62725243 name :: string : "Standard";
+				#1651034657 country :: string : "US";
+				#2913771070 dialect :: string : "en";
+				#2685637836 identifier :: int : -1;
+			}
+		}
+		#2537179137 variants :: variants : @3b341776-836f-424c-827d-2b0919dd5742
+		{
+		}
+		#675086113 resources :: resources : @e3cd1902-15ad-4d08-8dff-1b951b28ccb6;
+		#4196718685 templates :: templates : @9882d0fc-7633-45ad-b919-2f2ab7754ada;
+		#4077690407 event_groups :: event_groups : @8d5efdea-804d-4939-b795-2724d45008c7
+		{
+			#2393819079 child_1 :: event_group : @59705228-8b15-4ead-86a0-6d3fa459d656
+			{
+				#62725243 name :: string : "Default";
+				#3851554171 event_group_id :: int : 2;
+			}
+			#106165600 child_2 :: event_group : @7ee41cdb-2394-4734-bbad-7a31c5b59108
+			{
+				#62725243 name :: string : "Key";
+				#3307157044 event_group_id :: int : 10;
+			}
+			#409066527 child_3 :: event_group : @415e2dca-0acc-48e1-81b7-de3aaa5f5e86
+			{
+				#62725243 name :: string : "Touch";
+				#2174472239 event_group_id :: int : 11;
+			}
+			#3450016899 child_4 :: event_group : @5f07374d-e413-482e-9061-1c3869c8ec04
+			{
+				#62725243 name :: string : "Rotary";
+				#4055043110 event_group_id :: int : 12;
+			}
+			#610726235 child_5 :: event_group : @7c3f2c3f-59a1-44fc-9bfa-4d0aac9dfff1
+			{
+				#62725243 name :: string : "System notification";
+				#2891027591 event_group_id :: int : 13;
+			}
+		}
+		#2174146685 profiles :: profiles : @044ae945-32e4-45f7-9e95-25cbee800ec3
+		{
+			#2393819079 child_1 :: configuration_profile : @71f00718-8a55-41ff-a595-9c57b2bf5a95;
+			#994101572 child_2 :: configuration_profile : @927b081b-b97c-4b45-aa1c-41c942ca7516;
+		}
+		#3138249989 editModeConfigurationProfile :: objectref(configuration_profile) : @71f00718-8a55-41ff-a595-9c57b2bf5a95;
+		#2911022582 simulationModeConfigurationProfile :: objectref(configuration_profile) : @927b081b-b97c-4b45-aa1c-41c942ca7516;
+	}
+}

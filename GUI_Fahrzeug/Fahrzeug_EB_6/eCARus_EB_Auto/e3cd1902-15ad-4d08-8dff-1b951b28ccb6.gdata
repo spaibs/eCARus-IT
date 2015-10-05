@@ -1,0 +1,9 @@
+EBGUIDE 6.0.0.97672;
+@e3cd1902-15ad-4d08-8dff-1b951b28ccb6
+{
+	#2393819079 child_1 :: font_resource : @b3ddc3fc-d1b4-402b-a9fb-f80ef9baeb9f
+	{
+		#1629333464 file :: file : "PT_Sans_Narrow.ttf";
+		#203921922 size :: int : 30;
+	}
+}

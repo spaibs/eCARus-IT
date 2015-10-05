@@ -1,0 +1,58 @@
+EBGUIDE 6.0.0.97672;
+@2bb8b450-fc30-4201-a86c-ed4b903ac61a
+{
+	#3452614616 x :: int : 0;
+	#1273961734 y :: int : 0;
+	#3513722759 width :: int : 600;
+	#1595201047 height :: int : 400;
+	#897016563 name :: string : "Main";
+	#2942400645 entry_action :: function(void) : @00000000-0000-0000-0000-000000000000;
+	#3353473713 exit_action :: function(void) : @00000000-0000-0000-0000-000000000000;
+	#3826750839 transitions :: haptic_transitions : @57752c11-8921-4112-9106-04dea7923de8
+	{
+	}
+	#161950969 internal_transitions :: internal_transitions : @0113f86b-427f-4576-a345-a0b949d68d45
+	{
+	}
+	#1463564019 states :: haptic_states : @000bddc7-7ef5-442e-8a39-13cf898eb371
+	{
+		#2393819079 child_1 :: view_state : @9c967f82-42e4-4ec4-8193-3ffd8ba22b6a
+		{
+			#3452614616 x :: int : 152;
+			#3766088691 y :: int : 147;
+			#3438092419 width :: int : 100;
+			#2119248103 height :: int : 100;
+			#4072778451 name :: string : "Main Menu";
+			#3655759755 entry_action :: function(void) : @00000000-0000-0000-0000-000000000000;
+			#2751391525 exit_action :: function(void) : @00000000-0000-0000-0000-000000000000;
+			#1869943839 transitions :: haptic_transitions : @3ab709ee-c67e-4c2c-b0a5-54717942140f
+			{
+			}
+			#2943677673 internal_transitions :: internal_transitions : @f38287e0-f4d7-4b14-aa70-228c8a085f9e
+			{
+			}
+			#3036106572 view :: GtfView : @ff85f195-ff25-45c0-a97b-1d38dba5a000;
+			#1529112919 priority_stack :: priority_stack : @00000000-0000-0000-0000-000000000000;
+		}
+	}
+	#2208610082 initial_state :: haptic_initial_state : @0cd9d822-6672-4a05-92ba-0b06b5d94bdb
+	{
+		#3452614616 x :: int : 34;
+		#410359311 y :: int : 182;
+		#2960225923 width :: int : 100;
+		#1122017962 height :: int : 100;
+		#3305823257 default_transition :: haptic_default_transition : @f6880f18-32e1-4be6-968d-7c00fe7b0b92
+		{
+			#2365897554 action :: function(void) : @00000000-0000-0000-0000-000000000000;
+			#1085584087 target_state :: objectref(view_state) : @9c967f82-42e4-4ec4-8193-3ffd8ba22b6a;
+			#1572820936 line_color :: color : 255;
+			#3867810364 source_dock :: float : 0.245699555;
+			#3723019316 target_dock :: float : 0.7599588;
+		}
+	}
+	#2390299781 final_state :: haptic_final_state : @00000000-0000-0000-0000-000000000000;
+	#1768112024 history_state :: haptic_history_state : @00000000-0000-0000-0000-000000000000;
+	#845429637 deep_history_state :: haptic_deep_history_state : @00000000-0000-0000-0000-000000000000;
+	#4068918359 priority_stack :: priority_stack : @00000000-0000-0000-0000-000000000000;
+	#4168332161 background_color :: color : -1;
+}
