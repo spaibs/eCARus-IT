@@ -21,7 +21,7 @@ Eine ausführliche Dokumentation findest du in unserem eCARus-Wiki unter https:/
 
 ## Wie bekomme ich den Source Code?
 
-Wenn ihr git installiert habt, reicht im Terminal einfach **git clone https://github.com/spaibs/eCARus-Ladefahrrad.git** einzugeben. Dadurch werden die ganzen Dateien in den Ordner eCARus-Ladefahrrad, der sich im aktuellen Verzeichnis befindet, geladen.
+Wenn ihr git installiert habt, reicht im Terminal einfach **https://github.com/spaibs/eCARus-IT.git** einzugeben. Dadurch werden die ganzen Dateien in den Ordner eCARus-Ladefahrrad, der sich im aktuellen Verzeichnis befindet, geladen.
 
 ## Ladefahrrad: Was für Daten werden geschickt?
 
