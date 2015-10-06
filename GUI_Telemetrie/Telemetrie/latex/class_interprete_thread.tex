@@ -1,0 +1,80 @@
+\hypertarget{class_interprete_thread}{}\section{Interprete\+Thread Class Reference}
+\label{class_interprete_thread}\index{Interprete\+Thread@{Interprete\+Thread}}
+
+
+The \hyperlink{class_interprete_thread}{Interprete\+Thread} class interpretes the incoming U\+D\+P messages. Messages with known I\+D\textquotesingle{}s are saved to Latest\+Data\+Interpreted. Each message will be saved to the vector Latest\+Raw\+Data and the data log will be saved in Interpreted\+History and Raw\+History.  
+
+
+
+
+{\ttfamily \#include $<$interpretethread.\+h$>$}
+
+Inheritance diagram for Interprete\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_interprete_thread}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_interprete_thread_ab0a4b3eed2973554a85ae62069da0830}{}{\bfseries Interprete\+Thread} (Q\+Object $\ast$parent=0)\label{class_interprete_thread_ab0a4b3eed2973554a85ae62069da0830}
+
+\item 
+void \hyperlink{class_interprete_thread_a9e2e7ed3a9608daa29393850ce380ffc}{Daten\+\_\+konvertieren} (\hyperlink{struct_ethernet___msg}{Ethernet\+\_\+\+Msg} Msg)
+\begin{DoxyCompactList}\small\item\em Daten\+\_\+konvertieren. \end{DoxyCompactList}\item 
+\hypertarget{class_interprete_thread_aeaac0ccd7cc19a774c328ecef95c7e76}{}void {\bfseries init\+\_\+\+Latest\+Data\+Interpreted} (struct \hyperlink{struct_interpreted_data}{Interpreted\+Data} $\ast$)\label{class_interprete_thread_aeaac0ccd7cc19a774c328ecef95c7e76}
+
+\item 
+\hypertarget{class_interprete_thread_a9106a12f445bf84eccf5c5dd3aabacb0}{}void {\bfseries init\+\_\+received\+Msg\+Vector} (std\+::vector$<$ \hyperlink{struct_ethernet___msg}{Ethernet\+\_\+\+Msg} $>$ $\ast$)\label{class_interprete_thread_a9106a12f445bf84eccf5c5dd3aabacb0}
+
+\item 
+\hypertarget{class_interprete_thread_a0b7d95389d386788d95764e244c87deb}{}void {\bfseries init\+\_\+\+Latest\+Raw\+Data} (struct \hyperlink{struct_raw_data}{Raw\+Data} $\ast$)\label{class_interprete_thread_a0b7d95389d386788d95764e244c87deb}
+
+\item 
+\hypertarget{class_interprete_thread_ada92262f4fe1ec478be5b023693e4e65}{}void {\bfseries init\+\_\+\+Available\+Data} (int $\ast$)\label{class_interprete_thread_ada92262f4fe1ec478be5b023693e4e65}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_interprete_thread_ac7fbde461d6471d864605143cd77b27d}{}bool {\bfseries rearok}\label{class_interprete_thread_ac7fbde461d6471d864605143cd77b27d}
+
+\item 
+\hypertarget{class_interprete_thread_aaf773375f45a30ea052af1a05a31b9df}{}bool {\bfseries frontok}\label{class_interprete_thread_aaf773375f45a30ea052af1a05a31b9df}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_interprete_thread_aa24b72df0d69cf668ae26919a6cafc58}{}void \hyperlink{class_interprete_thread_aa24b72df0d69cf668ae26919a6cafc58}{run} ()\label{class_interprete_thread_aa24b72df0d69cf668ae26919a6cafc58}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_interprete_thread_aa24b72df0d69cf668ae26919a6cafc58}{run()} -\/\+Main function. will loop as long as the thread is not terminated. -\/\+It dequeues the messages from the Queue Rec\+Queue and convertes them\+: \hyperlink{struct_recv_buf}{Recv\+Buf} to \hyperlink{struct_ethernet___msg}{Ethernet\+\_\+\+Msg} -\/\+Does the interpretation and displaying by calling the needed functions. -\/\+Data will be saved in the Latest\+Raw\+Data vector -\/\+The interpretation is the task of \hyperlink{class_interprete_thread_a9e2e7ed3a9608daa29393850ce380ffc}{Daten\+\_\+konvertieren(\+Ethernet\+\_\+\+Msg msg)} -\/\+The data log will be saved in Interpreted\+History and Raw\+History \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_interprete_thread}{Interprete\+Thread} class interpretes the incoming U\+D\+P messages. Messages with known I\+D\textquotesingle{}s are saved to Latest\+Data\+Interpreted. Each message will be saved to the vector Latest\+Raw\+Data and the data log will be saved in Interpreted\+History and Raw\+History. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_interprete_thread_a9e2e7ed3a9608daa29393850ce380ffc}{}\index{Interprete\+Thread@{Interprete\+Thread}!Daten\+\_\+konvertieren@{Daten\+\_\+konvertieren}}
+\index{Daten\+\_\+konvertieren@{Daten\+\_\+konvertieren}!Interprete\+Thread@{Interprete\+Thread}}
+\subsubsection[{Daten\+\_\+konvertieren(\+Ethernet\+\_\+\+Msg Msg)}]{\setlength{\rightskip}{0pt plus 5cm}void Interprete\+Thread\+::\+Daten\+\_\+konvertieren (
+\begin{DoxyParamCaption}
+\item[{{\bf Ethernet\+\_\+\+Msg}}]{Msg}
+\end{DoxyParamCaption}
+)}\label{class_interprete_thread_a9e2e7ed3a9608daa29393850ce380ffc}
+
+
+Daten\+\_\+konvertieren. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interpretethread.\+h\item 
+interpretethread.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\hypertarget{class_u_d_p_thread}{}\section{U\+D\+P\+Thread Class Reference}
+\label{class_u_d_p_thread}\index{U\+D\+P\+Thread@{U\+D\+P\+Thread}}
+
+
+The \hyperlink{class_u_d_p_thread}{U\+D\+P\+Thread} class is able to send and receive messages Messages, which are resided in the Udp\+Socket, will be enqueued to the Recv\+Buf-\/\+Queue Rec\+Queue Messages, which are supposed to be send by the software, will be resided in the Udp\+Socket.  
+
+
+
+
+{\ttfamily \#include $<$udpthread.\+h$>$}
+
+Inheritance diagram for U\+D\+P\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_d_p_thread}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_u_d_p_thread_a69d3f7b11b8741a043c0e0e8c96896b3}{}void {\bfseries receive\+\_\+datagram} (Q\+Byte\+Array)\label{class_u_d_p_thread_a69d3f7b11b8741a043c0e0e8c96896b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_u_d_p_thread_a90ab3e13bf9c4df446c2126ab76b0ef5}{}{\bfseries U\+D\+P\+Thread} (Q\+Object $\ast$parent=0)\label{class_u_d_p_thread_a90ab3e13bf9c4df446c2126ab76b0ef5}
+
+\item 
+\hypertarget{class_u_d_p_thread_a588f976d998e8da61fe4887bb2297e24}{}void {\bfseries U\+Iswitchtoconnect} ()\label{class_u_d_p_thread_a588f976d998e8da61fe4887bb2297e24}
+
+\item 
+\hypertarget{class_u_d_p_thread_a4c296054132eea751c34103e66fbcac4}{}void {\bfseries Setup\+Thread} (Q\+String, Q\+String)\label{class_u_d_p_thread_a4c296054132eea751c34103e66fbcac4}
+
+\item 
+\hypertarget{class_u_d_p_thread_a456f8ce6d9f1e29f4d7797ffc799fae4}{}void {\bfseries Finish\+Thread} ()\label{class_u_d_p_thread_a456f8ce6d9f1e29f4d7797ffc799fae4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_u_d_p_thread_a1ef491338c2f7b358968505b82a73a87}{}void \hyperlink{class_u_d_p_thread_a1ef491338c2f7b358968505b82a73a87}{run} ()\label{class_u_d_p_thread_a1ef491338c2f7b358968505b82a73a87}
+
+\begin{DoxyCompactList}\small\item\em run Binds to the udp socket S\+E\+N\+D\+I\+N\+G\+: The method dequeues the messages, which are to be sent, from the message queue Send\+Data and writes the \hyperlink{struct_raw_data}{Raw\+Data} to the udp socket R\+E\+C\+E\+I\+V\+I\+N\+G\+: \hyperlink{class_u_d_p_thread_a1ef491338c2f7b358968505b82a73a87}{run()} converts the datagrams of the udp socket to \hyperlink{struct_recv_buf}{Recv\+Buf} and pushes the data to the queue Rec\+Queue \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_u_d_p_thread}{U\+D\+P\+Thread} class is able to send and receive messages Messages, which are resided in the Udp\+Socket, will be enqueued to the Recv\+Buf-\/\+Queue Rec\+Queue Messages, which are supposed to be send by the software, will be resided in the Udp\+Socket. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+udpthread.\+h\item 
+udpthread.\+cpp\end{DoxyCompactItemize}

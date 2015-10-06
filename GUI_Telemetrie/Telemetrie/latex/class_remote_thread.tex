@@ -1,0 +1,241 @@
+\hypertarget{class_remote_thread}{}\section{Remote\+Thread Class Reference}
+\label{class_remote_thread}\index{Remote\+Thread@{Remote\+Thread}}
+
+
+The \hyperlink{class_remote_thread}{Remote\+Thread} class 1\+: connection setup between Xbox\+\_\+\+Controller and mainwindow \+: Remote\+Status\+E\+X\+T=1; 2\+: if a connection to e\+C\+A\+Rus exists, a controller command will be sent to the car;.  
+
+
+
+
+{\ttfamily \#include $<$remotethread.\+h$>$}
+
+Inheritance diagram for Remote\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_remote_thread}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_remote_thread_a437bd94f9bac751befb6b7ef9dc8869f}{}void {\bfseries gear\+\_\+change} (int)\label{class_remote_thread_a437bd94f9bac751befb6b7ef9dc8869f}
+
+\item 
+\hypertarget{class_remote_thread_ab767be43aad824f123c7d0aaed84b428}{}void {\bfseries gear\+\_\+change\+\_\+\+Released} (int)\label{class_remote_thread_ab767be43aad824f123c7d0aaed84b428}
+
+\item 
+\hypertarget{class_remote_thread_acfd1278c3dea85ebbd51cd58311ca691}{}void {\bfseries x\+Button} (void)\label{class_remote_thread_acfd1278c3dea85ebbd51cd58311ca691}
+
+\item 
+\hypertarget{class_remote_thread_a004dcb4a95a7280027f766e482a1bc3d}{}void {\bfseries x\+Button\+\_\+\+Released} (void)\label{class_remote_thread_a004dcb4a95a7280027f766e482a1bc3d}
+
+\item 
+\hypertarget{class_remote_thread_a0d355904907c8f95abbde140e996f47c}{}void {\bfseries y\+Button} (void)\label{class_remote_thread_a0d355904907c8f95abbde140e996f47c}
+
+\item 
+\hypertarget{class_remote_thread_adc8c151dc217e4dd0ccdfc5673c0f851}{}void {\bfseries y\+Button\+\_\+\+Released} (void)\label{class_remote_thread_adc8c151dc217e4dd0ccdfc5673c0f851}
+
+\item 
+\hypertarget{class_remote_thread_a14dafcc79f78df3bd0dd31817ac7a322}{}void {\bfseries right\+Trigger} (void)\label{class_remote_thread_a14dafcc79f78df3bd0dd31817ac7a322}
+
+\item 
+\hypertarget{class_remote_thread_a6361b8e54d2dce24295f1c5d2d098579}{}void {\bfseries right\+Trigger\+\_\+\+Released} (void)\label{class_remote_thread_a6361b8e54d2dce24295f1c5d2d098579}
+
+\item 
+\hypertarget{class_remote_thread_abd8bcc507fcdcc4f523cfd740245be97}{}void {\bfseries left\+Trigger} (void)\label{class_remote_thread_abd8bcc507fcdcc4f523cfd740245be97}
+
+\item 
+\hypertarget{class_remote_thread_a4cb74b27bbb340d70b417ec0cbed9e3d}{}void {\bfseries left\+Trigger\+\_\+\+Released} (void)\label{class_remote_thread_a4cb74b27bbb340d70b417ec0cbed9e3d}
+
+\item 
+\hypertarget{class_remote_thread_a4e51ae0ef60c16ecf4e5c6e3ce783e6f}{}void {\bfseries start\+Button} (void)\label{class_remote_thread_a4e51ae0ef60c16ecf4e5c6e3ce783e6f}
+
+\item 
+\hypertarget{class_remote_thread_af24f62c449482783a029de8fbd78c41c}{}void {\bfseries start\+Button\+\_\+\+Released} (void)\label{class_remote_thread_af24f62c449482783a029de8fbd78c41c}
+
+\item 
+\hypertarget{class_remote_thread_aaa709e2d556a850f2a1cf2d196575435}{}void {\bfseries back\+Button} (void)\label{class_remote_thread_aaa709e2d556a850f2a1cf2d196575435}
+
+\item 
+\hypertarget{class_remote_thread_aef9ae9aa01e32f26d1a3f6d10469375a}{}void {\bfseries steering} (int)\label{class_remote_thread_aef9ae9aa01e32f26d1a3f6d10469375a}
+
+\item 
+\hypertarget{class_remote_thread_a00aba0a4f5fd8ad3d5058d53b705b175}{}void {\bfseries accelerate} (int)\label{class_remote_thread_a00aba0a4f5fd8ad3d5058d53b705b175}
+
+\item 
+\hypertarget{class_remote_thread_a54b97c7819fc4b3b8f5c0b0640b6d292}{}void {\bfseries brake} (int)\label{class_remote_thread_a54b97c7819fc4b3b8f5c0b0640b6d292}
+
+\item 
+\hypertarget{class_remote_thread_ab9e4e1c8d68eb18ce9107a89c661b2ec}{}void {\bfseries horn} (void)\label{class_remote_thread_ab9e4e1c8d68eb18ce9107a89c661b2ec}
+
+\item 
+\hypertarget{class_remote_thread_ab495f6c33d188ca3c439f1148f78e182}{}void {\bfseries horn\+\_\+\+Released} (void)\label{class_remote_thread_ab495f6c33d188ca3c439f1148f78e182}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_remote_thread_a1acb4cb43462156d6b9177bcb1e1dfb1}{}{\bfseries Remote\+Thread} (Q\+Object $\ast$parent=0)\label{class_remote_thread_a1acb4cb43462156d6b9177bcb1e1dfb1}
+
+\item 
+void \hyperlink{class_remote_thread_afaaf517a8ecef88feeaa477ac84da127}{run} ()
+\item 
+\hypertarget{class_remote_thread_ac14ef5fec27c7c93e26b59445d3eff1e}{}void {\bfseries set\+Main\+Window} (Ui\+::\+Main\+Window $\ast$w)\label{class_remote_thread_ac14ef5fec27c7c93e26b59445d3eff1e}
+
+\item 
+\hypertarget{class_remote_thread_a8da88adbd10488157ce7c634fd150f3d}{}void {\bfseries Remote\+Status\+G\+U\+I} (int)\label{class_remote_thread_a8da88adbd10488157ce7c634fd150f3d}
+
+\item 
+\hypertarget{class_remote_thread_a7eb9019a150eba70aef59e978817ac36}{}void {\bfseries Remote\+Status\+E\+X\+T} (int)\label{class_remote_thread_a7eb9019a150eba70aef59e978817ac36}
+
+\item 
+\hypertarget{class_remote_thread_a2903df0c063123c45d22d97dd55f76fa}{}void {\bfseries Remote\+Em\+Stop\+Bool} (bool)\label{class_remote_thread_a2903df0c063123c45d22d97dd55f76fa}
+
+\item 
+\hypertarget{class_remote_thread_a4dc74280db042b990cbb960b7610fa89}{}void {\bfseries Remote\+Gear\+Change} (int)\label{class_remote_thread_a4dc74280db042b990cbb960b7610fa89}
+
+\item 
+\hypertarget{class_remote_thread_af124b02a085e979b77db074994c0495b}{}void {\bfseries Remote\+Head\+Light\+Flash\+Bool} (bool)\label{class_remote_thread_af124b02a085e979b77db074994c0495b}
+
+\item 
+\hypertarget{class_remote_thread_a230a67afa07fe8ded962803751ff0acb}{}void {\bfseries Terminate} ()\label{class_remote_thread_a230a67afa07fe8ded962803751ff0acb}
+
+\item 
+\hypertarget{class_remote_thread_ac2f9c11acf7383bc97c0643ff76ac195}{}void {\bfseries toggle\+Head\+Light} ()\label{class_remote_thread_ac2f9c11acf7383bc97c0643ff76ac195}
+
+\item 
+\hypertarget{class_remote_thread_aeae85c095bf0b265d907660af3f92abd}{}void {\bfseries toggle\+Full\+Beam} ()\label{class_remote_thread_aeae85c095bf0b265d907660af3f92abd}
+
+\item 
+\hypertarget{class_remote_thread_a1de71a9c3a0a894e54b93fcb3545b3e9}{}void {\bfseries toggle\+Indicator\+Left} ()\label{class_remote_thread_a1de71a9c3a0a894e54b93fcb3545b3e9}
+
+\item 
+\hypertarget{class_remote_thread_a12da607c14e032bc0a9259891fd160c9}{}void {\bfseries toggle\+Indicator\+Right} ()\label{class_remote_thread_a12da607c14e032bc0a9259891fd160c9}
+
+\item 
+\hypertarget{class_remote_thread_aff6e6f9c8428e1e2893e52674867880f}{}void {\bfseries toggle\+Warning\+Light} ()\label{class_remote_thread_aff6e6f9c8428e1e2893e52674867880f}
+
+\item 
+\hypertarget{class_remote_thread_a23890ade40fb63ad7d2a8d837bfbad13}{}void {\bfseries turn\+Off\+Head\+Light} ()\label{class_remote_thread_a23890ade40fb63ad7d2a8d837bfbad13}
+
+\item 
+\hypertarget{class_remote_thread_a2c5f6d0d0dc96d020553366d90601909}{}void {\bfseries turn\+Off\+Full\+Beam} ()\label{class_remote_thread_a2c5f6d0d0dc96d020553366d90601909}
+
+\item 
+\hypertarget{class_remote_thread_a610ccdb470eba1e3343508ac0c9e77f4}{}void {\bfseries turn\+Off\+Indicator\+Left} ()\label{class_remote_thread_a610ccdb470eba1e3343508ac0c9e77f4}
+
+\item 
+\hypertarget{class_remote_thread_a4cb09cd54f412b5f75c03f1aabcea1c4}{}void {\bfseries turn\+Off\+Indicator\+Right} ()\label{class_remote_thread_a4cb09cd54f412b5f75c03f1aabcea1c4}
+
+\item 
+\hypertarget{class_remote_thread_a1fd04f4c01e8eff1f9026f5527b8985d}{}void {\bfseries turn\+Off\+Warning\+Light} ()\label{class_remote_thread_a1fd04f4c01e8eff1f9026f5527b8985d}
+
+\item 
+\hypertarget{class_remote_thread_a24a11ba01cfd56b677d8ab86c68a1a03}{}int {\bfseries Remote\+Status\+G\+U\+I} ()\label{class_remote_thread_a24a11ba01cfd56b677d8ab86c68a1a03}
+
+\item 
+\hypertarget{class_remote_thread_af3983983a7ffc901ad46d8cab5165be2}{}int {\bfseries Remote\+Status\+E\+X\+T} ()\label{class_remote_thread_af3983983a7ffc901ad46d8cab5165be2}
+
+\item 
+\hypertarget{class_remote_thread_ad3ea0c38f8964e13a54029ff3b57f9be}{}bool {\bfseries Remote\+Em\+Stop\+Bool} ()\label{class_remote_thread_ad3ea0c38f8964e13a54029ff3b57f9be}
+
+\item 
+\hypertarget{class_remote_thread_a8e38bf53fe6999bd9c9422dba444b488}{}int {\bfseries Remote\+Gear\+Change} ()\label{class_remote_thread_a8e38bf53fe6999bd9c9422dba444b488}
+
+\item 
+\hypertarget{class_remote_thread_abe6ace2c5a7ea3e07442356410193176}{}bool {\bfseries Remote\+Head\+Light\+Flash\+Bool} ()\label{class_remote_thread_abe6ace2c5a7ea3e07442356410193176}
+
+\item 
+\hypertarget{class_remote_thread_a23d858237047288708045248766026c2}{}bool {\bfseries Terminated} ()\label{class_remote_thread_a23d858237047288708045248766026c2}
+
+\item 
+\hypertarget{class_remote_thread_affbec79b15b16bb2fa90ec2478e2e011}{}bool {\bfseries head\+Light\+Is\+On} ()\label{class_remote_thread_affbec79b15b16bb2fa90ec2478e2e011}
+
+\item 
+\hypertarget{class_remote_thread_abc8331efb2c5b8db1a2ad4f16d128488}{}bool {\bfseries full\+Beam\+Is\+On} ()\label{class_remote_thread_abc8331efb2c5b8db1a2ad4f16d128488}
+
+\item 
+\hypertarget{class_remote_thread_a07174c7e23b2a77077d5b539bb83cb9a}{}bool {\bfseries indicator\+Left\+Is\+On} ()\label{class_remote_thread_a07174c7e23b2a77077d5b539bb83cb9a}
+
+\item 
+\hypertarget{class_remote_thread_ae3cd54f0f87da2278dacc7f0222b8c47}{}bool {\bfseries indicator\+Right\+Is\+On} ()\label{class_remote_thread_ae3cd54f0f87da2278dacc7f0222b8c47}
+
+\item 
+\hypertarget{class_remote_thread_a2c2d3788a456b99d633ba1dd14e308e5}{}bool {\bfseries warning\+Light\+Is\+On} ()\label{class_remote_thread_a2c2d3788a456b99d633ba1dd14e308e5}
+
+\item 
+\hypertarget{class_remote_thread_ae376c77e15ff8adb7b60028ad92547bb}{}void {\bfseries init\+\_\+\+Remote\+Status\+G\+U\+I} (int $\ast$)\label{class_remote_thread_ae376c77e15ff8adb7b60028ad92547bb}
+
+\item 
+\hypertarget{class_remote_thread_ad69aba3296b67a50b8dff3c22f7e89a0}{}void {\bfseries init\+\_\+\+Remote\+Status\+E\+X\+T} (int $\ast$)\label{class_remote_thread_ad69aba3296b67a50b8dff3c22f7e89a0}
+
+\item 
+\hypertarget{class_remote_thread_a659f51b16da9cdb8caf52f0c885d2be6}{}void {\bfseries init\+\_\+head\+Light\+Is\+On} (bool $\ast$)\label{class_remote_thread_a659f51b16da9cdb8caf52f0c885d2be6}
+
+\item 
+\hypertarget{class_remote_thread_a6d1ea3bd7e4a7ff4c2e0665699bae8f9}{}void {\bfseries init\+\_\+full\+Beam\+Is\+On} (bool $\ast$)\label{class_remote_thread_a6d1ea3bd7e4a7ff4c2e0665699bae8f9}
+
+\item 
+\hypertarget{class_remote_thread_a3b2cadf9a68f30c60520ec7b4ef2dcce}{}void {\bfseries init\+\_\+indicator\+Left\+Is\+On} (bool $\ast$)\label{class_remote_thread_a3b2cadf9a68f30c60520ec7b4ef2dcce}
+
+\item 
+\hypertarget{class_remote_thread_a254eceb6b4f4089e7b102abdb420af6d}{}void {\bfseries init\+\_\+indicator\+Right\+Is\+On} (bool $\ast$)\label{class_remote_thread_a254eceb6b4f4089e7b102abdb420af6d}
+
+\item 
+\hypertarget{class_remote_thread_ac925727df6675d74636db3ee90fb2717}{}void {\bfseries init\+\_\+warning\+Light\+Is\+On} (bool $\ast$)\label{class_remote_thread_ac925727df6675d74636db3ee90fb2717}
+
+\item 
+\hypertarget{class_remote_thread_af15651120a1ed1a43d54fe0b562a68c9}{}void {\bfseries init\+\_\+\+Remote\+Em\+Stop\+Bool} (bool $\ast$)\label{class_remote_thread_af15651120a1ed1a43d54fe0b562a68c9}
+
+\item 
+\hypertarget{class_remote_thread_afbfe2a847389c2633f3c1f5b3ef282dc}{}void {\bfseries init\+\_\+\+Remote\+Gear\+Change} (int $\ast$)\label{class_remote_thread_afbfe2a847389c2633f3c1f5b3ef282dc}
+
+\item 
+\hypertarget{class_remote_thread_a996adb972df55c57ef020e199a2edc80}{}void {\bfseries init\+\_\+\+Remote\+Head\+Light\+Flash\+Bool} (bool $\ast$)\label{class_remote_thread_a996adb972df55c57ef020e199a2edc80}
+
+\item 
+\hypertarget{class_remote_thread_ae5f3eaba7830d9bdf5ca2f05c212b160}{}void {\bfseries init\+\_\+\+Terminated} (bool $\ast$)\label{class_remote_thread_ae5f3eaba7830d9bdf5ca2f05c212b160}
+
+\item 
+\hypertarget{class_remote_thread_aca0c6a9df3fb70119fb2bd4a7e40f8af}{}void {\bfseries init\+\_\+\+Remote\+Gear} (int $\ast$)\label{class_remote_thread_aca0c6a9df3fb70119fb2bd4a7e40f8af}
+
+\item 
+\hypertarget{class_remote_thread_ab926c7f3a9ba29a1df52993a1747c128}{}void {\bfseries init\+\_\+\+Remote\+Setting\+\_\+1} (int $\ast$)\label{class_remote_thread_ab926c7f3a9ba29a1df52993a1747c128}
+
+\item 
+\hypertarget{class_remote_thread_ad0362858a88dc58310be1171d22239c0}{}void {\bfseries init\+\_\+\+Remote\+Setting\+\_\+2} (int $\ast$)\label{class_remote_thread_ad0362858a88dc58310be1171d22239c0}
+
+\item 
+\hypertarget{class_remote_thread_a37156a23aea69e77fd86cf97599afd08}{}void {\bfseries init\+\_\+\+Remote\+Setting\+\_\+3} (int $\ast$)\label{class_remote_thread_a37156a23aea69e77fd86cf97599afd08}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_remote_thread_a668f3195a6b2fd7f7881398ad8c0537f}{}float {\bfseries Max\+Speed}\label{class_remote_thread_a668f3195a6b2fd7f7881398ad8c0537f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_remote_thread}{Remote\+Thread} class 1\+: connection setup between Xbox\+\_\+\+Controller and mainwindow \+: Remote\+Status\+E\+X\+T=1; 2\+: if a connection to e\+C\+A\+Rus exists, a controller command will be sent to the car;. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_remote_thread_afaaf517a8ecef88feeaa477ac84da127}{}\index{Remote\+Thread@{Remote\+Thread}!run@{run}}
+\index{run@{run}!Remote\+Thread@{Remote\+Thread}}
+\subsubsection[{run()}]{\setlength{\rightskip}{0pt plus 5cm}void Remote\+Thread\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_remote_thread_afaaf517a8ecef88feeaa477ac84da127}
+called when the value of the bright trigger changes 
+\begin{DoxyParams}{Parameters}
+{\em value} & position of the slider\\
+\hline
+\end{DoxyParams}
+langert text.( it linearizes the characteristic curve of the accelerator )
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+remotethread.\+h\item 
+remotethread.\+cpp\end{DoxyCompactItemize}
