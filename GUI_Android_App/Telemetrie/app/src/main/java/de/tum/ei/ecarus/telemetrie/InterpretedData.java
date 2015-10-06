@@ -5,10 +5,8 @@ import android.util.Log;
 /**
  * Created by ga24coq on 22.09.2015.
  */
-public class InterpretedData {
+public class InterpretedData { // data interpretation is stored in an object of this class
     String[][] dataString = new String[60][2];
-
-
     // DEFAULT CONFIGURATION
 
     // car informations
