@@ -115,6 +115,8 @@ public class MainActivity extends AppCompatActivity
                 RawDataFragment = (Fragment)RawDataFragment.class.newInstance();
             if(eCARusFragment == null)
                 eCARusFragment =  (Fragment)eCARusFragment.class.newInstance();
+            if(aboutFragment == null)
+                aboutFragment =  (Fragment)AboutFragment.class.newInstance();
             setTitle("Main");
         }catch(Exception e){}
 
@@ -175,7 +177,7 @@ public class MainActivity extends AppCompatActivity
             if(position == 4) {
 
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.container, interpretedFragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.container, aboutFragment).commit();
                 setTitle("About");
             }
 
