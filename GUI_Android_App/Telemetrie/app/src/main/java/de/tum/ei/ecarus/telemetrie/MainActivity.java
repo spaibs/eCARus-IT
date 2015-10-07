@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
 
         try {
-        //create Fragments
+        //create Fragments <-!!! you have to comment out  "//mListener = (OnFragmentInteractionListener) activity;" in each created Fragment!!!
             Class fragmentClass;
             fragmentClass = MainFragment.class;
             if (mainFragment == null)
