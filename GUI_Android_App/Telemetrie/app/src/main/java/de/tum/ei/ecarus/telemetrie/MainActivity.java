@@ -411,7 +411,7 @@ public class MainActivity extends AppCompatActivity
         if(tabIndex == 2)
         {
             CheckBox PauseRawDataCheckBox = (CheckBox) findViewById(R.id.PauseRawDataCheckBox);
-            RawDataGridIndex = 4;
+            //RawDataGridIndex = 4;
             if(tabIndex == 2 && !PauseRawDataCheckBox.isChecked())
                 addItemRawDataGrid(""+ID,data); //create list of raw data
         }
