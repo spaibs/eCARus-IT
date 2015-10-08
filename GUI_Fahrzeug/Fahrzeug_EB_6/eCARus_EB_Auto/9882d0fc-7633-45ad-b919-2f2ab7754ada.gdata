@@ -113,5 +113,8 @@ EBGUIDE 6.0.0.97672;
 	{
 		#62725243 name :: string : "TUM_View";
 		#1187654703 structure :: GtfView : @9287de99-f9ba-4eed-9317-42746287b0ad;
+		#3134424284 text :: string : "<Menu_Caption>";
+		#2785386580 visible :: bool : true;
+		#797395491 "visible 2" :: bool : true;
 	}
 }

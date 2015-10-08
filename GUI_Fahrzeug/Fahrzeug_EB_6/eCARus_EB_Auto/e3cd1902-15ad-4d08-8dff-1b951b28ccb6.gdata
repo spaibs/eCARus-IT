@@ -50,10 +50,6 @@ EBGUIDE 6.0.0.97672;
 	{
 		#1629333464 file :: file : "images/indicators/rechts.png";
 	}
-	#2104095471 child_11 :: image_resource : @95b0e83d-ce38-4a56-bdde-9d84898c217c
-	{
-		#1629333464 file :: file : "images/indicators/warnung_active.png";
-	}
 	#3096894987 child_14 :: image_resource : @c091b4f2-6ef0-4e4c-837d-3acb6d19c9ec
 	{
 		#1629333464 file :: file : "images/indicators/left_active Kopie.png";
@@ -66,5 +62,34 @@ EBGUIDE 6.0.0.97672;
 	{
 		#1629333464 file :: file : "PT_Sans_Narrow.ttf";
 		#790115733 size :: int : 30;
+	}
+	#2787098503 child_17 :: image_resource : @70fdab1e-a70d-44d3-b493-6e06803f88f2
+	{
+		#1629333464 file :: file : "images/indicators/fernlicht.png";
+	}
+	#2131299663 child_18 :: image_resource : @ba719521-9ca8-4bc6-89c3-f8d03bd94437
+	{
+		#1629333464 file :: file : "images/indicators/licht.png";
+	}
+	#3263519669 child_19 :: image_resource : @1b895771-4ffe-46ab-9382-c60ff586c88c
+	{
+		#1629333464 file :: file : "images/indicators/light_active.png";
+	}
+	#257425145 child_20 :: image_resource : @5b8809b2-7de1-4bda-bfb7-d2ebcc1b8b85
+	{
+		#1629333464 file :: file : "images/indicators/fernlicht_active.png";
+	}
+	#3145746804 child_21 :: image_resource : @c7fc8859-209f-44b5-ba26-7494c64a1373
+	{
+		#1629333464 file :: file : "images/indicators/warnung.png";
+	}
+	#2699553103 child_11 :: image_resource : @e6efeb04-6c03-4d6b-be80-60f56abdd9cf
+	{
+		#1629333464 file :: file : "images/menu/back.png";
+	}
+	#1180037583 child_22 :: font_resource : @8adbc9a5-5779-40eb-b23c-36d1e637f28f
+	{
+		#1629333464 file :: file : "PT_Sans_Narrow.ttf";
+		#4258308852 size :: int : 90;
 	}
 }

@@ -66,7 +66,7 @@ EBGUIDE 6.0.0.97672;
 					}
 					#1662595963 name :: string : "Label 1";
 					#2388863052 visible :: bool : true;
-					#2841503057 width :: int : 193;
+					#2841503057 width :: int : 87;
 					#662480574 height :: int : 50;
 					#2691423938 x :: int : 32;
 					#904015582 y :: int : 701;
@@ -84,7 +84,7 @@ EBGUIDE 6.0.0.97672;
 						}
 						#786808011 read :: function(string) : @71b6e8a2-cc09-4e8e-a98c-bd42258244b9
 						{
-							#1202705475 script :: string : "function()\n{\n\treturn f:int2string(f:localtime_hour(f:system_time())) + \":\" + f:int2string(f:localtime_minute(f:system_time()));\n}";
+							#1202705475 script :: string : "function()\n{\n\tif(f:localtime_minute(f:system_time()) < 10)\n\t{\n\t\treturn f:int2string(f:localtime_hour(f:system_time()) + 2) + \":0\" + f:int2string(f:localtime_minute(f:system_time()));\n\t}\n\telse\n\t{\n\t\treturn f:int2string(f:localtime_hour(f:system_time()) + 2) + \":\" + f:int2string(f:localtime_minute(f:system_time()));\n\t}\n}";
 						}
 						#3991154814 write :: function(bool,string) : @4adb1dd7-138b-4ab7-8c9c-2e9ac6afe73f
 						{
@@ -95,6 +95,85 @@ EBGUIDE 6.0.0.97672;
 					#141092040 font :: objectref(font) : @956e3be3-4e41-45c7-a920-6c44b0c8dd3c;
 					#2427682240 horizontalAlign :: int : 0;
 					#1240875220 verticalAlign :: int : 0;
+				}
+				#1519389266 child_2 :: GtfLabel : @3b2ba437-4456-4ce9-9563-e361371b909e
+				{
+					#3514003583 features :: feature_list : @1685f919-8262-4aa7-bcfe-9f83f971f1d1
+					{
+					}
+					#120954955 children :: children_list : @a5bb0c6c-d5ec-4eea-bf90-5c3f92980c0b
+					{
+					}
+					#1987623385 name :: string : "Label 1";
+					#69403934 visible :: bool : true;
+					#2437037661 width :: int : 255;
+					#953804106 height :: int : 52;
+					#3446187666 x :: int : 747;
+					#831504639 y :: int : 18;
+					#4181465406 text :: propref(string) : @fef5ce9b-4d28-4879-92bb-b99c016c4ac7#3134424284;
+					#1796534045 textColor :: color : -1;
+					#760005320 font :: objectref(font) : @956e3be3-4e41-45c7-a920-6c44b0c8dd3c;
+					#3797405928 horizontalAlign :: int : 2;
+					#1432521732 verticalAlign :: int : 0;
+				}
+				#369822813 child_3 :: GtfImage : @5e7591e2-a9a9-4876-a598-a40a7619e8fd
+				{
+					#3514003583 features :: feature_list : @e8982043-f4cb-45dc-8825-3d40aa3dbe56
+					{
+						#2393819079 child_1 :: Scaling : @3afcdf87-db64-4c59-a737-ba9a52b531fe
+						{
+							#2226115571 scalingEnabled :: bool : true;
+							#3082190363 scalingX :: float : 80.0;
+							#2930489416 scalingY :: float : 80.0;
+							#3388278354 scalingZ :: float : 100.0;
+						}
+						#812111731 child_2 :: TouchShortReleased : @a6885dfe-e9d4-4e4a-b648-da719037556d
+						{
+							#3114962824 touchShortReleased :: function(bool,int,int,int,int) : @57cbf1b3-b1f7-40f7-81ab-e62ec9a20466
+							{
+								#1202705475 script :: string : "function(v:touchId::int, v:x::int, v:y::int, v:fingerId::int)\n{\n\tfire ev:\"Go_To_Home\"();\n    false\n}";
+							}
+						}
+						#312550445 child_3 :: StateTouched : @875c0aae-f2e1-46c5-a9ee-8b33c3ff6251
+						{
+							#48586717 touchable :: bool : true;
+							#2561399714 touched :: bool : false;
+							#468017500 touchPolicy :: int : 0;
+							#102092273 touchBehavior :: int : 0;
+						}
+					}
+					#3570323934 children :: children_list : @34bb9b1f-4919-4b1f-a86b-df911060e888
+					{
+					}
+					#1906846155 name :: string : "Image 1";
+					#822672573 visible :: propref(bool) : @fef5ce9b-4d28-4879-92bb-b99c016c4ac7#2785386580;
+					#302814037 width :: int : 50;
+					#940005140 height :: int : 64;
+					#3969522658 x :: int : 22;
+					#1374480451 y :: int : 23;
+					#2737594095 image :: objectref(image) : @e6efeb04-6c03-4d6b-be80-60f56abdd9cf;
+					#3067110992 horizontalAlign :: int : 0;
+					#1228729698 verticalAlign :: int : 1;
+				}
+				#586994189 child_4 :: GtfLabel : @773304d6-eb09-4fd5-8774-0aad58861252
+				{
+					#3514003583 features :: feature_list : @a30d9fce-0f14-4dec-87b0-c31abf9ee5f8
+					{
+					}
+					#313485161 children :: children_list : @71211c2c-4aaf-4624-b96d-4494b1f7f49d
+					{
+					}
+					#1880413289 name :: string : "Label 3";
+					#1241227682 visible :: propref(bool) : @fef5ce9b-4d28-4879-92bb-b99c016c4ac7#797395491;
+					#2070130269 width :: int : 301;
+					#326812684 height :: int : 88;
+					#3153410868 x :: int : 678;
+					#141300544 y :: int : 403;
+					#3325048606 text :: string : "In Arbeit..";
+					#3799094439 textColor :: color : 1229539839;
+					#3118645414 font :: objectref(font) : @8adbc9a5-5779-40eb-b23c-36d1e637f28f;
+					#4263417831 horizontalAlign :: int : 0;
+					#4155814832 verticalAlign :: int : 0;
 				}
 			}
 			#1690578799 name :: string : "Menu_Bar";
@@ -144,11 +223,11 @@ EBGUIDE 6.0.0.97672;
 					}
 					#1611266363 name :: string : "Indicator_Warning";
 					#1596382127 visible :: bool : true;
-					#951523853 width :: int : 51;
-					#2566810425 height :: int : 50;
+					#951523853 width :: int : 60;
+					#2566810425 height :: int : 60;
 					#1682829490 x :: int : 134;
 					#3668049324 y :: int : -3;
-					#476211623 image :: objectref(image) : @95b0e83d-ce38-4a56-bdde-9d84898c217c;
+					#476211623 image :: objectref(image) : @c7fc8859-209f-44b5-ba26-7494c64a1373;
 					#630230753 horizontalAlign :: int : 0;
 					#1911287652 verticalAlign :: int : 1;
 				}
@@ -162,8 +241,8 @@ EBGUIDE 6.0.0.97672;
 					}
 					#3819397971 name :: string : "Indicator_Left";
 					#2421087648 visible :: bool : true;
-					#2504725653 width :: int : 46;
-					#3311248116 height :: int : 47;
+					#2504725653 width :: int : 60;
+					#3311248116 height :: int : 60;
 					#1696535900 x :: int : 0;
 					#3036013513 y :: int : 0;
 					#849037471 image :: image_scriptedValue : @de5d9b6a-6c18-44aa-bb58-3b4a1d623027
@@ -222,10 +301,10 @@ EBGUIDE 6.0.0.97672;
 					}
 					#2697551639 name :: string : "Indicator_Right";
 					#1579333379 visible :: bool : true;
-					#245240001 width :: int : 42;
-					#852882046 height :: int : 48;
+					#245240001 width :: int : 60;
+					#852882046 height :: int : 60;
 					#3674565790 x :: int : 290;
-					#3316989103 y :: int : -2;
+					#3316989103 y :: int : -3;
 					#2593778135 image :: image_scriptedValue : @f9502491-1fd8-46eb-8749-6ece24904a51
 					{
 						#1076004264 triggerList :: trigger_list : @685b2f41-8774-4ee5-b499-486d02858803
@@ -252,12 +331,92 @@ EBGUIDE 6.0.0.97672;
 					#3008432598 Indicator_Off :: objectref(image) : @79f35588-660d-469d-a63c-d02652b45c2b;
 					#2111473851 Indicator_On :: objectref(image) : @ecda236b-dae9-4f28-abfc-54f1b71b5a8e;
 				}
+				#3743921492 child_6 :: GtfImage : @763112e0-076f-4048-a12a-fa3f6739a57b
+				{
+					#3514003583 features :: feature_list : @93d39614-1d8f-45c3-9334-e18c4f6d65d2
+					{
+					}
+					#3857426987 children :: children_list : @5290caaf-65e3-430d-9307-578167e07b62
+					{
+					}
+					#1070267351 name :: string : "Image 1";
+					#3495499581 visible :: bool : true;
+					#2700391009 width :: int : 60;
+					#2506242734 height :: int : 60;
+					#2243010300 x :: int : 203;
+					#2243298537 y :: int : 1;
+					#2733835327 image :: image_scriptedValue : @49b766b2-3ed2-41b7-903b-75aee73dffb3
+					{
+						#1076004264 triggerList :: trigger_list : @d404577e-f643-4fac-8c52-9143d4e4969f
+						{
+							#2742057238 events :: event_refs : <objectref>[];
+							#520788723 dp_items :: dp_item_refs : <objectref>[@58211ef4-55de-48b5-abf5-97dd3da51629];
+							#1698871009 properties :: property_reference_list : <propref>[];
+						}
+						#1900458350 onTrigger :: function(bool,bool) : @b8fddb5e-a5a0-4a25-a3ad-0d4cb0406ed0
+						{
+							#1202705475 script :: string : "function(v:arg0::bool)\n{\n\ttrue;\n}";
+						}
+						#975993941 read :: function(image) : @fbfc7596-70d1-4b1d-b07d-7cc0eccf1653
+						{
+							#1202705475 script :: string : "function()\n{\n\tif(dp:ExtIn_Indicator_Fernlicht == true)\n\t{\n\t\treturn v:this.Indicator_On;\n\t}\n\telse\n\t{\n\t\treturn v:this.Indicator_Off;\n\t}\n}";
+						}
+						#420574553 write :: function(bool,image) : @e9721934-05ce-404b-9bbf-36de87a9d48a
+						{
+							#1202705475 script :: string : "function(v:arg0::image)\n{\n\n}";
+						}
+					}
+					#680778956 horizontalAlign :: int : 0;
+					#3755518384 verticalAlign :: int : 1;
+					#3485016241 Indicator_Off :: objectref(image) : @70fdab1e-a70d-44d3-b493-6e06803f88f2;
+					#3122945821 Indicator_On :: objectref(image) : @5b8809b2-7de1-4bda-bfb7-d2ebcc1b8b85;
+				}
+				#1750186249 child_7 :: GtfImage : @6a06863d-02ef-452a-a030-9ff1c9585f96
+				{
+					#3514003583 features :: feature_list : @e6b068f6-9416-4581-a1d5-9c3bf0fd4160
+					{
+					}
+					#2807226246 children :: children_list : @206a099a-d6cb-46cb-9e23-ed64818402fc
+					{
+					}
+					#1716552557 name :: string : "Image 2";
+					#3441991893 visible :: bool : true;
+					#1141390477 width :: int : 60;
+					#206193000 height :: int : 60;
+					#1832548842 x :: int : 58;
+					#1092235646 y :: int : 5;
+					#3373332207 image :: image_scriptedValue : @356d2d9f-eeb4-4a73-b97a-13a7d6317084
+					{
+						#1076004264 triggerList :: trigger_list : @8a365a8f-1f9a-4d2a-8593-816231104df4
+						{
+							#2742057238 events :: event_refs : <objectref>[];
+							#149744155 dp_items :: dp_item_refs : <objectref>[@af5f8be0-f92c-4340-a7ca-7978e51f81d7];
+							#2974673171 properties :: property_reference_list : <propref>[];
+						}
+						#1776092244 onTrigger :: function(bool,bool) : @783f48f5-aaa4-4908-bf0e-1c707b5b9958
+						{
+							#1202705475 script :: string : "function(v:arg0::bool)\n{\n\ttrue;\n}";
+						}
+						#3282328075 read :: function(image) : @38d659bf-0639-4a53-81a6-54bb5c2b3e18
+						{
+							#1202705475 script :: string : "function()\n{\n\tif(dp:ExtIn_Indicator_Abblendlicht == true)\n\t{\n\t\treturn v:this.Indicator_On;\n\t}\n\telse\n\t{\n\t\treturn v:this.Indicator_Off;\n\t}\n}";
+						}
+						#3967316072 write :: function(bool,image) : @cdb1aa61-0197-402f-abbc-9d38b42e09e5
+						{
+							#1202705475 script :: string : "function(v:arg0::image)\n{\n\n}";
+						}
+					}
+					#3954324607 horizontalAlign :: int : 0;
+					#467866854 verticalAlign :: int : 1;
+					#3337848022 Indicator_Off :: objectref(image) : @ba719521-9ca8-4bc6-89c3-f8d03bd94437;
+					#2629630979 Indicator_On :: objectref(image) : @1b895771-4ffe-46ab-9382-c60ff586c88c;
+				}
 			}
 			#882966881 name :: string : "Vehicle_Indicators";
 			#1201478904 visible :: bool : true;
 			#3873187341 width :: int : 322;
 			#1642317521 height :: int : 51;
-			#37720796 x :: int : 358;
+			#37720796 x :: int : 357;
 			#16687959 y :: int : 705;
 		}
 	}
