@@ -16,38 +16,117 @@ EBGUIDE 6.0.0.97672;
 	}
 	#1463564019 states :: haptic_states : @000bddc7-7ef5-442e-8a39-13cf898eb371
 	{
-		#2393819079 child_1 :: view_state : @9c967f82-42e4-4ec4-8193-3ffd8ba22b6a
+		#2393819079 child_1 :: view_state : @ef19ff26-eb97-4edd-99f8-3deacdf56410
 		{
-			#3452614616 x :: int : 152;
-			#3766088691 y :: int : 147;
-			#3438092419 width :: int : 100;
-			#2119248103 height :: int : 100;
-			#4072778451 name :: string : "Main Menu";
-			#3655759755 entry_action :: function(void) : @00000000-0000-0000-0000-000000000000;
-			#2751391525 exit_action :: function(void) : @00000000-0000-0000-0000-000000000000;
-			#1869943839 transitions :: haptic_transitions : @3ab709ee-c67e-4c2c-b0a5-54717942140f
+			#3452614616 x :: int : 173;
+			#291906822 y :: int : 130;
+			#3947187255 width :: int : 100;
+			#4076654584 height :: int : 100;
+			#4094868067 name :: string : "Home";
+			#2543514058 entry_action :: function(void) : @00000000-0000-0000-0000-000000000000;
+			#2218849253 exit_action :: function(void) : @00000000-0000-0000-0000-000000000000;
+			#2984287086 transitions :: haptic_transitions : @4c3cd2a0-f8f8-41a9-a8ce-35ae0fd04889
 			{
 			}
-			#2943677673 internal_transitions :: internal_transitions : @f38287e0-f4d7-4b14-aa70-228c8a085f9e
+			#2694762625 internal_transitions :: internal_transitions : @13c2ced4-747f-4110-9395-2cdf850ab291
 			{
 			}
-			#3036106572 view :: GtfView : @ff85f195-ff25-45c0-a97b-1d38dba5a000;
-			#1529112919 priority_stack :: priority_stack : @00000000-0000-0000-0000-000000000000;
+			#935372963 view :: GtfView_template_instance : @964bd3bc-e4e7-4279-af0e-cedd0f1a7275
+			{
+				#62725243 name :: string : "View";
+				#3260562487 template :: objectref(GtfView_template) : @fef5ce9b-4d28-4879-92bb-b99c016c4ac7;
+				#3230395825 children :: children_list : @da215755-9250-4dc4-83cb-1ce6f8084b93
+				{
+					#2393819079 child_1 :: GtfContainer_template_instance : @32cbcd0f-de8e-4e1f-ae7b-a69e558dee1b
+					{
+						#62725243 name :: string : "Menu_Button_Music";
+						#3603789865 template :: objectref(GtfContainer_template) : @c3fff59c-be66-4b65-9c95-553794d13ae0;
+						#775610337 children :: children_list : @c56740c0-aea0-4147-8de1-d009924ebc93
+						{
+						}
+						#1254966297 x :: int : 210;
+						#4287411727 y :: int : 150;
+						#1929179202 text :: objectref(string) : @5e7e6941-922f-4e16-b376-58c6b9473379;
+						#2327525085 image :: objectref(image) : @0dbb6640-6f90-4157-b0af-4b4fb20be700;
+					}
+					#1292646081 child_2 :: GtfContainer_template_instance : @9e7047c1-aa94-444a-9aea-874506660987
+					{
+						#62725243 name :: string : "Menu_Button_Radio";
+						#3495914203 template :: objectref(GtfContainer_template) : @c3fff59c-be66-4b65-9c95-553794d13ae0;
+						#3723278849 children :: children_list : @c41167b4-8aee-46ed-ae4f-97f92bd55b1c
+						{
+						}
+						#536012896 x :: int : 440;
+						#310896071 y :: int : 150;
+						#1929179202 text :: string : "Radio";
+						#2327525085 image :: objectref(image) : @b8539eec-1b50-4b3d-933d-55015752316d;
+					}
+					#2459320821 child_3 :: GtfContainer_template_instance : @00dac28d-fa63-44e9-8778-54374c93bca5
+					{
+						#62725243 name :: string : "Menu_Button_Navigation";
+						#3683782063 template :: objectref(GtfContainer_template) : @c3fff59c-be66-4b65-9c95-553794d13ae0;
+						#3625072337 children :: children_list : @5c948e2a-c458-40c2-8e87-d73cd36ca902
+						{
+						}
+						#1169202853 x :: int : 680;
+						#1892939491 y :: int : 150;
+						#1929179202 text :: string : "Navigation";
+						#2327525085 image :: objectref(image) : @d59ced50-798e-4665-be42-b78029ea7d66;
+					}
+					#931880986 child_4 :: GtfContainer_template_instance : @0a825e2c-c5d9-4afb-881a-22d6c907ef81
+					{
+						#62725243 name :: string : "Menu_Button_Gesture";
+						#3121227271 template :: objectref(GtfContainer_template) : @c3fff59c-be66-4b65-9c95-553794d13ae0;
+						#3370066233 children :: children_list : @63c97cca-d09b-456d-9362-3651c351520b
+						{
+						}
+						#3155801614 x :: int : 210;
+						#1665298603 y :: int : 400;
+						#1929179202 text :: string : "Gesture";
+						#2327525085 image :: objectref(image) : @17b00647-8c00-4cb3-af3b-4d1370207b11;
+					}
+					#3280291059 child_5 :: GtfContainer_template_instance : @c62b25ab-1742-469c-86ff-a5c852313d27
+					{
+						#62725243 name :: string : "Menu_Button_Info";
+						#3693580582 template :: objectref(GtfContainer_template) : @c3fff59c-be66-4b65-9c95-553794d13ae0;
+						#1376375207 children :: children_list : @8519fcce-63d6-4160-a5bb-1c39e487c801
+						{
+						}
+						#3639539837 x :: int : 440;
+						#1967358843 y :: int : 400;
+						#1929179202 text :: string : "Info";
+						#2327525085 image :: objectref(image) : @adb364ca-3da2-4531-8e3a-2cd68076531c;
+					}
+					#2467414850 child_6 :: GtfContainer_template_instance : @b9fc80eb-8f0f-4a26-ade6-df631f47b79a
+					{
+						#62725243 name :: string : "Menu_Button_Settings";
+						#3112807976 template :: objectref(GtfContainer_template) : @c3fff59c-be66-4b65-9c95-553794d13ae0;
+						#4034938867 children :: children_list : @dcd7b4b6-07f2-4c3d-b520-4566f86dadaf
+						{
+						}
+						#1475910841 x :: int : 680;
+						#380613483 y :: int : 400;
+						#1929179202 text :: string : "Settings";
+						#2327525085 image :: objectref(image) : @2c658482-b188-4126-896c-8f5f3bc5536d;
+					}
+				}
+			}
+			#1018189529 priority_stack :: priority_stack : @00000000-0000-0000-0000-000000000000;
 		}
 	}
-	#2208610082 initial_state :: haptic_initial_state : @0cd9d822-6672-4a05-92ba-0b06b5d94bdb
+	#2208610082 initial_state :: haptic_initial_state : @98432bcb-f620-4608-ac4d-de67ed71ca82
 	{
-		#3452614616 x :: int : 34;
-		#410359311 y :: int : 182;
-		#2960225923 width :: int : 100;
-		#1122017962 height :: int : 100;
-		#3305823257 default_transition :: haptic_default_transition : @f6880f18-32e1-4be6-968d-7c00fe7b0b92
+		#3452614616 x :: int : 43;
+		#1228819003 y :: int : 170;
+		#934754917 width :: int : 100;
+		#1139549811 height :: int : 100;
+		#1294509477 default_transition :: haptic_default_transition : @015b5b82-2421-43a8-840d-8a59c0c67c1c
 		{
 			#2365897554 action :: function(void) : @00000000-0000-0000-0000-000000000000;
-			#1085584087 target_state :: objectref(view_state) : @9c967f82-42e4-4ec4-8193-3ffd8ba22b6a;
-			#1572820936 line_color :: color : 255;
-			#3867810364 source_dock :: float : 0.245699555;
-			#3723019316 target_dock :: float : 0.7599588;
+			#643045900 target_state :: objectref(view_state) : @ef19ff26-eb97-4edd-99f8-3deacdf56410;
+			#2364177298 line_color :: color : 255;
+			#900473632 source_dock :: float : 0.24308458;
+			#2326265628 target_dock :: float : 0.738125145;
 		}
 	}
 	#2390299781 final_state :: haptic_final_state : @00000000-0000-0000-0000-000000000000;

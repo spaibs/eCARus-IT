@@ -1,4 +1,59 @@
 EBGUIDE 6.0.0.97672;
 @fbefe4c6-26e0-450a-95fd-47be54571b46
 {
+	#2393819079 child_1 :: dp(color) : @cd89260b-5f89-4186-a5ad-aca801828d01
+	{
+		#3493618073 value :: color : -297184257;
+		#1319369987 name :: string : "Color_Highlight_Touch";
+		#2597739519 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#474035131 reader_id :: int : -1;
+		#1756483053 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#604376665 writer_id :: int : -1;
+		#347614129 dp_item_mode_member :: dp_item_mode : 3;
+	}
+	#3966462436 child_2 :: dp(string) : @5e7e6941-922f-4e16-b376-58c6b9473379
+	{
+		#3493618073 value :: language_string : @c7590942-75c2-4809-b6a4-7d1ddc0b9deb
+		{
+			#3498926489 values :: language_stringitemlist : @2823d281-e276-4545-b4a5-0c6fa55f0168
+			{
+				#2393819079 child_1 :: language_stringitem : @4f9305e5-5ba7-46df-a816-e27837504200
+				{
+					#3487716354 languageRef :: objectref(language) : @de96d0e8-473e-4910-905e-1ff46f7ad38b;
+					#1331359030 value :: string : "Music";
+				}
+				#4203670702 child_2 :: language_stringitem : @8187b794-3bab-4b7f-a4c9-acb22d9cde3f
+				{
+					#3487716354 languageRef :: objectref(language) : @50c51846-6f99-4798-9f0d-9bc6386458d8;
+					#3620476451 value :: string : "Musik";
+				}
+			}
+		}
+		#200726190 name :: string : "Menu_Item_Button_Music";
+		#4068640429 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#3884289028 reader_id :: int : -1;
+		#226883217 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#2184143297 writer_id :: int : -1;
+		#4114576643 dp_item_mode_member :: dp_item_mode : 4;
+	}
+	#2917911257 child_3 :: dp(bool) : @5cfa3670-114e-400a-8a3f-aef8ad8f928b
+	{
+		#3493618073 value :: bool : false;
+		#1209641255 name :: string : "ExtIn_Indicator_Left_IsOn";
+		#3104979825 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#3848409508 reader_id :: int : -1;
+		#2472370137 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#988508110 writer_id :: int : -1;
+		#333213583 dp_item_mode_member :: dp_item_mode : 0;
+	}
+	#557940392 child_4 :: dp(bool) : @2ae60796-5ead-4a09-a139-601235f964e0
+	{
+		#3493618073 value :: bool : false;
+		#1741087938 name :: string : "ExtIn_Indicator_Right_IsOn";
+		#70016797 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#3439694704 reader_id :: int : -1;
+		#2970292661 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#633168515 writer_id :: int : -1;
+		#2090043679 dp_item_mode_member :: dp_item_mode : 0;
+	}
 }

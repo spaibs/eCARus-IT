@@ -26,7 +26,14 @@ EBGUIDE 6.0.0.97672;
 				#62725243 name :: string : "Standard";
 				#1651034657 country :: string : "US";
 				#2913771070 dialect :: string : "en";
-				#2685637836 identifier :: int : -1;
+				#2685637836 identifier :: int : 1;
+			}
+			#4023117460 child_2 :: language : @50c51846-6f99-4798-9f0d-9bc6386458d8
+			{
+				#62725243 name :: string : "Deutsch";
+				#1307452079 country :: string : "DE";
+				#3314901620 dialect :: string : "de";
+				#3111121571 identifier :: int : 2;
 			}
 		}
 		#2537179137 variants :: variants : @3b341776-836f-424c-827d-2b0919dd5742

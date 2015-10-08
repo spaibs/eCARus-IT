@@ -1,0 +1,270 @@
+EBGUIDE 6.0.0.97672;
+@9287de99-f9ba-4eed-9317-42746287b0ad
+{
+	#3514003583 features :: feature_list : @a39a15cf-f827-4372-8a20-9fde0445ef5d
+	{
+	}
+	#2897905773 children :: children_list : @6a471f38-3510-41c2-ab7b-011e2bcbd369
+	{
+		#1352895617 child_2 :: GtfRectangle : @963cc110-fe0c-45ed-a5c9-b1f0f5e026c1
+		{
+			#3514003583 features :: feature_list : @e07ac95c-e475-4fe4-ac94-2d26df421f85
+			{
+			}
+			#4197999583 children :: children_list : @ff401bcd-0193-4904-b73a-b84060680a25
+			{
+			}
+			#2793567875 name :: string : "Background_White";
+			#2774880525 visible :: bool : true;
+			#3375872197 width :: propref(int) : @9287de99-f9ba-4eed-9317-42746287b0ad#1499416841;
+			#623567725 height :: propref(int) : @9287de99-f9ba-4eed-9317-42746287b0ad#130462725;
+			#1569568452 x :: int : 0;
+			#3270067155 y :: int : 0;
+			#2947189884 fillColor :: color : -1;
+		}
+		#2393819079 child_1 :: GtfImage : @3648fa1d-8dc8-4816-8387-624037ff0478
+		{
+			#3514003583 features :: feature_list : @4a08de6d-f7d1-4674-b93a-1a0d5b7dcda7
+			{
+				#2393819079 child_1 :: ScaleMode : @6aa12e85-5a41-4c4f-a324-0cc2257cdbed
+				{
+					#2790929656 scaleMode :: int : 2;
+				}
+				#4219275224 child_2 :: Coloration : @5da9b926-b383-40ed-9a94-98fcf55e4224
+				{
+					#439141778 colorationEnabled :: bool : true;
+					#2154928764 colorationColor :: color : -50;
+				}
+			}
+			#3763415013 children :: children_list : @a6c77f2c-515b-4219-bd5b-ca267c70d8d1
+			{
+			}
+			#1678028669 name :: string : "Background";
+			#200345394 visible :: bool : true;
+			#2415836961 width :: int : 2247;
+			#1653381351 height :: int : 874;
+			#12230430 x :: int : -199;
+			#39381942 y :: int : -6;
+			#2175915575 image :: objectref(image) : @c73eed3e-22b1-4916-88d7-4999312c5c97;
+			#2314648861 horizontalAlign :: int : 0;
+			#3809202968 verticalAlign :: int : 1;
+		}
+		#71106108 child_3 :: GtfImage : @60809f66-fe8b-4abe-baf2-ea8f7057fd35
+		{
+			#3514003583 features :: feature_list : @7ef2bda6-2f5e-40b8-8470-b905f1f4849e
+			{
+			}
+			#2809211506 children :: children_list : @75283cf7-d719-4b18-adcf-df9d761ae3b1
+			{
+				#2393819079 child_1 :: GtfLabel : @d1ed08a5-b4de-488f-82e5-d227fbff9309
+				{
+					#3514003583 features :: feature_list : @a2745e99-2bc6-4073-8f6c-9eb808e90066
+					{
+					}
+					#2899161556 children :: children_list : @d32f2dda-ef66-48b1-ac7b-e23f768524f4
+					{
+					}
+					#1662595963 name :: string : "Label 1";
+					#2388863052 visible :: bool : true;
+					#2841503057 width :: int : 193;
+					#662480574 height :: int : 50;
+					#2691423938 x :: int : 32;
+					#904015582 y :: int : 701;
+					#1177329342 text :: string_scriptedValue : @c1d84e9a-e85d-4365-8dbd-be76b962798b
+					{
+						#1076004264 triggerList :: trigger_list : @f29ff555-8a8b-46a2-9ce7-c19b5b81eb0b
+						{
+							#2742057238 events :: event_refs : <objectref>[];
+							#3895105352 dp_items :: dp_item_refs : <objectref>[];
+							#248436359 properties :: property_reference_list : <propref>[];
+						}
+						#2609059288 onTrigger :: function(bool,bool) : @a272bb57-f1d2-4caf-be33-65111bc207f1
+						{
+							#1202705475 script :: string : "function(v:arg0::bool)\n{\n\ttrue;\n}";
+						}
+						#786808011 read :: function(string) : @71b6e8a2-cc09-4e8e-a98c-bd42258244b9
+						{
+							#1202705475 script :: string : "function()\n{\n\treturn f:int2string(f:localtime_hour(f:system_time())) + \":\" + f:int2string(f:localtime_minute(f:system_time()));\n}";
+						}
+						#3991154814 write :: function(bool,string) : @4adb1dd7-138b-4ab7-8c9c-2e9ac6afe73f
+						{
+							#1202705475 script :: string : "function(v:arg0::string)\n{\n\n}";
+						}
+					}
+					#3627595007 textColor :: color : -1;
+					#141092040 font :: objectref(font) : @956e3be3-4e41-45c7-a920-6c44b0c8dd3c;
+					#2427682240 horizontalAlign :: int : 0;
+					#1240875220 verticalAlign :: int : 0;
+				}
+			}
+			#1690578799 name :: string : "Menu_Bar";
+			#1104533645 visible :: bool : true;
+			#2051007597 width :: propref(int) : @9287de99-f9ba-4eed-9317-42746287b0ad#1499416841;
+			#526130679 height :: propref(int) : @9287de99-f9ba-4eed-9317-42746287b0ad#130462725;
+			#2780363298 x :: int : 0;
+			#1398187211 y :: int : 0;
+			#1137582687 image :: objectref(image) : @f4b2d54d-d34e-41c5-af0c-3a9b53d368f1;
+			#1237620944 horizontalAlign :: int : 0;
+			#657342256 verticalAlign :: int : 1;
+		}
+		#2936723474 child_4 :: GtfContainer : @c08718e3-8a64-44b0-841c-35b20e4ce7d2
+		{
+			#3514003583 features :: feature_list : @0f9dec83-cd52-4b50-8503-4b481f5fb8b5
+			{
+			}
+			#2708507297 children :: children_list : @27182156-196d-4aaa-80b3-9bcc23cab4fc
+			{
+				#801276451 child_4 :: GtfImage : @a471b1c5-19d5-4ac9-bc6f-590bada77e71
+				{
+					#3514003583 features :: feature_list : @7a10cf7d-2a33-4749-944a-2603998f219d
+					{
+					}
+					#184999324 children :: children_list : @81c0df03-98a8-4770-9726-a926dd9f9637
+					{
+					}
+					#286843043 name :: string : "Indicator_Dim_Light";
+					#657685065 visible :: bool : true;
+					#201241889 width :: int : 100;
+					#3399777445 height :: int : 100;
+					#3964828584 x :: int : 304;
+					#2933573255 y :: int : 495;
+					#1618344647 image :: image : @30556823-4f5f-44fc-9eb3-caba4a1cede1
+					{
+					}
+					#1892463994 horizontalAlign :: int : 0;
+					#2065003268 verticalAlign :: int : 1;
+				}
+				#3077648665 child_3 :: GtfImage : @069f62ee-6116-4270-8cd6-d03e64bfeec4
+				{
+					#3514003583 features :: feature_list : @bc50d944-1b69-4b60-be3c-2d98b23c0bd6
+					{
+					}
+					#3933896927 children :: children_list : @122affde-5d7d-45b7-a250-a63d1be0ea88
+					{
+					}
+					#1611266363 name :: string : "Indicator_Warning";
+					#1596382127 visible :: bool : true;
+					#951523853 width :: int : 51;
+					#2566810425 height :: int : 50;
+					#1682829490 x :: int : 134;
+					#3668049324 y :: int : -3;
+					#476211623 image :: objectref(image) : @95b0e83d-ce38-4a56-bdde-9d84898c217c;
+					#630230753 horizontalAlign :: int : 0;
+					#1911287652 verticalAlign :: int : 1;
+				}
+				#2393819079 child_1 :: GtfImage : @2a5d6ca0-e028-4244-b1f0-9e6f803c8ff2
+				{
+					#3514003583 features :: feature_list : @77202780-05fa-4996-89c3-78d82f04cb81
+					{
+					}
+					#3550179401 children :: children_list : @8287536f-da9d-41bb-9c5f-9f3bd6f3e30c
+					{
+					}
+					#3819397971 name :: string : "Indicator_Left";
+					#2421087648 visible :: bool : true;
+					#2504725653 width :: int : 46;
+					#3311248116 height :: int : 47;
+					#1696535900 x :: int : 0;
+					#3036013513 y :: int : 0;
+					#849037471 image :: image_scriptedValue : @de5d9b6a-6c18-44aa-bb58-3b4a1d623027
+					{
+						#1076004264 triggerList :: trigger_list : @9529e803-d386-4586-b93d-d457a91483b9
+						{
+							#2742057238 events :: event_refs : <objectref>[];
+							#2867002731 dp_items :: dp_item_refs : <objectref>[@5cfa3670-114e-400a-8a3f-aef8ad8f928b];
+							#3796744625 properties :: property_reference_list : <propref>[];
+						}
+						#3233119429 onTrigger :: function(bool,bool) : @0af907b1-988c-4a12-94ab-6a2e51cb57d8
+						{
+							#1202705475 script :: string : "function(v:arg0::bool)\n{\n\ttrue;\n}";
+						}
+						#2631996293 read :: function(image) : @e4655f41-103b-4974-940c-1fb17d2d1e65
+						{
+							#1202705475 script :: string : "function()\n{\n\tif(dp:ExtIn_Indicator_Left_IsOn == true)\n\t{\n\t\treturn v:this.Indicator_On;\n\t}\n\telse\n\t{\n\t\treturn v:this.Indicator_Off;\n\t}\n}";
+						}
+						#2428304760 write :: function(bool,image) : @7ecd9dd1-c550-4296-86ab-f6e3396dd7c1
+						{
+							#1202705475 script :: string : "function(v:arg0::image)\n{\n\n}";
+						}
+					}
+					#132055346 horizontalAlign :: int : 0;
+					#674707272 verticalAlign :: int : 1;
+					#2561260136 Indicator_Off :: objectref(image) : @bd7e292d-0c0e-4323-b820-c3af91ff0098;
+					#3478325979 Indicator_On :: objectref(image) : @c091b4f2-6ef0-4e4c-837d-3acb6d19c9ec;
+				}
+				#986167319 child_5 :: GtfImage : @73ab3a0f-7e9e-45c2-ad8f-494d6c08da6b
+				{
+					#3514003583 features :: feature_list : @86293233-045e-425b-829c-f1d7a0e48851
+					{
+					}
+					#4271010428 children :: children_list : @475c06b4-7aa9-43ee-b0df-e5be8787dcc6
+					{
+					}
+					#1249466649 name :: string : "Indicator_High_Beam";
+					#864671882 visible :: bool : true;
+					#3365322397 width :: int : 100;
+					#2176453324 height :: int : 100;
+					#3845510192 x :: int : 335;
+					#2145604794 y :: int : 300;
+					#968295319 image :: image : @b1e1ea9e-3944-4d34-960f-bb270cdd99d9
+					{
+					}
+					#2324349902 horizontalAlign :: int : 0;
+					#801831558 verticalAlign :: int : 1;
+				}
+				#1806957770 child_2 :: GtfImage : @faca1ddb-4a85-42c9-a7af-24e7477c1ade
+				{
+					#3514003583 features :: feature_list : @937be556-cc99-4a8b-be3b-1144db1907bf
+					{
+					}
+					#3470047506 children :: children_list : @54e48368-ae58-4451-af1e-182ffa713c38
+					{
+					}
+					#2697551639 name :: string : "Indicator_Right";
+					#1579333379 visible :: bool : true;
+					#245240001 width :: int : 42;
+					#852882046 height :: int : 48;
+					#3674565790 x :: int : 290;
+					#3316989103 y :: int : -2;
+					#2593778135 image :: image_scriptedValue : @f9502491-1fd8-46eb-8749-6ece24904a51
+					{
+						#1076004264 triggerList :: trigger_list : @685b2f41-8774-4ee5-b499-486d02858803
+						{
+							#2742057238 events :: event_refs : <objectref>[];
+							#3505609539 dp_items :: dp_item_refs : <objectref>[@2ae60796-5ead-4a09-a139-601235f964e0];
+							#2312831673 properties :: property_reference_list : <propref>[];
+						}
+						#1768735512 onTrigger :: function(bool,bool) : @cacaf4b7-10c1-4407-a5bf-643115fbb724
+						{
+							#1202705475 script :: string : "function(v:arg0::bool)\n{\n\ttrue;\n}";
+						}
+						#2826673081 read :: function(image) : @798f0086-0662-45cd-baf4-092ee0b7b3b4
+						{
+							#1202705475 script :: string : "function()\n{\n\tif(dp:ExtIn_Indicator_Right_IsOn == true)\n\t{\n\t\treturn v:this.Indicator_On;\n\t}\n\telse\n\t{\n\t\treturn v:this.Indicator_Off;\n\t}\n}";
+						}
+						#3540326858 write :: function(bool,image) : @e7c2fd57-932c-405a-90cd-b0d600a11079
+						{
+							#1202705475 script :: string : "function(v:arg0::image)\n{\n\n}";
+						}
+					}
+					#2836179610 horizontalAlign :: int : 0;
+					#1918446324 verticalAlign :: int : 1;
+					#3008432598 Indicator_Off :: objectref(image) : @79f35588-660d-469d-a63c-d02652b45c2b;
+					#2111473851 Indicator_On :: objectref(image) : @ecda236b-dae9-4f28-abfc-54f1b71b5a8e;
+				}
+			}
+			#882966881 name :: string : "Vehicle_Indicators";
+			#1201478904 visible :: bool : true;
+			#3873187341 width :: int : 322;
+			#1642317521 height :: int : 51;
+			#37720796 x :: int : 358;
+			#16687959 y :: int : 705;
+		}
+	}
+	#2798123487 name :: string : "View";
+	#97722311 visible :: bool : true;
+	#1499416841 width :: int : 1024;
+	#130462725 height :: int : 768;
+	#3218188000 x :: int : 0;
+	#2706660142 y :: int : 0;
+}
