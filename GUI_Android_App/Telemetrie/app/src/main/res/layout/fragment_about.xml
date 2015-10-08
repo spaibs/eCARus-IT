@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="de.tum.ei.ecarus.telemetrie.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|top"
+            android:src="@drawable/funktionsgrafik"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fachgebiet\nEnergiewandlungstechnik\nProf. Dr.-Ing. H.-G. Herzog"
+            android:id="@+id/textView6"
+            android:textColor="@color/myPrimaryDarkColor"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignStart="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theresienstrasse 90\nGebäude N3, 1. Stock\n80333 München "
+            android:id="@+id/textView5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignEnd="@+id/textView7"
+            android:textColor="#010101" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ansprechpartner"
+            android:id="@+id/textView7"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView8"
+            android:textColor="#010101" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Michael Winter\nTel.: +49.89.289.23456\nE-Mail: ecarus@ei.tum.de"
+            android:id="@+id/textView8"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignEnd="@+id/textView9"
+            android:textColor="#010101" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Projekt eCARus"
+            android:id="@+id/textView9"
+            android:textColor="@color/primary_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_marginTop="20dp"
+            android:textColorHighlight="@color/abc_primary_text_material_light" />
+
+    </RelativeLayout>
+
+</FrameLayout>

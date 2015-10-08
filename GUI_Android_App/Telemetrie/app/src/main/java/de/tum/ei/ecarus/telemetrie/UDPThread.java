@@ -33,7 +33,7 @@ public class UDPThread  extends AsyncTask<Object, Byte, String> {
         this.mainActivity = mainActivity;
     }
     @Override
-    protected String doInBackground(Object... params) {
+    protected String doInBackground(Object... params) { // this function runs on a new thread
         try {
             while(true) {
                 Thread.sleep(200);
@@ -56,10 +56,10 @@ public class UDPThread  extends AsyncTask<Object, Byte, String> {
                     udpSocket.send(outGoingPacket); //send a message to eCARus
                 }
 
-                this.publishProgress(msg);
+                this.publishProgress(msg); // transmit data to the main thread!
                 udpSocket.close();
             }
-        } catch (Exception e) {
+        } catch (Exception e) { //an error occurred
             Log.d("UDP_THREAD_EXCEPTION", e.toString());
             error = true;
             Byte[] msg = new Byte[14];
@@ -70,7 +70,7 @@ public class UDPThread  extends AsyncTask<Object, Byte, String> {
         return null;
     }
     @Override
-    protected void onProgressUpdate(Byte[] msg) {
+    protected void onProgressUpdate(Byte[] msg) { //this function runs on the main thread!!!! This allows the GUI to update with the transmitted information
         if(error)
         {
             mainActivity.setStatus("ERROR", "YOU ARE NOT CONNECTED!");

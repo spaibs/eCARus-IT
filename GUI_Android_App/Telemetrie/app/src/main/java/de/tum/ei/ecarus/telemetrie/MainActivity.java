@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
 
         try {
-        //create Fragments
+        //create Fragments <-!!! you have to comment out  "//mListener = (OnFragmentInteractionListener) activity;" in each created Fragment!!!
             Class fragmentClass;
             fragmentClass = MainFragment.class;
             if (mainFragment == null)
@@ -115,6 +115,8 @@ public class MainActivity extends AppCompatActivity
                 RawDataFragment = (Fragment)RawDataFragment.class.newInstance();
             if(eCARusFragment == null)
                 eCARusFragment =  (Fragment)eCARusFragment.class.newInstance();
+            if(aboutFragment == null)
+                aboutFragment =  (Fragment)AboutFragment.class.newInstance();
             setTitle("Main");
         }catch(Exception e){}
 
@@ -175,7 +177,7 @@ public class MainActivity extends AppCompatActivity
             if(position == 4) {
 
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.container, interpretedFragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.container, aboutFragment).commit();
                 setTitle("About");
             }
 
@@ -226,7 +228,7 @@ public class MainActivity extends AppCompatActivity
         //  setup_Connection();
         check_Connection();
     }
-    public void on_InterpretButton_Clicked(View view)
+    public void on_InterpretButton_Clicked(View view) // activates the interpretion in the interpreted tab
     {
         initViews();
         if(interpretButton.getText().toString().equals("Start")) {
@@ -242,7 +244,7 @@ public class MainActivity extends AppCompatActivity
             }catch(Exception e){Log.d("Exception",e.toString());}
         }
     }
-    public void on_RawDataButton_Clicked(View view)
+    public void on_RawDataButton_Clicked(View view)// activates the data view in the RawData tab
     {
         Button RawDataButton = ((Button)(this.findViewById(R.id.RawDataStartButton)));
         if(RawDataButton.getText().toString().equals("Start"))  {
@@ -260,7 +262,7 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    public void on_ecarusStartButton_Clicked(View view)
+    public void on_ecarusStartButton_Clicked(View view) // activates the eCARus-animation in the eCARus tab
     {
         initIndicatorImageViews();
         createWatchControlSpinner();
@@ -283,14 +285,14 @@ public class MainActivity extends AppCompatActivity
     }
     public void initIndicatorImageViews(){
         //to prevent position failures, both indicator ImageViews are as wide as the eCARus ImageView, causing the problem that the right indicator imageView overlaps
-        // the left indicator ImageView. To enable successfully touching on each image, the position of the touch must be captured by the onTouchEvent
+        // the left indicator ImageView. To enable successfully touching on each image, the position of the touch must be captured by an onTouchEvent
         ImageView indicatorRightImageView = (ImageView) findViewById(R.id.indicatorRightImageView);
         indicatorRightImageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     if (event.getX() < getResources().getDisplayMetrics().widthPixels / 2)
-                        lightImageView = (ImageView) findViewById(R.id.indicatorLeftImageView);
+                        lightImageView = (ImageView) findViewById(R.id.indicatorLeftImageView); //the left indicator is activated, if the touch occurred in the left side of the screen
                     else
                         lightImageView = (ImageView) findViewById(R.id.indicatorRightImageView);
                     on_Light_clicked(lightImageView);
@@ -303,7 +305,7 @@ public class MainActivity extends AppCompatActivity
     *  by the touch gestures on the light images. If Watch is selected, the animation of eCARus is updated by the data,
      * sent by the Car
      */
-    public void createWatchControlSpinner(){
+    public void createWatchControlSpinner(){// creates a spinner view allowing to switch between control and watch mode;
         Spinner watch_Control_Spinner = (Spinner) findViewById(R.id.Watch_Control_Spinner);
         //Initiation of the Spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,  // Create an adapter between the string array, which contains the names of the items and the view
@@ -409,7 +411,7 @@ public class MainActivity extends AppCompatActivity
         if(tabIndex == 2)
         {
             CheckBox PauseRawDataCheckBox = (CheckBox) findViewById(R.id.PauseRawDataCheckBox);
-            RawDataGridIndex = 4;
+            //RawDataGridIndex = 4;
             if(tabIndex == 2 && !PauseRawDataCheckBox.isChecked())
                 addItemRawDataGrid(""+ID,data); //create list of raw data
         }
@@ -435,6 +437,7 @@ public class MainActivity extends AppCompatActivity
         try {
             if(spinnerPosition == 0)//only update the eCARus animation ImageViews if "watch" is enabled by the Watch_Control_Spinner, update the the ImageViews by touch inputs otherwise
             {
+                //image init
                 ImageView brakelightImageView = (ImageView) this.findViewById(R.id.brakelightsImageView);
                 ImageView backlightImageView = (ImageView) this.findViewById(R.id.backlightsImageView);
                 ImageView headlightImageView = (ImageView) this.findViewById(R.id.headLightsImageView);
@@ -445,7 +448,7 @@ public class MainActivity extends AppCompatActivity
                 if (interpretedData.BrakeLight)
                     brakelightImageView.setAlpha((float) 1);
                 else
-                    brakelightImageView.setAlpha((float) 0.005);
+                    brakelightImageView.setAlpha((float) 0.005); //set the image transparent but not fully invisible, to keep the elements onClick feature enabled
                 if (interpretedData.BackwardLight)
                     backlightImageView.setAlpha((float) 1);
                 else
@@ -465,7 +468,7 @@ public class MainActivity extends AppCompatActivity
                 if (!interpretedData.FullBeamLight && interpretedData.ForwardLight)
                     headlightImageView.setImageDrawable(getResources().getDrawable(R.drawable.full_beam_65_vertical));
                 else
-                    headlightImageView.setImageDrawable(getResources().getDrawable(R.drawable.headlights_65_vertical));
+                    headlightImageView.setImageDrawable(getResources().getDrawable(R.drawable.headlights_65_vertical)); //switch between full beam and headlight-image
             }
         }catch(Exception e){}
     }
