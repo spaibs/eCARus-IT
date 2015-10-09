@@ -95,5 +95,20 @@ EBGUIDE 6.0.0.97672;
 	}
 	#1718133141 library_configurations :: library_configurations : @35111150-e924-48e8-a08a-89c161f70b6b
 	{
+		#2393819079 child_1 :: library_configuration : @182427e4-0ca0-4c4a-abd8-3f2ec6ed12bb
+		{
+			#803282398 location :: string : "MODEL_PATH";
+			#3170694928 library_name :: string : "libMusicServiceAccess.so";
+		}
+		#1382377952 child_2 :: library_configuration : @7d30e6f1-7eed-47df-9554-9df9fa80d215
+		{
+			#803282398 location :: string : "MODEL_PATH";
+			#4027815949 library_name :: string : "libTowerAccess.so";
+		}
+		#2822112675 child_3 :: library_configuration : @270fda74-b64f-475f-a684-99ac2bea9998
+		{
+			#803282398 location :: string : "MODEL_PATH";
+			#3317608959 library_name :: string : "libNavigationServiceAccess.so";
+		}
 	}
 }

@@ -1,4 +1,120 @@
 EBGUIDE 6.0.0.97672;
 @9882d0fc-7633-45ad-b919-2f2ab7754ada
 {
+	#2393819079 child_1 :: GtfContainer_template : @c3fff59c-be66-4b65-9c95-553794d13ae0
+	{
+		#62725243 name :: string : "TUM_Menu_Button";
+		#1260713591 structure :: GtfContainer : @886c465a-67fe-4c34-ab62-c2ea24de1de6
+		{
+			#3514003583 features :: feature_list : @42910ad7-1eb4-4737-a252-8cbaeb770946
+			{
+				#2393819079 child_1 :: TouchPressed : @7bafcb82-7677-4e0e-ab73-9103ef30a550
+				{
+					#776325383 touchPressed :: function(bool,int,int,int,int) : @926b0e3e-d373-4dcf-b841-34ef9028742d
+					{
+						#1202705475 script :: string : "function(v:touchId::int, v:x::int, v:y::int, v:fingerId::int)\n{\n    false\n}";
+					}
+				}
+				#867706454 child_2 :: StateTouched : @65034fff-e3d1-437b-b741-490fe4cc08ca
+				{
+					#48586717 touchable :: bool : true;
+					#2611561931 touched :: propref(bool) : @fc9b2f1e-fe19-44fd-b02a-266a742c9480#439141778;
+					#3959767140 touchPolicy :: int : 0;
+					#2422959930 touchBehavior :: int : 0;
+				}
+				#438969333 child_3 :: TouchShortReleased : @9d16e44a-b230-42c8-9a2c-18bc46092099
+				{
+					#3114962824 touchShortReleased :: propref(function(bool,int,int,int,int)) : @c3fff59c-be66-4b65-9c95-553794d13ae0#206552624;
+				}
+				#3265998089 child_4 :: Coloration : @fc9b2f1e-fe19-44fd-b02a-266a742c9480
+				{
+					#439141778 colorationEnabled :: bool : false;
+					#1179376741 colorationColor :: objectref(color) : @cd89260b-5f89-4186-a5ad-aca801828d01;
+				}
+			}
+			#2751856880 children :: children_list : @e3172175-0bd2-4a90-ade1-a163e75f81f5
+			{
+				#3318369391 child_3 :: GtfImage : @f6431520-3a39-4d76-9820-e8ce3a30b705
+				{
+					#3514003583 features :: feature_list : @95a7e67d-a2d1-4ef6-96e1-d8f27985abb8
+					{
+					}
+					#3196774371 children :: children_list : @36d63152-830c-4a44-99de-f8ecbba17739
+					{
+					}
+					#2196725385 name :: string : "Background_Image";
+					#593273517 visible :: bool : true;
+					#1232432377 width :: propref(int) : @886c465a-67fe-4c34-ab62-c2ea24de1de6#657949953;
+					#759848771 height :: propref(int) : @886c465a-67fe-4c34-ab62-c2ea24de1de6#3223864900;
+					#3726947272 x :: int : 0;
+					#3393785071 y :: int : 0;
+					#878337647 image :: objectref(image) : @77e62b9d-5ef2-4970-b436-a98283e4457d;
+					#3901032122 horizontalAlign :: int : 0;
+					#2915556834 verticalAlign :: int : 1;
+				}
+				#3973851472 child_2 :: GtfLabel : @88825bde-8151-4249-8fa1-eba9295bf552
+				{
+					#3514003583 features :: feature_list : @3e39fbe0-3a11-4c25-81bb-5b75b14afccd
+					{
+					}
+					#3254138756 children :: children_list : @54c8d6f9-5068-49fc-b8fa-ca3031b028e1
+					{
+					}
+					#1295638821 name :: string : "Bottom_Label";
+					#980058224 visible :: bool : true;
+					#3049882845 width :: int : 144;
+					#1422292805 height :: int : 42;
+					#3897807286 x :: int : 9;
+					#844434000 y :: int : 138;
+					#1939908758 text :: propref(string) : @c3fff59c-be66-4b65-9c95-553794d13ae0#1929179202;
+					#353792786 textColor :: color : -1;
+					#3707100330 font :: objectref(font) : @bcbb434f-6be3-431d-b4bd-4c266151703e;
+					#4086710295 horizontalAlign :: int : 1;
+					#2474454980 verticalAlign :: int : 0;
+				}
+				#2393819079 child_1 :: GtfImage : @2bb269be-77ca-4753-a2db-b27700778fe3
+				{
+					#3514003583 features :: feature_list : @2e650e35-aa4d-40e5-ad5d-2abce21ab526
+					{
+					}
+					#4181860093 children :: children_list : @9429b9f5-415b-4128-9bab-b134489dc9ac
+					{
+					}
+					#3940302113 name :: string : "Icon";
+					#894000873 visible :: bool : true;
+					#3984219921 width :: int : 120;
+					#669697079 height :: int : 120;
+					#1054180000 x :: int : 23;
+					#4058741055 y :: int : 17;
+					#4182456007 image :: propref(image) : @c3fff59c-be66-4b65-9c95-553794d13ae0#2327525085;
+					#3667130989 horizontalAlign :: int : 1;
+					#884383110 verticalAlign :: int : 0;
+				}
+			}
+			#1484451227 name :: string : "Container";
+			#2206759422 visible :: bool : true;
+			#657949953 width :: int : 164;
+			#3223864900 height :: int : 188;
+			#2392779370 x :: propref(int) : @c3fff59c-be66-4b65-9c95-553794d13ae0#3772428658;
+			#906153346 y :: propref(int) : @c3fff59c-be66-4b65-9c95-553794d13ae0#3081045078;
+		}
+		#3772428658 x :: int : 0;
+		#3081045078 y :: int : 0;
+		#206552624 touchShortReleased :: function(bool,int,int,int,int) : @104d5e63-25b7-4d66-a998-b42e859cf1e1
+		{
+			#1202705475 script :: string : "function(v:touchId::int, v:x::int, v:y::int, v:fingerId::int)\n{\n    false\n}";
+		}
+		#2327525085 image :: image : @cad614d7-dae7-4ba6-ac20-a6d3c012aaee
+		{
+		}
+		#1929179202 text :: string : "label";
+	}
+	#374194785 child_2 :: GtfView_template : @fef5ce9b-4d28-4879-92bb-b99c016c4ac7
+	{
+		#62725243 name :: string : "TUM_View";
+		#1187654703 structure :: GtfView : @9287de99-f9ba-4eed-9317-42746287b0ad;
+		#3134424284 text :: string : "<Menu_Caption>";
+		#2785386580 visible :: bool : true;
+		#797395491 "visible 2" :: bool : true;
+	}
 }
