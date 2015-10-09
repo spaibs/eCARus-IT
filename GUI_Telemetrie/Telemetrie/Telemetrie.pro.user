@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.4.2, 2015-10-09T13:29:40. -->
+<!-- Written by QtCreator 3.4.2, 2015-10-09T14:52:44. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -605,8 +605,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Telemetrie</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Telemetrie2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/ga24coq/Desktop/mqx/branches/Telemetrie/Qt Version 2.1/Telemetrie_Build_2_10.2015/Telemetrie/Telemetrie.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/ga24coq/Desktop/eCARus-IT/GUI_Telemetrie/Telemetrie/Telemetrie.pro</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">Telemetrie.pro</value>
     <value type="bool" key="Qt4ProjectManager.Qt4RunConfiguration.UseDyldImageSuffix">false</value>
