@@ -88,5 +88,6 @@
         <file>photos/Horn.png</file>
         <file>photos/Car/brakelight1.png</file>
         <file>JSON.json</file>
+        <file>ConfigbyID.json</file>
     </qresource>
 </RCC>

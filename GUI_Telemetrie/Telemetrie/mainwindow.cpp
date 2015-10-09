@@ -34,7 +34,7 @@
 
 QMutex* GUIDataLock;
 
-UDPThread *TCP_Thread;
+UDPThread *TCP_Thread = 0;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -106,7 +106,7 @@ MainWindow::MainWindow(QWidget *parent) :
     RemoteTerminated = false;
 
     QPalette Pal(palette());
-    Pal.setColor(QPalette::Background, Qt::black);
+    Pal.setColor(QPalette::Background, Qt::white);
     ui->general_widget->setAutoFillBackground(true);
     ui->general_widget->setPalette(Pal);
     connected_label = new QLabel(this);
@@ -195,44 +195,46 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     try{
+        if(peri_Thread!=0)
+        {
+            peri_Thread->quit();
+        }
         if(interprete_thread!=0)
         {
-         interprete_thread->quit();
+            interprete_thread->quit();
         }
         if(remote_thread!=0)
         {
-           remote_thread->quit();
+            remote_thread->quit();
         }
-
-        delete timer;
-    //   delete NetLock;
-       // delete PeriodicSendObjectVectorLock;
-        //delete RecQueueLock;
-        delete GUIDataLock;
-        delete HistoryLock;
-        delete RemoteLock;
-        delete ui;
-
         if(TCP_Thread!=0)
-        {
-            TCP_Thread->quit();
+        {        
+            TCP_Thread->FinishThread();
         }
+        delete timer;
+        //delete NetLock;
+        //delete PeriodicSendObjectVectorLock;
+        //delete RecQueueLock;
+        //delete GUIDataLock;
+        //delete HistoryLock;
+        //delete RemoteLock;
+        //delete ui;
+    qApp->exit(0);
     }catch(std::exception e){}
     return;
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
 void MainWindow::startConfiguration()
 {
+    ui->tab_widget->setCurrentIndex(0);
     //init Json
-    QFile ConfigFileById("C:/Users/ga24coq/Desktop/ConfigByID.json");
+    QFile ConfigFileById(":/new/prefix2/ConfigbyID.json");
     if (!ConfigFileById.open(QIODevice::ReadOnly)) {
-          qWarning("Couldn't open save file.");
+          qWarning("Couldn't open JSON file!!!");
           return;
       }
     else
-        qWarning("Could open save file successfully.");
+        qWarning("Could open JSON file successfully!!!");
     QByteArray saveData = ConfigFileById.readAll();
     QJsonDocument loadDoc = QJsonDocument::fromJson(saveData);
     JsonList = loadDoc.object();
@@ -361,31 +363,28 @@ void MainWindow::startConfiguration()
     remote_thread->init_RemoteSetting_2(&RemoteSetting_2);
     remote_thread->init_RemoteSetting_3(&RemoteSetting_3);
     remote_thread->start();
-
     // beginn to update gui
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------*/
 /**
  * @brief MainWindow::UpdateGui( it updates the graphical user interface  )
+ *
  */
 void MainWindow::UpdateGui()
 {
     GUIUpdateCount++;
-    GUIDataLock->lock();
-
-    /*************************************
-    **     UPDATE GENERAL VIEW          **
-    /************************************/
-
-    if(movieIsPaused && ui->Connect_Label->text()=="Connected")
+    GUIDataLock->lock();// the interprete thread and the remotethread use the same variables as this thread such as LatestDataInterpreted, RemoteStatusGUI...
+                        // because of this, any access by the wrong thread must be locked!!!
+    //*******************
+    //UPDATE GENERAL VIEW
+{
+    if(movieIsPaused && ui->Connect_Label->text()=="Connected") //connection animation
     {
         ui->AccesspointLabel->setMovie(connection_Animation);
         ui->AccesspointLabel->setText("");
         ui->AccesspointLabel->movie()->start();
         movieIsPaused=false;
     }
-
    if(ui->Connect_Label->text()!="Connected")
     {
          ui->AccesspointLabel->setMovie(connection_Animation);
@@ -393,7 +392,6 @@ void MainWindow::UpdateGui()
          ui->AccesspointLabel->movie()->stop();     //start,stop to show the movie's start frame
          movieIsPaused=true;
     }
-
     if(ui->Connect_Label->text()=="Disconnected" && !ui->Autoconnect_Checkbox->isChecked())
       connecting=false;
 
@@ -423,7 +421,6 @@ void MainWindow::UpdateGui()
                 }
             }
         }
-
     }
     if(ui->Connect_Label->text()=="Connection\npending..." && this->interprete_thread->rearok && this->interprete_thread->frontok)
     {
@@ -434,45 +431,10 @@ void MainWindow::UpdateGui()
     {
        ui->Connect_Label->setText("Connection\npending...");
     }*/
-/*
-    if(LatestDataInterpreted.WarningLight)
-    {
-        blink_delaycounter++;
-
-        if(blink_delaycounter==5)
-        {
-            blink_delaycounter=0;
-           // ui->indicatorlight_Left->setVisible(!ui->indicatorlight_Left->isVisible());
-           if(indicator_right)
-               ui->indicatorlight_Right->setVisible(!ui->indicatorlight_Right->isVisible());
-           else if (!LatestDataInterpreted.WarningLight)
-               ui->indicatorlight_Right->setVisible(false);
-           if(indicator_left)
-               ui->indicatorlight_Left->setVisible(!ui->indicatorlight_Left->isVisible());
-           else if (!LatestDataInterpreted.WarningLight)
-               ui->indicatorlight_Left->setVisible(false);
-           if(LatestDataInterpreted.WarningLight)
-           {
-             ui->Development_Button->click();
-             ui->fullbeam_Left->setVisible(false);
-             ui->fullbeam_Right->setVisible(false);
-           }
-           else
-           {
-            ui->headlight_Left->setVisible(false);
-            ui->headlight_Right->setVisible(false);
-            ui->brakelight_Left->setVisible(false);
-            ui->brakelight_Right->setVisible(false);
-           }
-        }
-    }
-*/
     ui->Engine_Label->setVisible(LatestDataInterpreted.EngineSwitch);
     ui->Label_Master->setVisible(LatestDataInterpreted.MasterSwitch);
    // ui->LCD_Speed->display(QString::number(LatestDataInterpreted.speed,'f',1));
     //needleRotate(QString::number(LatestDataInterpreted.speed,'f',1).toInt());
-
-
     if (LatestDataInterpreted.gear == -1)
     {
         ui->Label_Gear_1->setVisible(false);
@@ -499,63 +461,57 @@ void MainWindow::UpdateGui()
     }
     ui->Progressbar_Accelerator_3->setValue((int)LatestDataInterpreted.acceleratorpercentage);
     ui->Progressbar_Brake_3->setValue((int)LatestDataInterpreted.brakepercentage);
-
     ui->Horn_Label->setVisible(LatestDataInterpreted.Horn);
+    ui->indicatorlight_Left->setVisible(LatestDataInterpreted.DirectionLeft);
+    ui->indicatorlight_Right->setVisible(LatestDataInterpreted.DirectionRight);
+    ui->indicatorlight_Left_Back->setVisible(LatestDataInterpreted.DirectionLeft);
+    ui->indicatorlight_Right_Back->setVisible(LatestDataInterpreted.DirectionRight);
 
-
-        ui->indicatorlight_Left->setVisible(LatestDataInterpreted.DirectionLeft);
-        ui->indicatorlight_Right->setVisible(LatestDataInterpreted.DirectionRight);
-        ui->indicatorlight_Left_Back->setVisible(LatestDataInterpreted.DirectionLeft);
-        ui->indicatorlight_Right_Back->setVisible(LatestDataInterpreted.DirectionRight);
-
-if(LatestDataInterpreted.ForwardLight && LatestDataInterpreted.FullBeamLight)
+    if(LatestDataInterpreted.ForwardLight && LatestDataInterpreted.FullBeamLight)
      {
-            ui->headlight_Left->setVisible(true);
-            ui->headlight_Right->setVisible(true);
-            ui->fullbeam_Left->setVisible(false);
-            ui->fullbeam_Right->setVisible(false);
+        ui->headlight_Left->setVisible(true);
+        ui->headlight_Right->setVisible(true);
+        ui->fullbeam_Left->setVisible(false);
+        ui->fullbeam_Right->setVisible(false);
     }
-else if(LatestDataInterpreted.ForwardLight)
-{
-    ui->fullbeam_Left->setVisible(true);
-    ui->fullbeam_Right->setVisible(true);
-    ui->headlight_Left->setVisible(false);
-    ui->headlight_Right->setVisible(false);
-}
-else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLight)
-{
-    ui->fullbeam_Left->setVisible(false);
-    ui->fullbeam_Right->setVisible(false);
-    ui->headlight_Left->setVisible(false);
-    ui->headlight_Right->setVisible(false);
+    else if(LatestDataInterpreted.ForwardLight)
+    {
+        ui->fullbeam_Left->setVisible(true);
+        ui->fullbeam_Right->setVisible(true);
+        ui->headlight_Left->setVisible(false);
+        ui->headlight_Right->setVisible(false);
+    }
+    else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLight)
+    {
+        ui->fullbeam_Left->setVisible(false);
+        ui->fullbeam_Right->setVisible(false);
+        ui->headlight_Left->setVisible(false);
+        ui->headlight_Right->setVisible(false);
 
-}
-        ui->backlight_Left->setVisible(LatestDataInterpreted.BackwardLight);
-        ui->backlight_Right->setVisible(LatestDataInterpreted.BackwardLight);
+    }
+    ui->backlight_Left->setVisible(LatestDataInterpreted.BackwardLight);
+    ui->backlight_Right->setVisible(LatestDataInterpreted.BackwardLight);
+    ui->brakelight_Left->setVisible(LatestDataInterpreted.BrakeLight);
+    ui->brakelight_Right->setVisible(LatestDataInterpreted.BrakeLight);
 
-        ui->brakelight_Left->setVisible(LatestDataInterpreted.BrakeLight);
-        ui->brakelight_Right->setVisible(LatestDataInterpreted.BrakeLight);
-
-
-
-
-    //LatestDataInterpreted.
+        //LatestDataInterpreted.
     ui->temperatureMotor1_Label->setText("Temp.: "+QString::number(LatestDataInterpreted.ConverterRightMotorTemp,'f',1)+"°C");
     ui->temperatureMotor2_Label->setText("Temp.: "+QString::number(LatestDataInterpreted.ConverterLeftMotorTemp,'f',1)+"°C");
 
-   // ui->LCD_MoterLeft->display(QString::number(LatestDataInterpreted.ConverterLeftMotorTemp,'f',1));
-  //  ui->LCD_MotorRight->display(QString::number(LatestDataInterpreted.ConverterRightMotorTemp,'f',1));
+    //ui->LCD_MoterLeft->display(QString::number(LatestDataInterpreted.ConverterLeftMotorTemp,'f',1));
+    //ui->LCD_MotorRight->display(QString::number(LatestDataInterpreted.ConverterRightMotorTemp,'f',1));
     if(ui->interpretedDataComboBox->currentText()=="Controller L")
         ui->interpretedDataLabel->setText(""+QString::number(LatestDataInterpreted.ConverterLeftControllerTemp,'f',1)+"°C");
     if(ui->interpretedDataComboBox->currentText()=="Controller R")
        ui->interpretedDataLabel->setText(""+QString::number(LatestDataInterpreted.ConverterRightControllerTemp,'f',1)+"°C");
     //ui->LCD_ControllerLeft->display(QString::number(LatestDataInterpreted.ConverterLeftControllerTemp,'f',1));
- //   ui->LCD_ControllerRight->display(QString::number(LatestDataInterpreted.ConverterRightControllerTemp,'f',1));
+    //ui->LCD_ControllerRight->display(QString::number(LatestDataInterpreted.ConverterRightControllerTemp,'f',1));
+}
+    //*******************
 
-
-  /*************************************
-  **          UPDATE LIVE DATA        **
-  /************************************/
+    //****************
+    //UPDATE LIVE DATA
+{
 
     std::vector<QString> liveDataVector;
     uint j = 0;
@@ -716,7 +672,6 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
         edit->setText(1,"True");  }
     else{
         edit->setText(1,"False");  }
-
     edit = ui->treeWidget->itemBelow(edit);
     edit->setText(1,QString::number(LatestDataInterpreted.DCDCcurrent,'g', 6) + " A");
 
@@ -736,13 +691,14 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
            i->setTextColor(1,QColor(0,0,0)); //After 10 GUI updates without a change: black color
         k++;
     }
+}
+    //****************
 
-    /*************************************
-    **          UPDATE RAW DATA         **
-    /************************************/
-
+    //***************
+    //UPDATE RAW DATA
+{
     std::vector<QString> liveRawVector;
-     j = 0;
+    uint j = 0;
      while(abs(ui->Raw_Edit->rowCount())*2>abs(liveRawDelayVector.size()))
          liveRawDelayVector.push_back(0); //init with zero
 
@@ -789,7 +745,7 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
             {
                 raw_message += " (Cycle: " + QString::number((int)j->cycle) + ")";
             }
-            //RAW-DATA-TABLE
+    //RAW-DATA-TABLE
             raw_messages.insert("0x"+QString::number(j->ID,16),raw_message);
             ui->Raw_Edit->setRowCount(raw_messages.size());
 
@@ -815,30 +771,28 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
             }
 
 
-            //JSON-TABLE
-            this->GetInterpretionByJson("0x"+QString::number(j->ID,16),j->Daten);
+    //JSON TABLE UPDATE<-TO DO: REPLACE THE CURRENT DATA INTERPRETATION METHOD BY THE JSON INTERPRETATION METHOD
+            this->GetJSONInterpretation("0x"+QString::number(j->ID,16),j->Daten);  //saves DataMap with key and Value in Json_Map
             ui->JsonTableWidget->setRowCount(Json_Map.size());
-            if(JsontableWidgetItem_vector.size() < Json_Map.size()*2)                  //reserve memory for tablewidget
-            {
 
-                while(JsontableWidgetItem_vector.size()!= Json_Map.size()*2)
-                {
-                    QTableWidgetItem *JsontableWidgetItem = new QTableWidgetItem(JsontableWidgetItem_vector.size());
-                    ui->JsonTableWidget->setItem(JsontableWidgetItem_vector.size()/2,
-                                          JsontableWidgetItem_vector.size()%2,
-                                          JsontableWidgetItem);
-                    JsontableWidgetItem_vector.push_back(JsontableWidgetItem);
-                }
+            while(JsontableWidgetItem_vector.size() < Json_Map.size()*3)
+            {
+                QTableWidgetItem *JsontableWidgetItem = new QTableWidgetItem(JsontableWidgetItem_vector.size());
+                ui->JsonTableWidget->setItem(JsontableWidgetItem_vector.size()/3,
+                                      JsontableWidgetItem_vector.size()%3,
+                                      JsontableWidgetItem);
+                JsontableWidgetItem_vector.push_back(JsontableWidgetItem);
             }
 
             table_index=0;
-            for(QMap<QString,QString>::const_iterator i = Json_Map.constBegin(); i != Json_Map.constEnd() ; i++)
-            {
-                JsontableWidgetItem_vector.at(table_index*2)->setText(i.key());
-                JsontableWidgetItem_vector.at(table_index*2+1)->setText(i.value());
+            for(QMap<QString,QString>::const_iterator mapItemIterator = Json_Map.constBegin(); mapItemIterator != Json_Map.constEnd() ; mapItemIterator++)
+            {               
+                JsontableWidgetItem_vector.at(table_index*3)->setText(QString::number(j->ID,16));
+                JsontableWidgetItem_vector.at(table_index*3+1)->setText(mapItemIterator.key());
+                JsontableWidgetItem_vector.at(table_index*3+2)->setText(mapItemIterator.value());
                 table_index++;
             }
-
+            ui->JsonTableWidget->resizeColumnToContents(0);
         }
     }
 
@@ -847,7 +801,7 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
     while(ui->Raw_Edit->rowCount()*2>abs(liveRawVector.size()))
         liveRawVector.push_back(0); //init with zero
 
-    k=0;
+    int k=0;
     for (int i=0; i<ui->Raw_Edit->rowCount(); i++)
     {
         QTableWidgetItem* item0 = ui->Raw_Edit->item(i,0);
@@ -871,10 +825,12 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
     }
 
     GUIDataLock->unlock();
+}
+    //***************
 
-    /*************************************
-    **     UPDATE CALIBRATION VIEW      **
-    /************************************/
+    //**********************
+    //UPDATE CALIBRATION VIEW
+{
 
     if ( ui->Connect_Label->text() != "Connected" )
     {
@@ -891,11 +847,12 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
         ui->CAL_StartButton->setEnabled(true);
         ui->CAL_StartButton->setText("Start");
     }
+}
+    //***********************
 
-    /*************************************
-    **        UPDATE REMOTE VIEW        **
-    /************************************/
-
+    //******************
+    //UPDATE REMOTE VIEW
+{
     if ( RemoteStatusEXT == 1)
     {
         ui->Remote_StatusLabel->setText("Active. You can use the generatl tab to see relevant car data.");
@@ -941,16 +898,18 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
         RemoteStatusGUI = -1; // no connection
         ui->startRemoteButton->setText("Start Remote Control");
     }
+}
+    //*******************
 
-    /* reseive message of ID 250 - 252 and get Data from it.
-       By getting the Voltage of each cell, the Gui shall display it by Value and Picture
-    */
-
-    /*to do implement it in a for-loop,
+    //*******************
+    /*BATTERY CELL UPDATE
+     * receive messages of ID 250 - 252 and get Data from it.
+     * By getting the Voltage of each cell, the Gui shall display it by Value and Picture
+     * to do implement it in a for-loop,
      * by setting a pointer on all BatteryCell-Labels
      * and stor them in a Vector
      */
-
+{
     if(LatestDataInterpreted.battery_cell[0] > 3500)
         ui->BatteryCell_1->setPixmap(QPixmap::fromImage(Battery_full));
     else if(LatestDataInterpreted.battery_cell[0]==-1)
@@ -1094,7 +1053,8 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
         ui->BatteryCell_16->setPixmap(QPixmap::fromImage(Battery_low));
     else
         ui->BatteryCell_16->setPixmap(QPixmap::fromImage(Battery_half));
-
+}
+    //*******************
 
     if(this->interprete_thread->rearok == true)
     {
@@ -1114,46 +1074,9 @@ else if(!LatestDataInterpreted.ForwardLight && !LatestDataInterpreted.FullBeamLi
         frontOkLabel->setText("Not connected to K60 front");
     }
 
-
-// speedometer_update
-
-    needleRotate((QTime::currentTime().hour()-8)*10+(QTime::currentTime().minute()-30)/6);
-    //needleRotate(LatestDataInterpreted.speed);
+    //needleRotate((QTime::currentTime().hour()-8)*10+(QTime::currentTime().minute()-30)/6);
+    needleRotate(LatestDataInterpreted.speed);// speedometer_update
 }
-
-void MainWindow::needleRotate(int speed) /// rotates the speedometer needle around the center
-{
-
-    speedometer_Needle_GraphicsItem->setPos(90,100);
-
-    speedometer_Needle_GraphicsItem->setRotation(47+speed*2.948);
-
-    speedometer_Needle_GraphicsItem->setPos(90,100);
-
-    speedometer_Needle_GraphicsItem->moveBy(12.8062484749*cos(0.01745329251*(speedometer_Needle_GraphicsItem->rotation()+225)),12.8062484749*sin(0.01745329251*(speedometer_Needle_GraphicsItem->rotation()+225)));
-    //the rotation method rotates the image around the top left pixel, but the wanted rotation center of the speedometer_Needle is (x,y)=(10,8), so the image has to be moved
-    //sqrt(10^2+8^2)=12.8062...; 1° = 0.01745...rad; 5/8 * 360 = 225 :=start angle
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::ChangeGearList(int i)
-{
-    int next_gear = i + ui->gearList->currentRow();
-    if((next_gear >= 0) && (next_gear <= 2))
-    {
-        ui->gearList->setCurrentRow(next_gear);
-        RemoteGear = next_gear;
-    }
-    ui->Label_gear->setText_Clicked("Gang: "+ui->gearList->currentItem()->text());
-    ui->Label_gear->clicked();
-}
-void MainWindow::ChangeGearList_Released(int i)
-{
-    ui->Label_gear->released();
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
 
 void MainWindow::on_Connect_Button_clicked()
 {
@@ -1188,7 +1111,83 @@ void MainWindow::on_Connect_Button_clicked()
     }
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------*/
+/**
+ * @brief MainWindow::on_actionConnect_Disconnect_triggered : called to verify if there is connection with the car or not.
+ */
+void MainWindow::on_actionConnect_Disconnect_triggered()
+{
+    if(ui->Connect_Label->text() == "Disconnected")
+    {
+        ui->Connect_Label->setText("Connection\npending...");
+        connected_label->setText("Listening ..." );
+        ui->Connect_Button->setStyleSheet("background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Green_Button_on')");
+        ui->Config_TextEdit->append(QDateTime::currentDateTime().toString("hh:mm:ss.zzz") + ": " +
+                                    "Connected to "+ ui->Host_Edit->text());
+        ui->Host_Edit->setReadOnly(true);
+        ui->Port_Edit->setReadOnly(true);
+        //disable settings on menu
+        TCP_Thread = new UDPThread;
+        connect(TCP_Thread, SIGNAL(finished()), TCP_Thread, SLOT(deleteLater()));
+        TCP_Thread->SetupThread(ui->Host_Edit->text(), ui->Port_Edit->text());
+        TCP_Thread->start();
+    }
+    else if(ui->Connect_Label->text() != "Disconnected")
+    {
+        ui->Connect_Button->setStyleSheet("background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Green_Button_off')");
+        ui->Connect_Label->setText("Disconnected");
+        connected_label->setText("Not Connected");
+        ui->Config_TextEdit->append(QDateTime::currentDateTime().toString("hh:mm:ss.zzz") + ": " +
+                                    "Connection closed by user.");
+        ui->Host_Edit->
+                setReadOnly(false);
+        ui->Port_Edit->setReadOnly(false);
+        TCP_Thread->FinishThread();
+        TCP_Thread->quit();
+    }
+
+    if(this->interprete_thread->rearok == true)
+    {
+        rearOkLabel->setText("Connected to K60 rear");
+    }
+    else
+    {
+        rearOkLabel->setText("Not connected to K60 rear");
+    }
+
+    if(this->interprete_thread->frontok == true)
+    {
+        frontOkLabel->setText("Connected to K60 front");
+    }
+    else
+    {
+        frontOkLabel->setText("Not connected to K60 front");
+    }
+    if(this->interprete_thread->rearok && this->interprete_thread->frontok)
+    {
+        ui->Connect_Label->setText("Connected");
+    }
+
+}
+
+//************************************************
+//      FUNCTIONS ACTIVATED BY THE XBOX CONTROLLER
+//************************************************
+
+void MainWindow::ChangeGearList(int i)
+{
+    int next_gear = i + ui->gearList->currentRow();
+    if((next_gear >= 0) && (next_gear <= 2))
+    {
+        ui->gearList->setCurrentRow(next_gear);
+        RemoteGear = next_gear;
+    }
+    ui->Label_gear->setText_Clicked("Gang: "+ui->gearList->currentItem()->text());
+    ui->Label_gear->clicked();
+}
+void MainWindow::ChangeGearList_Released(int i)
+{
+    ui->Label_gear->released();
+}
 
 void MainWindow::on_startRemoteButton_clicked()
 {
@@ -1238,14 +1237,10 @@ void MainWindow::on_startRemoteButton_clicked()
     }
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
 void MainWindow::on_stopRemoteButton_clicked()
 {
     RemoteEmStopBool = true;
 }
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
 
 void MainWindow::on_headLightButton_clicked()
 {
@@ -1281,7 +1276,6 @@ void MainWindow::on_headLightButton_Released()
 {
   ui->Label_light->released();
 }
-/*-----------------------------------------------------------------------------------------------------------------------*/
 
 void MainWindow::on_fullBeamButton_clicked()
 {
@@ -1310,8 +1304,6 @@ void MainWindow::on_fullBeamButton_Released()
 {
     ui->Label_light->released();
 }
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
 
 void MainWindow::on_indicatorLeftButton_clicked()
 {
@@ -1345,8 +1337,6 @@ void MainWindow::on_indicatorLeftButton_Released()
     ui->Label_indicatorLeft->released();
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
 void MainWindow::on_indicatorRightButton_clicked()
 {
     RemoteDirIndRightBool =  !RemoteDirIndRightBool; // toogle
@@ -1378,8 +1368,6 @@ void MainWindow::on_indicatorRightButton_Released()
     ui->Label_indicatorRight->released();
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
 void MainWindow::on_warningButton_clicked()
 {
     RemoteWarnLightBool =! RemoteWarnLightBool; // toogle
@@ -1410,7 +1398,7 @@ void MainWindow::on_warningButton_Released()
 {
     ui->Label_warning->released();
 }
-//-----------------------------------------------------------------------------------------------------------------------
+
 void MainWindow::on_accelerateButton_clicked(int accelerationvalue)
 {
     ui->Label_throttle->setText_Clicked(QString("Gas\n%1").arg(accelerationvalue));
@@ -1420,7 +1408,6 @@ void MainWindow::on_accelerateButton_clicked(int accelerationvalue)
         ui->Label_throttle->released();
 }
 
-//------------------------------------------------------------------------------------------------------------------------
 void MainWindow::on_brakeButton_clicked(int brakevalue)
 {
     ui->Label_brake->setText_Clicked(QString("%1").arg(brakevalue));
@@ -1441,7 +1428,7 @@ void MainWindow::on_brakeButton_clicked(int brakevalue)
     }
 
 }
-//------------------------------------------------------------------------------------------------------------------------
+
 void MainWindow::on_hornButton_clicked()
 {
     ui->Label_horn->clicked();
@@ -1450,9 +1437,7 @@ void MainWindow::on_hornButton_Released(void)
 {
     ui->Label_horn->released();
 }
-//------------------------------------------------------------------------------------------------------------------------
 
-//------------------------------------------------------------------------------------------------------------------------
 void MainWindow::on_steering(int angle)
 {
     ui->Label_steering->setText_Clicked(QString("steering\n%1").arg(angle));
@@ -1462,546 +1447,11 @@ void MainWindow::on_steering(int angle)
     else
         ui->Label_steering->released();
 }
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_ethernetAARadioButton_clicked()
-{
-    ui->DebugStartCustomEdit->setEnabled(false);
-    ui->DebugStartCustomEdit->setText("AA");
-}
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_ethernetCustomRadioButton_clicked()
-{
-    ui->DebugStartCustomEdit->setEnabled(true);
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_checksumComputeRadioButton_clicked()
-{
-    ui->DebugChecksumCustomEdit->setEnabled(false);
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_checksumCustomRadioButton_clicked()
-{
-    ui->DebugChecksumCustomEdit->setEnabled(true);
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_DebugManualRadioButton_clicked()
-{
-
-    ui->Debug_ManualInput->setVisible(true);
-    ui->Debug_GuidedInput->setVisible(false);
-    ui->DebugSendNowButton->setEnabled(true);
-    ui->DebugAddButton->setEnabled(true);
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_DebugGuidedRadioButton_clicked()
-{
-    ui->Debug_ManualInput->setVisible(false);
-    ui->Debug_GuidedInput->setVisible(true);
-    ui->DebugSendNowButton->setEnabled(true);
-    ui->DebugAddButton->setEnabled(true);
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_DebugNoneRadioButton_clicked()
-{
-    ui->Debug_ManualInput->setVisible(false);
-    ui->Debug_GuidedInput->setVisible(false);
-    ui->DebugSendNowButton->setEnabled(false);
-    ui->DebugAddButton->setEnabled(false);
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_DebugSendNowButton_clicked()
-{
-    if ( ui->Connect_Label->text()  != "Connected" )
-    {
-        // Return message box
-        QMessageBox::information(NULL, "Warning!", "Please connect first. Your message has not been sent.");
-        return;
-    }
-
-    struct RawData message; // array with the message (as number)
-    // prepare the message to be send
-
-    if (DebugDecodeInput(&message))
-    {
-        // if the return value is 1 there was a problem. the user has already been
-        // notified about this. so we will simply exit the function
-        return;
-    }
-    // push the message to the network thread
-    NetLock->lock();
-    SendData.push(message);
-    NetLock->unlock();
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_DebugAddButton_clicked()
-{
-    /*
-        Add a new object to the vector with periodical send objects
-    */
-    static int newid=0;
-    PeriodicSendObject tmp;
-    tmp.active = true;
-    tmp.lastsent = 0;
-    tmp.ID = newid;
-    RawData temprawdata;
-
-    if ( DebugDecodeInput( &temprawdata ) )
-    {
-        /* if there was an error the function will notify the user and will
-           return 1 (so this will be executed) */
-        return;
-    }
-
-    // copy the data
-    for (int i=0; i < 14; i++)
-    {
-        tmp.data[i] = temprawdata.RawData[i];
-    }
-
-    try
-    {
-        tmp.interval = ui->DebugCycleTimeEdit->text().toInt(0,10);
-    }
-    catch ( ... )
-    {
-        QMessageBox::information(NULL, "Warning!", "The Input for cycle time is not valid.");
-        return;
-    }
-    // check how the data was created
-    if (ui->DebugManualRadioButton->isChecked())
-    {
-        tmp.creation = 1; // manual
-    }
-    else
-    {
-        tmp.creation = 2; // guided
-    }
-
-    // add the data to the vector
-    PeriodicSendObjectVectorLock->lock();
-    PeriodicSendObjectVector.push_back(tmp);
-    PeriodicSendObjectVectorLock->unlock();
-
-    // get the data that will be send
-    if (ui->DebugManualRadioButton->isChecked())
-    {
-        std::string data_string(29,'0'); // (2*14)+1; contains the rawdata in hex format
-        utility::CharArrayToHexString(data_string, tmp.data, 14);
-        data_string[28] = '\0';
-        // add data to ui element
-        QTableWidgetItem *item_id = new QTableWidgetItem(0);
-        QTableWidgetItem *item_status = new QTableWidgetItem(1);
-        item_id->setText(QString::number(newid));
-        item_status->setText("Active: yes, Cycle: " + ui->DebugCycleTimeEdit->text() +
-                             ", Data: " + QString::fromStdString(data_string));
-        int row = ui->Debug_MsgList->rowCount();
-
-        ui->Debug_MsgList->setRowCount(row +1);
-        ui->Debug_MsgList->setItem(row,item_id->type(),item_id);
-        ui->Debug_MsgList->setItem(row,item_status->type(),item_status);
-
-
-
-    }
-    else
-    {
-        wchar_t strID[7];
-        wchar_t strDATA[17];
-        wchar_t strCRC [3];
-        wchar_t strSTART [3];
-        wchar_t strCFG [3];
-        utility::DecodeDataToString(tmp.data,strID,strCFG,strSTART,strCRC,strDATA);
-        QTableWidgetItem *item_id = new QTableWidgetItem(0);
-        QTableWidgetItem *item_status = new QTableWidgetItem(1);
-        item_id->setText(QString::number(newid));
-        item_status->setText("Active: yes, Cycle: " + ui->DebugCycleTimeEdit->text() + ", ID: "+
-                             QString::fromWCharArray(strID) + ", Data: " + QString::fromWCharArray(strDATA) +
-                             ", Config: " + QString::fromWCharArray(strCFG) + ", Start: " +
-                             QString::fromWCharArray(strSTART) + ", CRC: " + QString::fromWCharArray(strCRC));
-        int row = ui->Debug_MsgList->rowCount();
-        ui->Debug_MsgList->setRowCount(row +1);
-        ui->Debug_MsgList->setItem(row,item_id->type(),item_id);
-        ui->Debug_MsgList->setItem(row,item_status->type(),item_status);
-    }
-
-    // select the last element (if this code is missing ther would be some cosmetic problems)
-    //        debugperiodicstatus->Row=debugperiodicstatus->RowCount - 1;
-
-    newid++; // use an other id for the next data
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_DebugToggleActiveButton_clicked()
-{
-    if ( ui->Debug_MsgList->currentRow() == -1 )
-    {
-    QMessageBox::information(NULL, "Error!", "Nothing selected.");
-        return;
-    }
-    /*
-        Toogles the activity for the selected item (and update the gui)
-    */
-    int j; // for for loops
-
-    int id; // id of the selected item
-    QString id_str;
-
-    try
-    {
-        // read the ID
-        id_str = ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),0)->text();
-        id = id_str.toInt(0,10);
-    }
-    catch ( ... )
-    {
-        QMessageBox::information(NULL, "Warning!", "Nothing to update!");
-        // i don't know any other possibilitie how an exception could happen here
-        return;
-    }
-
-    PeriodicSendObject tmp_obj; // will store the data to update the gui
-
-    // search the vector for the ID and update the item
-    PeriodicSendObjectVectorLock->lock();
-    for (std::vector<PeriodicSendObject>::iterator i=PeriodicSendObjectVector.begin(); i != PeriodicSendObjectVector.end(); ++i)
-    {
-        if ( i->ID == id )
-        {
-            // update the Active Property
-            i->active = !(i->active);
-
-            // copy the item
-            tmp_obj.ID = i->ID;
-            tmp_obj.interval = i->interval;
-
-            for (j=0; j < 14; j++)
-            {
-                tmp_obj.data[j] = i->data[j];
-            }
-            tmp_obj.active = i->active;
-            tmp_obj.creation = i->creation;
-        }
-    }
-    PeriodicSendObjectVectorLock->unlock();
-
-    // convert Status to a string
-    QString active_string;
-    if ( tmp_obj.active )
-    {
-        active_string = "Yes";
-    }
-    else
-    {
-        active_string = "No";
-    }
-
-    // update the gui
-    if (tmp_obj.creation == 1)
-    {
-
-        // convert the data to a string
-        std::string data_string(29,'0'); // stores the data as a string; 14*2+1
-        utility::CharArrayToHexString (data_string, tmp_obj.data, 14);
-        data_string[28] = '\0';
-        QString tmp_string("Active: " + active_string + ", Cycle: " + QString::number((int)tmp_obj.interval,10) +
-                           ", Data: " + QString::fromStdString(data_string));
-        ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),1)->setText(tmp_string);
-    }
-    else
-    {
-        wchar_t strID[7];
-        wchar_t strDATA[17];
-        wchar_t strCRC [3];
-        wchar_t strSTART [3];
-        wchar_t strCFG [3];
-        utility::DecodeDataToString(tmp_obj.data,strID,strCFG,strSTART,strCRC,strDATA);
-        QString tmp_string("Active: " + active_string + ", Cycle: " + QString::number( (int)tmp_obj.interval ,10 ) +
-                           ", ID: "+ QString::fromWCharArray(strID) + ", Data: " +
-                           QString::fromWCharArray(strDATA) + ", Config: " + QString::fromWCharArray(strCFG) +
-                           ", Start: " + QString::fromWCharArray(strSTART) + ", CRC: " +
-                           QString::fromWCharArray(strCRC));
-        ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),1)->setText(tmp_string);
-    }
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_DebugRemoveButton_clicked()
-{
-    /*
-        Remove the object selected in the gui from the gui and from the vector (that will be read by the SendPeriodic Thread)
-    */
-
-    // stop if nothing is selected (i don't think this works )-:)
-    if ( ui->Debug_MsgList->currentRow() == -1 )
-    {
-    QMessageBox::information(NULL, "Error!", "Nothing selected.");
-        return;
-    }
-
-    int id; // the id
-    QString id_str; // the id as string
-    try
-    {
-        // read the ID and delete the gui element
-        id_str = ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),0)->text();
-       // QTableWidgetItem *item_id = ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),0);
-      //  QTableWidgetItem *item_status = ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),1);
-        ui->Debug_MsgList->removeRow(ui->Debug_MsgList->currentRow());
-       // delete item_id;
-      //  delete item_status;
-        //ui->Debug_MsgList->setRowCount(ui->Debug_MsgList->rowCount()-1);
-    }
-    catch ( ... )
-    {
-        QMessageBox::information(NULL, "Error!", "Nothing to delete.");
-        // i don't know any other possibilitie how an exception could happen here
-        return;
-    }
-
-    // convert the id to an int
-    try
-    {
-        id = id_str.toInt(0,10);
-    }
-    catch ( ... )
-    {
-       QMessageBox::information(NULL, "Error!", "Internal error.");
-        // i don't think this exception can really happen
-        return;
-    }
-
-    // remove from the actual vector               b
-    PeriodicSendObjectVectorLock->lock();
-
-    for (std::vector<PeriodicSendObject>::iterator i=PeriodicSendObjectVector.begin(); i != PeriodicSendObjectVector.end(); ++i)
-    {
-        if ( i->ID == id )
-        {
-            // delete when an object with the same id is found
-            PeriodicSendObjectVector.erase(i);
-            PeriodicSendObjectVectorLock->unlock();
-
-            return;
-        }
-    }
-    PeriodicSendObjectVectorLock->unlock();
-    QMessageBox::information(NULL, "Error!", "Not successful.");
-    return;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_DebugEnableCheckBox_clicked()
-{
-    /*
-        Activates and deactives the Periodic Thread.
-    */
-
-    bool status = ui->DebugEnableCheckBox->isChecked();
-    if ( status )
-    {
-        if(PeriodicSendObjectVector.empty())
-         {
-             QMessageBox::information(NULL, "Error!", "No messages to send");
-             ui->DebugEnableCheckBox->setChecked(false);
-             return;
-         }
-        if ( ui->Connect_Label->text() != "Connected" )
-        {
-            QMessageBox::information(NULL, "Error!", "You are not connected to ECARUS!");
-            ui->DebugEnableCheckBox->setChecked(false);
-            return;
-        }
-        std::cout<<"STARTENABLE"<<std::endl;
-        peri_Timer = new QTimer();
-        peri_Thread = new QThread();                         //create a new thread and a worker
-        peri_worker = new PeriodicSendWorker();
-
-        peri_worker->moveToThread(peri_Thread);             // Move the Object, which sends the messages periodically to the Thread
-        peri_Timer->moveToThread(peri_Thread);
-        peri_Timer->setInterval(100);
-
-        connect(peri_Thread,  SIGNAL(started()),peri_Timer,SLOT(start()));         //thread starts Timer
-        connect(peri_Timer,  SIGNAL(timeout()),peri_worker,SLOT(process_start()));   //timer activates process
-        connect(peri_worker, SIGNAL(finished(int)), peri_Timer,SLOT(start(int)));        //Worker changes peri_Timer's Interval
-        disconnect(peri_worker, SIGNAL(finished(int)),peri_worker,SLOT(deleteLater()));
-        disconnect(peri_Thread, SIGNAL(finished()),peri_Timer,SLOT(deleteLater()));         //dont delete created Objects, once the worker finished
-        disconnect(peri_Thread, SIGNAL(finished()),peri_Thread,SLOT(deleteLater()));
-
-        peri_Thread->start();
-
-    }
-    if ( !status )
-    {
-        if(peri_Thread){
-            peri_Thread->quit();
-            connect(peri_Thread, SIGNAL(finished()),peri_Timer,SLOT(deleteLater()));
-            connect(peri_Thread, SIGNAL(finished()),peri_Thread,SLOT(deleteLater()));   // do delete created objects, once the worker finished
-        }
-
-    }
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_modeComboBox_currentIndexChanged(int index)
-{
-    RemoteSetting_1 = index;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_recupComboBox_currentIndexChanged(int index)
-{
-    RemoteSetting_2 = index;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_boostComboBox_currentIndexChanged(int index)
-{
-    RemoteSetting_3 = index;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_CAL_StartButton_clicked()
-{
-    CALstep=1; // beginn
-    if ( ui->Connect_Label->text() != "Connected" )
-    {
-        return; //do nothing if there is no connection
-    }
-    // send the message
-    char tmp[8] = {0};
-    tmp[0]=0x1; // start calibration
-    utility::SendCanMessage(0x290,tmp);
-    ui->CAL_Label->setText("Please do not touch the accelerator and make sure it is in its idle position");
-    ui->CAL_ContinueButton->setVisible(true);
-    ui->CAL_StartButton->setText("Restart");
-    ui->CAL_ContinueButton->setText("Continue");
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_CAL_ContinueButton_clicked()
-{
-    /*
-        continue button for the calibration feature.
-        Checks in what step of the calibration the software is and sends the correct
-        message.
-        The user must not be able to press this button / call this function if there
-        is no connection.
-    */
-    if ( CALstep == 1 )
-    {
-        // send the message
-        char tmp[8] = {0};
-        tmp[0]=0x5; // calibration
-        utility::SendCanMessage(0x290,tmp);
-        ui->CAL_Label->setText("Please press the accelerator fully.");
-        CALstep=2;
-
-        return;
-    }
-    if ( CALstep == 2 )
-    {
-        // send the can message
-        char tmp[8] = {0};
-        tmp[0]=0x9; // calibration
-        utility::SendCanMessage(0x290,tmp);
-        ui->CAL_Label->setText("Calibration Sucessfull! Do you want to restart?");
-        CALstep=0; // reset
-        ui->CAL_ContinueButton->setText("Finish");
-        CALstep = 3;
-
-        return;
-    }
-    if ( CALstep == 3 )
-    {
-        char tmp[8] = {0};
-        tmp[0]=0x2; // end calibration
-        utility::SendCanMessage(0x290,tmp);
-        ui->CAL_Label->setText(" ");
-        ui->CAL_ContinueButton->setVisible(false);
-        ui->CAL_StartButton->setText("Start");
-        CALstep = 0;
-        return;
-    }
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-void MainWindow::on_CreateLogButton_clicked()
-{
-    /*
-        Fills the Memo1 (raw log) on demand.
-    */
-    ui->CreateLogButton->setEnabled(false);
-    ui->SaveLogButton->setEnabled(true);
-
-    //	Form1->Memo1->Lines->BeginUpdate(); // stop refreshing
-    ui->Log_TextEdit->clear();
-    HistoryLock->lock();
-
-    ui->progressBar_Log->setValue(0);
-    ui->progressBar_Log->setMaximum(RawHistory.size());
-    ui->labelAvailableData->setVisible(false);
-    ui->progressBar_Log->setVisible(true);
-
-    for (std::vector<RawData>::iterator i=RawHistory.begin(); i != RawHistory.end(); ++i)
-    {
-        QString buf;
-        QDateTime time = i->timestamp ; buf = time.toString("dd.MM") + ", " + time.toString("hh:mm:ss.zzz") + ": ";
-
-        // Raw Data
-        for(int j = 0; j < 14; j++)
-        {
-            buf += QString::number(i->RawData[j], 16) + " ";
-        }
-
-        // Cycle
-        buf += "Cycle: " + QString::number((int)i->cycle);
-
-        // Write
-        ui->Log_TextEdit->append(buf);
-
-        // Updata Progressbar
-        ui->progressBar_Log->setValue( ui->progressBar_Log->value() + 1 );
-
-        // Keep gui alive
-        //		Application->ProcessMessages();
-    }
-    HistoryLock->unlock();
-    //	Form1->Memo1->Lines->EndUpdate(); // refresh
-
-    ui->progressBar_Log->setVisible(false);
-    ui->labelAvailableData->setVisible(true);
-    ui->CreateLogButton->setEnabled(true);
-    ui->SaveLogButton->setEnabled(true);
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
+//-----------------------------------------------------------------------
+
+//***************
+//      DEBUG TAB
+//***************
 int MainWindow::DebugDecodeInput (RawData* msg)
 {
     RawData message; // the message
@@ -2160,114 +1610,415 @@ int MainWindow::DebugDecodeInput (RawData* msg)
     return 0; // there was no error so it was a sucess (-:
 }
 
-void MainWindow::closeEvent(QCloseEvent *event)
+void MainWindow::on_ethernetAARadioButton_clicked()
 {
-
+    ui->DebugStartCustomEdit->setEnabled(false);
+    ui->DebugStartCustomEdit->setText("AA");
 }
 
-void MainWindow::on_maxSpeedSlider_actionTriggered(int action)
+void MainWindow::on_ethernetCustomRadioButton_clicked()
 {
+    ui->DebugStartCustomEdit->setEnabled(true);
 }
 
-void MainWindow::on_maxSpeedSlider_sliderMoved(int position)
+void MainWindow::on_checksumComputeRadioButton_clicked()
 {
-}
-/**
- * @brief called when the value of the slider changes
- * @param value position of the slider
- *
- * langert text.( it controls the damping factor of the accelerator )
- */
-void MainWindow::on_maxSpeedSlider_valueChanged(int value)
-{
-    ui->maxSpeedLabel->setText(QString::number(value / 10.0));
-    remote_thread->MaxSpeed = value / 10.0;
+    ui->DebugChecksumCustomEdit->setEnabled(false);
 }
 
-void MainWindow::on_actionQuit_triggered()
+void MainWindow::on_checksumCustomRadioButton_clicked()
 {
-    close();
+    ui->DebugChecksumCustomEdit->setEnabled(true);
 }
 
-/**
- * @brief MainWindow::on_actionGet_Help_triggered ( it opens a HTML page ( Help Window) )
- */
-
-void MainWindow::on_actionGet_Help_triggered()
+void MainWindow::on_DebugManualRadioButton_clicked()
 {
-    QString link= "file:///C:/Dokumente%20und%20Einstellungen/ga54jaz/Desktop/mqx/branches/Telemetrie/Qt%20Version%202.1/Telemetrie/html%20help/help.html";
-    QDesktopServices::openUrl(QUrl(link));
+
+    ui->Debug_ManualInput->setVisible(true);
+    ui->Debug_GuidedInput->setVisible(false);
+    ui->DebugSendNowButton->setEnabled(true);
+    ui->DebugAddButton->setEnabled(true);
 }
 
-void MainWindow::on_actionAbout_triggered()
+void MainWindow::on_DebugGuidedRadioButton_clicked()
 {
-    /*SecDialog secdialog ;
-    secdialog.setModal (true);
-    secdialog.exec();*/
+    ui->Debug_ManualInput->setVisible(false);
+    ui->Debug_GuidedInput->setVisible(true);
+    ui->DebugSendNowButton->setEnabled(true);
+    ui->DebugAddButton->setEnabled(true);
 }
-/**
- * @brief MainWindow::on_actionConnect_Disconnect_triggered : called to verify if there is connection with the car or not.
 
- */
-
-void MainWindow::on_actionConnect_Disconnect_triggered()
+void MainWindow::on_DebugNoneRadioButton_clicked()
 {
-    if(ui->Connect_Label->text() == "Disconnected")
+    ui->Debug_ManualInput->setVisible(false);
+    ui->Debug_GuidedInput->setVisible(false);
+    ui->DebugSendNowButton->setEnabled(false);
+    ui->DebugAddButton->setEnabled(false);
+}
+
+void MainWindow::on_DebugSendNowButton_clicked()
+{
+    if ( ui->Connect_Label->text()  != "Connected" )
     {
-        ui->Connect_Label->setText("Connection\npending...");
-        connected_label->setText("Listening ..." );
-        ui->Connect_Button->setStyleSheet("background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Green_Button_on')");
-        ui->Config_TextEdit->append(QDateTime::currentDateTime().toString("hh:mm:ss.zzz") + ": " +
-                                    "Connected to "+ ui->Host_Edit->text());
-        ui->Host_Edit->setReadOnly(true);
-        ui->Port_Edit->setReadOnly(true);
-        //disable settings on menu
-        TCP_Thread = new UDPThread;
-        connect(TCP_Thread, SIGNAL(finished()), TCP_Thread, SLOT(deleteLater()));
-        TCP_Thread->SetupThread(ui->Host_Edit->text(), ui->Port_Edit->text());
-        TCP_Thread->start();
-    }
-    else if(ui->Connect_Label->text() != "Disconnected")
-    {
-        ui->Connect_Button->setStyleSheet("background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Green_Button_off')");
-        ui->Connect_Label->setText("Disconnected");
-        connected_label->setText("Not Connected");
-        ui->Config_TextEdit->append(QDateTime::currentDateTime().toString("hh:mm:ss.zzz") + ": " +
-                                    "Connection closed by user.");
-        ui->Host_Edit->
-                setReadOnly(false);
-        ui->Port_Edit->setReadOnly(false);
-        TCP_Thread->FinishThread();
-        TCP_Thread->quit();
+        // Return message box
+        QMessageBox::information(NULL, "Warning!", "Please connect first. Your message has not been sent.");
+        return;
     }
 
-    if(this->interprete_thread->rearok == true)
+    struct RawData message; // array with the message (as number)
+    // prepare the message to be send
+
+    if (DebugDecodeInput(&message))
     {
-        rearOkLabel->setText("Connected to K60 rear");
+        // if the return value is 1 there was a problem. the user has already been
+        // notified about this. so we will simply exit the function
+        return;
+    }
+    // push the message to the network thread
+    NetLock->lock();
+    SendData.push(message);
+    NetLock->unlock();
+}
+
+void MainWindow::on_DebugAddButton_clicked()
+{
+    /*
+        Add a new object to the vector with periodical send objects
+    */
+    static int newid=0;
+    PeriodicSendObject tmp;
+    tmp.active = true;
+    tmp.lastsent = 0;
+    tmp.ID = newid;
+    RawData temprawdata;
+
+    if ( DebugDecodeInput( &temprawdata ) )
+    {
+        /* if there was an error the function will notify the user and will
+           return 1 (so this will be executed) */
+        return;
+    }
+
+    // copy the data
+    for (int i=0; i < 14; i++)
+    {
+        tmp.data[i] = temprawdata.RawData[i];
+    }
+
+    try
+    {
+        tmp.interval = ui->DebugCycleTimeEdit->text().toInt(0,10);
+    }
+    catch ( ... )
+    {
+        QMessageBox::information(NULL, "Warning!", "The Input for cycle time is not valid.");
+        return;
+    }
+    // check how the data was created
+    if (ui->DebugManualRadioButton->isChecked())
+    {
+        tmp.creation = 1; // manual
     }
     else
     {
-        rearOkLabel->setText("Not connected to K60 rear");
+        tmp.creation = 2; // guided
     }
 
-    if(this->interprete_thread->frontok == true)
+    // add the data to the vector
+    PeriodicSendObjectVectorLock->lock();
+    PeriodicSendObjectVector.push_back(tmp);
+    PeriodicSendObjectVectorLock->unlock();
+
+    // get the data that will be send
+    if (ui->DebugManualRadioButton->isChecked())
     {
-        frontOkLabel->setText("Connected to K60 front");
+        std::string data_string(29,'0'); // (2*14)+1; contains the rawdata in hex format
+        utility::CharArrayToHexString(data_string, tmp.data, 14);
+        data_string[28] = '\0';
+        // add data to ui element
+        QTableWidgetItem *item_id = new QTableWidgetItem(0);
+        QTableWidgetItem *item_status = new QTableWidgetItem(1);
+        item_id->setText(QString::number(newid));
+        item_status->setText("Active: yes, Cycle: " + ui->DebugCycleTimeEdit->text() +
+                             ", Data: " + QString::fromStdString(data_string));
+        int row = ui->Debug_MsgList->rowCount();
+
+        ui->Debug_MsgList->setRowCount(row +1);
+        ui->Debug_MsgList->setItem(row,item_id->type(),item_id);
+        ui->Debug_MsgList->setItem(row,item_status->type(),item_status);
+
+
+
     }
     else
     {
-        frontOkLabel->setText("Not connected to K60 front");
-    }
-    if(this->interprete_thread->rearok && this->interprete_thread->frontok)
-    {
-        ui->Connect_Label->setText("Connected");
+        wchar_t strID[7];
+        wchar_t strDATA[17];
+        wchar_t strCRC [3];
+        wchar_t strSTART [3];
+        wchar_t strCFG [3];
+        utility::DecodeDataToString(tmp.data,strID,strCFG,strSTART,strCRC,strDATA);
+        QTableWidgetItem *item_id = new QTableWidgetItem(0);
+        QTableWidgetItem *item_status = new QTableWidgetItem(1);
+        item_id->setText(QString::number(newid));
+        item_status->setText("Active: yes, Cycle: " + ui->DebugCycleTimeEdit->text() + ", ID: "+
+                             QString::fromWCharArray(strID) + ", Data: " + QString::fromWCharArray(strDATA) +
+                             ", Config: " + QString::fromWCharArray(strCFG) + ", Start: " +
+                             QString::fromWCharArray(strSTART) + ", CRC: " + QString::fromWCharArray(strCRC));
+        int row = ui->Debug_MsgList->rowCount();
+        ui->Debug_MsgList->setRowCount(row +1);
+        ui->Debug_MsgList->setItem(row,item_id->type(),item_id);
+        ui->Debug_MsgList->setItem(row,item_status->type(),item_status);
     }
 
+    // select the last element (if this code is missing ther would be some cosmetic problems)
+    //        debugperiodicstatus->Row=debugperiodicstatus->RowCount - 1;
+
+    newid++; // use an other id for the next data
 }
 
-
-void MainWindow::on_Development_Button_clicked()
+void MainWindow::on_DebugToggleActiveButton_clicked()
 {
+    if ( ui->Debug_MsgList->currentRow() == -1 )
+    {
+    QMessageBox::information(NULL, "Error!", "Nothing selected.");
+        return;
+    }
+    /*
+        Toogles the activity for the selected item (and update the gui)
+    */
+    int j; // for for loops
+
+    int id; // id of the selected item
+    QString id_str;
+
+    try
+    {
+        // read the ID
+        id_str = ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),0)->text();
+        id = id_str.toInt(0,10);
+    }
+    catch ( ... )
+    {
+        QMessageBox::information(NULL, "Warning!", "Nothing to update!");
+        // i don't know any other possibilitie how an exception could happen here
+        return;
+    }
+
+    PeriodicSendObject tmp_obj; // will store the data to update the gui
+
+    // search the vector for the ID and update the item
+    PeriodicSendObjectVectorLock->lock();
+    for (std::vector<PeriodicSendObject>::iterator i=PeriodicSendObjectVector.begin(); i != PeriodicSendObjectVector.end(); ++i)
+    {
+        if ( i->ID == id )
+        {
+            // update the Active Property
+            i->active = !(i->active);
+
+            // copy the item
+            tmp_obj.ID = i->ID;
+            tmp_obj.interval = i->interval;
+
+            for (j=0; j < 14; j++)
+            {
+                tmp_obj.data[j] = i->data[j];
+            }
+            tmp_obj.active = i->active;
+            tmp_obj.creation = i->creation;
+        }
+    }
+    PeriodicSendObjectVectorLock->unlock();
+
+    // convert Status to a string
+    QString active_string;
+    if ( tmp_obj.active )
+    {
+        active_string = "Yes";
+    }
+    else
+    {
+        active_string = "No";
+    }
+
+    // update the gui
+    if (tmp_obj.creation == 1)
+    {
+
+        // convert the data to a string
+        std::string data_string(29,'0'); // stores the data as a string; 14*2+1
+        utility::CharArrayToHexString (data_string, tmp_obj.data, 14);
+        data_string[28] = '\0';
+        QString tmp_string("Active: " + active_string + ", Cycle: " + QString::number((int)tmp_obj.interval,10) +
+                           ", Data: " + QString::fromStdString(data_string));
+        ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),1)->setText(tmp_string);
+    }
+    else
+    {
+        wchar_t strID[7];
+        wchar_t strDATA[17];
+        wchar_t strCRC [3];
+        wchar_t strSTART [3];
+        wchar_t strCFG [3];
+        utility::DecodeDataToString(tmp_obj.data,strID,strCFG,strSTART,strCRC,strDATA);
+        QString tmp_string("Active: " + active_string + ", Cycle: " + QString::number( (int)tmp_obj.interval ,10 ) +
+                           ", ID: "+ QString::fromWCharArray(strID) + ", Data: " +
+                           QString::fromWCharArray(strDATA) + ", Config: " + QString::fromWCharArray(strCFG) +
+                           ", Start: " + QString::fromWCharArray(strSTART) + ", CRC: " +
+                           QString::fromWCharArray(strCRC));
+        ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),1)->setText(tmp_string);
+    }
+}
+
+void MainWindow::on_DebugRemoveButton_clicked()
+{
+    /*
+        Remove the object selected in the gui from the gui and from the vector (that will be read by the SendPeriodic Thread)
+    */
+
+    // stop if nothing is selected (i don't think this works )-:)
+    if ( ui->Debug_MsgList->currentRow() == -1 )
+    {
+    QMessageBox::information(NULL, "Error!", "Nothing selected.");
+        return;
+    }
+
+    int id; // the id
+    QString id_str; // the id as string
+    try
+    {
+        // read the ID and delete the gui element
+        id_str = ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),0)->text();
+       // QTableWidgetItem *item_id = ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),0);
+      //  QTableWidgetItem *item_status = ui->Debug_MsgList->item(ui->Debug_MsgList->currentRow(),1);
+        ui->Debug_MsgList->removeRow(ui->Debug_MsgList->currentRow());
+       // delete item_id;
+      //  delete item_status;
+        //ui->Debug_MsgList->setRowCount(ui->Debug_MsgList->rowCount()-1);
+    }
+    catch ( ... )
+    {
+        QMessageBox::information(NULL, "Error!", "Nothing to delete.");
+        // i don't know any other possibilitie how an exception could happen here
+        return;
+    }
+
+    // convert the id to an int
+    try
+    {
+        id = id_str.toInt(0,10);
+    }
+    catch ( ... )
+    {
+       QMessageBox::information(NULL, "Error!", "Internal error.");
+        // i don't think this exception can really happen
+        return;
+    }
+
+    // remove from the actual vector               b
+    PeriodicSendObjectVectorLock->lock();
+
+    for (std::vector<PeriodicSendObject>::iterator i=PeriodicSendObjectVector.begin(); i != PeriodicSendObjectVector.end(); ++i)
+    {
+        if ( i->ID == id )
+        {
+            // delete when an object with the same id is found
+            PeriodicSendObjectVector.erase(i);
+            PeriodicSendObjectVectorLock->unlock();
+
+            return;
+        }
+    }
+    PeriodicSendObjectVectorLock->unlock();
+    QMessageBox::information(NULL, "Error!", "Not successful.");
+    return;
+}
+
+void MainWindow::on_DebugEnableCheckBox_clicked()
+{
+    /*
+        Activates and deactives the Periodic Thread.
+    */
+
+    bool status = ui->DebugEnableCheckBox->isChecked();
+    if ( status )
+    {
+        if(PeriodicSendObjectVector.empty())
+         {
+             QMessageBox::information(NULL, "Error!", "No messages to send");
+             ui->DebugEnableCheckBox->setChecked(false);
+             return;
+         }
+        if ( ui->Connect_Label->text() != "Connected" )
+        {
+            QMessageBox::information(NULL, "Error!", "You are not connected to ECARUS!");
+            ui->DebugEnableCheckBox->setChecked(false);
+            return;
+        }
+        std::cout<<"STARTENABLE"<<std::endl;
+        peri_Timer = new QTimer();
+        peri_Thread = new QThread();                         //create a new thread and a worker
+        peri_worker = new PeriodicSendWorker();
+
+        peri_worker->moveToThread(peri_Thread);             // Move the Object, which sends the messages periodically to the Thread
+        peri_Timer->moveToThread(peri_Thread);
+        peri_Timer->setInterval(100);
+
+        connect(peri_Thread,  SIGNAL(started()),peri_Timer,SLOT(start()));         //thread starts Timer
+        connect(peri_Timer,  SIGNAL(timeout()),peri_worker,SLOT(process_start()));   //timer activates process
+        connect(peri_worker, SIGNAL(finished(int)), peri_Timer,SLOT(start(int)));        //Worker changes peri_Timer's Interval
+        disconnect(peri_worker, SIGNAL(finished(int)),peri_worker,SLOT(deleteLater()));
+        disconnect(peri_Thread, SIGNAL(finished()),peri_Timer,SLOT(deleteLater()));         //dont delete created Objects, once the worker finished
+        disconnect(peri_Thread, SIGNAL(finished()),peri_Thread,SLOT(deleteLater()));
+
+        peri_Thread->start();
+
+    }
+    if ( !status )
+    {
+        if(peri_Thread){
+            peri_Thread->quit();
+            connect(peri_Thread, SIGNAL(finished()),peri_Timer,SLOT(deleteLater()));
+            connect(peri_Thread, SIGNAL(finished()),peri_Thread,SLOT(deleteLater()));   // do delete created objects, once the worker finished
+        }
+
+    }
+}
+
+//**************
+//      MAIN TAB
+//**************
+void MainWindow::on_Development_Button_clicked() //TEST_BUTTON
+{
+    unsigned char data[8];
+    data[0] = 0x12;
+    data[1] = 0x2F;
+    data[2] = 0x33;
+
+    this->GetJSONInterpretation("0x300",data);  //saves DataMap with key and Value in Json_Map
+    ui->JsonTableWidget->setRowCount(Json_Map.size());
+
+    while(JsontableWidgetItem_vector.size() < Json_Map.size()*3)
+    {
+        QTableWidgetItem *JsontableWidgetItem = new QTableWidgetItem(JsontableWidgetItem_vector.size());
+        ui->JsonTableWidget->setItem(JsontableWidgetItem_vector.size()/3,
+                              JsontableWidgetItem_vector.size()%3,
+                              JsontableWidgetItem);
+        JsontableWidgetItem_vector.push_back(JsontableWidgetItem);
+    }
+    int table_index=0;
+    for(QMap<QString,QString>::const_iterator mapItemIterator = Json_Map.constBegin(); mapItemIterator != Json_Map.constEnd() ; mapItemIterator++)
+    {
+        JsontableWidgetItem_vector.at(table_index*3)->setText("0x300");
+        JsontableWidgetItem_vector.at(table_index*3+1)->setText(mapItemIterator.key());
+        JsontableWidgetItem_vector.at(table_index*3+2)->setText(mapItemIterator.value());
+        table_index++;
+    }
+    if(Json_Map.value("Forward Light")==QString("true"))
+          qWarning("Forward Light true");
+    else
+        std::cout<<Json_Map.value("Direction Right").toStdString()<<std::endl;
+
     ui->headlight_Left->setVisible(!ui->headlight_Left->isVisible());
     ui->headlight_Right->setVisible(!ui->headlight_Right->isVisible());
     ui->backlight_Left->setVisible(!ui->backlight_Left->isVisible());
@@ -2291,16 +2042,15 @@ void MainWindow::on_Development_Button_clicked()
     }
 }
 
-
-void MainWindow::on_pushButton_clicked() //Start/stop remote control
+void MainWindow::on_RemoteStartButton_clicked() //Start/stop remote control
 {
     //warning_light = !
     ;
 
-    if(ui->pushButton->styleSheet()=="background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Blue_Button_on.png');background-repeat:no-repeat;") //connected->disconnected
+    if(ui->RemoteStartButton->styleSheet()=="background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Blue_Button_on.png');background-repeat:no-repeat;") //connected->disconnected
     {
         ui->label_8->setText("Start Remote Control");
-        ui->pushButton->setStyleSheet("background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Blue_Button_off.png');background-repeat:no-repeat;");
+        ui->RemoteStartButton->setStyleSheet("background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Blue_Button_off.png');background-repeat:no-repeat;");
         RemoteEmStopBool = true;
         if ( RemoteStatusEXT == 1 )  // RC Enabled
         {
@@ -2350,7 +2100,7 @@ void MainWindow::on_pushButton_clicked() //Start/stop remote control
             connect(remote_thread, SIGNAL(horn()),this,SLOT(on_hornButton_clicked()));
             connect(remote_thread, SIGNAL(horn_Released(void)),this,SLOT(on_hornButton_Released(void)));
             connect(remote_thread, SIGNAL(steering(int)),this,SLOT(on_steering(int)));
-            ui->pushButton->setStyleSheet("background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Blue_Button_on.png');background-repeat:no-repeat;");
+            ui->RemoteStartButton->setStyleSheet("background:transparent;background-image:url(':/new/prefix2/photos/Buttons/Blue_Button_on.png');background-repeat:no-repeat;");
         }
         if(ui->Connect_Label->text() != "Connected")
         {
@@ -2373,22 +2123,6 @@ void MainWindow::on_pushButton_clicked() //Start/stop remote control
             RemoteStatusGUI = 0;
         }
     }
-}
-void MainWindow::tiresRotate(int angle)
-{
-    //setRotation()  rotates the image around the top left pixel, but the intended rotation center is different, so the image has to be moved
-    //rotation center : (27,0) -left tire
-    tireLeft_GraphicsItem->setPos(50,59);
-    tireLeft_GraphicsItem->setRotation(angle);
-    tireLeft_GraphicsItem->setPos(50,59);
-    tireLeft_GraphicsItem->moveBy(27.5*cos(0.01745329251*(tireLeft_GraphicsItem->rotation()+180))+27.5,27.5*sin(0.01745329251*(tireLeft_GraphicsItem->rotation()+180)));
-    //rotation center : (27,37) - right tire
-    tireRight_GraphicsItem->setPos(50,21);
-    tireRight_GraphicsItem->setRotation(angle);
-    tireRight_GraphicsItem->setPos(50,21);
-    tireRight_GraphicsItem->moveBy(45.8039299624*cos(0.01745329251*(tireRight_GraphicsItem->rotation()+(53.8806592+180)))+27.5,45.8039299624*sin(0.01745329251*(tireRight_GraphicsItem->rotation()+(53.8806592+180)))+38);
-    //sqrt(27^2+37^2)=45.8039299624
-    //sqrt(0+27^2)=27; 1° = 0.01745...rad;
 }
 
 void MainWindow::on_horizontalSlider_valueChanged(int value)
@@ -2413,6 +2147,197 @@ void MainWindow::on_keyAssignment_Button_clicked()
         depart_Animation();
     }
 }
+
+void MainWindow::on_maxSpeedSlider_actionTriggered(int action)
+{
+}
+
+void MainWindow::on_maxSpeedSlider_sliderMoved(int position)
+{
+}
+/**
+ * @brief called when the value of the slider changes
+ * @param value position of the slider
+ *
+ * langert text.( it controls the damping factor of the accelerator )
+ */
+void MainWindow::on_maxSpeedSlider_valueChanged(int value)
+{
+    ui->maxSpeedLabel->setText(QString::number(value / 10.0));
+    remote_thread->MaxSpeed = value / 10.0;
+}
+
+void MainWindow::on_modeComboBox_currentIndexChanged(int index)
+{
+    RemoteSetting_1 = index;
+}
+
+void MainWindow::on_recupComboBox_currentIndexChanged(int index)
+{
+    RemoteSetting_2 = index;
+}
+
+void MainWindow::on_boostComboBox_currentIndexChanged(int index)
+{
+    RemoteSetting_3 = index;
+}
+//*********************
+//      CALIBRATION TAB
+//*********************
+void MainWindow::on_CAL_StartButton_clicked()
+{
+    CALstep=1; // beginn
+    if ( ui->Connect_Label->text() != "Connected" )
+    {
+        return; //do nothing if there is no connection
+    }
+    // send the message
+    char tmp[8] = {0};
+    tmp[0]=0x1; // start calibration
+    utility::SendCanMessage(0x290,tmp);
+    ui->CAL_Label->setText("Please do not touch the accelerator and make sure it is in its idle position");
+    ui->CAL_ContinueButton->setVisible(true);
+    ui->CAL_StartButton->setText("Restart");
+    ui->CAL_ContinueButton->setText("Continue");
+}
+
+void MainWindow::on_CAL_ContinueButton_clicked()
+{
+    /*
+        continue button for the calibration feature.
+        Checks in what step of the calibration the software is and sends the correct
+        message.
+        The user must not be able to press this button / call this function if there
+        is no connection.
+    */
+    if ( CALstep == 1 )
+    {
+        // send the message
+        char tmp[8] = {0};
+        tmp[0]=0x5; // calibration
+        utility::SendCanMessage(0x290,tmp);
+        ui->CAL_Label->setText("Please press the accelerator fully.");
+        CALstep=2;
+
+        return;
+    }
+    if ( CALstep == 2 )
+    {
+        // send the can message
+        char tmp[8] = {0};
+        tmp[0]=0x9; // calibration
+        utility::SendCanMessage(0x290,tmp);
+        ui->CAL_Label->setText("Calibration Sucessfull! Do you want to restart?");
+        CALstep=0; // reset
+        ui->CAL_ContinueButton->setText("Finish");
+        CALstep = 3;
+
+        return;
+    }
+    if ( CALstep == 3 )
+    {
+        char tmp[8] = {0};
+        tmp[0]=0x2; // end calibration
+        utility::SendCanMessage(0x290,tmp);
+        ui->CAL_Label->setText(" ");
+        ui->CAL_ContinueButton->setVisible(false);
+        ui->CAL_StartButton->setText("Start");
+        CALstep = 0;
+        return;
+    }
+}
+//*******
+//LOG TAB
+//*******
+void MainWindow::on_CreateLogButton_clicked()
+{
+    /*
+        Fills the Memo1 (raw log) on demand.
+    */
+    ui->CreateLogButton->setEnabled(false);
+    ui->SaveLogButton->setEnabled(true);
+
+    //	Form1->Memo1->Lines->BeginUpdate(); // stop refreshing
+    ui->Log_TextEdit->clear();
+    HistoryLock->lock();
+
+    ui->progressBar_Log->setValue(0);
+    ui->progressBar_Log->setMaximum(RawHistory.size());
+    ui->labelAvailableData->setVisible(false);
+    ui->progressBar_Log->setVisible(true);
+
+    for (std::vector<RawData>::iterator i=RawHistory.begin(); i != RawHistory.end(); ++i)
+    {
+        QString buf;
+        QDateTime time = i->timestamp ; buf = time.toString("dd.MM") + ", " + time.toString("hh:mm:ss.zzz") + ": ";
+
+        // Raw Data
+        for(int j = 0; j < 14; j++)
+        {
+            buf += QString::number(i->RawData[j], 16) + " ";
+        }
+
+        // Cycle
+        buf += "Cycle: " + QString::number((int)i->cycle);
+
+        // Write
+        ui->Log_TextEdit->append(buf);
+
+        // Updata Progressbar
+        ui->progressBar_Log->setValue( ui->progressBar_Log->value() + 1 );
+
+        // Keep gui alive
+        //		Application->ProcessMessages();
+    }
+    HistoryLock->unlock();
+    //	Form1->Memo1->Lines->EndUpdate(); // refresh
+
+    ui->progressBar_Log->setVisible(false);
+    ui->labelAvailableData->setVisible(true);
+    ui->CreateLogButton->setEnabled(true);
+    ui->SaveLogButton->setEnabled(true);
+}
+void MainWindow::on_Export_Button_clicked()
+{
+}
+void MainWindow::on_SaveLogButton_clicked()
+{
+ }
+
+//*******************
+//ANIMATION FUNCTIONSs
+//*******************
+void MainWindow::needleRotate(int speed) /// rotates the speedometer needle around the center
+{
+
+    speedometer_Needle_GraphicsItem->setPos(90,100);
+
+    speedometer_Needle_GraphicsItem->setRotation(47+speed*2.948);
+
+    speedometer_Needle_GraphicsItem->setPos(90,100);
+
+    speedometer_Needle_GraphicsItem->moveBy(12.8062484749*cos(0.01745329251*(speedometer_Needle_GraphicsItem->rotation()+225)),12.8062484749*sin(0.01745329251*(speedometer_Needle_GraphicsItem->rotation()+225)));
+    //the rotation method rotates the image around the top left pixel, but the wanted rotation center of the speedometer_Needle is (x,y)=(10,8), so the image has to be moved
+    //sqrt(10^2+8^2)=12.8062...; 1° = 0.01745...rad; 5/8 * 360 = 225 :=start angle
+}
+
+void MainWindow::tiresRotate(int angle)
+{
+    //setRotation()  rotates the image around the top left pixel, but the intended rotation center is different, so the image has to be moved
+    //rotation center : (27,0) -left tire
+    tireLeft_GraphicsItem->setPos(50,59);
+    tireLeft_GraphicsItem->setRotation(angle);
+    tireLeft_GraphicsItem->setPos(50,59);
+    tireLeft_GraphicsItem->moveBy(27.5*cos(0.01745329251*(tireLeft_GraphicsItem->rotation()+180))+27.5,27.5*sin(0.01745329251*(tireLeft_GraphicsItem->rotation()+180)));
+    //rotation center : (27,37) - right tire
+    tireRight_GraphicsItem->setPos(50,21);
+    tireRight_GraphicsItem->setRotation(angle);
+    tireRight_GraphicsItem->setPos(50,21);
+    tireRight_GraphicsItem->moveBy(45.8039299624*cos(0.01745329251*(tireRight_GraphicsItem->rotation()+(53.8806592+180)))+27.5,45.8039299624*sin(0.01745329251*(tireRight_GraphicsItem->rotation()+(53.8806592+180)))+38);
+    //sqrt(27^2+37^2)=45.8039299624
+    //sqrt(0+27^2)=27; 1° = 0.01745...rad;
+}
+
 void MainWindow::arrive_Animation() // eCARus arrive Animation
 {
     ui->indicatorlight_Left->setVisible(false);
@@ -2485,28 +2410,6 @@ void MainWindow::arrive_Animation_finished()
     ui->graphicsView_2->setStyleSheet("background-image: url(':/new/prefix2/photos/Car/ECARUS_Car_1_65.png');background-color:none;background-repeat:no-repeat;");
 }
 
-void MainWindow::on_helpWindowMouseEntered()
-{
-    ui->Debug_Help_Label->setFixedHeight(180);
-    ui->Debug_Help_Label->setFixedWidth(200);
-    ui->Debug_Help_Label->setStyleSheet("text-align:left;background-image:url(':/new/prefix2/photos/Metal_Background.png');");
-    ui->Debug_Help_Label->setText("[♦] In manual mode, the message's \n       ID won't be sent in little endian\n      contrary to the 'Guided Mode'\n[♦] The checksum is computed in 3 \n      steps:\n1) Sum calculation of the config and\n      data bytes \n2) Conjunction with 0xFF\n3) Invertation");
-}
-void MainWindow::on_helpWindowMouseLeaved()
-{
-    ui->Debug_Help_Label->setFixedHeight(50);
-    ui->Debug_Help_Label->setFixedWidth(50);
-    ui->Debug_Help_Label->setStyleSheet("background-image:url(':/new/prefix2/photos/help.png');background-repeat:no-repeat;");
-    ui->Debug_Help_Label->setText("");
-}
-
-
-void MainWindow::on_helpWindowMouseClicked()
-{
-        ui->Debug_Help_Label->setStyleSheet("text-align:left;background:white;");
-}
-
-
 void MainWindow::depart_Animation()
 {
     ui->indicatorlight_Left->setVisible(false);
@@ -2549,7 +2452,6 @@ void MainWindow::depart_Animation()
     connect(animationTimer,SIGNAL(finished()),eCARusScene,SLOT(deleteLater()));
     connect(animationTimer,SIGNAL(finished()),animationTimer,SLOT(deleteLater()));
 }
-
 void MainWindow::depart_Animation_finished()
 {
     ui->keyAssignment_Button->setEnabled(true);
@@ -2577,10 +2479,39 @@ void MainWindow::depart_Animation_finished()
   //  ui->graphicsView_2->setStyleSheet("background-image: url(':/new/prefix2/photos/Car/ECARUS_Car_1_65.png');background-color:none;background-repeat:no-repeat;");
 }
 
+//Mouseover effect of the question mark in the Debug tab
+void MainWindow::on_helpWindowMouseEntered()
+{
+    ui->Debug_Help_Label->setFixedHeight(180);
+    ui->Debug_Help_Label->setFixedWidth(200);
+    ui->Debug_Help_Label->setStyleSheet("text-align:left;background-image:url(':/new/prefix2/photos/Metal_Background.png');");
+    ui->Debug_Help_Label->setText("[♦] In manual mode, the message's \n       ID won't be sent in little endian\n      contrary to the 'Guided Mode'\n[♦] The checksum is computed in 3 \n      steps:\n1) Sum calculation of the config and\n      data bytes \n2) Conjunction with 0xFF\n3) Invertation");
+}
+void MainWindow::on_helpWindowMouseLeaved()
+{
+    ui->Debug_Help_Label->setFixedHeight(50);
+    ui->Debug_Help_Label->setFixedWidth(50);
+    ui->Debug_Help_Label->setStyleSheet("background-image:url(':/new/prefix2/photos/help.png');background-repeat:no-repeat;");
+    ui->Debug_Help_Label->setText("");
+}
+void MainWindow::on_helpWindowMouseClicked()
+{
+        ui->Debug_Help_Label->setStyleSheet("text-align:left;background:white;");
+}
 
+//*********************
+//      OTHER FUNCTIONS
+//*********************
 
+// The old interpretation method is to safe incoming interpreted data in a struct called LatestDataInterpreted.
+//  This is not easy costumizeable, so the new method is to compare each incoming message with a JSON-File.
+//  The last values are safed in the QMap Json_Map and easy to access.
 
-void MainWindow::GetInterpretionByJson(QString ID, unsigned char data[]) //TO-DO: complete the Json-ConfigFile
+// TO-DO: remove anything related to LatestDataInterpreted and
+//        replace the Daten_konvertieren-function in the interprete thread with
+//        the GetJSONInterpretation function
+//TO-DO: complete the JSON config file <-READ WIKI ENTRY;
+void MainWindow::GetJSONInterpretation(QString ID, unsigned char data[])
 {
     QJsonValue value = JsonList.value(ID);
     QJsonArray array = value.toArray();     //list of the ID related information
@@ -2594,13 +2525,14 @@ void MainWindow::GetInterpretionByJson(QString ID, unsigned char data[]) //TO-DO
          int byte_start = key.value("Byte_Start").toInt();
          int byte_end = key.value("Byte_End").toInt();
          int bit_start = key.value("Bit_Start").toInt();
-         int bit_end = key.value("Bit_End").toInt();
+         int bit_end = key.value("Bit_End").toInt();         
          QString text ="";
          text = key.value("Text").toString();
          QString unit = key.value("Unit").toString();
          double Scalefactor = key.value("Scale").toDouble();
-
-         //get the Message Value
+         int AdjustValue = key.value("AdjustValue").toInt();
+         int SignBitNumber = key.value("SignBitNumber").toInt();//number of the sign bit, null, if the Value is unsigned
+         //calculate the message's Value
          if(byte_end-byte_start != 0)
          {
              for(int i = 0; i<=byte_end-byte_start; i++)
@@ -2612,6 +2544,9 @@ void MainWindow::GetInterpretionByJson(QString ID, unsigned char data[]) //TO-DO
          {
             Value_Int = (data[byte_start]>>bit_start) & (0xFF>>7-bit_end);
          }
+         Value_Int+=AdjustValue;
+         if(SignBitNumber != 0)
+             Value_Int = this->UnsignedIntToSignedInt(Value_Int, SignBitNumber); //The value's MSB is interpreted as a sign
          if((key.value("DataType").toString())==("double"))
          {
             Value_Double = Value_Int * Scalefactor;
@@ -2630,3 +2565,43 @@ void MainWindow::GetInterpretionByJson(QString ID, unsigned char data[]) //TO-DO
            // qDebug() << Json_Map.value(text);
      }
 }
+int MainWindow::UnsignedIntToSignedInt(int unsignedint, int MSBindex) // This function gets an unsigned Integer and interprets the MSB as a sign bit and returns a signed int
+{
+    /*
+        unsignedint = 00..001010101110 = 686 , MSBindex=9 -> has to be intepreted as a negative number
+        signedint = 1...101010010 = -174
+     */
+    if((unsignedint & (0x01 << MSBindex)) != 0) //negative?
+    {
+        return -(unsignedint & ((0x01 << MSBindex) -1));
+    }
+    else
+        return unsignedint; //unsigned is positive
+}
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+
+}
+
+void MainWindow::on_actionQuit_triggered()
+{
+    close();
+}
+/**
+ * @brief MainWindow::on_actionGet_Help_triggered ( it opens a HTML page ( Help Window) )
+ */
+void MainWindow::on_actionGet_Help_triggered()
+{
+    QString link= "https://ecarus.wiki.tum.de/Telemetrie+%26+Fernsteuerung";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QString link= "http://ecarus.wiki.tum.de/";
+    QDesktopServices::openUrl(QUrl(link));
+    /*SecDialog secdialog ;
+    secdialog.setModal (true);
+    secdialog.exec();*/
+}
+

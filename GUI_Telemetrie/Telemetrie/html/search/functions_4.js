@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['needlerotate',['needleRotate',['../class_main_window.html#ac3b886aa8279a5f084d3568b35bdbeb2',1,'MainWindow']]]
+  ['getinterpretionbyjson',['GetInterpretionByJson',['../class_main_window.html#a392b1075743c22ae41157d62bb6906de',1,'MainWindow']]]
 ];

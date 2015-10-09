@@ -338,7 +338,6 @@ int config_handler::load_config(configdata *config, std::wstring filename)
             line++;
             continue;
         }
-
         if ( FileBuf[filepos] == '#' )
         {
             if ( (bufpnt == buf1) && (writepos != 0) )

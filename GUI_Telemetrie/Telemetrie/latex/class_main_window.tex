@@ -184,15 +184,20 @@ void \hyperlink{class_main_window_abf516f6eaf5bff5bbd76449f5c0d63ef}{on\+\_\+max
 \hypertarget{class_main_window_a38edb88d43e844aca9d2e762c8706565}{}void {\bfseries close\+Event} (Q\+Close\+Event $\ast$)\label{class_main_window_a38edb88d43e844aca9d2e762c8706565}
 
 \item 
-\hypertarget{class_main_window_ac3b886aa8279a5f084d3568b35bdbeb2}{}void \hyperlink{class_main_window_ac3b886aa8279a5f084d3568b35bdbeb2}{needle\+Rotate} (int)\label{class_main_window_ac3b886aa8279a5f084d3568b35bdbeb2}
+\hypertarget{class_main_window_a3e814c59f07dffe9bd4c12a7d0388026}{}Q\+String {\bfseries Json\+Get\+Last} (Q\+Json\+Object \&Json\+List, Q\+String Name)\label{class_main_window_a3e814c59f07dffe9bd4c12a7d0388026}
 
+\item 
+\hypertarget{class_main_window_a392b1075743c22ae41157d62bb6906de}{}void \hyperlink{class_main_window_a392b1075743c22ae41157d62bb6906de}{Get\+Interpretion\+By\+Json} (Q\+String I\+D, unsigned char data\mbox{[}$\,$\mbox{]})\label{class_main_window_a392b1075743c22ae41157d62bb6906de}
+
+\begin{DoxyCompactList}\small\item\em Get\+Interpretion\+By\+Json interpretes incoming messages by the help of a Json config file and creates a Q\+Map out of the data $\ast$. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ac3b886aa8279a5f084d3568b35bdbeb2}{needle\+Rotate} (int)
 \begin{DoxyCompactList}\small\item\em rotates the speedometer\textquotesingle{}s needle depending on the passed speed paramater \end{DoxyCompactList}\item 
 \hypertarget{class_main_window_a23b80f82a61cc0a1e3e2721891c782b8}{}void \hyperlink{class_main_window_a23b80f82a61cc0a1e3e2721891c782b8}{tires\+Rotate} (int)\label{class_main_window_a23b80f82a61cc0a1e3e2721891c782b8}
 
 \begin{DoxyCompactList}\small\item\em rotates e\+C\+A\+Rus\textquotesingle{} tires depending on the passed steering value \end{DoxyCompactList}\item 
-\hypertarget{class_main_window_a0e5b89d0f15feab33a7c1fb56b398297}{}void {\bfseries arrive\+\_\+\+Animation} ()\label{class_main_window_a0e5b89d0f15feab33a7c1fb56b398297}
+\hypertarget{class_main_window_a0e5b89d0f15feab33a7c1fb56b398297}{}void \hyperlink{class_main_window_a0e5b89d0f15feab33a7c1fb56b398297}{arrive\+\_\+\+Animation} ()\label{class_main_window_a0e5b89d0f15feab33a7c1fb56b398297}
 
-\item 
+\begin{DoxyCompactList}\small\item\em animate ecarus\textquotesingle{} arriving to the G\+U\+I and hides key assignment widget \end{DoxyCompactList}\item 
 \hypertarget{class_main_window_a0045f76b77a2fda750ce2bd30f8a0a59}{}void {\bfseries depart\+\_\+\+Animation} ()\label{class_main_window_a0045f76b77a2fda750ce2bd30f8a0a59}
 
 \end{DoxyCompactItemize}
@@ -264,11 +269,25 @@ void \hyperlink{class_main_window_abf516f6eaf5bff5bbd76449f5c0d63ef}{on\+\_\+max
 \item 
 \hypertarget{class_main_window_a6e4bf86ef77a5a2a84ea3706082513ad}{}int {\bfseries Remote\+Setting\+\_\+3}\label{class_main_window_a6e4bf86ef77a5a2a84ea3706082513ad}
 
+\item 
+\hypertarget{class_main_window_a7220f9ca1ee391ad7a32b872d44785f3}{}Q\+Json\+Object {\bfseries Json\+List}\label{class_main_window_a7220f9ca1ee391ad7a32b872d44785f3}
+
 \end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_main_window_abf516f6eaf5bff5bbd76449f5c0d63ef}{}\index{Main\+Window@{Main\+Window}!on\+\_\+max\+Speed\+Slider\+\_\+value\+Changed@{on\+\_\+max\+Speed\+Slider\+\_\+value\+Changed}}
+\hypertarget{class_main_window_ac3b886aa8279a5f084d3568b35bdbeb2}{}\index{Main\+Window@{Main\+Window}!needle\+Rotate@{needle\+Rotate}}
+\index{needle\+Rotate@{needle\+Rotate}!Main\+Window@{Main\+Window}}
+\subsubsection[{needle\+Rotate(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::needle\+Rotate (
+\begin{DoxyParamCaption}
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}\label{class_main_window_ac3b886aa8279a5f084d3568b35bdbeb2}
+
+
+rotates the speedometer\textquotesingle{}s needle depending on the passed speed paramater 
+
+rotates the speedometer needle around the center \hypertarget{class_main_window_abf516f6eaf5bff5bbd76449f5c0d63ef}{}\index{Main\+Window@{Main\+Window}!on\+\_\+max\+Speed\+Slider\+\_\+value\+Changed@{on\+\_\+max\+Speed\+Slider\+\_\+value\+Changed}}
 \index{on\+\_\+max\+Speed\+Slider\+\_\+value\+Changed@{on\+\_\+max\+Speed\+Slider\+\_\+value\+Changed}!Main\+Window@{Main\+Window}}
 \subsubsection[{on\+\_\+max\+Speed\+Slider\+\_\+value\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::on\+\_\+max\+Speed\+Slider\+\_\+value\+Changed (
 \begin{DoxyParamCaption}

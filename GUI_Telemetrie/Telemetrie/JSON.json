@@ -10,6 +10,7 @@
         "Bit_start": 1,
         "Bit_end": 1,
         "Scale": 1,
+        "StartValue": 0,
         "Unit": "a"
     }
 }

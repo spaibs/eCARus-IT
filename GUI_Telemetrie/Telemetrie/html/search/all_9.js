@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['needlerotate',['needleRotate',['../class_main_window.html#ac3b886aa8279a5f084d3568b35bdbeb2',1,'MainWindow']]]
+  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]],
+  ['mouse_5flabel',['Mouse_Label',['../class_mouse___label.html',1,'']]]
 ];

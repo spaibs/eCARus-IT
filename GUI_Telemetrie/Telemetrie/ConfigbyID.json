@@ -1,0 +1,41 @@
+{
+   "0x300": [{	
+        "Text": "Direction Left",
+        "DataType": "int",
+        "Byte_Start": 1,
+        "Byte_End": 1,
+        "Bit_Start": 0,
+        "Bit_End": 7,
+        "Scale": 2,
+        "Unit": "Volt",
+        "LastValue": "7",
+        "SignBitNumber": 7,
+        "AdjustValue": 128
+	}, {
+        "Text": "Direction Right",
+        "DataType": "double",
+        "Byte_Start": 1,
+        "Byte_End": 2,
+        "Bit_Start": 0,
+        "Bit_End": 7,
+        "Scale": 3.3,
+        "Unit": "Ampere",
+        "LastValue": "7",
+        "SignBitNumber": 0,
+        "AdjustValue": 0
+	}, {    
+        "Text": "Forward Light",
+        "DataType": "bool",
+        "Byte_Start": 2,
+        "Byte_End": 2,
+        "Bit_Start": 5,
+        "Bit_End": 5,
+        "Scale": 3.3,
+        "Unit": "Ampere",
+        "LastValue": "7",
+        "SignBitNumber": 0,
+        "AdjustValue": 0
+	}]  
+}
+
+

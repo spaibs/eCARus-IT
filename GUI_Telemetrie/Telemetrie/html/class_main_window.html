@@ -283,16 +283,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DMX_Send</b> (int Kana
 <tr class="memitem:a38edb88d43e844aca9d2e762c8706565"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38edb88d43e844aca9d2e762c8706565"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *)</td></tr>
 <tr class="separator:a38edb88d43e844aca9d2e762c8706565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b886aa8279a5f084d3568b35bdbeb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3b886aa8279a5f084d3568b35bdbeb2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac3b886aa8279a5f084d3568b35bdbeb2">needleRotate</a> (int)</td></tr>
-<tr class="memdesc:ac3b886aa8279a5f084d3568b35bdbeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotates the speedometer's needle depending on the passed speed paramater <br /></td></tr>
+<tr class="memitem:a3e814c59f07dffe9bd4c12a7d0388026"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e814c59f07dffe9bd4c12a7d0388026"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>JsonGetLast</b> (QJsonObject &amp;JsonList, QString Name)</td></tr>
+<tr class="separator:a3e814c59f07dffe9bd4c12a7d0388026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392b1075743c22ae41157d62bb6906de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a392b1075743c22ae41157d62bb6906de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a392b1075743c22ae41157d62bb6906de">GetInterpretionByJson</a> (QString ID, unsigned char data[])</td></tr>
+<tr class="memdesc:a392b1075743c22ae41157d62bb6906de"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetInterpretionByJson interpretes incoming messages by the help of a Json config file and creates a QMap out of the data *. <br /></td></tr>
+<tr class="separator:a392b1075743c22ae41157d62bb6906de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b886aa8279a5f084d3568b35bdbeb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac3b886aa8279a5f084d3568b35bdbeb2">needleRotate</a> (int)</td></tr>
+<tr class="memdesc:ac3b886aa8279a5f084d3568b35bdbeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotates the speedometer's needle depending on the passed speed paramater  <a href="#ac3b886aa8279a5f084d3568b35bdbeb2">More...</a><br /></td></tr>
 <tr class="separator:ac3b886aa8279a5f084d3568b35bdbeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23b80f82a61cc0a1e3e2721891c782b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23b80f82a61cc0a1e3e2721891c782b8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a23b80f82a61cc0a1e3e2721891c782b8">tiresRotate</a> (int)</td></tr>
 <tr class="memdesc:a23b80f82a61cc0a1e3e2721891c782b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotates eCARus' tires depending on the passed steering value <br /></td></tr>
 <tr class="separator:a23b80f82a61cc0a1e3e2721891c782b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5b89d0f15feab33a7c1fb56b398297"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e5b89d0f15feab33a7c1fb56b398297"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>arrive_Animation</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a0e5b89d0f15feab33a7c1fb56b398297">arrive_Animation</a> ()</td></tr>
+<tr class="memdesc:a0e5b89d0f15feab33a7c1fb56b398297"><td class="mdescLeft">&#160;</td><td class="mdescRight">animate ecarus' arriving to the GUI and hides key assignment widget <br /></td></tr>
 <tr class="separator:a0e5b89d0f15feab33a7c1fb56b398297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0045f76b77a2fda750ce2bd30f8a0a59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0045f76b77a2fda750ce2bd30f8a0a59"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>depart_Animation</b> ()</td></tr>
@@ -370,8 +377,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteSetting_2</b></t
 <tr class="memitem:a6e4bf86ef77a5a2a84ea3706082513ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e4bf86ef77a5a2a84ea3706082513ad"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteSetting_3</b></td></tr>
 <tr class="separator:a6e4bf86ef77a5a2a84ea3706082513ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7220f9ca1ee391ad7a32b872d44785f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7220f9ca1ee391ad7a32b872d44785f3"></a>
+QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><b>JsonList</b></td></tr>
+<tr class="separator:a7220f9ca1ee391ad7a32b872d44785f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac3b886aa8279a5f084d3568b35bdbeb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::needleRotate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotates the speedometer's needle depending on the passed speed paramater </p>
+<p>rotates the speedometer needle around the center </p>
+
+</div>
+</div>
 <a class="anchor" id="abf516f6eaf5bff5bbd76449f5c0d63ef"></a>
 <div class="memitem">
 <div class="memproto">

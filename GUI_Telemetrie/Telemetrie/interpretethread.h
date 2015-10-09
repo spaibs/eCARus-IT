@@ -53,6 +53,8 @@ protected:
      *  -Data will be saved in the LatestRawData vector
      *  -The interpretation is the task of Daten_konvertieren(Ethernet_Msg msg)
      *  -The data log will be saved in InterpretedHistory and RawHistory
+     *  -The created list will be saved in the GUI's data list: *ptr_LatestDataInterpreted
+     *  -- to prevent access errors, this function uses a Thread lock
      */
 
     void run();
@@ -68,7 +70,7 @@ private:
     struct RawData LatestRawData; ///< stores the last received data;
     struct RawData	*ptr_LatestRawData;
     struct InterpretedData LatestDataInterpreted; ///< stores the most recent version of all interpreted data
-    struct InterpretedData *ptr_LatestDataInterpreted;
+    struct InterpretedData *ptr_LatestDataInterpreted;///< The GUI sends the pointer of the data list to the interpreteThread
     //QJsonObject JsonList;
     //QJsonObject JsonSubList;
     //QJsonObject* ptr_JsonList;

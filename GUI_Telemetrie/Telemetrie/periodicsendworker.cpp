@@ -8,7 +8,6 @@ QMutex* PeriodicSendObjectVectorLock;
 
 PeriodicSendWorker::PeriodicSendWorker()
 {
-
     PeriodicSendObjectVectorLock->lock();
     if ( !PeriodicSendObjectVector.empty() )  // do not iterate if the vector is empty
     {
@@ -17,20 +16,13 @@ PeriodicSendWorker::PeriodicSendWorker()
             i->lastsent = 0; // init
         }
     }
-
-
-
     PeriodicSendObjectVectorLock->unlock();
 }
 PeriodicSendWorker::~PeriodicSendWorker() {
-
 }
-
 void PeriodicSendWorker::process_stop()
 {
-
 }
-
 void PeriodicSendWorker::process_start()
 {
     int greatest_Interval=0;
@@ -53,16 +45,12 @@ void PeriodicSendWorker::process_start()
                     //i->lastsent = 0; // init
             }
         }
-
-
-
         if ( PeriodicSendObjectVector.empty() )
         {                                            // if there are no data to send
             QThread::msleep(20);                    // wait a few milliseconds
             PeriodicSendObjectVectorLock->unlock();
             return;
         }
-
         time = QTime::currentTime();
         for (std::vector<PeriodicSendObject>::iterator i=PeriodicSendObjectVector.begin(); i != PeriodicSendObjectVector.end(); ++i)
         {
@@ -97,14 +85,12 @@ void PeriodicSendWorker::process_start()
                 i->lastsent = abs(time.msecsTo(time_zero)); //save current time
             }
         }
-
         PeriodicSendObjectVectorLock->unlock();
 
         for (std::vector<PeriodicSendObject>::iterator i=PeriodicSendObjectVector.begin(); i != PeriodicSendObjectVector.end(); ++i)
         {
             greatest_Interval=utility::ggT(greatest_Interval,i->interval);  //calculate the greatest interval which allows to send all messages accurately
         }
-
         emit finished(greatest_Interval);
         // sleep to keep the cpu utilization low
 
@@ -118,9 +104,4 @@ void PeriodicSendWorker::process_start()
         //        SetWaitableTimer(timer, &ft, 0, NULL, NULL, 0);
         //        WaitForSingleObject(timer, INFINITE);
         //        CloseHandle(timer);
-
-
 }
-
-
-

@@ -68,9 +68,6 @@ InterpreteThread::InterpreteThread(QObject *parent) :
     frontTimeOut->start(1000);
     rearok=false;
     frontok=false;
-
-
-
 }
 
 void InterpreteThread::run()
@@ -189,7 +186,7 @@ void InterpreteThread::run()
 }
 //-------------------------------------------------------------------------------------------------------------------
 
-void InterpreteThread::Daten_konvertieren(Ethernet_Msg Msg)
+void InterpreteThread::Daten_konvertieren(Ethernet_Msg Msg) // deprecated << replace this with GetJSONInterpretation
 {
     //used as tempomary storage
     int Value;

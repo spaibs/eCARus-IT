@@ -19,9 +19,7 @@ Special_Label::Special_Label(QWidget *parent) :     //Label sub class which prov
 
 Special_Label::~Special_Label()
 {
-
 }
-
 void Special_Label::clicked()
 {}
 void Special_Label::released()

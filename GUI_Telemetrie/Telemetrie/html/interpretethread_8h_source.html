@@ -92,57 +92,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QMutex&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;datatypes.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/* extern Definition of global variables */</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> std::vector &lt;struct InterpretedData&gt; InterpretedHistory;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> std::vector &lt;struct RawData&gt; RawHistory;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> QMutex* HistoryLock;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> QMutex* RecQueueLock;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> QMutex* NetLock;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_interprete_thread.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interprete_thread.html">InterpreteThread</a> : <span class="keyword">public</span> QThread</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_interprete_thread.html">InterpreteThread</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interprete_thread.html#a9e2e7ed3a9608daa29393850ce380ffc">Daten_konvertieren</a>(<a class="code" href="struct_ethernet___msg.html">Ethernet_Msg</a> Msg);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> init_LatestDataInterpreted(<span class="keyword">struct</span> <a class="code" href="struct_interpreted_data.html">InterpretedData</a>*);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> init_receivedMsgVector(std::vector &lt;Ethernet_Msg&gt;*);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> init_LatestRawData(<span class="keyword">struct</span> <a class="code" href="struct_raw_data.html">RawData</a>*);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> init_AvailableData(<span class="keywordtype">int</span>*);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> rearok ;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> frontok;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interprete_thread.html#aa24b72df0d69cf668ae26919a6cafc58">run</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">long</span> HeartBeatCycle;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">long</span> Time_ms [2048];</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> AvaibleData;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> *ptr_AvaibleData;       </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    QTimer* frontTimeOut;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QTimer* rearTimeOut;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_raw_data.html">RawData</a> LatestRawData; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_raw_data.html">RawData</a>  *ptr_LatestRawData;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_interpreted_data.html">InterpretedData</a> LatestDataInterpreted; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_interpreted_data.html">InterpretedData</a> *ptr_LatestDataInterpreted;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="struct_ethernet___msg.html">Ethernet_Msg</a> receivedMsg;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::vector &lt;Ethernet_Msg&gt; receivedMsgVector; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::vector &lt;Ethernet_Msg&gt; *ptr_receivedMsgVector;      </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> frontTimedOut();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> rearTimedOut();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif // INTERPRETETHREAD_H</span></div>
-<div class="ttc" id="class_interprete_thread_html"><div class="ttname"><a href="class_interprete_thread.html">InterpreteThread</a></div><div class="ttdoc">The InterpreteThread class interpretes the incoming UDP messages. Messages with known ID&#39;s are saved ...</div><div class="ttdef"><b>Definition:</b> interpretethread.h:24</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/* extern Definition of global variables */</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> std::vector &lt;struct InterpretedData&gt; InterpretedHistory;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> std::vector &lt;struct RawData&gt; RawHistory;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> QMutex* HistoryLock;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> QMutex* RecQueueLock;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> QMutex* NetLock;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_interprete_thread.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interprete_thread.html">InterpreteThread</a> : <span class="keyword">public</span> QThread</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_interprete_thread.html">InterpreteThread</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interprete_thread.html#a9e2e7ed3a9608daa29393850ce380ffc">Daten_konvertieren</a>(<a class="code" href="struct_ethernet___msg.html">Ethernet_Msg</a> Msg);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> InterpreteFromJson(<a class="code" href="struct_ethernet___msg.html">Ethernet_Msg</a> Msg);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> init_LatestDataInterpreted(<span class="keyword">struct</span> <a class="code" href="struct_interpreted_data.html">InterpretedData</a>*);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> init_receivedMsgVector(std::vector &lt;Ethernet_Msg&gt;*);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> init_LatestRawData(<span class="keyword">struct</span> <a class="code" href="struct_raw_data.html">RawData</a>*);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> init_AvailableData(<span class="keywordtype">int</span>*);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> rearok ;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> frontok;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interprete_thread.html#aa24b72df0d69cf668ae26919a6cafc58">run</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">long</span> HeartBeatCycle;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">long</span> Time_ms [2048];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> AvaibleData;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> *ptr_AvaibleData;       </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QTimer* frontTimeOut;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QTimer* rearTimeOut;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_raw_data.html">RawData</a> LatestRawData; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_raw_data.html">RawData</a>  *ptr_LatestRawData;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_interpreted_data.html">InterpretedData</a> LatestDataInterpreted; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_interpreted_data.html">InterpretedData</a> *ptr_LatestDataInterpreted;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//QJsonObject JsonList;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//QJsonObject JsonSubList;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//QJsonObject* ptr_JsonList;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="struct_ethernet___msg.html">Ethernet_Msg</a> receivedMsg;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::vector &lt;Ethernet_Msg&gt; receivedMsgVector; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::vector &lt;Ethernet_Msg&gt; *ptr_receivedMsgVector;      </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> frontTimedOut();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> rearTimedOut();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // INTERPRETETHREAD_H</span></div>
+<div class="ttc" id="class_interprete_thread_html"><div class="ttname"><a href="class_interprete_thread.html">InterpreteThread</a></div><div class="ttdoc">The InterpreteThread class interpretes the incoming UDP messages. Messages with known ID&#39;s are saved ...</div><div class="ttdef"><b>Definition:</b> interpretethread.h:25</div></div>
 <div class="ttc" id="struct_ethernet___msg_html"><div class="ttname"><a href="struct_ethernet___msg.html">Ethernet_Msg</a></div><div class="ttdef"><b>Definition:</b> datatypes.h:7</div></div>
 <div class="ttc" id="struct_interpreted_data_html"><div class="ttname"><a href="struct_interpreted_data.html">InterpretedData</a></div><div class="ttdoc">The InterpretedData struct is used to store all interpreted data read from the network. </div><div class="ttdef"><b>Definition:</b> datatypes.h:35</div></div>
 <div class="ttc" id="class_interprete_thread_html_aa24b72df0d69cf668ae26919a6cafc58"><div class="ttname"><a href="class_interprete_thread.html#aa24b72df0d69cf668ae26919a6cafc58">InterpreteThread::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">run() -Main function. will loop as long as the thread is not terminated. -It dequeues the messages fr...</div><div class="ttdef"><b>Definition:</b> interpretethread.cpp:76</div></div>
-<div class="ttc" id="class_interprete_thread_html_a9e2e7ed3a9608daa29393850ce380ffc"><div class="ttname"><a href="class_interprete_thread.html#a9e2e7ed3a9608daa29393850ce380ffc">InterpreteThread::Daten_konvertieren</a></div><div class="ttdeci">void Daten_konvertieren(Ethernet_Msg Msg)</div><div class="ttdoc">Daten_konvertieren. </div><div class="ttdef"><b>Definition:</b> interpretethread.cpp:191</div></div>
+<div class="ttc" id="class_interprete_thread_html_a9e2e7ed3a9608daa29393850ce380ffc"><div class="ttname"><a href="class_interprete_thread.html#a9e2e7ed3a9608daa29393850ce380ffc">InterpreteThread::Daten_konvertieren</a></div><div class="ttdeci">void Daten_konvertieren(Ethernet_Msg Msg)</div><div class="ttdoc">Daten_konvertieren. </div><div class="ttdef"><b>Definition:</b> interpretethread.cpp:192</div></div>
 <div class="ttc" id="struct_raw_data_html"><div class="ttname"><a href="struct_raw_data.html">RawData</a></div><div class="ttdef"><b>Definition:</b> datatypes.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

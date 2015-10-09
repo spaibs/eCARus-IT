@@ -53,6 +53,7 @@ public:
     bool RemoteHeadLightBool;
     bool RemoteFullBeamBool;
     bool RemoteDirIndLeftBool;
+    int UnsignedIntToSignedInt(int unsignedint, int signbitnumber);
     bool RemoteDirIndRightBool;
     bool RemoteWarnLightBool;
     bool RemoteEmStopBool;
@@ -63,22 +64,20 @@ public:
     int RemoteSetting_1;
     int RemoteSetting_2;
     int RemoteSetting_3;
-    //JsonInit
-    QString JsonGetLast(QJsonObject &JsonList, QString Name);
+    //JsonInit   
     QJsonObject JsonList;
     /**
-     * @brief GetInterpretionByJson
+     * @brief GetJSONInterpretation
      * interpretes incoming messages by the help of a Json config file and creates a QMap out of the data     *
      */
-    void GetInterpretionByJson(QString ID, unsigned char data[]);
-
+    void GetJSONInterpretation(QString ID, unsigned char data[]);
     void needleRotate(int); ///< rotates the speedometer's needle depending on the passed speed paramater
     void tiresRotate(int);  ///< rotates eCARus' tires depending on the passed steering value
-    void arrive_Animation();
+    void arrive_Animation();///< animate ecarus' arriving to the GUI and hides key assignment widget
     void depart_Animation();
 public slots:
     /**
-     * @brief UpdateGui updates elements of the GUI every 100ms
+     * @brief UpdateGui updates elements of the GUI every 100ms     *
      */
     void UpdateGui();
 //RemoteController-Slots
@@ -142,12 +141,14 @@ public slots:
     void on_actionConnect_Disconnect_triggered();
    // void on_pushButton_StartMoitoring_clicked();
     void on_Development_Button_clicked();
-    void on_pushButton_clicked();
+    //void on_pushButton_clicked();
     void on_horizontalSlider_valueChanged(int value);    
     void on_keyAssignment_Button_clicked();
 
 private slots:
-    void on_pushButton_2_clicked();
+    void on_Export_Button_clicked();
+    void on_SaveLogButton_clicked();
+    void on_RemoteStartButton_clicked();
 
 private:
     QMovie *connection_Animation;
