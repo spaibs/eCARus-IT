@@ -45,26 +45,25 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
         //mySwitch1 = (Switch) findViewById(R.id.myswitch1);
-        //Log.d(getClass().getSimpleName(), "Switch is currently ON");
-        //Switch mySwitch1 = new Switch(getApplicationContext());
         //set the switch to ON
         //mySwitch1.setChecked(true);
+        //Log.d(getClass().getSimpleName(), "Switch is currently ON");
         //attach a listener to check for changes in state
         /**mySwitch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked){
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView,
+        boolean isChecked){
 
-                if(isChecked){
-                    Log.d(getClass().getSimpleName(), "Switch is currently ON");
-                    //TO DO: sendStatusUpdate
-                }else{
-                    Log.d(getClass().getSimpleName(), "Switch is currently OFF");
-                    //TO DO: sendStatusUpdate
-                }
+        if(isChecked){
+        Log.d(getClass().getSimpleName(), "Switch is currently ON");
+        //TO DO: sendStatusUpdate
+        }else{
+        Log.d(getClass().getSimpleName(), "Switch is currently OFF");
+        //TO DO: sendStatusUpdate
+        }
 
-            }
+        }
         });
          */
 
@@ -123,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
+
             View rootView;
             if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) { // Info
                 rootView = inflater.inflate(R.layout.fragment_info, container, false);
