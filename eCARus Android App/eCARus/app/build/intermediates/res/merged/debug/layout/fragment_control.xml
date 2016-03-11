@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ContentDescription"
+        tools:context="de.tum.ei.ecarus.ecarus.MainActivity$PlaceholderFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <!--Button opening control dialog fragment-->
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/control_button"
+                android:id="@+id/button"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:onClick="startControl"/>
+
+
+            <!-- eCARus Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:src="@drawable/ecarus_image_normal"
+                android:id="@+id/imageView"/>
+
+
+            <!-- Battery Widget -->
+            <de.tum.ei.ecarus.ecarus.BatteryWidget
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/batterywidget"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="54dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

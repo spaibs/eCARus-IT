@@ -11,6 +11,13 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 
+/******************
+ * DESCRIPTION HERE!
+ *
+ *
+ */
+
+
 public class SettingsActivity extends PreferenceActivity {
 
     @Override

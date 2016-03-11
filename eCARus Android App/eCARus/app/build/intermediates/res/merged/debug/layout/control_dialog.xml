@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:layout_gravity="center">
+
+    <!-- Headlights Switch -->
+    <TableRow>
+        <TextView
+            android:text="@string/headlights"
+            android:layout_gravity="end"
+            android:padding="10dp"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_column="1"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+    <!-- Backlights Switch -->
+    <TableRow>
+        <TextView
+            android:text="@string/backlights"
+            android:padding="10dp"
+            android:layout_gravity="end"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch2"
+            android:layout_column="1"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+    <!-- Left Blinker Switch -->
+    <TableRow>
+        <TextView
+            android:text="@string/blinker_left"
+            android:padding="10dp"
+            android:layout_gravity="end"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch3"
+            android:layout_column="1"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+    <!-- Right Blinker Switch -->
+    <TableRow>
+        <TextView
+            android:text="@string/blinker_right"
+            android:padding="10dp"
+            android:layout_gravity="end"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch4"
+            android:layout_column="1"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+</TableLayout>
