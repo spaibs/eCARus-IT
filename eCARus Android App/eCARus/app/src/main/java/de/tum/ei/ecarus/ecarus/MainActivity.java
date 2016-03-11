@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.Switch;
 
 
@@ -185,7 +186,52 @@ public class MainActivity extends AppCompatActivity {
         cd.show(getSupportFragmentManager(), "");
     }
 
-    public void setImage() {
+    public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState) {
         Log.d("ecarus", "new image");
+        ImageView img= (ImageView) findViewById(R.id.imageView);
+
+        if(headlightsState){
+            if(backlightsState){
+                if(leftBlinkerState){
+                    img.setImageResource(R.drawable.ecarus_image_brakelights_headlights_blinker_left);
+                }
+                else if (rightBlinkerState){
+                    img.setImageResource(R.drawable.ecarus_image_brakelights_headlights_blinker_right);
+                }
+            }
+            else {
+                if(leftBlinkerState){
+                    img.setImageResource(R.drawable.ecarus_image_headlights_blinker_left);
+                }
+                else if(rightBlinkerState){
+                    img.setImageResource(R.drawable.ecarus_image_headlights_blinker_right);
+                }
+            }
+        }
+        else {
+            if(backlightsState){
+                if(leftBlinkerState){
+                    img.setImageResource(R.drawable.ecarus_image_brakelights_blinker_left);
+                }
+                else if (rightBlinkerState){
+                    img.setImageResource(R.drawable.ecarus_image_brakelights_blinker_right);
+                }
+            }
+            else {
+                if(leftBlinkerState){
+                    img.setImageResource(R.drawable.ecarus_image_blinker_left);
+                }
+                else if(rightBlinkerState){
+                    img.setImageResource(R.drawable.ecarus_image_blinker_right);
+                }
+                else {
+                    img.setImageResource(R.drawable.ecarus_image_normal);
+                }
+            }
+
+        }
+
+
+
     }
 }
