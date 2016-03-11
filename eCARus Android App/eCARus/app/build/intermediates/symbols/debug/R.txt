@@ -611,6 +611,7 @@ int id activity_chooser_view_content 0x7f0d003d
 int id alertTitle 0x7f0d0049
 int id always 0x7f0d0033
 int id appbar 0x7f0d006a
+int id backlights_switch 0x7f0d006f
 int id batterywidget 0x7f0d007c
 int id beginning 0x7f0d0031
 int id bottom 0x7f0d001d
@@ -649,6 +650,7 @@ int id fill 0x7f0d002e
 int id fill_horizontal 0x7f0d002f
 int id fill_vertical 0x7f0d0022
 int id fixed 0x7f0d0038
+int id headlights_switch 0x7f0d006e
 int id home 0x7f0d0004
 int id homeAsUp 0x7f0d000f
 int id icon 0x7f0d0042
@@ -659,6 +661,7 @@ int id imageView2 0x7f0d0080
 int id info 0x7f0d0090
 int id item_touch_helper_previous_elevation 0x7f0d0005
 int id left 0x7f0d0023
+int id left_blinker_switch 0x7f0d0070
 int id line1 0x7f0d008a
 int id line3 0x7f0d008e
 int id listMode 0x7f0d000b
@@ -680,6 +683,7 @@ int id progress_circular 0x7f0d0006
 int id progress_horizontal 0x7f0d0007
 int id radio 0x7f0d0054
 int id right 0x7f0d0024
+int id right_blinker_switch 0x7f0d0071
 int id screen 0x7f0d0028
 int id scroll 0x7f0d0018
 int id scrollIndicatorDown 0x7f0d004e
@@ -713,10 +717,6 @@ int id src_over 0x7f0d002b
 int id start 0x7f0d0025
 int id status_bar_latest_event_content 0x7f0d0087
 int id submit_area 0x7f0d0065
-int id switch1 0x7f0d006e
-int id switch2 0x7f0d006f
-int id switch3 0x7f0d0070
-int id switch4 0x7f0d0071
 int id tabMode 0x7f0d000d
 int id tabs 0x7f0d006c
 int id text 0x7f0d008f

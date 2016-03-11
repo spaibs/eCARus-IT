@@ -5,7 +5,7 @@
     android:stretchColumns="1"
     android:layout_gravity="center">
 
-    <!-- Headlights Switch -->
+    <!-- Headlights switch -->
     <TableRow>
         <TextView
             android:text="@string/headlights"
@@ -15,12 +15,12 @@
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/switch1"
+            android:id="@+id/headlights_switch"
             android:layout_column="1"
             android:layout_gravity="center"/>
     </TableRow>
 
-    <!-- Backlights Switch -->
+    <!-- Backlights switch -->
     <TableRow>
         <TextView
             android:text="@string/backlights"
@@ -30,12 +30,12 @@
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/switch2"
+            android:id="@+id/backlights_switch"
             android:layout_column="1"
             android:layout_gravity="center"/>
     </TableRow>
 
-    <!-- Left Blinker Switch -->
+    <!-- Left blinker switch -->
     <TableRow>
         <TextView
             android:text="@string/blinker_left"
@@ -45,12 +45,12 @@
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/switch3"
+            android:id="@+id/left_blinker_switch"
             android:layout_column="1"
             android:layout_gravity="center"/>
     </TableRow>
 
-    <!-- Right Blinker Switch -->
+    <!-- Right blinker switch -->
     <TableRow>
         <TextView
             android:text="@string/blinker_right"
@@ -60,7 +60,7 @@
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/switch4"
+            android:id="@+id/right_blinker_switch"
             android:layout_column="1"
             android:layout_gravity="center"/>
     </TableRow>

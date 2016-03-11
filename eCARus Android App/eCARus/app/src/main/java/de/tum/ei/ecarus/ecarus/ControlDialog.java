@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.Switch;
 
 
@@ -24,7 +25,10 @@ import android.widget.Switch;
 
 public class ControlDialog extends DialogFragment{
 
-    Switch mySwitch1;
+    Switch headlightsSwitch;
+    Switch backlightsSwitch;
+    Switch leftBlinkerSwitch;
+    Switch rightBlinkerSwitch;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -32,28 +36,6 @@ public class ControlDialog extends DialogFragment{
         // Get the layout inflater
         LayoutInflater inflater = getActivity().getLayoutInflater();
 
-
-        //set the switch to ON
-        /*mySwitch1.setChecked(true);
-        Log.d(getClass().getSimpleName(), "Switch is currently ON");
-        //attach a listener to check for changes in state
-        mySwitch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-
-        @Override
-        public void onCheckedChanged(CompoundButton buttonView,
-        boolean isChecked){
-
-        if(isChecked){
-        Log.d(getClass().getSimpleName(), "Switch is currently ON");
-        //TO DO: sendStatusUpdate
-        }else{
-        Log.d(getClass().getSimpleName(), "Switch is currently OFF");
-        //TO DO: sendStatusUpdate
-        }
-
-        }
-        });
-*/
 
         // Inflate and set the layout for the dialog
         // Pass null as the parent view because its going in the dialog layout
@@ -73,14 +55,77 @@ public class ControlDialog extends DialogFragment{
         return builder.create();
     }
 
+
+    //This function is used when the dialog is opened. Here the switches are initialized and
+    // the listener checking for changes of the respective switch's status is set
     @Override
     public void onStart() {
         super.onStart();
-        mySwitch1 = (Switch) getDialog().findViewById(R.id.switch1);
-        mySwitch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+        //Headlights
+        headlightsSwitch = (Switch) getDialog().findViewById(R.id.headlights_switch);
+        headlightsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Log.d("test", "dasdjak");
+                //Log.d("test", "dasdjak");
+                if (isChecked) {
+                    Log.d("ecarus", "Headlights are ON");
+                    //TO DO: sendStatusUpdate
+                } else {
+                    Log.d("ecarus", "Headlights are OFF");
+                    //TO DO: sendStatusUpdate
+                    ((MainActivity)getActivity()).setImage();
+                }
+            }
+        });
+
+        //Backlights
+        backlightsSwitch = (Switch) getDialog().findViewById(R.id.backlights_switch);
+        backlightsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    Log.d("ecarus", "Backlights are ON");
+                    //TO DO: sendStatusUpdate
+
+                }
+                else{
+                    Log.d("ecarus", "Backlights are OFF");
+                    //TO DO: sendStatusUpdate
+                }
+            }
+        });
+
+        //Left blinker
+        leftBlinkerSwitch = (Switch) getDialog().findViewById(R.id.left_blinker_switch);
+        leftBlinkerSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    Log.d("ecarus", "Left blinker is ON");
+                    //TO DO: sendStatusUpdate
+                } else {
+                    Log.d("ecarus", "Left blinker is OFF");
+                    //TO DO: sendStatusUpdate
+                    //ImageView img= (ImageView) getActivity().findViewById(R.id.ecarus_image);
+                    //img.setImageResource(R.drawable.ecarus_image_brakelights);
+                }
+            }
+        });
+
+        //Right blinker
+        rightBlinkerSwitch = (Switch) getDialog().findViewById(R.id.right_blinker_switch);
+        rightBlinkerSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    Log.d("ecarus", "Right blinker is ON");
+                    //TO DO: sendStatusUpdate
+                }
+                else{
+                    Log.d("ecarus", "Right blinker is OFF");
+                    //TO DO: sendStatusUpdate
+                }
             }
         });
     }

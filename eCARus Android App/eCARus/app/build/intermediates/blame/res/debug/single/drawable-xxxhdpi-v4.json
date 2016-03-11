@@ -8,20 +8,20 @@
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\abc_btn_radio_on_mtrl.png"
     },
     {
-        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_material.png",
-        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\abc_ic_menu_paste_material.png"
-    },
-    {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_material.png",
+        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\abc_ic_menu_paste_material.png"
     },
     {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_material.png",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\abc_ic_clear_material.png"
+    },
+    {
+        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_off_mtrl.png",
@@ -48,12 +48,12 @@
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_material.png",

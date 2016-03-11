@@ -2310,6 +2310,7 @@ containing a value of this type.
         public static final int alertTitle=0x7f0d0049;
         public static final int always=0x7f0d0033;
         public static final int appbar=0x7f0d006a;
+        public static final int backlights_switch=0x7f0d006f;
         public static final int batterywidget=0x7f0d007c;
         public static final int beginning=0x7f0d0031;
         public static final int bottom=0x7f0d001d;
@@ -2348,6 +2349,7 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0d002f;
         public static final int fill_vertical=0x7f0d0022;
         public static final int fixed=0x7f0d0038;
+        public static final int headlights_switch=0x7f0d006e;
         public static final int home=0x7f0d0004;
         public static final int homeAsUp=0x7f0d000f;
         public static final int icon=0x7f0d0042;
@@ -2358,6 +2360,7 @@ containing a value of this type.
         public static final int info=0x7f0d0090;
         public static final int item_touch_helper_previous_elevation=0x7f0d0005;
         public static final int left=0x7f0d0023;
+        public static final int left_blinker_switch=0x7f0d0070;
         public static final int line1=0x7f0d008a;
         public static final int line3=0x7f0d008e;
         public static final int listMode=0x7f0d000b;
@@ -2379,6 +2382,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0d0007;
         public static final int radio=0x7f0d0054;
         public static final int right=0x7f0d0024;
+        public static final int right_blinker_switch=0x7f0d0071;
         public static final int screen=0x7f0d0028;
         public static final int scroll=0x7f0d0018;
         public static final int scrollIndicatorDown=0x7f0d004e;
@@ -2412,10 +2416,6 @@ containing a value of this type.
         public static final int start=0x7f0d0025;
         public static final int status_bar_latest_event_content=0x7f0d0087;
         public static final int submit_area=0x7f0d0065;
-        public static final int switch1=0x7f0d006e;
-        public static final int switch2=0x7f0d006f;
-        public static final int switch3=0x7f0d0070;
-        public static final int switch4=0x7f0d0071;
         public static final int tabMode=0x7f0d000d;
         public static final int tabs=0x7f0d006c;
         public static final int text=0x7f0d008f;

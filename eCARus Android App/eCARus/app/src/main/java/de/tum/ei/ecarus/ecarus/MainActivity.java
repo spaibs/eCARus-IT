@@ -185,4 +185,7 @@ public class MainActivity extends AppCompatActivity {
         cd.show(getSupportFragmentManager(), "");
     }
 
+    public void setImage() {
+        Log.d("ecarus", "new image");
+    }
 }
