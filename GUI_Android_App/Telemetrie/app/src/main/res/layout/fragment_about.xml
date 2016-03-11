@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Theresienstrasse 90\nGebäude N3, 1. Stock\n80333 München "
+            android:text="Theresienstraße 90\nGebäude N3, 1. Stock\n80333 München "
             android:id="@+id/textView5"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
