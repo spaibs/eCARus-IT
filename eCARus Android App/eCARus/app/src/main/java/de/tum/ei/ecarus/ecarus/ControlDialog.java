@@ -53,6 +53,7 @@ public class ControlDialog extends DialogFragment{
                         leftBlinkerState = leftBlinkerSwitch.isChecked();
                         rightBlinkerState = rightBlinkerSwitch.isChecked();
                         ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState);
+                        // TODO: send status update
                     }
                 })
                 .setNegativeButton(R.string.negative_button, new DialogInterface.OnClickListener() {
@@ -65,89 +66,30 @@ public class ControlDialog extends DialogFragment{
 
 
     //This function is used when the dialog is opened. Here the switches are initialized and
-    // the listener checking for changes of the respective switch's status is set
+    // switchs' status are set
     @Override
     public void onStart() {
         super.onStart();
 
-        //To do: get real values for states
+        // TODO: get real values for states
         headlightsSwitch = (Switch) getDialog().findViewById(R.id.headlights_switch);
-        headlightsState = true;
+        headlightsState = false;
         headlightsSwitch.setChecked(headlightsState);
 
         backlightsSwitch = (Switch) getDialog().findViewById(R.id.backlights_switch);
-        backlightsState = backlightsSwitch.isChecked();
+        backlightsState = false;
+        backlightsSwitch.setChecked(backlightsState);
 
         leftBlinkerSwitch = (Switch) getDialog().findViewById(R.id.left_blinker_switch);
-        leftBlinkerState = leftBlinkerSwitch.isChecked();
+        leftBlinkerState = false;
+        leftBlinkerSwitch.setChecked(leftBlinkerState);
 
         rightBlinkerSwitch = (Switch) getDialog().findViewById(R.id.right_blinker_switch);
-        rightBlinkerState = rightBlinkerSwitch.isChecked();
+        rightBlinkerState = false;
+        rightBlinkerSwitch.setChecked(rightBlinkerState);
 
     }
-    /*************
-        //Headlights listener
-        headlightsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    Log.d("ecarus", "Headlights are ON");
-                    //TO DO: sendStatusUpdate
-                    //((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState);
-                } else {
-                    Log.d("ecarus", "Headlights are OFF");
-                    //TO DO: sendStatusUpdate
 
-                }
-            }
-        });
-
-        //Backlights listener
-        backlightsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked){
-                    Log.d("ecarus", "Backlights are ON");
-                    //TO DO: sendStatusUpdate
-
-                }
-                else{
-                    Log.d("ecarus", "Backlights are OFF");
-                    //TO DO: sendStatusUpdate
-                }
-            }
-        });
-
-        //Left blinker listener
-        leftBlinkerSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    Log.d("ecarus", "Left blinker is ON");
-                    //TO DO: sendStatusUpdate
-                } else {
-                    Log.d("ecarus", "Left blinker is OFF");
-                    //TO DO: sendStatusUpdate
-                }
-            }
-        });
-
-        //Right blinker listener
-        rightBlinkerSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked){
-                    Log.d("ecarus", "Right blinker is ON");
-                    //TO DO: sendStatusUpdate
-                }
-                else{
-                    Log.d("ecarus", "Right blinker is OFF");
-                    //TO DO: sendStatusUpdate
-                }
-            }
-        });
-    }
-    */
 }
 
 
