@@ -198,6 +198,9 @@ public class MainActivity extends AppCompatActivity {
                 else if (rightBlinkerState){
                     img.setImageResource(R.drawable.ecarus_image_brakelights_headlights_blinker_right);
                 }
+                else {
+                    img.setImageResource(R.drawable.ecarus_image_brakelights_headlights);
+                }
             }
             else {
                 if(leftBlinkerState){
@@ -205,6 +208,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(rightBlinkerState){
                     img.setImageResource(R.drawable.ecarus_image_headlights_blinker_right);
+                }
+                else {
+                    img.setImageResource(R.drawable.ecarus_image_headlights);
                 }
             }
         }
@@ -215,6 +221,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (rightBlinkerState){
                     img.setImageResource(R.drawable.ecarus_image_brakelights_blinker_right);
+                }
+                else {
+                    img.setImageResource(R.drawable.ecarus_image_brakelights);
                 }
             }
             else {

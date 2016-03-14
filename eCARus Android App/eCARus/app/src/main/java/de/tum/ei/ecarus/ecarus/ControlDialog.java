@@ -29,13 +29,16 @@ public class ControlDialog extends DialogFragment{
     Switch backlightsSwitch;
     Switch leftBlinkerSwitch;
     Switch rightBlinkerSwitch;
+    public boolean headlightsState;
+    public boolean backlightsState;
+    public boolean leftBlinkerState;
+    public boolean rightBlinkerState;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.AlertDialogCustom);
         // Get the layout inflater
         LayoutInflater inflater = getActivity().getLayoutInflater();
-
 
         // Inflate and set the layout for the dialog
         // Pass null as the parent view because its going in the dialog layout
@@ -45,6 +48,11 @@ public class ControlDialog extends DialogFragment{
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         // sign in the user ...
+                        headlightsState = headlightsSwitch.isChecked();
+                        backlightsState = backlightsSwitch.isChecked();
+                        leftBlinkerState = leftBlinkerSwitch.isChecked();
+                        rightBlinkerState = rightBlinkerSwitch.isChecked();
+                        ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState);
                     }
                 })
                 .setNegativeButton(R.string.negative_button, new DialogInterface.OnClickListener() {
@@ -62,27 +70,30 @@ public class ControlDialog extends DialogFragment{
     public void onStart() {
         super.onStart();
 
+        //To do: get real values for states
         headlightsSwitch = (Switch) getDialog().findViewById(R.id.headlights_switch);
-        final boolean headlightsState = headlightsSwitch.isChecked();
+        headlightsState = true;
+        headlightsSwitch.setChecked(headlightsState);
 
         backlightsSwitch = (Switch) getDialog().findViewById(R.id.backlights_switch);
-        final boolean backlightsState = backlightsSwitch.isChecked();
+        backlightsState = backlightsSwitch.isChecked();
 
         leftBlinkerSwitch = (Switch) getDialog().findViewById(R.id.left_blinker_switch);
-        final boolean leftBlinkerState = leftBlinkerSwitch.isChecked();
+        leftBlinkerState = leftBlinkerSwitch.isChecked();
 
         rightBlinkerSwitch = (Switch) getDialog().findViewById(R.id.right_blinker_switch);
-        final boolean rightBlinkerState = rightBlinkerSwitch.isChecked();
+        rightBlinkerState = rightBlinkerSwitch.isChecked();
 
+    }
+    /*************
         //Headlights listener
         headlightsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //Log.d("test", "dasdjak");
                 if (isChecked) {
                     Log.d("ecarus", "Headlights are ON");
                     //TO DO: sendStatusUpdate
-                    ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState);
+                    //((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState);
                 } else {
                     Log.d("ecarus", "Headlights are OFF");
                     //TO DO: sendStatusUpdate
@@ -136,6 +147,8 @@ public class ControlDialog extends DialogFragment{
             }
         });
     }
+    */
 }
+
 
 
