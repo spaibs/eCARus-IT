@@ -14,4 +14,5 @@
     <string name="contact"><b>Spécialité \n Technique de la transformation d\'énergie \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Bâtiment N3, 1ère Etage \n 80333 Munich \n \n <b>Personne de contacte</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="backlights">Feu arrière</string>
     <string name="headlights">Phare</string>
+    <string name="language">Langue</string>
 </resources>

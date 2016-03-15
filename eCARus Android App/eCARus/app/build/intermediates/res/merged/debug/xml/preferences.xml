@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference
-        android:key="pref_sync"
-        android:title="title"
-        android:summary="xyz"
-        android:defaultValue="true" />
-    <EditTextPreference android:title="Your Name"
-        android:key="username"
-        android:summary="Please provide your username"></EditTextPreference>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListPreference
+        android:entries="@array/listOptions"
+        android:entryValues="@array/listValues"
+        android:key="listpref"
+        android:title="@string/language"
+        android:layout_marginTop="50dp"/>
+
 </PreferenceScreen>

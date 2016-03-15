@@ -1,22 +1,15 @@
 package de.tum.ei.ecarus.ecarus;
+
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceActivity;
 
 /**
  * The SettingsActivity is used to enable the user to change the settings of the app
  * such as the language.
  */
 
-
-import android.preference.PreferenceActivity;
-import android.preference.PreferenceFragment;
-
-/******************
- * DESCRIPTION HERE!
- *
- *
- */
-
+//TODO: add toolbar
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -24,7 +17,6 @@ public class SettingsActivity extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SettingsFragment sf = new SettingsFragment();
-        //getFragmentManager().beginTransaction().replace(android.R.id.content, sf);
 
         getFragmentManager().beginTransaction()
                 .replace(android.R.id.content, sf)
@@ -37,9 +29,9 @@ public class SettingsActivity extends PreferenceActivity {
             super.onCreate(savedInstanceState);
             // Load the preferences from an XML resource
             addPreferencesFromResource(R.xml.preferences);
+
         }
     }
-
 }
 
 

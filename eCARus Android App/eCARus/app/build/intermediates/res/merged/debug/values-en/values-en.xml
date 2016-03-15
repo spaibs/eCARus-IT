@@ -10,6 +10,7 @@
     <string name="headlights">Headlights</string>
     <string name="info_text">In the project eCARus about 60 students of the Technical University of Munich (TUM) develop an electric car. All the technical fields, from power transmission systems to IT, as well as the organisation of the project are left up to the students. \n\n With great success: In June 2009 the project saw the light when work started with a simple space frame. Only 4 months later the Minister for Economic Affairs of Singapur being on a visit to our university was able to go for a test ride over the campus in our electric-engined eCARus 1.0. \n\n      Since then our teams have never stopped developing the concept further and taking it for sure to the next level. Through hard work and a lot of motivation, the eCARus 2.0 was developed and increases the family in number with a second electric car.</string>
     <string name="info_title">Welcome to eCARus!</string>
+    <string name="language">Language</string>
     <string name="negative_button">Cancel</string>
     <string name="off">OFF</string>
     <string name="on">ON</string>

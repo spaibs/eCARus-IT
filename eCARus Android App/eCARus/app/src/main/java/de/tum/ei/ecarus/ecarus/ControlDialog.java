@@ -66,12 +66,12 @@ public class ControlDialog extends DialogFragment{
 
 
     //This function is used when the dialog is opened. Here the switches are initialized and
-    // switchs' status are set
+    // switches' states are set
     @Override
     public void onStart() {
         super.onStart();
 
-        // TODO: get real values for states
+        // TODO: get real values for states (Here the states have the default value "false"
         headlightsSwitch = (Switch) getDialog().findViewById(R.id.headlights_switch);
         headlightsState = false;
         headlightsSwitch.setChecked(headlightsState);

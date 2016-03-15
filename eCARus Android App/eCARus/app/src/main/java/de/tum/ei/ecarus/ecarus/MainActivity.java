@@ -1,6 +1,5 @@
 package de.tum.ei.ecarus.ecarus;
 
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -16,16 +15,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.Switch;
-
 
 public class MainActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-    private Switch mySwitch1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,29 +40,6 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        //mySwitch1 = (Switch) findViewById(R.id.myswitch1);
-        //set the switch to ON
-        //mySwitch1.setChecked(true);
-        //Log.d(getClass().getSimpleName(), "Switch is currently ON");
-        //attach a listener to check for changes in state
-        /**mySwitch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-
-        @Override
-        public void onCheckedChanged(CompoundButton buttonView,
-        boolean isChecked){
-
-        if(isChecked){
-        Log.d(getClass().getSimpleName(), "Switch is currently ON");
-        //TO DO: sendStatusUpdate
-        }else{
-        Log.d(getClass().getSimpleName(), "Switch is currently OFF");
-        //TO DO: sendStatusUpdate
-        }
-
-        }
-        });
-         */
-
     }
 
     @Override
@@ -86,13 +58,10 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
 
             Log.d(getClass().getSimpleName(), "YourOutput");
-            //Intent i = new Intent(this, SettingsActivity.class);
-            //startActivity(i);
-
+            Intent i = new Intent(this, SettingsActivity.class);
+            startActivity(i);
             return true;
-
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -125,15 +94,15 @@ public class MainActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
 
             View rootView;
-            if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) { // Info
+            if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) { // Info Fragment
                 rootView = inflater.inflate(R.layout.fragment_info, container, false);
             }
-            else if(getArguments().getInt(ARG_SECTION_NUMBER) == 2) { // Control
+            else if(getArguments().getInt(ARG_SECTION_NUMBER) == 2) { // Control Fragment
                 rootView = inflater.inflate(R.layout.fragment_control, container, false);
                 BatteryWidget batteryWidget = (BatteryWidget) rootView.findViewById(R.id.batterywidget);
                 batteryWidget.setBatteryLevel(90);
             }
-            else { //Data
+            else { //Data Fragment
                 rootView = inflater.inflate(R.layout.fragment_data, container, false);
             }
             return rootView;
@@ -186,6 +155,10 @@ public class MainActivity extends AppCompatActivity {
         cd.show(getSupportFragmentManager(), "");
     }
 
+    //This function updates the eCARus images according to the states of the lights
+    //that are set by using the switches in the control dialog.
+    //It is called when the positive button in the control dialog is clicked.
+
     public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState) {
         Log.d("ecarus", "new image");
         ImageView img= (ImageView) findViewById(R.id.imageView);
@@ -193,13 +166,13 @@ public class MainActivity extends AppCompatActivity {
         if(headlightsState){
             if(backlightsState){
                 if(leftBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_brakelights_headlights_blinker_left);
+                    img.setImageResource(R.drawable.ecarus_image_backlights_headlights_blinker_left);
                 }
                 else if (rightBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_brakelights_headlights_blinker_right);
+                    img.setImageResource(R.drawable.ecarus_image_backlights_headlights_blinker_right);
                 }
                 else {
-                    img.setImageResource(R.drawable.ecarus_image_brakelights_headlights);
+                    img.setImageResource(R.drawable.ecarus_image_backlights_headlights);
                 }
             }
             else {
@@ -217,13 +190,13 @@ public class MainActivity extends AppCompatActivity {
         else {
             if(backlightsState){
                 if(leftBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_brakelights_blinker_left);
+                    img.setImageResource(R.drawable.ecarus_image_backlights_blinker_left);
                 }
                 else if (rightBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_brakelights_blinker_right);
+                    img.setImageResource(R.drawable.ecarus_image_backlights_blinker_right);
                 }
                 else {
-                    img.setImageResource(R.drawable.ecarus_image_brakelights);
+                    img.setImageResource(R.drawable.ecarus_image_backlights);
                 }
             }
             else {
@@ -239,8 +212,5 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-
-
-
     }
 }

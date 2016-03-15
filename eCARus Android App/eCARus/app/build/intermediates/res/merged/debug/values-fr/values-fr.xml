@@ -29,6 +29,7 @@
     <string name="headlights">Phare</string>
     <string name="info_text">Dans le cadre du projet eCARus, plus que 50 étudiants de l\'université technique de Munich (TUM) dévelopent deux véhicules éléctriques. Les étudiants eux-mêmes s\'occupent de tous les tâches techniques - allant de la technique d\'entraînement à l\'inormation technique, ainsi que l\'organisation du projet. \n\n  Avec beaucoup de succès: En juin 2009, le travail a commencé avec un châssis en acier tubulaire.  Seulement quatre mois plus tard, lors de sa visite, le ministre d\'économie de Singapore a pû faire un essai avec le véhicule à énérgie électrique sur le campus. \n\n  Depuis lors, chaque semestre des étudiants font des recherche sur tous les aspects de ce sujet future et peuvent essayer leurs innovations à l\'aide du prototype.</string>
     <string name="info_title">Bienvenue chez eCARus!</string>
+    <string name="language">Langue</string>
     <string name="negative_button">Annuler</string>
     <string name="off">Arrêt</string>
     <string name="on">Marche</string>
