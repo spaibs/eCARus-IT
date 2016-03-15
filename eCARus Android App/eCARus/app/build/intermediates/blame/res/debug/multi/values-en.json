@@ -7,8 +7,8 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 52,
-                    "endOffset": 103
+                    "endColumn": 61,
+                    "endOffset": 112
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -18,9 +18,9 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 108,
+                    "startOffset": 117,
                     "endColumn": 43,
-                    "endOffset": 147
+                    "endOffset": 156
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -30,9 +30,9 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 152,
+                    "startOffset": 161,
                     "endColumn": 49,
-                    "endOffset": 197
+                    "endOffset": 206
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -42,9 +42,9 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 202,
+                    "startOffset": 211,
                     "endColumn": 61,
-                    "endOffset": 259
+                    "endOffset": 268
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -54,9 +54,9 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 264,
+                    "startOffset": 273,
                     "endColumn": 63,
-                    "endOffset": 323
+                    "endOffset": 332
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -66,9 +66,9 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 328,
-                    "endColumn": 281,
-                    "endOffset": 605
+                    "startOffset": 337,
+                    "endColumn": 282,
+                    "endOffset": 615
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -78,9 +78,9 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 610,
+                    "startOffset": 620,
                     "endColumn": 49,
-                    "endOffset": 655
+                    "endOffset": 665
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -90,33 +90,66 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 660,
-                    "endColumn": 49,
-                    "endOffset": 705
+                    "startOffset": 670,
+                    "endColumn": 58,
+                    "endOffset": 724
                 },
                 "from": {
-                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
+                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1910,
+                        "endColumn": 58,
+                        "endOffset": 1964
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 710,
-                    "endColumn": 834,
-                    "endOffset": 1540
+                    "startOffset": 729,
+                    "endColumn": 52,
+                    "endOffset": 777
                 },
                 "from": {
-                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
+                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1970,
+                        "endColumn": 52,
+                        "endOffset": 2018
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1545,
-                    "endColumn": 57,
-                    "endOffset": 1598
+                    "startOffset": 782,
+                    "endColumn": 59,
+                    "endOffset": 837
+                },
+                "from": {
+                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2024,
+                        "endColumn": 59,
+                        "endOffset": 2079
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 842,
+                    "endColumn": 49,
+                    "endOffset": 887
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -124,30 +157,11 @@
             },
             {
                 "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1603,
-                    "endColumn": 45,
-                    "endOffset": 1644
-                },
-                "from": {
-                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1790,
-                        "endColumn": 45,
-                        "endOffset": 1831
-                    }
-                }
-            },
-            {
-                "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1649,
-                    "endColumn": 50,
-                    "endOffset": 1695
+                    "startOffset": 892,
+                    "endColumn": 834,
+                    "endOffset": 1722
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -157,9 +171,9 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1700,
-                    "endColumn": 35,
-                    "endOffset": 1731
+                    "startOffset": 1727,
+                    "endColumn": 57,
+                    "endOffset": 1780
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -169,9 +183,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1736,
-                    "endColumn": 33,
-                    "endOffset": 1765
+                    "startOffset": 1785,
+                    "endColumn": 61,
+                    "endOffset": 1842
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
@@ -181,9 +195,57 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1770,
+                    "startOffset": 1847,
+                    "endColumn": 45,
+                    "endOffset": 1888
+                },
+                "from": {
+                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1893,
+                    "endColumn": 50,
+                    "endOffset": 1939
+                },
+                "from": {
+                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1944,
+                    "endColumn": 35,
+                    "endOffset": 1975
+                },
+                "from": {
+                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1980,
+                    "endColumn": 33,
+                    "endOffset": 2009
+                },
+                "from": {
+                    "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 2014,
                     "endColumn": 49,
-                    "endOffset": 1815
+                    "endOffset": 2059
                 },
                 "from": {
                     "file": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\values-en\\strings.xml"

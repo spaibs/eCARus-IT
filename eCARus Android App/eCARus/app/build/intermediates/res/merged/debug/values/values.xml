@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="listOptions">
+    <string-array name="lang_select">
         <item>Deutsch</item>
         <item>English</item>
         <item>Français</item>
     </string-array>
-    <string-array name="listValues">
-        <item>1 is selected</item>
-        <item>2 is selected</item>
-        <item>3 is selected</item>
+    <string-array name="lang_values">
+        <item>de</item>
+        <item>en</item>
+        <item>fr</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -289,7 +289,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="action_settings">Einstellungen</string>
+    <string name="action_settings">Spracheinstellungen</string>
     <string name="app_name" translatable="false">eCARus</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="backlights">Rücklicht</string>
@@ -299,6 +299,9 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="contact"><b> Fachgebiet \n Energiewandlungstechnik \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Gebäude N3, 1. Stock \n 80333 München \n \n <b>Ansprechpartner</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="control_button">Ändern</string>
+    <string name="fragment_control_title">Steuerung</string>
+    <string name="fragment_data_title">Daten</string>
+    <string name="fragment_info_title">Info</string>
     <string name="headlights">Scheinwerfer</string>
     <string name="info_text"> Im Projekt eCARus entwickeln über 50 Studierende der Technischen Universität München (TUM) zwei Elektrofahrzeuge. Dabei liegen alle technischen Aufgaben - von der Antriebstechnik bis zur IT ebenso wie die Projektorganisation in den Händen der Studierenden. \n\n
 
@@ -306,6 +309,7 @@ Mit großem Erfolg: Im Juni 2009 begann die Arbeit mit einem einfachen Gitterroh
 
 Seither forschen jedes Semester Studierende an allen Aspekten dieses Zukunftsthemas und können ihre Neuentwicklungen direkt im Versuchsfahrzeug erproben.</string>
     <string name="info_title">Willkommen bei eCARus!</string>
+    <string name="lang_dialog_title">Sprache ändern</string>
     <string name="language">Sprache</string>
     <string name="negative_button">Abbrechen</string>
     <string name="off">AUS</string>

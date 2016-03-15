@@ -4,10 +4,9 @@
     android:layout_height="match_parent">
 
     <ListPreference
-        android:entries="@array/listOptions"
-        android:entryValues="@array/listValues"
+        android:entries="@array/lang_select"
+        android:entryValues="@array/lang_values"
         android:key="listpref"
-        android:title="@string/language"
-        android:layout_marginTop="50dp"/>
+        android:title="@string/language" />
 
 </PreferenceScreen>

@@ -19,16 +19,20 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partager avec"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partager avec %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Réduire"</string>
-    <string name="action_settings">Paramètres</string>
+    <string name="action_settings">Paramètres de langue</string>
     <string name="app_name">eCARus</string>
     <string name="backlights">Feu arrière</string>
     <string name="blinker_left">Clignotant gauche</string>
     <string name="blinker_right">Clignotant droit</string>
-    <string name="contact"><b>Spécialité \n Technique de la transformation d\'énergie \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Bâtiment N3, 1ère Etage \n 80333 Munich \n \n <b>Personne de contacte</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
+    <string name="contact"><b> Spécialité \n Technique de la transformation d\'énergie \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Bâtiment N3, 1ère Etage \n 80333 Munich \n \n <b>Personne de contacte</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="control_button">Modifier</string>
+    <string name="fragment_control_title">Contrôle</string>
+    <string name="fragment_data_title">Données</string>
+    <string name="fragment_info_title">Information</string>
     <string name="headlights">Phare</string>
     <string name="info_text">Dans le cadre du projet eCARus, plus que 50 étudiants de l\'université technique de Munich (TUM) dévelopent deux véhicules éléctriques. Les étudiants eux-mêmes s\'occupent de tous les tâches techniques - allant de la technique d\'entraînement à l\'inormation technique, ainsi que l\'organisation du projet. \n\n  Avec beaucoup de succès: En juin 2009, le travail a commencé avec un châssis en acier tubulaire.  Seulement quatre mois plus tard, lors de sa visite, le ministre d\'économie de Singapore a pû faire un essai avec le véhicule à énérgie électrique sur le campus. \n\n  Depuis lors, chaque semestre des étudiants font des recherche sur tous les aspects de ce sujet future et peuvent essayer leurs innovations à l\'aide du prototype.</string>
     <string name="info_title">Bienvenue chez eCARus!</string>
+    <string name="lang_dialog_title">Modifier langue</string>
     <string name="language">Langue</string>
     <string name="negative_button">Annuler</string>
     <string name="off">Arrêt</string>

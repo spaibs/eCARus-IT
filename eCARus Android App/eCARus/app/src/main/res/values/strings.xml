@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">eCARus</string>
-    <string name="action_settings">Einstellungen</string>
+    <string name="action_settings">Spracheinstellungen</string>
     <string name="section_format" translatable="false">Section: %1$d</string>
     <string name="positive_button">Übernehmen</string>
     <string name="info_title">Willkommen bei eCARus!</string>
@@ -13,6 +13,10 @@
     <string name="headlights">Scheinwerfer</string>
     <string name="backlights">Rücklicht</string>
     <string name="language">Sprache</string>
+    <string name="lang_dialog_title">Sprache ändern</string>
+    <string name="fragment_info_title">Info</string>
+    <string name="fragment_control_title">Steuerung</string>
+    <string name="fragment_data_title">Daten</string>
     <string name="contact"><b> Fachgebiet \n Energiewandlungstechnik \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Gebäude N3, 1. Stock \n 80333 München \n \n <b>Ansprechpartner</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="info_text"> Im Projekt eCARus entwickeln über 50 Studierende der Technischen Universität München (TUM) zwei Elektrofahrzeuge. Dabei liegen alle technischen Aufgaben - von der Antriebstechnik bis zur IT ebenso wie die Projektorganisation in den Händen der Studierenden. \n\n
 
