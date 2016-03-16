@@ -23,10 +23,14 @@ public class ControlDialog extends DialogFragment{
     Switch backlightsSwitch;
     Switch leftBlinkerSwitch;
     Switch rightBlinkerSwitch;
+    Switch fullBeamSwitch;
+    Switch brakelightsSwitch;
     public boolean headlightsState;
     public boolean backlightsState;
     public boolean leftBlinkerState;
     public boolean rightBlinkerState;
+    public boolean fullBeamState;
+    public boolean brakelightsState;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -43,10 +47,12 @@ public class ControlDialog extends DialogFragment{
                     public void onClick(DialogInterface dialog, int id) {
                         // sign in the user ...
                         headlightsState = headlightsSwitch.isChecked();
+                        brakelightsState = brakelightsSwitch.isChecked();
                         backlightsState = backlightsSwitch.isChecked();
+                        fullBeamState = fullBeamSwitch.isChecked();
                         leftBlinkerState = leftBlinkerSwitch.isChecked();
                         rightBlinkerState = rightBlinkerSwitch.isChecked();
-                        ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState);
+                        ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState, brakelightsState, fullBeamState);
                         // TODO: send status update
                     }
                 })
@@ -81,6 +87,14 @@ public class ControlDialog extends DialogFragment{
         rightBlinkerSwitch = (Switch) getDialog().findViewById(R.id.right_blinker_switch);
         rightBlinkerState = false;
         rightBlinkerSwitch.setChecked(rightBlinkerState);
+
+        brakelightsSwitch = (Switch) getDialog().findViewById(R.id.brakelights_switch);
+        brakelightsState = false;
+        brakelightsSwitch.setChecked(brakelightsState);
+
+        fullBeamSwitch = (Switch) getDialog().findViewById(R.id.full_beam_switch);
+        fullBeamState = false;
+        fullBeamSwitch.setChecked(fullBeamState);
 
     }
 

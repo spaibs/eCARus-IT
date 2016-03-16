@@ -10,7 +10,7 @@
     <string name="fragment_control_title">Steuerung</string>
     <string name="fragment_data_title">Daten</string>
     <string name="fragment_info_title">Info</string>
-    <string name="headlights">Scheinwerfer</string>
+    <string name="headlights">Abblendlicht</string>
     <string name="info_text">Im Projekt eCARus entwickeln über 50 Studierende der Technischen Universität München (TUM) zwei Elektrofahrzeuge. Dabei liegen alle technischen Aufgaben - von der Antriebstechnik bis zur IT ebenso wie die Projektorganisation in den Händen der Studierenden. \n\n  Mit großem Erfolg: Im Juni 2009 begann die Arbeit mit einem einfachen Gitterrohrrahmen. Nur vier Monate später konnte der Wirtschaftsminister aus Singapur bei seinem Besuch an der TUM eine Probefahrt mit dem rein elektrisch angetriebenen Fahrzeug über die Hochschulstraße unternehmen. \n\n  Seither forschen jedes Semester Studierende an allen Aspekten dieses Zukunftsthemas und können ihre Neuentwicklungen direkt im Versuchsfahrzeug erproben.</string>
     <string name="info_title">Willkommen bei eCARus!</string>
     <string name="lang_dialog_title">Sprache ändern</string>
@@ -19,4 +19,6 @@
     <string name="off">AUS</string>
     <string name="on">AN</string>
     <string name="positive_button">Übernehmen</string>
+    <string name="full_beam">Fernlicht</string>
+    <string name="brakelights">Bremslicht</string>
 </resources>

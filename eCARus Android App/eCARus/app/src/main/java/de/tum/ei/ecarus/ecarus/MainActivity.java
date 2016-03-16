@@ -255,58 +255,66 @@ public class MainActivity extends AppCompatActivity {
     //that are set by using the switches in the control dialog.
     //It is called when the positive button in the control dialog is clicked.
 
-    public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState) {
+    public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState, boolean brakelightsState, boolean fullBeamState) {
         Log.d("ecarus", "new image");
-        ImageView img= (ImageView) findViewById(R.id.imageView);
 
+        ImageView backlights_img= (ImageView) findViewById(R.id.backlights_view);
+        ImageView headlights_img= (ImageView) findViewById(R.id.headlights_view);
+        ImageView left_blinker_img = (ImageView) findViewById(R.id.left_blinker_view);
+        ImageView right_blinker_img = (ImageView) findViewById(R.id.right_blinker_view);
+        ImageView full_beam_img = (ImageView) findViewById(R.id.full_beam_view);
+        ImageView brakelights_img = (ImageView) findViewById(R.id.brakelights_view);
+
+
+        //Set headlights/full beam
         if(headlightsState){
-            if(backlightsState){
-                if(leftBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_backlights_headlights_blinker_left);
-                }
-                else if (rightBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_backlights_headlights_blinker_right);
-                }
-                else {
-                    img.setImageResource(R.drawable.ecarus_image_backlights_headlights);
-                }
+            if(fullBeamState){
+                full_beam_img.setVisibility(View.VISIBLE);
             }
             else {
-                if(leftBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_headlights_blinker_left);
-                }
-                else if(rightBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_headlights_blinker_right);
-                }
-                else {
-                    img.setImageResource(R.drawable.ecarus_image_headlights);
-                }
+                headlights_img.setVisibility(View.VISIBLE);
+                full_beam_img.setVisibility(View.INVISIBLE);
             }
         }
         else {
-            if(backlightsState){
-                if(leftBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_backlights_blinker_left);
-                }
-                else if (rightBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_backlights_blinker_right);
-                }
-                else {
-                    img.setImageResource(R.drawable.ecarus_image_backlights);
-                }
-            }
-            else {
-                if(leftBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_blinker_left);
-                }
-                else if(rightBlinkerState){
-                    img.setImageResource(R.drawable.ecarus_image_blinker_right);
-                }
-                else {
-                    img.setImageResource(R.drawable.ecarus_image_normal);
-                }
-            }
+            headlights_img.setVisibility(View.INVISIBLE);
+            full_beam_img.setVisibility(View.INVISIBLE);
+        }
 
+        //Set backlights
+        if(backlightsState){
+            backlights_img.setVisibility(View.VISIBLE);
+        }
+        else {
+            backlights_img.setVisibility(View.INVISIBLE);
+        }
+
+        //Set left blinker
+        if(leftBlinkerState){
+            left_blinker_img.setVisibility(View.VISIBLE);
+            right_blinker_img.setVisibility(View.INVISIBLE);
+        }
+        else {
+            left_blinker_img.setVisibility(View.INVISIBLE);
+        }
+
+        //Set right blinker
+        if(rightBlinkerState){
+            right_blinker_img.setVisibility(View.VISIBLE);
+            left_blinker_img.setVisibility(View.INVISIBLE);
+        }
+        else {
+            right_blinker_img.setVisibility(View.INVISIBLE);
+        }
+
+
+
+        //Set brakelights
+        if(brakelightsState){
+            brakelights_img.setVisibility(View.VISIBLE);
+        }
+        else {
+            brakelights_img.setVisibility(View.INVISIBLE);
         }
     }
 }

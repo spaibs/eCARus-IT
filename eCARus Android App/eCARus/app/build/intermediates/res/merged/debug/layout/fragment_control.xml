@@ -31,14 +31,72 @@
                 android:layout_marginTop="10dp"
                 android:onClick="startControl"/>
 
-
-            <!-- eCARus Image -->
-            <ImageView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
-                android:src="@drawable/ecarus_image_normal"
-                android:id="@+id/imageView"/>
+                android:layout_height="match_parent">
 
+                <!-- eCARus image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/ecarus_image_normal"
+                    android:id="@+id/ecarus_view"/>
+
+                <!-- Headlights image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/headlights_image"
+                    android:id="@+id/headlights_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+                <!-- Backlights image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/backlights_image"
+                    android:id="@+id/backlights_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+                <!-- Brakelights image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/brakelights_image"
+                    android:id="@+id/brakelights_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+                <!-- Full beam image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/full_beam_image"
+                    android:id="@+id/full_beam_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+                <!-- Left blinker image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/left_blinker_image"
+                    android:id="@+id/left_blinker_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+                <!-- Right blinker image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/right_blinker_image"
+                    android:id="@+id/right_blinker_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
 
             <!-- Battery Widget -->
             <de.tum.ei.ecarus.ecarus.BatteryWidget

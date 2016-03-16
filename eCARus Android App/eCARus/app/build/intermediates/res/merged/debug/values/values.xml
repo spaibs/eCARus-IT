@@ -296,13 +296,15 @@
     <string name="blinker_left">Linker Blinker </string>
     <string name="blinker_right">Rechter Blinker </string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="brakelights">Bremslicht</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="contact"><b> Fachgebiet \n Energiewandlungstechnik \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Gebäude N3, 1. Stock \n 80333 München \n \n <b>Ansprechpartner</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="control_button">Ändern</string>
     <string name="fragment_control_title">Steuerung</string>
     <string name="fragment_data_title">Daten</string>
     <string name="fragment_info_title">Info</string>
-    <string name="headlights">Scheinwerfer</string>
+    <string name="full_beam">Fernlicht</string>
+    <string name="headlights">Abblendlicht</string>
     <string name="info_text"> Im Projekt eCARus entwickeln über 50 Studierende der Technischen Universität München (TUM) zwei Elektrofahrzeuge. Dabei liegen alle technischen Aufgaben - von der Antriebstechnik bis zur IT ebenso wie die Projektorganisation in den Händen der Studierenden. \n\n
 
 Mit großem Erfolg: Im Juni 2009 begann die Arbeit mit einem einfachen Gitterrohrrahmen. Nur vier Monate später konnte der Wirtschaftsminister aus Singapur bei seinem Besuch an der TUM eine Probefahrt mit dem rein elektrisch angetriebenen Fahrzeug über die Hochschulstraße unternehmen. \n\n

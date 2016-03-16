@@ -10,8 +10,10 @@
     <string name="off">AUS</string>
     <string name="blinker_left">Linker Blinker </string>
     <string name="blinker_right">Rechter Blinker </string>
-    <string name="headlights">Scheinwerfer</string>
+    <string name="headlights">Abblendlicht</string>
     <string name="backlights">Rücklicht</string>
+    <string name="brakelights">Bremslicht</string>
+    <string name="full_beam">Fernlicht</string>
     <string name="language">Sprache</string>
     <string name="lang_dialog_title">Sprache ändern</string>
     <string name="fragment_info_title">Info</string>

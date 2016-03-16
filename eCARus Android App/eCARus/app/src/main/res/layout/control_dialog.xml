@@ -20,6 +20,21 @@
             android:layout_gravity="center"/>
     </TableRow>
 
+    <!-- Full beam switch -->
+    <TableRow>
+        <TextView
+            android:text="@string/full_beam"
+            android:padding="10dp"
+            android:layout_gravity="end"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/full_beam_switch"
+            android:layout_column="1"
+            android:layout_gravity="center"/>
+    </TableRow>
+
     <!-- Backlights switch -->
     <TableRow>
         <TextView
@@ -31,6 +46,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/backlights_switch"
+            android:layout_column="1"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+    <!-- Brakelights switch -->
+    <TableRow>
+        <TextView
+            android:text="@string/brakelights"
+            android:padding="10dp"
+            android:layout_gravity="end"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/brakelights_switch"
             android:layout_column="1"
             android:layout_gravity="center"/>
     </TableRow>
