@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
+    String languageToLoad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+
+        /*
         SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
         //The Configuration class describes all device configuration information that can impact the resources the application retrieves.
         //This includes both user-specified configuration options (locale and scaling)
@@ -64,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             //update the configuration information
             getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         }
-
+        */
     }
 
     @Override
@@ -78,88 +81,35 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-
-            Log.d("eCARus", "YourOutput");
-            //Intent i = new Intent(this, SettingsActivity.class);
-            //startActivity(i);
-            showChangeLangDialog();
-            //LanguageDialog ld = new LanguageDialog();
-            //ld.show(getSupportFragmentManager(), "");
-            return true;
+        switch (id) {
+            case R.id.en:
+                setLanguage("en");
+                break;
+            case R.id.de:
+                setLanguage("de");
+                break;
+            case R.id.fr:
+                setLanguage("fr");
+                break;
+            default:
+                setLanguage("de");
         }
+
         return super.onOptionsItemSelected(item);
+
     }
 
-    public void showChangeLangDialog() {
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = this.getLayoutInflater();
-        final View dialogView = inflater.inflate(R.layout.language_dialog, null);
-        dialogBuilder.setView(dialogView);
-
-        final Spinner langSpinner = (Spinner) dialogView.findViewById(R.id.change_lang_dialog);
-
-        dialogBuilder.setTitle(getResources().getString(R.string.lang_dialog_title));
-
-        dialogBuilder.setPositiveButton(R.string.positive_button, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                int langpos = langSpinner.getSelectedItemPosition();
-                switch(langpos) {
-                    case 0: //German
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "de").commit();
-                        setLangRecreate("de");
-                        return;
-                    case 1: //English
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "en").commit();
-                        setLangRecreate("en");
-                        return;
-                    case 2: //French
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "fr").commit();
-                        setLangRecreate("fr");
-                        return;
-                    default: //By default set to German
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANG", "de").commit();
-                        setLangRecreate("de");
-                        }
-            }
-        });
-        dialogBuilder.setNegativeButton(R.string.negative_button, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                //pass
-            }
-        });
-        AlertDialog b = dialogBuilder.create();
-        b.show();
-    }
-
-    public void setLangRecreate(String langval) {
-        Configuration config = getBaseContext().getResources().getConfiguration();
-        Locale locale = new Locale(langval);
+    public void setLanguage(String languageToLoad){
+        Locale locale = new Locale(languageToLoad);
         Locale.setDefault(locale);
+        Configuration config = new Configuration();
         config.locale = locale;
-        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        getBaseContext().getResources().updateConfiguration(config,
+                getBaseContext().getResources().getDisplayMetrics());
         recreate();
+
     }
 
-    /*
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt("mySpinner", langSpinner.getSelectedItemPosition());
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // initialize all your visual fields
-        if (savedInstanceState != null) {
-            langSpinner.setSelection(savedInstanceState.getInt("yourSpinner", 0));
-            // do this for each of your text views
-        }
-    }
-    */
 
     /**
      * A placeholder fragment containing a simple view.

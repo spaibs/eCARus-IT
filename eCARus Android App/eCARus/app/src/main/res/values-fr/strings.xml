@@ -21,4 +21,7 @@
     <string name="fragment_control_title">Contrôle</string>
     <string name="full_beam">Feux de route</string>
     <string name="brakelights">Feu d\'arrêt</string>
+    <string name="de">Allemand</string>
+    <string name="en">Anglais</string>
+    <string name="fr">Français</string>
 </resources>

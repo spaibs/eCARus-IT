@@ -21,4 +21,7 @@
     <string name="positive_button">Übernehmen</string>
     <string name="full_beam">Fernlicht</string>
     <string name="brakelights">Bremslicht</string>
+    <string name="de">Deutsch</string>
+    <string name="en">Englisch</string>
+    <string name="fr">Französisch</string>
 </resources>

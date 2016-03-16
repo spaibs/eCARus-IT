@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">eCARus</string>
+    <string name="en">Englisch</string>
+    <string name="de">Deutsch</string>
+    <string name="fr">Französisch</string>
     <string name="action_settings">Spracheinstellungen</string>
     <string name="section_format" translatable="false">Section: %1$d</string>
     <string name="positive_button">Übernehmen</string>

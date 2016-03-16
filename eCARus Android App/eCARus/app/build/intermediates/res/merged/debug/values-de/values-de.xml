@@ -27,6 +27,9 @@
     <string name="brakelights">Bremslicht</string>
     <string name="contact"><b> Fachgebiet \n Energiewandlungstechnik \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Gebäude N3, 1. Stock \n 80333 München \n \n <b>Ansprechpartner</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="control_button">Ändern</string>
+    <string name="de">Deutsch</string>
+    <string name="en">Englisch</string>
+    <string name="fr">Französisch</string>
     <string name="fragment_control_title">Steuerung</string>
     <string name="fragment_data_title">Daten</string>
     <string name="fragment_info_title">Info</string>

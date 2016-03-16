@@ -8,6 +8,9 @@
     <string name="brakelights">Brakelights</string>
     <string name="contact"><b> Department \n Energy conversion technique \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Building N3, 1st Floor \n 80333 München \n \n <b>Contact person</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="control_button">Change</string>
+    <string name="de">German</string>
+    <string name="en">English</string>
+    <string name="fr">French</string>
     <string name="fragment_control_title">Control</string>
     <string name="fragment_data_title">Data</string>
     <string name="fragment_info_title">Information</string>

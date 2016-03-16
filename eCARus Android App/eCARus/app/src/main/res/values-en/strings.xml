@@ -21,4 +21,7 @@
     <string name="fragment_info_title">Information</string>
     <string name="full_beam">Full beam</string>
     <string name="brakelights">Brakelights</string>
+    <string name="de">German</string>
+    <string name="en">English</string>
+    <string name="fr">French</string>
 </resources>
