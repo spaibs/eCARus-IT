@@ -281,12 +281,25 @@ public class MainActivity extends AppCompatActivity {
             full_beam_img.setVisibility(View.INVISIBLE);
         }
 
-        //Set backlights
-        if(backlightsState){
-            backlights_img.setVisibility(View.VISIBLE);
+        //Set backlights/brakelights
+        if(backlightsState) {
+            if(brakelightsState) {
+                backlights_img.setVisibility(View.INVISIBLE);
+                brakelights_img.setVisibility(View.VISIBLE);
+            }
+            else {
+                backlights_img.setVisibility(View.VISIBLE);
+                brakelights_img.setVisibility(View.INVISIBLE);
+            }
         }
         else {
             backlights_img.setVisibility(View.INVISIBLE);
+            if(brakelightsState) {
+                brakelights_img.setVisibility(View.VISIBLE);
+            }
+            else {
+                brakelights_img.setVisibility(View.INVISIBLE);
+            }
         }
 
         //Set left blinker
@@ -307,14 +320,5 @@ public class MainActivity extends AppCompatActivity {
             right_blinker_img.setVisibility(View.INVISIBLE);
         }
 
-
-
-        //Set brakelights
-        if(brakelightsState){
-            brakelights_img.setVisibility(View.VISIBLE);
-        }
-        else {
-            brakelights_img.setVisibility(View.INVISIBLE);
-        }
     }
 }
