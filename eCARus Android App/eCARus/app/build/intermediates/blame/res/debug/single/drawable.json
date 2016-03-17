@@ -40,16 +40,16 @@
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_blinker_image.png",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\drawable\\right_blinker_image.png"
+    },
+    {
+        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\headlights_image.png",
@@ -76,12 +76,12 @@
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
@@ -108,6 +108,10 @@
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.0\\res\\drawable\\design_fab_background.xml"
     },
     {
+        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ecarus_image_normal_copy.png",
+        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\drawable\\ecarus_image_normal_copy.png"
+    },
+    {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
@@ -130,6 +134,10 @@
     {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ecarus_image_normal_scaled_down.png",
+        "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\src\\main\\res\\drawable\\ecarus_image_normal_scaled_down.png"
     },
     {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",

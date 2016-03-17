@@ -1,7 +1,5 @@
 package de.tum.ei.ecarus.ecarus;
 
-
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.preference.PreferenceManager;
 import android.support.design.widget.TabLayout;
@@ -77,39 +75,21 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    //react to the user tapping/selecting an options menu item
+    /**react to the user tapping/selecting an options menu item
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch (id) {
-            case R.id.en:
-                setLanguage("en");
-                break;
-            case R.id.de:
-                setLanguage("de");
-                break;
-            case R.id.fr:
-                setLanguage("fr");
-                break;
-            default:
-                setLanguage("de");
+        if (id == R.id.action_settings) {
+
+            Log.d("eCARus", "YourOutput");
+            showChangeLangDialog();
+            //LanguageDialog ld = new LanguageDialog();
+            //ld.show(getSupportFragmentManager(), "");
+            return true;
         }
-
         return super.onOptionsItemSelected(item);
-
     }
-
-    public void setLanguage(String languageToLoad){
-        Locale locale = new Locale(languageToLoad);
-        Locale.setDefault(locale);
-        Configuration config = new Configuration();
-        config.locale = locale;
-        getBaseContext().getResources().updateConfiguration(config,
-                getBaseContext().getResources().getDisplayMetrics());
-        recreate();
-
-    }
-
+    */
 
     /**
      * A placeholder fragment containing a simple view.
@@ -271,4 +251,56 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    public void showChangeLangDialog(View view) {
+        Log.d("ecarus", "changelang");
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = this.getLayoutInflater();
+        final View dialogView = inflater.inflate(R.layout.language_dialog, null);
+        dialogBuilder.setView(dialogView);
+
+        final Spinner langSpinner = (Spinner) dialogView.findViewById(R.id.change_lang_dialog);
+
+        dialogBuilder.setTitle(getResources().getString(R.string.lang_dialog_title));
+
+        dialogBuilder.setPositiveButton(R.string.positive_button, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                int langpos = langSpinner.getSelectedItemPosition();
+                switch(langpos) {
+                    case 0: //German
+                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "de").commit();
+                        setLangRecreate("de");
+                        return;
+                    case 1: //English
+                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "en").commit();
+                        setLangRecreate("en");
+                        return;
+                    case 2: //French
+                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "fr").commit();
+                        setLangRecreate("fr");
+                        return;
+                    default: //By default set to German
+                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANG", "de").commit();
+                        setLangRecreate("de");
+                }
+            }
+        });
+        dialogBuilder.setNegativeButton(R.string.negative_button, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                //pass
+            }
+        });
+        AlertDialog b = dialogBuilder.create();
+        b.show();
+    }
+
+    public void setLangRecreate(String langval) {
+        Configuration config = getBaseContext().getResources().getConfiguration();
+        Locale locale = new Locale(langval);
+        Locale.setDefault(locale);
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        recreate();
+    }
+
 }
