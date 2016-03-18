@@ -168,7 +168,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState, boolean brakelightsState, boolean fullBeamState) {
         Log.d("ecarus", "new image");
 
@@ -233,6 +232,5 @@ public class MainActivity extends AppCompatActivity {
         else {
             right_blinker_img.setVisibility(View.INVISIBLE);
         }
-
     }
 }
