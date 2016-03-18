@@ -1,0 +1,1968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vi n="v1233892799515326659" xmlns:p="GUIDE plugin">
+<a n="cls">0</a>
+<a n="childCount">14</a>
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<m>
+<a n="i">1233892799515326659</a>
+<a n="c">1458307963723</a>
+<a n="b">2</a>
+<pl n="notes">
+<a n="n">Standard-View mit Hintergrund-Bild, Home-Button, Titel, sowie Statusanzeigen. Batterie-Status und Home-Button können bei Bedarf in einzelnen View-Instanzen unsichtbar geschalten werden (BatteryLevelVisible bzw. HomeButtonVisible). Das Hintergrundbild kann in den View-Instanzen geändert werden.
+</a>
+</pl>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">43_Parkingpilot</a>
+<m>
+<a n="i">1233891434212326660</a>
+<a n="c">1458133377931</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">768</a>
+<m>
+<a n="i">1233896222200326661</a>
+<a n="c">1458133318292</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">1024</a>
+<m>
+<a n="i">1233897305498326662</a>
+<a n="c">1458133318292</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233895079217326663</a>
+<a n="c">1458133318292</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233891772164326664</a>
+<a n="c">1458133318292</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">1</a>
+<a n="val">Parking pilot</a>
+<m>
+<a n="i">1233899454178100396</a>
+<a n="c">1458134200072</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233895197550326665</a>
+<a n="c">1458133318304</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211570811036103513</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891988183326666</a>
+<a n="c">1458133318304</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101306474944395620</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892019879326667</a>
+<a n="c">1458133318305</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101304517945525613</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">1233895519269326668</a>
+<a n="c">1458133318305</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211578264170183612</a>
+</wt>
+</w>
+<w n="4">
+<a n="cls">0</a>
+<m>
+<a n="i">1233890932241326669</a>
+<a n="c">1458133318305</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+</CV>
+<VV>
+<a n="tv10004">true</a>
+</VV>
+<wt>
+<a n="t">211571600295335000</a>
+</wt>
+</w>
+<w n="5">
+<a n="cls">0</a>
+<m>
+<a n="i">1233894629711326670</a>
+<a n="c">1458133318305</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+<wv n="10010"/>
+</CV>
+<VV>
+<a n="tv10004">true</a>
+</VV>
+<wt>
+<a n="t">211573230166493628</a>
+</wt>
+</w>
+<w n="6">
+<a n="cls">0</a>
+<a n="childCount">5</a>
+<m>
+<a n="i">1233894480061326671</a>
+<a n="c">1458133318305</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233890269301326673</a>
+<a n="c">1458133318305</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211572250510242748</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233899990464326674</a>
+<a n="c">1458133318305</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570692570290781</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233895981591326675</a>
+<a n="c">1458133318306</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570912094327631</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892270393326676</a>
+<a n="c">1458133318306</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570956892358891</a>
+</wt>
+</w>
+<w n="4">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891019302326677</a>
+<a n="c">1458133318306</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211575875532380638</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211574036417213579</a>
+</wt>
+</w>
+<w n="7">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233893000617326678</a>
+<a n="c">1458133318306</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<a n="childCount">2</a>
+<m>
+<a n="i">1233895219426326679</a>
+<a n="c">1458133318306</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233894447223326680</a>
+<a n="c">1458133318306</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211570831935725471</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892114769326681</a>
+<a n="c">1458133318307</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211572309246725472</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10001">true</a>
+</VV>
+<wt>
+<a n="t">211573555135725465</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10009">true</a>
+</VV>
+<wt>
+<a n="t">211576508386525830</a>
+</wt>
+</w>
+<w n="8">
+<a n="cls">0</a>
+<m>
+<a n="i">1233895613252137180</a>
+<a n="c">1458303981681</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Navigation_Arrow_Left</a>
+<m>
+<a n="i">1233894708434137189</a>
+<a n="c">1458134128612</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">50</a>
+<m>
+<a n="i">1233895381255137190</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">70</a>
+<m>
+<a n="i">1233898388101137191</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">1233898047236137192</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">22</a>
+<m>
+<a n="i">1233898912161137193</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Pfeil_Back.png</a>
+<m>
+<a n="i">1233899059379137181</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233895106848137182</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">6</a>
+<a n="val">false</a>
+<m>
+<a n="i">1233894477626137183</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233898135544137184</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233899818831137185</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10007">
+<a n="lk">1233895613252137180$lk$touched</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233898163339137186</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10009">
+<a n="cls">10</a>
+<a n="mod">SCRIPT</a>
+<m>
+<a n="i">1233891560391137187</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+<Value>
+<a n="code">dp:Menu_Info_CurrentSponsor_Selected -= 1;
+fire ev:Menu_GoTo_Specials();
+false;</a>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+</wv>
+<wv n="10010">
+<a n="cls">2</a>
+<a n="val">1</a>
+<m>
+<a n="i">1233891033395137188</a>
+<a n="c">1458134128608</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">4</a>
+<a n="0">StateTouched</a>
+<a n="1">Coloration</a>
+<a n="2">TouchShortReleased</a>
+<a n="3">ScaleMode</a>
+</v>
+<VV>
+<a n="10008">211577837610160841</a>
+</VV>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">touchable</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="1">
+<a n="name">touched</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="2">
+<a n="name">touchPolicy</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="3">
+<a n="name">touchBehavior</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="4">
+<a n="name">colorationEnabled</a>
+<a n="cat">Coloration</a>
+</udV>
+<udV n="5">
+<a n="name">colorationColor</a>
+<a n="cat">Coloration</a>
+</udV>
+<udV n="6">
+<a n="name">touchShortReleased</a>
+<a n="cat">Touch event</a>
+</udV>
+<udV n="7">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+<w n="9">
+<a n="cls">0</a>
+<m>
+<a n="i">1233895260725705432</a>
+<a n="c">1458228687757</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Icon</a>
+<m>
+<a n="i">1233894868802705435</a>
+<a n="c">1458228687747</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">150</a>
+<m>
+<a n="i">1233896502363705436</a>
+<a n="c">1458228687743</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">150</a>
+<m>
+<a n="i">1233896590310705437</a>
+<a n="c">1458228687743</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">161</a>
+<m>
+<a n="i">1233897276145705438</a>
+<a n="c">1458228687743</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">98</a>
+<m>
+<a n="i">1233898659595705439</a>
+<a n="c">1458228687743</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\menu\MenuButton_Parking.png</a>
+<m>
+<a n="i">1233899941795705433</a>
+<a n="c">1458228766614</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">1</a>
+<m>
+<a n="i">1233897384795705434</a>
+<a n="c">1458228687743</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+<w n="10">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233896607591993519</a>
+<a n="c">1458309175584</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Car</a>
+<m>
+<a n="i">1233894620828993520</a>
+<a n="c">1458307968679</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">300</a>
+<m>
+<a n="i">1233890916878993521</a>
+<a n="c">1458304001239</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">200</a>
+<m>
+<a n="i">1233890069871993522</a>
+<a n="c">1458304007686</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">477</a>
+<m>
+<a n="i">1233893096532993523</a>
+<a n="c">1458309184372</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">527</a>
+<m>
+<a n="i">1233890908354993524</a>
+<a n="c">1458309183851</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Specials\eCARus_Auto_GUI.png</a>
+<m>
+<a n="i">1233899531280051109</a>
+<a n="c">1458304056309</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">1233897988749035614</a>
+<a n="c">1458304039155</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233897325112185764</a>
+<a n="c">1458309175492</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">9</a>
+<a n="val">0.0</a>
+<m>
+<a n="i">1233890256421185791</a>
+<a n="c">1458309175520</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">9</a>
+<a n="val">0.0</a>
+<m>
+<a n="i">1233890401222185820</a>
+<a n="c">1458309175550</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10007">
+<a n="cls">9</a>
+<a n="val">90.0</a>
+<m>
+<a n="i">1233892197683185851</a>
+<a n="c">1458309178545</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">2</a>
+<a n="0">ScaleMode</a>
+<a n="1">Rotation</a>
+</v>
+<VV/>
+<CW>
+<w n="0">
+<a n="cls">8</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233892944107483496</a>
+<a n="c">1458309198769</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Animation</a>
+<m>
+<a n="i">1233895824356483497</a>
+<a n="c">1458305475126</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007">
+<a n="cls">19</a>
+<m>
+<a n="i">1233893765957840495</a>
+<a n="c">1458310073737</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">if(v:this-&gt;^-&gt;^-&gt;setIconButton.index == 2)
+{
+f:animation_play(v:this)
+}
+false
+</a>
+</v>
+<v n="1">
+<a n="code">v:this-&gt;^-&gt;^-&gt;setIconButton.index</a>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">8</a>
+<m>
+<a n="i">1233892508584501318</a>
+<a n="c">1458307196539</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Slow Start Integer</a>
+<m>
+<a n="i">1233899856453501319</a>
+<a n="c">1458305492946</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10001">
+<a n="cls">2</a>
+<a n="val">3000</a>
+<m>
+<a n="i">1233890191293920427</a>
+<a n="c">1458310144615</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">2</a>
+<a n="val">1000</a>
+<m>
+<a n="i">1233891139267205701</a>
+<a n="c">1458307222991</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005">
+<a n="cls">6</a>
+<a n="val">false</a>
+<m>
+<a n="i">1233891254258802016</a>
+<a n="c">1458309216843</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">2</a>
+<a n="val">477</a>
+<m>
+<a n="i">1233899085493806251</a>
+<a n="c">1458309223416</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10007">
+<a n="cls">2</a>
+<a n="val">-400</a>
+<m>
+<a n="i">1233892865673913635</a>
+<a n="c">1458307003310</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10008">
+<a n="lk">1233896607591993519$lk$x</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233894454678994308</a>
+<a n="c">1458309212403</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<VV/>
+<wt>
+<a n="t">211579265164479515</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211575874919478527</a>
+<udV n="0">
+<a n="name">startAnimation</a>
+<a n="cat">User defined</a>
+</udV>
+</wt>
+</w>
+</CW>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="1">
+<a n="name">rotationEnabled</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="2">
+<a n="name">rotationAngleX</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="3">
+<a n="name">rotationAngleY</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="4">
+<a n="name">rotationAngleZ</a>
+<a n="cat">Transformation</a>
+</udV>
+</wt>
+</w>
+<w n="11">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892109955355137</a>
+<a n="c">1458307345769</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">setIconButton</a>
+<m>
+<a n="i">1233895752889355144</a>
+<a n="c">1458307345757</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">1233896679708355145</a>
+<a n="c">1458307345753</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">1233892225050355146</a>
+<a n="c">1458307345753</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">192</a>
+<m>
+<a n="i">1233895905339355147</a>
+<a n="c">1458307359853</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">122</a>
+<m>
+<a n="i">1233890957539355148</a>
+<a n="c">1458307359854</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233894510646355138</a>
+<a n="c">1458307345753</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233899829725355139</a>
+<a n="c">1458307345753</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">6</a>
+<a n="val">false</a>
+<m>
+<a n="i">1233899136203355140</a>
+<a n="c">1458307345753</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233895065643355141</a>
+<a n="c">1458307345753</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233899178922355142</a>
+<a n="c">1458307345753</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">10</a>
+<a n="mod">SCRIPT</a>
+<m>
+<a n="i">1233893724513355143</a>
+<a n="c">1458307354143</a>
+<a n="b">2</a>
+</m>
+<Value>
+<a n="code">v:this.index += 1;
+false;</a>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">2</a>
+<a n="0">StateTouched</a>
+<a n="1">TouchShortReleased</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211573920095478114</a>
+<udV n="0">
+<a n="name">index</a>
+<a n="cat">User defined</a>
+</udV>
+<udV n="1">
+<a n="name">touchable</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="2">
+<a n="name">touched</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="3">
+<a n="name">touchPolicy</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="4">
+<a n="name">touchBehavior</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="5">
+<a n="name">touchShortReleased</a>
+<a n="cat">Touch event</a>
+</udV>
+</wt>
+</w>
+<w n="12">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233895267119970276</a>
+<a n="c">1458308721617</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">WaveFront</a>
+<m>
+<a n="i">1233899147818970277</a>
+<a n="c">1458308009204</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">200</a>
+<m>
+<a n="i">1233895787936970278</a>
+<a n="c">1458309402577</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">200</a>
+<m>
+<a n="i">1233895480567970279</a>
+<a n="c">1458308239332</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">547</a>
+<m>
+<a n="i">1233895321562970280</a>
+<a n="c">1458309711067</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">250</a>
+<m>
+<a n="i">1233892943129970281</a>
+<a n="c">1458309470168</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Specials\Waves_Front.png</a>
+<m>
+<a n="i">1233890039116074844</a>
+<a n="c">1458308070162</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">1233899380632070342</a>
+<a n="c">1458308062625</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233895517539157784</a>
+<a n="c">1458308148323</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">9</a>
+<a n="val">0.0</a>
+<m>
+<a n="i">1233899627734157797</a>
+<a n="c">1458308148336</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">9</a>
+<a n="val">0.0</a>
+<m>
+<a n="i">1233895852105157811</a>
+<a n="c">1458308148350</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10007">
+<a n="cls">9</a>
+<a n="val">135.0</a>
+<m>
+<a n="i">1233892584210157826</a>
+<a n="c">1458309466673</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10008">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233893220002637329</a>
+<a n="c">1458308627446</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10009">
+<a n="cls">9</a>
+<a n="val">100.0</a>
+<m>
+<a n="i">1233892290231637359</a>
+<a n="c">1458308627475</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10010">
+<a n="lk">1233895267119970276$lk$scalingX</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233893018295649445</a>
+<a n="c">1458308639528</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10011">
+<a n="cls">9</a>
+<a n="val">100.0</a>
+<m>
+<a n="i">1233899923650637422</a>
+<a n="c">1458308627540</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10012">
+<a n="cls">9</a>
+<a n="val">20.0</a>
+<m>
+<a n="i">1233897239196731514</a>
+<a n="c">1458309442176</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10013">
+<a n="cls">9</a>
+<a n="val">180.0</a>
+<m>
+<a n="i">1233898586822731568</a>
+<a n="c">1458309440316</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10014">
+<a n="cls">9</a>
+<a n="val">0.0</a>
+<m>
+<a n="i">1233893705929731622</a>
+<a n="c">1458308721615</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">4</a>
+<a n="0">ScaleMode</a>
+<a n="1">Rotation</a>
+<a n="2">Scaling</a>
+<a n="3">Pivot</a>
+</v>
+<VV/>
+<CW>
+<w n="0">
+<a n="cls">8</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233896039368320913</a>
+<a n="c">1458308652575</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Animation</a>
+<m>
+<a n="i">1233891119813320914</a>
+<a n="c">1458308311416</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007">
+<a n="cls">19</a>
+<m>
+<a n="i">1233894689312556601</a>
+<a n="c">1458308551590</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">f:animation_play(v:this)
+false</a>
+</v>
+<v n="1">
+<a n="code"/>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">8</a>
+<m>
+<a n="i">1233896584546662488</a>
+<a n="c">1458308912170</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Linear Curve Float</a>
+<m>
+<a n="i">1233893249003662489</a>
+<a n="c">1458308652570</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002">
+<a n="cls">2</a>
+<a n="val">3000</a>
+<m>
+<a n="i">1233899017690922298</a>
+<a n="c">1458309499204</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">300</a>
+<m>
+<a n="i">1233896644108907024</a>
+<a n="c">1458309857794</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004"/>
+<wv n="10005">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233891024023697032</a>
+<a n="c">1458308687750</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">9</a>
+<a n="val">10.0</a>
+<m>
+<a n="i">1233896614262707846</a>
+<a n="c">1458308954026</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10007"/>
+<wv n="10008">
+<a n="lk">1233895267119970276$lk$scalingX</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233894648927674400</a>
+<a n="c">1458308664454</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<VV/>
+<wt>
+<a n="t">211574799086481284</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211575874919478527</a>
+<udV n="0">
+<a n="name">startAnimation</a>
+<a n="cat">User defined</a>
+</udV>
+</wt>
+</w>
+</CW>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="1">
+<a n="name">rotationEnabled</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="2">
+<a n="name">rotationAngleX</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="3">
+<a n="name">rotationAngleY</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="4">
+<a n="name">rotationAngleZ</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="5">
+<a n="name">scalingEnabled</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="6">
+<a n="name">scalingX</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="7">
+<a n="name">scalingY</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="8">
+<a n="name">scalingZ</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="9">
+<a n="name">pivotX</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="10">
+<a n="name">pivotY</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="11">
+<a n="name">pivotZ</a>
+<a n="cat">Transformation</a>
+</udV>
+</wt>
+</w>
+<w n="13">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233897299030973172</a>
+<a n="c">1458309601421</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">WaveBack</a>
+<m>
+<a n="i">1233891067352973173</a>
+<a n="c">1458308013891</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">200</a>
+<m>
+<a n="i">1233897989302973174</a>
+<a n="c">1458308106356</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">300</a>
+<m>
+<a n="i">1233891244175973175</a>
+<a n="c">1458308139597</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">571</a>
+<m>
+<a n="i">1233891440905973176</a>
+<a n="c">1458309901211</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">231</a>
+<m>
+<a n="i">1233895120813973177</a>
+<a n="c">1458309904591</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Specials\Waves_Back.png</a>
+<m>
+<a n="i">1233892595058039144</a>
+<a n="c">1458308038277</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">1233892240398056096</a>
+<a n="c">1458308049266</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233896792457166801</a>
+<a n="c">1458309156519</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">9</a>
+<a n="val">0.0</a>
+<m>
+<a n="i">1233897167521166814</a>
+<a n="c">1458309156532</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">9</a>
+<a n="val">0.0</a>
+<m>
+<a n="i">1233892164296166828</a>
+<a n="c">1458309156546</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10007">
+<a n="cls">9</a>
+<a n="val">-90.0</a>
+<m>
+<a n="i">1233890866645166843</a>
+<a n="c">1458309634019</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10008">
+<a n="cls">9</a>
+<a n="val">150.0</a>
+<m>
+<a n="i">1233891109410598465</a>
+<a n="c">1458309618276</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10009">
+<a n="cls">9</a>
+<a n="val">200.0</a>
+<m>
+<a n="i">1233890166938598488</a>
+<a n="c">1458309891745</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10010">
+<a n="cls">9</a>
+<a n="val">0.0</a>
+<m>
+<a n="i">1233894701207598512</a>
+<a n="c">1458309587914</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10011">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233891116621599831</a>
+<a n="c">1458309589234</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10012">
+<a n="cls">9</a>
+<a n="val">100.0</a>
+<m>
+<a n="i">1233892367530599858</a>
+<a n="c">1458309589261</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10013">
+<a n="lk">1233897299030973172$lk$scalingX</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233896519985612028</a>
+<a n="c">1458309601400</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10014">
+<a n="cls">9</a>
+<a n="val">100.0</a>
+<m>
+<a n="i">1233890360142599915</a>
+<a n="c">1458309589319</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">4</a>
+<a n="0">ScaleMode</a>
+<a n="1">Rotation</a>
+<a n="2">Pivot</a>
+<a n="3">Scaling</a>
+</v>
+<VV/>
+<CW>
+<w n="0">
+<a n="cls">8</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233897581192324014</a>
+<a n="c">1458309564451</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Animation</a>
+<m>
+<a n="i">1233890767792324015</a>
+<a n="c">1458308314515</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007">
+<a n="cls">19</a>
+<m>
+<a n="i">1233893006418566413</a>
+<a n="c">1458309559258</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">f:animation_play(v:this)
+false</a>
+</v>
+<v n="1">
+<a n="code"/>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">8</a>
+<m>
+<a n="i">1233892773626574983</a>
+<a n="c">1458309564466</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Linear Curve Float</a>
+<m>
+<a n="i">1233895549297574989</a>
+<a n="c">1458309564446</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002">
+<a n="cls">2</a>
+<a n="val">3000</a>
+<m>
+<a n="i">1233898532685574984</a>
+<a n="c">1458309564446</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">300</a>
+<m>
+<a n="i">1233898586578574985</a>
+<a n="c">1458309854270</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004"/>
+<wv n="10005">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233899654320574986</a>
+<a n="c">1458309564446</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">9</a>
+<a n="val">7.0</a>
+<m>
+<a n="i">1233894506641574987</a>
+<a n="c">1458309683645</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10007"/>
+<wv n="10008">
+<a n="lk">1233897299030973172$lk$scalingX</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233890861986574988</a>
+<a n="c">1458309659349</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<VV/>
+<wt>
+<a n="t">211574799086481284</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211575874919478527</a>
+<udV n="0">
+<a n="name">setAnimation</a>
+<a n="cat">User defined</a>
+</udV>
+</wt>
+</w>
+</CW>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="1">
+<a n="name">rotationEnabled</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="2">
+<a n="name">rotationAngleX</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="3">
+<a n="name">rotationAngleY</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="4">
+<a n="name">rotationAngleZ</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="5">
+<a n="name">pivotX</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="6">
+<a n="name">pivotY</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="7">
+<a n="name">pivotZ</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="8">
+<a n="name">scalingEnabled</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="9">
+<a n="name">scalingX</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="10">
+<a n="name">scalingY</a>
+<a n="cat">Transformation</a>
+</udV>
+<udV n="11">
+<a n="name">scalingZ</a>
+<a n="cat">Transformation</a>
+</udV>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211573106765080687</a>
+</wt>
+</vi>

@@ -1,0 +1,1889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vi n="v1233899471804374306" xmlns:p="GUIDE plugin">
+<a n="cls">0</a>
+<a n="childCount">14</a>
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<m>
+<a n="i">1233899471804374306</a>
+<a n="c">1457960016981</a>
+<a n="b">2</a>
+<pl n="notes">
+<a n="n">Standard-View mit Hintergrund-Bild, Home-Button, Titel, sowie Statusanzeigen. Batterie-Status und Home-Button können bei Bedarf in einzelnen View-Instanzen unsichtbar geschalten werden (BatteryLevelVisible bzw. HomeButtonVisible). Das Hintergrundbild kann in den View-Instanzen geändert werden.
+</a>
+</pl>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">40_Specials</a>
+<m>
+<a n="i">1233899821669374307</a>
+<a n="c">1457534415064</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">768</a>
+<m>
+<a n="i">1233898390305374308</a>
+<a n="c">1457534365863</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">1024</a>
+<m>
+<a n="i">1233896905490374309</a>
+<a n="c">1457534365863</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233894178771374310</a>
+<a n="c">1457534365863</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233899632584374311</a>
+<a n="c">1457534365863</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">1</a>
+<a n="val">Specials</a>
+<m>
+<a n="i">1233895097633579294</a>
+<a n="c">1457596597686</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233895628492374312</a>
+<a n="c">1457534365873</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211570811036103513</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891796705374313</a>
+<a n="c">1457534365873</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101306474944395620</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233893914531374314</a>
+<a n="c">1457534365873</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101304517945525613</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">1233895749523374315</a>
+<a n="c">1457534365873</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211578264170183612</a>
+</wt>
+</w>
+<w n="4">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892888963374316</a>
+<a n="c">1457534365873</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+</CV>
+<VV>
+<a n="tv10004">true</a>
+</VV>
+<wt>
+<a n="t">211571600295335000</a>
+</wt>
+</w>
+<w n="5">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891991084374317</a>
+<a n="c">1457534365874</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+<wv n="10010"/>
+</CV>
+<VV>
+<a n="tv10004">true</a>
+</VV>
+<wt>
+<a n="t">211573230166493628</a>
+</wt>
+</w>
+<w n="6">
+<a n="cls">0</a>
+<a n="childCount">5</a>
+<m>
+<a n="i">1233898730297374318</a>
+<a n="c">1457534365874</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233897654717374319</a>
+<a n="c">1457534365874</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211572250510242748</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233895477507374320</a>
+<a n="c">1457534365874</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570692570290781</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233897196770374321</a>
+<a n="c">1457534365874</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570912094327631</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">1233893630405374322</a>
+<a n="c">1457534365874</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570956892358891</a>
+</wt>
+</w>
+<w n="4">
+<a n="cls">0</a>
+<m>
+<a n="i">1233899557873374323</a>
+<a n="c">1457534365875</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211575875532380638</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211574036417213579</a>
+</wt>
+</w>
+<w n="7">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233897554777374324</a>
+<a n="c">1457534365875</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<a n="childCount">2</a>
+<m>
+<a n="i">1233899692683374326</a>
+<a n="c">1457534365875</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892064670374327</a>
+<a n="c">1457534365875</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211570831935725471</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891921204374328</a>
+<a n="c">1457534365875</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211572309246725472</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10001">true</a>
+</VV>
+<wt>
+<a n="t">211573555135725465</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10009">true</a>
+</VV>
+<wt>
+<a n="t">211576508386525830</a>
+</wt>
+</w>
+<w n="8">
+<a n="cls">0</a>
+<a n="childCount">4</a>
+<m>
+<a n="i">1233897757248484484</a>
+<a n="c">1458133659128</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Button_Heartbeat</a>
+<m>
+<a n="i">1233899550008484485</a>
+<a n="c">1458133659121</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">188</a>
+<m>
+<a n="i">1233894179979484486</a>
+<a n="c">1457534476010</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">164</a>
+<m>
+<a n="i">1233892654170484487</a>
+<a n="c">1457534476010</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">700</a>
+<m>
+<a n="i">1233897800255484488</a>
+<a n="c">1457535797026</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">150</a>
+<m>
+<a n="i">1233895710169484489</a>
+<a n="c">1457535711108</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007">
+<a n="cls">10</a>
+<a n="mod">EVENT</a>
+<a n="eid">1233893731749642869</a>
+<m>
+<a n="i">1233890723342416534</a>
+<a n="c">1458133634456</a>
+<a n="b">2</a>
+</m>
+<Value>
+<a n="code"/>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+<cA n="sendEventAction">
+<a n="cls">24</a>
+<a n="eventDef">1233893731749642869</a>
+<m>
+<a n="i">1233893682108642874</a>
+<a n="c">1458133634454</a>
+<a n="b">2</a>
+</m>
+<MPS>
+<a n="eventDef">1233893731749642869</a>
+<a n="count">0</a>
+<m>
+<a n="i">1233896494696642875</a>
+<a n="c">1458133634454</a>
+<a n="b">2</a>
+</m>
+</MPS>
+</cA>
+</wv>
+<wv n="10008">
+<a n="cls">1</a>
+<a n="val">Heartbeat</a>
+<m>
+<a n="i">1233892350680622713</a>
+<a n="c">1457534640594</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10009">
+<a n="cls">5</a>
+<a n="val">images\menu\MenuButton_Icon_Heartbeat.png</a>
+<m>
+<a n="i">1233892922239712819</a>
+<a n="c">1457971709190</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233898495144484490</a>
+<a n="c">1457534476010</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101300518066751520</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233898818042484491</a>
+<a n="c">1457534476010</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101307522605751552</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891578558484492</a>
+<a n="c">1457534476010</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101302613887751576</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892459216405974</a>
+<a n="c">1457952396140</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Image</a>
+<m>
+<a n="i">1233896556095405977</a>
+<a n="c">1457952396129</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">50</a>
+<m>
+<a n="i">1233891843929405978</a>
+<a n="c">1457952396129</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">50</a>
+<m>
+<a n="i">1233890064347405979</a>
+<a n="c">1457952396129</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">125</a>
+<m>
+<a n="i">1233890011542405980</a>
+<a n="c">1457952396129</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">151</a>
+<m>
+<a n="i">1233891517895405981</a>
+<a n="c">1457952396129</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Under construction.png</a>
+<m>
+<a n="i">1233897678822405975</a>
+<a n="c">1457952396129</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">1233896490736405976</a>
+<a n="c">1457952396129</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10001">true</a>
+</VV>
+<wt>
+<a n="t">101301147849751325</a>
+</wt>
+</w>
+<w n="9">
+<a n="cls">0</a>
+<a n="childCount">4</a>
+<m>
+<a n="i">1233890365930487807</a>
+<a n="c">1458133734940</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Button_Parkingpilot</a>
+<m>
+<a n="i">1233895553537487809</a>
+<a n="c">1458133666521</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">188</a>
+<m>
+<a n="i">1233890851607487810</a>
+<a n="c">1457534479325</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">164</a>
+<m>
+<a n="i">1233898673480487811</a>
+<a n="c">1457534479325</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">400</a>
+<m>
+<a n="i">1233899233539487812</a>
+<a n="c">1457535790270</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">400</a>
+<m>
+<a n="i">1233899001531487813</a>
+<a n="c">1457535678091</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007">
+<a n="cls">10</a>
+<a n="mod">EVENT</a>
+<a n="eid">1233895356652754055</a>
+<m>
+<a n="i">1233899714676743347</a>
+<a n="c">1458133745637</a>
+<a n="b">2</a>
+</m>
+<Value>
+<a n="code"/>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+<cA n="sendEventAction">
+<a n="cls">24</a>
+<a n="eventDef">1233895356652754055</a>
+<m>
+<a n="i">1233893663330754060</a>
+<a n="c">1458133745634</a>
+<a n="b">2</a>
+</m>
+<MPS>
+<a n="eventDef">1233895356652754055</a>
+<a n="count">0</a>
+<m>
+<a n="i">1233892113854754061</a>
+<a n="c">1458133745634</a>
+<a n="b">2</a>
+</m>
+</MPS>
+</cA>
+</wv>
+<wv n="10008">
+<a n="cls">1</a>
+<a n="val">Parking pilot</a>
+<m>
+<a n="i">1233896557790625071</a>
+<a n="c">1457534663662</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10009">
+<a n="cls">5</a>
+<a n="val">images\menu\MenuButton_Icon_Parking.png</a>
+<m>
+<a n="i">1233892102467709663</a>
+<a n="c">1457971724192</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233890333563487814</a>
+<a n="c">1457534479325</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101300518066751520</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233896084716487815</a>
+<a n="c">1457534479325</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101307522605751552</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892836070487816</a>
+<a n="c">1457534479325</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101302613887751576</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">1233894452779332558</a>
+<a n="c">1457952366027</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Image</a>
+<m>
+<a n="i">1233899788981332559</a>
+<a n="c">1457952322808</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">50</a>
+<m>
+<a n="i">1233893432978332560</a>
+<a n="c">1457952341250</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">50</a>
+<m>
+<a n="i">1233898220453332561</a>
+<a n="c">1457952343567</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">125</a>
+<m>
+<a n="i">1233892553483332562</a>
+<a n="c">1457952379644</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">151</a>
+<m>
+<a n="i">1233894565543332563</a>
+<a n="c">1457952380028</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Under construction.png</a>
+<m>
+<a n="i">1233897247077375784</a>
+<a n="c">1457952374252</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">1233892127712366624</a>
+<a n="c">1457952363886</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10001">true</a>
+</VV>
+<wt>
+<a n="t">101301147849751325</a>
+</wt>
+</w>
+<w n="10">
+<a n="cls">0</a>
+<a n="childCount">4</a>
+<m>
+<a n="i">1233898764099492484</a>
+<a n="c">1458133893723</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Button_LED_Matrix</a>
+<m>
+<a n="i">1233890939521492485</a>
+<a n="c">1458133893717</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">188</a>
+<m>
+<a n="i">1233895522428492486</a>
+<a n="c">1457534483992</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">164</a>
+<m>
+<a n="i">1233896908700492487</a>
+<a n="c">1457534483992</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">700</a>
+<m>
+<a n="i">1233899336540492488</a>
+<a n="c">1457535781600</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">400</a>
+<m>
+<a n="i">1233898101158492489</a>
+<a n="c">1457535686959</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007">
+<a n="cls">10</a>
+<a n="mod">EVENT</a>
+<a n="eid">1233893161916773769</a>
+<m>
+<a n="i">1233893395978757905</a>
+<a n="c">1458133765346</a>
+<a n="b">2</a>
+</m>
+<Value>
+<a n="code"/>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+<cA n="sendEventAction">
+<a n="cls">24</a>
+<a n="eventDef">1233893161916773769</a>
+<m>
+<a n="i">1233897507278773775</a>
+<a n="c">1458133765343</a>
+<a n="b">2</a>
+</m>
+<MPS>
+<a n="eventDef">1233893161916773769</a>
+<a n="count">0</a>
+<m>
+<a n="i">1233896832432773776</a>
+<a n="c">1458133765343</a>
+<a n="b">2</a>
+</m>
+</MPS>
+</cA>
+</wv>
+<wv n="10008">
+<a n="cls">1</a>
+<a n="val">LED Matrix</a>
+<m>
+<a n="i">1233893663688628084</a>
+<a n="c">1458133862821</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10009">
+<a n="cls">5</a>
+<a n="val">images\menu\MenuButton_Icon_LED.png</a>
+<m>
+<a n="i">1233893814454706417</a>
+<a n="c">1458228575030</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233897134740492490</a>
+<a n="c">1457534483992</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101300518066751520</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233898655753492491</a>
+<a n="c">1457534483992</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101307522605751552</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233896933570492492</a>
+<a n="c">1457534483992</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101302613887751576</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">1233894667674401968</a>
+<a n="c">1457952392142</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Image</a>
+<m>
+<a n="i">1233894705582401971</a>
+<a n="c">1457952392131</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">50</a>
+<m>
+<a n="i">1233892095309401972</a>
+<a n="c">1457952392131</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">50</a>
+<m>
+<a n="i">1233890683249401973</a>
+<a n="c">1457952392131</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">125</a>
+<m>
+<a n="i">1233890995259401974</a>
+<a n="c">1457952392131</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">151</a>
+<m>
+<a n="i">1233895857884401975</a>
+<a n="c">1457952392131</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Under construction.png</a>
+<m>
+<a n="i">1233897425543401969</a>
+<a n="c">1457952392131</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">1233897675512401970</a>
+<a n="c">1457952392131</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10001">true</a>
+</VV>
+<wt>
+<a n="t">101301147849751325</a>
+</wt>
+</w>
+<w n="11">
+<a n="cls">0</a>
+<a n="childCount">3</a>
+<m>
+<a n="i">1233895366386716920</a>
+<a n="c">1458133682041</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Button_Gestures</a>
+<m>
+<a n="i">1233893851168716926</a>
+<a n="c">1458133682035</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">188</a>
+<m>
+<a n="i">1233891382242716927</a>
+<a n="c">1457534708416</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">164</a>
+<m>
+<a n="i">1233899797535716928</a>
+<a n="c">1457534708416</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">400</a>
+<m>
+<a n="i">1233893393621716929</a>
+<a n="c">1457535775083</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">150</a>
+<m>
+<a n="i">1233896687884716930</a>
+<a n="c">1457535718772</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007">
+<a n="cls">10</a>
+<a n="mod">EVENT</a>
+<a n="eid">211575853203876695</a>
+<m>
+<a n="i">1233896180108716923</a>
+<a n="c">1457534708415</a>
+<a n="b">2</a>
+</m>
+<Value>
+<a n="code"/>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+<cA n="sendEventAction">
+<a n="cls">24</a>
+<a n="eventDef">211575853203876695</a>
+<m>
+<a n="i">1233896931025716921</a>
+<a n="c">1457534708415</a>
+<a n="b">2</a>
+</m>
+<MPS>
+<a n="eventDef">211575853203876695</a>
+<a n="count">0</a>
+<m>
+<a n="i">1233898840386716922</a>
+<a n="c">1457534708415</a>
+<a n="b">2</a>
+</m>
+</MPS>
+</cA>
+</wv>
+<wv n="10009">
+<a n="cls">5</a>
+<a n="val">images\menu\MenuButton_Ico_Gestures_big.png</a>
+<m>
+<a n="i">1233895060519716925</a>
+<a n="c">1457534708416</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891886787716931</a>
+<a n="c">1457534708416</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101300518066751520</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233890788786716932</a>
+<a n="c">1457534708416</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101307522605751552</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233893186507716933</a>
+<a n="c">1457534708416</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101302613887751576</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10001">true</a>
+<a n="10008">211573999982544409</a>
+</VV>
+<wt>
+<a n="t">101301147849751325</a>
+</wt>
+</w>
+<w n="12">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891909414570383</a>
+<a n="c">1458134742223</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Icon</a>
+<m>
+<a n="i">1233890359688570384</a>
+<a n="c">1458134742219</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">150</a>
+<m>
+<a n="i">1233897451031570385</a>
+<a n="c">1457535629470</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">150</a>
+<m>
+<a n="i">1233897832441570386</a>
+<a n="c">1457535633391</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">151</a>
+<m>
+<a n="i">1233896954553570387</a>
+<a n="c">1457970914436</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">98</a>
+<m>
+<a n="i">1233892941112570388</a>
+<a n="c">1457535761664</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\menu\MenuButton_Specials.png</a>
+<m>
+<a n="i">1233892583354645390</a>
+<a n="c">1457535641997</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">1</a>
+<m>
+<a n="i">1233890302657623638</a>
+<a n="c">1457535621741</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+<w n="13">
+<a n="cls">0</a>
+<m>
+<a n="i">1233893690464027183</a>
+<a n="c">1457960016988</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">GestureControl</a>
+<m>
+<a n="i">1233895806913027194</a>
+<a n="c">1457960016976</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">1233897705235027195</a>
+<a n="c">1457960016971</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">1233897649789027196</a>
+<a n="c">1457960016971</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">-205</a>
+<m>
+<a n="i">1233893759333027197</a>
+<a n="c">1457960016971</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">-212</a>
+<m>
+<a n="i">1233892686378027198</a>
+<a n="c">1457960016971</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">19</a>
+<m>
+<a n="i">1233890742167027186</a>
+<a n="c">1457961494607</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">if(!v:isInit)
+{
+  if(v:this-&gt;^-&gt;Button_Gestures.colorationEnabled == true)
+  {
+    v:this-&gt;^-&gt;Button_Gestures.colorationEnabled = false
+    v:this-&gt;^-&gt;&quot;Button_LED_Matrix&quot;.colorationEnabled = true
+  }
+  
+  else if(v:this-&gt;^-&gt;Button_Heartbeat.colorationEnabled == true)
+  {
+    v:this-&gt;^-&gt;Button_Heartbeat.colorationEnabled = false
+    v:this-&gt;^-&gt;Button_Gestures.colorationEnabled = true 
+  }
+  
+  else if(v:this-&gt;^-&gt;Button_Parkingpilot.colorationEnabled == true)
+  {
+    v:this-&gt;^-&gt;Button_Parkingpilot.colorationEnabled = false
+    v:this-&gt;^-&gt;Button_Heartbeat.colorationEnabled = true
+  }
+  
+  else if(v:this-&gt;^-&gt;&quot;Button_LED_Matrix&quot;.colorationEnabled == true)
+  {
+    v:this-&gt;^-&gt;&quot;Button_LED_Matrix&quot;.colorationEnabled = false
+    v:this-&gt;^-&gt;Button_Parkingpilot.colorationEnabled = true
+  }
+  
+  else
+  {
+   v:this-&gt;^-&gt;Button_Gestures.colorationEnabled = true
+  }
+}
+false;</a>
+</v>
+<v n="1">
+<a n="code">ev:ExtIn_Tower_Gesture_OW</a>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+<wv n="10001">
+<a n="cls">19</a>
+<m>
+<a n="i">1233894097807027188</a>
+<a n="c">1457961547255</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">if(!v:isInit)
+{
+  if(v:this-&gt;^-&gt;Button_Gestures.colorationEnabled == true)
+  {
+    v:this-&gt;^-&gt;Button_Gestures.colorationEnabled = false
+    v:this-&gt;^-&gt;Button_Heartbeat.colorationEnabled = true
+  }
+  
+  else if(v:this-&gt;^-&gt;Button_Heartbeat.colorationEnabled == true)
+  {
+    v:this-&gt;^-&gt;Button_Heartbeat.colorationEnabled = false
+    v:this-&gt;^-&gt;Button_Parkingpilot.colorationEnabled = true 
+  }
+  
+  else if(v:this-&gt;^-&gt;Button_Parkingpilot.colorationEnabled == true)
+  {
+    v:this-&gt;^-&gt;Button_Parkingpilot.colorationEnabled = false
+    v:this-&gt;^-&gt;&quot;Button_LED_Matrix&quot;.colorationEnabled = true
+  }
+  
+  else if(v:this-&gt;^-&gt;&quot;Button_LED_Matrix&quot;.colorationEnabled == true)
+  {
+    v:this-&gt;^-&gt;&quot;Button_LED_Matrix&quot;.colorationEnabled = false
+    v:this-&gt;^-&gt;Button_Gestures.colorationEnabled = true
+  }
+  
+  else
+  {
+   v:this-&gt;^-&gt;Button_Gestures.colorationEnabled = true
+  }
+}
+false;</a>
+</v>
+<v n="1">
+<a n="code">ev:ExtIn_Tower_Gesture_WO</a>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+<wv n="10002">
+<a n="cls">19</a>
+<m>
+<a n="i">1233892089655027191</a>
+<a n="c">1457961356350</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">if(!v:isInit)
+{
+if(v:this-&gt;^-&gt;Button_Gestures.colorationEnabled == true)
+  {
+   fire ev:Menu_GoTo_Specials_Gestures()
+  }
+  else if(v:this-&gt;^-&gt;Button_Heartbeat.colorationEnabled == true)
+  {
+   //fire ev...
+  }
+  else if(v:this-&gt;^-&gt;Button_Parkingpilot.colorationEnabled == true)
+  {
+   //fire ev...
+  }
+  else if(v:this-&gt;^-&gt;&quot;Button_LED_Matrix&quot;.colorationEnabled == true)
+  {
+   //fire ev...
+  }
+  else
+  {
+    v:this-&gt;^-&gt;Button_Gestures.colorationEnabled = true;
+  }
+}
+false;</a>
+</v>
+<v n="1">
+<a n="code">ev:ExtIn_Tower_Gesture_NS</a>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+<wv n="10003">
+<a n="cls">19</a>
+<m>
+<a n="i">1233895525095027193</a>
+<a n="c">1457960016971</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">if(!v:isInit)
+{
+fire ev:Menu_GoTo_Settings()
+}
+false;</a>
+</v>
+<v n="1">
+<a n="code">ev:ExtIn_Tower_Gesture_SN</a>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+</CV>
+<VV/>
+<wt>
+<a n="t">211573920095478114</a>
+<udV n="0">
+<a n="name">Gesture Left</a>
+<a n="cat">User defined</a>
+</udV>
+<udV n="1">
+<a n="name">Gesture Right</a>
+<a n="cat">User defined</a>
+</udV>
+<udV n="2">
+<a n="name">Gesture Down</a>
+<a n="cat">User defined</a>
+</udV>
+<udV n="3">
+<a n="name">Gesture Up</a>
+<a n="cat">User defined</a>
+</udV>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211573106765080687</a>
+</wt>
+</vi>

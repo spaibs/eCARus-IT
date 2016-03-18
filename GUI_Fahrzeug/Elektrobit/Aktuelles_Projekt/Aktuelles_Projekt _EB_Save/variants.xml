@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VA n="variants" xmlns:p="GUIDE plugin">
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<va>
+<a n="name">Standard</a>
+<m>
+<a n="i">211578502758474991</a>
+<a n="c">1440159474799</a>
+<a n="b">0</a>
+</m>
+</va>
+</VA>

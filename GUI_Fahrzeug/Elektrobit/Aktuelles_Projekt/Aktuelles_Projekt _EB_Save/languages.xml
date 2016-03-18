@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<L n="languages" xmlns:p="GUIDE plugin">
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<l>
+<a n="name">Standard</a>
+<a n="locale">en_US_</a>
+<a n="childCount">3</a>
+<m>
+<a n="i">211573085332474990</a>
+<a n="c">1440401336580</a>
+<a n="b">0</a>
+</m>
+<CL>
+<l n="0">
+<a n="name">German</a>
+<a n="locale">de_DE_</a>
+<m>
+<a n="i">211572253407201191</a>
+<a n="c">1441117692439</a>
+<a n="b">0</a>
+<a n="LanguageID">1</a>
+</m>
+</l>
+<l n="1">
+<a n="name">English</a>
+<a n="locale">en_US_</a>
+<m>
+<a n="i">211571801591219424</a>
+<a n="c">1457430991009</a>
+<a n="b">2</a>
+<a n="LanguageID">2</a>
+</m>
+</l>
+<l n="2">
+<a n="name">French</a>
+<a n="locale">fr_FR_</a>
+<m>
+<a n="i">211576245505306597</a>
+<a n="c">1441117696313</a>
+<a n="b">0</a>
+<a n="LanguageID">3</a>
+</m>
+</l>
+</CL>
+</l>
+</L>

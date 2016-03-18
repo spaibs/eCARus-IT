@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CLN n="classNames" xmlns:p="GUIDE plugin">
+<a n="simControlPanelClassName"/>
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<v n="propertyValueClassNames">
+<a n="c">16</a>
+<a n="0">de._3soft.guide.properties.values.HMIBoolean</a>
+<a n="1">de._3soft.guide.properties.values.HMIColor</a>
+<a n="2">de._3soft.guide.properties.values.HMIFloat</a>
+<a n="3">de._3soft.guide.properties.values.HMIFontFromResource</a>
+<a n="4">de._3soft.guide.properties.values.HMIFormattedString</a>
+<a n="5">de._3soft.guide.properties.values.HMIFormula</a>
+<a n="6">de._3soft.guide.properties.values.HMIGenericVector</a>
+<a n="7">de._3soft.guide.properties.values.HMIImageIcon</a>
+<a n="8">de._3soft.guide.properties.values.HMIInteger</a>
+<a n="9">de._3soft.guide.properties.values.HMIObjectModel</a>
+<a n="10">de._3soft.guide.properties.values.HMIPropertyProxy</a>
+<a n="11">de._3soft.guide.properties.values.HMIReaction</a>
+<a n="12">de._3soft.guide.properties.values.HMIScript</a>
+<a n="13">de._3soft.guide.properties.values.HMIString</a>
+<a n="14">de._3soft.guide.properties.values.HMITrigger</a>
+<a n="15">de._3soft.guide.properties.values.HMIVectorItemProxy</a>
+</v>
+<v n="propertyValueRendererClassNames">
+<a n="c">10</a>
+<a n="0">de._3soft.guide.properties.values.renderer.HMIBooleanRenderer</a>
+<a n="1">de._3soft.guide.properties.values.renderer.HMIColorRenderer</a>
+<a n="2">de._3soft.guide.properties.values.renderer.HMIFontFromResourceRenderer</a>
+<a n="3">de._3soft.guide.properties.values.renderer.HMIFormulaRenderer</a>
+<a n="4">de._3soft.guide.properties.values.renderer.HMIImageIconRenderer</a>
+<a n="5">de._3soft.guide.properties.values.renderer.HMIPropertyProxyRenderer</a>
+<a n="6">de._3soft.guide.properties.values.renderer.HMIReactionRenderer</a>
+<a n="7">de._3soft.guide.properties.values.renderer.HMIScriptRenderer</a>
+<a n="8">de._3soft.guide.properties.values.renderer.HMITriggerRenderer</a>
+<a n="9">de._3soft.guide.properties.values.renderer.HMIVectorItemProxyRenderer</a>
+</v>
+<v n="propertyValueEditorClassNames">
+<a n="c">15</a>
+<a n="0">de._3soft.guide.properties.values.renderer.HMIBooleanEditor</a>
+<a n="1">de._3soft.guide.properties.values.renderer.HMIColorEditor</a>
+<a n="2">de._3soft.guide.properties.values.renderer.HMIFontFromResourceEditor</a>
+<a n="3">de._3soft.guide.properties.values.renderer.HMIFormattedStringEditor</a>
+<a n="4">de._3soft.guide.properties.values.renderer.HMIFormulaEditor</a>
+<a n="5">de._3soft.guide.properties.values.renderer.HMIGenericVectorEditor</a>
+<a n="6">de._3soft.guide.properties.values.renderer.HMIImageIconEditor</a>
+<a n="7">de._3soft.guide.properties.values.renderer.HMIListEditor</a>
+<a n="8">de._3soft.guide.properties.values.renderer.HMIObjectModelEditor</a>
+<a n="9">de._3soft.guide.properties.values.renderer.HMIPropertyProxyEditor</a>
+<a n="10">de._3soft.guide.properties.values.renderer.HMIReactionEditor</a>
+<a n="11">de._3soft.guide.properties.values.renderer.HMIScriptEditor</a>
+<a n="12">de._3soft.guide.properties.values.renderer.HMIStringEditor</a>
+<a n="13">de._3soft.guide.properties.values.renderer.HMITriggerEditor</a>
+<a n="14">de._3soft.guide.properties.values.renderer.HMIVectorItemProxyEditor</a>
+</v>
+<v n="widgetClassNames">
+<a n="c">34</a>
+<a n="0">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfConstCurveBool</a>
+<a n="1">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfConstCurveColor</a>
+<a n="2">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfConstCurveFloat</a>
+<a n="3">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfConstCurveS32</a>
+<a n="4">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfContainer</a>
+<a n="5">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfExtensionPoint</a>
+<a n="6">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfFastStartColor</a>
+<a n="7">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfFastStartFloat</a>
+<a n="8">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfFastStartS32</a>
+<a n="9">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfImage</a>
+<a n="10">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfInstantiator</a>
+<a n="11">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfLabel</a>
+<a n="12">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfLinearCurveColor</a>
+<a n="13">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfLinearCurveFloat</a>
+<a n="14">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfLinearCurveS32</a>
+<a n="15">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfLinearInterpolationColor</a>
+<a n="16">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfLinearInterpolationFloat</a>
+<a n="17">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfLinearInterpolationS32</a>
+<a n="18">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfParallelAnimation</a>
+<a n="19">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfQuadraticCurveColor</a>
+<a n="20">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfQuadraticCurveFloat</a>
+<a n="21">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfQuadraticCurveS32</a>
+<a n="22">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfRectangle</a>
+<a n="23">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfScriptCurveBool</a>
+<a n="24">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfScriptCurveColor</a>
+<a n="25">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfScriptCurveFloat</a>
+<a n="26">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfScriptCurveS32</a>
+<a n="27">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfSinusCurveColor</a>
+<a n="28">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfSinusCurveFloat</a>
+<a n="29">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfSinusCurveS32</a>
+<a n="30">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfSlowStartColor</a>
+<a n="31">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfSlowStartFloat</a>
+<a n="32">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfSlowStartS32</a>
+<a n="33">com.elektrobit.guide.plugins.gtf.adapter.widgetfactory.GtfWidgetFactory|createWidget|GtfView</a>
+</v>
+<v n="widgetModelClassNames">
+<a n="c">0</a>
+</v>
+<v n="pluginClassNames">
+<a n="c">5</a>
+<a n="0">de._3soft.guide.gui.plugins.annotations.AnnotationsPlugin</a>
+<a n="1">de._3soft.guide.gui.plugins.isearch.IncrementalSearchPlugin</a>
+<a n="2">de._3soft.guide.gui.plugins.problems.ProblemsPlugin</a>
+<a n="3">de._3soft.guide.gui.plugins.refsearch.RefSearchPlugin</a>
+<a n="4">de._3soft.guide.gui.plugins.svn.SVNPlugin</a>
+</v>
+<v n="pluginSeverity">
+<a n="c">5</a>
+<a n="0">1</a>
+<a n="1">0</a>
+<a n="2">0</a>
+<a n="3">0</a>
+<a n="4">2</a>
+</v>
+<v n="widgetUIClassNames">
+<a n="c">1</a>
+<a n="0">com.elektrobit.guide.plugins.gtf.adapter.widgets.ui.HMIWidgetUIAdapter</a>
+</v>
+<v n="actionClassNames">
+<a n="c">10</a>
+<a n="0">de._3soft.guide.condition.actions.ActionGroup</a>
+<a n="1">de._3soft.guide.condition.actions.HMIRunlevelAction</a>
+<a n="2">de._3soft.guide.condition.actions.ManipulateAnimationExecutionAction</a>
+<a n="3">de._3soft.guide.condition.actions.ManipulateStateListAction</a>
+<a n="4">de._3soft.guide.condition.actions.PropertyActionTerm</a>
+<a n="5">de._3soft.guide.condition.actions.ScriptAction</a>
+<a n="6">de._3soft.guide.condition.actions.SendEventAction</a>
+<a n="7">de._3soft.guide.condition.actions.SwitchToLanguageAction</a>
+<a n="8">de._3soft.guide.condition.actions.SwitchToVariantAction</a>
+<a n="9">de._3soft.guide.condition.actions.WidgetPropertyActionTerm</a>
+</v>
+<v n="conditionClassNames">
+<a n="c">9</a>
+<a n="0">de._3soft.guide.condition.nodes.CompareNode</a>
+<a n="1">de._3soft.guide.condition.nodes.ElseRootNode</a>
+<a n="2">de._3soft.guide.condition.nodes.EventParameterCompareNode</a>
+<a n="3">de._3soft.guide.condition.nodes.EventTriggerNode</a>
+<a n="4">de._3soft.guide.condition.nodes.IfRootNode</a>
+<a n="5">de._3soft.guide.condition.nodes.LinkNode</a>
+<a n="6">de._3soft.guide.condition.nodes.OperatorNode</a>
+<a n="7">de._3soft.guide.condition.nodes.ScriptNode</a>
+<a n="8">de._3soft.guide.condition.nodes.WidgetVariablesCompareNode</a>
+</v>
+<v n="conditionOperatorClassNames">
+<a n="c">6</a>
+<a n="0">de._3soft.guide.condition.compare.operators.EqualsIgnoreCaseOperator</a>
+<a n="1">de._3soft.guide.condition.compare.operators.EqualsOperator</a>
+<a n="2">de._3soft.guide.condition.compare.operators.GreaterOperator</a>
+<a n="3">de._3soft.guide.condition.compare.operators.GreaterOrEqualsOperator</a>
+<a n="4">de._3soft.guide.condition.compare.operators.LesserOperator</a>
+<a n="5">de._3soft.guide.condition.compare.operators.LesserOrEqualsOperator</a>
+</v>
+<v n="propertyActionsClassNames">
+<a n="c">4</a>
+<a n="0">de._3soft.guide.condition.actions.propertyactions.IncrementValuePropertyAction</a>
+<a n="1">de._3soft.guide.condition.actions.propertyactions.NegateBooleanPropertyAction</a>
+<a n="2">de._3soft.guide.condition.actions.propertyactions.SetProxyPropertyAction</a>
+<a n="3">de._3soft.guide.condition.actions.propertyactions.SetValuePropertyAction</a>
+</v>
+<v n="eventDefinitionClassNames">
+<a n="c">1</a>
+<a n="0">de._3soft.guide.event.dynamic.UniversalParameterEventDefinition</a>
+</v>
+<v n="eventMediatorClassNames">
+<a n="c">7</a>
+<a n="0">de._3soft.guide.guidestate.statemachine.ChangeMediatorState</a>
+<a n="1">de._3soft.guide.guidestate.statemachine.DataUpdateMediatorState</a>
+<a n="2">de._3soft.guide.guidestate.statemachine.EventTriggerTimerMediatorState</a>
+<a n="3">de._3soft.guide.guidestate.statemachine.ListUpdateMediatorState</a>
+<a n="4">de._3soft.guide.guidestate.statemachine.WaitScreenMediatorState</a>
+<a n="5">de._3soft.guide.guidestate.statemachine.WaitSyncMediatorState</a>
+<a n="6">de._3soft.guide.guidestate.statemachine.WaitTimerMediatorState</a>
+</v>
+<v n="dynamicStateListClassNames">
+<a n="c">1</a>
+<a n="0">de._3soft.guide.guidestate.statemachine.PriorityStack</a>
+</v>
+<v n="controlPanelClassNames">
+<a n="c">0</a>
+</v>
+<v n="formattedStringFormatterClassNames">
+<a n="c">3</a>
+<a n="0">de._3soft.guide.properties.IntegerFormattedStringFormatter</a>
+<a n="1">de._3soft.guide.properties.StringFormattedStringFormatter</a>
+<a n="2">de._3soft.guide.properties.FloatFormattedStringFormatter</a>
+</v>
+</CLN>

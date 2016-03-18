@@ -1,0 +1,2373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vi n="v101309504512699735" xmlns:p="GUIDE plugin">
+<a n="cls">0</a>
+<a n="childCount">12</a>
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<m>
+<a n="i">101309504512699735</a>
+<a n="c">1456941619331</a>
+<a n="b">0</a>
+<pl n="notes">
+<a n="n">Standard-View mit Hintergrund-Bild, Home-Button, Titel, sowie Statusanzeigen. Batterie-Status und Home-Button können bei Bedarf in einzelnen View-Instanzen unsichtbar geschalten werden (BatteryLevelVisible bzw. HomeButtonVisible). Das Hintergrundbild kann in den View-Instanzen geändert werden.
+</a>
+</pl>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">60_Media</a>
+<m>
+<a n="i">101303871191699736</a>
+<a n="c">1442847704095</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">768</a>
+<m>
+<a n="i">101306646329699737</a>
+<a n="c">1442847691208</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">1024</a>
+<m>
+<a n="i">101305463347699738</a>
+<a n="c">1442847691208</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101307994773699739</a>
+<a n="c">1442847691208</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101302641570699740</a>
+<a n="c">1442847691208</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">101302602712699741</a>
+<a n="c">1442847788360</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211570811036103513</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">101308782482699745</a>
+<a n="c">1442847691249</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101306474944395620</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">101300357383699746</a>
+<a n="c">1442847691250</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101304517945525613</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">101300419300699747</a>
+<a n="c">1442847691251</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211578264170183612</a>
+</wt>
+</w>
+<w n="4">
+<a n="cls">0</a>
+<m>
+<a n="i">101300349197699748</a>
+<a n="c">1442847691251</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+</CV>
+<VV>
+<a n="tv10004">true</a>
+</VV>
+<wt>
+<a n="t">211571600295335000</a>
+</wt>
+</w>
+<w n="5">
+<a n="cls">0</a>
+<m>
+<a n="i">101309782774699749</a>
+<a n="c">1443518456853</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+<wv n="10010"/>
+</CV>
+<VV>
+<a n="tv10004">true</a>
+</VV>
+<wt>
+<a n="t">211573230166493628</a>
+</wt>
+</w>
+<w n="6">
+<a n="cls">0</a>
+<a n="childCount">5</a>
+<m>
+<a n="i">101308349897699750</a>
+<a n="c">1442847691255</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">101306007695699751</a>
+<a n="c">1442847691255</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211572250510242748</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">101309508642699752</a>
+<a n="c">1442847691256</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570692570290781</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">101306011060699754</a>
+<a n="c">1442847691257</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570912094327631</a>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<m>
+<a n="i">101305445212699755</a>
+<a n="c">1442847691257</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211570956892358891</a>
+</wt>
+</w>
+<w n="4">
+<a n="cls">0</a>
+<m>
+<a n="i">101308573617699756</a>
+<a n="c">1442847691258</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV>
+<a n="tv10005">true</a>
+</VV>
+<wt>
+<a n="t">211575875532380638</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211574036417213579</a>
+</wt>
+</w>
+<w n="7">
+<a n="cls">0</a>
+<a n="childCount">2</a>
+<m>
+<a n="i">101308337519699757</a>
+<a n="c">1457602541997</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<a n="childCount">2</a>
+<m>
+<a n="i">101309185349699758</a>
+<a n="c">1442847691260</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">101304358817699759</a>
+<a n="c">1442847691260</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211570831935725471</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">101302751335699761</a>
+<a n="c">1442847691261</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211572309246725472</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10001">true</a>
+</VV>
+<wt>
+<a n="t">211573555135725465</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233894764383550511</a>
+<a n="c">1457602542001</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Container</a>
+<m>
+<a n="i">1233894865026550512</a>
+<a n="c">1457602541993</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">1233891067565550513</a>
+<a n="c">1457602542056</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">1233893509003550514</a>
+<a n="c">1457602542056</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">83</a>
+<m>
+<a n="i">1233897023716550515</a>
+<a n="c">1457602542001</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">59</a>
+<m>
+<a n="i">1233891982231550516</a>
+<a n="c">1457602542002</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<VV/>
+<wt>
+<a n="t">211573920095478114</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10009">true</a>
+</VV>
+<wt>
+<a n="t">211576508386525830</a>
+</wt>
+</w>
+<w n="8">
+<a n="cls">0</a>
+<m>
+<a n="i">101309842697897053</a>
+<a n="c">1443106890262</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">selected Title</a>
+<m>
+<a n="i">101304321899897066</a>
+<a n="c">1443106887907</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">101306547652897067</a>
+<a n="c">1443106887890</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">430</a>
+<m>
+<a n="i">101307100313897068</a>
+<a n="c">1457599694926</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">571</a>
+<m>
+<a n="i">101308630729897069</a>
+<a n="c">1443107364005</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">134</a>
+<m>
+<a n="i">101306753357897070</a>
+<a n="c">1443107364017</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">19</a>
+<a n="cl">de._3soft.guide.properties.values.HMIString</a>
+<m>
+<a n="i">101305535453897058</a>
+<a n="c">1443106901522</a>
+<a n="b">1</a>
+</m>
+<v n="0">
+<a n="code">true</a>
+</v>
+<v n="1">
+<a n="code">v:this-&gt;^-&gt;TUM_TextList.selectedItem</a>
+</v>
+<v n="2">
+<a n="code">if(v:this-&gt;^-&gt;TUM_TextList.selectedItem != -1){
+dp:ExtIn_MediaPlayer_TitlelList[v:this-&gt;^-&gt;TUM_TextList.selectedItem];
+}else{
+&quot;No Item Selected&quot;
+}</a>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+<wv n="10001">
+<a n="cls">4</a>
+<a n="val">-1</a>
+<m>
+<a n="i">101304525043897059</a>
+<a n="c">1443106887890</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">3</a>
+<a n="vf">PT Sans</a>
+<a n="vfzs">30</a>
+<a n="flon">false</a>
+<m>
+<a n="i">101303120880897060</a>
+<a n="c">1443106887890</a>
+<a n="b">1</a>
+</m>
+<v n="fl">
+<a n="c">0</a>
+</v>
+<v n="flsz">
+<a n="c">0</a>
+</v>
+<v n="flcs">
+<a n="c">0</a>
+</v>
+<v n="flce">
+<a n="c">0</a>
+</v>
+</wv>
+<wv n="10003"/>
+<wv n="10004">
+<a n="cls">2</a>
+<a n="val">1</a>
+<m>
+<a n="i">101302245430897061</a>
+<a n="c">1443106887890</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101309945032897062</a>
+<a n="c">1443106887890</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101308817844897063</a>
+<a n="c">1443106887890</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10007">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101303677083897064</a>
+<a n="c">1443106887890</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10008">
+<a n="cls">7</a>
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<m>
+<a n="i">101305158317897065</a>
+<a n="c">1443106887890</a>
+<a n="b">1</a>
+</m>
+<PV n="values"/>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">MultiLine</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578844710477232</a>
+<udV n="0">
+<a n="name">lineGap</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="1">
+<a n="name">currentLineCount</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="2">
+<a n="name">maxLineCount</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="3">
+<a n="name">lineSeparators</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+<w n="9">
+<a n="cls">0</a>
+<a n="childCount">4</a>
+<m>
+<a n="i">101300251750589260</a>
+<a n="c">1443107073864</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Control Music</a>
+<m>
+<a n="i">101309373796589261</a>
+<a n="c">1443106845022</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">220</a>
+<m>
+<a n="i">101302375475589262</a>
+<a n="c">1457349006130</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">414</a>
+<m>
+<a n="i">101309290252589263</a>
+<a n="c">1443106914854</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">567</a>
+<m>
+<a n="i">101307567101589264</a>
+<a n="c">1443108299194</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">400</a>
+<m>
+<a n="i">101308783048589265</a>
+<a n="c">1457349036445</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">4</a>
+<a n="val">1677721600</a>
+<m>
+<a n="i">101300089459592362</a>
+<a n="c">1443105593383</a>
+<a n="b">1</a>
+</m>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">101302419145562792</a>
+<a n="c">1457349315454</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">playing Title</a>
+<m>
+<a n="i">101306581725562804</a>
+<a n="c">1443106553705</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">60</a>
+<m>
+<a n="i">101300226213562805</a>
+<a n="c">1457349428770</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">370</a>
+<m>
+<a n="i">101308883805562806</a>
+<a n="c">1457349850556</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">20</a>
+<m>
+<a n="i">101302523028562807</a>
+<a n="c">1457349251989</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">100</a>
+<m>
+<a n="i">101303582117562808</a>
+<a n="c">1457349256383</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">19</a>
+<a n="cl">de._3soft.guide.properties.values.HMIString</a>
+<m>
+<a n="i">101301640069562796</a>
+<a n="c">1457018196827</a>
+<a n="b">0</a>
+</m>
+<v n="0">
+<a n="code">true</a>
+</v>
+<v n="1">
+<a n="code">ev:ExtOut_Media_PlayTitle
+ev:ExtOut_Media_PauseTitle</a>
+</v>
+<v n="2">
+<a n="code">if(dp:Media_isPlayingMusic){
+  &quot;Playing: &quot; + dp:ExtIn_MediaPlayer_TitlelList[v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem];
+}else{
+
+&quot;Pause&quot;
+}
+</a>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+<wv n="10001">
+<a n="cls">4</a>
+<a n="val">-1</a>
+<m>
+<a n="i">101307305824562797</a>
+<a n="c">1443106553688</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">3</a>
+<a n="vf">PT Sans</a>
+<a n="vfzs">21</a>
+<a n="flon">false</a>
+<m>
+<a n="i">101307132753562798</a>
+<a n="c">1443108002307</a>
+<a n="b">1</a>
+</m>
+<v n="fl">
+<a n="c">0</a>
+</v>
+<v n="flsz">
+<a n="c">0</a>
+</v>
+<v n="flcs">
+<a n="c">0</a>
+</v>
+<v n="flce">
+<a n="c">0</a>
+</v>
+</wv>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">1</a>
+<m>
+<a n="i">1233894057271341122</a>
+<a n="c">1457349316965</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">2</a>
+<a n="val">1</a>
+<m>
+<a n="i">101304081189562799</a>
+<a n="c">1443106553688</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101305587523562800</a>
+<a n="c">1443106553688</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101302138391562801</a>
+<a n="c">1443106553688</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10007">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101302207959562802</a>
+<a n="c">1443106553688</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10008">
+<a n="cls">7</a>
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<m>
+<a n="i">101308749310562803</a>
+<a n="c">1443106553688</a>
+<a n="b">1</a>
+</m>
+<PV n="values"/>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">MultiLine</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578844710477232</a>
+<udV n="0">
+<a n="name">lineGap</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="1">
+<a n="name">currentLineCount</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="2">
+<a n="name">maxLineCount</a>
+<a n="cat">Appearance</a>
+</udV>
+<udV n="3">
+<a n="name">lineSeparators</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">101303446993642488</a>
+<a n="c">1443106633424</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Play/Pause_Button</a>
+<m>
+<a n="i">101305890557642496</a>
+<a n="c">1443106633391</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">70</a>
+<m>
+<a n="i">101304812720642497</a>
+<a n="c">1457348953019</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">70</a>
+<m>
+<a n="i">101308585739642498</a>
+<a n="c">1457348957628</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">170</a>
+<m>
+<a n="i">101308856798642499</a>
+<a n="c">1457349876321</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">15</a>
+<m>
+<a n="i">101302508907642500</a>
+<a n="c">1457349442370</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">101308810775642489</a>
+<a n="c">1443106633367</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10001">
+<a n="lk">101303446993642488$lk$colorationEnabled</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">101306445561642490</a>
+<a n="c">1443106633367</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101302484694642491</a>
+<a n="c">1443106633367</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101300888586642492</a>
+<a n="c">1443106633367</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">6</a>
+<a n="val">false</a>
+<m>
+<a n="i">101305383416642493</a>
+<a n="c">1443106633367</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">10</a>
+<a n="mod">SCRIPT</a>
+<m>
+<a n="i">101307726264642495</a>
+<a n="c">1457355587521</a>
+<a n="b">2</a>
+</m>
+<Value>
+<a n="code">if(dp:Media_isPlayingMusic){
+  dp:Media_isPlayingMusic = false;
+  fire ev:ExtOut_Media_PauseTitle();
+
+}else{
+  dp:Media_isPlayingMusic = true;
+  
+  if(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem !=-1){
+    fire ev:ExtOut_Media_PlayTitle(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem);
+  }else{
+  v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem = 0;
+   fire ev:ExtOut_Media_PlayTitle(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem);
+  }
+}
+
+false;
+</a>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">3</a>
+<a n="0">StateTouched</a>
+<a n="1">Coloration</a>
+<a n="2">TouchShortReleased</a>
+</v>
+<VV>
+<a n="10005">211577837610160841</a>
+</VV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">101300350235642501</a>
+<a n="c">1457349105544</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Play/Pause</a>
+<m>
+<a n="i">101309180843642511</a>
+<a n="c">1443106633373</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="lk">101303446993642488$lk$height</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233897928028126043</a>
+<a n="c">1457349100387</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="lk">101303446993642488$lk$width</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233898300278131182</a>
+<a n="c">1457349105524</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101308022903642514</a>
+<a n="c">1443106633373</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101309601485642515</a>
+<a n="c">1443106633373</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">19</a>
+<a n="cl">de._3soft.guide.properties.values.HMIImageIcon</a>
+<m>
+<a n="i">101300126723642505</a>
+<a n="c">1457342891266</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">true;</a>
+</v>
+<v n="1">
+<a n="code">dp:Media_isPlayingMusic</a>
+</v>
+<v n="2">
+<a n="code">if(dp:Media_isPlayingMusic == true){
+
+v:this.Image_Pause;
+
+}else{
+
+v:this.Image_Play;
+}</a>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">5</a>
+<a n="val">images\Media\Media_pause.png</a>
+<m>
+<a n="i">101302975696642507</a>
+<a n="c">1443106633372</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">5</a>
+<a n="val">images\Media\Media_play.png</a>
+<m>
+<a n="i">101306054405642509</a>
+<a n="c">1443106633373</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">101309715547642510</a>
+<a n="c">1443106633373</a>
+<a n="b">1</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">Image_Pause</a>
+<a n="cat">User defined</a>
+</udV>
+<udV n="1">
+<a n="name">Image_Play</a>
+<a n="cat">User defined</a>
+</udV>
+<udV n="2">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+</CW>
+<wt>
+<a n="t">211573920095478114</a>
+<udV n="0">
+<a n="name">touchable</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="1">
+<a n="name">touched</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="2">
+<a n="name">touchPolicy</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="3">
+<a n="name">touchBehavior</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="4">
+<a n="name">colorationEnabled</a>
+<a n="cat">Coloration</a>
+</udV>
+<udV n="5">
+<a n="name">colorationColor</a>
+<a n="cat">Coloration</a>
+</udV>
+<udV n="6">
+<a n="name">touchShortReleased</a>
+<a n="cat">Touch event</a>
+</udV>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">101309049893825325</a>
+<a n="c">1443107243380</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Skip_Button</a>
+<m>
+<a n="i">101301195321825333</a>
+<a n="c">1443106816198</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">70</a>
+<m>
+<a n="i">101305733789825334</a>
+<a n="c">1457349134667</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">70</a>
+<m>
+<a n="i">101300192278825335</a>
+<a n="c">1457349137453</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">290</a>
+<m>
+<a n="i">101305316002825336</a>
+<a n="c">1457349895204</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">15</a>
+<m>
+<a n="i">101309769533825337</a>
+<a n="c">1457349448368</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">6</a>
+<a n="val">false</a>
+<m>
+<a n="i">101304330676825326</a>
+<a n="c">1457349726878</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">101306790383825327</a>
+<a n="c">1443106816179</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10003">
+<a n="lk">101309049893825325$lk$colorationEnabled</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">101303696155252605</a>
+<a n="c">1443107243361</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101305451806825329</a>
+<a n="c">1443106816179</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101303468569825330</a>
+<a n="c">1443106816179</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">10</a>
+<a n="mod">SCRIPT</a>
+<m>
+<a n="i">101303859378825332</a>
+<a n="c">1457018399191</a>
+<a n="b">0</a>
+</m>
+<Value>
+<a n="code">if(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem !=-1){
+    if(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem +1  &gt;=  length v:this-&gt;^-&gt;^-&gt;TUM_TextList.data){
+      v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem = 0;
+    }else{
+      v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem = v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem +1
+    }
+    dp:Media_isPlayingMusic = true;
+    fire ev:ExtOut_Media_PlayTitle(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem);
+}else{
+   v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem = 0;
+   dp:Media_isPlayingMusic = true;
+   fire ev:ExtOut_Media_PlayTitle(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem);
+}
+  
+  false;</a>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">3</a>
+<a n="0">Coloration</a>
+<a n="1">StateTouched</a>
+<a n="2">TouchShortReleased</a>
+</v>
+<VV>
+<a n="10001">211577837610160841</a>
+</VV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">101305439132825338</a>
+<a n="c">1457349091452</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Skip</a>
+<m>
+<a n="i">101302333171825342</a>
+<a n="c">1443106816181</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="lk">101309049893825325$lk$height</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233890760942110758</a>
+<a n="c">1457349085106</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="lk">101309049893825325$lk$width</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233897925433117087</a>
+<a n="c">1457349091433</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101302896551825345</a>
+<a n="c">1443106816181</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101307205806825346</a>
+<a n="c">1443106816181</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Media\Media_skip.png</a>
+<m>
+<a n="i">101308147424825340</a>
+<a n="c">1443106816181</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">101300634498825341</a>
+<a n="c">1443106816181</a>
+<a n="b">1</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+</CW>
+<wt>
+<a n="t">211573920095478114</a>
+<udV n="0">
+<a n="name">colorationEnabled</a>
+<a n="cat">Coloration</a>
+</udV>
+<udV n="1">
+<a n="name">colorationColor</a>
+<a n="cat">Coloration</a>
+</udV>
+<udV n="2">
+<a n="name">touchable</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="3">
+<a n="name">touched</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="4">
+<a n="name">touchPolicy</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="5">
+<a n="name">touchBehavior</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="6">
+<a n="name">touchShortReleased</a>
+<a n="cat">Touch event</a>
+</udV>
+</wt>
+</w>
+<w n="3">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">101307654468083012</a>
+<a n="c">1443107083483</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Skip_Button_Backwards</a>
+<m>
+<a n="i">101308695778083020</a>
+<a n="c">1443107083469</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">70</a>
+<m>
+<a n="i">101304846195083021</a>
+<a n="c">1457349124135</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">70</a>
+<m>
+<a n="i">101302265669083022</a>
+<a n="c">1457349126991</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">50</a>
+<m>
+<a n="i">101301248067083023</a>
+<a n="c">1457349504087</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">15</a>
+<m>
+<a n="i">101303032578083024</a>
+<a n="c">1457349450470</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">6</a>
+<a n="val">false</a>
+<m>
+<a n="i">101304773422083013</a>
+<a n="c">1443107073831</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">101301630434083014</a>
+<a n="c">1443107073831</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10003">
+<a n="lk">101307654468083012$lk$colorationEnabled</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">101302638326083015</a>
+<a n="c">1443107073831</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101305244204083016</a>
+<a n="c">1443107073831</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101308974059083017</a>
+<a n="c">1443107073831</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10006">
+<a n="cls">10</a>
+<a n="mod">SCRIPT</a>
+<m>
+<a n="i">101300205702083019</a>
+<a n="c">1457018372049</a>
+<a n="b">0</a>
+</m>
+<Value>
+<a n="code">if(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem !=-1){
+    if(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem &lt;= 0){
+      v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem = length v:this-&gt;^-&gt;^-&gt;TUM_TextList.data -1;
+    }else{
+      v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem = v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem -1
+    }
+    dp:Media_isPlayingMusic = true;
+    fire ev:ExtOut_Media_PlayTitle(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem);
+}else{
+   v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem = 0;
+   dp:Media_isPlayingMusic = true;
+   fire ev:ExtOut_Media_PlayTitle(v:this-&gt;^-&gt;^-&gt;TUM_TextList.selectedItem);
+}
+  
+  false;</a>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">3</a>
+<a n="0">Coloration</a>
+<a n="1">StateTouched</a>
+<a n="2">TouchShortReleased</a>
+</v>
+<VV>
+<a n="10001">211577837610160841</a>
+</VV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">101304176470083025</a>
+<a n="c">1457349119874</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Skip</a>
+<m>
+<a n="i">101305108805083030</a>
+<a n="c">1443107073834</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1">
+<a n="lk">101307654468083012$lk$height</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233895439020138418</a>
+<a n="c">1457349112758</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="lk">101307654468083012$lk$width</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233894198951145517</a>
+<a n="c">1457349119855</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101300433746083033</a>
+<a n="c">1443107268634</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">101304883536083034</a>
+<a n="c">1443107269787</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Media\Media_skip_Backward.png</a>
+<m>
+<a n="i">101304964154083028</a>
+<a n="c">1443107092688</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">101301977679083029</a>
+<a n="c">1443107073834</a>
+<a n="b">1</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+</CW>
+<wt>
+<a n="t">211573920095478114</a>
+<udV n="0">
+<a n="name">colorationEnabled</a>
+<a n="cat">Coloration</a>
+</udV>
+<udV n="1">
+<a n="name">colorationColor</a>
+<a n="cat">Coloration</a>
+</udV>
+<udV n="2">
+<a n="name">touchable</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="3">
+<a n="name">touched</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="4">
+<a n="name">touchPolicy</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="5">
+<a n="name">touchBehavior</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="6">
+<a n="name">touchShortReleased</a>
+<a n="cat">Touch event</a>
+</udV>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211570514434477693</a>
+</wt>
+</w>
+<w n="10">
+<a n="cls">0</a>
+<a n="childCount">2</a>
+<m>
+<a n="i">101309707045246600</a>
+<a n="c">1457600579108</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">TUM_TextList</a>
+<m>
+<a n="i">101308627362246601</a>
+<a n="c">1442999221137</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">45</a>
+<m>
+<a n="i">101309101317265066</a>
+<a n="c">1442999275191</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">135</a>
+<m>
+<a n="i">101300236509266342</a>
+<a n="c">1442999274800</a>
+<a n="b">1</a>
+</m>
+</wv>
+<wv n="10000"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007">
+<a n="cls">19</a>
+<a n="cl">de._3soft.guide.properties.values.HMIGenericVector</a>
+<a n="gl">de._3soft.guide.properties.values.HMIBoolean</a>
+<m>
+<a n="i">101306479323582225</a>
+<a n="c">1442999974085</a>
+<a n="b">1</a>
+</m>
+<v n="0">
+<a n="code">true</a>
+</v>
+<v n="1">
+<a n="code">dp:ExtIn_MediaPlayer_TitlelList</a>
+</v>
+<v n="2">
+<a n="code">
+f:has_list_window(&amp;dp:ExtIn_MediaPlayer_TitlelList , v:index)
+</a>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code">length dp:ExtIn_MediaPlayer_TitlelList</a>
+</v>
+</wv>
+<wv n="10008"/>
+<wv n="10009"/>
+<wv n="10010"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">101300643471246602</a>
+<a n="c">1443000088300</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+<wv n="10010"/>
+<wv n="10011"/>
+<wv n="10012"/>
+<wv n="10013"/>
+<wv n="10014"/>
+<wv n="10015"/>
+<wv n="10016"/>
+<wv n="10017"/>
+<wv n="10018"/>
+<wv n="10019"/>
+<wv n="10020"/>
+<wv n="10021"/>
+<wv n="10022"/>
+<wv n="10023"/>
+<wv n="10024"/>
+<wv n="10025"/>
+<wv n="10026"/>
+<wv n="10027"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<a n="childCount">2</a>
+<m>
+<a n="i">101304827286246603</a>
+<a n="c">1443007977171</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+<wv n="10010"/>
+<wv n="10011"/>
+<wv n="10012"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">101303612698059823</a>
+<a n="c">1443004244631</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101300649856059806</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">101306133826246604</a>
+<a n="c">1442999221132</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101305225911176598</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="tv10013">true</a>
+</VV>
+<wt>
+<a n="t">101303490760176536</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">101300154454176438</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">8</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">101300497878246605</a>
+<a n="c">1442999221132</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+<wv n="10010"/>
+<wv n="10011"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">8</a>
+<m>
+<a n="i">101306991455246607</a>
+<a n="c">1442999221133</a>
+<a n="b">1</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">101307783818176685</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">101300560369176640</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="10001">101307991713878910</a>
+</VV>
+<wt>
+<a n="t">101304795920176238</a>
+</wt>
+</w>
+<w n="11">
+<a n="cls">0</a>
+<a n="childCount">2</a>
+<m>
+<a n="i">211575840668627682</a>
+<a n="c">1457519527871</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">TUM_VolumeControl_Simple</a>
+<m>
+<a n="i">211570096460627683</a>
+<a n="c">1456941619316</a>
+<a n="b">0</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">35</a>
+<m>
+<a n="i">211578919411627684</a>
+<a n="c">1457338948893</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">380</a>
+<m>
+<a n="i">211575342668627685</a>
+<a n="c">1457345531964</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">590</a>
+<m>
+<a n="i">211579629003627686</a>
+<a n="c">1457341113531</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">560</a>
+<m>
+<a n="i">211572416434627687</a>
+<a n="c">1457349359119</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<a n="childCount">1</a>
+<m>
+<a n="i">1233899087290020391</a>
+<a n="c">1457520025069</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233891263366857191</a>
+<a n="c">1457520282612</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+<wv n="10006"/>
+<wv n="10007"/>
+<wv n="10008"/>
+<wv n="10009"/>
+<wv n="10010"/>
+<wv n="10011"/>
+<wv n="10013"/>
+</CV>
+<VV>
+<a n="tv10012">true</a>
+</VV>
+<wt>
+<a n="t">1233893074570857175</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">1233897161044020375</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<a n="childCount">3</a>
+<m>
+<a n="i">211576641567627688</a>
+<a n="c">1457599645722</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+<wv n="10005"/>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">211577609442627689</a>
+<a n="c">1456943168441</a>
+<a n="b">0</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211573129168308971</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">211570862931627690</a>
+<a n="c">1457338708625</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+<wv n="10004"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">211572637060396885</a>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233892641244499380</a>
+<a n="c">1457341833150</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0"/>
+<wv n="1"/>
+<wv n="2"/>
+<wv n="3"/>
+<wv n="4"/>
+<wv n="5"/>
+<wv n="10000"/>
+<wv n="10001"/>
+<wv n="10002"/>
+<wv n="10003"/>
+</CV>
+<VV/>
+<wt>
+<a n="t">1233899491258499365</a>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211579209905227085</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="10000">211573329868579470</a>
+</VV>
+<wt>
+<a n="t">211578316648164898</a>
+</wt>
+</w>
+</CW>
+<VV>
+<a n="10000">101307413185650804</a>
+</VV>
+<wt>
+<a n="t">211573106765080687</a>
+</wt>
+</vi>

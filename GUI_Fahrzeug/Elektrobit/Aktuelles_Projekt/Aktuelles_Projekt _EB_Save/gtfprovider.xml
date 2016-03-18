@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pl n="gtfprovider" xmlns:p="GUIDE plugin">
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<p:PROV/>
+</pl>

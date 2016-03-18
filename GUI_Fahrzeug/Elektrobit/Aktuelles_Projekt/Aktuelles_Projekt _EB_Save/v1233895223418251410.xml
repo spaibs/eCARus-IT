@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vi n="v1233895223418251410" xmlns:p="GUIDE plugin">
+<a n="cls">0</a>
+<a n="childCount">3</a>
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<m>
+<a n="i">1233895223418251410</a>
+<a n="c">1458226017778</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">eCARus</a>
+<m>
+<a n="i">1233899762362251411</a>
+<a n="c">1458224250356</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">768</a>
+<m>
+<a n="i">1233899658140251412</a>
+<a n="c">1458224295616</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">1024</a>
+<m>
+<a n="i">1233898571485251413</a>
+<a n="c">1458224287490</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233896016321251414</a>
+<a n="c">1458224242785</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233897519941251415</a>
+<a n="c">1458224242785</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<CW>
+<w n="0">
+<a n="cls">0</a>
+<m>
+<a n="i">1233897084111182351</a>
+<a n="c">1458225195647</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Rectangle</a>
+<m>
+<a n="i">1233898194119182353</a>
+<a n="c">1458225173955</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="lk">1233890202243275617$lk$height</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233892759956197664</a>
+<a n="c">1458225189258</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="lk">1233890202243275617$lk$width</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233894867460191037</a>
+<a n="c">1458225182633</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233892309091182356</a>
+<a n="c">1458225173955</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233892851365182357</a>
+<a n="c">1458225173955</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">4</a>
+<a n="val">-16433226</a>
+<m>
+<a n="i">1233895281632204042</a>
+<a n="c">1458225350315</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<VV/>
+<wt>
+<a n="t">211570514434477693</a>
+</wt>
+</w>
+<w n="1">
+<a n="cls">0</a>
+<m>
+<a n="i">1233890202243275617</a>
+<a n="c">1458224352359</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">Image</a>
+<m>
+<a n="i">1233894038927275618</a>
+<a n="c">1458224266986</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="lk">1233895223418251410$lk$height</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233896414530309917</a>
+<a n="c">1458224301277</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="lk">1233895223418251410$lk$width</a>
+<a n="la">false</a>
+<a n="vtaLD">0</a>
+<m>
+<a n="i">1233893253727284216</a>
+<a n="c">1458224275578</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233892600130275621</a>
+<a n="c">1458224266986</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233891056329275622</a>
+<a n="c">1458224266986</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">5</a>
+<a n="val">images\Specials\eCARusNewLogo.png</a>
+<m>
+<a n="i">1233894790166313569</a>
+<a n="c">1458224325651</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001">
+<a n="cls">2</a>
+<a n="val">1</a>
+<m>
+<a n="i">1233894584991360990</a>
+<a n="c">1458224354065</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233891567182355799</a>
+<a n="c">1458224349336</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">2</a>
+<m>
+<a n="i">1233892105527326021</a>
+<a n="c">1458225167721</a>
+<a n="b">2</a>
+</m>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">1</a>
+<a n="0">ScaleMode</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211578535415477474</a>
+<udV n="0">
+<a n="name">scaleMode</a>
+<a n="cat">Appearance</a>
+</udV>
+</wt>
+</w>
+<w n="2">
+<a n="cls">0</a>
+<m>
+<a n="i">1233896924201400766</a>
+<a n="c">1458226087146</a>
+<a n="b">2</a>
+</m>
+<CV>
+<wv n="0">
+<a n="cls">1</a>
+<a n="val">setIconButton</a>
+<m>
+<a n="i">1233895862598400773</a>
+<a n="c">1458225392363</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="1">
+<a n="cls">2</a>
+<a n="val">70</a>
+<m>
+<a n="i">1233892747943400774</a>
+<a n="c">1458299793945</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="2"/>
+<wv n="3">
+<a n="cls">2</a>
+<a n="val">40</a>
+<m>
+<a n="i">1233892786385400775</a>
+<a n="c">1458299787472</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="4">
+<a n="cls">2</a>
+<a n="val">846</a>
+<m>
+<a n="i">1233892408446400776</a>
+<a n="c">1458299800715</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="5">
+<a n="cls">2</a>
+<a n="val">471</a>
+<m>
+<a n="i">1233896249851400777</a>
+<a n="c">1458299797655</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10000">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233898878537400767</a>
+<a n="c">1458225392358</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10001">
+<a n="cls">6</a>
+<a n="val">true</a>
+<m>
+<a n="i">1233891648507400768</a>
+<a n="c">1458225392358</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10002">
+<a n="cls">6</a>
+<a n="val">false</a>
+<m>
+<a n="i">1233899457472400769</a>
+<a n="c">1458225392358</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10003">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233891049770400770</a>
+<a n="c">1458225392358</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10004">
+<a n="cls">2</a>
+<a n="val">0</a>
+<m>
+<a n="i">1233896748644400771</a>
+<a n="c">1458225392358</a>
+<a n="b">2</a>
+</m>
+</wv>
+<wv n="10005">
+<a n="cls">10</a>
+<a n="mod">SCRIPT</a>
+<m>
+<a n="i">1233897114016400772</a>
+<a n="c">1458225410288</a>
+<a n="b">2</a>
+</m>
+<Value>
+<a n="code">v:this.index += 1;
+false;</a>
+<a n="retType">de._3soft.guide.properties.values.HMIBoolean</a>
+</Value>
+</wv>
+<wv n="10006">
+<a n="cls">19</a>
+<m>
+<a n="i">1233898294058037539</a>
+<a n="c">1458226087137</a>
+<a n="b">2</a>
+</m>
+<v n="0">
+<a n="code">if(v:this.index == 10)
+{
+fire ev:Menu_GoTo_Home()
+}
+false;</a>
+</v>
+<v n="1">
+<a n="code">v:this.index</a>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</wv>
+</CV>
+<v n="wf">
+<a n="c">2</a>
+<a n="0">StateTouched</a>
+<a n="1">TouchShortReleased</a>
+</v>
+<VV/>
+<wt>
+<a n="t">211573920095478114</a>
+<udV n="0">
+<a n="name">index</a>
+<a n="cat">User defined</a>
+</udV>
+<udV n="1">
+<a n="name">touchable</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="2">
+<a n="name">touched</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="3">
+<a n="name">touchPolicy</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="4">
+<a n="name">touchBehavior</a>
+<a n="cat">Behavior</a>
+</udV>
+<udV n="5">
+<a n="name">touchShortReleased</a>
+<a n="cat">Touch event</a>
+</udV>
+<udV n="6">
+<a n="name">Widget property</a>
+<a n="cat">User defined</a>
+</udV>
+</wt>
+</w>
+</CW>
+<VV/>
+<wt>
+<a n="t">211575611154478320</a>
+</wt>
+</vi>

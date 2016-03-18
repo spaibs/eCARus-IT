@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prj n="eCARus_SS15(VERSION03)" xmlns:p="GUIDE plugin">
+<a n="renderer">1</a>
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<a n="versionBuild">92525</a>
+<a n="moduleVersion">241</a>
+<u n="settings" t="SET"/>
+<u n="projectOptions" t="SET"/>
+<u n="classNames" t="CLN"/>
+<u n="languages" t="L"/>
+<u n="properties" t="P"/>
+<u n="views" t="VI"/>
+<u n="variants" t="VA"/>
+<u n="transitions" t="T"/>
+<u n="widgetTemplates" t="WT"/>
+<m>
+<a n="i">211572932263474987</a>
+<a n="c">1458311162777</a>
+<a n="b">2</a>
+</m>
+<u n="diagrams" t="D"/>
+<w n="com.elektrobit.guide.plugins.gtf.adapter.widgets.HMIWidgetAdapter2D">
+<v n="variableNames">
+<a n="c">6</a>
+<a n="0">name</a>
+<a n="1">height</a>
+<a n="2">visible</a>
+<a n="3">width</a>
+<a n="4">x</a>
+<a n="5">y</a>
+</v>
+</w>
+<w n="com.elektrobit.guide.plugins.gtf.adapter.widgets.HMIWidgetAdapter">
+<v n="variableNames">
+<a n="c">1</a>
+<a n="0">name</a>
+</v>
+</w>
+<w n="com.elektrobit.guide.plugins.gtf.adapter.widgets.HMIWidgetAdapterExtensionPoint">
+<v n="variableNames">
+<a n="c">1</a>
+<a n="0">name</a>
+</v>
+</w>
+<v n="classNames">
+<a n="c">37</a>
+<a n="0">com.elektrobit.guide.plugins.gtf.adapter.widgets.HMIWidgetAdapter2D</a>
+<a n="1">de._3soft.guide.properties.values.HMIString</a>
+<a n="2">de._3soft.guide.properties.values.HMIInteger</a>
+<a n="3">de._3soft.guide.properties.values.HMIFontFromResource</a>
+<a n="4">de._3soft.guide.properties.values.HMIColor</a>
+<a n="5">de._3soft.guide.properties.values.HMIImageIcon</a>
+<a n="6">de._3soft.guide.properties.values.HMIBoolean</a>
+<a n="7">de._3soft.guide.properties.values.HMIGenericVector</a>
+<a n="8">com.elektrobit.guide.plugins.gtf.adapter.widgets.HMIWidgetAdapter</a>
+<a n="9">de._3soft.guide.properties.values.HMIFloat</a>
+<a n="10">de._3soft.guide.properties.values.HMIReaction</a>
+<a n="11">com.elektrobit.guide.plugins.gtf.adapter.widgets.HMIWidgetAdapterExtensionPoint</a>
+<a n="12">de._3soft.guide.guidestate.statemachine.State</a>
+<a n="13">de._3soft.guide.guidestate.statemachine.InitialState</a>
+<a n="14">de._3soft.guide.guidestate.statemachine.HapticsStateMachine</a>
+<a n="15">de._3soft.guide.guidestate.statechart.DiagramWidget</a>
+<a n="16">de._3soft.guide.guidestate.statechart.InitialStateWidget</a>
+<a n="17">de._3soft.guide.guidestate.statechart.ViewStateWidget</a>
+<a n="18">de._3soft.guide.guidestate.statechart.CurveTransitionWidget</a>
+<a n="19">de._3soft.guide.properties.values.HMIScript</a>
+<a n="20">de._3soft.guide.properties.values.HMIFormula</a>
+<a n="21">de._3soft.guide.properties.values.HMIFormattedString</a>
+<a n="22">de._3soft.guide.properties.IntegerFormattedStringFormatter</a>
+<a n="23">de._3soft.guide.event.dynamic.UniversalParameterEventDefinition</a>
+<a n="24">de._3soft.guide.condition.actions.SendEventAction</a>
+<a n="25">de._3soft.guide.condition.nodes.IfRootNode</a>
+<a n="26">de._3soft.guide.condition.nodes.CompareNode</a>
+<a n="27">de._3soft.guide.condition.compare.operators.EqualsOperator</a>
+<a n="28">de._3soft.guide.condition.nodes.ElseRootNode</a>
+<a n="29">de._3soft.guide.condition.actions.PropertyActionTerm</a>
+<a n="30">de._3soft.guide.condition.actions.propertyactions.SetValuePropertyAction</a>
+<a n="31">de._3soft.guide.guidestate.statemachine.ConditionState</a>
+<a n="32">de._3soft.guide.guidestate.statechart.ConditionStateWidget</a>
+<a n="33">de._3soft.guide.properties.values.HMIVectorItemProxy</a>
+<a n="34">de._3soft.guide.properties.StringFormattedStringFormatter</a>
+<a n="35">de._3soft.guide.properties.FloatFormattedStringFormatter</a>
+<a n="36">de._3soft.guide.properties.values.HMIObjectModel</a>
+</v>
+<v n="userNames">
+<a n="c">3</a>
+<a n="0">mabl8312</a>
+<a n="1">jonas</a>
+<a n="2">gvm405</a>
+</v>
+<v n="modulePaths">
+<a n="c">0</a>
+</v>
+<u n="gtfprovider" t="pl"/>
+<u n="gtfmetainfo" t="pl"/>
+<u n="events" t="E"/>
+<u n="states" t="S"/>
+</prj>

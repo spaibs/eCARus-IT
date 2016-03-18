@@ -1,0 +1,2686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<P n="properties" xmlns:p="GUIDE plugin">
+<a n="version">5.5</a>
+<a n="versionPatch">3</a>
+<vP n="ExtIn_Indicator_Fern_IsOn">
+<a n="cls">6</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211573406018580840</a>
+<a n="c">1456923056880</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">false</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Indicator_Light_IsOn">
+<a n="cls">6</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211573260005669803</a>
+<a n="c">1456923061934</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">false</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Indicator_Left_IsOn">
+<a n="cls">6</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211575778942718692</a>
+<a n="c">1456923060440</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">false</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Indicator_Right_IsOn">
+<a n="cls">6</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211573032550765430</a>
+<a n="c">1456923064975</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">false</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Indicator_Warning_IsOn">
+<a n="cls">6</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211572156853827664</a>
+<a n="c">1456923067657</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">false</a>
+</pv>
+</PV>
+</vP>
+<vP n="Battery_Percentage">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<m>
+<a n="i">211571048152128049</a>
+<a n="c">1457952083805</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">86</a>
+</pv>
+</PV>
+</vP>
+<vP n="Color_Highlight_Touch">
+<a n="cls">4</a>
+<m>
+<a n="i">211577837610160841</a>
+<a n="c">1457519876297</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">-65536</a>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Home">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211577295319194292</a>
+<a n="c">1440406871486</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">General</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Startseite</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">General</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Page d'accueil</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Media">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211571736660478421</a>
+<a n="c">1440406826618</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Media</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Medien</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Media</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Médias</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Navigation">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211575673210530698</a>
+<a n="c">1440406823467</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Navigation</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Navigation</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Navigation</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Navigation</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Gesture">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211573999982544409</a>
+<a n="c">1457535259419</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Gesture</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Gesten</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Gesture</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Geste</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Settings">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211575743952560338</a>
+<a n="c">1457534220002</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Settings</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Einstellungen</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Settings</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Paramètres</a>
+<a n="est">1</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Information">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211579005928573154</a>
+<a n="c">1440406833159</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Information</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Informationen</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Information</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Information</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Info_General">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211572505006651340</a>
+<a n="c">1440406888140</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Information - General</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Informationen - Allgemein</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Information - General</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Information - General</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Info_Battery">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211573756724694194</a>
+<a n="c">1440406880123</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Information - Battery</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Informationen - Betterie</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Information - Battery</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Information - Battery</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Info_Technical">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211578014937743587</a>
+<a n="c">1440406915581</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Information - Technical</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Informationen - Technik</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Information - Technical</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Information - Technical</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Info_Sponsors1">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211573787840808702</a>
+<a n="c">1457968361428</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Information - Sponsors</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Informationen - Sponsoren </a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Information - Sponsors</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Information - Sponsors </a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Info_Sponsors2">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211575442626853796</a>
+<a n="c">1457968345510</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Information - Supporter</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Informationen - Unterstützer</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Information - Supporter</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Information - Soutiens</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Info_General">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211576362374557004</a>
+<a n="c">1440406849614</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">General</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Allgemein</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">General</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">General</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Info_Battery">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211573503916605315</a>
+<a n="c">1440406854941</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Battery</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Batterie</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Battery</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Battery</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Info_Technical">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211572462349788691</a>
+<a n="c">1440406837833</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Technical</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Technik</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Technical</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Technical</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Menu_Info_CurrentItem_Selected">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<m>
+<a n="i">211576084914474172</a>
+<a n="c">1440404489960</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">0</a>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Info_Sponsors">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211575564896750283</a>
+<a n="c">1440406843156</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Sponsors</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Sponsoren</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Sponsors</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Sponsors</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Menu_Info_CurrentSponsor_Selected">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<m>
+<a n="i">211575938727979204</a>
+<a n="c">1440407496796</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">0</a>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Info_General_Text">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211570697137018478</a>
+<a n="c">1440408199652</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Since spring 2009, eCarus offers each semester about 50 students the possibility of applying their gained skills and knowledge on the construction of a real electric vehicle. The main objectives of this project are to increase technical expertise in the field of electric mobility on the one hand and to enable the students to gain experience in group work on the other hand.\n\n\nThe project eCarus is completely organized by students and therefore it offers students the opportunity to enhance their skills in self-reliance, teamwork, leadership and responsibility.\n\n\n“What makes eCarus so special is the connection of theory and practice, technology and social skills applied to a highly active and exciting topic –electric mobility. ECarus offers me the unique opportunity to acquire competences for my future professional life.”</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Seit dem Frühjahr 2009 bietet eCARus jedes Semester ca.50 Studierenden der Fakultät für Elektrotechnik und Informationstechnik der Technischen Universität München die Möglichkeit,  die im Studium  erlernten Inhalte beim Bau eines Elektrofahrzeugs anzuwenden. Die Hauptziele des Projekts sind  einerseits die Stärkung der Fachkompetenz im Bereich Elektromobilität, anderseits erlernen die Studierenden  die Fähigkeit teamübergreifend zu kooperieren.\n\n\nThe project eCarus is completely organized by students and therefore it offers students the opportunity to enhance their skills in self-reliance, teamwork, leadership and responsibility.\n\n\nDas rein studentisch organisierte Projekt bietet den Studierenden die Möglichkeit ihre Fähigkeiten, u.a. in den Bereichen selbstständiges Arbeiten, Teamwork, Führung und Projekt Verantwortung, auszubauen.</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Since spring 2009, eCarus offers each semester about 50 students the possibility of applying their gained skills and knowledge on the construction of a real electric vehicle. The main objectives of this project are to increase technical expertise in the field of electric mobility on the one hand and to enable the students to gain experience in group work on the other hand.\n\n\nThe project eCarus is completely organized by students and therefore it offers students the opportunity to enhance their skills in self-reliance, teamwork, leadership and responsibility.\n\n\n“What makes eCarus so special is the connection of theory and practice, technology and social skills applied to a highly active and exciting topic –electric mobility. ECarus offers me the unique opportunity to acquire competences for my future professional life.”</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Depuis 2009, offre eCARus ,chaque semestre, a environ 50 etudiants en electro-et informationtechnique la possibilite  d'appliquer le contenu theorique du cours afin de construire une voiture electrique.\n\n\nLe but de ce projet consiste a renforcer ses connaissances dans le domaine de l'electromobilite et d'ameliorer ses  capacites a travailler en equipe. Certes, ce projet est destine en premier lieu a permettre aux etudiants de se former techniquement a travers le travail independant et socialement a travers le travail d'equipe, la direction et la  responsabilite du projet.\n\n\n&quot;La particularite de eCARus se base sur l'alternance entre la theorie et la pratique , la technique et les competences sociales autour d'un theme attractif et actuel de nos jours qu'est: L'electromobilite. eCARus est une opportunite inegale de nous former pour integrer le monde du travail.&quot;</a>
+<a n="est">1</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Info_General_Name">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211579024748047950</a>
+<a n="c">1440408063766</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Lucas Höfer, 9th semester</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Lucas Höfer, 9. Semester</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Lucas Höfer, 9th semester</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Lucas Höfer, 9th semester</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Info_Battery_Item">
+<a n="cls">7</a>
+<a n="language">true</a>
+<m>
+<a n="i">211576545384347043</a>
+<a n="c">1458056421531</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Number of cells</a>
+</pv>
+<pv n="1">
+<a n="val">Interconnection</a>
+</pv>
+<pv n="2">
+<a n="val">Energy content</a>
+</pv>
+<pv n="3">
+<a n="val">Cooling</a>
+</pv>
+<pv n="4">
+<a n="val">Material</a>
+</pv>
+<pv n="5">
+<a n="val">Features</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211572253407201191">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Zellenzahl</a>
+</pv>
+<pv n="1">
+<a n="val">Verschaltung</a>
+</pv>
+<pv n="2">
+<a n="val">Energiegehalt</a>
+</pv>
+<pv n="3">
+<a n="val">Kühlung</a>
+</pv>
+<pv n="4">
+<a n="val">Material</a>
+</pv>
+<pv n="5">
+<a n="val">Besonderheit</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211573085332474990">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Number of cells</a>
+</pv>
+<pv n="1">
+<a n="val">Interconnection</a>
+</pv>
+<pv n="2">
+<a n="val">Energy content</a>
+</pv>
+<pv n="3">
+<a n="val">Cooling</a>
+</pv>
+<pv n="4">
+<a n="val">Material</a>
+</pv>
+<pv n="5">
+<a n="val">Features</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211576245505306597">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">2</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Nombre de piles</a>
+</pv>
+<pv n="1">
+<a n="val">Interconnection</a>
+</pv>
+<pv n="2">
+<a n="val">Energie contenue</a>
+</pv>
+<pv n="3">
+<a n="val">Refroidissement</a>
+</pv>
+<pv n="4">
+<a n="val">Materiaux</a>
+</pv>
+<pv n="5">
+<a n="val">Particularitees</a>
+</pv>
+</PV>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Info_Battery_Value">
+<a n="cls">7</a>
+<a n="language">true</a>
+<m>
+<a n="i">211578764017406006</a>
+<a n="c">1458056416655</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">240</a>
+</pv>
+<pv n="1">
+<a n="val">16s15p</a>
+</pv>
+<pv n="2">
+<a n="val">2x 1.7kWh</a>
+</pv>
+<pv n="3">
+<a n="val">Passive</a>
+</pv>
+<pv n="4">
+<a n="val">Lithiumeisenphosphat(LiFePO4)</a>
+</pv>
+<pv n="5">
+<a n="val">Modular construction</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211572253407201191">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">240</a>
+</pv>
+<pv n="1">
+<a n="val">16s15p</a>
+</pv>
+<pv n="2">
+<a n="val">2x 1.7kWh</a>
+</pv>
+<pv n="3">
+<a n="val">Passiv</a>
+</pv>
+<pv n="4">
+<a n="val">Lithiumeisenphosphat(LiFePO4)</a>
+</pv>
+<pv n="5">
+<a n="val">Modulbauweise</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211573085332474990">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<PV n="values">
+<pv n="0">
+<a n="val">240</a>
+</pv>
+<pv n="1">
+<a n="val">16s15p</a>
+</pv>
+<pv n="2">
+<a n="val">2x 1.7kWh</a>
+</pv>
+<pv n="3">
+<a n="val">Passiv</a>
+</pv>
+<pv n="4">
+<a n="val">Lithiumeisenphosphat(LiFePO4)</a>
+</pv>
+<pv n="5">
+<a n="val">Modulbauweise</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211576245505306597">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">2</a>
+<PV n="values">
+<pv n="0">
+<a n="val">240</a>
+</pv>
+<pv n="1">
+<a n="val">16s15p</a>
+</pv>
+<pv n="2">
+<a n="val">2x 1.7kWh</a>
+</pv>
+<pv n="3">
+<a n="val">Passive</a>
+</pv>
+<pv n="4">
+<a n="val">Lithiumeisenphosphat(LiFePO4)</a>
+</pv>
+<pv n="5">
+<a n="val">Construction modulaire</a>
+</pv>
+</PV>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Info_Technical_Item">
+<a n="cls">7</a>
+<a n="language">true</a>
+<m>
+<a n="i">211579727498483207</a>
+<a n="c">1440422439221</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Performance</a>
+</pv>
+<pv n="1">
+<a n="val">Torque</a>
+</pv>
+<pv n="2">
+<a n="val">Top speed</a>
+</pv>
+<pv n="3">
+<a n="val">Weight</a>
+</pv>
+<pv n="4">
+<a n="val">Micro-controller</a>
+</pv>
+<pv n="5">
+<a n="val">Command of Converter</a>
+</pv>
+<pv n="6">
+<a n="val">GUI</a>
+</pv>
+<pv n="7">
+<a n="val">Speedometer</a>
+</pv>
+<pv n="8">
+<a n="val">Communication</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211572253407201191">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Leistung</a>
+</pv>
+<pv n="1">
+<a n="val">Drehmoment</a>
+</pv>
+<pv n="2">
+<a n="val">Höchstgeschwindigkeit</a>
+</pv>
+<pv n="3">
+<a n="val">Gewicht</a>
+</pv>
+<pv n="4">
+<a n="val">Microcontroller</a>
+</pv>
+<pv n="5">
+<a n="val">Ansteuerung des Umrichters</a>
+</pv>
+<pv n="6">
+<a n="val">GUI</a>
+</pv>
+<pv n="7">
+<a n="val">Tacho</a>
+</pv>
+<pv n="8">
+<a n="val">Kommunikation</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211573085332474990">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Performance</a>
+</pv>
+<pv n="1">
+<a n="val">Torque</a>
+</pv>
+<pv n="2">
+<a n="val">Top speed</a>
+</pv>
+<pv n="3">
+<a n="val">Weight</a>
+</pv>
+<pv n="4">
+<a n="val">Micro-controller</a>
+</pv>
+<pv n="5">
+<a n="val">Command of Converter</a>
+</pv>
+<pv n="6">
+<a n="val">GUI</a>
+</pv>
+<pv n="7">
+<a n="val">Speedometer</a>
+</pv>
+<pv n="8">
+<a n="val">Communication</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211576245505306597">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">2</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Puissance</a>
+</pv>
+<pv n="1">
+<a n="val">Moment de rotation</a>
+</pv>
+<pv n="2">
+<a n="val">Vitesse max</a>
+</pv>
+<pv n="3">
+<a n="val">Poids</a>
+</pv>
+<pv n="4">
+<a n="val">Micro-processeur</a>
+</pv>
+<pv n="5">
+<a n="val">Commande des convertisseurs</a>
+</pv>
+<pv n="6">
+<a n="val">GUI</a>
+</pv>
+<pv n="7">
+<a n="val">Tachometre</a>
+</pv>
+<pv n="8">
+<a n="val">Communication</a>
+</pv>
+</PV>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Info_Technical_Value">
+<a n="cls">7</a>
+<a n="language">true</a>
+<m>
+<a n="i">211576730294493872</a>
+<a n="c">1440422447043</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">2x 5kW rear-wheel drive(Asynchronous machine)</a>
+</pv>
+<pv n="1">
+<a n="val">2x 70Nm (Transmission 7:1)</a>
+</pv>
+<pv n="2">
+<a n="val">60 km/h</a>
+</pv>
+<pv n="3">
+<a n="val">approx. 400Kg</a>
+</pv>
+<pv n="4">
+<a n="val">Micro-controller: Two 16bits S12XF512\nFreescale µC for the calculation of necessary Data (Gas pedal, Light)</a>
+</pv>
+<pv n="5">
+<a n="val">With separated CAN-Bus through the back µC</a>
+</pv>
+<pv n="6">
+<a n="val">Processed by Freescale MCIMX 6Q</a>
+</pv>
+<pv n="7">
+<a n="val">2.8” OLED Display with LEDs for all necessary data</a>
+</pv>
+<pv n="8">
+<a n="val">CAN Bus, Ethernet</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211572253407201191">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">2x 5kW Hinterachsantrieb (Asynchronmachine)</a>
+</pv>
+<pv n="1">
+<a n="val">2x 70Nm Nennmoment (Getriebe 7:1)</a>
+</pv>
+<pv n="2">
+<a n="val">60 km/h</a>
+</pv>
+<pv n="3">
+<a n="val">ca. 400Kg</a>
+</pv>
+<pv n="4">
+<a n="val">Zwei 16bit S12XF5512 Freescale µC für die die Berechnung aller notwendigen Daten (Gaspedal, Taster/Schalter; Licht))</a>
+</pv>
+<pv n="5">
+<a n="val">Über separaten Can Bus durch den hinteren µC</a>
+</pv>
+<pv n="6">
+<a n="val">wird von einem Freescale MCIMX 6Q verarbeitet</a>
+</pv>
+<pv n="7">
+<a n="val">2.8” OLED Display mit LEDs für alle wichtigen Daten</a>
+</pv>
+<pv n="8">
+<a n="val">CAN Bus, Ethernet</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211573085332474990">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">1</a>
+<PV n="values">
+<pv n="0">
+<a n="val">2x 5kW rear-wheel drive(Asynchronous machine)</a>
+</pv>
+<pv n="1">
+<a n="val">2x 70Nm (Transmission 7:1)</a>
+</pv>
+<pv n="2">
+<a n="val">60 km/h</a>
+</pv>
+<pv n="3">
+<a n="val">approx. 400Kg</a>
+</pv>
+<pv n="4">
+<a n="val">Micro-controller: Two 16bits S12XF512\nFreescale µC for the calculation of necessary Data (Gas pedal, Light)</a>
+</pv>
+<pv n="5">
+<a n="val">With separated CAN-Bus through the back µC</a>
+</pv>
+<pv n="6">
+<a n="val">Processed by Freescale MCIMX 6Q</a>
+</pv>
+<pv n="7">
+<a n="val">2.8” OLED Display with LEDs for all necessary data</a>
+</pv>
+<pv n="8">
+<a n="val">CAN Bus, Ethernet</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211576245505306597">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<a n="est">2</a>
+<PV n="values">
+<pv n="0">
+<a n="val">2x 5kW traction arriere (machine asynchrone)</a>
+</pv>
+<pv n="1">
+<a n="val">2x 70Nm (Transmission 7:1)</a>
+</pv>
+<pv n="2">
+<a n="val">60 km/h</a>
+</pv>
+<pv n="3">
+<a n="val">ca. 400Kg</a>
+</pv>
+<pv n="4">
+<a n="val">Micro-processeur: Deux 16bits S12XF512\nFreescale µC pour calculer les donnees necessaires (pedale de gas,lumiere)</a>
+</pv>
+<pv n="5">
+<a n="val">Avec des CAN-Bus separes a travers le µc arriere</a>
+</pv>
+<pv n="6">
+<a n="val">sous Freescale MCIMX 6Q</a>
+</pv>
+<pv n="7">
+<a n="val">2.8” OLED Display avec des LEDs pour  les donnees</a>
+</pv>
+<pv n="8">
+<a n="val">CAN Bus, Ethernet</a>
+</pv>
+</PV>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Color_Highlight_Gold">
+<a n="cls">4</a>
+<m>
+<a n="i">211575246162381663</a>
+<a n="c">1440417388654</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">-1250233</a>
+</pv>
+</PV>
+</vP>
+<vP n="Color_Highlight_Silver">
+<a n="cls">4</a>
+<m>
+<a n="i">211579813596403650</a>
+<a n="c">1457605053967</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">-3355444</a>
+</pv>
+</PV>
+</vP>
+<vP n="Color_Highlight_Bronze">
+<a n="cls">4</a>
+<m>
+<a n="i">211571965847442415</a>
+<a n="c">1457968722600</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">-3381760</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtOut_Navigation_Map_X">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">2</a>
+<m>
+<a n="i">211578227352112579</a>
+<a n="c">1441025930996</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFReaderID">45</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">0</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtOut_Navigation_Map_Y">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">2</a>
+<m>
+<a n="i">211573914375153361</a>
+<a n="c">1441202951552</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFReaderID">45</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">91</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtOut_Navigation_Map_Width">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">2</a>
+<m>
+<a n="i">211577793187174993</a>
+<a n="c">1441025927580</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFReaderID">45</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">1024</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtOut_Navigation_Map_Height">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">2</a>
+<m>
+<a n="i">211574466541216229</a>
+<a n="c">1441202966039</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFReaderID">45</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">597</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Battery_StackSpannung">
+<a n="cls">1</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211575307411936570</a>
+<a n="c">1441202200529</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">????</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Battery_HoechsteZelle">
+<a n="cls">1</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211576214571958698</a>
+<a n="c">1441202190282</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">????</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Battery_NiedrigsteZelle">
+<a n="cls">1</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211579764279975364</a>
+<a n="c">1441202133797</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">????</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Battery_DurchschnittSpannung">
+<a n="cls">1</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211576301505995214</a>
+<a n="c">1441199269679</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">?</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Battery_Temperatur">
+<a n="cls">1</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211578067209010957</a>
+<a n="c">1441202184017</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">??</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Battery_ChargeState">
+<a n="cls">7</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211578336531157287</a>
+<a n="c">1458031053956</a>
+<a n="b">2</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="itemClass">de._3soft.guide.properties.values.HMIInteger</a>
+<PV n="values">
+<pv n="0">
+<a n="val">3</a>
+</pv>
+<pv n="1">
+<a n="val">3</a>
+</pv>
+<pv n="2">
+<a n="val">3</a>
+</pv>
+<pv n="3">
+<a n="val">2</a>
+</pv>
+<pv n="4">
+<a n="val">3</a>
+</pv>
+<pv n="5">
+<a n="val">2</a>
+</pv>
+<pv n="6">
+<a n="val">3</a>
+</pv>
+<pv n="7">
+<a n="val">2</a>
+</pv>
+<pv n="8">
+<a n="val">3</a>
+</pv>
+<pv n="9">
+<a n="val">2</a>
+</pv>
+<pv n="10">
+<a n="val">3</a>
+</pv>
+<pv n="11">
+<a n="val">3</a>
+</pv>
+<pv n="12">
+<a n="val">2</a>
+</pv>
+<pv n="13">
+<a n="val">3</a>
+</pv>
+<pv n="14">
+<a n="val">1</a>
+</pv>
+<pv n="15">
+<a n="val">2</a>
+</pv>
+<pv n="16">
+<a n="val">3</a>
+</pv>
+</PV>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_Battery_ChargeInfo">
+<a n="cls">7</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211578865335198197</a>
+<a n="c">1457971990561</a>
+<a n="b">2</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<PV n="values">
+<pv n="0">
+<a n="val"/>
+</pv>
+<pv n="1">
+<a n="val"/>
+</pv>
+<pv n="2">
+<a n="val"/>
+</pv>
+<pv n="3">
+<a n="val"/>
+</pv>
+<pv n="4">
+<a n="val"/>
+</pv>
+<pv n="5">
+<a n="val"/>
+</pv>
+<pv n="6">
+<a n="val"/>
+</pv>
+<pv n="7">
+<a n="val"/>
+</pv>
+<pv n="8">
+<a n="val"/>
+</pv>
+<pv n="9">
+<a n="val"/>
+</pv>
+<pv n="10">
+<a n="val"/>
+</pv>
+<pv n="11">
+<a n="val"/>
+</pv>
+<pv n="12">
+<a n="val"/>
+</pv>
+<pv n="13">
+<a n="val"/>
+</pv>
+<pv n="14">
+<a n="val"/>
+</pv>
+<pv n="15">
+<a n="val"/>
+</pv>
+<pv n="16">
+<a n="val"/>
+</pv>
+</PV>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Settings_Mode">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211570481363082798</a>
+<a n="c">1441115175382</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Vehicle Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Fahrzeugmodus</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Vehicle Mode</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Settings_Language">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211576872438248146</a>
+<a n="c">1441113219620</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Language</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Sprache</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Language</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Langue</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Settings">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211572010935159906</a>
+<a n="c">1441115202359</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Settings</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Einstellungen</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Settings</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Settings</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Settings_Mode">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211576865510175124</a>
+<a n="c">1441119395163</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Settings - Vehicle Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Einstellungen - Fahrzeugmodus</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Settings - Vehicle Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Settings - Vehicle Mode</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Settings_Language">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211576585682183174</a>
+<a n="c">1441115226762</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Settings - Language</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Einstellungen - Sprache</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Settings - Language</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Settings - Language</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Button_Mode_Eco">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211571824071209145</a>
+<a n="c">1441119196644</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Eco Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Öko-Modus</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Eco Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Mode eco</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Button_Mode_Sport">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211572351756260461</a>
+<a n="c">1441119241563</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Sport Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Sport-Modus</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Sport Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Mode sport</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Button_Mode_Recuperation">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211579826811341693</a>
+<a n="c">1441119324922</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Recuperation Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Rekuperationsmodus</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Recuperation Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Mode recuperation</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Button_Mode_Boost">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211574470174396688</a>
+<a n="c">1441119371512</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Boost Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Boost-Modus</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Boost Mode</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Mode boost</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_VehicleMode_CurrentMode">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">211577413984254912</a>
+<a n="c">1441176261411</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">42</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">0</a>
+</pv>
+</PV>
+</vP>
+<vP n="Content_BatteryManager_StackVoltage">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211570794474712505</a>
+<a n="c">1441201752347</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Stack Voltage</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Stack-Spannung</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Stack Voltage</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Stack Voltage</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_BatteryManager_Current">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211577930420799973</a>
+<a n="c">1441201813010</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Current</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Strom</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Current</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Courant</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_BatteryManager_LowestV">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211574050268864366</a>
+<a n="c">1441201992292</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Lowest V</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Niedrigste Spannung</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Lowest V</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Min V</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_BatteryManager_HighestV">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211573910344953218</a>
+<a n="c">1441201974443</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Highest V</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Höchste Spannung</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Highest V</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Max V</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_BatteryManager_Temperature">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211577962079040205</a>
+<a n="c">1441202046939</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Temperature</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Temperatur</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Temperature</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Temperature</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Content_Gestures_InfoText">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">211571718942720580</a>
+<a n="c">1441355794052</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Please perform a freehands gesture.\nAn arrow will be shown according to detected gesture.</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Bitte Freihand-Geste ausführen.\nEs wird ein Icon entsprechend der erkannten Geste eingeblendet.</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Please perform a freehands gesture.\nAn arrow will be shown according to detected gesture.</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Please perform a freehands gesture.\nAn arrow will be shown according to detected gesture.</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="MenuItem_Button_Radio">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">101302712066221353</a>
+<a n="c">1442914155386</a>
+<a n="b">1</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Radio</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Radio</a>
+<a n="est">1</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Radio</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Radio</a>
+<a n="est">2</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="ExtIn_MediaPlayer_TitlelList">
+<a n="cls">7</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">1</a>
+<m>
+<a n="i">101307991713878910</a>
+<a n="c">1457511510185</a>
+<a n="b">2</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFWriterID">43</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<PV n="values">
+<pv n="0">
+<a n="val">Boney M. - Daddy Cool [3:28]</a>
+</pv>
+<pv n="1">
+<a n="val">Parov Stelar - Gin Tonic [3:18]</a>
+</pv>
+<pv n="2">
+<a n="val">Analogik - Gypsy Doodle [2:53]</a>
+</pv>
+<pv n="3">
+<a n="val">Rammstein - Los [4:05]</a>
+</pv>
+<pv n="4">
+<a n="val">Ratatat - Loud Pipes [3:48]</a>
+</pv>
+<pv n="5">
+<a n="val">Boney M. - Ma Baker [3:59]</a>
+</pv>
+<pv n="6">
+<a n="val">Boney M. - Rasputin [4:28]</a>
+</pv>
+<pv n="7">
+<a n="val">The Correspondents - Right now [4:32]</a>
+</pv>
+<pv n="8">
+<a n="val">Gramatik - So Much For Love [5:34]</a>
+</pv>
+<pv n="9">
+<a n="val">Boney M. - Sunny [4:02]</a>
+</pv>
+<pv n="10">
+<a n="val">Dutty Moonshine - Takin' It Back [6:52]</a>
+</pv>
+<pv n="11">
+<a n="val">AC/DC - Thunderstruck [4:51]</a>
+</pv>
+<pv n="12">
+<a n="val">Urban Cone - Urban Photograph [3:51]</a>
+</pv>
+<pv n="13">
+<a n="val">System of a Down - Violent Pornography [3:33]</a>
+</pv>
+<pv n="14">
+<a n="val">Infected Mushroom - Where Do I Belong [3:26]</a>
+</pv>
+<pv n="15">
+<a n="val">Wolfmother - Woman (Mstrkrft Remix) [3:28]</a>
+</pv>
+</PV>
+</pv>
+</PV>
+</vP>
+<vP n="ViewTitle_Media">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">101307413185650804</a>
+<a n="c">1443003605037</a>
+<a n="b">1</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Media</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Medien</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Media</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Médias</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Media_isPlayingMusic">
+<a n="cls">6</a>
+<a n="dynamic">true</a>
+<m>
+<a n="i">101309237797346572</a>
+<a n="c">1443104338128</a>
+<a n="b">1</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">false</a>
+</pv>
+</PV>
+</vP>
+<vP n="Gesture_Control">
+<a n="cls">19</a>
+<m>
+<a n="i">101307146682411081</a>
+<a n="c">1443517842417</a>
+<a n="b">1</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<v n="0">
+<a n="code">match_event v:evt=ev:ExtIn_Tower_Gesture_SN in
+{
+  fire ev:Menu_GoTo_Home()
+}
+false;</a>
+</v>
+<v n="1">
+<a n="code">ev:ExtIn_Tower_Gesture_SN</a>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</pv>
+</PV>
+</vP>
+<vP n="MediaPlayer_Volume">
+<a n="cls">9</a>
+<a n="dynamic">true</a>
+<m>
+<a n="i">211573329868579470</a>
+<a n="c">1456944264263</a>
+<a n="b">0</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">1.0</a>
+</pv>
+</PV>
+</vP>
+<vP n="ExtOut_MediaPlayer_VolumeSet">
+<a n="cls">19</a>
+<m>
+<a n="i">211570380472950147</a>
+<a n="c">1457447206109</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<v n="0">
+<a n="code">//f:trace_string(&quot;Volume out: &quot; + f:float2string(dp:MediaPlayer_Volume))
+dp:ExtOut_MediaPlayer_Volume = dp:MediaPlayer_Volume;
+false;</a>
+</v>
+<v n="1">
+<a n="code">dp:MediaPlayer_Volume;</a>
+</v>
+<v n="2">
+<a n="code"/>
+</v>
+<v n="3">
+<a n="code"/>
+</v>
+<v n="4">
+<a n="code"/>
+</v>
+</pv>
+</PV>
+</vP>
+<vP n="ExtOut_MediaPlayer_Volume">
+<a n="cls">9</a>
+<a n="dynamic">true</a>
+<a n="cnxtF">2</a>
+<m>
+<a n="i">211572014739030589</a>
+<a n="c">1456993261166</a>
+<a n="b">0</a>
+<a n="default">true</a>
+<a n="BLElement">true</a>
+<a n="GTFReaderID">43</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">1.0</a>
+</pv>
+</PV>
+</vP>
+<vP n="Gesture_Down_Button">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">1233899633242910849</a>
+<a n="c">1457440085542</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">DOWN</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">RUNTER</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">DOWN</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">EN BAS</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Gesture_Left_Button">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">1233892871763123560</a>
+<a n="c">1457440145465</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">LEFT</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">LINKS</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">LEFT</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">GAUCHE</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Gesture_UP_Button">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">1233894125847290532</a>
+<a n="c">1457440382911</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">UP</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">HOCH</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">UP</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">EN HAUT</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Gesture_Right_Button">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">1233898742555420722</a>
+<a n="c">1457440438628</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">RIGHT</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">RECHTS</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">RIGHT</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">DROIT</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Gesture_Command">
+<a n="cls">7</a>
+<a n="language">true</a>
+<m>
+<a n="i">1233897464392699774</a>
+<a n="c">1457442228747</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<PV n="values">
+<pv n="0">
+<a n="val"/>
+</pv>
+<pv n="1">
+<a n="val">Enter</a>
+</pv>
+<pv n="2">
+<a n="val">Back</a>
+</pv>
+<pv n="3">
+<a n="val">Selection: Left</a>
+</pv>
+<pv n="4">
+<a n="val">Selection: Right</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211572253407201191">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<PV n="values">
+<pv n="0">
+<a n="val"/>
+</pv>
+<pv n="1">
+<a n="val">Bestätigen</a>
+</pv>
+<pv n="2">
+<a n="val">Zurück</a>
+</pv>
+<pv n="3">
+<a n="val">Auswahl: Links</a>
+</pv>
+<pv n="4">
+<a n="val">Auswahl: Rechts</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211573085332474990">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<PV n="values">
+<pv n="0">
+<a n="val"/>
+</pv>
+<pv n="1">
+<a n="val">Enter</a>
+</pv>
+<pv n="2">
+<a n="val">Back</a>
+</pv>
+<pv n="3">
+<a n="val">Selection: Left</a>
+</pv>
+<pv n="4">
+<a n="val">Selection: Right</a>
+</pv>
+</PV>
+</lpv>
+<lpv n="211576245505306597">
+<a n="itemClass">de._3soft.guide.properties.values.HMIString</a>
+<PV n="values">
+<pv n="0">
+<a n="val"/>
+</pv>
+<pv n="1">
+<a n="val">Bestätigen</a>
+</pv>
+<pv n="2">
+<a n="val">Zurück</a>
+</pv>
+<pv n="3">
+<a n="val">Links</a>
+</pv>
+<pv n="4">
+<a n="val">Rechts</a>
+</pv>
+</PV>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Bottom_Text_specials">
+<a n="cls">1</a>
+<a n="language">true</a>
+<m>
+<a n="i">1233892074134411261</a>
+<a n="c">1457535478540</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<lpv n="211571801591219424">
+<a n="val">Specials</a>
+</lpv>
+<lpv n="211572253407201191">
+<a n="val">Spezial Funktionen</a>
+</lpv>
+<lpv n="211573085332474990">
+<a n="val">Specials</a>
+</lpv>
+<lpv n="211576245505306597">
+<a n="val">Specials</a>
+</lpv>
+</pv>
+</PV>
+</vP>
+<vP n="Color_colorationIndex">
+<a n="cls">2</a>
+<a n="dynamic">true</a>
+<m>
+<a n="i">1233898894768271290</a>
+<a n="c">1457949644233</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">2</a>
+</pv>
+</PV>
+</vP>
+<vP n="touchIndex">
+<a n="cls">6</a>
+<a n="dynamic">true</a>
+<m>
+<a n="i">1233894369197581663</a>
+<a n="c">1458299572573</a>
+<a n="b">2</a>
+<a n="default">true</a>
+</m>
+<PVR>
+<a n="211578502758474991">1</a>
+</PVR>
+<PV>
+<pv n="1">
+<a n="val">false</a>
+</pv>
+</PV>
+</vP>
+</P>
