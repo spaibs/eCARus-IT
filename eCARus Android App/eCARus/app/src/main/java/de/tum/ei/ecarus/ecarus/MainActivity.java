@@ -27,9 +27,6 @@ public class MainActivity extends AppCompatActivity {
     ImageView full_beam_img;
     ImageView brakelights_img;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,11 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-
-
-
-           }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -175,19 +168,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        /*backlights_img.setImageDrawable(null);
-        headlights_img.setImageDrawable(null);
-        left_blinker_img.setImageDrawable(null);
-        right_blinker_img.setImageDrawable(null);
-        full_beam_img.setImageDrawable(null);
-        brakelights_img.setImageDrawable(null);
-
-        super.onDestroy();*/
-    }
 
     public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState, boolean brakelightsState, boolean fullBeamState) {
         Log.d("ecarus", "new image");
