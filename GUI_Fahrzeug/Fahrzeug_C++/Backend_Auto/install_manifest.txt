@@ -1,3 +1,0 @@
-C:/Users/jonas/Desktop/Backend_Auto/./target/./target/libTowerAccess.so
-C:/Users/jonas/Desktop/Backend_Auto/./target/./target/libNavigationServiceAccess.so
-C:/Users/jonas/Desktop/Backend_Auto/./target/./target/libMusicServiceAccess.so

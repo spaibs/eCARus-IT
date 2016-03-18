@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\MusicServiceAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\MusicServiceAccessJNIManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\MusicServiceAccessSO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\datapool_pdal42.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\events_0x10004.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\events_0x10005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\LogCatLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\MusicServiceAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\MusicServiceAccessJNIManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\MusicServiceAccessJNISignatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\MusicServiceAccessSO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\src\MusicServiceUpdateObserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\eCARus\160302\Applikationen\code\MusicServiceAccess\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A847F8F7-6CAA-40CE-B405-ADF08F9A72AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{29C601AE-FCCD-4D70-A487-EFBA470ABCD9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

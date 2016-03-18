@@ -1,3 +1,0 @@
-C:/Users/jonas/Desktop/Backend_Auto/code/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir
-C:/Users/jonas/Desktop/Backend_Auto/code/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir
-C:/Users/jonas/Desktop/Backend_Auto/code/TowerAccess/CMakeFiles/TowerAccess.dir

@@ -1,0 +1,3 @@
+C:/Users/gvm405/Desktop/Applikationen/install/libMusicServiceAccess.so
+C:/Users/gvm405/Desktop/Applikationen/install/libNavigationServiceAccess.so
+C:/Users/gvm405/Desktop/Applikationen/install/libTowerAccess.so

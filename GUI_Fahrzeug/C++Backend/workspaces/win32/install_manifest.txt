@@ -1,0 +1,6 @@
+C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/MusicServiceAccess.lib
+C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/MusicServiceAccess.dll
+C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/NavigationServiceAccess.lib
+C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/NavigationServiceAccess.dll
+C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/TowerAccess.lib
+C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/TowerAccess.dll
