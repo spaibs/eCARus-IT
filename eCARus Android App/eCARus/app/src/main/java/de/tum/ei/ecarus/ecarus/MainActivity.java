@@ -1,25 +1,24 @@
 package de.tum.ei.ecarus.ecarus;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.preference.PreferenceManager;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.content.DialogInterface;
-import android.widget.Spinner;
 
 import java.util.Locale;
 
@@ -27,13 +26,21 @@ public class MainActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-    String languageToLoad;
+    public String langval;
+    ImageView backlights_img;
+    ImageView headlights_img;
+    ImageView left_blinker_img;
+    ImageView right_blinker_img;
+    ImageView full_beam_img;
+    ImageView brakelights_img;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
@@ -48,25 +55,9 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
 
-        /*
-        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
-        //The Configuration class describes all device configuration information that can impact the resources the application retrieves.
-        //This includes both user-specified configuration options (locale and scaling)
-        //as well as device configurations (such as input modes, screen size and screen orientation).
-        Configuration config = getBaseContext().getResources().getConfiguration();
 
-        String language = settings.getString("LANGUAGE", "");
-        //check if the language value saved in the preferences is NOT equal to the language value saved in the device's configuration
-        if (! "".equals(language) && ! config.locale.getLanguage().equals(language)) {
-            //The locale object represents a language/country/variant combination (e.g. "en" for the language code)
-            Locale mylocale = new Locale(language);
-            Locale.setDefault(mylocale);
-            config.locale = mylocale;
-            //update the configuration information
-            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-        }
-        */
-    }
+
+           }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -185,15 +176,35 @@ public class MainActivity extends AppCompatActivity {
     //that are set by using the switches in the control dialog.
     //It is called when the positive button in the control dialog is clicked.
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        /*backlights_img.setImageDrawable(null);
+        headlights_img.setImageDrawable(null);
+        left_blinker_img.setImageDrawable(null);
+        right_blinker_img.setImageDrawable(null);
+        full_beam_img.setImageDrawable(null);
+        brakelights_img.setImageDrawable(null);
+
+        super.onDestroy();*/
+    }
+
     public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState, boolean brakelightsState, boolean fullBeamState) {
         Log.d("ecarus", "new image");
 
-        ImageView backlights_img= (ImageView) findViewById(R.id.backlights_view);
-        ImageView headlights_img= (ImageView) findViewById(R.id.headlights_view);
-        ImageView left_blinker_img = (ImageView) findViewById(R.id.left_blinker_view);
-        ImageView right_blinker_img = (ImageView) findViewById(R.id.right_blinker_view);
-        ImageView full_beam_img = (ImageView) findViewById(R.id.full_beam_view);
-        ImageView brakelights_img = (ImageView) findViewById(R.id.brakelights_view);
+        backlights_img= (ImageView) findViewById(R.id.backlights_view);
+        headlights_img= (ImageView) findViewById(R.id.headlights_view);
+        left_blinker_img = (ImageView) findViewById(R.id.left_blinker_view);
+        right_blinker_img = (ImageView) findViewById(R.id.right_blinker_view);
+        full_beam_img = (ImageView) findViewById(R.id.full_beam_view);
+        brakelights_img = (ImageView) findViewById(R.id.brakelights_view);
 
 
         //Set headlights/full beam
@@ -251,56 +262,4 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-    public void showChangeLangDialog(View view) {
-        Log.d("ecarus", "changelang");
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = this.getLayoutInflater();
-        final View dialogView = inflater.inflate(R.layout.language_dialog, null);
-        dialogBuilder.setView(dialogView);
-
-        final Spinner langSpinner = (Spinner) dialogView.findViewById(R.id.change_lang_dialog);
-
-        dialogBuilder.setTitle(getResources().getString(R.string.lang_dialog_title));
-
-        dialogBuilder.setPositiveButton(R.string.positive_button, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                int langpos = langSpinner.getSelectedItemPosition();
-                switch(langpos) {
-                    case 0: //German
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "de").commit();
-                        setLangRecreate("de");
-                        return;
-                    case 1: //English
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "en").commit();
-                        setLangRecreate("en");
-                        return;
-                    case 2: //French
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANGUAGE", "fr").commit();
-                        setLangRecreate("fr");
-                        return;
-                    default: //By default set to German
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANG", "de").commit();
-                        setLangRecreate("de");
-                }
-            }
-        });
-        dialogBuilder.setNegativeButton(R.string.negative_button, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                //pass
-            }
-        });
-        AlertDialog b = dialogBuilder.create();
-        b.show();
-    }
-
-    public void setLangRecreate(String langval) {
-        Configuration config = getBaseContext().getResources().getConfiguration();
-        Locale locale = new Locale(langval);
-        Locale.setDefault(locale);
-        config.locale = locale;
-        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-        recreate();
-    }
-
 }

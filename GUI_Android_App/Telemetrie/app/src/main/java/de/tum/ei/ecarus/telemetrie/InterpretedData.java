@@ -9,17 +9,17 @@ public class InterpretedData { // data interpretation is stored in an object of 
     String[][] dataString = new String[60][2];
     // DEFAULT CONFIGURATION
 
-    // car informations
+    // car information
     double tirecircmm = 1753;  // the tire circumference of ecarus
 
     // accelerator fallback data
     boolean acceleratorfallback=false; // no fallback by default
     int acceleratorrange=0x8C;
     int acceleratoroffset=0x0C;
-    // this values are the (former) fallback values from the car code
+    // these values are the (former) fallback values from the car code
 
     // converter data factors
-    double converterbatterycurrentfactor = 0.1;	// ??? i am not sure about this data
+    double converterbatterycurrentfactor = 0.1;	// ??? I am not sure about this data
     double convertercapacitorvoltagefactor = 0.015625;
     double convertercontrollertempfactor = 0.1;
     double convertercurrentrequestfactor = 0.1;
@@ -127,7 +127,7 @@ public class InterpretedData { // data interpretation is stored in an object of 
         switch(ID)
         {
 
-            case 0x150:	//Status K60 front
+            case 0x150:	//Status K60 rear
                 EngineSwitch = data[0]&0x0F;
                 MasterSwitch =(data[0]>>4)&0x0F;
                 RunlevelK60rear = data[1] & 0x7F;
@@ -136,7 +136,7 @@ public class InterpretedData { // data interpretation is stored in an object of 
                 // frontTimeOut->start(1000); //QObject killtimer timers cannot be stopped from another thread,timers cannot be started from
                 break;
 
-            case 0x151: //Status K60 rear
+            case 0x151: //Status K60 front
                 EngineSwitch = data[0]&0x0F;
                 MasterSwitch =(data[0]>>4)&0x0F;
                 RunlevelK60front = data[1] & 0x7F;
@@ -365,7 +365,7 @@ public class InterpretedData { // data interpretation is stored in an object of 
                 FullBeamLight=0 != (data[1] & 0x10);
                 WarningLight=0 != (data[1] & 0x40);
                 break;
-            case 0x170: // pedal information
+            case 0x170: // pedal information  (Kalibrierung)
                 Value = data[0];	// accelerator
                 Value += data[1] << 8;
                 ValueF = (float)Value;

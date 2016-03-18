@@ -24,4 +24,5 @@
         android:title="@string/fr"
         app:showAsAction="never" />
         -->
+
 </menu>
