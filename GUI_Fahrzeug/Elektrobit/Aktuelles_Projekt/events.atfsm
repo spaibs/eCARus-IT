@@ -1,0 +1,42 @@
+// GUIDE model version:  5.5.3.92525
+
+event_types
+{
+        event_type default;
+    }
+events
+{
+    @id211573092571836093 event default Menu_GoTo_Media;
+    @id211573225865860831 event default Menu_GoTo_Settings;
+    @id211575853203876695 event default Menu_GoTo_Specials_Gestures;
+    @id211576971798892112 event default Menu_GoTo_Information;
+    @id211574899165091037 event default Menu_GoTo_Battery;
+    @id211579676331975545 event default Menu_GoTo_Home;
+    @id211578749348196041 event default Menu_GoTo_Navigation;
+    @id211575960880721577 event default ExtOut_Navigation_Touch_Move(deltaX::int32_t, deltaY::int32_t) external 65536 0;
+    @id211579274131271624 event default ExtOut_Navigation_Touch_Zoom(zoomFactor::float) external 65536 2;
+    @id211579694840569113 event default ExtOut_Navigation_Touch_Rotate(rotationAngle::float) external 65536 1;
+    @id211574469721997136 event default DoubleTap_Reset;
+    @id211577738056352859 event default ExtOut_Navigation_Touch_DoubleTap(tapX::int32_t, tapY::int32_t) external 65536 3;
+    @id211577637899661892 event default ExtIn_Tower_Gesture_NS external 65540 0;
+    @id211572726594672030 event default ExtIn_Tower_Gesture_SN external 65540 2;
+    @id211572622801688017 event default ExtIn_Tower_Gesture_OW external 65540 1;
+    @id211575284110699466 event default ExtIn_Tower_Gesture_WO external 65540 3;
+    @id211577914633355048 event default Menu_GoTo_Settings_Mode;
+    @id211576600488363267 event default Menu_GoTo_Settings_Language;
+    @id211574273901570180 event default Menu_Back;
+    @id211572377578963673 event default ExtOut_VehicleMode_SetMode(SelectedMode::int32_t) external 65540 4;
+    @id211571498056274180 event default Gesture_ResetIcon;
+    @id211571831282489106 event default ExtOut_Battery_UpdateValues external 65540 5;
+    @id101304386674175393 event default Menu_GoTo_Radio;
+    @id101301829960260632 event default ExtOut_Media_PauseTitle external 65541 6;
+    @id211570959575401020 event default Menu_HomeButton_Pressed;
+    @id211577148936132930 event default ExtOut_Media_PlayTitle(trackIndex::int32_t) external 65541 5;
+    @id1233895693447188983 event default Menu_GoTo_Specials;
+    @id1233894286528761217 event default GoTo_Navigation_Map;
+    @id1233890268040062179 event default ExtOut_Navigation_Select_City(City_Index::int32_t) external 65536 4;
+    @id1233893731749642869 event default Menu_GoTo_Specials_Heartbeat;
+    @id1233895356652754055 event default Menu_GoTo_Specials_Parkingpilot;
+    @id1233893161916773769 event default Menu_GoTo_Specials_LEDs;
+    @id1233895467878696211 event default GoTo_Ecarus;
+}

@@ -1,0 +1,10 @@
+// Generated from eCARus_SS15(VERSION03)
+// by ASCIIExporter
+// date: 18.03.2016   at: 16:47:10
+// GUIDE model version:  5.5.3.92525
+
+include"settings.atfsm"
+include"events.atfsm"
+include"input.atfsm"
+include"state_machine.atfsm"
+

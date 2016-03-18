@@ -1,0 +1,606 @@
+// GUIDE model version:  5.5.3.92525
+
+resource images_sponsors_Neu_Microchip_png image
+{
+    path : "images/sponsors/Neu/Microchip.png";
+}
+resource images_menu_MenuButton_Icon_Parking_png image
+{
+    path : "images/menu/MenuButton_Icon_Parking.png";
+}
+resource images_Media_Media_skip_Backward_png image
+{
+    path : "images/Media/Media_skip_Backward.png";
+}
+resource images_gestures_Pfeil_NS_png image
+{
+    path : "images/gestures/Pfeil_NS.png";
+}
+resource images_menu_MenuButton_Ico_Gestures_big_png image
+{
+    path : "images/menu/MenuButton_Ico_Gestures_big.png";
+}
+resource images_sponsors_Neu_Webasto_png image
+{
+    path : "images/sponsors/Neu/Webasto.png";
+}
+resource images_gestures_Gesture_Zur_ck02_png image
+{
+    path : "images/gestures/Gesture_Zurück02.png";
+}
+resource images_menu_MenuButton_generell_png image
+{
+    path : "images/menu/MenuButton_generell.png";
+}
+resource images_sponsors_Neu_Metawell_png image
+{
+    path : "images/sponsors/Neu/Metawell.png";
+}
+resource images_sponsors_Neu_ArmKeil_png image
+{
+    path : "images/sponsors/Neu/ArmKeil.png";
+}
+resource images_menu_MenuButton_Icon_LED_png image
+{
+    path : "images/menu/MenuButton_Icon_LED.png";
+}
+resource images_gestures_Pfeil_OW_png image
+{
+    path : "images/gestures/Pfeil_OW.png";
+}
+resource Media_speaker_png image
+{
+    path : "Media_speaker.png";
+}
+resource images_menu_MenuButton_Sponsor_png image
+{
+    path : "images/menu/MenuButton_Sponsor.png";
+}
+resource images_Media_Media_play_png image
+{
+    path : "images/Media/Media_play.png";
+}
+resource images_gestures_Pfeil_WO_png image
+{
+    path : "images/gestures/Pfeil_WO.png";
+}
+resource images_sponsors_Neu_Bopla_png image
+{
+    path : "images/sponsors/Neu/Bopla.png";
+}
+resource images_indicators_Indicator_Fern_Off_png image
+{
+    path : "images/indicators/Indicator_Fern_Off.png";
+}
+resource images_sponsors_Premium_ON_Semiconductor_png image
+{
+    path : "images/sponsors/Premium/ON Semiconductor.png";
+}
+resource images_menu_bg_all_png image
+{
+    path : "images/menu/bg_all.png";
+}
+resource images_sponsors_Neu_2DSystems_png image
+{
+    path : "images/sponsors/Neu/2DSystems.png";
+}
+resource images_eCARus_logo_png image
+{
+    path : "images/eCARus_logo.png";
+}
+resource images_menu_MenuButton_Icon_Mode_Eco_png image
+{
+    path : "images/menu/MenuButton_Icon_Mode_Eco.png";
+}
+resource images_sponsors_Neu_Leoni_png image
+{
+    path : "images/sponsors/Neu/Leoni.png";
+}
+resource images_Flag_France_png image
+{
+    path : "images/Flag_France.png";
+}
+resource images_Specials_Waves_Back_png image
+{
+    path : "images/Specials/Waves_Back.png";
+}
+resource images_Specials_eCARusNewLogo_png image
+{
+    path : "images/Specials/eCARusNewLogo.png";
+}
+resource images_Flag_Germany_png image
+{
+    path : "images/Flag_Germany.png";
+}
+resource images_Media_Media_Volume_Background_png image
+{
+    path : "images/Media/Media_Volume_Background.png";
+}
+resource images_indicators_Indicator_Warning_On_png image
+{
+    path : "images/indicators/Indicator_Warning_On.png";
+}
+resource images_menu_MenuButton_Icon_Mode_Boost02_png image
+{
+    path : "images/menu/MenuButton_Icon_Mode_Boost02.png";
+}
+resource images_Radio_Destructed_png image
+{
+    path : "images/Radio_Destructed.png";
+}
+resource images_menu_MenuButton_Icon_Sponsor_png image
+{
+    path : "images/menu/MenuButton_Icon_Sponsor.png";
+}
+resource images_indicators_Indicator_Left_Off_png image
+{
+    path : "images/indicators/Indicator_Left_Off.png";
+}
+resource images_menu_MenuButton_Icon_Info_big_png image
+{
+    path : "images/menu/MenuButton_Icon_Info_big.png";
+}
+resource images_buzzer_png image
+{
+    path : "images/buzzer.png";
+}
+resource images_menu_MenuButton_Language_png image
+{
+    path : "images/menu/MenuButton_Language.png";
+}
+resource images_sponsors_Neu_EA_png image
+{
+    path : "images/sponsors/Neu/EA.png";
+}
+resource images_menu_MenuButton_Gestures_big_png image
+{
+    path : "images/menu/MenuButton_Gestures_big.png";
+}
+resource images_menu_MenuButton_Icon_Navigation_big_png image
+{
+    path : "images/menu/MenuButton_Icon_Navigation_big.png";
+}
+resource Media_Speaker_Mute_png image
+{
+    path : "Media_Speaker_Mute.png";
+}
+resource images_menu_MenuButton_Icon_Mode_Recuperation_png image
+{
+    path : "images/menu/MenuButton_Icon_Mode_Recuperation.png";
+}
+resource images_menu_MenuButton_Icon_Settings_big_png image
+{
+    path : "images/menu/MenuButton_Icon_Settings_big.png";
+}
+resource images_menu_MenuButton_Town_png image
+{
+    path : "images/menu/MenuButton_Town.png";
+}
+resource images_BatteryIndicator_Intermediate_png image
+{
+    path : "images/BatteryIndicator_Intermediate.png";
+}
+resource images_menu_Sprache_png image
+{
+    path : "images/menu/Sprache.png";
+}
+resource images_Specials_380050_heartfontawesome_svg_png image
+{
+    path : "images/Specials/380050-heartfontawesome.svg.png";
+}
+resource images_gestures_Pfeil_SN_png image
+{
+    path : "images/gestures/Pfeil_SN.png";
+}
+resource images_sponsors_Neu_Phytec_png image
+{
+    path : "images/sponsors/Neu/Phytec.png";
+}
+resource images_sponsors_Neu_dbPrueftechnik_png image
+{
+    path : "images/sponsors/Neu/dbPrueftechnik.png";
+}
+resource images_Under_construction_png image
+{
+    path : "images/Under construction.png";
+}
+resource images_Specials_Heart_png image
+{
+    path : "images/Specials/Heart.png";
+}
+resource images_sponsors_Neu_PhoenixContact_png image
+{
+    path : "images/sponsors/Neu/PhoenixContact.png";
+}
+resource images_menu_MenuButton_Icon_Radio_big_png image
+{
+    path : "images/menu/MenuButton_Icon_Radio_big.png";
+}
+resource images_sponsors_Neu_LinearTechnology_png image
+{
+    path : "images/sponsors/Neu/LinearTechnology.png";
+}
+resource images_sponsors_Neu_froglogic_png image
+{
+    path : "images/sponsors/Neu/froglogic.png";
+}
+resource images_BatteryIndicator_Unknown_png image
+{
+    path : "images/BatteryIndicator_Unknown.png";
+}
+resource images_sponsors_Neu_Lenze_png image
+{
+    path : "images/sponsors/Neu/Lenze.png";
+}
+resource images_sponsors_Neu_molex_png image
+{
+    path : "images/sponsors/Neu/molex.png";
+}
+resource images_sponsors_Neu_ertesis_png image
+{
+    path : "images/sponsors/Neu/ertesis.png";
+}
+resource images_menu_MenuButton_Heartbeat_png image
+{
+    path : "images/menu/MenuButton_Heartbeat.png";
+}
+resource images_Button_menue_Background_png image
+{
+    path : "images/Button_menue_Background.png";
+}
+resource images_menu_MenuButton_Specials_png image
+{
+    path : "images/menu/MenuButton_Specials.png";
+}
+resource images_sponsors_Neu_freescale_png image
+{
+    path : "images/sponsors/Neu/freescale.png";
+}
+resource images_menu_MenuButton_Icon_Heartbeat_png image
+{
+    path : "images/menu/MenuButton_Icon_Heartbeat.png";
+}
+resource images_indicators_Indicator_Light_On_png image
+{
+    path : "images/indicators/Indicator_Light_On.png";
+}
+resource images_menu_MenuButton_Icon_Mode_png image
+{
+    path : "images/menu/MenuButton_Icon_Mode.png";
+}
+resource images_Specials_eCARus_Auto_GUI_png image
+{
+    path : "images/Specials/eCARus_Auto_GUI.png";
+}
+resource images_sponsors_Neu_Panasonic_png image
+{
+    path : "images/sponsors/Neu/Panasonic.png";
+}
+resource images_menu_MenuButton_Icon_technik_png image
+{
+    path : "images/menu/MenuButton_Icon_technik.png";
+}
+resource images_sponsors_Neu_TexasInstruments_png image
+{
+    path : "images/sponsors/Neu/TexasInstruments.png";
+}
+resource images_sponsors_Neu_Schwarz_png image
+{
+    path : "images/sponsors/Neu/Schwarz.png";
+}
+resource images_indicators_Indicator_Right_On_yellow_png image
+{
+    path : "images/indicators/Indicator_Right_On_yellow.png";
+}
+resource images_sponsors_Neu_TE_png image
+{
+    path : "images/sponsors/Neu/TE.png";
+}
+resource images_Pfeil_Back_png image
+{
+    path : "images/Pfeil_Back.png";
+}
+resource images_sponsors_Neu_Linius_png image
+{
+    path : "images/sponsors/Neu/Linius.png";
+}
+resource images_menu_MenuButton_Icon_Media_big_png image
+{
+    path : "images/menu/MenuButton_Icon_Media_big.png";
+}
+resource images_menu_MenuButton_Batterie_png image
+{
+    path : "images/menu/MenuButton_Batterie.png";
+}
+resource images_Specials_Modus2_png image
+{
+    path : "images/Specials/Modus2.png";
+}
+resource images_sponsors_Neu_Kemet_png image
+{
+    path : "images/sponsors/Neu/Kemet.png";
+}
+resource images_menu_MenuButton_Icon_Mode_Sport_png image
+{
+    path : "images/menu/MenuButton_Icon_Mode_Sport.png";
+}
+resource images_sponsors_Neu_Infineon_png image
+{
+    path : "images/sponsors/Neu/Infineon.png";
+}
+resource images_indicators_Indicator_Right_Off_png image
+{
+    path : "images/indicators/Indicator_Right_Off.png";
+}
+resource images_BatteryIndicator_Full_png image
+{
+    path : "images/BatteryIndicator_Full.png";
+}
+resource images_sponsors_Premium_elektrobit_png image
+{
+    path : "images/sponsors/Premium/elektrobit.png";
+}
+resource images_menu_MenuButton_technik_png image
+{
+    path : "images/menu/MenuButton_technik.png";
+}
+resource images_menu_home_png image
+{
+    path : "images/menu/home.png";
+}
+resource images_Specials_Modus1_png image
+{
+    path : "images/Specials/Modus1.png";
+}
+resource images_sponsors_Neu_sbautoteile_png image
+{
+    path : "images/sponsors/Neu/sbautoteile.png";
+}
+resource images_indicators_Indicator_Light_Off_png image
+{
+    path : "images/indicators/Indicator_Light_Off.png";
+}
+resource images_menu_MenuButton_Mode_png image
+{
+    path : "images/menu/MenuButton_Mode.png";
+}
+resource images_sponsors_Neu_Rutronik_png image
+{
+    path : "images/sponsors/Neu/Rutronik.png";
+}
+resource images_sponsors_Neu_ETH_png image
+{
+    path : "images/sponsors/Neu/ETH.png";
+}
+resource images_sponsors_Neu_Vogel_png image
+{
+    path : "images/sponsors/Neu/Vogel.png";
+}
+resource images_indicators_Indicator_Fern_On_png image
+{
+    path : "images/indicators/Indicator_Fern_On.png";
+}
+resource images_Radio_Broken_png image
+{
+    path : "images/Radio_Broken.png";
+}
+resource images_indicators_Indicator_Warning_Off_png image
+{
+    path : "images/indicators/Indicator_Warning_Off.png";
+}
+resource images_gestures_Gesture_Best_tigen_png image
+{
+    path : "images/gestures/Gesture_Bestätigen.png";
+}
+resource images_menu_MenuButton_LED_png image
+{
+    path : "images/menu/MenuButton_LED.png";
+}
+resource images_BatteryIndicator_Empty_png image
+{
+    path : "images/BatteryIndicator_Empty.png";
+}
+resource images_Battery_Empty_Horizontal02_png image
+{
+    path : "images/Battery_Empty_Horizontal02.png";
+}
+resource images_sponsors_Neu_Farnell_png image
+{
+    path : "images/sponsors/Neu/Farnell.png";
+}
+resource images_sponsors_Neu_Eagle_png image
+{
+    path : "images/sponsors/Neu/Eagle.png";
+}
+resource images_Specials_Waves_Front_png image
+{
+    path : "images/Specials/Waves_Front.png";
+}
+resource images_menu_MenuButton_Parking_png image
+{
+    path : "images/menu/MenuButton_Parking.png";
+}
+resource images_sponsors_Neu_Autodesk_png image
+{
+    path : "images/sponsors/Neu/Autodesk.png";
+}
+resource images_sponsors_Premium_dSPACE_png image
+{
+    path : "images/sponsors/Premium/dSPACE.png";
+}
+resource images_menu_MenuButton_Icon_Batterie_png image
+{
+    path : "images/menu/MenuButton_Icon_Batterie.png";
+}
+resource images_Flag_England_png image
+{
+    path : "images/Flag_England.png";
+}
+resource images_Button_Cities_Background_png image
+{
+    path : "images/Button_Cities_Background.png";
+}
+resource images_sponsors_Neu_Rittal_png image
+{
+    path : "images/sponsors/Neu/Rittal.png";
+}
+resource images_menu_MenuButton_Icon_Specials_png image
+{
+    path : "images/menu/MenuButton_Icon_Specials.png";
+}
+resource images_gestures_Gesture_Links_png image
+{
+    path : "images/gestures/Gesture_Links.png";
+}
+resource images_gestures_Gesture_Rechts_png image
+{
+    path : "images/gestures/Gesture_Rechts.png";
+}
+resource images_sponsors_Neu_Kuebler_png image
+{
+    path : "images/sponsors/Neu/Kuebler.png";
+}
+resource images_Media_Media_pause_png image
+{
+    path : "images/Media/Media_pause.png";
+}
+resource images_menu_MenuButton_Settings_big_png image
+{
+    path : "images/menu/MenuButton_Settings_big.png";
+}
+resource images_sponsors_Neu_Peak_png image
+{
+    path : "images/sponsors/Neu/Peak.png";
+}
+resource images_sponsors_Neu_H_cherlnUndHackl_png image
+{
+    path : "images/sponsors/Neu/HöcherlnUndHackl.png";
+}
+resource images_Media_Media_skip_png image
+{
+    path : "images/Media/Media_skip.png";
+}
+resource NONE image
+{
+    path : "";
+}
+resource images_Pfeil_Forward_png image
+{
+    path : "images/Pfeil_Forward.png";
+}
+resource images_menu_bg_new_png image
+{
+    path : "images/menu/bg_new.png";
+}
+resource images_menu_MenuButton_icon_generell_png image
+{
+    path : "images/menu/MenuButton_icon_generell.png";
+}
+resource images_Specials_Puls02_png image
+{
+    path : "images/Specials/Puls02.png";
+}
+resource images_indicators_Indicator_Left_On_yellow_png image
+{
+    path : "images/indicators/Indicator_Left_On_yellow.png";
+}
+resource font_0 font
+{
+    path : "fonts/PT_Sans_Bold.ttf";
+    size : 24;
+}
+resource font_1 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 18;
+}
+resource font_10 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 15;
+}
+resource font_11 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 13;
+}
+resource font_12 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 16;
+}
+resource font_13 font
+{
+    path : "fonts/PT_Sans_Italic.ttf";
+    size : 50;
+}
+resource font_14 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 42;
+}
+resource font_15 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 44;
+}
+resource font_16 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 45;
+}
+resource font_17 font
+{
+    path : "fonts/PT_Sans_Bold_Italic.ttf";
+    size : 34;
+}
+resource font_18 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 25;
+}
+resource font_19 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 50;
+}
+resource font_2 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 35;
+}
+resource font_3 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 30;
+}
+resource font_4 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 21;
+}
+resource font_5 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 24;
+}
+resource font_6 font
+{
+    path : "fonts/PT_Sans_Bold.ttf";
+    size : 20;
+}
+resource font_7 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 14;
+}
+resource font_8 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 19;
+}
+resource font_9 font
+{
+    path : "fonts/PT_Sans_Bold.ttf";
+    size : 18;
+}
