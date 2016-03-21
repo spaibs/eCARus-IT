@@ -24,7 +24,7 @@ include"views_transitions.atfv"
     @id211576499189485908 width : 1024;
     @id211570344015485904 x : 0;
     @id211570980352485905 y : 0;
-    @id211571742104485911 projectName : "eCARus_SS15(VERSION03)";
+    @id211571742104485911 projectName : "eCARus_WS16(VERSION04)";
     @id211571191387485913 sceneId : 61441;
     @id211573854775485916 offscreenBuffer : image:NONE;
 }
@@ -99,7 +99,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -656,7 +656,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -1981,8 +1981,8 @@ include"views_transitions.atfv"
                 @id1233899656182540971 "image" : image:NONE;
                 @id211579000083477486 horizontalAlign : 0;
                 @id211578051729477488 verticalAlign : 1;
-                @id1233896118764777791 Image_Mute ::image : image:Media_Speaker_Mute_png;
-                @id1233891220485789127 Image_Volume ::image : image:Media_speaker_png;
+                @id1233896118764777791 Image_Mute ::image : image:images_Media_Media_Speaker_Mute_png;
+                @id1233891220485789127 Image_Volume ::image : image:images_Media_Media_Speaker_png;
                 @id1233890549673426928 set_Image ::model : on_trigger
                 {
                     function(v:isInit::bool){
@@ -2144,7 +2144,7 @@ include"views_transitions.atfv"
                 @id1233890629602499368 width : 250;
                 @id1233899516447499369 x : 0;
                 @id1233893693577499370 y : 0;
-                @id1233893731921555938 "image" : image:images_Media_Media_Volume_Background_png;
+                @id1233893731921555938 "image" : image:images_Media_Media_Volume_Background01_png;
                 @id211579000083477486 horizontalAlign : 0;
                 @id211578051729477488 verticalAlign : 1;
             }
@@ -2231,7 +2231,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -3179,7 +3179,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -4273,7 +4273,7 @@ include"views_transitions.atfv"
             function(v:isInit::bool){
                 @loc
                 if(!v:isInit)
-                fire ev:Menu_GoTo_Home()
+                fire ev:Menu_GoTo_Home_Gesture()
                 false;
             }
         }
@@ -4356,7 +4356,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -5371,7 +5371,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -6489,7 +6489,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -7607,7 +7607,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -9053,7 +9053,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -10720,7 +10720,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -11401,7 +11401,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -13129,7 +13129,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -13686,7 +13686,7 @@ include"views_transitions.atfv"
         @id1233893844905181320 x : 675;
         @id1233891649466181321 y : 300;
         @id1233898195064228855 Bottom_Text_text ::string : Language;
-        @id1233898644960230500 Icon_image_image ::image : image:images_menu_Sprache_png;
+        @id1233898644960230500 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Language_png;
         @id1233890820162181322 widget Button_image GtfImageDWT
         {
             @id101305209425751521 name : Button_image;
@@ -13841,7 +13841,7 @@ include"views_transitions.atfv"
                 @loc
                 if(!v:isInit)
                 {
-                fire ev:Menu_GoTo_Home()
+                fire ev:Menu_GoTo_Home_Gesture()
                 }
                 false;
             }
@@ -13925,7 +13925,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -14705,7 +14705,7 @@ include"views_transitions.atfv"
             @id1233897432064050540 x : 362;
             @id1233891154263050541 y : 277;
             @id1233898114762050532 Bottom_Text_text ::string : "Boost mode";
-            @id1233896338735050533 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Mode_Boost02_png;
+            @id1233896338735050533 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Mode_Boost_png;
             @id1233890142069050534 buttonId ::int32_t : 4;
             @id1233898248430050535 buttonValue ::int32_t : v:this->^.VehicleMode;
             @id1233898605165050542 widget Button_image GtfImageDWT
@@ -14991,7 +14991,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -15760,9 +15760,9 @@ include"views_transitions.atfv"
         @id211578051729477488 verticalAlign : 1;
     }
 }
-@id1233899471804374306 view "40_Specials" GtfViewDWT
+@id1233899471804374306 view "40_Specials_Menu" GtfViewDWT
 {
-    @id1233899821669374307 name : "40_Specials";
+    @id1233899821669374307 name : "40_Specials_Menu";
     @id1233898390305374308 height : 768;
     @id211577801281478322 visible : true;
     @id1233896905490374309 width : 1024;
@@ -15831,7 +15831,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -16295,8 +16295,8 @@ include"views_transitions.atfv"
         @id1233894179979484486 height : 188;
         @id101302281822751467 visible : true;
         @id1233892654170484487 width : 164;
-        @id1233897800255484488 x : 700;
-        @id1233895710169484489 y : 150;
+        @id1233897800255484488 x : 679;
+        @id1233895710169484489 y : 180;
         @id1233892350680622713 Bottom_Text_text ::string : Heartbeat;
         @id1233892922239712819 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Heartbeat_png;
         @id1233898495144484490 widget Button_image GtfImageDWT
@@ -16401,8 +16401,8 @@ include"views_transitions.atfv"
         @id1233890851607487810 height : 188;
         @id101302281822751467 visible : true;
         @id1233898673480487811 width : 164;
-        @id1233899233539487812 x : 400;
-        @id1233899001531487813 y : 400;
+        @id1233899233539487812 x : 415;
+        @id1233899001531487813 y : 418;
         @id1233896557790625071 Bottom_Text_text ::string : "Parking pilot";
         @id1233892102467709663 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Parking_png;
         @id1233890333563487814 widget Button_image GtfImageDWT
@@ -16507,8 +16507,8 @@ include"views_transitions.atfv"
         @id1233895522428492486 height : 188;
         @id101302281822751467 visible : true;
         @id1233896908700492487 width : 164;
-        @id1233899336540492488 x : 700;
-        @id1233898101158492489 y : 400;
+        @id1233899336540492488 x : 679;
+        @id1233898101158492489 y : 418;
         @id1233893663688628084 Bottom_Text_text ::string : "LED Matrix";
         @id1233893814454706417 Icon_image_image ::image : image:images_menu_MenuButton_Icon_LED_png;
         @id1233897134740492490 widget Button_image GtfImageDWT
@@ -16613,8 +16613,8 @@ include"views_transitions.atfv"
         @id1233891382242716927 height : 188;
         @id101302281822751467 visible : true;
         @id1233899797535716928 width : 164;
-        @id1233893393621716929 x : 400;
-        @id1233896687884716930 y : 150;
+        @id1233893393621716929 x : 415;
+        @id1233896687884716930 y : 180;
         @id211573999982544409 Bottom_Text_text ::string : dp:MenuItem_Button_Gesture;
         @id1233895060519716925 Icon_image_image ::image : image:images_menu_MenuButton_Ico_Gestures_big_png;
         @id1233891886787716931 widget Button_image GtfImageDWT
@@ -16827,9 +16827,9 @@ include"views_transitions.atfv"
         ;
     }
 }
-@id211570246147202990 view "41_Gestures" GtfViewDWT
+@id211570246147202990 view "41_Specials_Gestures" GtfViewDWT
 {
-    @id211579563006202991 name : "41_Gestures";
+    @id211579563006202991 name : "41_Specials_Gestures";
     @id211574729054202992 height : 768;
     @id211577801281478322 visible : true;
     @id211572865648202993 width : 1024;
@@ -16898,7 +16898,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -17912,9 +17912,9 @@ include"views_transitions.atfv"
         @id211578051729477488 verticalAlign : 1;
     }
 }
-@id1233898257318321133 view "42_Heartbeat" GtfViewDWT
+@id1233898257318321133 view "42_Specials_Heartbeat" GtfViewDWT
 {
-    @id1233896775862321134 name : "42_Heartbeat";
+    @id1233896775862321134 name : "42_Specials_Heartbeat";
     @id1233894977149321135 height : 768;
     @id211577801281478322 visible : true;
     @id1233892047913321137 width : 1024;
@@ -17983,7 +17983,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -18715,9 +18715,9 @@ include"views_transitions.atfv"
         @id1233894369197581663 touchIndex ::bool : dp:touchIndex;
     }
 }
-@id1233892799515326659 view "43_Parkingpilot" GtfViewDWT
+@id1233892799515326659 view "43_Specials_Parkingpilot" GtfViewDWT
 {
-    @id1233891434212326660 name : "43_Parkingpilot";
+    @id1233891434212326660 name : "43_Specials_Parkingpilot";
     @id1233896222200326661 height : 768;
     @id211577801281478322 visible : true;
     @id1233897305498326662 width : 1024;
@@ -18786,7 +18786,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -19461,7 +19461,7 @@ include"views_transitions.atfv"
             {
                 @id1233893249003662489 name : "Linear Curve Float";
                 @id211575165837481287 enabled : true;
-                @id211576594228481289 delay : 0;
+                @id1233897519823491341 delay : 0;
                 @id1233899017690922298 duration : 3000;
                 @id1233896644108907024 repeat : 300;
                 @id211570027209481295 alternating : false;
@@ -19551,7 +19551,7 @@ include"views_transitions.atfv"
             {
                 @id1233895549297574989 name : "Linear Curve Float";
                 @id211575165837481287 enabled : true;
-                @id211576594228481289 delay : 0;
+                @id1233890422349498369 delay : 0;
                 @id1233898532685574984 duration : 3000;
                 @id1233898586578574985 repeat : 300;
                 @id211570027209481295 alternating : false;
@@ -19562,10 +19562,122 @@ include"views_transitions.atfv"
             }
         }
     }
+    @id1233895410986642136 widget "WaveFront 2" GtfImageDWT
+    {
+        feature ScaleMode
+        {
+            @id1233897604002642138 scaleMode : 2;
+        }
+        feature Coloration
+        {
+            @id1233899444479183484 colorationEnabled : true;
+            @id1233895274616183508 colorationColor : color: 255, 255, 255, 133;
+        }
+        feature Rotation
+        {
+            @id1233891427266642139 rotationEnabled : true;
+            @id1233893232739642140 rotationAngleX : 0.0;
+            @id1233890632708642141 rotationAngleY : 0.0;
+            @id1233898212176642142 rotationAngleZ : 15.0;
+        }
+        feature Scaling
+        {
+            @id1233891165468642143 scalingEnabled : true;
+            @id1233899042785642144 scalingX : 10.0;
+            @id1233895357050642145 scalingY : v:this.scalingX;
+            @id1233893336827642146 scalingZ : 100.0;
+        }
+        feature Pivot
+        {
+            @id1233895924051642147 pivotX : 20.0;
+            @id1233898139664642148 pivotY : 180.0;
+            @id1233890757371642149 pivotZ : 0.0;
+        }
+        @id1233895266361642150 name : "WaveFront 2";
+        @id1233894397871642151 height : 200;
+        @id1233895025240887949 visible : false;
+        @id1233894440662642152 width : 200;
+        @id1233898790297642153 x : 388;
+        @id1233896493212642154 y : 392;
+        @id1233896458392642137 "image" : image:images_Specials_Waves_Front_png;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+        @id1233892830295642155 widget Animation GtfParallelAnimationDWT
+        {
+            @id1233894071555642158 name : Animation;
+            @id211573320167478530 enabled : true;
+            @id211577333597478532 repeat : 1;
+            @id211570050035478534 alternating : false;
+            @id211577379761478536 scale : 1.0;
+            @id211579059858478539 onPlay : script
+            {
+                    function (v:animation_time::int32_t, v:forward::bool)
+                    {
+                        
+                    }
+            }
+            ;
+            @id211579488880478542 onPause : script
+            {
+                    function (v:animation_time::int32_t)
+                    {
+                        
+                    }
+            }
+            ;
+            @id211575649193478545 onTerminate : script
+            {
+                    function (v:animation_time::int32_t, v:terminate::int32_t)
+                    {
+                        
+                    }
+            }
+            ;
+            @id1233898539580642157 startAnimation ::void : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    f:animation_play(v:this)
+                    false
+                }
+            }
+            ;
+            @id1233899363683642159 widget "Linear Curve Float" GtfLinearCurveFloatDWT
+            {
+                @id1233894903757642166 name : "Linear Curve Float";
+                @id211575165837481287 enabled : true;
+                @id1233898704642642160 delay : 2500;
+                @id1233897281847642161 duration : 3000;
+                @id1233898424898642162 repeat : 300;
+                @id211570027209481295 alternating : false;
+                @id1233890817055642163 relative : false;
+                @id1233897349379642164 velocity : 20.0;
+                @id211571964577481301 constant : 0.0;
+                @id1233898487649642165 target : v:this->^->^.scalingX;
+            }
+        }
+    }
+    @id1233892512044784558 widget Rectangle GtfRectangleDWT
+    {
+        feature Rotation
+        {
+            @id1233894197093801677 rotationEnabled : true;
+            @id1233894807517801688 rotationAngleX : 0.0;
+            @id1233893560556801698 rotationAngleY : 0.0;
+            @id1233897331361801710 rotationAngleZ : 60.0;
+        }
+        @id1233898595524784559 name : Rectangle;
+        @id1233890523488784560 height : 100;
+        @id1233891018939731016 visible : false;
+        @id1233890622007784561 width : 100;
+        @id1233893678885784562 x : 318;
+        @id1233895868349784563 y : 615;
+        @id1233893874129787368 fillColor : color: 255, 255, 255, 255;
+    }
 }
-@id1233898780374330077 view "44_LEDs" GtfViewDWT
+@id1233898780374330077 view "44_Specials_LEDs" GtfViewDWT
 {
-    @id1233892452200330078 name : "44_LEDs";
+    @id1233892452200330078 name : "44_Specials_LEDs";
     @id1233899740029330079 height : 768;
     @id211577801281478322 visible : true;
     @id1233892171052330080 width : 1024;
@@ -19634,7 +19746,7 @@ include"views_transitions.atfv"
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            fire ev:Menu_HomeButton_Pressed() ; true
+                            fire ev:"Menu_GoTo Home_Button"() ; true
                         
                     }
             }
@@ -20114,6 +20226,395 @@ include"views_transitions.atfv"
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
+    @id1233899436754123619 widget ModeSwitcher GtfContainerDWT
+    {
+        feature LayoutPolicyFlow
+        {
+            @id1233892156758123620 horizontalGap : 100;
+            @id1233896810322123621 verticalGap : 50;
+            @id1233891199198123622 layoutDirection : 0;
+            @id1233896324834123623 horizontalChildAlign : 0;
+            @id1233895397791123624 verticalChildAlign : 0;
+        }
+        @id1233891697207123625 name : ModeSwitcher;
+        @id1233892598223123626 height : 400;
+        @id211576532092478116 visible : true;
+        @id1233892288000123627 width : 450;
+        @id1233899374944123628 x : 415;
+        @id1233899288170123629 y : 180;
+        @id1233895217776123630 widget Tum_Menue_Fahren GtfContainerDWT
+        {
+            feature TouchPressed
+            {
+                @id101301261982751497 touchPressed : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                true
+                                
+                            
+                        }
+                }
+                ;
+            }
+            feature TouchShortReleased
+            {
+                @id1233892509732123632 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id101307526393751482 touchable : true;
+                @id101301580891751486 touched : v:this.colorationEnabled;
+                @id101306358809751489 touchPolicy : 0;
+                @id101306642992751492 touchBehavior : 0;
+            }
+            feature Coloration
+            {
+                @id101303989133751476 colorationEnabled : false;
+                @id1233891829798123631 colorationColor : color: 0, 255, 0, 255;
+            }
+            @id1233896984610123637 name : Tum_Menue_Fahren;
+            @id1233892444607123638 height : 188;
+            @id101302281822751467 visible : true;
+            @id1233894531918123639 width : 164;
+            @id1233897627143123640 x : 0;
+            @id1233892109839123641 y : 0;
+            @id1233892631428123633 Bottom_Text_text ::string : Fahren;
+            @id1233899692456123634 Icon_image_image ::image : image:images_Specials_Icon_Fahren_png;
+            @id1233899571244123635 buttonId ::int32_t : 1;
+            @id1233893971678123642 widget Button_image GtfImageDWT
+            {
+                @id101305209425751521 name : Button_image;
+                @id101300213447751534 height : v:this->^.height;
+                @id101306320344751535 visible : true;
+                @id101305641817751537 width : v:this->^.width;
+                @id101309973081751538 x : 0;
+                @id101302708720751540 y : 0;
+                @id101308391449751541 "image" : image:images_Button_menue_Background_png;
+                @id101306921744751549 horizontalAlign : 0;
+                @id101302273988751551 verticalAlign : 1;
+            }
+            @id1233892821939123643 widget Icon_image GtfImageDWT
+            {
+                feature ScaleMode
+                {
+                    @id1233895745478256499 scaleMode : 1;
+                }
+                @id101300780637751553 name : Icon_image;
+                @id101309779307751564 height : 120;
+                @id101300189193751566 visible : true;
+                @id101306747259751567 width : 120;
+                @id101303113451751568 x : 23;
+                @id101308605109751570 y : 17;
+                @id101307657162751572 "image" : v:this->^.Icon_image_image;
+                @id101309658168751573 horizontalAlign : 0;
+                @id101304040544751575 verticalAlign : 1;
+            }
+            @id1233892100180123644 widget Bottom_Text GtfLabelDWT
+            {
+                @id101305404460751577 name : Bottom_Text;
+                @id101300531356751588 height : 50;
+                @id101303958426751590 visible : true;
+                @id101304377385751592 width : v:this->^.width;
+                @id101300390156751593 x : 0;
+                @id101307032505751594 y : 134;
+                @id101308989636751597 text : v:this->^.Bottom_Text_text;
+                @id101309781110751598 textColor : color: 255, 255, 255, 255;
+                @id101300008203751599 "font" : font:font_8;
+                @id101303832646751600 horizontalAlign : 1;
+                @id101301929809751601 verticalAlign : 0;
+            }
+        }
+        @id1233897727177123645 widget Tum_Menue_Regenbogen GtfContainerDWT
+        {
+            feature TouchPressed
+            {
+                @id101301261982751497 touchPressed : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                true
+                                
+                            
+                        }
+                }
+                ;
+            }
+            feature TouchShortReleased
+            {
+                @id1233892597669123647 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id101307526393751482 touchable : true;
+                @id101301580891751486 touched : v:this.colorationEnabled;
+                @id101306358809751489 touchPolicy : 0;
+                @id101306642992751492 touchBehavior : 0;
+            }
+            feature Coloration
+            {
+                @id101303989133751476 colorationEnabled : false;
+                @id1233894136311123646 colorationColor : color: 204, 0, 0, 255;
+            }
+            @id1233890650086123652 name : Tum_Menue_Regenbogen;
+            @id1233895668146123653 height : 188;
+            @id101302281822751467 visible : true;
+            @id1233890414881123654 width : 164;
+            @id1233891344477123655 x : 364;
+            @id1233896673746123656 y : 275;
+            @id1233895521050123648 Bottom_Text_text ::string : Regenbogen;
+            @id1233898796638123649 Icon_image_image ::image : image:images_Specials_Icon_Rainbow_png;
+            @id1233890614243123650 buttonId ::int32_t : 2;
+            @id1233897820458123657 widget Button_image GtfImageDWT
+            {
+                @id101305209425751521 name : Button_image;
+                @id101300213447751534 height : v:this->^.height;
+                @id101306320344751535 visible : true;
+                @id101305641817751537 width : v:this->^.width;
+                @id101309973081751538 x : 0;
+                @id101302708720751540 y : 0;
+                @id101308391449751541 "image" : image:images_Button_menue_Background_png;
+                @id101306921744751549 horizontalAlign : 0;
+                @id101302273988751551 verticalAlign : 1;
+            }
+            @id1233895961666123658 widget Icon_image GtfImageDWT
+            {
+                feature ScaleMode
+                {
+                    @id1233895745478256499 scaleMode : 1;
+                }
+                @id101300780637751553 name : Icon_image;
+                @id101309779307751564 height : 120;
+                @id101300189193751566 visible : true;
+                @id101306747259751567 width : 120;
+                @id101303113451751568 x : 23;
+                @id101308605109751570 y : 17;
+                @id101307657162751572 "image" : v:this->^.Icon_image_image;
+                @id101309658168751573 horizontalAlign : 0;
+                @id101304040544751575 verticalAlign : 1;
+            }
+            @id1233898207914123659 widget Bottom_Text GtfLabelDWT
+            {
+                @id101305404460751577 name : Bottom_Text;
+                @id101300531356751588 height : 50;
+                @id101303958426751590 visible : true;
+                @id101304377385751592 width : v:this->^.width;
+                @id101300390156751593 x : 0;
+                @id101307032505751594 y : 134;
+                @id101308989636751597 text : v:this->^.Bottom_Text_text;
+                @id101309781110751598 textColor : color: 255, 255, 255, 255;
+                @id101300008203751599 "font" : font:font_8;
+                @id101303832646751600 horizontalAlign : 1;
+                @id101301929809751601 verticalAlign : 0;
+            }
+        }
+        @id1233893601679123660 widget Tum_Menue_Zufall GtfContainerDWT
+        {
+            feature TouchPressed
+            {
+                @id101301261982751497 touchPressed : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                true
+                                
+                            
+                        }
+                }
+                ;
+            }
+            feature TouchShortReleased
+            {
+                @id1233896604128123662 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id101307526393751482 touchable : true;
+                @id101301580891751486 touched : v:this.colorationEnabled;
+                @id101306358809751489 touchPolicy : 0;
+                @id101306642992751492 touchBehavior : 0;
+            }
+            feature Coloration
+            {
+                @id101303989133751476 colorationEnabled : false;
+                @id1233898904168123661 colorationColor : color: 0, 0, 255, 255;
+            }
+            @id1233896592100123667 name : Tum_Menue_Zufall;
+            @id1233897868596123668 height : 188;
+            @id101302281822751467 visible : true;
+            @id1233898507651123669 width : 164;
+            @id1233891861670123670 x : 365;
+            @id1233895343802123671 y : 275;
+            @id1233899881500123663 Bottom_Text_text ::string : Zufall;
+            @id1233894976477123664 Icon_image_image ::image : image:images_Specials_Icon_Zufall_png;
+            @id1233895110624123665 buttonId ::int32_t : 3;
+            @id1233891794929123672 widget Button_image GtfImageDWT
+            {
+                @id101305209425751521 name : Button_image;
+                @id101300213447751534 height : v:this->^.height;
+                @id101306320344751535 visible : true;
+                @id101305641817751537 width : v:this->^.width;
+                @id101309973081751538 x : 0;
+                @id101302708720751540 y : 0;
+                @id101308391449751541 "image" : image:images_Button_menue_Background_png;
+                @id101306921744751549 horizontalAlign : 0;
+                @id101302273988751551 verticalAlign : 1;
+            }
+            @id1233891914676123674 widget Icon_image GtfImageDWT
+            {
+                feature ScaleMode
+                {
+                    @id1233895745478256499 scaleMode : 1;
+                }
+                @id101300780637751553 name : Icon_image;
+                @id101309779307751564 height : 120;
+                @id101300189193751566 visible : true;
+                @id101306747259751567 width : 120;
+                @id101303113451751568 x : 23;
+                @id101308605109751570 y : 17;
+                @id101307657162751572 "image" : v:this->^.Icon_image_image;
+                @id101309658168751573 horizontalAlign : 0;
+                @id101304040544751575 verticalAlign : 1;
+            }
+            @id1233893722119123675 widget Bottom_Text GtfLabelDWT
+            {
+                @id101305404460751577 name : Bottom_Text;
+                @id101300531356751588 height : 50;
+                @id101303958426751590 visible : true;
+                @id101304377385751592 width : v:this->^.width;
+                @id101300390156751593 x : 0;
+                @id101307032505751594 y : 134;
+                @id101308989636751597 text : v:this->^.Bottom_Text_text;
+                @id101309781110751598 textColor : color: 255, 255, 255, 255;
+                @id101300008203751599 "font" : font:font_8;
+                @id101303832646751600 horizontalAlign : 1;
+                @id101301929809751601 verticalAlign : 0;
+            }
+        }
+        @id1233892857157123676 widget Tum_Menue_Simulation GtfContainerDWT
+        {
+            feature TouchPressed
+            {
+                @id101301261982751497 touchPressed : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                true
+                                
+                            
+                        }
+                }
+                ;
+            }
+            feature TouchShortReleased
+            {
+                @id1233892133952123678 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id101307526393751482 touchable : true;
+                @id101301580891751486 touched : v:this.colorationEnabled;
+                @id101306358809751489 touchPolicy : 0;
+                @id101306642992751492 touchBehavior : 0;
+            }
+            feature Coloration
+            {
+                @id101303989133751476 colorationEnabled : false;
+                @id1233893678039123677 colorationColor : color: 255, 255, 0, 255;
+            }
+            @id1233898601417123683 name : Tum_Menue_Simulation;
+            @id1233897541483123684 height : 188;
+            @id101302281822751467 visible : true;
+            @id1233892440884123685 width : 164;
+            @id1233897868425123686 x : 362;
+            @id1233893554254123687 y : 277;
+            @id1233892333007123679 Bottom_Text_text ::string : Simulation;
+            @id1233898508969123680 Icon_image_image ::image : image:images_Specials_Icon_Simulation_png;
+            @id1233894254072123681 buttonId ::int32_t : 4;
+            @id1233897085235123688 widget Button_image GtfImageDWT
+            {
+                @id101305209425751521 name : Button_image;
+                @id101300213447751534 height : v:this->^.height;
+                @id101306320344751535 visible : true;
+                @id101305641817751537 width : v:this->^.width;
+                @id101309973081751538 x : 0;
+                @id101302708720751540 y : 0;
+                @id101308391449751541 "image" : image:images_Button_menue_Background_png;
+                @id101306921744751549 horizontalAlign : 0;
+                @id101302273988751551 verticalAlign : 1;
+            }
+            @id1233898093931123689 widget Icon_image GtfImageDWT
+            {
+                feature ScaleMode
+                {
+                    @id1233895745478256499 scaleMode : 1;
+                }
+                @id101300780637751553 name : Icon_image;
+                @id101309779307751564 height : 120;
+                @id101300189193751566 visible : true;
+                @id101306747259751567 width : 120;
+                @id101303113451751568 x : 23;
+                @id101308605109751570 y : 17;
+                @id101307657162751572 "image" : v:this->^.Icon_image_image;
+                @id101309658168751573 horizontalAlign : 0;
+                @id101304040544751575 verticalAlign : 1;
+            }
+            @id1233891832265123690 widget Bottom_Text GtfLabelDWT
+            {
+                @id101305404460751577 name : Bottom_Text;
+                @id101300531356751588 height : 50;
+                @id101303958426751590 visible : true;
+                @id101304377385751592 width : v:this->^.width;
+                @id101300390156751593 x : 0;
+                @id101307032505751594 y : 134;
+                @id101308989636751597 text : v:this->^.Bottom_Text_text;
+                @id101309781110751598 textColor : color: 255, 255, 255, 255;
+                @id101300008203751599 "font" : font:font_8;
+                @id101303832646751600 horizontalAlign : 1;
+                @id101301929809751601 verticalAlign : 0;
+            }
+        }
+    }
 }
 @id1233895223418251410 view eCARus GtfViewDWT
 {
@@ -20185,7 +20686,7 @@ include"views_transitions.atfv"
                 @loc
                 if(v:this.index == 10)
                 {
-                fire ev:Menu_GoTo_Home()
+                fire ev:Menu_GoTo_Home_Gesture()
                 }
                 false;
             }

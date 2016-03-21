@@ -11,7 +11,7 @@ events
     @id211575853203876695 event default Menu_GoTo_Specials_Gestures;
     @id211576971798892112 event default Menu_GoTo_Information;
     @id211574899165091037 event default Menu_GoTo_Battery;
-    @id211579676331975545 event default Menu_GoTo_Home;
+    @id211579676331975545 event default Menu_GoTo_Home_Gesture;
     @id211578749348196041 event default Menu_GoTo_Navigation;
     @id211575960880721577 event default ExtOut_Navigation_Touch_Move(deltaX::int32_t, deltaY::int32_t) external 65536 0;
     @id211579274131271624 event default ExtOut_Navigation_Touch_Zoom(zoomFactor::float) external 65536 2;
@@ -30,7 +30,7 @@ events
     @id211571831282489106 event default ExtOut_Battery_UpdateValues external 65540 5;
     @id101304386674175393 event default Menu_GoTo_Radio;
     @id101301829960260632 event default ExtOut_Media_PauseTitle external 65541 6;
-    @id211570959575401020 event default Menu_HomeButton_Pressed;
+    @id211570959575401020 event default "Menu_GoTo Home_Button";
     @id211577148936132930 event default ExtOut_Media_PlayTitle(trackIndex::int32_t) external 65541 5;
     @id1233895693447188983 event default Menu_GoTo_Specials;
     @id1233894286528761217 event default GoTo_Navigation_Map;

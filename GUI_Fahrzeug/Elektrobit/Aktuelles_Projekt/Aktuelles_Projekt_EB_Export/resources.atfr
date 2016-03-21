@@ -48,10 +48,6 @@ resource images_gestures_Pfeil_OW_png image
 {
     path : "images/gestures/Pfeil_OW.png";
 }
-resource Media_speaker_png image
-{
-    path : "Media_speaker.png";
-}
 resource images_menu_MenuButton_Sponsor_png image
 {
     path : "images/menu/MenuButton_Sponsor.png";
@@ -92,6 +88,10 @@ resource images_menu_MenuButton_Icon_Mode_Eco_png image
 {
     path : "images/menu/MenuButton_Icon_Mode_Eco.png";
 }
+resource images_menu_MenuButton_Icon_Mode_Boost_png image
+{
+    path : "images/menu/MenuButton_Icon_Mode_Boost.png";
+}
 resource images_sponsors_Neu_Leoni_png image
 {
     path : "images/sponsors/Neu/Leoni.png";
@@ -112,17 +112,9 @@ resource images_Flag_Germany_png image
 {
     path : "images/Flag_Germany.png";
 }
-resource images_Media_Media_Volume_Background_png image
-{
-    path : "images/Media/Media_Volume_Background.png";
-}
 resource images_indicators_Indicator_Warning_On_png image
 {
     path : "images/indicators/Indicator_Warning_On.png";
-}
-resource images_menu_MenuButton_Icon_Mode_Boost02_png image
-{
-    path : "images/menu/MenuButton_Icon_Mode_Boost02.png";
 }
 resource images_Radio_Destructed_png image
 {
@@ -139,6 +131,10 @@ resource images_indicators_Indicator_Left_Off_png image
 resource images_menu_MenuButton_Icon_Info_big_png image
 {
     path : "images/menu/MenuButton_Icon_Info_big.png";
+}
+resource images_Specials_Icon_Zufall_png image
+{
+    path : "images/Specials/Icon_Zufall.png";
 }
 resource images_buzzer_png image
 {
@@ -160,13 +156,13 @@ resource images_menu_MenuButton_Icon_Navigation_big_png image
 {
     path : "images/menu/MenuButton_Icon_Navigation_big.png";
 }
-resource Media_Speaker_Mute_png image
-{
-    path : "Media_Speaker_Mute.png";
-}
 resource images_menu_MenuButton_Icon_Mode_Recuperation_png image
 {
     path : "images/menu/MenuButton_Icon_Mode_Recuperation.png";
+}
+resource images_Specials_Icon_Rainbow_png image
+{
+    path : "images/Specials/Icon_Rainbow.png";
 }
 resource images_menu_MenuButton_Icon_Settings_big_png image
 {
@@ -179,10 +175,6 @@ resource images_menu_MenuButton_Town_png image
 resource images_BatteryIndicator_Intermediate_png image
 {
     path : "images/BatteryIndicator_Intermediate.png";
-}
-resource images_menu_Sprache_png image
-{
-    path : "images/menu/Sprache.png";
 }
 resource images_Specials_380050_heartfontawesome_svg_png image
 {
@@ -200,6 +192,10 @@ resource images_sponsors_Neu_dbPrueftechnik_png image
 {
     path : "images/sponsors/Neu/dbPrueftechnik.png";
 }
+resource images_Specials_Icon_Fahren_png image
+{
+    path : "images/Specials/Icon_Fahren.png";
+}
 resource images_Under_construction_png image
 {
     path : "images/Under construction.png";
@@ -211,6 +207,10 @@ resource images_Specials_Heart_png image
 resource images_sponsors_Neu_PhoenixContact_png image
 {
     path : "images/sponsors/Neu/PhoenixContact.png";
+}
+resource images_Media_Media_Speaker_Mute_png image
+{
+    path : "images/Media/Media_Speaker_Mute.png";
 }
 resource images_menu_MenuButton_Icon_Radio_big_png image
 {
@@ -251,6 +251,10 @@ resource images_Button_menue_Background_png image
 resource images_menu_MenuButton_Specials_png image
 {
     path : "images/menu/MenuButton_Specials.png";
+}
+resource images_Specials_Icon_Simulation_png image
+{
+    path : "images/Specials/Icon_Simulation.png";
 }
 resource images_sponsors_Neu_freescale_png image
 {
@@ -328,6 +332,10 @@ resource images_sponsors_Neu_Infineon_png image
 {
     path : "images/sponsors/Neu/Infineon.png";
 }
+resource images_menu_MenuButton_Icon_Language_png image
+{
+    path : "images/menu/MenuButton_Icon_Language.png";
+}
 resource images_indicators_Indicator_Right_Off_png image
 {
     path : "images/indicators/Indicator_Right_Off.png";
@@ -368,6 +376,10 @@ resource images_sponsors_Neu_Rutronik_png image
 {
     path : "images/sponsors/Neu/Rutronik.png";
 }
+resource images_Media_Media_Volume_Background01_png image
+{
+    path : "images/Media/Media_Volume_Background01.png";
+}
 resource images_sponsors_Neu_ETH_png image
 {
     path : "images/sponsors/Neu/ETH.png";
@@ -403,6 +415,10 @@ resource images_BatteryIndicator_Empty_png image
 resource images_Battery_Empty_Horizontal02_png image
 {
     path : "images/Battery_Empty_Horizontal02.png";
+}
+resource images_Media_Media_Speaker_png image
+{
+    path : "images/Media/Media_Speaker.png";
 }
 resource images_sponsors_Neu_Farnell_png image
 {

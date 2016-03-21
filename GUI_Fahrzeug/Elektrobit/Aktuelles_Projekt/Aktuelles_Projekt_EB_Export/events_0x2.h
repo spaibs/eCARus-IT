@@ -33,17 +33,23 @@
 #define EVENT_GRP_ID_Menu_Back    ((uint32_t) 0x00000002)
 #define EVENT_MSG_ID_Menu_Back    ((uint32_t) 0x0000000A)
 
+//! @brief Menu_GoTo_Home_Button
+//!
+//! Parameters : 0
+#define EVENT_GRP_ID_Menu_GoTo_Home_Button    ((uint32_t) 0x00000002)
+#define EVENT_MSG_ID_Menu_GoTo_Home_Button    ((uint32_t) 0x0000000D)
+
 //! @brief Menu_GoTo_Battery
 //!
 //! Parameters : 0
 #define EVENT_GRP_ID_Menu_GoTo_Battery    ((uint32_t) 0x00000002)
 #define EVENT_MSG_ID_Menu_GoTo_Battery    ((uint32_t) 0x00000004)
 
-//! @brief Menu_GoTo_Home
+//! @brief Menu_GoTo_Home_Gesture
 //!
 //! Parameters : 0
-#define EVENT_GRP_ID_Menu_GoTo_Home    ((uint32_t) 0x00000002)
-#define EVENT_MSG_ID_Menu_GoTo_Home    ((uint32_t) 0x00000005)
+#define EVENT_GRP_ID_Menu_GoTo_Home_Gesture    ((uint32_t) 0x00000002)
+#define EVENT_MSG_ID_Menu_GoTo_Home_Gesture    ((uint32_t) 0x00000005)
 
 //! @brief Menu_GoTo_Information
 //!
@@ -116,12 +122,6 @@
 //! Parameters : 0
 #define EVENT_GRP_ID_Menu_GoTo_Specials_Parkingpilot    ((uint32_t) 0x00000002)
 #define EVENT_MSG_ID_Menu_GoTo_Specials_Parkingpilot    ((uint32_t) 0x00000011)
-
-//! @brief Menu_HomeButton_Pressed
-//!
-//! Parameters : 0
-#define EVENT_GRP_ID_Menu_HomeButton_Pressed    ((uint32_t) 0x00000002)
-#define EVENT_MSG_ID_Menu_HomeButton_Pressed    ((uint32_t) 0x0000000D)
 
 #endif //GTF_INCLUDED_EVENTS_IDENTIFIERS_0x2_H
 

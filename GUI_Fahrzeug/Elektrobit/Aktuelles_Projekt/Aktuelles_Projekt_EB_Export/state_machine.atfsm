@@ -107,11 +107,11 @@ machine Main
             @id211573970973615276 trans ev:Menu_GoTo_Settings_Language -> "32_Settings_Language";
             @id211575299099634688 trans ev:Menu_Back -> "30_Settings_Menu";
         }
-        @id1233899245888507931 state State
+        @id1233899245888507931 state Specials
         {
             @id1233895588949810267 state "40_Specials"
             {
-                view: "40_Specials"
+                view: "40_Specials_Menu"
                 @id1233891221163010714 trans ev:Menu_GoTo_Specials_Heartbeat -> "42_Heartbeat";
                 @id1233891964816058500 trans ev:Menu_GoTo_Specials_Gestures -> "41_Gestures";
                 @id1233893564871033534 trans ev:Menu_GoTo_Specials_LEDs -> "44_LEDs";
@@ -119,21 +119,22 @@ machine Main
             }
             @id1233891226805030606 state "41_Gestures"
             {
-                view: "41_Gestures"
+                view: "41_Specials_Gestures"
             }
             @id1233895915653928430 state "42_Heartbeat"
             {
-                view: "42_Heartbeat"
+                view: "42_Specials_Heartbeat"
             }
             @id1233898918477963832 state "43_Parkingpilot"
             {
-                view: "43_Parkingpilot"
+                view: "43_Specials_Parkingpilot"
             }
             @id1233896679543974194 state "44_LEDs"
             {
-                view: "44_LEDs"
+                view: "44_Specials_LEDs"
             }
             @id1233895906196828811 start -> "40_Specials";
+            @id1233898029984886391 trans ev:Menu_GoTo_Home_Gesture -> "41_Gestures";
         }
         @id1233897158038669575 state eCARus
         {
@@ -143,11 +144,11 @@ machine Main
         @id101305755416630805 trans ev:Menu_GoTo_Radio -> "50_Radio";
         @id211575058634686127 trans ev:Menu_GoTo_Battery -> "99_BatteryManager";
         @id211575227241553644 trans ev:Menu_GoTo_Information -> Information;
-        @id211577191258431753 trans ev:Menu_HomeButton_Pressed -> Home;
+        @id211577191258431753 trans ev:"Menu_GoTo Home_Button" -> Home;
         @id211578596996415069 trans ev:Menu_GoTo_Settings -> Settings;
-        @id211578623609979601 trans ev:Menu_GoTo_Home -> Home;
+        @id211578623609979601 trans ev:Menu_GoTo_Home_Gesture -> Home;
         @id1233892003653678875 trans ev:GoTo_Ecarus -> eCARus;
-        @id1233893207680842200 trans ev:Menu_GoTo_Specials -> State;
+        @id1233893207680842200 trans ev:Menu_GoTo_Specials -> Specials;
         @id1233895357499444762 trans ev:Menu_GoTo_Navigation -> Navigation;
     }
 }
