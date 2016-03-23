@@ -293,7 +293,7 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-    // This function receives interpreted data stored in the string array data.
+    // This function receives interpreted data stored in the string array data.....
     // It is called by the UDP thread class.
     // This way the MainActivity gets access to the received information...
     public void setData(String[][] data)
