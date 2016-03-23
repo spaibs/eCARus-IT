@@ -128,6 +128,7 @@ declaration
         @id211570794474712505 Content_BatteryManager_StackVoltage::string direct const "";
         @id211577962079040205 Content_BatteryManager_Temperature::string direct const "";
         @id211571718942720580 Content_Gestures_InfoText::string direct const "";
+        @id1233897534044804305 Content_Heartbeat_Pulse::string direct const "";
         @id211576545384347043 Content_Info_Battery_Item::list string direct const "";
         @id211578764017406006 Content_Info_Battery_Value::list string direct const "";
         @id211579024748047950 Content_Info_General_Name::string direct const "";
@@ -139,6 +140,7 @@ declaration
         @id211576730294493872 Content_Info_Technical_Value::list string direct const "";
         @id246799415494142086 Content_Radio_UnderConstruction::string direct const "";
         @id1233891850711553982 Content_Settings_Appearance::string direct const "";
+        @id1233895253937546357 ExtIn_Heartbeat::int32_t direct "";
         @id211570380472950147 ExtOut_MediaPlayer_VolumeSet::void virtual const "";
         @id1233897464392699774 Gesture_Command::list string direct const "";
         @id101307146682411081 Gesture_Control::void virtual const "";
