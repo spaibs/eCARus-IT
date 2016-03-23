@@ -102,10 +102,20 @@ machine Main
             {
                 view: "32_Settings_Language"
             }
+            @id1233899144556317968 state "33_Settings_Appearance"
+            {
+                view: "33_Settings_Appearance"
+            }
+            @id1233893290367325828 state "33_Settings_Rating"
+            {
+                view: "33_Settings_Rating"
+            }
             @id211571166726406019 start -> "30_Settings_Menu";
             @id211573423853553514 trans ev:Menu_GoTo_Settings_Mode -> "31_Settings_Mode";
             @id211573970973615276 trans ev:Menu_GoTo_Settings_Language -> "32_Settings_Language";
             @id211575299099634688 trans ev:Menu_Back -> "30_Settings_Menu";
+            @id1233893722658432338 trans ev:Menu_GoTo_Settings_Appearance -> "33_Settings_Appearance";
+            @id1233898900365334022 trans ev:Menu_GoTo_Settings_Rating -> "33_Settings_Rating";
         }
         @id1233899245888507931 state Specials
         {

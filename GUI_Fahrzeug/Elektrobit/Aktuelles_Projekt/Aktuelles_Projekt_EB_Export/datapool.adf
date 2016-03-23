@@ -115,11 +115,13 @@ declaration
         reader hmi writer hmi
     {
         @id211571048152128049 Battery_Percentage::int32_t direct "";
-        @id1233892074134411261 Bottom_Text_specials::string direct const "";
+        @id1233895358653214655 Color_Background::image direct "";
+        @id1233893022847230490 Color_BorderImage::image direct "";
         @id211571965847442415 Color_Highlight_Bronze::color direct const "";
         @id211575246162381663 Color_Highlight_Gold::color direct const "";
-        @id211577837610160841 Color_Highlight_Touch::color direct const "";
+        @id211577837610160841 Color_Highlight_Touch::color direct "";
         @id1233898894768271290 Color_colorationIndex::int32_t direct "";
+        @id1233899167835790288 ColorcolorationIndexMode::int32_t direct "";
         @id211577930420799973 Content_BatteryManager_Current::string direct const "";
         @id211573910344953218 Content_BatteryManager_HighestV::string direct const "";
         @id211574050268864366 Content_BatteryManager_LowestV::string direct const "";
@@ -130,8 +132,13 @@ declaration
         @id211578764017406006 Content_Info_Battery_Value::list string direct const "";
         @id211579024748047950 Content_Info_General_Name::string direct const "";
         @id211570697137018478 Content_Info_General_Text::string direct const "";
+        @id246794964230712147 Content_Info_Partners2::string direct const "";
+        @id246799440833805535 Content_Info_Partners_Bronze::string direct const "";
+        @id246795845028307323 Content_Info_Partners_Gold1::string direct const "";
         @id211579727498483207 Content_Info_Technical_Item::list string direct const "";
         @id211576730294493872 Content_Info_Technical_Value::list string direct const "";
+        @id246799415494142086 Content_Radio_UnderConstruction::string direct const "";
+        @id1233891850711553982 Content_Settings_Appearance::string direct const "";
         @id211570380472950147 ExtOut_MediaPlayer_VolumeSet::void virtual const "";
         @id1233897464392699774 Gesture_Command::list string direct const "";
         @id101307146682411081 Gesture_Control::void virtual const "";
@@ -151,8 +158,25 @@ declaration
         @id211575673210530698 MenuItem_Button_Navigation::string direct const "";
         @id101302712066221353 MenuItem_Button_Radio::string direct const "";
         @id211575743952560338 MenuItem_Button_Settings::string direct const "";
+        @id1233896766066801184 MenuItem_Button_Settings_Appearance::string direct const "";
+        @id246794087600351840 MenuItem_Button_Settings_Language2::string direct const "";
+        @id1233899702770890634 MenuItem_Button_Settings_Rating::string direct const "";
+        @id246798335508266347 MenuItem_Button_Settings_VehicleMode::string direct const "";
+        @id246794207757781852 MenuItem_Button_Settings_VehicleMode_Boost::string direct const "";
+        @id246798376836520958 MenuItem_Button_Settings_VehicleMode_Eco::string direct const "";
+        @id246793230548633189 MenuItem_Button_Settings_VehicleMode_Recuperation::string direct const "";
+        @id246791207136569281 MenuItem_Button_Settings_VehicleMode_Sports::string direct const "";
+        @id1233892074134411261 MenuItem_Button_Specials::string direct const "";
+        @id246795536402628521 MenuItem_Button_Specials_DistanceControl::string direct const "";
+        @id246793702346525154 MenuItem_Button_Specials_Heartbeat::string direct const "";
+        @id246791783887733748 MenuItem_Button_Specials_LED::string direct const "";
+        @id246790432072089754 MenuItem_Button_Specials_LED_Drive::string direct const "";
+        @id246798334263118849 MenuItem_Button_Specials_LED_Rainbow::string direct const "";
+        @id246793111137131146 MenuItem_Button_Specials_LED_Random::string direct const "";
+        @id246792447439139426 MenuItem_Button_Specials_LED_Simulation::string direct const "";
         @id211576084914474172 Menu_Info_CurrentItem_Selected::int32_t direct "";
         @id211575938727979204 Menu_Info_CurrentSponsor_Selected::int32_t direct "";
+        @id246793151536426123 ViewTitle_BatteryManagement::string direct const "";
         @id211577295319194292 ViewTitle_Home::string direct const "";
         @id211573756724694194 ViewTitle_Info_Battery::string direct const "";
         @id211572505006651340 ViewTitle_Info_General::string direct const "";
@@ -160,9 +184,18 @@ declaration
         @id211575442626853796 ViewTitle_Info_Sponsors2::string direct const "";
         @id211578014937743587 ViewTitle_Info_Technical::string direct const "";
         @id101307413185650804 ViewTitle_Media::string direct const "";
+        @id246797493608117871 ViewTitle_Navigation_Map::string direct const "";
+        @id246793713464962524 ViewTitle_Navigation_Search::string direct const "";
         @id211572010935159906 ViewTitle_Settings::string direct const "";
+        @id1233899793605076780 ViewTitle_Settings_Appearance::string direct const "";
         @id211576585682183174 ViewTitle_Settings_Language::string direct const "";
         @id211576865510175124 ViewTitle_Settings_Mode::string direct const "";
+        @id1233893301443093097 ViewTitle_Settings_Rating::string direct const "";
+        @id246798141875450165 ViewTitle_Specials::string direct const "";
+        @id246797104297956921 ViewTitle_Specials_DistanceControl::string direct const "";
+        @id246794993822059210 ViewTitle_Specials_Gestures::string direct const "";
+        @id246792380498877605 ViewTitle_Specials_Heartbeat::string direct const "";
+        @id246799633491881245 ViewTitle_Specials_LED::string direct const "";
         @id1233894369197581663 touchIndex::bool direct "";
     }
     module "root"

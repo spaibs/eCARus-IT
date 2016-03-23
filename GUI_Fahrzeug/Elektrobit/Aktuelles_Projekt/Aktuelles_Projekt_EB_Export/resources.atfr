@@ -1,5 +1,110 @@
 // GUIDE model version:  5.5.3.92525
 
+resource font_0 font
+{
+    path : "fonts/PT_Sans_Bold.ttf";
+    size : 24;
+}
+resource font_1 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 18;
+}
+resource font_10 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 15;
+}
+resource font_11 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 13;
+}
+resource font_12 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 16;
+}
+resource font_13 font
+{
+    path : "fonts/PT_Sans_Italic.ttf";
+    size : 50;
+}
+resource font_14 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 42;
+}
+resource font_15 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 44;
+}
+resource font_16 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 45;
+}
+resource font_17 font
+{
+    path : "fonts/PT_Sans_Bold_Italic.ttf";
+    size : 34;
+}
+resource font_18 font
+{
+    path : "fonts/PT_Sans_Caption_Bold.ttf";
+    size : 25;
+}
+resource font_19 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 25;
+}
+resource font_2 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 35;
+}
+resource font_20 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 50;
+}
+resource font_3 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 30;
+}
+resource font_4 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 21;
+}
+resource font_5 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 24;
+}
+resource font_6 font
+{
+    path : "fonts/PT_Sans_Bold.ttf";
+    size : 20;
+}
+resource font_7 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 14;
+}
+resource font_8 font
+{
+    path : "fonts/PT_Sans.ttf";
+    size : 19;
+}
+resource font_9 font
+{
+    path : "fonts/PT_Sans_Bold.ttf";
+    size : 18;
+}
 resource images_sponsors_Neu_Microchip_png image
 {
     path : "images/sponsors/Neu/Microchip.png";
@@ -7,6 +112,10 @@ resource images_sponsors_Neu_Microchip_png image
 resource images_menu_MenuButton_Icon_Parking_png image
 {
     path : "images/menu/MenuButton_Icon_Parking.png";
+}
+resource images_menu_bg_tron_png image
+{
+    path : "images/menu/bg_tron.png";
 }
 resource images_Media_Media_skip_Backward_png image
 {
@@ -31,6 +140,10 @@ resource images_gestures_Gesture_Zur_ck02_png image
 resource images_menu_MenuButton_generell_png image
 {
     path : "images/menu/MenuButton_generell.png";
+}
+resource images_menu_MenuButton_Apearance_png image
+{
+    path : "images/menu/MenuButton_Apearance.png";
 }
 resource images_sponsors_Neu_Metawell_png image
 {
@@ -68,13 +181,13 @@ resource images_indicators_Indicator_Fern_Off_png image
 {
     path : "images/indicators/Indicator_Fern_Off.png";
 }
-resource images_sponsors_Premium_ON_Semiconductor_png image
-{
-    path : "images/sponsors/Premium/ON Semiconductor.png";
-}
 resource images_menu_bg_all_png image
 {
     path : "images/menu/bg_all.png";
+}
+resource images_sponsors_Premium_ON_Semiconductor_png image
+{
+    path : "images/sponsors/Premium/ON Semiconductor.png";
 }
 resource images_sponsors_Neu_2DSystems_png image
 {
@@ -144,6 +257,10 @@ resource images_menu_MenuButton_Language_png image
 {
     path : "images/menu/MenuButton_Language.png";
 }
+resource images_menu_bg_all_tron_png image
+{
+    path : "images/menu/bg_all_tron.png";
+}
 resource images_sponsors_Neu_EA_png image
 {
     path : "images/sponsors/Neu/EA.png";
@@ -200,6 +317,10 @@ resource images_Under_construction_png image
 {
     path : "images/Under construction.png";
 }
+resource images_menu_bg_all_tum_png image
+{
+    path : "images/menu/bg_all_tum.png";
+}
 resource images_Specials_Heart_png image
 {
     path : "images/Specials/Heart.png";
@@ -231,6 +352,10 @@ resource images_BatteryIndicator_Unknown_png image
 resource images_sponsors_Neu_Lenze_png image
 {
     path : "images/sponsors/Neu/Lenze.png";
+}
+resource images_menu_MenuButton_Icon_Rate_png image
+{
+    path : "images/menu/MenuButton_Icon_Rate.png";
 }
 resource images_sponsors_Neu_molex_png image
 {
@@ -436,6 +561,10 @@ resource images_menu_MenuButton_Parking_png image
 {
     path : "images/menu/MenuButton_Parking.png";
 }
+resource images_menu_bg_2_jpg image
+{
+    path : "images/menu/bg_2.jpg";
+}
 resource images_sponsors_Neu_Autodesk_png image
 {
     path : "images/sponsors/Neu/Autodesk.png";
@@ -504,9 +633,17 @@ resource images_Pfeil_Forward_png image
 {
     path : "images/Pfeil_Forward.png";
 }
+resource images_menu_MenuButton_Icon_Apearance_png image
+{
+    path : "images/menu/MenuButton_Icon_Apearance.png";
+}
 resource images_menu_bg_new_png image
 {
     path : "images/menu/bg_new.png";
+}
+resource images_menu_MenuButton_Rate_png image
+{
+    path : "images/menu/MenuButton_Rate.png";
 }
 resource images_menu_MenuButton_icon_generell_png image
 {
@@ -520,103 +657,7 @@ resource images_indicators_Indicator_Left_On_yellow_png image
 {
     path : "images/indicators/Indicator_Left_On_yellow.png";
 }
-resource font_0 font
+resource images_menu_bg_tum_jpg image
 {
-    path : "fonts/PT_Sans_Bold.ttf";
-    size : 24;
-}
-resource font_1 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 18;
-}
-resource font_10 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 15;
-}
-resource font_11 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 13;
-}
-resource font_12 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 16;
-}
-resource font_13 font
-{
-    path : "fonts/PT_Sans_Italic.ttf";
-    size : 50;
-}
-resource font_14 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 42;
-}
-resource font_15 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 44;
-}
-resource font_16 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 45;
-}
-resource font_17 font
-{
-    path : "fonts/PT_Sans_Bold_Italic.ttf";
-    size : 34;
-}
-resource font_18 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 25;
-}
-resource font_19 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 50;
-}
-resource font_2 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 35;
-}
-resource font_3 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 30;
-}
-resource font_4 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 21;
-}
-resource font_5 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 24;
-}
-resource font_6 font
-{
-    path : "fonts/PT_Sans_Bold.ttf";
-    size : 20;
-}
-resource font_7 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 14;
-}
-resource font_8 font
-{
-    path : "fonts/PT_Sans.ttf";
-    size : 19;
-}
-resource font_9 font
-{
-    path : "fonts/PT_Sans_Bold.ttf";
-    size : 18;
+    path : "images/menu/bg_tum.jpg";
 }

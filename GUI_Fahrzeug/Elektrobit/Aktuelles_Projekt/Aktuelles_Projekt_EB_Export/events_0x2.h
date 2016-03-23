@@ -81,6 +81,12 @@
 #define EVENT_GRP_ID_Menu_GoTo_Settings    ((uint32_t) 0x00000002)
 #define EVENT_MSG_ID_Menu_GoTo_Settings    ((uint32_t) 0x00000001)
 
+//! @brief Menu_GoTo_Settings_Appearance
+//!
+//! Parameters : 0
+#define EVENT_GRP_ID_Menu_GoTo_Settings_Appearance    ((uint32_t) 0x00000002)
+#define EVENT_MSG_ID_Menu_GoTo_Settings_Appearance    ((uint32_t) 0x00000015)
+
 //! @brief Menu_GoTo_Settings_Language
 //!
 //! Parameters : 0
@@ -92,6 +98,12 @@
 //! Parameters : 0
 #define EVENT_GRP_ID_Menu_GoTo_Settings_Mode    ((uint32_t) 0x00000002)
 #define EVENT_MSG_ID_Menu_GoTo_Settings_Mode    ((uint32_t) 0x00000008)
+
+//! @brief Menu_GoTo_Settings_Rating
+//!
+//! Parameters : 0
+#define EVENT_GRP_ID_Menu_GoTo_Settings_Rating    ((uint32_t) 0x00000002)
+#define EVENT_MSG_ID_Menu_GoTo_Settings_Rating    ((uint32_t) 0x00000014)
 
 //! @brief Menu_GoTo_Specials
 //!

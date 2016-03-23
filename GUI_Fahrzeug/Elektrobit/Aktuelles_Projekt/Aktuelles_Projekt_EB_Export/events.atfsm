@@ -39,4 +39,6 @@ events
     @id1233895356652754055 event default Menu_GoTo_Specials_Parkingpilot;
     @id1233893161916773769 event default Menu_GoTo_Specials_LEDs;
     @id1233895467878696211 event default GoTo_Ecarus;
+    @id1233899542454425334 event default Menu_GoTo_Settings_Rating;
+    @id1233891368817444122 event default Menu_GoTo_Settings_Appearance;
 }

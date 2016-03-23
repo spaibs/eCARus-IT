@@ -24,7 +24,7 @@ include"views_transitions.atfv"
     @id211576499189485908 width : 1024;
     @id211570344015485904 x : 0;
     @id211570980352485905 y : 0;
-    @id211571742104485911 projectName : "eCARus_WS16(VERSION04)";
+    @id211571742104485911 projectName : "eCARus_WS16(Christians Version)";
     @id211571191387485913 sceneId : 61441;
     @id211573854775485916 offscreenBuffer : image:NONE;
 }
@@ -39,7 +39,7 @@ include"views_transitions.atfv"
     @id1233899584963106545 ViewTitle ::string : Radio;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id101302352804290123 widget Background GtfImageDWT
@@ -73,7 +73,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -528,7 +528,7 @@ include"views_transitions.atfv"
         @id1233898677845160348 width : v:this->^.width;
         @id101304157214318883 x : 0;
         @id101308159312318884 y : 500;
-        @id101303167296356815 text : "Work in Progress ...";
+        @id246799415494142086 text : dp:Content_Radio_UnderConstruction;
         @id101301042001335651 textColor : color: 255, 255, 255, 255;
         @id101307556288344004 "font" : font:font_2;
         @id1233896872545166799 horizontalAlign : 1;
@@ -596,7 +596,7 @@ include"views_transitions.atfv"
     @id101307413185650804 ViewTitle ::string : dp:ViewTitle_Media;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id101302602712699741 widget Background GtfImageDWT
@@ -630,7 +630,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -1119,7 +1119,7 @@ include"views_transitions.atfv"
             if(v:this->^->TUM_TextList.selectedItem != -1){
             dp:ExtIn_MediaPlayer_TitlelList[v:this->^->TUM_TextList.selectedItem];
             }else{
-            "No Item Selected"
+            "..."
             }
         }
         ;
@@ -2159,10 +2159,10 @@ include"views_transitions.atfv"
     @id211578402157127693 width : 1024;
     @id211574173641127694 x : 0;
     @id211576671609127695 y : 0;
-    @id211575931247139613 ViewTitle ::string : "Battery Manager";
+    @id246793151536426123 ViewTitle ::string : dp:ViewTitle_BatteryManagement;
     @id211575008984157685 BatteryLevelVisible ::bool : false;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211570415075163995 triggerValueUpdate ::void : on_trigger
@@ -2205,7 +2205,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -3119,7 +3119,7 @@ include"views_transitions.atfv"
     @id211577295319194292 ViewTitle ::string : dp:ViewTitle_Home;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211574207783191094 HomeButtonVisible ::bool : false;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101307663962372352 BlackShadow_visible ::bool : false;
     @id211570659488290161 widget Background GtfImageDWT
@@ -3153,7 +3153,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -3825,7 +3825,7 @@ include"views_transitions.atfv"
         @id101301209029443148 width : 164;
         @id101304590017443149 x : 700;
         @id101302514389443150 y : 150;
-        @id1233892074134411261 Bottom_Text_text ::string : dp:Bottom_Text_specials;
+        @id1233892074134411261 Bottom_Text_text ::string : dp:MenuItem_Button_Specials;
         @id101303978434454449 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Specials_png;
         @id101307569131443151 widget Button_image GtfImageDWT
         {
@@ -4296,7 +4296,7 @@ include"views_transitions.atfv"
     @id211572505006651340 ViewTitle ::string : dp:ViewTitle_Info_General;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211575515832491595 widget Background GtfImageDWT
@@ -4330,7 +4330,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -5311,7 +5311,7 @@ include"views_transitions.atfv"
     @id211573756724694194 ViewTitle ::string : dp:ViewTitle_Info_Battery;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211571326170573946 widget Background GtfImageDWT
@@ -5345,7 +5345,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -6282,7 +6282,7 @@ include"views_transitions.atfv"
             @id211573544883979521 name : Descriptions;
             @id211577784340027576 height : v:this->^.height;
             @id211576229975477906 visible : true;
-            @id211572758572979523 width : 200;
+            @id211572758572979523 width : 230;
             @id211578873927979524 x : 0;
             @id211579564993979525 y : 0;
             @id211573332010725568 numItems : 1;
@@ -6429,7 +6429,7 @@ include"views_transitions.atfv"
     @id211578014937743587 ViewTitle ::string : dp:ViewTitle_Info_Technical;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211577680732582634 widget Background GtfImageDWT
@@ -6463,7 +6463,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -7400,7 +7400,7 @@ include"views_transitions.atfv"
             @id211573544883979521 name : Descriptions;
             @id211577784340027576 height : v:this->^.height;
             @id211576229975477906 visible : true;
-            @id211572758572979523 width : 200;
+            @id211572758572979523 width : 230;
             @id211578873927979524 x : 0;
             @id211579564993979525 y : 0;
             @id211573332010725568 numItems : 1;
@@ -7547,7 +7547,7 @@ include"views_transitions.atfv"
     @id211573787840808702 ViewTitle ::string : dp:ViewTitle_Info_Sponsors1;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211575505626614358 widget Background GtfImageDWT
@@ -7581,7 +7581,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -8784,7 +8784,7 @@ include"views_transitions.atfv"
             @id1233898914860610136 x : 335;
             @id1233892597791610137 y : 0;
             @id1233897659491610130 Image ::image : image:images_eCARus_logo_png;
-            @id1233896186551610131 Text ::string : "Gold-Sponsor";
+            @id246795845028307323 Text ::string : dp:Content_Info_Partners_Gold1;
             @id211577234158300508 Font ::font : font:font_6;
             @id1233893778590610138 widget Image GtfImageDWT
             {
@@ -8852,7 +8852,7 @@ include"views_transitions.atfv"
             @id1233899593107642281 x : 334;
             @id1233893662214642282 y : 13;
             @id1233895829376642275 Image ::image : image:images_eCARus_logo_png;
-            @id1233896033479642276 Text ::string : "Gold-Sponsor";
+            @id246794964230712147 Text ::string : dp:Content_Info_Partners2;
             @id211577234158300508 Font ::font : font:font_6;
             @id1233897087391642283 widget Image GtfImageDWT
             {
@@ -8920,7 +8920,7 @@ include"views_transitions.atfv"
             @id1233897258533683461 x : 335;
             @id1233892916466683462 y : 0;
             @id1233894718646683455 Image ::image : image:images_eCARus_logo_png;
-            @id1233891825496683456 Text ::string : "Bronze-Sponsor";
+            @id246799440833805535 Text ::string : dp:Content_Info_Partners_Bronze;
             @id211577234158300508 Font ::font : font:font_6;
             @id1233892442555683463 widget Image GtfImageDWT
             {
@@ -8993,7 +8993,7 @@ include"views_transitions.atfv"
     @id211575442626853796 ViewTitle ::string : dp:ViewTitle_Info_Sponsors2;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211578019236628443 widget Background GtfImageDWT
@@ -9027,7 +9027,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -10657,7 +10657,7 @@ include"views_transitions.atfv"
     @id211578709469191146 width : 1024;
     @id211574543528938971 x : 0;
     @id211572787956938972 y : 0;
-    @id211573521217955703 ViewTitle ::string : "Navigation - Map";
+    @id246797493608117871 ViewTitle ::string : dp:ViewTitle_Navigation_Map;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
     @id211572539820107442 BackgroundImage ::image : image:NONE;
@@ -10694,7 +10694,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -11338,10 +11338,10 @@ include"views_transitions.atfv"
     @id1233892437159539763 width : 1024;
     @id1233893709261539764 x : 0;
     @id1233892291841539765 y : 0;
-    @id1233898539448609474 ViewTitle ::string : "Navigation - Menü";
+    @id246793713464962524 ViewTitle ::string : dp:ViewTitle_Navigation_Search;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id1233891311596539766 widget Background GtfImageDWT
@@ -11375,7 +11375,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -13069,7 +13069,7 @@ include"views_transitions.atfv"
     @id211572010935159906 ViewTitle ::string : dp:ViewTitle_Settings;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211579323269502377 widget Background GtfImageDWT
@@ -13103,7 +13103,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -13594,8 +13594,8 @@ include"views_transitions.atfv"
         @id101302281822751467 visible : true;
         @id1233899559940090925 width : 164;
         @id1233899817344090926 x : 415;
-        @id1233893230739090927 y : 300;
-        @id1233896645899090921 Bottom_Text_text ::string : "Vehicle Mode";
+        @id1233893230739090927 y : 180;
+        @id246798335508266347 Bottom_Text_text ::string : dp:MenuItem_Button_Settings_VehicleMode;
         @id1233893795402090922 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Mode_png;
         @id1233894373287090928 widget Button_image GtfImageDWT
         {
@@ -13683,9 +13683,9 @@ include"views_transitions.atfv"
         @id1233895089878181318 height : 188;
         @id101302281822751467 visible : true;
         @id1233896405129181319 width : 164;
-        @id1233893844905181320 x : 675;
-        @id1233891649466181321 y : 300;
-        @id1233898195064228855 Bottom_Text_text ::string : Language;
+        @id1233893844905181320 x : 679;
+        @id1233891649466181321 y : 180;
+        @id246794087600351840 Bottom_Text_text ::string : dp:MenuItem_Button_Settings_Language2;
         @id1233898644960230500 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Language_png;
         @id1233890820162181322 widget Button_image GtfImageDWT
         {
@@ -13716,6 +13716,186 @@ include"views_transitions.atfv"
             @id101304040544751575 verticalAlign : 1;
         }
         @id1233893962680181324 widget Bottom_Text GtfLabelDWT
+        {
+            @id101305404460751577 name : Bottom_Text;
+            @id101300531356751588 height : 50;
+            @id101303958426751590 visible : true;
+            @id101304377385751592 width : v:this->^.width;
+            @id101300390156751593 x : 0;
+            @id101307032505751594 y : 134;
+            @id101308989636751597 text : v:this->^.Bottom_Text_text;
+            @id101309781110751598 textColor : color: 255, 255, 255, 255;
+            @id101300008203751599 "font" : font:font_8;
+            @id101303832646751600 horizontalAlign : 1;
+            @id101301929809751601 verticalAlign : 0;
+        }
+    }
+    @id1233894032701671228 widget Tum_Menue_Appearance GtfContainerDWT
+    {
+        feature TouchPressed
+        {
+            @id101301261982751497 touchPressed : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            true
+                            
+                        
+                    }
+            }
+            ;
+        }
+        feature TouchShortReleased
+        {
+            @id1233895210188671232 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            fire ev:Menu_GoTo_Settings_Appearance() ; true
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id101307526393751482 touchable : true;
+            @id101301580891751486 touched : v:this.colorationEnabled;
+            @id101306358809751489 touchPolicy : 0;
+            @id101306642992751492 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id101303989133751476 colorationEnabled : false;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id1233894050408671234 name : Tum_Menue_Appearance;
+        @id1233899366422671235 height : 188;
+        @id101302281822751467 visible : true;
+        @id1233898821401671236 width : 164;
+        @id1233899151401671237 x : 415;
+        @id1233892882487671238 y : 418;
+        @id1233896766066801184 Bottom_Text_text ::string : dp:MenuItem_Button_Settings_Appearance;
+        @id1233895150911671233 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Apearance_png;
+        @id1233890253264671239 widget Button_image GtfImageDWT
+        {
+            @id101305209425751521 name : Button_image;
+            @id101300213447751534 height : v:this->^.height;
+            @id101306320344751535 visible : true;
+            @id101305641817751537 width : v:this->^.width;
+            @id101309973081751538 x : 0;
+            @id101302708720751540 y : 0;
+            @id101308391449751541 "image" : image:images_Button_menue_Background_png;
+            @id101306921744751549 horizontalAlign : 0;
+            @id101302273988751551 verticalAlign : 1;
+        }
+        @id1233891538713671240 widget Icon_image GtfImageDWT
+        {
+            feature ScaleMode
+            {
+                @id1233895745478256499 scaleMode : 1;
+            }
+            @id101300780637751553 name : Icon_image;
+            @id101309779307751564 height : 120;
+            @id101300189193751566 visible : true;
+            @id101306747259751567 width : 120;
+            @id101303113451751568 x : 23;
+            @id101308605109751570 y : 17;
+            @id101307657162751572 "image" : v:this->^.Icon_image_image;
+            @id101309658168751573 horizontalAlign : 0;
+            @id101304040544751575 verticalAlign : 1;
+        }
+        @id1233897171257671241 widget Bottom_Text GtfLabelDWT
+        {
+            @id101305404460751577 name : Bottom_Text;
+            @id101300531356751588 height : 50;
+            @id101303958426751590 visible : true;
+            @id101304377385751592 width : v:this->^.width;
+            @id101300390156751593 x : 0;
+            @id101307032505751594 y : 134;
+            @id101308989636751597 text : v:this->^.Bottom_Text_text;
+            @id101309781110751598 textColor : color: 255, 255, 255, 255;
+            @id101300008203751599 "font" : font:font_8;
+            @id101303832646751600 horizontalAlign : 1;
+            @id101301929809751601 verticalAlign : 0;
+        }
+    }
+    @id1233892745623676183 widget Tum_Menue_Rating GtfContainerDWT
+    {
+        feature TouchPressed
+        {
+            @id101301261982751497 touchPressed : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            true
+                            
+                        
+                    }
+            }
+            ;
+        }
+        feature TouchShortReleased
+        {
+            @id1233896359817676186 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            fire ev:Menu_GoTo_Settings_Rating() ; true
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id101307526393751482 touchable : true;
+            @id101301580891751486 touched : v:this.colorationEnabled;
+            @id101306358809751489 touchPolicy : 0;
+            @id101306642992751492 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id101303989133751476 colorationEnabled : false;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id1233897457347676189 name : Tum_Menue_Rating;
+        @id1233890330974676190 height : 188;
+        @id101302281822751467 visible : true;
+        @id1233895251606676191 width : 164;
+        @id1233890436702676192 x : 679;
+        @id1233897631514676193 y : 418;
+        @id1233899702770890634 Bottom_Text_text ::string : dp:MenuItem_Button_Settings_Rating;
+        @id1233898423974676188 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Rate_png;
+        @id1233894623993676194 widget Button_image GtfImageDWT
+        {
+            @id101305209425751521 name : Button_image;
+            @id101300213447751534 height : v:this->^.height;
+            @id101306320344751535 visible : true;
+            @id101305641817751537 width : v:this->^.width;
+            @id101309973081751538 x : 0;
+            @id101302708720751540 y : 0;
+            @id101308391449751541 "image" : image:images_Button_menue_Background_png;
+            @id101306921744751549 horizontalAlign : 0;
+            @id101302273988751551 verticalAlign : 1;
+        }
+        @id1233890448640676195 widget Icon_image GtfImageDWT
+        {
+            feature ScaleMode
+            {
+                @id1233895745478256499 scaleMode : 1;
+            }
+            @id101300780637751553 name : Icon_image;
+            @id101309779307751564 height : 120;
+            @id101300189193751566 visible : true;
+            @id101306747259751567 width : 120;
+            @id101303113451751568 x : 23;
+            @id101308605109751570 y : 17;
+            @id101307657162751572 "image" : v:this->^.Icon_image_image;
+            @id101309658168751573 horizontalAlign : 0;
+            @id101304040544751575 verticalAlign : 1;
+        }
+        @id1233894853359676196 widget Bottom_Text GtfLabelDWT
         {
             @id101305404460751577 name : Bottom_Text;
             @id101300531356751588 height : 50;
@@ -13865,7 +14045,7 @@ include"views_transitions.atfv"
     @id211576865510175124 ViewTitle ::string : dp:ViewTitle_Settings_Mode;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211573431758620886 BackButtonVisible ::bool : true;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211574845782448977 widget Background GtfImageDWT
@@ -13899,7 +14079,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -14413,7 +14593,7 @@ include"views_transitions.atfv"
             @id1233894644092746524 width : 164;
             @id1233891091959746525 x : 365;
             @id1233896603702746526 y : 275;
-            @id1233894310204746519 Bottom_Text_text ::string : "Eco mode";
+            @id246798376836520958 Bottom_Text_text ::string : dp:MenuItem_Button_Settings_VehicleMode_Eco;
             @id1233890553737746521 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Mode_Eco_png;
             @id1233891030938874574 buttonId ::int32_t : 1;
             @id1233896548997972063 buttonValue ::int32_t : v:this->^.VehicleMode;
@@ -14510,7 +14690,7 @@ include"views_transitions.atfv"
             @id1233898416461046766 width : 164;
             @id1233896500287046767 x : 364;
             @id1233892463156046768 y : 275;
-            @id1233899208753046760 Bottom_Text_text ::string : "Sport mode";
+            @id246791207136569281 Bottom_Text_text ::string : dp:MenuItem_Button_Settings_VehicleMode_Sports;
             @id1233897314891046761 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Mode_Sport_png;
             @id1233893456097046762 buttonId ::int32_t : 2;
             @id1233898245239046763 buttonValue ::int32_t : v:this->^.VehicleMode;
@@ -14607,7 +14787,7 @@ include"views_transitions.atfv"
             @id1233891314979049095 width : 164;
             @id1233892747592049096 x : 365;
             @id1233891808560049097 y : 275;
-            @id1233890791034049089 Bottom_Text_text ::string : Recuperation;
+            @id246793230548633189 Bottom_Text_text ::string : dp:MenuItem_Button_Settings_VehicleMode_Recuperation;
             @id1233893964222049090 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Mode_Recuperation_png;
             @id1233898433680049091 buttonId ::int32_t : 3;
             @id1233890953176049092 buttonValue ::int32_t : v:this->^.VehicleMode;
@@ -14704,7 +14884,7 @@ include"views_transitions.atfv"
             @id1233895233320050539 width : 164;
             @id1233897432064050540 x : 362;
             @id1233891154263050541 y : 277;
-            @id1233898114762050532 Bottom_Text_text ::string : "Boost mode";
+            @id246794207757781852 Bottom_Text_text ::string : dp:MenuItem_Button_Settings_VehicleMode_Boost;
             @id1233896338735050533 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Mode_Boost_png;
             @id1233890142069050534 buttonId ::int32_t : 4;
             @id1233898248430050535 buttonValue ::int32_t : v:this->^.VehicleMode;
@@ -14903,13 +15083,13 @@ include"views_transitions.atfv"
             ;
         }
     }
-    @id1233893902478104648 widget Image GtfImageDWT
+    @id1233893902478104648 widget Icon GtfImageDWT
     {
         feature ScaleMode
         {
             @id1233894944147104650 scaleMode : 1;
         }
-        @id1233891326083104651 name : Image;
+        @id1233891326083104651 name : Icon;
         @id1233894180091104652 height : 150;
         @id211570802626477476 visible : true;
         @id1233895495714104653 width : 150;
@@ -14931,7 +15111,7 @@ include"views_transitions.atfv"
     @id211576585682183174 ViewTitle ::string : dp:ViewTitle_Settings_Language;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211577359604627873 BackButtonVisible ::bool : true;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211573523399506100 widget Background GtfImageDWT
@@ -14965,7 +15145,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -15456,7 +15636,7 @@ include"views_transitions.atfv"
         trigger
         {
             @loc
-            v:this.colorationIndex
+            v:this.colorationIndex;
         }
         ;
         @id1233898894768271290 colorationIndex ::int32_t : dp:Color_colorationIndex;
@@ -15743,19 +15923,1534 @@ include"views_transitions.atfv"
             }
         }
     }
-    @id1233891586246107408 widget Image GtfImageDWT
+    @id1233891586246107408 widget Icon GtfImageDWT
     {
         feature ScaleMode
         {
             @id1233891550502107410 scaleMode : 1;
         }
-        @id1233890881330107411 name : Image;
+        @id1233890881330107411 name : Icon;
         @id1233891416343107412 height : 200;
         @id211570802626477476 visible : true;
         @id1233897507260107413 width : 200;
         @id1233896215020107414 x : 123;
         @id1233899351326107415 y : 70;
         @id1233891933776107409 "image" : image:images_menu_MenuButton_Language_png;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+    }
+}
+@id1233895572489494488 view "33_Settings_Appearance" GtfViewDWT
+{
+    @id1233896578861494489 name : "33_Settings_Appearance";
+    @id1233892474279494490 height : 768;
+    @id211577801281478322 visible : true;
+    @id1233897074025494491 width : 1024;
+    @id1233897607894494492 x : 0;
+    @id1233898667696494493 y : 0;
+    @id1233899793605076780 ViewTitle ::string : dp:ViewTitle_Settings_Appearance;
+    @id211579043703248623 BatteryLevelVisible ::bool : true;
+    @id211577565029355568 HomeButtonVisible ::bool : true;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
+    @id211572522960594403 BackButtonVisible ::bool : false;
+    @id101305033349295371 BlackShadow_visible ::bool : true;
+    @id1233897840929518474 setColoration ::void : on_trigger
+    {
+        function(v:isInit::bool){
+            @loc
+            if (v:this.colorationIndexMode == 1)
+            {
+            v:this->TUM_AppearanceMode_Normal.selected = true;
+            v:this->TUM_AppearanceMode_Tron.selected = false;
+            v:this->TUM_AppearanceMode_TUM.selected = false;
+            }
+            if (v:this.colorationIndexMode == 2)
+            {
+            v:this->TUM_AppearanceMode_Normal.selected = false;
+            v:this->TUM_AppearanceMode_Tron.selected = true;
+            v:this->TUM_AppearanceMode_TUM.selected = false;
+            }
+            if (v:this.colorationIndexMode == 3)
+            {
+            v:this->TUM_AppearanceMode_Normal.selected = false;
+            v:this->TUM_AppearanceMode_Tron.selected = false;
+            v:this->TUM_AppearanceMode_TUM.selected = true;
+            }
+            false;
+        }
+    }
+    trigger
+    {
+        @loc
+        v:this.colorationIndexMode;
+    }
+    ;
+    @id1233899167835790288 colorationIndexMode ::int32_t : dp:ColorcolorationIndexMode;
+    @id1233898593646494494 widget Background GtfImageDWT
+    {
+        @id211579903534103514 name : Background;
+        @id101305310125823399 height : 1080;
+        @id211570802626477476 visible : true;
+        @id101306260102824980 width : 1920;
+        @id211572446626103517 x : -234;
+        @id211577165063103518 y : -109;
+        @id211576512344859854 "image" : v:this->^.BackgroundImage;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+        @id101308174990779758 isPlayed ::bool : false;
+    }
+    @id1233897934382494495 widget BlackShadow GtfRectangleDWT
+    {
+        @id101309222395395621 name : BlackShadow;
+        @id101306469655211515 height : 566;
+        @id101302602681295477 visible : v:this->^.BlackShadow_visible;
+        @id101301524427208258 width : 989;
+        @id101307963103395624 x : 18;
+        @id101307203587395625 y : 100;
+        @id101308249050424076 fillColor : color: 0, 0, 0, 100;
+    }
+    @id1233897442864494496 widget Top_Bottom_Border GtfImageDWT
+    {
+        @id101306058577525615 name : Top_Bottom_Border;
+        @id101309335771525616 height : v:this->^.height;
+        @id211570802626477476 visible : true;
+        @id101303409930525617 width : v:this->^.width;
+        @id101307750928525618 x : 0;
+        @id101309997519525619 y : 0;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+    }
+    @id1233896885058494497 widget Title GtfLabelDWT
+    {
+        @id211572183939183613 name : Title;
+        @id211577519098183614 height : 90;
+        @id211571371723477235 visible : true;
+        @id211572414247277544 width : 975;
+        @id211571072226183616 x : 3;
+        @id211572750983183617 y : -14;
+        @id211574249872309372 text : v:this->^.ViewTitle;
+        @id211576851441200213 textColor : color: 255, 255, 255, 255;
+        @id211578138119205399 "font" : font:font_0;
+        @id211571395562258283 horizontalAlign : 2;
+        @id211579378303229239 verticalAlign : 2;
+    }
+    @id1233892866517494498 widget HomeButton GtfImageDWT
+    {
+        feature TouchShortReleased
+        {
+            @id211573929078018209 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            fire ev:"Menu_GoTo Home_Button"() ; true
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id211572001178302678 touchable : true;
+            @id211579955819302695 touched : false;
+            @id211576173742302712 touchPolicy : 0;
+            @id211579392424302731 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id211578361808314607 colorationEnabled : v:this.touched;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id211574207284335001 name : HomeButton;
+        @id211570795866335002 height : 62;
+        @id211574789919355601 visible : v:this->^.HomeButtonVisible;
+        @id211575434211335003 width : 61;
+        @id211573040525335004 x : 15;
+        @id211570053638335005 y : 11;
+        @id211576325287376804 "image" : image:images_menu_home_png;
+        @id211574677564288822 horizontalAlign : 1;
+        @id211572713314292059 verticalAlign : 0;
+    }
+    @id1233895977927494499 widget BackButton GtfImageDWT
+    {
+        feature ScaleMode
+        {
+            @id101308257416484923 scaleMode : 1;
+        }
+        feature TouchShortReleased
+        {
+            @id211573298737493633 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            fire ev:Menu_Back() ; true
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id211572001178302678 touchable : true;
+            @id211579955819302695 touched : false;
+            @id211576173742302712 touchPolicy : 0;
+            @id211579392424302731 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id211578361808314607 colorationEnabled : v:this.touched;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id211579065476493634 name : BackButton;
+        @id211579177960493635 height : 60;
+        @id211572145505493636 visible : v:this->^.BackButtonVisible;
+        @id211572288484493637 width : 83;
+        @id211577996345493638 x : 101;
+        @id211571012562493639 y : 17;
+        @id211573329274493630 "image" : image:images_Pfeil_Back_png;
+        @id211574677564288822 horizontalAlign : 1;
+        @id211572713314292059 verticalAlign : 0;
+    }
+    @id1233899331534494500 widget VehicleIndicators GtfContainerDWT
+    {
+        feature LayoutPolicyFlow
+        {
+            @id211570604595281983 horizontalGap : 5;
+            @id211575944087282012 verticalGap : 0;
+            @id211575288128282035 layoutDirection : 0;
+            @id211577750024282059 horizontalChildAlign : 0;
+            @id211579639081282085 verticalChildAlign : 0;
+        }
+        @id211571939677213580 name : VehicleIndicators;
+        @id211576190852213581 height : 60;
+        @id211576532092478116 visible : true;
+        @id211574419679213582 width : 320;
+        @id211578275773213583 x : 352;
+        @id211575458675213584 y : 699;
+        @id1233893155747494501 widget Indicator_Left GtfImageDWT
+        {
+            @id211577143233242749 name : Indicator_Left;
+            @id211579890531242750 height : 60;
+            @id211570802626477476 visible : true;
+            @id211573564429242751 width : 60;
+            @id211575725692242752 x : 0;
+            @id211577387908242753 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211577133550246174 ImageOff ::image : image:images_indicators_Indicator_Left_Off_png;
+            @id211578716347247534 ImageOn ::image : image:images_indicators_Indicator_Left_On_yellow_png;
+            @id211575778942718692 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Left_IsOn;
+        }
+        @id1233897847115494502 widget Indicator_Light GtfImageDWT
+        {
+            @id211572285859290782 name : Indicator_Light;
+            @id211575640545290783 height : 60;
+            @id211570802626477476 visible : true;
+            @id211573927091290784 width : 60;
+            @id211575757827290785 x : 0;
+            @id211575657680290786 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211576274151299736 ImageOff ::image : image:images_indicators_Indicator_Light_Off_png;
+            @id211579864842300846 ImageOn ::image : image:images_indicators_Indicator_Light_On_png;
+            @id211573260005669803 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Light_IsOn;
+        }
+        @id1233891795891494503 widget Indicator_Warning GtfImageDWT
+        {
+            @id211572791960327632 name : Indicator_Warning;
+            @id211576058721327633 height : 60;
+            @id211570802626477476 visible : true;
+            @id211574956044327634 width : 60;
+            @id211577489044327635 x : 0;
+            @id211575438959327636 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211572378085334985 ImageOff ::image : image:images_indicators_Indicator_Warning_Off_png;
+            @id211572257393339082 ImageOn ::image : image:images_indicators_Indicator_Warning_On_png;
+            @id211572156853827664 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Warning_IsOn;
+        }
+        @id1233895108634494504 widget Indicator_Fern GtfImageDWT
+        {
+            @id211572927454358892 name : Indicator_Fern;
+            @id211570164317358893 height : 60;
+            @id211570802626477476 visible : true;
+            @id211578599423358894 width : 60;
+            @id211578696972358895 x : 0;
+            @id211576944121358896 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211577959254366340 ImageOff ::image : image:images_indicators_Indicator_Fern_Off_png;
+            @id211574476574371947 ImageOn ::image : image:images_indicators_Indicator_Fern_On_png;
+            @id211573406018580840 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Fern_IsOn;
+        }
+        @id1233895025978494505 widget Indicator_Right GtfImageDWT
+        {
+            @id211575688633380639 name : Indicator_Right;
+            @id211570007345380640 height : 60;
+            @id211570802626477476 visible : true;
+            @id211576817028380641 width : 60;
+            @id211578580815380642 x : 0;
+            @id211578810144380643 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211570987407387413 ImageOff ::image : image:images_indicators_Indicator_Right_Off_png;
+            @id211573725090391663 ImageOn ::image : image:images_indicators_Indicator_Right_On_yellow_png;
+            @id211573032550765430 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Right_IsOn;
+        }
+    }
+    @id1233897851614494506 widget BatteryLevel GtfImageDWT
+    {
+        feature TouchShortReleased
+        {
+            @id211572894614067373 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            fire ev:Menu_GoTo_Battery() ; true
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id211570491172061576 touchable : true;
+            @id211570510241061614 touched : false;
+            @id211570867652061645 touchPolicy : 0;
+            @id211579976723061678 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id211574288923142629 colorationEnabled : v:this.touched;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id211579036613525831 name : BatteryLevel;
+        @id211579978527525832 height : 60;
+        @id211571627145248725 visible : v:this->^.BatteryLevelVisible;
+        @id211575152305525833 width : 115;
+        @id211574991774525834 x : 850;
+        @id211576081386525835 y : 698;
+        @id211578136569539802 "image" : image:images_Battery_Empty_Horizontal02_png;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+        @id1233893356886494507 widget TUM_PercentBar_Horizontal GtfRectangleDWT
+        {
+            feature Border
+            {
+                @id211577040385872816 borderThickness : 0;
+                @id211573065748872831 borderColor : color: 255, 255, 255, 255;
+                @id211574508796872844 borderStyle : 0;
+            }
+            @id211571640467725466 name : TUM_PercentBar_Horizontal;
+            @id211570483643725467 height : 44;
+            @id211573946583477695 visible : true;
+            @id211576359966725468 width : 87;
+            @id211572361165725469 x : 10;
+            @id211576132502725470 y : 8;
+            @id211573732288477701 fillColor : color: 0, 0, 0, 255;
+            @id211571048152128049 Percentage ::int32_t : dp:Battery_Percentage;
+            @id101304390820632276 BarColor ::color : color: 255, 255, 255, 255;
+            @id211571701585166925 Text ::string : trigger
+            {
+                dp:Battery_Percentage;
+            }
+            read
+            {
+                f:formatInteger(0, 0xFFFFFFFF, false, false, 0, 10, dp:Battery_Percentage) + " %"
+            }
+            ;
+            @id211576342517750042 TextColor ::color : color: 128, 128, 128, 255;
+            @id1233893942112494508 widget PercentBar GtfRectangleDWT
+            {
+                @id211578329806891028 name : PercentBar;
+                @id211572699717891029 height : on_trigger
+                {
+                    function(v:isInit::bool){
+                        @loc
+                        true
+                    }
+                }
+                trigger
+                {
+                    @loc
+                    v:this->^.borderThickness;
+                    v:this->^.height;
+                }
+                read
+                {
+                    @loc
+                    v:this->^.height - 2*v:this->^.borderThickness;
+                }
+                ;
+                @id211573946583477695 visible : true;
+                @id211574427382891030 width : on_trigger
+                {
+                    function(v:isInit::bool){
+                        @loc
+                        true
+                    }
+                }
+                trigger
+                {
+                    @loc
+                    v:this->^.Percentage;
+                    v:this.maxWidth;
+                }
+                read
+                {
+                    @loc
+                    if(v:this->^.Percentage <= 100 && v:this->^.Percentage >= 0)
+                    {
+                        f:round(f:int2float(v:this.maxWidth) / 100.0 * f:int2float(v:this->^.Percentage));
+                    }
+                    else
+                    {
+                      0;
+                    }
+                }
+                ;
+                @id211578394524973895 x : v:this->^.borderThickness;
+                @id211571927898978291 y : v:this->^.borderThickness;
+                @id211577919725907768 fillColor : v:this->^.BarColor;
+                @id211579252951232971 maxWidth ::int32_t : trigger
+                {
+                    v:this->^.borderThickness;
+                    v:this->^.width;
+                }
+                read
+                {
+                    (v:this->^.width-2*v:this->^.borderThickness)::int32_t
+                }
+                ;
+            }
+            @id1233898275880494509 widget Label GtfLabelDWT
+            {
+                @id211572152381035436 name : Label;
+                @id211570477234040789 height : v:this->^.height;
+                @id211571371723477235 visible : true;
+                @id211576233500046305 width : v:this->^.width;
+                @id211574026473035439 x : 0;
+                @id211579914996035440 y : 0;
+                @id211578588063080407 text : v:this->^.Text;
+                @id211575568155092092 textColor : v:this->^.TextColor;
+                @id211577263117121592 "font" : font:font_1;
+                @id211570893639054855 horizontalAlign : 1;
+                @id211571435816477251 verticalAlign : 0;
+            }
+        }
+    }
+    @id1233899717344537229 widget Navigation_Arrow_Left GtfImageDWT
+    {
+        feature ScaleMode
+        {
+            @id1233895842257537238 scaleMode : 1;
+        }
+        feature TouchShortReleased
+        {
+            @id1233896027503537237 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            @loc
+                            dp:Menu_Info_CurrentSponsor_Selected -= 1;
+                            fire ev:Menu_GoTo_Settings();
+                            false;
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id1233898742075537231 touchable : true;
+            @id1233896427109537232 touched : false;
+            @id1233891116617537233 touchPolicy : 0;
+            @id1233896607680537234 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id1233890357435537235 colorationEnabled : v:this.touched;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id1233895496708537239 name : Navigation_Arrow_Left;
+        @id1233893395876537240 height : 50;
+        @id211570802626477476 visible : true;
+        @id1233897201223537241 width : 70;
+        @id1233892922096537242 x : 100;
+        @id1233899340768537243 y : 22;
+        @id1233897783837537230 "image" : image:images_Pfeil_Back_png;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+    }
+    @id1233898821447901483 widget Icon GtfImageDWT
+    {
+        feature ScaleMode
+        {
+            @id1233898026070901485 scaleMode : 1;
+        }
+        @id1233890765659901486 name : Icon;
+        @id1233896622885901487 height : 110;
+        @id211570802626477476 visible : true;
+        @id1233899537760901488 width : 110;
+        @id1233893490512901489 x : 161;
+        @id1233891803212901490 y : 123;
+        @id1233894171304901484 "image" : image:images_menu_MenuButton_Apearance_png;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+    }
+    @id1233894979701356936 widget "Change Image" GtfImageDWT
+    {
+        feature ScaleMode
+        {
+            @id1233894357923356939 scaleMode : 2;
+        }
+        feature TouchShortReleased
+        {
+            @id1233897739676356951 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            @loc
+                            if(v:this.touchIndex == false)
+                            v:this.touchIndex = true
+                            else if(v:this.touchIndex == true)
+                            v:this.touchIndex = false
+                            false
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id1233898255530356947 touchable : true;
+            @id1233897589739356948 touched : false;
+            @id1233894942753356949 touchPolicy : 0;
+            @id1233890619356356950 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id1233893065045356940 colorationEnabled : true;
+            @id1233892401456356941 colorationColor : color: 255, 255, 255, 142;
+        }
+        @id1233890188843356952 name : "Change Image";
+        @id1233896699498356953 height : 35;
+        @id211570802626477476 visible : true;
+        @id1233895499560356954 width : 70;
+        @id1233892277365502821 x : 650;
+        @id1233892672990556684 y : v:this->^->Label.y;
+        @id1233894050956356938 "image" : image:NONE;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+        @id1233893495235356942 image01 ::image : image:images_Specials_Modus1_png;
+        @id1233891686214356943 image02 ::image : image:images_Specials_Modus2_png;
+        @id1233892768785356946 setButton ::void : on_trigger
+        {
+            function(v:isInit::bool){
+                @loc
+                if(v:this.touchIndex==false)
+                {v:this.image = v:this.image01}
+                if(v:this.touchIndex==true)
+                {v:this.image = v:this.image02}
+                false
+            }
+        }
+        trigger
+        {
+            @loc
+            v:this.touchIndex;
+        }
+        ;
+        @id1233894369197581663 touchIndex ::bool : dp:touchIndex;
+    }
+    @id1233897958764509062 widget Label GtfLabelDWT
+    {
+        @id1233892640368509063 name : Label;
+        @id1233894497009509064 height : 35;
+        @id211571371723477235 visible : true;
+        @id1233891890129509065 width : 225;
+        @id1233890444352509066 x : 400;
+        @id1233895107107509067 y : 527;
+        @id1233891850711553982 text : dp:Content_Settings_Appearance;
+        @id1233892071866805825 textColor : color: 255, 255, 255, 255;
+        @id1233892370526772692 "font" : font:font_18;
+        @id211579256371477249 horizontalAlign : 0;
+        @id211571435816477251 verticalAlign : 0;
+    }
+    @id1233898956361649279 widget TUM_AppearanceMode_Normal GtfContainerDWT
+    {
+        feature TouchShortReleased
+        {
+            @id1233895911220988481 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            @loc
+                            dp:Color_Highlight_Touch = v:this.Color_Highlight_Touch;
+                            dp:Color_Background = v:this.Color_Background;
+                            dp:Color_BorderImage = v:this.Color_BorderImage
+                            false;
+                        
+                    }
+            }
+            ;
+        }
+        feature StateSelected
+        {
+            @id1233899028887571295 selected : false;
+        }
+        feature StateTouched
+        {
+            @id1233897571278571289 touchable : true;
+            @id1233892357716571290 touched : false;
+            @id1233894843435571291 touchPolicy : 0;
+            @id1233894674721571292 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id1233894341085278162 colorationEnabled : false;
+            @id1233898185782667759 colorationColor : color: 255, 0, 0, 255;
+        }
+        @id1233893113888649280 name : TUM_AppearanceMode_Normal;
+        @id1233892585511649281 height : 100;
+        @id211576532092478116 visible : true;
+        @id1233899395443649282 width : 325;
+        @id1233894647244649283 x : 400;
+        @id1233897609763649284 y : 125;
+        @id1233899743932704216 ButtonText ::string : Normal;
+        @id1233899822676702007 ButtonIcon ::image : image:images_menu_bg_2_jpg;
+        @id1233897269890283014 setColorationEnabled ::void : on_trigger
+        {
+            function(v:isInit::bool){
+                @loc
+                if(v:this.touched || v:this.selected)
+                {
+                  v:this.colorationEnabled = true;
+                    v:this->^.colorationIndexMode = 1;
+                }
+                else
+                {
+                  v:this.colorationEnabled = false;
+                }
+                false;
+            }
+        }
+        trigger
+        {
+            @loc
+            v:this.touched;
+            v:this.selected;
+        }
+        ;
+        @id1233899095698705839 ButtonText_textColor ::color : color: 0, 0, 0, 255;
+        @id1233890368853915762 Color_Background ::image : image:images_menu_bg_new_png;
+        @id1233896855460926400 Color_BorderImage ::image : image:images_menu_bg_all_png;
+        @id1233896692951570552 Color_Highlight_Touch ::color : color: 255, 0, 0, 255;
+        @id1233891945505649285 widget Icon GtfImageDWT
+        {
+            feature ScaleMode
+            {
+                @id1233898385144571308 scaleMode : 1;
+            }
+            @id1233894400838571309 name : Icon;
+            @id1233898205486571310 height : v:this->^.height;
+            @id211570802626477476 visible : true;
+            @id1233891751779571311 width : v:this->^.width;
+            @id1233896106936571312 x : 0;
+            @id1233894784728571313 y : 0;
+            @id1233894084270571305 "image" : v:this->^.ButtonIcon;
+            @id1233890483868571306 horizontalAlign : 1;
+            @id1233892340303571307 verticalAlign : 0;
+        }
+        @id1233894443239649286 widget ButtonText GtfLabelDWT
+        {
+            @id1233895381362571320 name : ButtonText;
+            @id1233891491014571321 height : v:this->^.height;
+            @id211571371723477235 visible : true;
+            @id1233892067618571322 width : v:this->^.width;
+            @id1233894508508571323 x : 0;
+            @id1233899367716571324 y : 0;
+            @id1233895841482571315 text : v:this->^.ButtonText;
+            @id1233891816368605592 textColor : v:this->^.ButtonText_textColor;
+            @id1233891873679571317 "font" : font:font_17;
+            @id1233897535273571318 horizontalAlign : 1;
+            @id1233894045152571319 verticalAlign : 0;
+        }
+    }
+    @id1233893965647744717 widget TUM_AppearanceMode_TUM GtfContainerDWT
+    {
+        feature TouchShortReleased
+        {
+            @id1233898364405744721 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            @loc
+                            dp:Color_Highlight_Touch = v:this.Color_Highlight_Touch;
+                            dp:Color_Background = v:this.Color_BackgroundImage;
+                            dp:Color_BorderImage = v:this.Color_BorderImage
+                            false;
+                        
+                    }
+            }
+            ;
+        }
+        feature StateSelected
+        {
+            @id1233899028887571295 selected : false;
+        }
+        feature StateTouched
+        {
+            @id1233897571278571289 touchable : true;
+            @id1233892357716571290 touched : false;
+            @id1233894843435571291 touchPolicy : 0;
+            @id1233894674721571292 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id1233894369786571294 colorationEnabled : false;
+            @id1233893014631744722 colorationColor : color: 0, 0, 255, 255;
+        }
+        @id1233891103412744729 name : TUM_AppearanceMode_TUM;
+        @id1233899755170744730 height : 100;
+        @id211576532092478116 visible : true;
+        @id1233891464942744731 width : 325;
+        @id1233894633966744732 x : 400;
+        @id1233891275454744733 y : 250;
+        @id1233896848721744718 ButtonText ::string : TUM;
+        @id1233899961191744719 ButtonIcon ::image : image:images_menu_bg_tum_jpg;
+        @id1233890333738744724 setColorationEnabled ::void : on_trigger
+        {
+            function(v:isInit::bool){
+                @loc
+                if(v:this.touched || v:this.selected)
+                {
+                  v:this.colorationEnabled = true;
+                      v:this->^.colorationIndexMode = 3;
+                }
+                else
+                {
+                  v:this.colorationEnabled = false;
+                }
+                false;
+            }
+        }
+        trigger
+        {
+            @loc
+            v:this.touched;
+            v:this.selected;
+        }
+        ;
+        @id1233894989042744725 ButtonText_textColor ::color : color: 0, 0, 0, 255;
+        @id1233895555675744726 Color_Highlight_Touch ::color : color: 0, 0, 255, 255;
+        @id1233896244469744727 Color_BorderImage ::image : image:images_menu_bg_all_tum_png;
+        @id1233897027751744728 Color_BackgroundImage ::image : image:images_menu_bg_tum_jpg;
+        @id1233896174093744734 widget Icon GtfImageDWT
+        {
+            feature ScaleMode
+            {
+                @id1233898385144571308 scaleMode : 1;
+            }
+            @id1233894400838571309 name : Icon;
+            @id1233898205486571310 height : v:this->^.height;
+            @id211570802626477476 visible : true;
+            @id1233891751779571311 width : v:this->^.width;
+            @id1233896106936571312 x : 0;
+            @id1233894784728571313 y : 0;
+            @id1233894084270571305 "image" : v:this->^.ButtonIcon;
+            @id1233890483868571306 horizontalAlign : 1;
+            @id1233892340303571307 verticalAlign : 0;
+        }
+        @id1233892832482744735 widget ButtonText GtfLabelDWT
+        {
+            @id1233895381362571320 name : ButtonText;
+            @id1233891491014571321 height : v:this->^.height;
+            @id211571371723477235 visible : true;
+            @id1233892067618571322 width : v:this->^.width;
+            @id1233894508508571323 x : 0;
+            @id1233899367716571324 y : 0;
+            @id1233895841482571315 text : v:this->^.ButtonText;
+            @id1233891816368605592 textColor : v:this->^.ButtonText_textColor;
+            @id1233891873679571317 "font" : font:font_17;
+            @id1233897535273571318 horizontalAlign : 1;
+            @id1233894045152571319 verticalAlign : 0;
+        }
+    }
+    @id1233896748331652369 widget TUM_AppearanceMode_Tron GtfContainerDWT
+    {
+        feature TouchShortReleased
+        {
+            @id1233896722496758065 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            @loc
+                            dp:Color_Highlight_Touch = v:this.Color_Highlight_Touch;
+                            dp:Color_Background = v:this.Color_BackgroundImage;
+                            dp:Color_BorderImage = v:this.Color_BorderImage
+                            false;
+                        
+                    }
+            }
+            ;
+        }
+        feature StateSelected
+        {
+            @id1233899028887571295 selected : false;
+        }
+        feature StateTouched
+        {
+            @id1233897571278571289 touchable : true;
+            @id1233892357716571290 touched : false;
+            @id1233894843435571291 touchPolicy : 0;
+            @id1233894674721571292 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id1233894369786571294 colorationEnabled : false;
+            @id1233894940827672062 colorationColor : color: 0, 255, 255, 255;
+        }
+        @id1233894152367652370 name : TUM_AppearanceMode_Tron;
+        @id1233897807612652371 height : 100;
+        @id211576532092478116 visible : true;
+        @id1233898980733652372 width : 325;
+        @id1233896281785652373 x : 400;
+        @id1233894209207652374 y : 375;
+        @id1233896524499783695 ButtonText ::string : Tron;
+        @id1233898881294748769 ButtonIcon ::image : image:images_menu_bg_tron_png;
+        @id1233897264524294517 setColorationEnabled ::void : on_trigger
+        {
+            function(v:isInit::bool){
+                @loc
+                if(v:this.touched || v:this.selected)
+                {
+                  v:this.colorationEnabled = true;
+                      v:this->^.colorationIndexMode = 2;
+                }
+                else
+                {
+                  v:this.colorationEnabled = false;
+                }
+                false;
+            }
+        }
+        trigger
+        {
+            @loc
+            v:this.touched;
+            v:this.selected;
+        }
+        ;
+        @id1233897205780781709 ButtonText_textColor ::color : color: 255, 255, 255, 255;
+        @id1233893851398534673 Color_Highlight_Touch ::color : color: 0, 255, 255, 255;
+        @id1233892470793565293 Color_BorderImage ::image : image:images_menu_bg_all_tron_png;
+        @id1233893382409597553 Color_BackgroundImage ::image : image:images_menu_bg_tron_png;
+        @id1233897262513652375 widget Icon GtfImageDWT
+        {
+            feature ScaleMode
+            {
+                @id1233898385144571308 scaleMode : 1;
+            }
+            @id1233894400838571309 name : Icon;
+            @id1233898205486571310 height : v:this->^.height;
+            @id211570802626477476 visible : true;
+            @id1233891751779571311 width : v:this->^.width;
+            @id1233896106936571312 x : 0;
+            @id1233894784728571313 y : 0;
+            @id1233894084270571305 "image" : v:this->^.ButtonIcon;
+            @id1233890483868571306 horizontalAlign : 1;
+            @id1233892340303571307 verticalAlign : 0;
+        }
+        @id1233897049609652376 widget ButtonText GtfLabelDWT
+        {
+            @id1233895381362571320 name : ButtonText;
+            @id1233891491014571321 height : v:this->^.height;
+            @id211571371723477235 visible : true;
+            @id1233892067618571322 width : v:this->^.width;
+            @id1233894508508571323 x : 0;
+            @id1233899367716571324 y : 0;
+            @id1233895841482571315 text : v:this->^.ButtonText;
+            @id1233891816368605592 textColor : v:this->^.ButtonText_textColor;
+            @id1233891873679571317 "font" : font:font_17;
+            @id1233897535273571318 horizontalAlign : 1;
+            @id1233894045152571319 verticalAlign : 0;
+        }
+    }
+}
+@id1233896800714573388 view "33_Settings_Rating" GtfViewDWT
+{
+    @id1233899641899573390 name : "33_Settings_Rating";
+    @id1233898602354573391 height : 768;
+    @id211577801281478322 visible : true;
+    @id1233890463134573392 width : 1024;
+    @id1233899437711573393 x : 0;
+    @id1233895931175573394 y : 0;
+    @id1233893301443093097 ViewTitle ::string : dp:ViewTitle_Settings_Rating;
+    @id211579043703248623 BatteryLevelVisible ::bool : true;
+    @id211577565029355568 HomeButtonVisible ::bool : true;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
+    @id211572522960594403 BackButtonVisible ::bool : false;
+    @id101305033349295371 BlackShadow_visible ::bool : true;
+    @id1233899701895573395 widget Background GtfImageDWT
+    {
+        @id211579903534103514 name : Background;
+        @id101305310125823399 height : 1080;
+        @id211570802626477476 visible : true;
+        @id101306260102824980 width : 1920;
+        @id211572446626103517 x : -234;
+        @id211577165063103518 y : -109;
+        @id211576512344859854 "image" : v:this->^.BackgroundImage;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+        @id101308174990779758 isPlayed ::bool : false;
+    }
+    @id1233898101630573396 widget BlackShadow GtfRectangleDWT
+    {
+        @id101309222395395621 name : BlackShadow;
+        @id101306469655211515 height : 566;
+        @id101302602681295477 visible : v:this->^.BlackShadow_visible;
+        @id101301524427208258 width : 989;
+        @id101307963103395624 x : 18;
+        @id101307203587395625 y : 100;
+        @id101308249050424076 fillColor : color: 0, 0, 0, 100;
+    }
+    @id1233896578917573397 widget Top_Bottom_Border GtfImageDWT
+    {
+        @id101306058577525615 name : Top_Bottom_Border;
+        @id101309335771525616 height : v:this->^.height;
+        @id211570802626477476 visible : true;
+        @id101303409930525617 width : v:this->^.width;
+        @id101307750928525618 x : 0;
+        @id101309997519525619 y : 0;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+    }
+    @id1233891208114573398 widget Title GtfLabelDWT
+    {
+        @id211572183939183613 name : Title;
+        @id211577519098183614 height : 90;
+        @id211571371723477235 visible : true;
+        @id211572414247277544 width : 975;
+        @id211571072226183616 x : 3;
+        @id211572750983183617 y : -14;
+        @id211574249872309372 text : v:this->^.ViewTitle;
+        @id211576851441200213 textColor : color: 255, 255, 255, 255;
+        @id211578138119205399 "font" : font:font_0;
+        @id211571395562258283 horizontalAlign : 2;
+        @id211579378303229239 verticalAlign : 2;
+    }
+    @id1233895517703573399 widget HomeButton GtfImageDWT
+    {
+        feature TouchShortReleased
+        {
+            @id211573929078018209 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            fire ev:"Menu_GoTo Home_Button"() ; true
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id211572001178302678 touchable : true;
+            @id211579955819302695 touched : false;
+            @id211576173742302712 touchPolicy : 0;
+            @id211579392424302731 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id211578361808314607 colorationEnabled : v:this.touched;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id211574207284335001 name : HomeButton;
+        @id211570795866335002 height : 62;
+        @id211574789919355601 visible : v:this->^.HomeButtonVisible;
+        @id211575434211335003 width : 61;
+        @id211573040525335004 x : 15;
+        @id211570053638335005 y : 11;
+        @id211576325287376804 "image" : image:images_menu_home_png;
+        @id211574677564288822 horizontalAlign : 1;
+        @id211572713314292059 verticalAlign : 0;
+    }
+    @id1233897332277573400 widget BackButton GtfImageDWT
+    {
+        feature ScaleMode
+        {
+            @id101308257416484923 scaleMode : 1;
+        }
+        feature TouchShortReleased
+        {
+            @id211573298737493633 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            fire ev:Menu_Back() ; true
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id211572001178302678 touchable : true;
+            @id211579955819302695 touched : false;
+            @id211576173742302712 touchPolicy : 0;
+            @id211579392424302731 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id211578361808314607 colorationEnabled : v:this.touched;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id211579065476493634 name : BackButton;
+        @id211579177960493635 height : 60;
+        @id211572145505493636 visible : v:this->^.BackButtonVisible;
+        @id211572288484493637 width : 83;
+        @id211577996345493638 x : 101;
+        @id211571012562493639 y : 17;
+        @id211573329274493630 "image" : image:images_Pfeil_Back_png;
+        @id211574677564288822 horizontalAlign : 1;
+        @id211572713314292059 verticalAlign : 0;
+    }
+    @id1233899514931573401 widget VehicleIndicators GtfContainerDWT
+    {
+        feature LayoutPolicyFlow
+        {
+            @id211570604595281983 horizontalGap : 5;
+            @id211575944087282012 verticalGap : 0;
+            @id211575288128282035 layoutDirection : 0;
+            @id211577750024282059 horizontalChildAlign : 0;
+            @id211579639081282085 verticalChildAlign : 0;
+        }
+        @id211571939677213580 name : VehicleIndicators;
+        @id211576190852213581 height : 60;
+        @id211576532092478116 visible : true;
+        @id211574419679213582 width : 320;
+        @id211578275773213583 x : 352;
+        @id211575458675213584 y : 699;
+        @id1233893639250573402 widget Indicator_Left GtfImageDWT
+        {
+            @id211577143233242749 name : Indicator_Left;
+            @id211579890531242750 height : 60;
+            @id211570802626477476 visible : true;
+            @id211573564429242751 width : 60;
+            @id211575725692242752 x : 0;
+            @id211577387908242753 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211577133550246174 ImageOff ::image : image:images_indicators_Indicator_Left_Off_png;
+            @id211578716347247534 ImageOn ::image : image:images_indicators_Indicator_Left_On_yellow_png;
+            @id211575778942718692 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Left_IsOn;
+        }
+        @id1233893672190573403 widget Indicator_Light GtfImageDWT
+        {
+            @id211572285859290782 name : Indicator_Light;
+            @id211575640545290783 height : 60;
+            @id211570802626477476 visible : true;
+            @id211573927091290784 width : 60;
+            @id211575757827290785 x : 0;
+            @id211575657680290786 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211576274151299736 ImageOff ::image : image:images_indicators_Indicator_Light_Off_png;
+            @id211579864842300846 ImageOn ::image : image:images_indicators_Indicator_Light_On_png;
+            @id211573260005669803 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Light_IsOn;
+        }
+        @id1233896663690573405 widget Indicator_Warning GtfImageDWT
+        {
+            @id211572791960327632 name : Indicator_Warning;
+            @id211576058721327633 height : 60;
+            @id211570802626477476 visible : true;
+            @id211574956044327634 width : 60;
+            @id211577489044327635 x : 0;
+            @id211575438959327636 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211572378085334985 ImageOff ::image : image:images_indicators_Indicator_Warning_Off_png;
+            @id211572257393339082 ImageOn ::image : image:images_indicators_Indicator_Warning_On_png;
+            @id211572156853827664 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Warning_IsOn;
+        }
+        @id1233898017953573406 widget Indicator_Fern GtfImageDWT
+        {
+            @id211572927454358892 name : Indicator_Fern;
+            @id211570164317358893 height : 60;
+            @id211570802626477476 visible : true;
+            @id211578599423358894 width : 60;
+            @id211578696972358895 x : 0;
+            @id211576944121358896 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211577959254366340 ImageOff ::image : image:images_indicators_Indicator_Fern_Off_png;
+            @id211574476574371947 ImageOn ::image : image:images_indicators_Indicator_Fern_On_png;
+            @id211573406018580840 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Fern_IsOn;
+        }
+        @id1233898217005573407 widget Indicator_Right GtfImageDWT
+        {
+            @id211575688633380639 name : Indicator_Right;
+            @id211570007345380640 height : 60;
+            @id211570802626477476 visible : true;
+            @id211576817028380641 width : 60;
+            @id211578580815380642 x : 0;
+            @id211578810144380643 y : 0;
+            @id211579608601581870 "image" : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this.IndicatorIsOn;
+            }
+            read
+            {
+                @loc
+                if(v:this.IndicatorIsOn)
+                {
+                  v:this.ImageOn;
+                }
+                else
+                {
+                  v:this.ImageOff;
+                }
+            }
+            ;
+            @id211570993271737254 horizontalAlign : 1;
+            @id211572434923733597 verticalAlign : 0;
+            @id211570987407387413 ImageOff ::image : image:images_indicators_Indicator_Right_Off_png;
+            @id211573725090391663 ImageOn ::image : image:images_indicators_Indicator_Right_On_yellow_png;
+            @id211573032550765430 IndicatorIsOn ::bool : dp:ExtIn_Indicator_Right_IsOn;
+        }
+    }
+    @id1233894245963573408 widget BatteryLevel GtfImageDWT
+    {
+        feature TouchShortReleased
+        {
+            @id211572894614067373 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            fire ev:Menu_GoTo_Battery() ; true
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id211570491172061576 touchable : true;
+            @id211570510241061614 touched : false;
+            @id211570867652061645 touchPolicy : 0;
+            @id211579976723061678 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id211574288923142629 colorationEnabled : v:this.touched;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id211579036613525831 name : BatteryLevel;
+        @id211579978527525832 height : 60;
+        @id211571627145248725 visible : v:this->^.BatteryLevelVisible;
+        @id211575152305525833 width : 115;
+        @id211574991774525834 x : 850;
+        @id211576081386525835 y : 698;
+        @id211578136569539802 "image" : image:images_Battery_Empty_Horizontal02_png;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+        @id1233899506993573409 widget TUM_PercentBar_Horizontal GtfRectangleDWT
+        {
+            feature Border
+            {
+                @id211577040385872816 borderThickness : 0;
+                @id211573065748872831 borderColor : color: 255, 255, 255, 255;
+                @id211574508796872844 borderStyle : 0;
+            }
+            @id211571640467725466 name : TUM_PercentBar_Horizontal;
+            @id211570483643725467 height : 44;
+            @id211573946583477695 visible : true;
+            @id211576359966725468 width : 87;
+            @id211572361165725469 x : 10;
+            @id211576132502725470 y : 8;
+            @id211573732288477701 fillColor : color: 0, 0, 0, 255;
+            @id211571048152128049 Percentage ::int32_t : dp:Battery_Percentage;
+            @id101304390820632276 BarColor ::color : color: 255, 255, 255, 255;
+            @id211571701585166925 Text ::string : trigger
+            {
+                dp:Battery_Percentage;
+            }
+            read
+            {
+                f:formatInteger(0, 0xFFFFFFFF, false, false, 0, 10, dp:Battery_Percentage) + " %"
+            }
+            ;
+            @id211576342517750042 TextColor ::color : color: 128, 128, 128, 255;
+            @id1233896939320573410 widget PercentBar GtfRectangleDWT
+            {
+                @id211578329806891028 name : PercentBar;
+                @id211572699717891029 height : on_trigger
+                {
+                    function(v:isInit::bool){
+                        @loc
+                        true
+                    }
+                }
+                trigger
+                {
+                    @loc
+                    v:this->^.borderThickness;
+                    v:this->^.height;
+                }
+                read
+                {
+                    @loc
+                    v:this->^.height - 2*v:this->^.borderThickness;
+                }
+                ;
+                @id211573946583477695 visible : true;
+                @id211574427382891030 width : on_trigger
+                {
+                    function(v:isInit::bool){
+                        @loc
+                        true
+                    }
+                }
+                trigger
+                {
+                    @loc
+                    v:this->^.Percentage;
+                    v:this.maxWidth;
+                }
+                read
+                {
+                    @loc
+                    if(v:this->^.Percentage <= 100 && v:this->^.Percentage >= 0)
+                    {
+                        f:round(f:int2float(v:this.maxWidth) / 100.0 * f:int2float(v:this->^.Percentage));
+                    }
+                    else
+                    {
+                      0;
+                    }
+                }
+                ;
+                @id211578394524973895 x : v:this->^.borderThickness;
+                @id211571927898978291 y : v:this->^.borderThickness;
+                @id211577919725907768 fillColor : v:this->^.BarColor;
+                @id211579252951232971 maxWidth ::int32_t : trigger
+                {
+                    v:this->^.borderThickness;
+                    v:this->^.width;
+                }
+                read
+                {
+                    (v:this->^.width-2*v:this->^.borderThickness)::int32_t
+                }
+                ;
+            }
+            @id1233895573506573411 widget Label GtfLabelDWT
+            {
+                @id211572152381035436 name : Label;
+                @id211570477234040789 height : v:this->^.height;
+                @id211571371723477235 visible : true;
+                @id211576233500046305 width : v:this->^.width;
+                @id211574026473035439 x : 0;
+                @id211579914996035440 y : 0;
+                @id211578588063080407 text : v:this->^.Text;
+                @id211575568155092092 textColor : v:this->^.TextColor;
+                @id211577263117121592 "font" : font:font_1;
+                @id211570893639054855 horizontalAlign : 1;
+                @id211571435816477251 verticalAlign : 0;
+            }
+        }
+    }
+    @id1233890470909573412 widget Navigation_Arrow_Left GtfImageDWT
+    {
+        feature ScaleMode
+        {
+            @id1233896835599573420 scaleMode : 1;
+        }
+        feature TouchShortReleased
+        {
+            @id1233896230454573419 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            @loc
+                            dp:Menu_Info_CurrentSponsor_Selected -= 1;
+                            fire ev:Menu_GoTo_Settings();
+                            false;
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id1233895199439573414 touchable : true;
+            @id1233897039295573415 touched : false;
+            @id1233892076019573416 touchPolicy : 0;
+            @id1233897075837573417 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id1233890565104575013 colorationEnabled : false;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id1233896187767573421 name : Navigation_Arrow_Left;
+        @id1233893182841573422 height : 50;
+        @id211570802626477476 visible : true;
+        @id1233896441775573423 width : 70;
+        @id1233895254224573424 x : 100;
+        @id1233892715026573425 y : 22;
+        @id1233898110939573413 "image" : image:images_Pfeil_Back_png;
+        @id211579000083477486 horizontalAlign : 0;
+        @id211578051729477488 verticalAlign : 1;
+    }
+    @id1233894607721902540 widget Icon GtfImageDWT
+    {
+        feature ScaleMode
+        {
+            @id1233898658159902543 scaleMode : 1;
+        }
+        @id1233898387158902544 name : Icon;
+        @id1233895330761902545 height : 120;
+        @id211570802626477476 visible : true;
+        @id1233892254628902546 width : 120;
+        @id1233894450338902547 x : 161;
+        @id1233898134585902548 y : 111;
+        @id1233894648057902542 "image" : image:images_menu_MenuButton_Rate_png;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -15768,10 +17463,10 @@ include"views_transitions.atfv"
     @id1233896905490374309 width : 1024;
     @id1233894178771374310 x : 0;
     @id1233899632584374311 y : 0;
-    @id1233895097633579294 ViewTitle ::string : Specials;
+    @id246798141875450165 ViewTitle ::string : dp:ViewTitle_Specials;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id1233895628492374312 widget Background GtfImageDWT
@@ -15805,7 +17500,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -16297,7 +17992,7 @@ include"views_transitions.atfv"
         @id1233892654170484487 width : 164;
         @id1233897800255484488 x : 679;
         @id1233895710169484489 y : 180;
-        @id1233892350680622713 Bottom_Text_text ::string : Heartbeat;
+        @id246793702346525154 Bottom_Text_text ::string : dp:MenuItem_Button_Specials_Heartbeat;
         @id1233892922239712819 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Heartbeat_png;
         @id1233898495144484490 widget Button_image GtfImageDWT
         {
@@ -16403,7 +18098,7 @@ include"views_transitions.atfv"
         @id1233898673480487811 width : 164;
         @id1233899233539487812 x : 415;
         @id1233899001531487813 y : 418;
-        @id1233896557790625071 Bottom_Text_text ::string : "Parking pilot";
+        @id246795536402628521 Bottom_Text_text ::string : dp:MenuItem_Button_Specials_DistanceControl;
         @id1233892102467709663 Icon_image_image ::image : image:images_menu_MenuButton_Icon_Parking_png;
         @id1233890333563487814 widget Button_image GtfImageDWT
         {
@@ -16509,7 +18204,7 @@ include"views_transitions.atfv"
         @id1233896908700492487 width : 164;
         @id1233899336540492488 x : 679;
         @id1233898101158492489 y : 418;
-        @id1233893663688628084 Bottom_Text_text ::string : "LED Matrix";
+        @id246791783887733748 Bottom_Text_text ::string : dp:MenuItem_Button_Specials_LED;
         @id1233893814454706417 Icon_image_image ::image : image:images_menu_MenuButton_Icon_LED_png;
         @id1233897134740492490 widget Button_image GtfImageDWT
         {
@@ -16835,10 +18530,10 @@ include"views_transitions.atfv"
     @id211572865648202993 width : 1024;
     @id211570168951202994 x : 0;
     @id211576949434202995 y : 0;
-    @id211578858244212610 ViewTitle ::string : Gestures;
+    @id246794993822059210 ViewTitle ::string : dp:ViewTitle_Specials_Gestures;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id211579991204202996 widget Background GtfImageDWT
@@ -16872,7 +18567,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -17336,7 +19031,7 @@ include"views_transitions.atfv"
         @id211575162751567315 y : 125;
         @id211571718942720580 text : dp:Content_Gestures_InfoText;
         @id211571289223574017 textColor : color: 255, 255, 255, 255;
-        @id211579536952623875 "font" : font:font_18;
+        @id211579536952623875 "font" : font:font_19;
         @id211572360869613777 horizontalAlign : 1;
         @id211570317612603281 verticalAlign : 2;
     }
@@ -17403,12 +19098,12 @@ include"views_transitions.atfv"
             @id1233890436180544573 name : Arrow_text;
             @id1233891592431544574 height : 100;
             @id211571371723477235 visible : true;
-            @id1233895894934544575 width : 350;
-            @id1233894300849544576 x : 40;
+            @id1233895894934544575 width : 450;
+            @id1233894300849544576 x : -10;
             @id1233899176099544577 y : 370;
             @id1233898513169290691 text : "";
             @id1233893647529552322 textColor : color: 255, 255, 255, 255;
-            @id1233898147352535271 "font" : font:font_19;
+            @id1233898147352535271 "font" : font:font_20;
             @id1233894799278504335 horizontalAlign : 1;
             @id1233893705199501530 verticalAlign : 1;
             @id1233897464392699774 Gesture_Text ::list string : dp:Gesture_Command;
@@ -17920,10 +19615,10 @@ include"views_transitions.atfv"
     @id1233892047913321137 width : 1024;
     @id1233893213404321138 x : 0;
     @id1233897389722321139 y : 0;
-    @id1233892248832097495 ViewTitle ::string : Heartbeat;
+    @id246792380498877605 ViewTitle ::string : dp:ViewTitle_Specials_Heartbeat;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id1233899003120321140 widget Background GtfImageDWT
@@ -17957,7 +19652,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -18686,7 +20381,7 @@ include"views_transitions.atfv"
         }
         @id1233898655207182788 name : "Change Image";
         @id1233893549951182789 height : 35;
-        @id211570802626477476 visible : true;
+        @id1233898637854443988 visible : false;
         @id1233897458232182790 width : 70;
         @id1233895723379182791 x : 900;
         @id1233896521758182792 y : 604;
@@ -18723,10 +20418,10 @@ include"views_transitions.atfv"
     @id1233897305498326662 width : 1024;
     @id1233895079217326663 x : 0;
     @id1233891772164326664 y : 0;
-    @id1233899454178100396 ViewTitle ::string : "Parking pilot";
+    @id246797104297956921 ViewTitle ::string : dp:ViewTitle_Specials_DistanceControl;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id1233895197550326665 widget Background GtfImageDWT
@@ -18760,7 +20455,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -19683,10 +21378,10 @@ include"views_transitions.atfv"
     @id1233892171052330080 width : 1024;
     @id1233897632550330081 x : 0;
     @id1233891986804330082 y : 0;
-    @id1233891572591103953 ViewTitle ::string : "LED Matrix";
+    @id246799633491881245 ViewTitle ::string : dp:ViewTitle_Specials_LED;
     @id211579043703248623 BatteryLevelVisible ::bool : true;
     @id211577565029355568 HomeButtonVisible ::bool : true;
-    @id211577557344859812 BackgroundImage ::image : image:images_menu_bg_new_png;
+    @id1233895358653214655 BackgroundImage ::image : dp:Color_Background;
     @id211572522960594403 BackButtonVisible ::bool : false;
     @id101305033349295371 BlackShadow_visible ::bool : true;
     @id1233894835201330083 widget Background GtfImageDWT
@@ -19720,7 +21415,7 @@ include"views_transitions.atfv"
         @id101303409930525617 width : v:this->^.width;
         @id101307750928525618 x : 0;
         @id101309997519525619 y : 0;
-        @id101309699369586990 "image" : image:images_menu_bg_all_png;
+        @id1233893022847230490 "image" : dp:Color_BorderImage;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
@@ -20289,7 +21984,7 @@ include"views_transitions.atfv"
             @id1233894531918123639 width : 164;
             @id1233897627143123640 x : 0;
             @id1233892109839123641 y : 0;
-            @id1233892631428123633 Bottom_Text_text ::string : Fahren;
+            @id246790432072089754 Bottom_Text_text ::string : dp:MenuItem_Button_Specials_LED_Drive;
             @id1233899692456123634 Icon_image_image ::image : image:images_Specials_Icon_Fahren_png;
             @id1233899571244123635 buttonId ::int32_t : 1;
             @id1233893971678123642 widget Button_image GtfImageDWT
@@ -20382,7 +22077,7 @@ include"views_transitions.atfv"
             @id1233890414881123654 width : 164;
             @id1233891344477123655 x : 364;
             @id1233896673746123656 y : 275;
-            @id1233895521050123648 Bottom_Text_text ::string : Regenbogen;
+            @id246798334263118849 Bottom_Text_text ::string : dp:MenuItem_Button_Specials_LED_Rainbow;
             @id1233898796638123649 Icon_image_image ::image : image:images_Specials_Icon_Rainbow_png;
             @id1233890614243123650 buttonId ::int32_t : 2;
             @id1233897820458123657 widget Button_image GtfImageDWT
@@ -20475,7 +22170,7 @@ include"views_transitions.atfv"
             @id1233898507651123669 width : 164;
             @id1233891861670123670 x : 365;
             @id1233895343802123671 y : 275;
-            @id1233899881500123663 Bottom_Text_text ::string : Zufall;
+            @id246793111137131146 Bottom_Text_text ::string : dp:MenuItem_Button_Specials_LED_Random;
             @id1233894976477123664 Icon_image_image ::image : image:images_Specials_Icon_Zufall_png;
             @id1233895110624123665 buttonId ::int32_t : 3;
             @id1233891794929123672 widget Button_image GtfImageDWT
@@ -20568,7 +22263,7 @@ include"views_transitions.atfv"
             @id1233892440884123685 width : 164;
             @id1233897868425123686 x : 362;
             @id1233893554254123687 y : 277;
-            @id1233892333007123679 Bottom_Text_text ::string : Simulation;
+            @id246792447439139426 Bottom_Text_text ::string : dp:MenuItem_Button_Specials_LED_Simulation;
             @id1233898508969123680 Icon_image_image ::image : image:images_Specials_Icon_Simulation_png;
             @id1233894254072123681 buttonId ::int32_t : 4;
             @id1233897085235123688 widget Button_image GtfImageDWT
