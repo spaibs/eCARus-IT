@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">eCARus</string>
     <string name="action_settings">Language settings</string>
-    <string name="blinker_left">Left indicator light</string>
+    <string name="blinker_left">Left indicator light </string>
     <string name="blinker_right">Right indicator light</string>
     <string name="control_button">Change</string>
     <string name="info_title">Welcome to eCARus!</string>
@@ -24,4 +24,6 @@
     <string name="de">German</string>
     <string name="en">English</string>
     <string name="fr">French</string>
+    <string name="blinker">Blinker</string>
+    <string name="warning_lights">Warning lights</string>
 </resources>

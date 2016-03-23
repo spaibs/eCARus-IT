@@ -6,6 +6,9 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
+import android.widget.ArrayAdapter;
+import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.Switch;
 
 
@@ -25,12 +28,15 @@ public class ControlDialog extends DialogFragment{
     Switch rightBlinkerSwitch;
     Switch fullBeamSwitch;
     Switch brakelightsSwitch;
+    Switch warningLightsSwitch;
     public boolean headlightsState;
     public boolean backlightsState;
     public boolean leftBlinkerState;
     public boolean rightBlinkerState;
     public boolean fullBeamState;
     public boolean brakelightsState;
+    public boolean warningLightsState;
+
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -52,8 +58,9 @@ public class ControlDialog extends DialogFragment{
                         fullBeamState = fullBeamSwitch.isChecked();
                         leftBlinkerState = leftBlinkerSwitch.isChecked();
                         rightBlinkerState = rightBlinkerSwitch.isChecked();
-                        ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState, brakelightsState, fullBeamState);
-                        // TODO: send status update
+                        warningLightsState = warningLightsSwitch.isChecked();
+                        ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState, brakelightsState, fullBeamState, warningLightsState);
+                        // TODO: send status update messages
                     }
                 })
                 .setNegativeButton(R.string.negative_button, new DialogInterface.OnClickListener() {
@@ -95,6 +102,10 @@ public class ControlDialog extends DialogFragment{
         fullBeamSwitch = (Switch) getDialog().findViewById(R.id.full_beam_switch);
         fullBeamState = false;
         fullBeamSwitch.setChecked(fullBeamState);
+
+        warningLightsSwitch = (Switch) getDialog().findViewById(R.id.warning_light_switch);
+        warningLightsState = false;
+        warningLightsSwitch.setChecked(warningLightsState);
 
     }
 

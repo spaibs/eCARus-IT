@@ -22,7 +22,8 @@
     <string name="action_settings">Paramètres de langue</string>
     <string name="app_name">eCARus</string>
     <string name="backlights">Feu arrière</string>
-    <string name="blinker_left">Clignotant gauche</string>
+    <string name="blinker">Clignotant</string>
+    <string name="blinker_left">Clignotant gauche </string>
     <string name="blinker_right">Clignotant droit</string>
     <string name="brakelights">Feu d\'arrêt</string>
     <string name="contact"><b> Spécialité \n Technique de la transformation d\'énergie \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Bâtiment N3, 1ère Etage \n 80333 Munich \n \n <b>Personne de contacte</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
@@ -44,4 +45,5 @@
     <string name="on">Marche</string>
     <string name="positive_button">Adapter</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
+    <string name="warning_lights">Feux de détresse</string>
 </resources>

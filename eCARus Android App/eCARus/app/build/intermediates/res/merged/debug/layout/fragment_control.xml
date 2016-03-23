@@ -4,20 +4,23 @@
     tools:ignore="ContentDescription"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="ContentDescription"
-        tools:context="de.tum.ei.ecarus.ecarus.MainActivity$PlaceholderFragment">
+        tools:context="de.tum.ei.ecarus.ecarus.MainActivity$PlaceholderFragment"
+        android:layout_marginBottom="20dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:weightSum="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
 
             <!--Button opening control dialog fragment-->
             <Button
@@ -95,17 +98,11 @@
                     android:src="@drawable/right_blinker_image"
                     android:id="@+id/right_blinker_view"
                     android:layout_alignTop="@+id/ecarus_view"
-                    android:visibility="invisible"/>
-
+                    android:visibility="invisible"
+                    android:layout_marginBottom="20dp"/>
             </RelativeLayout>
 
-            <!-- Battery Widget -->
-            <de.tum.ei.ecarus.ecarus.BatteryWidget
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/batterywidget"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="54dp" />
+
         </LinearLayout>
 
     </ScrollView>

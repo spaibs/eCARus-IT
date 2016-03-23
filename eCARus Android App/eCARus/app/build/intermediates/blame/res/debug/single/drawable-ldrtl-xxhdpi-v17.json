@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\ga38gun\\Desktop\\temp\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\ga38gun\\Desktop\\temp\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
         "merged": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png",
         "source": "C:\\Users\\ga38gun\\Desktop\\eCARus-IT\\eCARus Android App\\eCARus\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     }

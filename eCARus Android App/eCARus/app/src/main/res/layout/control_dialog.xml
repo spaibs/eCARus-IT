@@ -1,98 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:stretchColumns="1"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp">
 
-    <!-- Headlights switch -->
-    <TableRow>
-        <TextView
-            android:text="@string/headlights"
-            android:layout_gravity="end"
-            android:padding="10dp"/>
-
-        <Switch
-            android:layout_width="wrap_content"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ContentDescription"
+        tools:context="de.tum.ei.ecarus.ecarus.MainActivity$PlaceholderFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/headlights_switch"
-            android:layout_column="1"
-            android:layout_gravity="center"/>
-    </TableRow>
+            android:orientation="vertical"
+            android:weightSum="1">
 
-    <!-- Full beam switch -->
-    <TableRow>
-        <TextView
-            android:text="@string/full_beam"
-            android:padding="10dp"
-            android:layout_gravity="end"/>
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                android:layout_gravity="center">
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/full_beam_switch"
-            android:layout_column="1"
-            android:layout_gravity="center"/>
-    </TableRow>
 
-    <!-- Backlights switch -->
-    <TableRow>
-        <TextView
-            android:text="@string/backlights"
-            android:padding="10dp"
-            android:layout_gravity="end"/>
+                <!-- Headlights switch -->
+                <TableRow>
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/backlights_switch"
-            android:layout_column="1"
-            android:layout_gravity="center"/>
-    </TableRow>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/headlights_switch"
+                        android:layout_column="1"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:text="@string/headlights"
+                        android:layout_gravity="start"
+                        android:padding="10dp"/>
 
-    <!-- Brakelights switch -->
-    <TableRow>
-        <TextView
-            android:text="@string/brakelights"
-            android:padding="10dp"
-            android:layout_gravity="end"/>
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/brakelights_switch"
-            android:layout_column="1"
-            android:layout_gravity="center"/>
-    </TableRow>
+                </TableRow>
 
-    <!-- Left blinker switch -->
-    <TableRow>
-        <TextView
-            android:text="@string/blinker_left"
-            android:padding="10dp"
-            android:layout_gravity="end"/>
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/left_blinker_switch"
-            android:layout_column="1"
-            android:layout_gravity="center"/>
-    </TableRow>
+                <!-- Full beam switch -->
+                <TableRow>
 
-    <!-- Right blinker switch -->
-    <TableRow>
-        <TextView
-            android:text="@string/blinker_right"
-            android:padding="10dp"
-            android:layout_gravity="end"/>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/full_beam_switch"
+                        android:layout_column="1"
+                        android:layout_gravity="center" />
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/right_blinker_switch"
-            android:layout_column="1"
-            android:layout_gravity="center"/>
-    </TableRow>
+                    <TextView
+                        android:text="@string/full_beam"
+                        android:padding="10dp"
+                        android:layout_gravity="start"/>
+                </TableRow>
 
-</TableLayout>
+                <!-- Backlights switch -->
+                <TableRow>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/backlights_switch"
+                        android:layout_column="1"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:text="@string/backlights"
+                        android:padding="10dp"
+                        android:layout_gravity="start"/>
+                </TableRow>
+
+                <!-- Brakelights switch -->
+                <TableRow>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/brakelights_switch"
+                        android:layout_column="1"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:text="@string/brakelights"
+                        android:padding="10dp"
+                        android:layout_gravity="start"/>
+                </TableRow>
+
+                <!-- Warning light switch -->
+                <TableRow>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/warning_light_switch"
+                        android:layout_column="1"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:text="@string/warning_lights"
+                        android:padding="10dp"
+                        android:layout_gravity="start" />
+                </TableRow>
+
+                <!-- Left blinker switch -->
+                <TableRow>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/left_blinker_switch"
+                        android:layout_column="1"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:text="@string/blinker_left"
+                        android:layout_gravity="start"
+                        android:padding="10dp"/>
+                </TableRow>
+
+                <!-- Right blinker switch -->
+                <TableRow>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/right_blinker_switch"
+                        android:layout_column="1"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:text="@string/blinker_right"
+                        android:padding="10dp"
+                        android:layout_gravity="start" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
