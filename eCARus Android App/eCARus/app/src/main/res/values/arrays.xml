@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="blinker_array"
+        android:layout_gravity="right">
+        <item>@string/off</item>
+        <item>@string/blinker_left</item>
+        <item>@string/blinker_right</item>
+    </string-array>
+
+</resources>

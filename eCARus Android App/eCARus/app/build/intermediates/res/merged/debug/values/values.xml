@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="lang_select">
-        <item>Deutsch</item>
-        <item>English</item>
-        <item>Français</item>
-    </string-array>
-    <string-array name="lang_values">
-        <item>de</item>
-        <item>en</item>
-        <item>fr</item>
+<resources xmlns:ns1="http://schemas.android.com/apk/res/android">
+    <string-array ns1:layout_gravity="right" name="blinker_array">
+        <item>@string/off</item>
+        <item>@string/blinker_left</item>
+        <item>@string/blinker_right</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -293,8 +288,9 @@
     <string name="app_name" translatable="false">eCARus</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="backlights">Rücklicht</string>
-    <string name="blinker_left">Linker Blinker </string>
-    <string name="blinker_right">Rechter Blinker </string>
+    <string name="blinker">Blinker</string>
+    <string name="blinker_left">Linker Blinker</string>
+    <string name="blinker_right">Rechter Blinker</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="brakelights">Bremslicht</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
@@ -322,6 +318,7 @@ Seither forschen jedes Semester Studierende an allen Aspekten dieses Zukunftsthe
     <string name="positive_button">Übernehmen</string>
     <string name="section_format" translatable="false">Section: %1$d</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="warning_lights">Warnblinker</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

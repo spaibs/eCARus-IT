@@ -3,7 +3,8 @@
     <string name="action_settings">Language settings</string>
     <string name="app_name">eCARus</string>
     <string name="backlights">Backlights</string>
-    <string name="blinker_left">Left indicator light</string>
+    <string name="blinker">Blinker</string>
+    <string name="blinker_left">Left indicator light </string>
     <string name="blinker_right">Right indicator light</string>
     <string name="brakelights">Brakelights</string>
     <string name="contact"><b> Department \n Energy conversion technique \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Building N3, 1st Floor \n 80333 München \n \n <b>Contact person</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
@@ -24,4 +25,5 @@
     <string name="off">OFF</string>
     <string name="on">ON</string>
     <string name="positive_button">Adapt</string>
+    <string name="warning_lights">Warning lights</string>
 </resources>

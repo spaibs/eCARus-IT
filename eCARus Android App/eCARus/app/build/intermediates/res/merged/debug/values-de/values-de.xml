@@ -22,8 +22,9 @@
     <string name="action_settings">Spracheinstellungen</string>
     <string name="app_name">eCARus</string>
     <string name="backlights">Rücklicht</string>
-    <string name="blinker_left">Linker Blinker</string>
-    <string name="blinker_right">Rechter Blinker</string>
+    <string name="blinker">Blinker</string>
+    <string name="blinker_left">Linker Blinker </string>
+    <string name="blinker_right">Rechter Blinker </string>
     <string name="brakelights">Bremslicht</string>
     <string name="contact"><b> Fachgebiet \n Energiewandlungstechnik \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Gebäude N3, 1. Stock \n 80333 München \n \n <b>Ansprechpartner</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="control_button">Ändern</string>
@@ -44,4 +45,5 @@
     <string name="on">AN</string>
     <string name="positive_button">Übernehmen</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="warning_lights">Warnblinker</string>
 </resources>
