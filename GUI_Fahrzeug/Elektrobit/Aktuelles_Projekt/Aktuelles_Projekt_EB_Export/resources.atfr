@@ -289,6 +289,10 @@ resource images_menu_MenuButton_Icon_Settings_big_png image
 {
     path : "images/menu/MenuButton_Icon_Settings_big.png";
 }
+resource images_Media_Media_Volume_BackgroundTUM_png image
+{
+    path : "images/Media/Media_Volume_BackgroundTUM.png";
+}
 resource images_menu_MenuButton_Town_png image
 {
     path : "images/menu/MenuButton_Town.png";
@@ -448,6 +452,10 @@ resource images_menu_MenuButton_Icon_Media_big_png image
 resource images_menu_MenuButton_Batterie_png image
 {
     path : "images/menu/MenuButton_Batterie.png";
+}
+resource images_Settings_Rating_Message_png image
+{
+    path : "images/Settings_Rating_Message.png";
 }
 resource images_Specials_Modus2_png image
 {

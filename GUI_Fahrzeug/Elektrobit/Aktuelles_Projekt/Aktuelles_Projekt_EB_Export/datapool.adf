@@ -116,6 +116,7 @@ declaration
     {
         @id211571048152128049 Battery_Percentage::int32_t direct "";
         @id1233895358653214655 Color_Background::image direct "";
+        @id1233897012392851513 Color_Bar_Volume::image direct "";
         @id1233893022847230490 Color_BorderImage::image direct "";
         @id211571965847442415 Color_Highlight_Bronze::color direct const "";
         @id211575246162381663 Color_Highlight_Gold::color direct const "";
@@ -140,6 +141,7 @@ declaration
         @id211576730294493872 Content_Info_Technical_Value::list string direct const "";
         @id246799415494142086 Content_Radio_UnderConstruction::string direct const "";
         @id1233891850711553982 Content_Settings_Appearance::string direct const "";
+        @id1233895525058107354 Content_Settings_Rating::string virtual const "";
         @id1233895253937546357 ExtIn_Heartbeat::int32_t direct "";
         @id211570380472950147 ExtOut_MediaPlayer_VolumeSet::void virtual const "";
         @id1233897464392699774 Gesture_Command::list string direct const "";

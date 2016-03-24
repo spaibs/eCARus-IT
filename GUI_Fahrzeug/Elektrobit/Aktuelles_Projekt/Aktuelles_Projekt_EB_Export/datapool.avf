@@ -30,6 +30,7 @@ values
 {
     @id211571048152128049 Battery_Percentage 86;
     @id1233895358653214655 Color_Background image:images_menu_bg_new_png;
+    @id1233897012392851513 Color_Bar_Volume image:images_Media_Media_Volume_Background01_png;
     @id1233893022847230490 Color_BorderImage image:images_menu_bg_all_png;
     @id1233898894768271290 Color_colorationIndex 2;
     @id211571965847442415 Color_Highlight_Bronze color: 204, 102, 0, 255;
@@ -113,6 +114,14 @@ values language Standard
     @id246799415494142086 Content_Radio_UnderConstruction "Work in Progress ...";
     @id211579005928573154 MenuItem_Button_Information Information;
     @id211575743952560338 MenuItem_Button_Settings Settings;
+    @id1233895525058107354 Content_Settings_Rating trigger
+    {
+    }
+    read
+    {
+        Rate
+    }
+    ;
     @id246794993822059210 ViewTitle_Specials_Gestures "Specials - Gestures";
     @id1233892074134411261 MenuItem_Button_Specials Specials;
     @id211573787840808702 ViewTitle_Info_Sponsors1 "Information - Sponsors";
@@ -138,7 +147,7 @@ values language Standard
     @id246793713464962524 ViewTitle_Navigation_Search "Navigation - Search";
     @id1233899633242910849 Gesture_Down_Button DOWN;
     @id1233893301443093097 ViewTitle_Settings_Rating "Settings - Rating";
-    @id211570697137018478 Content_Info_General_Text "Since spring 2009, eCarus offers each semester about 50 students the possibility of applying their gained skills and knowledge on the construction of a real electric vehicle. The main objectives of this project are to increase technical expertise in the field of electric mobility on the one hand and to enable the students to gain experience in group work on the other hand.\\n\\n\\nThe project eCarus is completely organized by students and therefore it offers students the opportunity to enhance their skills in self-reliance, teamwork, leadership and responsibility.\\n\\n\\n“What makes eCarus so special is the connection of theory and practice, technology and social skills applied to a highly active and exciting topic –electric mobility. ECarus offers me the unique opportunity to acquire competences for my future professional life.”";
+    @id211570697137018478 Content_Info_General_Text "Since spring 2009, eCarus offers each semester about 50 students the possibility of applying their gained skills and knowledge on the construction of a real electric vehicle. The main objectives of this project are to increase technical expertise in the field of electric mobility on the one hand and to enable the students to gain experience in group work on the other hand.\\n\\n\\nThe project eCarus is completely organized by students and therefore it offers students the opportunity to enhance their skills in self-reliance, teamwork, leadership and responsibility.\\n\\n\\n“What makes eCarus so special is the connection of theory and practice, technology and social skills applied to a highly active and exciting topic –electric mobility. eCARus offers me the unique opportunity to acquire competences for my future professional life.”";
     @id246793702346525154 MenuItem_Button_Specials_Heartbeat Heartbeat;
     @id211572010935159906 ViewTitle_Settings Settings;
     @id211571736660478421 MenuItem_Button_Media Music;
@@ -185,6 +194,14 @@ values language English
     @id246799415494142086 Content_Radio_UnderConstruction "Under construction...";
     @id211579005928573154 MenuItem_Button_Information Information;
     @id211575743952560338 MenuItem_Button_Settings Settings;
+    @id1233895525058107354 Content_Settings_Rating trigger
+    {
+    }
+    read
+    {
+        Rate
+    }
+    ;
     @id246794993822059210 ViewTitle_Specials_Gestures "Specials - Gestures";
     @id1233892074134411261 MenuItem_Button_Specials Specials;
     @id211573787840808702 ViewTitle_Info_Sponsors1 "Information - Sponsors";
@@ -210,7 +227,7 @@ values language English
     @id246793713464962524 ViewTitle_Navigation_Search "Navigation - Search";
     @id1233899633242910849 Gesture_Down_Button Down;
     @id1233893301443093097 ViewTitle_Settings_Rating "Settings - Rating";
-    @id211570697137018478 Content_Info_General_Text "Since spring 2009, eCarus offers each semester about 50 students the possibility of applying their gained skills and knowledge on the construction of a real electric vehicle. The main objectives of this project are to increase technical expertise in the field of electric mobility on the one hand and to enable the students to gain experience in group work on the other hand.\\n\\n\\nThe project eCarus is completely organized by students and therefore it offers students the opportunity to enhance their skills in self-reliance, teamwork, leadership and responsibility.\\n\\n\\n“What makes eCarus so special is the connection of theory and practice, technology and social skills applied to a highly active and exciting topic –electric mobility. ECarus offers me the unique opportunity to acquire competences for my future professional life.”";
+    @id211570697137018478 Content_Info_General_Text "Since spring 2009, eCarus offers each semester about 50 students the possibility of applying their gained skills and knowledge on the construction of a real electric vehicle. The main objectives of this project are to increase technical expertise in the field of electric mobility on the one hand and to enable the students to gain experience in group work on the other hand.\\n\\n\\nThe project eCarus is completely organized by students and therefore it offers students the opportunity to enhance their skills in self-reliance, teamwork, leadership and responsibility.\\n\\n\\n“What makes eCarus so special is the connection of theory and practice, technology and social skills applied to a highly active and exciting topic –electric mobility. eCARus offers me the unique opportunity to acquire competences for my future professional life.”";
     @id246793702346525154 MenuItem_Button_Specials_Heartbeat Heartbeat;
     @id211572010935159906 ViewTitle_Settings Settings;
     @id211571736660478421 MenuItem_Button_Media Music;
@@ -257,6 +274,14 @@ values language French
     @id246799415494142086 Content_Radio_UnderConstruction "En production...";
     @id211579005928573154 MenuItem_Button_Information Information;
     @id211575743952560338 MenuItem_Button_Settings "Paramètres";
+    @id1233895525058107354 Content_Settings_Rating trigger
+    {
+    }
+    read
+    {
+        "Évaluer"
+    }
+    ;
     @id246794993822059210 ViewTitle_Specials_Gestures "Accessoires - Gestes";
     @id1233892074134411261 MenuItem_Button_Specials Accessoires;
     @id211573787840808702 ViewTitle_Info_Sponsors1 "Information - Sponsors";
@@ -329,6 +354,14 @@ values language German
     @id246799415494142086 Content_Radio_UnderConstruction "In Arbeit.";
     @id211579005928573154 MenuItem_Button_Information Informationen;
     @id211575743952560338 MenuItem_Button_Settings Einstellungen;
+    @id1233895525058107354 Content_Settings_Rating trigger
+    {
+    }
+    read
+    {
+        Bewerten
+    }
+    ;
     @id246794993822059210 ViewTitle_Specials_Gestures "Spezial - Gesten";
     @id1233892074134411261 MenuItem_Button_Specials Spezial;
     @id211573787840808702 ViewTitle_Info_Sponsors1 "Information -Sponsoren";

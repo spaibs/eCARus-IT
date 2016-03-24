@@ -9,7 +9,7 @@
     #error "Including multiple datapool headers may lead to ambiguous ID definitions!"
 #endif
 
-#define DP_CONTEXT_FINGERPRINT "fb9bceb0bcf43baa1a883dbeec1c8ed7"
+#define DP_CONTEXT_FINGERPRINT "18eb6f3e059095c64af174afe3feec2e"
 
 //! @brief Type : int32_t
 #define DP_ID_Battery_Percentage ((uint32_t) 0x00000015)
@@ -18,7 +18,10 @@
 #define DP_ID_Color_Background ((uint32_t) 0x0000005F)
 
 //! @brief Type : image
-#define DP_ID_Color_BorderImage ((uint32_t) 0x00000060)
+#define DP_ID_Color_Bar_Volume ((uint32_t) 0x00000060)
+
+//! @brief Type : image
+#define DP_ID_Color_BorderImage ((uint32_t) 0x00000061)
 
 //! @brief Type : color
 #define DP_ID_Color_Highlight_Bronze ((uint32_t) 0x0000005D)
@@ -57,10 +60,10 @@
 #define DP_ID_Content_Heartbeat_Pulse ((uint32_t) 0x00000022)
 
 //! @brief Type : list string
-#define DP_ID_Content_Info_Battery_Item ((uint32_t) 0x00000061)
+#define DP_ID_Content_Info_Battery_Item ((uint32_t) 0x00000062)
 
 //! @brief Type : list string
-#define DP_ID_Content_Info_Battery_Value ((uint32_t) 0x00000062)
+#define DP_ID_Content_Info_Battery_Value ((uint32_t) 0x00000063)
 
 //! @brief Type : string
 #define DP_ID_Content_Info_General_Name ((uint32_t) 0x00000023)
@@ -78,16 +81,19 @@
 #define DP_ID_Content_Info_Partners_Gold1 ((uint32_t) 0x00000027)
 
 //! @brief Type : list string
-#define DP_ID_Content_Info_Technical_Item ((uint32_t) 0x00000063)
+#define DP_ID_Content_Info_Technical_Item ((uint32_t) 0x00000064)
 
 //! @brief Type : list string
-#define DP_ID_Content_Info_Technical_Value ((uint32_t) 0x00000064)
+#define DP_ID_Content_Info_Technical_Value ((uint32_t) 0x00000065)
 
 //! @brief Type : string
 #define DP_ID_Content_Radio_UnderConstruction ((uint32_t) 0x00000028)
 
 //! @brief Type : string
 #define DP_ID_Content_Settings_Appearance ((uint32_t) 0x00000029)
+
+//! @brief Type : string
+#define DP_ID_Content_Settings_Rating ((uint32_t) 0x00000067)
 
 //! @brief Type : list string
 #define DP_ID_ExtIn_Battery_ChargeInfo ((uint32_t) 0x0000000C)
@@ -138,7 +144,7 @@
 #define DP_ID_ExtOut_MediaPlayer_Volume ((uint32_t) 0x0000000E)
 
 //! @brief Type : void
-#define DP_ID_ExtOut_MediaPlayer_VolumeSet ((uint32_t) 0x00000066)
+#define DP_ID_ExtOut_MediaPlayer_VolumeSet ((uint32_t) 0x00000068)
 
 //! @brief Type : int32_t
 #define DP_ID_ExtOut_Navigation_Map_Height ((uint32_t) 0x0000000F)
@@ -153,10 +159,10 @@
 #define DP_ID_ExtOut_Navigation_Map_Y ((uint32_t) 0x00000012)
 
 //! @brief Type : list string
-#define DP_ID_Gesture_Command ((uint32_t) 0x00000065)
+#define DP_ID_Gesture_Command ((uint32_t) 0x00000066)
 
 //! @brief Type : void
-#define DP_ID_Gesture_Control ((uint32_t) 0x00000067)
+#define DP_ID_Gesture_Control ((uint32_t) 0x00000069)
 
 //! @brief Type : string
 #define DP_ID_Gesture_Down_Button ((uint32_t) 0x0000002A)

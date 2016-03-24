@@ -41,4 +41,5 @@ events
     @id1233895467878696211 event default GoTo_Ecarus;
     @id1233899542454425334 event default Menu_GoTo_Settings_Rating;
     @id1233891368817444122 event default Menu_GoTo_Settings_Appearance;
+    @id1233897166665906053 event default ExtOut_Rating(Stars::int32_t);
 }
