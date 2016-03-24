@@ -3,6 +3,8 @@ package de.tum.ei.ecarus.ecarus;
 // The interpretation of data messages with the ID 0x101 is stored in an object of this class.
 // For more information visit the eCARus Wiki.
 
+import android.util.Log;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,7 +37,8 @@ public class InterpretedData {
         // TODO: get real values
         backlightsValue = 0;
         brakelightsValue = 0;
-        batteryLevel = 10;
+        batteryLevel = 100;
+        Log.d("ecarus", "interpret data");
     }
 
 
@@ -63,18 +66,5 @@ public class InterpretedData {
         infoData[0] = speed;
         infoData[1] = batteryLevel;
         return  infoData;
-    }
-
-    public String[] createStringArrayFromData(){
-        dataString[0] = Integer.toString(batteryLevel);
-        dataString[1] = Integer.toString(leftBlinkerValue);
-        dataString[2] = Integer.toString(rightBlinkerValue);
-        dataString[3] = Integer.toString(warningLightValue);
-        dataString[4] = Integer.toString(headlightsValue);
-        dataString[5] = Integer.toString(fullBeamValue);
-        dataString[6] = Integer.toString(speed);
-        dataString[7] = Integer.toString(backlightsValue);
-        dataString[8] = Integer.toString(brakelightsValue);
-        return dataString;
     }
 }

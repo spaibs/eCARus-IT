@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mViewPager;
 
     private static UDPThread udpThread;
-    private static String[][] interpretedData;
     private static int[] infoData;
     private static Boolean[] lightData;
     private static boolean error;
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-        //mViewPager.setOffscreenPageLimit(2);
+
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
@@ -63,8 +62,6 @@ public class MainActivity extends AppCompatActivity {
         //starts a new UDP thread
         udpThread = (UDPThread) new UDPThread(this).execute();
 
-        infoData = this.getInfoData();
-        lightData = this.getLightData();
 
         error = false;
 
@@ -110,7 +107,6 @@ public class MainActivity extends AppCompatActivity {
 
             View rootView;
 
-
             // Info fragment
             if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
                 rootView = inflater.inflate(R.layout.fragment_info, container, false);
@@ -118,34 +114,29 @@ public class MainActivity extends AppCompatActivity {
             // Control fragment
             else if(getArguments().getInt(ARG_SECTION_NUMBER) == 2) {
                 rootView = inflater.inflate(R.layout.fragment_control, container, false);
-
             }
             //Data fragment
             else {
                 rootView = inflater.inflate(R.layout.fragment_data, container, false);
 
 
-                // Set text view monitoring the current speed
+                // Set text view monitoring the current speed and set battery widget monitoring the current battery level
                 TextView speed = (TextView) rootView.findViewById(R.id.speed_text);
-                int speedValue;
-                if (error) {
-                    speedValue = 0;
-                }
-                else {
-                    speedValue = infoData[0];
-                }
-                speed.setText(Integer.toString(speedValue) + " km/h");
-
-                // Set battery widget monitoring the current battery level
                 BatteryWidget batteryWidget = (BatteryWidget) rootView.findViewById(R.id.batterywidget);
+                int speedValue;
                 int batteryLevel;
-                if (error) {
-                    batteryLevel = 20;
-                }
-                else {
+
+                if(infoData != null) {
+                    speedValue = infoData[0];
                     batteryLevel = infoData[1];
                 }
+                else {
+                    speedValue = 0;
+                    batteryLevel = 100;
+                }
+                speed.setText(Integer.toString(speedValue) + " km/h");
                 batteryWidget.setBatteryLevel(batteryLevel);
+
             }
             return rootView;
         }
@@ -210,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
     // that are set by using the switches in the control dialog.
     // It is called when the positive button in the control dialog is clicked.
     public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState, boolean fullBeamState, boolean warningLightsState) {
-        Log.d("ecarus", "new image");
+        Log.d("ecarus", "set image");
 
         backlights_img= (ImageView) findViewById(R.id.backlights_view);
         headlights_img= (ImageView) findViewById(R.id.headlights_view);
@@ -309,17 +300,11 @@ public class MainActivity extends AppCompatActivity {
     // It is called by the UDP thread class.
     // This way the MainActivity gets access to the received information.
     public void setInfoData(int[] data) {
-
         infoData = data;
     }
-
-    // This function returns the interpreted data speed and battery value.
+    
+    // This function returns the interpreted data about the lights.
     // It is called by the control dialog.
-    public int[] getInfoData() {
-
-        return infoData;
-    }
-
     public Boolean[] getLightData() {
         return lightData;
     }
