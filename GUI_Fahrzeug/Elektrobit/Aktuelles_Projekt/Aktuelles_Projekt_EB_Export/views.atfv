@@ -5240,6 +5240,18 @@ include"views_transitions.atfv"
                 }
             }
         }
+        @id1233890808577980425 widget Image GtfImageDWT
+        {
+            @id1233899365392980409 name : Image;
+            @id1233897741956980410 height : 100;
+            @id211570802626477476 visible : true;
+            @id1233896934427980411 width : 100;
+            @id1233895325649980412 x : 0;
+            @id1233899356323980413 y : 0;
+            @id211572340670477484 "image" : image:NONE;
+            @id211579000083477486 horizontalAlign : 0;
+            @id211578051729477488 verticalAlign : 1;
+        }
     }
     @id211575223430656496 widget InfoText GtfLabelDWT
     {
@@ -6254,6 +6266,18 @@ include"views_transitions.atfv"
                     @id211571435816477251 verticalAlign : 0;
                 }
             }
+        }
+        @id1233890743048980445 widget Image GtfImageDWT
+        {
+            @id1233899365392980409 name : Image;
+            @id1233897741956980410 height : 100;
+            @id211570802626477476 visible : true;
+            @id1233896934427980411 width : 100;
+            @id1233895325649980412 x : 0;
+            @id1233899356323980413 y : 0;
+            @id211572340670477484 "image" : image:NONE;
+            @id211579000083477486 horizontalAlign : 0;
+            @id211578051729477488 verticalAlign : 1;
         }
     }
     @id211573157152454751 widget TUM_InfoList_Battery GtfContainerDWT
@@ -7373,6 +7397,18 @@ include"views_transitions.atfv"
                 }
             }
         }
+        @id1233892813742980452 widget Image GtfImageDWT
+        {
+            @id1233899365392980409 name : Image;
+            @id1233897741956980410 height : 100;
+            @id211570802626477476 visible : true;
+            @id1233896934427980411 width : 100;
+            @id1233895325649980412 x : 0;
+            @id1233899356323980413 y : 0;
+            @id211572340670477484 "image" : image:NONE;
+            @id211579000083477486 horizontalAlign : 0;
+            @id211578051729477488 verticalAlign : 1;
+        }
     }
     @id211575933452428875 widget TUM_InfoList_Technical GtfContainerDWT
     {
@@ -8490,6 +8526,18 @@ include"views_transitions.atfv"
                     @id211571435816477251 verticalAlign : 0;
                 }
             }
+        }
+        @id1233895878193980432 widget Image GtfImageDWT
+        {
+            @id1233899365392980409 name : Image;
+            @id1233897741956980410 height : 100;
+            @id211570802626477476 visible : true;
+            @id1233896934427980411 width : 100;
+            @id1233895325649980412 x : 0;
+            @id1233899356323980413 y : 0;
+            @id211572340670477484 "image" : image:NONE;
+            @id211579000083477486 horizontalAlign : 0;
+            @id211578051729477488 verticalAlign : 1;
         }
     }
     @id1233896784337606441 widget Rectangle GtfRectangleDWT
@@ -9936,6 +9984,18 @@ include"views_transitions.atfv"
                     @id211571435816477251 verticalAlign : 0;
                 }
             }
+        }
+        @id1233896697114980439 widget Image GtfImageDWT
+        {
+            @id1233899365392980409 name : Image;
+            @id1233897741956980410 height : 100;
+            @id211570802626477476 visible : true;
+            @id1233896934427980411 width : 100;
+            @id1233895325649980412 x : 0;
+            @id1233899356323980413 y : 0;
+            @id211572340670477484 "image" : image:NONE;
+            @id211579000083477486 horizontalAlign : 0;
+            @id211578051729477488 verticalAlign : 1;
         }
     }
     @id211574160131164990 widget Navigation_Arrow_Left GtfImageDWT
@@ -17454,6 +17514,371 @@ include"views_transitions.atfv"
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
     }
+    @id1233895230399257295 widget Star_Rating_2 GtfContainerDWT
+    {
+        @id1233897663084257296 name : Star_Rating_2;
+        @id1233894540267257298 height : on_trigger
+        {
+            function(v:isInit::bool){
+                @loc
+                true
+            }
+        }
+        trigger
+        {
+            @loc
+            v:this.width
+        }
+        read
+        {
+            @loc
+            v:this.width / 5
+        }
+        ;
+        @id211576532092478116 visible : true;
+        @id1233890621212257299 width : 500;
+        @id1233897171960257300 x : 297;
+        @id1233898975787257301 y : 409;
+        @id1233897151388536519 Stars_image ::image : image:images_Settings_Rating_Star00000_png;
+        @id1233897350338560733 Stars_imagestars ::list image :  {image:images_Settings_Rating_Star00000_png, image:images_Settings_Rating_Star00001_png, image:images_Settings_Rating_Star00011_png, image:images_Settings_Rating_Star00111_png, image:images_Settings_Rating_Star01111_png, image:images_Settings_Rating_Star11111_png };
+        @id1233897059900257302 widget Stars GtfImageDWT
+        {
+            feature ScaleMode
+            {
+                @id1233897608789560927 scaleMode : 2;
+            }
+            @id1233899686077503572 name : Stars;
+            @id1233895166862573390 height : v:this->^.height;
+            @id211570802626477476 visible : true;
+            @id1233895546780580611 width : v:this->^.width;
+            @id1233890868247503575 x : 0;
+            @id1233894909259503576 y : 0;
+            @id1233896087542536567 "image" : v:this->^.Stars_image;
+            @id211579000083477486 horizontalAlign : 0;
+            @id211578051729477488 verticalAlign : 1;
+            @id1233899382861560792 imagestars ::list image : v:this->^.Stars_imagestars;
+        }
+        @id1233890314251257303 widget Set_Star GtfContainerDWT
+        {
+            feature TouchShortReleased
+            {
+                @id1233893113548889864 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                v:this->^->Stars.image=v:this->^->Stars.imagestars[1]
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id1233893349021887569 touchable : true;
+                @id1233893797119887583 touched : false;
+                @id1233896143005887596 touchPolicy : 0;
+                @id1233894630373887610 touchBehavior : 0;
+            }
+            @id1233896070717629191 name : Set_Star;
+            @id1233892477853388760 height : v:this->^.height;
+            @id211576532092478116 visible : true;
+            @id1233894237169396052 width : v:this->^.height;
+            @id1233892209220629194 x : 0;
+            @id1233890403562629195 y : 0;
+        }
+        @id1233890959319257304 widget "Set_Star 2" GtfContainerDWT
+        {
+            feature TouchShortReleased
+            {
+                @id1233896240207179919 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                v:this->^->Stars.image=v:this->^->Stars.imagestars[2]
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id1233891807977179915 touchable : true;
+                @id1233893399201179916 touched : false;
+                @id1233893217312179917 touchPolicy : 0;
+                @id1233893737996179918 touchBehavior : 0;
+            }
+            @id1233895213228179920 name : "Set_Star 2";
+            @id1233890690552407899 height : v:this->^.height;
+            @id211576532092478116 visible : true;
+            @id1233893582677415368 width : v:this->^.height;
+            @id1233898231332179923 x : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this->^.width
+            }
+            read
+            {
+                @loc
+                v:this->^.width / 5
+            }
+            ;
+            @id1233890824107179924 y : 0;
+        }
+        @id1233890992063257305 widget "Set_Star 3" GtfContainerDWT
+        {
+            feature TouchShortReleased
+            {
+                @id1233898557927180604 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                v:this->^->Stars.image=v:this->^->Stars.imagestars[3]
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id1233893775240180600 touchable : true;
+                @id1233898179174180601 touched : false;
+                @id1233891314062180602 touchPolicy : 0;
+                @id1233896810786180603 touchBehavior : 0;
+            }
+            @id1233890477690180605 name : "Set_Star 3";
+            @id1233890635495422836 height : v:this->^.height;
+            @id211576532092478116 visible : true;
+            @id1233899855937432846 width : v:this->^.height;
+            @id1233892192866180608 x : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this->^.width
+            }
+            read
+            {
+                @loc
+                (v:this->^.width / 5) *2
+            }
+            ;
+            @id1233892002846180609 y : 0;
+        }
+        @id1233899552641257307 widget "Set_Star 4" GtfContainerDWT
+        {
+            feature TouchShortReleased
+            {
+                @id1233899806301181222 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                v:this->^->Stars.image=v:this->^->Stars.imagestars[4]
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id1233898326841181218 touchable : true;
+                @id1233894929313181219 touched : false;
+                @id1233896461042181220 touchPolicy : 0;
+                @id1233898752271181221 touchBehavior : 0;
+            }
+            @id1233891295143181223 name : "Set_Star 4";
+            @id1233894865750439336 height : v:this->^.height;
+            @id211576532092478116 visible : true;
+            @id1233893487059444908 width : v:this->^.height;
+            @id1233899582677181226 x : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this->^.width
+            }
+            read
+            {
+                @loc
+                (v:this->^.width / 5)*3
+            }
+            ;
+            @id1233899809138181227 y : 0;
+        }
+        @id1233899704940257308 widget "Set_Star 5" GtfContainerDWT
+        {
+            feature TouchShortReleased
+            {
+                @id1233891679786181827 touchShortReleased : script
+                {
+                        function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                        {
+                                @loc
+                                v:this->^->Stars.image=v:this->^->Stars.imagestars[5]
+                                false;
+                            
+                        }
+                }
+                ;
+            }
+            feature StateTouched
+            {
+                @id1233899274509181823 touchable : true;
+                @id1233894438730181824 touched : false;
+                @id1233896244699181825 touchPolicy : 0;
+                @id1233895903031181826 touchBehavior : 0;
+            }
+            @id1233893691183181828 name : "Set_Star 5";
+            @id1233892367193451334 height : v:this->^.height;
+            @id211576532092478116 visible : true;
+            @id1233895209196456576 width : v:this->^.height;
+            @id1233891765528181831 x : on_trigger
+            {
+                function(v:isInit::bool){
+                    @loc
+                    true
+                }
+            }
+            trigger
+            {
+                @loc
+                v:this->^.width
+            }
+            read
+            {
+                @loc
+                (v:this->^.width / 5)*4
+            }
+            ;
+            @id1233891949591181832 y : 0;
+        }
+    }
+    @id1233897776453294599 widget Tum_Button_Display GtfContainerDWT
+    {
+        feature TouchPressed
+        {
+            @id1233897434734859629 touchPressed : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            true
+                            
+                        
+                    }
+            }
+            ;
+        }
+        feature TouchShortReleased
+        {
+            @id1233890671061434605 touchShortReleased : script
+            {
+                    function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
+                    {
+                            @loc
+                            v:this->^->Star_Rating_2.Stars_image=v:this->^->Star_Rating_2.Stars_imagestars[0]
+                            false;
+                        
+                    }
+            }
+            ;
+        }
+        feature StateTouched
+        {
+            @id1233894235201859625 touchable : true;
+            @id1233898946613859626 touched : v:this.colorationEnabled;
+            @id1233896107470859627 touchPolicy : 0;
+            @id1233896766132859628 touchBehavior : 0;
+        }
+        feature Coloration
+        {
+            @id1233896586115439727 colorationEnabled : false;
+            @id211577837610160841 colorationColor : dp:Color_Highlight_Touch;
+        }
+        @id1233892348050294600 name : Tum_Button_Display;
+        @id1233893555685294601 height : 100;
+        @id1233891588120859635 visible : true;
+        @id1233890867790294602 width : 200;
+        @id1233896683418294603 x : 758;
+        @id1233897808115294604 y : 541;
+        @id1233898556107307242 "Bottom_Text_text 2" ::string : "";
+        @id1233892511224313724 "Top_Text_text 2" ::string : trigger
+        {
+        }
+        read
+        {
+            Bewerten
+        }
+        ;
+        @id1233890538968294605 widget Button_image GtfImageDWT
+        {
+            feature ScaleMode
+            {
+                @id1233899678019222092 scaleMode : 1;
+            }
+            @id1233896343695859643 name : Button_image;
+            @id1233892445900859644 height : v:this->^.height;
+            @id1233897774025859645 visible : true;
+            @id1233890830448859646 width : v:this->^.width;
+            @id1233899175141859647 x : 0;
+            @id1233894847425859648 y : 0;
+            @id1233891628924859640 "image" : image:images_Button_menue_Background_png;
+            @id1233898250482859641 horizontalAlign : 0;
+            @id1233896659655859642 verticalAlign : 1;
+        }
+        @id1233897550953294606 widget Top_Text GtfLabelDWT
+        {
+            @id1233894317506095267 name : Top_Text;
+            @id1233894596665095268 height : 50;
+            @id1233890173112095269 visible : true;
+            @id1233894823942095270 width : v:this->^.width;
+            @id1233891663466095271 x : 0;
+            @id1233898339145095272 y : 20;
+            @id1233893517102719095 text : v:this->^."Top_Text_text 2";
+            @id1233895433839095263 textColor : color: 255, 255, 255, 255;
+            @id1233891268392095264 "font" : font:font_2;
+            @id1233899827689095265 horizontalAlign : 1;
+            @id1233899483248095266 verticalAlign : 0;
+        }
+        @id1233897048335294607 widget Bottom_Text GtfLabelDWT
+        {
+            @id1233894908396859666 name : Bottom_Text;
+            @id1233893905870859667 height : 35;
+            @id1233892696912859669 visible : true;
+            @id1233896703846859670 width : v:this->^.width;
+            @id1233893074022859671 x : 0;
+            @id1233899471672859672 y : 80;
+            @id1233891321950713040 text : v:this->^."Bottom_Text_text 2";
+            @id1233897016601859662 textColor : color: 255, 255, 255, 255;
+            @id1233890597550859663 "font" : font:font_19;
+            @id1233893778798859664 horizontalAlign : 1;
+            @id1233894095020859665 verticalAlign : 0;
+        }
+    }
 }
 @id1233899471804374306 view "40_Specials_Menu" GtfViewDWT
 {
@@ -20260,7 +20685,7 @@ include"views_transitions.atfv"
                 @id211575906574480139 enabled : true;
                 @id211572440433480141 delay : 0;
                 @id1233897146772509678 duration : 500;
-                @id1233894770878498623 repeat : 1000;
+                @id1233894770878498623 repeat : 10000;
                 @id1233898217187594190 alternating : true;
                 @id1233896373909576727 relative : false;
                 @id1233892053041438686 "start" : 80.0;
@@ -20349,7 +20774,7 @@ include"views_transitions.atfv"
                 @id211573720563481039 enabled : true;
                 @id211573057223481041 delay : 0;
                 @id1233890261757682198 duration : 19630;
-                @id1233894955630678632 repeat : 51;
+                @id1233894955630678632 repeat : 510;
                 @id211576950130481047 alternating : false;
                 @id1233897162532092882 relative : true;
                 @id1233890026808709750 velocity : 100;
@@ -20440,12 +20865,27 @@ include"views_transitions.atfv"
         }
         feature TouchShortReleased
         {
-            @id1233891483123859630 touchShortReleased : script
+            @id1233897067004794056 touchShortReleased : script
             {
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
-                            true
-                            
+                            @loc
+                            if(v:this.setTouch==0)
+                            {
+                            dp:ExtIn_Heartbeat = 60;
+                            v:this.setTouch = 1;
+                            }
+                            else if(v:this.setTouch==1)
+                            {
+                            dp:ExtIn_Heartbeat = 120;
+                            v:this.setTouch = 2;
+                            }
+                            else if(v:this.setTouch==2)
+                            {
+                            dp:ExtIn_Heartbeat = 80;
+                            v:this.setTouch = 0;
+                            }
+                            false;
                         
                     }
             }
@@ -20479,6 +20919,7 @@ include"views_transitions.atfv"
             f:formatInteger(0, 0xFFFFFFFF, false, false, 0, 10, dp:ExtIn_Heartbeat) + " Bpm"
         }
         ;
+        @id1233890743880879841 setTouch ::int32_t : 0;
         @id1233893454540452076 widget Button_image GtfImageDWT
         {
             feature ScaleMode

@@ -113,6 +113,10 @@ resource images_menu_MenuButton_Icon_Parking_png image
 {
     path : "images/menu/MenuButton_Icon_Parking.png";
 }
+resource images_Settings_Rating_Star00111_png image
+{
+    path : "images/Settings_Rating_Star00111.png";
+}
 resource images_menu_bg_tron_png image
 {
     path : "images/menu/bg_tron.png";
@@ -377,6 +381,10 @@ resource images_menu_MenuButton_Specials_png image
 {
     path : "images/menu/MenuButton_Specials.png";
 }
+resource images_Settings_Rating_Star00000_png image
+{
+    path : "images/Settings_Rating_Star00000.png";
+}
 resource images_Specials_Icon_Simulation_png image
 {
     path : "images/Specials/Icon_Simulation.png";
@@ -457,6 +465,10 @@ resource images_sponsors_Neu_Infineon_png image
 {
     path : "images/sponsors/Neu/Infineon.png";
 }
+resource images_Settings_Rating_Star11111_png image
+{
+    path : "images/Settings_Rating_Star11111.png";
+}
 resource images_menu_MenuButton_Icon_Language_png image
 {
     path : "images/menu/MenuButton_Icon_Language.png";
@@ -533,6 +545,10 @@ resource images_menu_MenuButton_LED_png image
 {
     path : "images/menu/MenuButton_LED.png";
 }
+resource images_Settings_Rating_Star01111_png image
+{
+    path : "images/Settings_Rating_Star01111.png";
+}
 resource images_BatteryIndicator_Empty_png image
 {
     path : "images/BatteryIndicator_Empty.png";
@@ -556,6 +572,10 @@ resource images_sponsors_Neu_Eagle_png image
 resource images_Specials_Waves_Front_png image
 {
     path : "images/Specials/Waves_Front.png";
+}
+resource images_Settings_Rating_Star00011_png image
+{
+    path : "images/Settings_Rating_Star00011.png";
 }
 resource images_menu_MenuButton_Parking_png image
 {
@@ -612,6 +632,10 @@ resource images_Media_Media_pause_png image
 resource images_menu_MenuButton_Settings_big_png image
 {
     path : "images/menu/MenuButton_Settings_big.png";
+}
+resource images_Settings_Rating_Star00001_png image
+{
+    path : "images/Settings_Rating_Star00001.png";
 }
 resource images_sponsors_Neu_Peak_png image
 {
