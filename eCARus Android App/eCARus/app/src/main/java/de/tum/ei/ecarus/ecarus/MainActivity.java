@@ -13,7 +13,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -61,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
         //starts a new UDP thread
         udpThread = (UDPThread) new UDPThread(this).execute();
-
 
         error = false;
 
@@ -201,7 +199,6 @@ public class MainActivity extends AppCompatActivity {
     // that are set by using the switches in the control dialog.
     // It is called when the positive button in the control dialog is clicked.
     public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState, boolean fullBeamState, boolean warningLightsState) {
-        Log.d("ecarus", "set image");
 
         backlights_img= (ImageView) findViewById(R.id.backlights_view);
         headlights_img= (ImageView) findViewById(R.id.headlights_view);
@@ -302,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
     public void setInfoData(int[] data) {
         infoData = data;
     }
-    
+
     // This function returns the interpreted data about the lights.
     // It is called by the control dialog.
     public Boolean[] getLightData() {
