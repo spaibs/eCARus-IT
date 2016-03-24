@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/apk/res/android">
-    <string-array ns1:layout_gravity="right" name="blinker_array">
+    <string-array name="blinker_array" ns1:layout_gravity="right">
         <item>@string/off</item>
         <item>@string/blinker_left</item>
         <item>@string/blinker_right</item>
@@ -292,7 +292,6 @@
     <string name="blinker_left">Linker Blinker</string>
     <string name="blinker_right">Rechter Blinker</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
-    <string name="brakelights">Bremslicht</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="contact"><b> Fachgebiet \n Energiewandlungstechnik \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Gebäude N3, 1. Stock \n 80333 München \n \n <b>Ansprechpartner</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
     <string name="control_button">Ändern</string>

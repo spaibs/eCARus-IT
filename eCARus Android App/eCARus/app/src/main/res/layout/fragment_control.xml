@@ -64,14 +64,6 @@
                     android:layout_alignTop="@+id/ecarus_view"
                     android:visibility="invisible"/>
 
-                <!-- Brakelights image -->
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="450dp"
-                    android:src="@drawable/brakelights_image"
-                    android:id="@+id/brakelights_view"
-                    android:layout_alignTop="@+id/ecarus_view"
-                    android:visibility="invisible"/>
 
                 <!-- Full beam image -->
                 <ImageView

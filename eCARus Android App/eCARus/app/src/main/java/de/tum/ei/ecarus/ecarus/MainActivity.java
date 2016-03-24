@@ -27,17 +27,22 @@ public class MainActivity extends AppCompatActivity {
 
     private static UDPThread udpThread;
     private static String[][] interpretedData;
+    private static int[] infoData;
+    private static Boolean[] lightData;
+    private static boolean error;
 
     ImageView backlights_img;
     ImageView headlights_img;
     ImageView left_blinker_img;
     ImageView right_blinker_img;
     ImageView full_beam_img;
-    ImageView brakelights_img;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -50,12 +55,19 @@ public class MainActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+        //mViewPager.setOffscreenPageLimit(2);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
         //starts a new UDP thread
         udpThread = (UDPThread) new UDPThread(this).execute();
+
+        infoData = this.getInfoData();
+        lightData = this.getLightData();
+
+        error = false;
+
 
     }
 
@@ -106,24 +118,33 @@ public class MainActivity extends AppCompatActivity {
             // Control fragment
             else if(getArguments().getInt(ARG_SECTION_NUMBER) == 2) {
                 rootView = inflater.inflate(R.layout.fragment_control, container, false);
-                if(udpThread != null) {
-                    //stop UDP thread
-                    Log.d("ecarus", "udp thread gestartet");
-                }
+
             }
             //Data fragment
             else {
                 rootView = inflater.inflate(R.layout.fragment_data, container, false);
 
+
                 // Set text view monitoring the current speed
                 TextView speed = (TextView) rootView.findViewById(R.id.speed_text);
-                String speedValue = interpretedData[6][0];
-                speed.setText(speedValue);
+                int speedValue;
+                if (error) {
+                    speedValue = 0;
+                }
+                else {
+                    speedValue = infoData[0];
+                }
+                speed.setText(Integer.toString(speedValue) + " km/h");
 
                 // Set battery widget monitoring the current battery level
                 BatteryWidget batteryWidget = (BatteryWidget) rootView.findViewById(R.id.batterywidget);
-
-                int batteryLevel = Integer.parseInt(interpretedData[0][0]);
+                int batteryLevel;
+                if (error) {
+                    batteryLevel = 20;
+                }
+                else {
+                    batteryLevel = infoData[1];
+                }
                 batteryWidget.setBatteryLevel(batteryLevel);
             }
             return rootView;
@@ -188,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
     // This function updates the eCARus images according to the states of the lights
     // that are set by using the switches in the control dialog.
     // It is called when the positive button in the control dialog is clicked.
-    public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState, boolean brakelightsState, boolean fullBeamState, boolean warningLightsState) {
+    public void setImage(boolean headlightsState, boolean backlightsState, boolean leftBlinkerState, boolean rightBlinkerState, boolean fullBeamState, boolean warningLightsState) {
         Log.d("ecarus", "new image");
 
         backlights_img= (ImageView) findViewById(R.id.backlights_view);
@@ -196,7 +217,6 @@ public class MainActivity extends AppCompatActivity {
         left_blinker_img = (ImageView) findViewById(R.id.left_blinker_view);
         right_blinker_img = (ImageView) findViewById(R.id.right_blinker_view);
         full_beam_img = (ImageView) findViewById(R.id.full_beam_view);
-        brakelights_img = (ImageView) findViewById(R.id.brakelights_view);
 
         // Set headlights/full beam
         if(headlightsState){
@@ -219,25 +239,12 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // Set backlights/brakelights
+        // Set backlights
         if(backlightsState) {
-            if(brakelightsState) {
-                backlights_img.setVisibility(View.INVISIBLE);
-                brakelights_img.setVisibility(View.VISIBLE);
-            }
-            else {
-                backlights_img.setVisibility(View.VISIBLE);
-                brakelights_img.setVisibility(View.INVISIBLE);
-            }
+            backlights_img.setVisibility(View.VISIBLE);
         }
         else {
             backlights_img.setVisibility(View.INVISIBLE);
-            if(brakelightsState) {
-                brakelights_img.setVisibility(View.VISIBLE);
-            }
-            else {
-                brakelights_img.setVisibility(View.INVISIBLE);
-            }
         }
 
         // Only one blinker can be on at a time
@@ -275,6 +282,10 @@ public class MainActivity extends AppCompatActivity {
             if(udpThread!=null)
                 udpThread.cancel(true);
             udpThread = null;
+            error = true;
+        }
+        else {
+            error = false;
         }
         new AlertDialog.Builder(this)
                 .setTitle(title)
@@ -291,49 +302,38 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
+
     }
 
-    // This function receives interpreted data stored in the string array data.....
+    // This function receives interpreted data stored in the string array data.
     // It is called by the UDP thread class.
-    // This way the MainActivity gets access to the received information...
-    public void setData(String[][] data)
-    {
-        interpretedData = data;
+    // This way the MainActivity gets access to the received information.
+    public void setInfoData(int[] data) {
+
+        infoData = data;
+    }
+
+    // This function returns the interpreted data speed and battery value.
+    // It is called by the control dialog.
+    public int[] getInfoData() {
+
+        return infoData;
+    }
+
+    public Boolean[] getLightData() {
+        return lightData;
     }
 
     // This function interpretes incoming messages from eCARus and updates the animation
-    public void update_eCARus_Image(String[][] interpretedData)
-    {
-        String batteryLevel = interpretedData[0][0];
-        String leftBlinkerValue = interpretedData[1][0];
-        String rightBlinkerValue = interpretedData[2][0];
-        String warningLightsValue = interpretedData[3][0];
-        String headlightsValue = interpretedData[4][0];
-        String fullBeamValue = interpretedData[5][0];
-        String speed = interpretedData[6][0];
-        String backlightsValue = interpretedData[7][0];
-        String brakelightsValue = interpretedData[8][0];
+    public void updateImage(Boolean[] interpretedLightData) {
+        boolean leftBlinkerState = interpretedLightData[0];
+        boolean rightBlinkerState = interpretedLightData[1];
+        boolean warningLightsState = interpretedLightData[2];
+        boolean headlightsState = interpretedLightData[3];
+        boolean fullBeamState = interpretedLightData[4];
+        boolean backlightsState = interpretedLightData[5];
 
-
-        // conversion from string to boolean because the setImage function requires boolean params
-        boolean leftBlinkerState = stringToBoolean(leftBlinkerValue);
-        boolean rightBlinkerState = stringToBoolean(rightBlinkerValue);
-        boolean warningLightsState = stringToBoolean(warningLightsValue);
-        boolean headlightsState = stringToBoolean(headlightsValue);
-        boolean fullBeamState = stringToBoolean(fullBeamValue);
-        boolean backlightsState = stringToBoolean(backlightsValue);
-        boolean brakelightsState = stringToBoolean(brakelightsValue);
-
-
-
-
-        setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState, brakelightsState, fullBeamState, warningLightsState);
-
-    }
-
-    // This function should be used to turn a string variable with the value "1" or "0" into a boolean variable.
-    public boolean stringToBoolean(String string) {
-        return string.equals("1");
+        setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState, fullBeamState, warningLightsState);
     }
 
 }

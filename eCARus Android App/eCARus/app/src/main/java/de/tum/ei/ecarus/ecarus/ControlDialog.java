@@ -27,15 +27,14 @@ public class ControlDialog extends DialogFragment{
     Switch leftBlinkerSwitch;
     Switch rightBlinkerSwitch;
     Switch fullBeamSwitch;
-    Switch brakelightsSwitch;
     Switch warningLightsSwitch;
     public boolean headlightsState;
     public boolean backlightsState;
     public boolean leftBlinkerState;
     public boolean rightBlinkerState;
     public boolean fullBeamState;
-    public boolean brakelightsState;
     public boolean warningLightsState;
+    public static int[] infoData;
 
 
     @Override
@@ -53,13 +52,12 @@ public class ControlDialog extends DialogFragment{
                     public void onClick(DialogInterface dialog, int id) {
                         // sign in the user ...
                         headlightsState = headlightsSwitch.isChecked();
-                        brakelightsState = brakelightsSwitch.isChecked();
                         backlightsState = backlightsSwitch.isChecked();
                         fullBeamState = fullBeamSwitch.isChecked();
                         leftBlinkerState = leftBlinkerSwitch.isChecked();
                         rightBlinkerState = rightBlinkerSwitch.isChecked();
                         warningLightsState = warningLightsSwitch.isChecked();
-                        ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState, brakelightsState, fullBeamState, warningLightsState);
+                        ((MainActivity)getActivity()).setImage(headlightsState, backlightsState, leftBlinkerState, rightBlinkerState, fullBeamState, warningLightsState);
                         // TODO: send status update messages
                     }
                 })
@@ -78,36 +76,42 @@ public class ControlDialog extends DialogFragment{
     public void onStart() {
         super.onStart();
 
-        // TODO: get real values for states (Here the states have the default value "false"
+        Boolean[] interpretedLightData = ((MainActivity)getActivity()).getLightData();
+
+
         headlightsSwitch = (Switch) getDialog().findViewById(R.id.headlights_switch);
-        headlightsState = false;
-        headlightsSwitch.setChecked(headlightsState);
-
         backlightsSwitch = (Switch) getDialog().findViewById(R.id.backlights_switch);
-        backlightsState = false;
-        backlightsSwitch.setChecked(backlightsState);
-
         leftBlinkerSwitch = (Switch) getDialog().findViewById(R.id.left_blinker_switch);
-        leftBlinkerState = false;
-        leftBlinkerSwitch.setChecked(leftBlinkerState);
-
         rightBlinkerSwitch = (Switch) getDialog().findViewById(R.id.right_blinker_switch);
-        rightBlinkerState = false;
-        rightBlinkerSwitch.setChecked(rightBlinkerState);
-
-        brakelightsSwitch = (Switch) getDialog().findViewById(R.id.brakelights_switch);
-        brakelightsState = false;
-        brakelightsSwitch.setChecked(brakelightsState);
-
         fullBeamSwitch = (Switch) getDialog().findViewById(R.id.full_beam_switch);
-        fullBeamState = false;
-        fullBeamSwitch.setChecked(fullBeamState);
-
         warningLightsSwitch = (Switch) getDialog().findViewById(R.id.warning_light_switch);
-        warningLightsState = false;
-        warningLightsSwitch.setChecked(warningLightsState);
 
+        if(interpretedLightData != null) {
+            leftBlinkerState = interpretedLightData[0];
+            rightBlinkerState = interpretedLightData[1];
+            warningLightsState = interpretedLightData[2];
+            headlightsState = interpretedLightData[3];
+            fullBeamState = interpretedLightData[4];
+            backlightsState = interpretedLightData[5];
+        }
+        else {
+            // default values
+            leftBlinkerState = false;
+            rightBlinkerState = false;
+            warningLightsState = false;
+            headlightsState = false;
+            fullBeamState = false;
+            backlightsState = false;
+        }
+
+        headlightsSwitch.setChecked(headlightsState);
+        backlightsSwitch.setChecked(backlightsState);
+        leftBlinkerSwitch.setChecked(leftBlinkerState);
+        rightBlinkerSwitch.setChecked(rightBlinkerState);
+        fullBeamSwitch.setChecked(fullBeamState);
+        warningLightsSwitch.setChecked(warningLightsState);
     }
+
 
 }
 

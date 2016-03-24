@@ -38,9 +38,10 @@ public class UDPThread  extends AsyncTask<Object, Byte, String> {
     protected String doInBackground(Object... params) {
         try {
             while (true) {
-                Thread.sleep(200);
+                Thread.sleep(2000);
 
                 //RECEIVE MESSAGES
+
                 channel = DatagramChannel.open();
                 //create UDP-SOCKET
                 udpSocket = channel.socket();
@@ -52,9 +53,9 @@ public class UDPThread  extends AsyncTask<Object, Byte, String> {
                 packet = new DatagramPacket(message, message.length);
                 udpSocket.receive(packet);
 
+                //conversion from primitive byte[] to object Byte[]
                 Byte[] msg = new Byte[14];
                 for (int i = 0; i < 14; i++)
-                    //conversion from primitive byte[] to object Byte[]
                     msg[i] = new Byte(message[i]);
 
                 //SEND MESSAGE
@@ -129,9 +130,9 @@ public class UDPThread  extends AsyncTask<Object, Byte, String> {
         // interpret the data
         interpretedData.interpretData(data);
         // send interpreted data to the MainActivity
-        mainActivity.setData(interpretedData.createStringArrayFromData());
+        mainActivity.setInfoData(interpretedData.createIntArrayFromData());
         // adapt the ecarus animation according to the new data
-        mainActivity.update_eCARus_Image(interpretedData.createStringArrayFromData());  //interpreted data information for eCARus' animation
+        mainActivity.updateImage(interpretedData.createBooleanArrayFromData());
 
         //outGoingMessage = mainActivity.getMessageToBeSent(); // get message which should be sent from the main activity
     }
