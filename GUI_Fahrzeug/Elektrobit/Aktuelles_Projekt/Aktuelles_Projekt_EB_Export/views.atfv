@@ -24,7 +24,7 @@ include"views_transitions.atfv"
     @id211576499189485908 width : 1024;
     @id211570344015485904 x : 0;
     @id211570980352485905 y : 0;
-    @id211571742104485911 projectName : "eCARus_WS16(Christians Version)";
+    @id211571742104485911 projectName : eCARus_WS16;
     @id211571191387485913 sceneId : 61441;
     @id211573854775485916 offscreenBuffer : image:NONE;
 }

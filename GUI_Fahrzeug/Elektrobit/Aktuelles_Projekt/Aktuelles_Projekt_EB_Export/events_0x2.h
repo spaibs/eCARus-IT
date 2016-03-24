@@ -9,13 +9,6 @@
 #define EVENT_GRP_ID_DoubleTap_Reset    ((uint32_t) 0x00000002)
 #define EVENT_MSG_ID_DoubleTap_Reset    ((uint32_t) 0x00000007)
 
-//! @brief ExtOut_Rating
-//!
-//! Parameters : 1
-//! 1) Stars::int32_t
-#define EVENT_GRP_ID_ExtOut_Rating    ((uint32_t) 0x00000002)
-#define EVENT_MSG_ID_ExtOut_Rating    ((uint32_t) 0x00000016)
-
 //! @brief Gesture_ResetIcon
 //!
 //! Parameters : 0
