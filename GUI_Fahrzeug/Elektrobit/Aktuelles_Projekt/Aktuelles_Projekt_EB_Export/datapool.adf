@@ -96,6 +96,7 @@ declaration
     contexts
     {
         hmi 0;
+        pdal1 1;
         pdal42 42;
         pdal43 43;
         pdal45 45;
@@ -202,6 +203,11 @@ declaration
         @id246792380498877605 ViewTitle_Specials_Heartbeat::string direct const "";
         @id246799633491881245 ViewTitle_Specials_LED::string direct const "";
         @id1233894369197581663 touchIndex::bool direct "";
+    }
+    module "root"
+        reader hmi writer pdal1
+    {
+        @id1233897965286866361 ExtIn_Rating_Average::float direct "";
     }
     module "root"
         reader hmi writer pdal42

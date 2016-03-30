@@ -1,0 +1,13 @@
+--wrap=__errno
+--wrap=epoll_ctl
+--wrap=epoll_wait
+--wrap=fcntl
+--wrap=fstat
+--wrap=fstatat
+--wrap=getsockopt
+--wrap=ioctl
+--wrap=lstat
+--wrap=open
+--wrap=setsockopt
+--wrap=socket
+--wrap=stat

@@ -1,0 +1,14 @@
+--wrap=_Unwind_GetGR
+--wrap=_Unwind_GetIP
+--wrap=_Unwind_SetGR
+--wrap=_Unwind_SetIP
+--wrap=__errno
+--wrap=epoll_ctl
+--wrap=epoll_wait
+--wrap=fstat
+--wrap=fstatat
+--wrap=getsockopt
+--wrap=lstat
+--wrap=setsockopt
+--wrap=socket
+--wrap=stat
