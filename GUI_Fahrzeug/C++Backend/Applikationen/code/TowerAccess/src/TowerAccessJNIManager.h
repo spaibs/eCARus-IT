@@ -36,6 +36,7 @@ public:
 	// Method calls from TowerAccess application (model)
 	void updateVehicleMode(int32_t newMode);
 	void requestBatteryValuesUpdate();
+	void sendRating(int32_t newRating);
 
 	// Observer methods
 	void registerObserver(TowerUpdateObserver* observer);

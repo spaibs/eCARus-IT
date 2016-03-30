@@ -148,6 +148,33 @@ void TowerAccessJNIManager::requestBatteryValuesUpdate()
 #endif // ANDROID
 }
 
+
+
+
+void TowerAccessJNIManager::sendRating(int32_t rating)
+{
+#ifdef ANDROID
+	JNIEnv *env = getEnv();
+	if (env)
+	{
+		jmethodID mid = env->GetStaticMethodID(gClsAP, "onTransmitRating", "(I)V");
+		if (mid != NULL)
+		{
+			jint ratingParameter = (jint) rating;
+			env->CallStaticVoidMethod(gClsAP, mid, ratingParameter);
+		}
+		else
+		{
+			LOGCAT_ERROR("sendRating() - GetMethodID failed!");
+		}
+	}
+#else
+	GTF_UNUSED_PARAM(newMode);
+#endif // ANDROID
+}
+
+
+
 void TowerAccessJNIManager::deinitialize()
 {
 #ifdef ANDROID

@@ -33,6 +33,13 @@
 #define EVENT_GRP_ID_ExtOut_Battery_UpdateValues    ((uint32_t) 0x00010004)
 #define EVENT_MSG_ID_ExtOut_Battery_UpdateValues    ((uint32_t) 0x00000005)
 
+//! @brief ExtOut_Rating
+//!
+//! Parameters : 1
+//! 1) Stars::int32_t
+#define EVENT_GRP_ID_ExtOut_Rating    ((uint32_t) 0x00010004)
+#define EVENT_MSG_ID_ExtOut_Rating    ((uint32_t) 0x00000006)
+
 //! @brief ExtOut_VehicleMode_SetMode
 //!
 //! Parameters : 1

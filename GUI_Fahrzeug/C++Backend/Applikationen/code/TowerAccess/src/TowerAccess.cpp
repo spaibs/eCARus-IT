@@ -82,6 +82,11 @@ bool TowerAccess::Startup(GtfCoreModel& rCoreModel,
             EVENT_GRP_ID_ExtOut_Battery_UpdateValues,
             EVENT_MSG_ID_ExtOut_Battery_UpdateValues,
             SubscribeToEvent);
+
+		fSuccess = fSuccess && m_pEvSystem->Subscribe(DP_CONTEXT_ID,
+			EVENT_GRP_ID_ExtOut_Rating,
+			EVENT_MSG_ID_ExtOut_Rating,
+			SubscribeToEvent);
         // register the datapool processing task
         fSuccess = fSuccess && m_pDataPool->SetInvoker(DP_CONTEXT_ID,
                                                        gtf_bind(&GtfMainWorkLoop::PerformTask,
@@ -182,6 +187,25 @@ void TowerAccess::ProcessEvent(GtfEventHandle handle)
         {
 			TowerAccessJNIManager::getInstance()->requestBatteryValuesUpdate();
         }
+		
+		
+		
+		if ((grpId == EVENT_GRP_ID_ExtOut_Rating) && (evId == EVENT_MSG_ID_ExtOut_Rating))
+        {
+            int32_t rating = 0;
+            bool success = ev.ReadValue(0, GtfTypeId::eTypeId_int32, &rating, sizeof(int32_t));
+			
+            LOGCAT_DEBUG("EVENT_GRP_ID_ExtOut_Rating grpId : %i evId %i", grpId, evId);
+
+            if(success)
+            {
+				TowerAccessJNIManager::getInstance()->sendRating(rating);
+            }
+        }
+		
+		
+		
+		
     }
 }
 
@@ -229,6 +253,11 @@ void TowerAccess::ProcessShutdown()
         m_pEvSystem->Unsubscribe(DP_CONTEXT_ID,
             EVENT_GRP_ID_ExtOut_Battery_UpdateValues,
             EVENT_MSG_ID_ExtOut_Battery_UpdateValues,
+            SubscribeToEvent);
+			
+        m_pEvSystem->Unsubscribe(DP_CONTEXT_ID,
+            EVENT_GRP_ID_ExtOut_Rating,
+            EVENT_MSG_ID_ExtOut_Rating,
             SubscribeToEvent);
 
         // unregister the event processing task

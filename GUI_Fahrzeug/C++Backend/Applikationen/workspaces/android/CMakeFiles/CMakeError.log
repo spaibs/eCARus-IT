@@ -1,0 +1,39 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: C:/Users/gvm405/Desktop/Applikationen/workspaces/android/CMakeFiles/CMakeTmp
+
+Run Build Command:C:/cygwin64/bin/make.exe "cmTryCompileExec3241650026/fast"
+C:/cygwin64/bin/make.exe -f CMakeFiles/cmTryCompileExec3241650026.dir/build.make CMakeFiles/cmTryCompileExec3241650026.dir/build
+make.exe[1]: Entering directory `C:/Users/gvm405/Desktop/Applikationen/workspaces/android/CMakeFiles/CMakeTmp'
+C:/Users/gvm405/Desktop/Applikationen/CMake2.8.11/bin/cmake.exe -E cmake_progress_report C:/Users/gvm405/Desktop/Applikationen/workspaces/android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3241650026.dir/TestEndianess.c.o
+C:/Users/gvm405/Desktop/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/windows-x86_64/bin/arm-linux-androideabi-gcc.exe   --sysroot=C:/Users/gvm405/Desktop/android-ndk-r8e/platforms/android-9/arch-arm -LC:/Users/gvm405/Desktop/android-ndk-r8e/platforms/android-9/arch-arm/usr/lib -Wl,-rpath-link=C:/Users/gvm405/Desktop/android-ndk-r8e/platforms/android-9/arch-arm/usr/lib -Wl,--no-undefined -Wl,-z,noexecstack -DANDROID -fpic -ffunction-sections -fstack-protector -D__ARM_ARCH_7__ -D__ARM_ARCH_7A__ -Wno-psabi -march=armv7-a -msoft-float -Os -fomit-frame-pointer -fno-strict-aliasing -finline-limit=64 -IC:/Users/gvm405/Desktop/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include -IC:/Users/gvm405/Desktop/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi/include  -mfloat-abi=softfp -mfpu=vfp     -o CMakeFiles/cmTryCompileExec3241650026.dir/TestEndianess.c.o   -c C:/Users/gvm405/Desktop/Applikationen/workspaces/android/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec3241650026
+C:/Users/gvm405/Desktop/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/windows-x86_64/bin/arm-linux-androideabi-gcc.exe   --sysroot=C:/Users/gvm405/Desktop/android-ndk-r8e/platforms/android-9/arch-arm -LC:/Users/gvm405/Desktop/android-ndk-r8e/platforms/android-9/arch-arm/usr/lib -Wl,-rpath-link=C:/Users/gvm405/Desktop/android-ndk-r8e/platforms/android-9/arch-arm/usr/lib -Wl,--no-undefined -Wl,-z,noexecstack -DANDROID -fpic -ffunction-sections -fstack-protector -D__ARM_ARCH_7__ -D__ARM_ARCH_7A__ -Wno-psabi -march=armv7-a -msoft-float -Os -fomit-frame-pointer -fno-strict-aliasing -finline-limit=64 -IC:/Users/gvm405/Desktop/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include -IC:/Users/gvm405/Desktop/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi/include  -mfloat-abi=softfp -mfpu=vfp    -Wl,--no-undefined -Wl,-allow-shlib-undefined -LC:/Users/gvm405/Desktop/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi-v7a -lgnustl_shared "CMakeFiles/cmTryCompileExec3241650026.dir/TestEndianess.c.o"   -o cmTryCompileExec3241650026 -rdynamic 
+make.exe[1]: Leaving directory `C:/Users/gvm405/Desktop/Applikationen/workspaces/android/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
