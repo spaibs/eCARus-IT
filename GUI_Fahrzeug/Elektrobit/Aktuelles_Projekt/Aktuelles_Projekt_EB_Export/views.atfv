@@ -30,6 +30,11 @@ include"views_transitions.atfv"
 }
 @id101300564868290117 view "50_Radio" GtfViewDWT
 {
+    feature Coloration
+    {
+        @id1233899326234152779 colorationEnabled : true;
+        @id1233892737389152796 colorationColor : color: 255, 254, 254, 255;
+    }
     @id101303177926290118 name : "50_Radio";
     @id101300447952290119 height : 768;
     @id211577801281478322 visible : true;
@@ -547,17 +552,11 @@ include"views_transitions.atfv"
                     function (v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t)
                     {
                             @loc
-                            if (v:this.change_Image == false)
-                              {
-                               v:this.change_Image = true;
-                               v:this.image = v:this.image_Destruction;
-                               }
-                            else if (v:this.change_Image == true)
-                              {
-                               v:this.change_Image = false
-                               v:this.image = v:this.image_Radio;
-                               }
-                               
+                            if (dp:ExtIn_Heartbeat==385)
+                            {
+                              v:this.image = v:this.image_Destruction;
+                              dp:Color_Background=v:this.Color_Background;
+                            }
                              false;
                         
                     }
@@ -583,6 +582,70 @@ include"views_transitions.atfv"
         @id1233890639809519959 image_Radio ::image : image:images_Radio_Broken_png;
         @id1233896304487534047 image_Destruction ::image : image:images_Radio_Destructed_png;
         @id1233890887567232468 change_Image ::bool : false;
+        @id1233895805066516650 Color_Background ::image : image:images_menu_bg_new_cat_dead_png;
+    }
+    @id1233895657042611949 widget Animation GtfParallelAnimationDWT
+    {
+        @id1233894198208611950 name : Animation;
+        @id211573320167478530 enabled : true;
+        @id211577333597478532 repeat : 1;
+        @id211570050035478534 alternating : false;
+        @id211577379761478536 scale : 1.0;
+        @id211579059858478539 onPlay : script
+        {
+                function (v:animation_time::int32_t, v:forward::bool)
+                {
+                    
+                }
+        }
+        ;
+        @id211579488880478542 onPause : script
+        {
+                function (v:animation_time::int32_t)
+                {
+                    
+                }
+        }
+        ;
+        @id211575649193478545 onTerminate : script
+        {
+                function (v:animation_time::int32_t, v:terminate::int32_t)
+                {
+                    
+                }
+        }
+        ;
+        @id1233896920930758891 setAnimation ::void : on_trigger
+        {
+            function(v:isInit::bool){
+                @loc
+                if(dp:ExtIn_Heartbeat == 385 && v:this->^->Image.touched == true)
+                {
+                f:animation_play(v:this)
+                }
+                false;
+            }
+        }
+        trigger
+        {
+            @loc
+            dp:ExtIn_Heartbeat
+            v:this->^->Image.touched
+        }
+        ;
+        @id1233894087265201280 widget "Fast Start Color" GtfFastStartColorDWT
+        {
+            @id1233899208358201281 name : "Fast Start Color";
+            @id211575714060480015 enabled : true;
+            @id1233894967270270645 delay : 200;
+            @id1233895296803268151 duration : 2000;
+            @id211570539327480021 repeat : 1;
+            @id211578352132480023 alternating : false;
+            @id211574042860480025 relative : false;
+            @id1233898573813206195 "start" : color: 255, 254, 254, 255;
+            @id1233898533889243608 end : color: 255, 0, 0, 204;
+            @id1233897449941231057 target : v:this->^->^.colorationColor;
+        }
     }
 }
 @id101309504512699735 view "60_Media" GtfViewDWT
@@ -8679,7 +8742,7 @@ include"views_transitions.atfv"
         {
             function(v:isInit::bool){
                 @loc
-                if(v:this.Counter == 120)
+                if(v:this.Counter == 35)
                 {
                 fire ev:GoTo_Ecarus()
                 }
@@ -8735,35 +8798,35 @@ include"views_transitions.atfv"
             {
                 function(v:isInit::bool){
                     @loc
-                    if(v:this->^.Counter >=10)
+                    if(v:this->^.Counter >=5)
                     {
-                    v:this.text= "GO MANUEL GO"
+                    v:this.text= "GO GO"
                     }
-                    if(v:this->^.Counter >=13)
+                    if(v:this->^.Counter >=8)
+                    {
+                    v:this.text= ""
+                    }
+                    if(v:this->^.Counter >=12)
+                    {
+                    v:this.text= "!!YOU'RE GREAT!!"
+                    }
+                    if(v:this->^.Counter >=16)
+                    {
+                    v:this.text= ""
+                    }
+                    if(v:this->^.Counter >=25)
+                    {
+                    v:this.text= "!!!ALMOST THERE!!!"
+                    }
+                    if(v:this->^.Counter >=30)
                     {
                     v:this.text= ""
                     }
                     if(v:this->^.Counter >=30)
                     {
-                    v:this.text= "!!YOU'RE GREAT!!"
-                    }
-                    if(v:this->^.Counter >=33)
-                    {
-                    v:this.text= ""
-                    }
-                    if(v:this->^.Counter >=70)
-                    {
-                    v:this.text= "!!!ALMOST THERE!!!"
-                    }
-                    if(v:this->^.Counter >=73)
-                    {
-                    v:this.text= ""
-                    }
-                    if(v:this->^.Counter >=100)
-                    {
                     v:this.text= "!!!TEAM GUI!!!"
                     }
-                    if(v:this->^.Counter >=104)
+                    if(v:this->^.Counter >=34)
                     {
                     v:this.text= "XD"
                     }
@@ -15926,7 +15989,7 @@ include"views_transitions.atfv"
             @id211577689603411187 width : 350;
             @id211570494306411188 x : 0;
             @id211577495850411189 y : 0;
-            @id211577384335476450 ButtonText ::string : Francais;
+            @id211577384335476450 ButtonText ::string : "Français";
             @id1233892290060255051 ButtonIcon ::image : image:images_Flag_France_png;
             @id1233894442015302825 setColorationEnabled ::void : on_trigger
             {
@@ -17541,7 +17604,7 @@ include"views_transitions.atfv"
         ;
         @id211576532092478116 visible : true;
         @id1233890621212257299 width : 500;
-        @id1233897171960257300 x : 297;
+        @id1233897171960257300 x : 327;
         @id1233898975787257301 y : 409;
         @id1233897151388536519 Stars_image ::image : image:images_Settings_Rating_Star00000_png;
         @id1233897350338560733 Stars_imagestars ::list image :  {image:images_Settings_Rating_Star00000_png, image:images_Settings_Rating_Star00001_png, image:images_Settings_Rating_Star00011_png, image:images_Settings_Rating_Star00111_png, image:images_Settings_Rating_Star01111_png, image:images_Settings_Rating_Star11111_png };
@@ -17909,6 +17972,20 @@ include"views_transitions.atfv"
             @id1233893778798859664 horizontalAlign : 1;
             @id1233894095020859665 verticalAlign : 0;
         }
+    }
+    @id1233893092646693219 widget Label GtfLabelDWT
+    {
+        @id1233890878555693220 name : Label;
+        @id1233895713577693221 height : 200;
+        @id211571371723477235 visible : true;
+        @id1233897134987074853 width : 500;
+        @id1233890775083058419 x : 330;
+        @id1233897062590693224 y : 220;
+        @id1233893966986219958 text : dp:Content_Settings_Rating_Text;
+        @id1233898071945796150 textColor : color: 255, 255, 255, 255;
+        @id1233897701523785691 "font" : font:font_20;
+        @id1233893752704962879 horizontalAlign : 1;
+        @id211571435816477251 verticalAlign : 0;
     }
     @id1233894280296019166 widget Message GtfImageDWT
     {
@@ -19696,7 +19773,7 @@ include"views_transitions.atfv"
             @id1233899176099544577 y : 370;
             @id1233898513169290691 text : "";
             @id1233893647529552322 textColor : color: 255, 255, 255, 255;
-            @id1233898147352535271 "font" : font:font_20;
+            @id1233898147352535271 "font" : font:font_21;
             @id1233894799278504335 horizontalAlign : 1;
             @id1233893705199501530 verticalAlign : 1;
             @id1233897464392699774 Gesture_Text ::list string : dp:Gesture_Command;
@@ -20988,10 +21065,10 @@ include"views_transitions.atfv"
         }
         @id1233898655207182788 name : "Change Image";
         @id1233893549951182789 height : 35;
-        @id1233898637854443988 visible : false;
+        @id1233898637854443988 visible : true;
         @id1233897458232182790 width : 70;
-        @id1233895723379182791 x : 900;
-        @id1233896521758182792 y : 604;
+        @id1233895723379182791 x : 36;
+        @id1233896521758182792 y : 617;
         @id1233891640089186438 "image" : image:NONE;
         @id211579000083477486 horizontalAlign : 0;
         @id211578051729477488 verticalAlign : 1;
@@ -21742,7 +21819,7 @@ include"views_transitions.atfv"
             {
                 function(v:isInit::bool){
                     @loc
-                    if(v:this->^->^->setIconButton.index == 4)
+                    if(v:this->^->^->setIconButton.index == 3)
                     {
                     f:animation_play(v:this)
                     v:this->^->^->setIconButton.index = 0
@@ -21810,9 +21887,9 @@ include"views_transitions.atfv"
         @id1233895752889355144 name : setIconButton;
         @id1233896679708355145 height : 100;
         @id211576532092478116 visible : true;
-        @id1233892225050355146 width : 100;
-        @id1233895905339355147 x : 192;
-        @id1233890957539355148 y : 122;
+        @id1233892225050355146 width : 150;
+        @id1233895905339355147 x : 161;
+        @id1233890957539355148 y : 125;
         @id1233894510646355138 index ::int32_t : 0;
     }
     @id1233895267119970276 widget WaveFront GtfImageDWT
@@ -23093,6 +23170,7 @@ include"views_transitions.atfv"
                     {
                             @loc
                             v:this.index += 1;
+                            dp:ExtIn_Heartbeat=385;
                             false;
                         
                     }
@@ -23109,15 +23187,15 @@ include"views_transitions.atfv"
         @id1233895862598400773 name : setIconButton;
         @id1233892747943400774 height : 70;
         @id211576532092478116 visible : true;
-        @id1233892786385400775 width : 40;
-        @id1233892408446400776 x : 846;
-        @id1233896249851400777 y : 471;
+        @id1233892786385400775 width : 55;
+        @id1233892408446400776 x : 783;
+        @id1233896249851400777 y : 472;
         @id1233898878537400767 index ::int32_t : 0;
         @id1233898294058037539 "Widget property" ::void : on_trigger
         {
             function(v:isInit::bool){
                 @loc
-                if(v:this.index == 10)
+                if(v:this.index == 5)
                 {
                 fire ev:Menu_GoTo_Home_Gesture()
                 }
@@ -23128,6 +23206,21 @@ include"views_transitions.atfv"
         {
             @loc
             v:this.index
+        }
+        ;
+        @id1233897204932776528 Color_Background ::image : image:images_menu_bg_new_cat_png;
+        @id1233892968814197572 setBackground ::void : on_trigger
+        {
+            function(v:isInit::bool){
+                @loc
+                dp:Color_Background= v:this.Color_Background;
+                false;
+            }
+        }
+        trigger
+        {
+            @loc
+            v:this.Color_Background
         }
         ;
     }

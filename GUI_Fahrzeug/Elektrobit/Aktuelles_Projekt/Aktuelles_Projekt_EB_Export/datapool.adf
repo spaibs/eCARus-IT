@@ -142,6 +142,7 @@ declaration
         @id246799415494142086 Content_Radio_UnderConstruction::string direct const "";
         @id1233891850711553982 Content_Settings_Appearance::string direct const "";
         @id1233895525058107354 Content_Settings_Rating::string virtual const "";
+        @id1233893966986219958 Content_Settings_Rating_Text::string direct const "";
         @id1233895253937546357 ExtIn_Heartbeat::int32_t direct "";
         @id211570380472950147 ExtOut_MediaPlayer_VolumeSet::void virtual const "";
         @id1233897464392699774 Gesture_Command::list string direct const "";

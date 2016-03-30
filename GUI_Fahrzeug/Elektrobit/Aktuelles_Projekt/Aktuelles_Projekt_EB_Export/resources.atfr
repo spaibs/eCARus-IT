@@ -67,6 +67,11 @@ resource font_2 font
 }
 resource font_20 font
 {
+    path : "fonts/PT_Sans_Bold.ttf";
+    size : 35;
+}
+resource font_21 font
+{
     path : "fonts/PT_Sans.ttf";
     size : 50;
 }
@@ -120,6 +125,10 @@ resource images_Settings_Rating_Star00111_png image
 resource images_menu_bg_tron_png image
 {
     path : "images/menu/bg_tron.png";
+}
+resource images_menu_bg_new_cat_png image
+{
+    path : "images/menu/bg_new_cat.png";
 }
 resource images_Media_Media_skip_Backward_png image
 {
@@ -536,6 +545,10 @@ resource images_sponsors_Neu_Vogel_png image
 resource images_indicators_Indicator_Fern_On_png image
 {
     path : "images/indicators/Indicator_Fern_On.png";
+}
+resource images_menu_bg_new_cat_dead_png image
+{
+    path : "images/menu/bg_new_cat_dead.png";
 }
 resource images_Radio_Broken_png image
 {
