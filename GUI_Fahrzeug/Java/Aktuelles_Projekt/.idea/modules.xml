@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Super smoothe Final Version.iml" filepath="$PROJECT_DIR$/Super smoothe Final Version.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java App aktuell.iml" filepath="$PROJECT_DIR$/Java App aktuell.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
