@@ -51,7 +51,7 @@ values
     @id211573032550765430 ExtIn_Indicator_Right_IsOn false;
     @id211572156853827664 ExtIn_Indicator_Warning_IsOn false;
     @id101307991713878910 ExtIn_MediaPlayer_TitlelList  {"Boney M. - Daddy Cool [3:28]", "Parov Stelar - Gin Tonic [3:18]", "Analogik - Gypsy Doodle [2:53]", "Rammstein - Los [4:05]", "Ratatat - Loud Pipes [3:48]", "Boney M. - Ma Baker [3:59]", "Boney M. - Rasputin [4:28]", "The Correspondents - Right now [4:32]", "Gramatik - So Much For Love [5:34]", "Boney M. - Sunny [4:02]", "Dutty Moonshine - Takin' It Back [6:52]", "AC/DC - Thunderstruck [4:51]", "Urban Cone - Urban Photograph [3:51]", "System of a Down - Violent Pornography [3:33]", "Infected Mushroom - Where Do I Belong [3:26]", "Wolfmother - Woman (Mstrkrft Remix) [3:28]" };
-    @id1233897965286866361 ExtIn_Rating_Average 3.4768;
+    @id1233897965286866361 ExtIn_Rating_Average 4.1257;
     @id211577413984254912 ExtIn_VehicleMode_CurrentMode 0;
     @id211572014739030589 ExtOut_MediaPlayer_Volume 1.0;
     @id211570380472950147 ExtOut_MediaPlayer_VolumeSet on_trigger

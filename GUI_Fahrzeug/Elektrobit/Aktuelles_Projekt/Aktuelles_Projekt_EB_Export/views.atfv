@@ -643,7 +643,7 @@ include"views_transitions.atfv"
             @id211578352132480023 alternating : false;
             @id211574042860480025 relative : false;
             @id1233898573813206195 "start" : color: 255, 254, 254, 255;
-            @id1233898533889243608 end : color: 255, 0, 0, 204;
+            @id1233898533889243608 end : color: 255, 0, 0, 255;
             @id1233897449941231057 target : v:this->^->^.colorationColor;
         }
     }
@@ -17579,7 +17579,7 @@ include"views_transitions.atfv"
                     {
                             @loc
                             v:this.setAnination+=1;
-                            if(v:this.setAnination>=3)
+                            if(v:this.setAnination>=10)
                             {
                             f:animation_play(v:this->^->Rectangle->Animation)
                             v:this.setAnination = 0

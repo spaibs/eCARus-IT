@@ -9,7 +9,7 @@
     #error "Including multiple datapool headers may lead to ambiguous ID definitions!"
 #endif
 
-#define DP_CONTEXT_FINGERPRINT "adce115f40e412592057c4e6935388c8"
+#define DP_CONTEXT_FINGERPRINT "bc876878e81d9de203c19890d4347cbe"
 
 //! @brief Type : int32_t
 #define DP_ID_Battery_Percentage ((uint32_t) 0x00000016)
@@ -123,28 +123,28 @@
 #define DP_ID_ExtIn_Heartbeat ((uint32_t) 0x00000019)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Fern_IsOn ((uint32_t) 0x00000001)
+#define DP_ID_ExtIn_Indicator_Fern_IsOn ((uint32_t) 0x00000000)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Left_IsOn ((uint32_t) 0x00000002)
+#define DP_ID_ExtIn_Indicator_Left_IsOn ((uint32_t) 0x00000001)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Light_IsOn ((uint32_t) 0x00000003)
+#define DP_ID_ExtIn_Indicator_Light_IsOn ((uint32_t) 0x00000002)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Right_IsOn ((uint32_t) 0x00000004)
+#define DP_ID_ExtIn_Indicator_Right_IsOn ((uint32_t) 0x00000003)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Warning_IsOn ((uint32_t) 0x00000005)
+#define DP_ID_ExtIn_Indicator_Warning_IsOn ((uint32_t) 0x00000004)
 
 //! @brief Type : list string
 #define DP_ID_ExtIn_MediaPlayer_TitlelList ((uint32_t) 0x0000000E)
 
 //! @brief Type : float
-#define DP_ID_ExtIn_Rating_Average ((uint32_t) 0x00000000)
+#define DP_ID_ExtIn_Rating_Average ((uint32_t) 0x00000006)
 
 //! @brief Type : int32_t
-#define DP_ID_ExtIn_VehicleMode_CurrentMode ((uint32_t) 0x00000006)
+#define DP_ID_ExtIn_VehicleMode_CurrentMode ((uint32_t) 0x00000005)
 
 //! @brief Type : float
 #define DP_ID_ExtOut_MediaPlayer_Volume ((uint32_t) 0x0000000F)

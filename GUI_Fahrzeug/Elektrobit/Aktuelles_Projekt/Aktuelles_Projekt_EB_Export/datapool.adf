@@ -96,7 +96,6 @@ declaration
     contexts
     {
         hmi 0;
-        pdal1 1;
         pdal42 42;
         pdal43 43;
         pdal45 45;
@@ -205,11 +204,6 @@ declaration
         @id1233894369197581663 touchIndex::bool direct "";
     }
     module "root"
-        reader hmi writer pdal1
-    {
-        @id1233897965286866361 ExtIn_Rating_Average::float direct "";
-    }
-    module "root"
         reader hmi writer pdal42
     {
         @id211578865335198197 ExtIn_Battery_ChargeInfo::list string direct "";
@@ -224,6 +218,7 @@ declaration
         @id211573260005669803 ExtIn_Indicator_Light_IsOn::bool direct "";
         @id211573032550765430 ExtIn_Indicator_Right_IsOn::bool direct "";
         @id211572156853827664 ExtIn_Indicator_Warning_IsOn::bool direct "";
+        @id1233897965286866361 ExtIn_Rating_Average::float direct "";
         @id211577413984254912 ExtIn_VehicleMode_CurrentMode::int32_t direct "";
     }
     module "root"

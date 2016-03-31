@@ -9,7 +9,7 @@
     #error "Including multiple datapool headers may lead to ambiguous ID definitions!"
 #endif
 
-#define DP_CONTEXT_FINGERPRINT "d7a6a69ca6830ccf8da02d8e0b0611b8"
+#define DP_CONTEXT_FINGERPRINT "32e4a921b1f8f5cefb66713ce7ecfb31"
 
 //! @brief Type : list string
 #define DP_ID_ExtIn_Battery_ChargeInfo ((uint32_t) 0x0000000D)
@@ -33,21 +33,24 @@
 #define DP_ID_ExtIn_Battery_Temperatur ((uint32_t) 0x0000000B)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Fern_IsOn ((uint32_t) 0x00000001)
+#define DP_ID_ExtIn_Indicator_Fern_IsOn ((uint32_t) 0x00000000)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Left_IsOn ((uint32_t) 0x00000002)
+#define DP_ID_ExtIn_Indicator_Left_IsOn ((uint32_t) 0x00000001)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Light_IsOn ((uint32_t) 0x00000003)
+#define DP_ID_ExtIn_Indicator_Light_IsOn ((uint32_t) 0x00000002)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Right_IsOn ((uint32_t) 0x00000004)
+#define DP_ID_ExtIn_Indicator_Right_IsOn ((uint32_t) 0x00000003)
 
 //! @brief Type : bool
-#define DP_ID_ExtIn_Indicator_Warning_IsOn ((uint32_t) 0x00000005)
+#define DP_ID_ExtIn_Indicator_Warning_IsOn ((uint32_t) 0x00000004)
+
+//! @brief Type : float
+#define DP_ID_ExtIn_Rating_Average ((uint32_t) 0x00000006)
 
 //! @brief Type : int32_t
-#define DP_ID_ExtIn_VehicleMode_CurrentMode ((uint32_t) 0x00000006)
+#define DP_ID_ExtIn_VehicleMode_CurrentMode ((uint32_t) 0x00000005)
 
 #endif //GTF_INCLUDED_DATAPOOL_IDENTIFIERS_OF_CONTEXT_42
