@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="de.tum.ei.ecarus.telemetrie.eCARusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ecarus_ScrollView"
+        android:background="@drawable/metal_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ecarus_Relative">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ecarusGrid">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:id="@+id/ecarusStartButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_columnSpan="1"
+                    android:layout_rowSpan="1"
+                    android:onClick="on_ecarusStartButton_Clicked"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <Spinner
+                    android:id="@+id/Watch_Control_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_columnSpan="1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:nestedScrollingEnabled="false" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/headLightsImageView"
+                    android:src="@drawable/headlights_65_vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:visibility="visible"
+                    android:onClick="on_Light_clicked" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/eCARusImageView"
+                    android:src="@drawable/ecarus_wo_sign_vertical"
+                    android:layout_alignParentStart="true"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/indicatorLeftImageView"
+                    android:src="@drawable/indicatorlight_left"
+                    android:layout_alignParentStart="true"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/indicatorRightImageView"
+                    android:src="@drawable/indicatorlight_right"
+                    android:layout_alignParentStart="true"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/brakelightsImageView"
+                    android:src="@drawable/brakelights"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="250dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/backlightsImageView"
+                    android:src="@drawable/backlights_65_vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="-20dp"
+                    android:onClick="on_Light_clicked" />
+
+
+            </GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

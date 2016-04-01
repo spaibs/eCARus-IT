@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\NavigationJNIAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\NavigationServiceAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\NavigationServiceAccessSO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\datapool_pdal45.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\events_0x10000.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\LogCatLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\NavigationJNIAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\NavigationServiceAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\src\NavigationServiceAccessSO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\eCARus\160302\Applikationen\code\NavigationServiceAccess\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A847F8F7-6CAA-40CE-B405-ADF08F9A72AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{29C601AE-FCCD-4D70-A487-EFBA470ABCD9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

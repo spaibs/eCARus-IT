@@ -1,0 +1,51 @@
+EBGUIDE 6.0.0.97672;
+@71f00718-8a55-41ff-a595-9c57b2bf5a95
+{
+	#62725243 name :: string : "Edit";
+	#711497355 isDefault :: bool : true;
+	#4010004779 scene_configurations :: scene_configurations : @019eac85-d51d-4d6d-9869-b24025405169
+	{
+		#2393819079 child_1 :: scene_configuration : @acdc29e8-2b2c-4b73-b0fb-047e294523bd
+		{
+			#1340338390 context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+			#1649274126 statemachine :: objectref(haptic_statemachine) : @2bb8b450-fc30-4201-a86c-ed4b903ac61a;
+			#2987155460 enabled :: bool : true;
+			#4232595233 scene :: GtfVisualScene : @982301cd-f74a-4bc6-9c30-34a3983cfd7c
+			{
+				#3514003583 features :: feature_list : @0b531b97-b81d-4bec-ab6b-ef93adb51d9f
+				{
+					#2393819079 child_1 :: DirectXRenderer : @7517f312-f25a-4f4f-93f2-c9dc2f637a62
+					{
+					}
+				}
+				#3903900848 children :: children_list : @032255a1-b460-4a29-906f-686a58ae4912
+				{
+				}
+				#2403460161 name :: string : "";
+				#984722316 visible :: bool : true;
+				#3704864509 width :: int : 1024;
+				#2784850571 height :: int : 768;
+				#3933080622 x :: int : 0;
+				#1778918538 y :: int : 0;
+				#3325353705 projectName :: string : "project";
+				#1630313202 windowCaption :: string : "EB GUIDE 6 model";
+				#1652238701 sceneId :: int : 0;
+				#1347601236 maxFPS :: int : 0;
+				#2732446676 hwLayerId :: int : 0;
+				#3325595305 colorMode :: int : 1;
+				#3565898702 multisampling :: int : 0;
+				#1857765444 enableRemoteFramebuffer :: bool : true;
+				#3448447407 showWindowFrame :: bool : false;
+				#1814148586 showWindow :: bool : false;
+				#3343857077 disableVSync :: bool : false;
+				#4005532104 showFPS :: int : 0;
+			}
+		}
+	}
+	#3577963743 message_configurations :: message_configurations : @bbcd6a1d-b5ad-4fca-b069-9f074c1cffa5
+	{
+	}
+	#743598269 library_configurations :: library_configurations : @6ca485af-9d4e-486a-a1a7-cb266ce09845
+	{
+	}
+}

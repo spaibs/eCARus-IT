@@ -1,0 +1,179 @@
+EBGUIDE 6.0.0.97672;
+@fbefe4c6-26e0-450a-95fd-47be54571b46
+{
+	#2393819079 child_1 :: dp(color) : @cd89260b-5f89-4186-a5ad-aca801828d01
+	{
+		#3493618073 value :: color : -297184257;
+		#1319369987 name :: string : "Color_Highlight_Touch";
+		#2597739519 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#474035131 reader_id :: int : -1;
+		#1756483053 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#604376665 writer_id :: int : -1;
+		#347614129 dp_item_mode_member :: dp_item_mode : 3;
+	}
+	#3966462436 child_2 :: dp(string) : @5e7e6941-922f-4e16-b376-58c6b9473379
+	{
+		#3493618073 value :: language_string : @c7590942-75c2-4809-b6a4-7d1ddc0b9deb
+		{
+			#3498926489 values :: language_stringitemlist : @2823d281-e276-4545-b4a5-0c6fa55f0168
+			{
+				#2393819079 child_1 :: language_stringitem : @4f9305e5-5ba7-46df-a816-e27837504200
+				{
+					#3487716354 languageRef :: objectref(language) : @de96d0e8-473e-4910-905e-1ff46f7ad38b;
+					#1331359030 value :: string : "Music";
+				}
+				#4203670702 child_2 :: language_stringitem : @8187b794-3bab-4b7f-a4c9-acb22d9cde3f
+				{
+					#3487716354 languageRef :: objectref(language) : @50c51846-6f99-4798-9f0d-9bc6386458d8;
+					#3620476451 value :: string : "Musik";
+				}
+			}
+		}
+		#200726190 name :: string : "Menu_Item_Button_Music";
+		#4068640429 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#3884289028 reader_id :: int : -1;
+		#226883217 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#2184143297 writer_id :: int : -1;
+		#4114576643 dp_item_mode_member :: dp_item_mode : 4;
+	}
+	#2917911257 child_3 :: dp(bool) : @5cfa3670-114e-400a-8a3f-aef8ad8f928b
+	{
+		#3493618073 value :: bool : false;
+		#1209641255 name :: string : "ExtIn_Indicator_Left_IsOn";
+		#3104979825 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#3848409508 reader_id :: int : -1;
+		#2472370137 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#988508110 writer_id :: int : -1;
+		#333213583 dp_item_mode_member :: dp_item_mode : 0;
+	}
+	#557940392 child_4 :: dp(bool) : @2ae60796-5ead-4a09-a139-601235f964e0
+	{
+		#3493618073 value :: bool : false;
+		#1741087938 name :: string : "ExtIn_Indicator_Right_IsOn";
+		#70016797 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#3439694704 reader_id :: int : -1;
+		#2970292661 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#633168515 writer_id :: int : -1;
+		#2090043679 dp_item_mode_member :: dp_item_mode : 0;
+	}
+	#617033043 child_5 :: dp(bool) : @af5f8be0-f92c-4340-a7ca-7978e51f81d7
+	{
+		#3493618073 value :: bool : false;
+		#542168809 name :: string : "ExtIn_Indicator_Abblendlicht";
+		#329773499 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#2459972494 reader_id :: int : -1;
+		#3395456141 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#2460516372 writer_id :: int : -1;
+		#2633132109 dp_item_mode_member :: dp_item_mode : 0;
+	}
+	#3585818541 child_6 :: dp(bool) : @58211ef4-55de-48b5-abf5-97dd3da51629
+	{
+		#3493618073 value :: bool : false;
+		#1215230975 name :: string : "ExtIn_Indicator_Fernlicht";
+		#3099085793 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#3781429499 reader_id :: int : -1;
+		#3967697437 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#1552269290 writer_id :: int : -1;
+		#2985736979 dp_item_mode_member :: dp_item_mode : 0;
+	}
+	#3780146333 child_7 :: dp(string) : @f160c44f-eb38-4d75-8ae0-27f2e2452658
+	{
+		#3493618073 value :: language_string : @6fbff475-70eb-42a6-bb9e-ad0be5859aa2
+		{
+			#3498926489 values :: language_stringitemlist : @9b7ef5ed-d7b4-47dd-87c9-7b53d7c2d2e5
+			{
+				#2393819079 child_1 :: language_stringitem : @aa99d769-e780-4c6b-81e9-65705ad0d93d
+				{
+					#3487716354 languageRef :: objectref(language) : @de96d0e8-473e-4910-905e-1ff46f7ad38b;
+					#877840769 value :: string : "Music";
+				}
+				#563553354 child_2 :: language_stringitem : @1059dace-edee-437a-a1b5-7f67bc39edad
+				{
+					#3487716354 languageRef :: objectref(language) : @50c51846-6f99-4798-9f0d-9bc6386458d8;
+					#1102907006 value :: string : "Musik";
+				}
+			}
+		}
+		#163219345 name :: string : "Menu_Caption_Music";
+		#3740486633 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#2964691799 reader_id :: int : -1;
+		#2366639321 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#2372731447 writer_id :: int : -1;
+		#1554214807 dp_item_mode_member :: dp_item_mode : 4;
+	}
+	#1330567346 child_8 :: dp(string) : @df421cc0-1479-4b57-b90b-24d9585e7bfe
+	{
+		#3493618073 value :: language_string : @49092f75-9927-4e4f-8f5b-ab904e43807d
+		{
+			#3498926489 values :: language_stringitemlist : @8a8969d7-a371-4ea0-bade-305f0c0cac8e
+			{
+				#2393819079 child_1 :: language_stringitem : @a1b9208b-d1f5-498c-8b22-c2e0fbf3c8e4
+				{
+					#3487716354 languageRef :: objectref(language) : @de96d0e8-473e-4910-905e-1ff46f7ad38b;
+					#919430210 value :: string : "Info";
+				}
+				#4110889536 child_2 :: language_stringitem : @8734e203-4166-4da4-82a1-cec6b956526e
+				{
+					#3487716354 languageRef :: objectref(language) : @50c51846-6f99-4798-9f0d-9bc6386458d8;
+					#878050406 value :: string : "Info";
+				}
+			}
+		}
+		#1706642049 name :: string : "Menu_Caption_Info";
+		#3240734855 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#3137286878 reader_id :: int : -1;
+		#2852558317 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#1193093912 writer_id :: int : -1;
+		#2784585757 dp_item_mode_member :: dp_item_mode : 4;
+	}
+	#3187753839 child_9 :: dp(string) : @30faea57-2ddb-44f0-89f1-2621b00966d6
+	{
+		#3493618073 value :: language_string : @1e987de9-8082-4b80-a330-e44423444d76
+		{
+			#3498926489 values :: language_stringitemlist : @71e277c2-f7a4-4f48-817f-92af8962ce14
+			{
+				#2393819079 child_1 :: language_stringitem : @d4ea7849-48f3-489d-be3c-c4cbc0528625
+				{
+					#3487716354 languageRef :: objectref(language) : @de96d0e8-473e-4910-905e-1ff46f7ad38b;
+					#3770646394 value :: string : "Radio";
+				}
+				#1070969880 child_2 :: language_stringitem : @53521ad3-80b6-4933-a3d6-595c37dfb39a
+				{
+					#3487716354 languageRef :: objectref(language) : @50c51846-6f99-4798-9f0d-9bc6386458d8;
+					#108269510 value :: string : "Radio";
+				}
+			}
+		}
+		#470905246 name :: string : "Menu_Caption_Radio";
+		#3998538215 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#94975366 reader_id :: int : -1;
+		#125228957 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#1041199497 writer_id :: int : -1;
+		#3321742909 dp_item_mode_member :: dp_item_mode : 4;
+	}
+	#1391140919 child_10 :: dp(string) : @bcfddefc-415e-443a-9592-b9421c2650a4
+	{
+		#3493618073 value :: language_string : @041907c5-8fc0-4061-8beb-1c4695913531
+		{
+			#3498926489 values :: language_stringitemlist : @26900614-8722-4e10-b3e1-c4b157194172
+			{
+				#2393819079 child_1 :: language_stringitem : @3a0e7924-f6c7-4598-a4ea-36a173f894f7
+				{
+					#3487716354 languageRef :: objectref(language) : @de96d0e8-473e-4910-905e-1ff46f7ad38b;
+					#999031786 value :: string : "Navigation";
+				}
+				#736417004 child_2 :: language_stringitem : @98b4b240-dda3-4197-9911-f99a927a0b6b
+				{
+					#3487716354 languageRef :: objectref(language) : @50c51846-6f99-4798-9f0d-9bc6386458d8;
+					#3739897065 value :: string : "Navigation";
+				}
+			}
+		}
+		#1894083619 name :: string : "Menu_Caption_Navigation";
+		#2773994721 reader_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#2997887354 reader_id :: int : -1;
+		#2087838849 writer_context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+		#2958004832 writer_id :: int : -1;
+		#1169197509 dp_item_mode_member :: dp_item_mode : 4;
+	}
+}

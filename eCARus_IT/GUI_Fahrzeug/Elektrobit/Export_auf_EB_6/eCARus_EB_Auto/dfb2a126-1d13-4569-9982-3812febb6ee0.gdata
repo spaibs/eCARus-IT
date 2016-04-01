@@ -1,0 +1,46 @@
+EBGUIDE 6.0.0.97672;
+@dfb2a126-1d13-4569-9982-3812febb6ee0
+{
+	#2393819079 child_1 :: event : @3e83e847-e97a-4080-a27d-791d78d04c0e
+	{
+		#62725243 name :: string : "Go_To_Home";
+		#3883516768 eventId :: int : 0;
+		#3579206811 event_group :: objectref(event_group) : @59705228-8b15-4ead-86a0-6d3fa459d656;
+	}
+	#1720228306 child_2 :: event : @98a6e2dc-f517-4a03-88ed-6407c1521017
+	{
+		#62725243 name :: string : "Go_To_Music";
+		#4105588676 eventId :: int : 1;
+		#3134838495 event_group :: objectref(event_group) : @59705228-8b15-4ead-86a0-6d3fa459d656;
+	}
+	#275262169 child_3 :: event : @d83487ba-7e68-47ef-accd-60f9492a8330
+	{
+		#62725243 name :: string : "Go_To_Radio";
+		#4029322703 eventId :: int : 2;
+		#478800507 event_group :: objectref(event_group) : @59705228-8b15-4ead-86a0-6d3fa459d656;
+	}
+	#3127206530 child_4 :: event : @2e1ed137-e1c5-4c23-9125-d7a9898f41ba
+	{
+		#62725243 name :: string : "Go_To_Navigation";
+		#532708976 eventId :: int : 3;
+		#2662356641 event_group :: objectref(event_group) : @59705228-8b15-4ead-86a0-6d3fa459d656;
+	}
+	#451354255 child_5 :: event : @9d50a482-625b-4544-9178-4ecaffa709df
+	{
+		#62725243 name :: string : "Go_To_Settings";
+		#404580396 eventId :: int : 4;
+		#1408701745 event_group :: objectref(event_group) : @59705228-8b15-4ead-86a0-6d3fa459d656;
+	}
+	#1114052466 child_6 :: event : @dd74a061-5857-4f86-8c4b-a29c130f40a2
+	{
+		#62725243 name :: string : "Go_To_Info";
+		#1166317609 eventId :: int : 5;
+		#2759879153 event_group :: objectref(event_group) : @59705228-8b15-4ead-86a0-6d3fa459d656;
+	}
+	#786400573 child_7 :: event : @3acdfa49-6244-4361-abef-1ebb71fe2f36
+	{
+		#62725243 name :: string : "Go_To_Gesture";
+		#1174083643 eventId :: int : 6;
+		#917351259 event_group :: objectref(event_group) : @59705228-8b15-4ead-86a0-6d3fa459d656;
+	}
+}

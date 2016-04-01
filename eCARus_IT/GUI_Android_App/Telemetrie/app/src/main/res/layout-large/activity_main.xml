@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:http="http://schemas.android.com/tools">
+
+    <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar_default"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_actionbar">
+
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
+            android:clickable="true" android:layout_height="match_parent" >
+
+        </FrameLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="6"
+            android:id="@+id/grid"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp">
+
+
+            <TextView android:text="@string/status_Text" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_TextView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/port_number"
+                android:id="@+id/port_TextView"
+                android:layout_below="@+id/host_Edit"
+                android:layout_toStartOf="@+id/connect_Button"
+                android:layout_row="2"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/host_text"
+                android:id="@+id/host_TextView"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/host_Edit"
+                android:text="@string/host_edit"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_below="@+id/status_TextView"
+                android:layout_alignEnd="@+id/connect_Button"
+                android:layout_gravity="left|right"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/port_Edit"
+                android:text="@string/port_edit"
+                android:layout_below="@+id/host_Edit"
+                android:layout_alignEnd="@+id/status_TextView"
+                android:layout_alignStart="@+id/host_Edit"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="left|right"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect"
+                android:id="@+id/connect_Button"
+                android:enabled="true"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:onClick="on_ConnectButton_Clicked"
+                android:layout_below="@+id/port_Edit"
+                android:layout_centerHorizontal="true"
+                android:layout_row="4"
+                android:layout_column="0" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:id="@+id/pause_CheckBox"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:checked="false"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lstMsg_TextView"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:layout_columnSpan="2"
+                android:maxLines = "20"
+                android:scrollbars = "vertical"
+                />
+
+        </GridLayout>
+
+        <!-- android:layout_marginTop="?android:attr/actionBarSize"-->
+        <fragment android:id="@+id/fragment_drawer"
+            android:name="de.tum.ei.ecarus.telemetrie.NavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent" android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            http:layout="@layout/fragment_navigation_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

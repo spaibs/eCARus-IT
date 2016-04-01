@@ -1,0 +1,1068 @@
+// GUIDE model version:  5.5.3.92525
+
+class GtfAbstractWidget
+{
+    name ::string : "";
+}
+
+class GtfAbstractVisualWidget : GtfAbstractWidget
+{
+    height ::int32_t : 0;
+    visible ::bool : true;
+    width ::int32_t : 0;
+    x ::int32_t : 0;
+    y ::int32_t : 0;
+}
+
+class GtfLabel : GtfAbstractVisualWidget
+{
+    text ::string : "";
+    textColor ::color : color: 255,255,255,255;
+    "font" ::font : ;
+    horizontalAlign ::int32_t : 0;
+    verticalAlign ::int32_t : 0;
+}
+
+class GtfImage : GtfAbstractVisualWidget
+{
+    "image" ::image : ;
+    horizontalAlign ::int32_t : 0;
+    verticalAlign ::int32_t : 0;
+}
+
+class GtfApplicationWindowWidget : GtfImage
+{
+    forwardTouch ::bool : true;
+    forwardKey ::bool : true;
+}
+
+class GtfRectangle : GtfAbstractVisualWidget
+{
+    fillColor ::color : color: 255,255,255,255;
+}
+
+class GtfInstantiator : GtfAbstractVisualWidget
+{
+    numItems ::int32_t : 0;
+    lineMapping ::list int32_t : {};
+}
+
+class GtfContainer : GtfAbstractVisualWidget
+{
+}
+
+class GtfView : GtfAbstractVisualWidget
+{
+}
+
+class GtfAbstractLogicWidget : GtfAbstractWidget
+{
+}
+
+class GtfAbstractAnimation : GtfAbstractLogicWidget
+{
+    enabled ::bool : true;
+}
+
+class GtfAnimationContainer : GtfAbstractAnimation
+{
+    repeat ::int32_t : 0;
+    alternating ::bool : true;
+    scale ::float : 0.0;
+    onPlay :: (int32_t->bool->void) : script { function(v:animation_time::int32_t, v:forward::bool){} };
+    onPause :: (int32_t->void) : script { function(v:animation_time::int32_t ){} };
+    onTerminate :: (int32_t->int32_t->void) : script { function(v:animation_time::int32_t, v:terminate::int32_t){} };
+}
+
+class GtfParallelAnimation : GtfAnimationContainer
+{
+}
+
+class GtfDelayedFixedCurve : GtfAbstractAnimation
+{
+    delay ::int32_t : 0;
+    duration ::int32_t : 0;
+    repeat ::int32_t : 0;
+    alternating ::bool : true;
+    relative ::bool : true;
+}
+
+class GtfConstCurveS32 : GtfDelayedFixedCurve
+{
+    value ::int32_t : 0;
+    target ::int32_t : 0;
+}
+
+class GtfConstCurveColor : GtfDelayedFixedCurve
+{
+    value ::color : color: 255,255,255,255;
+    target ::color : color: 255,255,255,255;
+}
+
+class GtfConstCurveBool : GtfDelayedFixedCurve
+{
+    value ::bool : true;
+    target ::bool : true;
+}
+
+class GtfConstCurveFloat : GtfDelayedFixedCurve
+{
+    value ::float : 0.0;
+    target ::float : 0.0;
+}
+
+class GtfLinearInterpolationS32 : GtfDelayedFixedCurve
+{
+    "start" ::int32_t : 0;
+    end ::int32_t : 0;
+    target ::int32_t : 0;
+}
+
+class GtfLinearInterpolationColor : GtfDelayedFixedCurve
+{
+    "start" ::color : color: 255,255,255,255;
+    end ::color : color: 255,255,255,255;
+    target ::color : color: 255,255,255,255;
+}
+
+class GtfLinearInterpolationFloat : GtfDelayedFixedCurve
+{
+    "start" ::float : 0.0;
+    end ::float : 0.0;
+    target ::float : 0.0;
+}
+
+class GtfSlowStartS32 : GtfDelayedFixedCurve
+{
+    "start" ::int32_t : 0;
+    end ::int32_t : 0;
+    target ::int32_t : 0;
+}
+
+class GtfSlowStartColor : GtfDelayedFixedCurve
+{
+    "start" ::color : color: 255,255,255,255;
+    end ::color : color: 255,255,255,255;
+    target ::color : color: 255,255,255,255;
+}
+
+class GtfSlowStartFloat : GtfDelayedFixedCurve
+{
+    "start" ::float : 0.0;
+    end ::float : 0.0;
+    target ::float : 0.0;
+}
+
+class GtfFastStartS32 : GtfDelayedFixedCurve
+{
+    "start" ::int32_t : 0;
+    end ::int32_t : 0;
+    target ::int32_t : 0;
+}
+
+class GtfFastStartColor : GtfDelayedFixedCurve
+{
+    "start" ::color : color: 255,255,255,255;
+    end ::color : color: 255,255,255,255;
+    target ::color : color: 255,255,255,255;
+}
+
+class GtfFastStartFloat : GtfDelayedFixedCurve
+{
+    "start" ::float : 0.0;
+    end ::float : 0.0;
+    target ::float : 0.0;
+}
+
+class GtfQuadraticCurveS32 : GtfDelayedFixedCurve
+{
+    acceleration ::int32_t : 0;
+    velocity ::int32_t : 0;
+    constant ::int32_t : 0;
+    target ::int32_t : 0;
+}
+
+class GtfQuadraticCurveColor : GtfDelayedFixedCurve
+{
+    acceleration ::color : color: 255,255,255,255;
+    velocity ::color : color: 255,255,255,255;
+    constant ::color : color: 255,255,255,255;
+    target ::color : color: 255,255,255,255;
+}
+
+class GtfQuadraticCurveFloat : GtfDelayedFixedCurve
+{
+    acceleration ::float : 0.0;
+    velocity ::float : 0.0;
+    constant ::float : 0.0;
+    target ::float : 0.0;
+}
+
+class GtfSinusCurveS32 : GtfDelayedFixedCurve
+{
+    amplitude ::int32_t : 0;
+    constant ::int32_t : 0;
+    frequency ::float : 0.0;
+    phase ::float : 0.0;
+    target ::int32_t : 0;
+}
+
+class GtfSinusCurveColor : GtfDelayedFixedCurve
+{
+    amplitude ::color : color: 255,255,255,255;
+    constant ::color : color: 255,255,255,255;
+    frequency ::float : 0.0;
+    phase ::float : 0.0;
+    target ::color : color: 255,255,255,255;
+}
+
+class GtfSinusCurveFloat : GtfDelayedFixedCurve
+{
+    amplitude ::float : 0.0;
+    constant ::float : 0.0;
+    frequency ::float : 0.0;
+    phase ::float : 0.0;
+    target ::float : 0.0;
+}
+
+class GtfLinearCurveS32 : GtfDelayedFixedCurve
+{
+    velocity ::int32_t : 0;
+    constant ::int32_t : 0;
+    target ::int32_t : 0;
+}
+
+class GtfLinearCurveColor : GtfDelayedFixedCurve
+{
+    velocity ::color : color: 255,255,255,255;
+    constant ::color : color: 255,255,255,255;
+    target ::color : color: 255,255,255,255;
+}
+
+class GtfLinearCurveFloat : GtfDelayedFixedCurve
+{
+    velocity ::float : 0.0;
+    constant ::float : 0.0;
+    target ::float : 0.0;
+}
+
+class GtfScriptCurveBool : GtfDelayedFixedCurve
+{
+    curve :: (int32_t->int32_t->bool) : script { function(v:diff::int32_t, v:t_anim::int32_t) { false } };
+    target ::bool : true;
+}
+
+class GtfScriptCurveS32 : GtfDelayedFixedCurve
+{
+    curve :: (int32_t->int32_t->int32_t) : script { function(v:diff::int32_t, v:t_anim::int32_t) { 0::int32_t } };
+    target ::int32_t : 0;
+}
+
+class GtfScriptCurveColor : GtfDelayedFixedCurve
+{
+    curve :: (int32_t->int32_t->color) : script { function(v:diff::int32_t, v:t_anim::int32_t) { color: 0,0,0,255 } };
+    target ::color : color: 255,255,255,255;
+}
+
+class GtfScriptCurveFloat : GtfDelayedFixedCurve
+{
+    curve :: (int32_t->int32_t->float) : script { function(v:diff::int32_t, v:t_anim::int32_t) { 0.0 } };
+    target ::float : 0.0;
+}
+
+class GtfCustomEffect
+{
+    name ::string : "";
+    enabled ::bool : true;
+}
+
+class GtfViewManager : GtfContainer
+{
+}
+
+class GtfVisualScene : GtfContainer
+{
+    projectName ::string : "";
+    sceneId ::int32_t : 0;
+    offscreenBuffer ::image : ;
+}
+
+class GtfSpeechScene : GtfAbstractWidget
+{
+    onInitialized :: (bool->int32_t->void) : script { function( v:success::bool, v:errorCode::int32_t ) { } };
+    onDeinitialized :: (bool->int32_t->void) : script { function( v:success::bool, v:errorCode::int32_t ) { } };
+    onLanguageChangeStarted :: (int32_t->void) : script { function( v:languageCode::int32_t ) { } };
+    onLanguageChanged :: (int32_t->bool->int32_t->void) : script { function( v:languageCode::int32_t, v:success::bool, v:errorCode::int32_t ) { } };
+    onOutputStarted :: (void->void) : script { function( ) { } };
+    onOutputFinished :: (bool->int32_t->void) : script { function( v:success::bool, v:errorCode::int32_t ) { } };
+    onRecStarted :: (void->void) : script { function( ) { } };
+    onRecInfoSignalTooWeak :: (void->void) : script { function( ) { } };
+    onRecInfoSignalTooLoud :: (void->void) : script { function( ) { } };
+    onRecInfoSnrTooLow :: (void->void) : script { function( ) { } };
+    onRecInfoSpokeTooEarly :: (void->void) : script { function( ) { } };
+    onRecFinished :: (bool->int32_t->void) : script { function( v:success::bool, v:errorCode::int32_t ) { } };
+    onRecTimeout :: (void->void) : script { function( ) { } };
+    onRecEmptyResult :: (void->void) : script { function( ) { } };
+    recNBestResultList ::list string : {};
+}
+
+class GtfTalkManager : GtfAbstractWidget
+{
+}
+
+class GtfExtensionPoint : GtfAbstractWidget
+{
+}
+
+/* 
+    Feature "VirtualLayer"
+    Defines that a widget is bound to a certain layer. This layer is virtual and will be mapped during runtime to a real hardware layer.
+    Application Restriction: w:GtfCustomEffect||w:GtfAbstractVisualWidget
+ */
+feature_class VirtualLayer
+{
+    layerId ::int32_t : 0;
+}
+
+/* 
+    Feature "TextTruncation"
+    This feature shows an indication if "text" does not fit into the designated widget area
+    Application Restriction: w:GtfLabel
+ */
+feature_class TextTruncation
+{
+    truncationSymbol ::string : "";
+    truncationPolicy ::int32_t : 0;
+}
+
+/* 
+    Feature "MultiLine"
+    This feature enables support for multi line texts.
+    Application Restriction: w:GtfLabel
+ */
+feature_class MultiLine
+{
+    lineGap ::int32_t : 0;
+    currentLineCount ::int32_t : 0;
+    maxLineCount ::int32_t : 0;
+    lineSeparators ::list string : {};
+}
+
+/* 
+    Feature "Border"
+    Defines how borders shall be drawn
+    Application Restriction: w:GtfRectangle||w:GtfLabel||w:GtfImage
+ */
+feature_class Border
+{
+    borderThickness ::int32_t : 0;
+    borderColor ::color : color: 255,255,255,255;
+    borderStyle ::int32_t : 0;
+}
+
+/* 
+    Feature "ScaleMode"
+    Defines the scale mode of the image.
+    Application Restriction: w:GtfImage
+ */
+feature_class ScaleMode
+{
+    scaleMode ::int32_t : 0;
+}
+
+/* 
+    Feature "MoveOver"
+    Defines that the respective widget reacts upon a move within its boundaries
+    Application Restriction: wf:StateTouched
+ */
+feature_class MoveOver
+{
+    moveOver :: (int32_t->int32_t->int32_t->int32_t->bool) : script { function(v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t) { false } };
+}
+
+/* 
+    Feature "MoveOut"
+    Defines that the respective widget reacts upon a move out of its boundaries
+    Application Restriction: wf:StateTouched
+ */
+feature_class MoveOut
+{
+    moveOut :: (int32_t->int32_t->int32_t->int32_t->bool) : script { function(v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t) { false } };
+}
+
+/* 
+    Feature "MoveIn"
+    Defines that the respective widget reacts upon a move into its boundaries
+    Application Restriction: wf:StateTouched
+ */
+feature_class MoveIn
+{
+    moveIn :: (int32_t->int32_t->int32_t->int32_t->bool) : script { function(v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t) { false } };
+}
+
+/* 
+    Feature "TouchPressed"
+    Defines that the respective widget reacts upon a press
+    Application Restriction: wf:StateTouched
+ */
+feature_class TouchPressed
+{
+    touchPressed :: (int32_t->int32_t->int32_t->int32_t->bool) : script { function(v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t) { false } };
+}
+
+/* 
+    Feature "TouchShortReleased"
+    Defines that the respective widget reacts upon a release
+    Application Restriction: wf:StateTouched
+ */
+feature_class TouchShortReleased
+{
+    touchShortReleased :: (int32_t->int32_t->int32_t->int32_t->bool) : script { function(v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t) { false } };
+}
+
+/* 
+    Feature "TouchGrabLost"
+    Defines that the respective widget reacts upon a grab lost situation
+    Application Restriction: wf:StateTouched
+ */
+feature_class TouchGrabLost
+{
+    onTouchGrabLost :: (int32_t->int32_t->int32_t->int32_t->bool) : script { function(v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t) { false } };
+}
+
+/* 
+    Feature "TouchStatusChanged"
+    Defines that the respective widget reacts upon status changes
+    Application Restriction: wf:StateTouched
+ */
+feature_class TouchStatusChanged
+{
+    touchStatusChanged :: (int32_t->int32_t->int32_t->int32_t->int32_t->bool) : script { function(v:touchId::int32_t, v:touchStatus::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t) { false } };
+}
+
+/* 
+    Feature "TouchMove"
+    Defines that the respective widget reacts upon touch movements
+    Application Restriction: wf:StateTouched
+ */
+feature_class TouchMove
+{
+    touchMoved :: (int32_t->int32_t->int32_t->int32_t->bool) : script { function(v:touchId::int32_t, v:x::int32_t, v:y::int32_t, v:fingerId::int32_t) { false } };
+}
+
+/* 
+    Feature "Gestures"
+    Defines that the respective widget is interested in processing touch gestures
+    Application Restriction: wf:StateTouched
+ */
+feature_class Gestures
+{
+}
+
+/* 
+    Feature "GestureHold"
+    Defines that the respective widget reacts upon hold gesture
+    Application Restriction: wf:Gestures
+ */
+feature_class GestureHold
+{
+    onGestureHold :: (int32_t->int32_t->void) : script { function(v:x::int32_t, v:y::int32_t) {} };
+    holdDuration ::uint32_t : ;
+}
+
+/* 
+    Feature "GestureLongHold"
+    Defines that the respective widget reacts upon long hold gesture
+    Application Restriction: wf:Gestures
+ */
+feature_class GestureLongHold
+{
+    onGestureLongHold :: (int32_t->int32_t->void) : script { function(v:x::int32_t, v:y::int32_t) {} };
+    longHoldDuration ::uint32_t : ;
+}
+
+/* 
+    Feature "GestureFlick"
+    Defines that the respective widget reacts upon flick gesture
+    Application Restriction: wf:Gestures
+ */
+feature_class GestureFlick
+{
+    onGestureFlick :: (float->int32_t->int32_t->void) : script { function(v:speed::float, v:directionX::int32_t, v:directionY::int32_t) {} };
+    flickMaxTime ::uint32_t : ;
+    flickMinLength ::uint32_t : ;
+}
+
+/* 
+    Feature "GesturePinch"
+    Defines that the respective widget reacts upon pinch gesture
+    Application Restriction: wf:Gestures
+ */
+feature_class GesturePinch
+{
+    onGesturePinchStart :: (float->int32_t->int32_t->void) : script { function(v:ratio::float, v:centerX::int32_t, v:centerY::int32_t) {} };
+    onGesturePinchUpdate :: (float->int32_t->int32_t->void) : script { function(v:ratio::float, v:centerX::int32_t, v:centerY::int32_t) {} };
+    onGesturePinchEnd :: (float->int32_t->int32_t->void) : script { function(v:ratio::float, v:centerX::int32_t, v:centerY::int32_t) {} };
+    pinchThreshold ::uint32_t : ;
+}
+
+/* 
+    Feature "GestureRotate"
+    Defines that the respective widget reacts upon rotate gesture
+    Application Restriction: wf:Gestures
+ */
+feature_class GestureRotate
+{
+    onGestureRotateStart :: (float->int32_t->int32_t->void) : script { function(v:angle::float, v:centerX::int32_t, v:centerY::int32_t) {} };
+    onGestureRotateUpdate :: (float->int32_t->int32_t->void) : script { function(v:angle::float, v:centerX::int32_t, v:centerY::int32_t) {} };
+    onGestureRotateEnd :: (float->int32_t->int32_t->void) : script { function(v:angle::float, v:centerX::int32_t, v:centerY::int32_t) {} };
+    rotateThreshold ::uint32_t : ;
+}
+
+/* 
+    Feature "Path"
+    Defines that the respective widget reacts upon path gestures
+    Application Restriction: wf:Gestures
+ */
+feature_class Path
+{
+    onPath :: (int32_t->void) : script { function(v:gestureId::int32_t) {} };
+    onPathStart :: (void->void) : script { function() {} };
+    onPathNotRecognized :: (void->void) : script { function() {} };
+    pathMinXBox ::uint32_t : ;
+    pathMinYBox ::uint32_t : ;
+}
+
+/* 
+    Feature "ToggleButton"
+    This feature changes a button into a Togglebutton. In contrast to the Pushbutton the "pressed" state will be kept if the button has been released.
+    Application Restriction: wf:StateTouched||wf:StatePressed
+ */
+feature_class ToggleButton
+{
+}
+
+/* 
+    Feature "KeyPressed"
+    Defines that the widgets reacts upon the press of a key
+    Application Restriction: wf:StatePressed
+ */
+feature_class KeyPressed
+{
+    keyPressed :: (int32_t->bool) : script { function(v:keyId::int32_t) { false } };
+}
+
+/* 
+    Feature "KeyUnicode"
+    Defines that the widgets reacts upon a unicode key input
+    Application Restriction: wf:StatePressed
+ */
+feature_class KeyUnicode
+{
+    keyUnicode :: (string->bool) : script { function(v:key::string) { false } };
+}
+
+/* 
+    Feature "KeyShortReleased"
+    Defines that the widgets reacts upon the release of a key
+    Application Restriction: wf:StatePressed
+ */
+feature_class KeyShortReleased
+{
+    keyShortReleased :: (int32_t->bool) : script { function(v:keyId::int32_t) { false } };
+}
+
+/* 
+    Feature "KeyStatusChanged"
+    Defines that the widgets reacts upon the status change of a key
+    Application Restriction: wf:StatePressed
+ */
+feature_class KeyStatusChanged
+{
+    keyStatusChanged :: (int32_t->int32_t->bool) : script { function(v:keyId::int32_t, v:status::int32_t) { false } };
+}
+
+/* 
+    Feature "Rotary"
+    Defines that the widgets reacts upon rotary events
+    Application Restriction: wf:StateFocused
+ */
+feature_class Rotary
+{
+    rotaryReaction :: (int32_t->int32_t->bool) : script { function(v:rotaryId::int32_t, v:increment::int32_t) { false } };
+}
+
+/* 
+    Feature "StateEnabled"
+    This feature adds the state "enabled" to the widget
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class StateEnabled
+{
+    enabled ::bool : true;
+}
+
+/* 
+    Feature "StateSelected"
+    This feature adds the states "selected" to the widget.
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class StateSelected
+{
+    selected ::bool : true;
+}
+
+/* 
+    Feature "StateFocused"
+    Defines that the widgets may have an input focus
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class StateFocused
+{
+    focusable ::int32_t : 0;
+    focused ::bool : true;
+}
+
+/* 
+    Feature "StatePressed"
+    Defines that the widgets may have a pressed state
+    Application Restriction: wf:StateFocused
+ */
+feature_class StatePressed
+{
+    pressed ::bool : true;
+}
+
+/* 
+    Feature "StateTouched"
+    Defines that the widgets may have touch support
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class StateTouched
+{
+    touchable ::bool : true;
+    touched ::bool : true;
+    touchPolicy ::int32_t : 0;
+    touchBehavior ::int32_t : 0;
+}
+
+/* 
+    Feature "UserDefinedFocus"
+    This feature enables focus capabilities for the widget. <br>The widget manages a local focus hierarchy for its widget tree. <br>The focus order itself can be controlled by the focusOrder variable for the children.
+    Application Restriction: w:GtfAbstractVisualWidget&&!wf:AutoFocus&&wf:StateFocused
+ */
+feature_class UserDefinedFocus
+{
+    initFocus ::int32_t : 0;
+    focusedIndex ::int32_t : 0;
+    focusNext ::bool : true;
+    focusPrev ::bool : true;
+    focusFlow ::int32_t : 0;
+    focusOrder ::list int32_t : {};
+}
+
+/* 
+    Feature "AutoFocus"
+    This feature enables focus capabilities for the widget. <br>The widget manages a local focus hierarchy for its widget tree. <br>The order of the widgets in the layout will be used to calculate the focus order. <br>Depending on the layout orientation the algorithm begins in the upper left or upper right corner.
+    Application Restriction: w:GtfAbstractVisualWidget&&!wf:UserDefinedFocus&&wf:StateFocused
+ */
+feature_class AutoFocus
+{
+    initFocus ::int32_t : 0;
+    focusedIndex ::int32_t : 0;
+    focusNext ::bool : true;
+    focusPrev ::bool : true;
+    focusFlow ::int32_t : 0;
+}
+
+/* 
+    Feature "LayoutPolicyAbsolute"
+    Adds the layout policy "absolute layout" mechanism to a widget
+    Application Restriction: w:GtfAbstractVisualWidget&&!wf:LayoutPolicyFlow&&!wf:LayoutPolicyGrid&&!wf:LayoutPolicyBox&&!wf:LayoutPolicyList
+ */
+feature_class LayoutPolicyAbsolute
+{
+    itemLeftOffset ::list int32_t : {};
+    itemTopOffset ::list int32_t : {};
+    itemRightOffset ::list int32_t : {};
+    itemBottomOffset ::list int32_t : {};
+}
+
+/* 
+    Feature "LayoutPolicyFlow"
+    Adds the layout policy "flow layout" mechanism to a widget
+    Application Restriction: w:GtfAbstractVisualWidget&&!wf:LayoutPolicyAbsolute&&!wf:LayoutPolicyGrid&&!wf:LayoutPolicyBox&&!wf:LayoutPolicyList
+ */
+feature_class LayoutPolicyFlow
+{
+    horizontalGap ::int32_t : 0;
+    verticalGap ::int32_t : 0;
+    layoutDirection ::int32_t : 0;
+    horizontalChildAlign ::int32_t : 0;
+    verticalChildAlign ::int32_t : 0;
+}
+
+/* 
+    Feature "LayoutPolicyGrid"
+    Adds the layout policy "grid layout" mechanism to a widget
+    Application Restriction: w:GtfAbstractVisualWidget&&!wf:LayoutPolicyAbsolute&&!wf:LayoutPolicyFlow&&!wf:LayoutPolicyBox&&!wf:LayoutPolicyList
+ */
+feature_class LayoutPolicyGrid
+{
+    horizontalGap ::int32_t : 0;
+    verticalGap ::int32_t : 0;
+    numRows ::int32_t : 0;
+    numColumns ::int32_t : 0;
+}
+
+/* 
+    Feature "LayoutPolicyBox"
+    Adds the layout policy "box layout" mechanism to a widget
+    Application Restriction: w:GtfAbstractVisualWidget&&!wf:LayoutPolicyAbsolute&&!wf:LayoutPolicyFlow&&!wf:LayoutPolicyGrid&&!wf:LayoutPolicyList
+ */
+feature_class LayoutPolicyBox
+{
+    gap ::int32_t : 0;
+    layoutDirection ::int32_t : 0;
+}
+
+/* 
+    Feature "LayoutPolicyList"
+    Adds the layout policy "list layout" mechanism to a widget
+    Application Restriction: w:GtfAbstractVisualWidget&&!wf:LayoutPolicyAbsolute&&!wf:LayoutPolicyGrid&&!wf:LayoutPolicyBox&&!wf:LayoutPolicyFlow
+ */
+feature_class LayoutPolicyList
+{
+    layoutDirection ::int32_t : 0;
+    scrollOffset ::int32_t : 0;
+    scrollOffsetRebase ::bool : true;
+    firstListIndex ::int32_t : 0;
+    scrollIndex ::int32_t : 0;
+    scrollValue ::int32_t : 0;
+    scrollValueMax ::int32_t : 0;
+    scrollValueMin ::int32_t : 0;
+    bounceValue ::int32_t : 0;
+    bounceValueMax ::int32_t : 0;
+    segments ::int32_t : 0;
+    listLength ::int32_t : 0;
+    wrapAround ::bool : true;
+}
+
+/* 
+    Feature "LayoutPolicyListItem"
+    This feature is intended for usage in combination with the "Layout Policy List". By activation a list item index variable will be added to the widget.
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class LayoutPolicyListItem
+{
+    listIndex ::int32_t : 0;
+}
+
+/* 
+    Feature "LayoutMargins"
+    This feature extends the auto layout policies with configurable margins
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class LayoutMargins
+{
+    leftMargin ::int32_t : 0;
+    topMargin ::int32_t : 0;
+    rightMargin ::int32_t : 0;
+    bottomMargin ::int32_t : 0;
+}
+
+/* 
+    Feature "Multistate"
+    Only the content of one child will be visible at this time
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class Multistate
+{
+    containerIndex ::int32_t : 0;
+    containerMapping ::list int32_t : {};
+}
+
+/* 
+    Feature "Buttongroup"
+    Only one button in a group of widgets with this feature can be selected at any time
+    Application Restriction: wf:StateSelected
+ */
+feature_class Buttongroup
+{
+    buttonId ::int32_t : 0;
+    buttonValue ::int32_t : 0;
+}
+
+/* 
+    Feature "Rotarybutton"
+    Adds a reaction to special increment / decrement events on an internal value. This widget may be used to create a scale or a widget with a preview value
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class Rotarybutton
+{
+    currentValue ::int32_t : 0;
+    maxValue ::int32_t : 0;
+    minValue ::int32_t : 0;
+    incValueTrigger ::bool : true;
+    incValueReaction :: (void->void) : script { function(){} };
+    decValueTrigger ::bool : true;
+    decValueReaction :: (void->void) : script { function(){} };
+    steps ::int32_t : 0;
+    valueWrapAround ::bool : true;
+}
+
+/* 
+    Feature "LineIndex"
+    This feature is intended for usage in combination with a Table widget. By activation a line index variable will be added to the widget. This variable may be used as data index for the current Table line.
+    Application Restriction: w:GtfCustomEffect||w:GtfAbstractVisualWidget
+ */
+feature_class LineIndex
+{
+    lineIndex ::int32_t : 0;
+}
+
+/* 
+    Feature "ViewPort"
+    This feature is intended for usage in combination with container or list widgets. It reduces the viewable range of children within the container to the containers dimensions.
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class ViewPort
+{
+    xOffset ::int32_t : 0;
+    yOffset ::int32_t : 0;
+}
+
+/* 
+    Feature "Moveable"
+    Provides the ability to move a widget directly by touch.
+    Application Restriction: wf:StateTouched&&wf:TouchMove
+ */
+feature_class Moveable
+{
+    moveDirection ::int32_t : 0;
+}
+
+/* 
+    Feature "LineTemplateIndex"
+    This feature is intended for usage in combination with an instantiator widget. By activation a line template index variable will be added to the widget. This variable indicates the how-manyeth instance of the template the widget is.
+    Application Restriction: w:GtfCustomEffect||w:GtfAbstractVisualWidget
+ */
+feature_class LineTemplateIndex
+{
+    lineTemplateIndex ::int32_t : 0;
+}
+
+/* 
+    Feature "Coloration"
+    Colors the widget.
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class Coloration
+{
+    colorationEnabled ::bool : true;
+    colorationColor ::color : color: 255,255,255,255;
+}
+
+/* 
+    Feature "Translation"
+    Moves the widget.
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class Translation
+{
+    translationEnabled ::bool : true;
+    translationX ::float : 0.0;
+    translationY ::float : 0.0;
+    translationZ ::float : 0.0;
+}
+
+/* 
+    Feature "Rotation"
+    Rotates the widget by its axes in degree.
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class Rotation
+{
+    rotationEnabled ::bool : true;
+    rotationAngleX ::float : 0.0;
+    rotationAngleY ::float : 0.0;
+    rotationAngleZ ::float : 0.0;
+}
+
+/* 
+    Feature "Scaling"
+    Scales the widget by its axes in percent.
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class Scaling
+{
+    scalingEnabled ::bool : true;
+    scalingX ::float : 0.0;
+    scalingY ::float : 0.0;
+    scalingZ ::float : 0.0;
+}
+
+/* 
+    Feature "Shearing"
+    Shears the widget by the given parameters.
+    Application Restriction: w:GtfAbstractVisualWidget
+ */
+feature_class Shearing
+{
+    shearingEnabled ::bool : true;
+    shearingXbyY ::float : 0.0;
+    shearingXbyZ ::float : 0.0;
+    shearingYbyX ::float : 0.0;
+    shearingYbyZ ::float : 0.0;
+    shearingZbyX ::float : 0.0;
+    shearingZbyY ::float : 0.0;
+}
+
+/* 
+    Feature "Pivot"
+    A fixed point for rotation, scaling and shearing transformations.
+    Application Restriction: wf:Rotation||wf:Scaling||wf:Shearing
+ */
+feature_class Pivot
+{
+    pivotX ::float : 0.0;
+    pivotY ::float : 0.0;
+    pivotZ ::float : 0.0;
+}
+
+class GtfExtensionPointDWT : GtfExtensionPoint
+{
+}
+
+class GtfParallelAnimationDWT : GtfParallelAnimation
+{
+}
+
+class GtfConstCurveBoolDWT : GtfConstCurveBool
+{
+}
+
+class GtfConstCurveColorDWT : GtfConstCurveColor
+{
+}
+
+class GtfConstCurveFloatDWT : GtfConstCurveFloat
+{
+}
+
+class GtfConstCurveS32DWT : GtfConstCurveS32
+{
+}
+
+class GtfContainerDWT : GtfContainer
+{
+}
+
+class GtfFastStartColorDWT : GtfFastStartColor
+{
+}
+
+class GtfFastStartFloatDWT : GtfFastStartFloat
+{
+}
+
+class GtfFastStartS32DWT : GtfFastStartS32
+{
+}
+
+class GtfImageDWT : GtfImage
+{
+}
+
+class GtfInstantiatorDWT : GtfInstantiator
+{
+}
+
+class GtfLabelDWT : GtfLabel
+{
+}
+
+class GtfLinearCurveColorDWT : GtfLinearCurveColor
+{
+}
+
+class GtfLinearCurveFloatDWT : GtfLinearCurveFloat
+{
+}
+
+class GtfLinearCurveS32DWT : GtfLinearCurveS32
+{
+}
+
+class GtfLinearInterpolationColorDWT : GtfLinearInterpolationColor
+{
+}
+
+class GtfLinearInterpolationFloatDWT : GtfLinearInterpolationFloat
+{
+}
+
+class GtfLinearInterpolationS32DWT : GtfLinearInterpolationS32
+{
+}
+
+class GtfQuadraticCurveColorDWT : GtfQuadraticCurveColor
+{
+}
+
+class GtfQuadraticCurveFloatDWT : GtfQuadraticCurveFloat
+{
+}
+
+class GtfQuadraticCurveS32DWT : GtfQuadraticCurveS32
+{
+}
+
+class GtfRectangleDWT : GtfRectangle
+{
+}
+
+class GtfScriptCurveBoolDWT : GtfScriptCurveBool
+{
+}
+
+class GtfScriptCurveColorDWT : GtfScriptCurveColor
+{
+}
+
+class GtfScriptCurveFloatDWT : GtfScriptCurveFloat
+{
+}
+
+class GtfScriptCurveS32DWT : GtfScriptCurveS32
+{
+}
+
+class GtfSinusCurveColorDWT : GtfSinusCurveColor
+{
+}
+
+class GtfSinusCurveFloatDWT : GtfSinusCurveFloat
+{
+}
+
+class GtfSinusCurveS32DWT : GtfSinusCurveS32
+{
+}
+
+class GtfSlowStartColorDWT : GtfSlowStartColor
+{
+}
+
+class GtfSlowStartFloatDWT : GtfSlowStartFloat
+{
+}
+
+class GtfSlowStartS32DWT : GtfSlowStartS32
+{
+}
+
+class GtfViewDWT : GtfView
+{
+}
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ContentDescription"
+        tools:context="de.tum.ei.ecarus.ecarus.MainActivity$PlaceholderFragment"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <!--Button opening control dialog fragment-->
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/control_button"
+                android:id="@+id/button"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:onClick="startControl"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- eCARus image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/ecarus_image_normal"
+                    android:id="@+id/ecarus_view"/>
+
+                <!-- Headlights image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/headlights_image"
+                    android:id="@+id/headlights_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+                <!-- Backlights image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/backlights_image"
+                    android:id="@+id/backlights_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+
+                <!-- Full beam image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/full_beam_image"
+                    android:id="@+id/full_beam_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+                <!-- Left blinker image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/left_blinker_image"
+                    android:id="@+id/left_blinker_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"/>
+
+                <!-- Right blinker image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/right_blinker_image"
+                    android:id="@+id/right_blinker_view"
+                    android:layout_alignTop="@+id/ecarus_view"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="de.tum.ei.ecarus.telemetrie.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:id="@+id/grid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/port_number"
+            android:id="@+id/port_TextView"
+            android:layout_below="@+id/host_Edit"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/host_address"
+            android:id="@+id/host_TextView"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/host_Edit"
+            android:text="@string/host_edit"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_below="@+id/status_TextView"
+            android:layout_alignEnd="@+id/connect_Button"
+            android:layout_gravity="left|right"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/port_Edit"
+            android:text="@string/port_edit"
+            android:layout_below="@+id/host_Edit"
+            android:layout_alignEnd="@+id/status_TextView"
+            android:layout_alignStart="@+id/host_Edit"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="left|right"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/lstMsg_TextView"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:layout_columnSpan="2"
+            android:maxLines = "20"
+            android:scrollbars = "vertical"
+            android:nestedScrollingEnabled="true" />
+
+    </GridLayout>
+
+</FrameLayout>

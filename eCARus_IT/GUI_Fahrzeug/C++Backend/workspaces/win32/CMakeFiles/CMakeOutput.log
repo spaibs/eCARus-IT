@@ -1,0 +1,405 @@
+The system is: Windows - 6.1 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:06.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\2.8.11.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\2.8.11.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\2.8.11.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.13
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/2.8.11.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:07.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\2.8.11.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\2.8.11.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\2.8.11.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.50
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/2.8.11.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3433579053.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:08.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec3433579053.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3433579053.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3433579053.dir\Debug\cmTryCom.80B4DE8C.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3433579053.dir\Debug\cmTryCom.80B4DE8C.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3433579053.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3433579053.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3433579053.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3433579053.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3433579053.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3433579053.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3433579053.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3433579053.dir\Debug\testCCompiler.obj
+  cmTryCompileExec3433579053.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3433579053.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec3433579053.dir\Debug\cmTryCom.80B4DE8C.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec3433579053.dir\Debug\cmTryCom.80B4DE8C.tlog\cmTryCompileExec3433579053.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec3433579053.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.83
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec1196550996.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:09.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec1196550996.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1196550996.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec1196550996.dir\Debug\cmTryCom.866D2AA3.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1196550996.dir\Debug\cmTryCom.866D2AA3.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1196550996.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1196550996.pdb" /Gd /TC /analyze- /errorReport:queue "D:\Projects\eCARus\160302\Applikationen\CMake2.8.11\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1196550996.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1196550996.pdb" /Gd /TC /analyze- /errorReport:queue "D:\Projects\eCARus\160302\Applikationen\CMake2.8.11\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1196550996.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1196550996.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1196550996.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec1196550996.dir\Debug\CMakeCCompilerABI.obj
+  cmTryCompileExec1196550996.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1196550996.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec1196550996.dir\Debug\cmTryCom.866D2AA3.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec1196550996.dir\Debug\cmTryCom.866D2AA3.tlog\cmTryCompileExec1196550996.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec1196550996.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.50
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3623146950.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:09.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec3623146950.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3623146950.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3623146950.dir\Debug\cmTryCom.FAECB2B8.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3623146950.dir\Debug\cmTryCom.FAECB2B8.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3623146950.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3623146950.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3623146950.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3623146950.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3623146950.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3623146950.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3623146950.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3623146950.dir\Debug\testCXXCompiler.obj
+  cmTryCompileExec3623146950.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3623146950.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec3623146950.dir\Debug\cmTryCom.FAECB2B8.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec3623146950.dir\Debug\cmTryCom.FAECB2B8.tlog\cmTryCompileExec3623146950.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec3623146950.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3370958510.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:10.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec3370958510.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3370958510.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3370958510.dir\Debug\cmTryCom.A8BA2AA1.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3370958510.dir\Debug\cmTryCom.A8BA2AA1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3370958510.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3370958510.pdb" /Gd /TP /analyze- /errorReport:queue "D:\Projects\eCARus\160302\Applikationen\CMake2.8.11\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3370958510.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3370958510.pdb" /Gd /TP /analyze- /errorReport:queue "D:\Projects\eCARus\160302\Applikationen\CMake2.8.11\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3370958510.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3370958510.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3370958510.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3370958510.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTryCompileExec3370958510.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3370958510.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec3370958510.dir\Debug\cmTryCom.A8BA2AA1.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec3370958510.dir\Debug\cmTryCom.A8BA2AA1.tlog\cmTryCompileExec3370958510.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec3370958510.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.57
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec311645647.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:11.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec311645647.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec311645647.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec311645647.dir\Debug\cmTryCom.02194F62.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec311645647.dir\Debug\cmTryCom.02194F62.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec311645647.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec311645647.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFile.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec311645647.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec311645647.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFile.c
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec311645647.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec311645647.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec311645647.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec311645647.dir\Debug\CheckIncludeFile.obj
+  cmTryCompileExec311645647.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec311645647.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec311645647.dir\Debug\cmTryCom.02194F62.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec311645647.dir\Debug\cmTryCom.02194F62.tlog\cmTryCompileExec311645647.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec311645647.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec2807757456.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:11.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec2807757456.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec2807757456.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec2807757456.dir\Debug\cmTryCom.76432E02.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec2807757456.dir\Debug\cmTryCom.76432E02.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2807757456.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2807757456.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFile.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2807757456.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2807757456.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFile.c
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2807757456.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2807757456.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2807757456.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2807757456.dir\Debug\CheckIncludeFile.obj
+  cmTryCompileExec2807757456.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2807757456.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec2807757456.dir\Debug\cmTryCom.76432E02.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec2807757456.dir\Debug\cmTryCom.76432E02.tlog\cmTryCompileExec2807757456.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec2807757456.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.53
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec1645267368.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:12.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec1645267368.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1645267368.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec1645267368.dir\Debug\cmTryCom.6DBBD8B9.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1645267368.dir\Debug\cmTryCom.6DBBD8B9.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1645267368.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1645267368.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFile.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1645267368.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1645267368.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFile.c
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1645267368.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1645267368.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1645267368.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec1645267368.dir\Debug\CheckIncludeFile.obj
+  cmTryCompileExec1645267368.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1645267368.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec1645267368.dir\Debug\cmTryCom.6DBBD8B9.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec1645267368.dir\Debug\cmTryCom.6DBBD8B9.tlog\cmTryCompileExec1645267368.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec1645267368.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.57
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec122141853.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:13.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec122141853.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec122141853.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec122141853.dir\Debug\cmTryCom.16D7EB7F.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec122141853.dir\Debug\cmTryCom.16D7EB7F.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec122141853.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec122141853.pdb" /Gd /TC /analyze- /errorReport:queue D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec122141853.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec122141853.pdb" /Gd /TC /analyze- /errorReport:queue D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c
+  
+  CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec122141853.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec122141853.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec122141853.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec122141853.dir\Debug\CMAKE_SIZEOF_UNSIGNED_SHORT.obj
+  cmTryCompileExec122141853.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec122141853.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec122141853.dir\Debug\cmTryCom.16D7EB7F.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec122141853.dir\Debug\cmTryCom.16D7EB7F.tlog\cmTryCompileExec122141853.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec122141853.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.57
+
+

@@ -1,0 +1,114 @@
+EBGUIDE 6.0.0.97672;
+@927b081b-b97c-4b45-aa1c-41c942ca7516
+{
+	#62725243 name :: string : "Simulation";
+	#3023071683 isDefault :: bool : true;
+	#2846601903 scene_configurations :: scene_configurations : @b968d8e3-fec1-4f3b-a240-e9ba98bf53b5
+	{
+		#2393819079 child_1 :: scene_configuration : @f1f6e9b3-802c-4385-8783-67bd4468f522
+		{
+			#1340338390 context :: objectref(context) : @80411872-ffb2-409e-b94d-16c5d4baae1d;
+			#33431512 statemachine :: objectref(haptic_statemachine) : @2bb8b450-fc30-4201-a86c-ed4b903ac61a;
+			#3677443834 enabled :: bool : true;
+			#531580417 scene :: GtfVisualScene : @9d2930aa-6cb1-4c0b-a91e-387f595fee90
+			{
+				#3514003583 features :: feature_list : @f883e59d-a443-4950-acfe-c8f0b730c9fa
+				{
+					#2393819079 child_1 :: OpenGLRenderer : @d14e0b19-e6aa-44d1-a94b-25ff48c8ba65
+					{
+					}
+				}
+				#3141311510 children :: children_list : @a963fad6-b620-426a-94c1-48efc1459a8e
+				{
+				}
+				#2129321013 name :: string : "";
+				#216124122 visible :: bool : true;
+				#3289251805 width :: int : 1024;
+				#1717123655 height :: int : 768;
+				#67224582 x :: int : 0;
+				#3753252000 y :: int : 0;
+				#153081649 projectName :: string : "project";
+				#1766680213 windowCaption :: string : "EB GUIDE 6 model";
+				#2026841329 sceneId :: int : 0;
+				#2239450648 maxFPS :: int : 60;
+				#1569343896 hwLayerId :: int : 0;
+				#2806272697 colorMode :: int : 1;
+				#2277378644 multisampling :: int : 0;
+				#873581512 enableRemoteFramebuffer :: bool : false;
+				#3858040351 showWindowFrame :: bool : true;
+				#3141691708 showWindow :: bool : true;
+				#989037873 disableVSync :: bool : false;
+				#2730857312 showFPS :: int : 0;
+			}
+		}
+	}
+	#519017270 message_configurations :: message_configurations : @1d90bbcb-3811-4291-b77c-574aabebd1cd
+	{
+		#2393819079 child_1 :: message_configuration : @6d22ccfe-ea5e-4ea1-ab92-eb0b04135147
+		{
+			#633347440 runlevel :: int : 0;
+			#92128505 message_identifier :: int : 300;
+			#1467919584 parameters :: string : "UINT32 3735928495 ";
+		}
+		#857720840 child_2 :: message_configuration : @d21d2f85-1fdb-4a7b-86a6-e0f62ec5c635
+		{
+			#633347440 runlevel :: int : 0;
+			#3576876434 message_identifier :: int : 305;
+			#248493236 parameters :: string : "UINT16 60000 ";
+		}
+		#1092039041 child_3 :: message_configuration : @2061fa3b-2a3c-4b69-9543-34f1fb49308c
+		{
+			#633347440 runlevel :: int : 0;
+			#3180378594 message_identifier :: int : 317;
+			#1697062036 parameters :: string : "MODEL_PATH types.bin ";
+		}
+		#3528834507 child_4 :: message_configuration : @c93788f9-0cfd-475b-a3d2-9e962d53ba5e
+		{
+			#633347440 runlevel :: int : 403;
+			#3723031521 message_identifier :: int : 450;
+			#3961145108 parameters :: string : "UINT32 3735928495 MODEL_PATH views.bin ";
+		}
+		#1544967635 child_5 :: message_configuration : @ae688579-7355-46dc-9e3a-70d03da7255e
+		{
+			#633347440 runlevel :: int : 499;
+			#3018728839 message_identifier :: int : 311;
+			#1107306394 parameters :: string : "UINT32 3735928495 MODEL_PATH model.bin ";
+		}
+		#2609732630 child_6 :: message_configuration : @791ce4e3-7e77-4cb5-86b1-64d28319edeb
+		{
+			#633347440 runlevel :: int : 499;
+			#3732775780 message_identifier :: int : 312;
+			#545758736 parameters :: string : "UINT32 3735928495 MODEL_PATH resources.bin ";
+		}
+		#789110123 child_7 :: message_configuration : @2c2ed13e-9844-4d37-af0e-ea6eb90d7f9a
+		{
+			#633347440 runlevel :: int : 499;
+			#3518054522 message_identifier :: int : 308;
+			#2585867754 parameters :: string : "UINT32 3735928495 MODEL_PATH datapool.bdf ";
+		}
+		#2554799004 child_8 :: message_configuration : @f5d7aa50-1890-447e-92a7-b400b70ad28f
+		{
+			#633347440 runlevel :: int : 499;
+			#446811246 message_identifier :: int : 309;
+			#1476348426 parameters :: string : "UINT32 3735928495 MODEL_PATH datapool.bvf ";
+		}
+	}
+	#1718133141 library_configurations :: library_configurations : @35111150-e924-48e8-a08a-89c161f70b6b
+	{
+		#2393819079 child_1 :: library_configuration : @182427e4-0ca0-4c4a-abd8-3f2ec6ed12bb
+		{
+			#803282398 location :: string : "MODEL_PATH";
+			#3170694928 library_name :: string : "libMusicServiceAccess.so";
+		}
+		#1382377952 child_2 :: library_configuration : @7d30e6f1-7eed-47df-9554-9df9fa80d215
+		{
+			#803282398 location :: string : "MODEL_PATH";
+			#4027815949 library_name :: string : "libTowerAccess.so";
+		}
+		#2822112675 child_3 :: library_configuration : @270fda74-b64f-475f-a684-99ac2bea9998
+		{
+			#803282398 location :: string : "MODEL_PATH";
+			#3317608959 library_name :: string : "libNavigationServiceAccess.so";
+		}
+	}
+}

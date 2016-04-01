@@ -1,0 +1,16 @@
+{
+    "FirstName": "Gerrino",
+    "LastName": "Doe",
+    "Age": 43,
+    "DirectionLeft": {
+        "ID": 0x670,
+        "Text": "Direction Left",
+        "DataType": "bool",
+        "Byte": 2,
+        "Bit_start": 1,
+        "Bit_end": 1,
+        "Scale": 1,
+        "StartValue": 0,
+        "Unit": "a"
+    }
+}

@@ -1,0 +1,64 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec423733946.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.34209]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 02.03.2016 09:32:14.
+Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec423733946.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec423733946.dir\Debug\".
+  Creating directory "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec423733946.dir\Debug\cmTryCom.04D1A6BA.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec423733946.dir\Debug\cmTryCom.04D1A6BA.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec423733946.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec423733946.pdb" /Gd /TC /analyze- /errorReport:queue TestEndianess.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec423733946.dir\Debug\\" /Fd"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec423733946.pdb" /Gd /TC /analyze- /errorReport:queue TestEndianess.c
+  
+  TestEndianess.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec423733946.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec423733946.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/eCARus/160302/Applikationen/workspaces/win32/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec423733946.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec423733946.dir\Debug\TestEndianess.obj
+  cmTryCompileExec423733946.vcxproj -> D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec423733946.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec423733946.dir\Debug\cmTryCom.04D1A6BA.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec423733946.dir\Debug\cmTryCom.04D1A6BA.tlog\cmTryCompileExec423733946.lastbuildstate".
+Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\CMakeFiles\CMakeTmp\cmTryCompileExec423733946.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.55
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

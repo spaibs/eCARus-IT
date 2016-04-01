@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eCARus</string>
+    <string name="action_settings">Paramètres de langue</string>
+    <string name="control_button">Modifier</string>
+    <string name="info_title">Bienvenue chez eCARus!</string>
+    <string name="positive_button">Adapter</string>
+    <string name="on">Marche</string>
+    <string name="negative_button">Annuler</string>
+    <string name="off">Arrêt</string>
+    <string name="blinker_left">Clignotant gauche </string>
+    <string name="blinker_right">Clignotant droit</string>
+    <string name="info_text">Dans le cadre du projet eCARus, plus que 50 étudiants de l\'université technique de Munich (TUM) dévelopent deux véhicules éléctriques. Les étudiants eux-mêmes s\'occupent de tous les tâches techniques - allant de la technique d\'entraînement à l\'inormation technique, ainsi que l\'organisation du projet. \n\n  Avec beaucoup de succès: En juin 2009, le travail a commencé avec un châssis en acier tubulaire.  Seulement quatre mois plus tard, lors de sa visite, le ministre d\'économie de Singapore a pû faire un essai avec le véhicule à énérgie électrique sur le campus. \n\n  Depuis lors, chaque semestre des étudiants font des recherche sur tous les aspects de ce sujet future et peuvent essayer leurs innovations à l\'aide du prototype.</string>
+    <string name="contact"><b> Spécialité \n Technique de la transformation d\'énergie \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Bâtiment N3, 1ère Etage \n 80333 Munich \n \n <b>Personne de contacte</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
+    <string name="backlights">Feu arrière</string>
+    <string name="headlights">Feux de croisement</string>
+    <string name="language">Langue</string>
+    <string name="lang_dialog_title">Modifier langue</string>
+    <string name="fragment_info_title">Information</string>
+    <string name="fragment_data_title">Données</string>
+    <string name="fragment_control_title">Contrôle</string>
+    <string name="full_beam">Feux de route</string>
+    <string name="brakelights">Feu d\'arrêt</string>
+    <string name="de">Allemand</string>
+    <string name="en">Anglais</string>
+    <string name="fr">Français</string>
+    <string name="blinker">Clignotant</string>
+    <string name="warning_lights">Feux de détresse</string>
+    <string name="connect_button">Connecter</string>
+    <string name="connect_title">Connecter avec eCARus 2.0</string>
+    <string name="connection_info">Tu es connecté/e correctement avec</string>
+    <string name="wrong_network">Tu es connecté/e avec le mauvais réseau: </string>
+    <string name="modify_network">Modifie ton adresse IP en 192.168.1.5 !</string>
+    <string name="no_network">Pas de réseau sans fil trouvé. WLAN allumé?</string>
+    <string name="not_connected">Tu n\'es pas connecté/e avec eCARus 2.0!</string>
+</resources>

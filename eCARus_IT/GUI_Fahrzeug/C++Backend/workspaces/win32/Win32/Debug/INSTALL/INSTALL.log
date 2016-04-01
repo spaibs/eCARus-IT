@@ -1,0 +1,25 @@
+﻿Build started 02.03.2016 09:42:21.
+     1>Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\INSTALL.vcxproj" on node 3 (Build target(s)).
+     1>PostBuildEvent:
+         setlocal
+         D:\Projects\eCARus\160302\Applikationen\CMake2.8.11\bin\cmake.exe -DBUILD_TYPE=Debug -P cmake_install.cmake
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+         -- Install configuration: "Debug"
+         -- Installing: C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/MusicServiceAccess.lib
+         -- Installing: C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/MusicServiceAccess.dll
+         -- Installing: C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/NavigationServiceAccess.lib
+         -- Installing: C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/NavigationServiceAccess.dll
+         -- Installing: C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/TowerAccess.lib
+         -- Installing: C:/Elektrobit/EB GUIDE 5.5.3/projects/models/eCARus_SS15/resources/target/TowerAccess.dll
+     1>Done Building Project "D:\Projects\eCARus\160302\Applikationen\workspaces\win32\INSTALL.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.32

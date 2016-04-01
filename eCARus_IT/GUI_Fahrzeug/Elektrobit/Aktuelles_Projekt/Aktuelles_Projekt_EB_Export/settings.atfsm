@@ -1,0 +1,26 @@
+// GUIDE model version:  5.5.3.92525
+
+settings
+{
+
+        // The statemachine supports multiple behaviors:
+        //  * Guide1: use only the first matching internal transition, then
+        //    pick the first matching external
+        //  * Guide2: use all matching internal transition, then pick the first
+        //    matching external transition
+        //  * GTF: search upwards for a group of matching internal transitions and
+        //    execute them, if none was found, pick the first matching external
+        //  * Poelz1: execute only one transition, prefer internal over external
+
+        SMBehaviour: Poelz1;
+
+
+        // History tracking behavior:
+        //  * Keep: never reset the history
+        //  * ResetOnFinal: clear history, when leaving a state through a final transition
+
+        History: ResetOnFinal;
+
+        ModelVersion: "5.5.3.92525";
+
+}

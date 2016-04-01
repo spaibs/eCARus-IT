@@ -1,0 +1,3 @@
+C:/Users/gvm405/Desktop/Applikationen/workspaces/android/MusicServiceAccess/CMakeFiles/MusicServiceAccess.dir
+C:/Users/gvm405/Desktop/Applikationen/workspaces/android/NavigationServiceAccess/CMakeFiles/NavigationServiceAccess.dir
+C:/Users/gvm405/Desktop/Applikationen/workspaces/android/TowerAccess/CMakeFiles/TowerAccess.dir

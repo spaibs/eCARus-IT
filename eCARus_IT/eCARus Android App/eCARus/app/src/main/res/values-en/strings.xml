@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eCARus</string>
+    <string name="action_settings">Language settings</string>
+    <string name="blinker_left">Left indicator light </string>
+    <string name="blinker_right">Right indicator light</string>
+    <string name="control_button">Change</string>
+    <string name="info_title">Welcome to eCARus!</string>
+    <string name="negative_button">Cancel</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="positive_button">Adapt</string>
+    <string name="backlights">Backlights</string>
+    <string name="headlights">Dimmed headlights</string>
+    <string name="contact"><b> Department \n Energy conversion technique \n Prof. Dr.-Ing. H.-G. Herzog</b> \n Theresienstrasse 90 \n Building N3, 1st Floor \n 80333 München \n \n <b>Contact person</b> \n Michael Winter \n Tel.: +49.89.289.23456 \n E-Mail: ecarus@ei.tum.de</string>
+    <string name="info_text">In the project eCARus about 60 students of the Technical University of Munich (TUM) develop an electric car. All the technical fields, from power transmission systems to IT, as well as the organisation of the project are left up to the students. \n\n With great success: In June 2009 the project saw the light when work started with a simple space frame. Only 4 months later the Minister for Economic Affairs of Singapur being on a visit to our university was able to go for a test ride over the campus in our electric-engined eCARus 1.0. \n\n      Since then our teams have never stopped developing the concept further and taking it for sure to the next level. Through hard work and a lot of motivation, the eCARus 2.0 was developed and increases the family in number with a second electric car.</string>
+    <string name="language">Language</string>
+    <string name="lang_dialog_title">Change language</string>
+    <string name="fragment_control_title">Control</string>
+    <string name="fragment_data_title">Data</string>
+    <string name="fragment_info_title">Information</string>
+    <string name="full_beam">Full beam</string>
+    <string name="brakelights">Brakelights</string>
+    <string name="de">German</string>
+    <string name="en">English</string>
+    <string name="fr">French</string>
+    <string name="blinker">Blinker</string>
+    <string name="warning_lights">Warning lights</string>
+    <string name="connect_button">Connect</string>
+    <string name="connect_title">Connect to eCARus 2.0</string>
+    <string name="connection_info">You are correctly connected to</string>
+    <string name="wrong_network">You are connected to the wrong network: </string>
+    <string name="modify_network">Modify your IP address to 192.168.1.5 !</string>
+    <string name="no_network">No wireless network found. WLAN disabled?</string>
+    <string name="not_connected">You are not connected to eCARus 2.0!</string>
+</resources>
